@@ -5,6 +5,7 @@
 		<script type="text/javascript" src="js/angular.min.js"></script>
 		<script type="text/javascript" src="js/ui-bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/services/crud-service.js"></script>
 		<script type="text/javascript" src="js/services/data-service.js"></script>
 	</head>
 	<body>
@@ -25,7 +26,7 @@
 						    	<div class="document" ng-repeat="doc in home.documents | filter:search.text track by $index">
 						    		<div class="title">
 						    			<span class="glyphicon glyphicon-file"></span>
-						    			<span ng-bind="doc.name"></span>
+						    			<span ng-bind="doc.id"></span>
 						    		</div>
 						    		<ul class="info">
 						    		</ul>
