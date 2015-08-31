@@ -5,6 +5,7 @@
 		<script type="text/javascript" src="js/angular.min.js"></script>
 		<script type="text/javascript" src="js/ui-bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/services/data-service.js"></script>
 	</head>
 	<body>
 		<div ng-app="app" class="app">
@@ -21,18 +22,17 @@
 						    	</div>
 						  	</div>
 						  	<div class="panel-body">
-						  		<img ng-if="!home.loaded" ng-src="img/loading-bar.gif" class="loading-bar"/>
-						    	<div ng-if="home.loaded" class="document" ng-repeat="doc in home.documents | filter:search.text track by $index">
+						    	<div class="document" ng-repeat="doc in home.documents | filter:search.text track by $index">
 						    		<div class="title">
 						    			<span class="glyphicon glyphicon-file"></span>
 						    			<span ng-bind="doc.name"></span>
 						    		</div>
 						    		<ul class="info">
-						    			<li>Selected Date: <span ng-bind="doc.date | date:'longDate'"></span></li>
-						    			<li>Created: <span ng-bind="doc.created | date:'longDate'"></span></li>
-						    			<li ng-bind="doc.description"></li>
 						    		</ul>
-						    		<button type="button" class="btn btn-danger delete" ng-click="home.deleteDoc(doc);">Delete</button>
+						    		<div class="actions">
+						    			<button type="button" class="btn btn-warning" edit-import="doc.id" items="home.documents">Edit</button>
+						    			<button type="button" class="btn btn-danger" delete-doc="doc" items="home.documents">Delete</button>
+						    		</div>
 						    	</div>
 						  	</div>
 						</div>
@@ -43,7 +43,7 @@
 						    	<h3 class="panel-title">Actions</h3>
 						  	</div>
 						  	<div class="panel-body">
-						    	<button ng-if="home.loaded" type="button" class="btn btn-success" ng-click="home.openForm();">New Document</button>
+						    	<button type="button" class="btn btn-success" create-import items="home.documents">New Document</button>
 						  	</div>
 						</div>
 					</div>

@@ -33,9 +33,12 @@ form.ng-submitted .ng-invalid{
 form.ng-submitted.ng-invalid .ng-valid{
 	border:1px solid lime;
 }
-.document .delete{
+.document .actions{
 	position:absolute;bottom:0px;right:0px;margin:10px;visibility:hidden;
 }
-.document:hover .delete{
+.document:hover .actions{
 	visibility: visible;
+}
+.btn-right{
+	float:right;
 }

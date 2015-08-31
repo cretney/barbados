@@ -1,6 +1,6 @@
 ﻿(function(){
 
-	var app = angular.module('app', ['ui.bootstrap'])
+	var app = angular.module('app', ['ui.bootstrap','dataService'])
 	
 	.config(['$httpProvider', function ($httpProvider) {
 	    $httpProvider.defaults.headers.common.Accept = "application/json;odata=verbose";
@@ -9,37 +9,72 @@
 		$httpProvider.defaults.headers.post['If-Match'] = "*";
 	}])
 
-	.controller('appCtrl', ['$scope','sampleService', '$modal',function($scope, sampleService, $modal){
-		sampleService.get().then(function(data){
-			$scope.home = {
-				loaded: true,
-				documents: data,
-				openForm: function(){
-					this.newDoc = {
-						data: {},
+	.controller('appCtrl', ['$scope', '$modal',function($scope, $modal){
+		$scope.home = {
+			documents: []
+		};
+		for(var i = 1; i < 6; i++){
+			$scope.home.documents.push({id: i, name: 'Document '+i}); //load up some sample data
+		}
+	}])
+
+	.directive('createImport', ['$modal','formService','dataService', function($modal,formService,dataService){
+		return{
+			restrict: 'A',
+			scope: {
+				items: '=?'
+			},
+			link: function(scope, elem, attrs){
+				elem.on('click', function(){
+					if(!scope.items) scope.items = [];
+					scope.form = {
+						data: {
+							importItems: [{}]
+						},
+						options: {
+							units: ['Tons','Pounds','Something Else'] //this should be dynamically pulled from DB
+						},
 						modal: $modal.open({
-				      		templateUrl: 'views/forms/new-document.html',
-				      		scope: $scope
+				      		templateUrl: 'views/forms/create-import.html',
+				      		scope: scope
 				    	}),
 				    	submit: function(form){
 				    		if(form.$valid && form.$dirty){
-					    		sampleService.post(this.data).then(function(ret){
-									$scope.home.documents.unshift(ret);
-								});
+				    			console.log(JSON.stringify(this.data));
+								scope.items.unshift(this.data);
 					    		this.modal.close();
 				    		}
 				    	},
 				    	cancel: function(){
 				    		this.modal.close();
 				    	}
-					};
-				},
-				deleteDoc: function(doc){
-					var index = $scope.home.documents.indexOf(doc);
-  					$scope.home.documents.splice(index, 1);
-				}
-			};
-		});
+				    }
+				});
+			}
+		}
+	}])
+
+	.directive('deleteDoc', [function(){
+		return{
+			restrict: 'A',
+			scope: {
+				doc: '=deleteDoc',
+				items: '=?'
+			},
+			link: function(scope, elem, attrs){
+				elem.on('click', function(){
+					//make delete POST, then...
+					if(scope.items){
+						var index = scope.items.indexOf(scope.doc);
+						if(index != -1){
+							scope.$apply(function(){
+								scope.items.splice(index, 1);
+							});
+						}
+					}
+				});
+			}
+		}
 	}])
 		
 	.factory('sampleService', ['$q','$timeout', function($q,$timeout) {
