@@ -1,0 +1,57 @@
+<form name="newdocForm" class="form-horizontal" novalidate ng-submit="form.submit(newdocForm)">
+	<div class="modal-header">
+        <h3 class="modal-title">New Import</h3>
+    </div>
+    <div class="modal-body">
+    	<div class="form-group">
+	    	<label class="col-sm-2 control-label">EIN</label>
+	    	<div class="col-sm-10">
+	      		<input type="number" class="form-control" placeholder="EIN..." ng-model="form.data.ein" required>
+	    	</div>
+	  	</div>
+	  	<div class="form-group">
+	    	<label class="col-sm-2 control-label">Country</label>
+	    	<div class="col-sm-10">
+	      		<select ng-options="country.value as country.name for country in form.options.countries" class="form-control" placeholder="Country..." ng-model="form.data.country" required></select>
+	    	</div>
+	  	</div>
+    	<div class="form-group">
+	    	<label class="col-sm-2 control-label">Import Items</label>
+	    	<div class="col-sm-10">
+	    		<table class="table table-striped table-condensed">
+	    			<thead>
+	    				<tr>
+	    					<td></td>
+	    					<td>HS Code</td>
+	    					<td>Quantity</td>
+	    					<td>Units</td>
+	    					<td>Value</td>
+	    				</tr>
+	    			</thead>
+	    			<tbody>
+	    				<tr ng-repeat="item in form.data.importItems">
+	    					<td><span ng-if="!$first" style="color:red;" title="Remove Item" class="glyphicon glyphicon-remove" ng-click="form.data.importItems.splice($index,1);"></span></td>
+	    					<td><input type="text" class="form-control" placeholder="HS Code..." ng-model="item.hsCode" required></td>
+	    					<td><input type="number" class="form-control" placeholder="Quantity..." ng-model="item.qty" required></td>
+	    					<td><select ng-options="unit.value as unit.name for unit in form.options.units" class="form-control" placeholder="Units..." ng-model="item.qtyUnits" required></select></td>
+	    					<td><input type="number" class="form-control" placeholder="Value..." ng-model="item.value" required></td>
+	    				</tr>
+	    			</tbody>
+	    		</table>
+	      		<div>
+	      			<button type="button" class="btn btn-default btn-right" ng-click="form.data.importItems.push({});">Add Item to Import</button>
+	      		</div>
+	    	</div>
+	  	</div>
+	  	<div class="form-group">
+	    	<label class="col-sm-2 control-label">Application Date</label>
+	    	<div class="col-sm-10">
+	    	<input type="text" class="form-control" datepicker-popup="dd-MMMM-yyyy" ng-model="form.data.applicationDate" ng-click="picker.open = !picker.open" is-open="picker.open" close-text="Close" required>
+	    	</div>
+	  	</div>
+    </div>
+    <div class="modal-footer">
+        <button type="submit" class="btn btn-primary">OK</button>
+        <button type="button" class="btn btn-warning" ng-click="form.cancel()">Cancel</button>
+    </div>
+</form>
