@@ -1,9 +1,10 @@
 {
-	"id": 1,
+	"formInstanceId": "xyz987",
+	"country": "US",
 	"importItems":[
-		{"hsCode":"234","qty":345,"qtyUnits":"Tons","value":456},
-		{"hsCode":"567","qty":789,"qtyUnits":"Pounds","value":910},
-		{"hsCode":"112","qty":123,"qtyUnits":"Something Else","value":234}
+		{"hsCode":"234","qty":345,"qtyUnits":"1","value":456},
+		{"hsCode":"567","qty":789,"qtyUnits":"1","value":910},
+		{"hsCode":"112","qty":123,"qtyUnits":"1","value":234}
 	],
 	"ein":123,
 	"applicationDate":"2015-08-30T04:00:00.000Z"

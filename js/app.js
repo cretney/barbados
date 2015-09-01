@@ -12,48 +12,58 @@
 	.controller('appCtrl', ['$scope', 'dataService',function($scope, dataService){
 		dataService.getForms().then(function(forms){
 			$scope.home = {
-				documents: forms.data
+				documents: [forms.data]
 			};
 		});
 	}])
 
-	.directive('createImport', ['$modal','crudService','dataService', function($modal,formService,dataService){
+	.directive('createImport', ['$modal','$filter','crudService','dataService', function($modal,$filter,crudService,dataService){
 		return{
 			restrict: 'A',
 			scope: {
 				items: '=?'
 			},
 			link: function(scope, elem, attrs){
+				var lists = dataService.getLists();
 				elem.on('click', function(){
-					if(!scope.items) scope.items = [];
-					scope.form = {
-						data: {
-							importItems: [{}]
-						},
-						options: {
-							units: ['Tons','Pounds','Something Else'] //this should be dynamically pulled from DB
-						},
-						modal: $modal.open({
-				      		templateUrl: 'views/forms/create-import.html',
-				      		scope: scope
-				    	}),
-				    	submit: function(form){
-				    		if(form.$valid && form.$dirty){
-				    			console.log(JSON.stringify(this.data));
-								scope.items.unshift(this.data);
+					lists.then(function(data){
+						if(!scope.items) scope.items = [];
+						scope.form = {
+							data: {
+								importItems: [{}]
+							},
+							options: {
+								units: $filter('filter')(data.data,{listType: 'unitsOfMeasure'}, true)[0].list,
+								countries: $filter('filter')(data.data,{listType: 'country'}, true)[0].list,
+								states: $filter('filter')(data.data,{listType: 'countryState'}, true)[0].list
+							},
+							modal: $modal.open({
+					      		templateUrl: 'views/forms/create-import.html',
+					      		scope: scope
+					    	}),
+					    	submit: function(form){
+					    		if(form.$valid && form.$dirty){ //Validate Form
+					    			crudService.create(this.data).then(function(item){ //POST data
+					    				scope.form.data.formInstanceId = 'abc123'+scope.items.length; //remove later when real GUID is returned
+					    				scope.items.unshift(scope.form.data); //POST - Success - later the returned item object will be used to update view
+					    			},
+					    			function(err){
+					    				console.log(JSON.stringify(err)); //POST - Fail
+					    			});
+						    		this.modal.close();
+					    		}
+					    	},
+					    	cancel: function(){
 					    		this.modal.close();
-				    		}
-				    	},
-				    	cancel: function(){
-				    		this.modal.close();
-				    	}
-				    }
+					    	}
+					    }
+				    });
 				});
 			}
 		}
 	}])
 
-	.directive('editImport', ['$modal','crudService','dataService', function($modal,crudService,dataService){
+	.directive('editImport', ['$modal','$q','$filter','crudService','dataService', function($modal,$q,$filter,crudService,dataService){
 		return{
 			restrict: 'A',
 			scope: {
@@ -61,13 +71,16 @@
 				items: '=?'
 			},
 			link: function(scope, elem, attrs){
+				var lists = dataService.getLists();
 				elem.on('click', function(){
-					crudService.get(scope.itemId).then(function(item){
+					$q.all([lists, dataService.getForm(scope.itemId)]).then(function(data){
 						if(!scope.items) scope.items = [];
 						scope.form = {
-							data: item.data,
+							data: data[1].data,
 							options: {
-								units: ['Tons','Pounds','Something Else'] //this should be dynamically pulled from DB
+								units: $filter('filter')(data[0].data,{listType: 'unitsOfMeasure'}, true)[0].list,
+								countries: $filter('filter')(data[0].data,{listType: 'country'}, true)[0].list,
+								states: $filter('filter')(data[0].data,{listType: 'countryState'}, true)[0].list
 							},
 							modal: $modal.open({
 					      		templateUrl: 'views/forms/create-import.html',

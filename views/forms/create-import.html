@@ -9,6 +9,12 @@
 	      		<input type="number" class="form-control" placeholder="EIN..." ng-model="form.data.ein" required>
 	    	</div>
 	  	</div>
+	  	<div class="form-group">
+	    	<label class="col-sm-2 control-label">Country</label>
+	    	<div class="col-sm-10">
+	      		<select ng-options="country.value as country.name for country in form.options.countries" class="form-control" placeholder="Country..." ng-model="form.data.country" required></select>
+	    	</div>
+	  	</div>
     	<div class="form-group">
 	    	<label class="col-sm-2 control-label">Import Items</label>
 	    	<div class="col-sm-10">
@@ -27,7 +33,7 @@
 	    					<td><span ng-if="!$first" style="color:red;" title="Remove Item" class="glyphicon glyphicon-remove" ng-click="form.data.importItems.splice($index,1);"></span></td>
 	    					<td><input type="text" class="form-control" placeholder="HS Code..." ng-model="item.hsCode" required></td>
 	    					<td><input type="number" class="form-control" placeholder="Quantity..." ng-model="item.qty" required></td>
-	    					<td><select ng-options="unit as unit for unit in form.options.units" class="form-control" placeholder="Units..." ng-model="item.qtyUnits" required></select></td>
+	    					<td><select ng-options="unit.value as unit.name for unit in form.options.units" class="form-control" placeholder="Units..." ng-model="item.qtyUnits" required></select></td>
 	    					<td><input type="number" class="form-control" placeholder="Value..." ng-model="item.value" required></td>
 	    				</tr>
 	    			</tbody>

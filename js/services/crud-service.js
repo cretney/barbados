@@ -4,11 +4,12 @@
 
 	.factory('crudService', ['$q','$http', function($q,$http) {
 		return {
-			get: function(id){
-				return $http.get("file:///Users/joe/Documents/GitHub/barbados/sample-data/item.json");
-			},
-			post: function(data){
-
+			create: function(data){
+				return $http({
+                    method: "post",
+                    url: "http://52.25.174.100/Forms/TestPostForm",
+                    data: data
+                });
 			}
 		}
 	}])
