@@ -12,7 +12,7 @@
 	.controller('appCtrl', ['$scope', 'dataService',function($scope, dataService){
 		dataService.getForms().then(function(forms){
 			$scope.home = {
-				documents: [forms.data]
+				documents: forms.data
 			};
 		});
 	}])
