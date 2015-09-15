@@ -27,6 +27,7 @@
 				var lists = dataService.getLists();
 				elem.on('click', function(){
 					lists.then(function(data){
+						console.log(JSON.stringify(data.data));
 						if(!scope.items) scope.items = [];
 						scope.form = {
 							data: {
@@ -67,7 +68,7 @@
 		return{
 			restrict: 'A',
 			scope: {
-				itemId: '=editImport',
+				itemId: '@editImport',
 				items: '=?'
 			},
 			link: function(scope, elem, attrs){
