@@ -32,7 +32,7 @@
 						    			<div ng-bind="doc.applicationDate | date:'mediumDate'"></div>
 						    		</ul>
 						    		<div class="actions">
-						    			<button type="button" class="btn btn-warning" edit-import="doc.formInstanceId" items="home.documents">Edit</button>
+						    			<button type="button" class="btn btn-warning" edit-import="{{doc.formInstanceId}}" items="home.documents">Edit</button>
 						    			<button type="button" class="btn btn-danger" delete-doc="doc" items="home.documents">Delete</button>
 						    		</div>
 						    	</div>

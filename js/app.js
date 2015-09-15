@@ -68,7 +68,7 @@
 		return{
 			restrict: 'A',
 			scope: {
-				itemId: '=editImport',
+				itemId: '@editImport',
 				items: '=?'
 			},
 			link: function(scope, elem, attrs){
