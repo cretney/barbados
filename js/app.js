@@ -59,8 +59,8 @@
 				itemId: '@openForm'
 			},
 			link: function(scope, elem, attrs){
-				elem.on('click', function(){
-					$q.all([dataService.getForm(scope.itemId),dataService.getLists(scope.itemId)]).then(function(data){
+				$q.all([dataService.getForm(scope.itemId),dataService.getLists(scope.itemId)]).then(function(data){
+					elem.on('click', function(){
 						scope.item = data[0].data; //set item variable
 						//any List logic based on the current item would go here...
 						var formsMap = $filter('filter')(data[1].data,{listType: 'formsMap'}, true)[0].list; //get form mappings
