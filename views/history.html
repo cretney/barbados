@@ -1,0 +1,31 @@
+<div>
+	<table class="table table-striped table-condensed">
+		<thead>
+			<tr>
+				<td>Action</td>
+				<td>Assigned</td>
+				<td>Date</td>
+				<td>Outcome</td>
+			</tr>
+		</thead>
+		<tbody>
+  		<tr ng-repeat="t in tasks | orderBy:'timestamp':true">
+  			<td>
+  				<div>
+  					<span ng-bind="t.title+' '"></span>
+  				</div>
+  				<div>
+  					<a href="#" ng-if="t.comments" ng-click="t.showComments = !t.showComments">
+	  					<span ng-hide="t.showComments">view comments</span>
+	  					<span ng-show="t.showComments">hide comments</span>
+	  				</a>
+  				</div>
+  				<div ng-show="t.showComments" ng-bind="t.comments"></div>
+  			</td>
+  			<td ng-bind="t.userId"></td>
+  			<td ng-bind="t.timestamp | date:'mediumDate'"></td>
+  			<td ng-bind="t.status"></td>
+  		</tr>
+		</tbody>
+	</table>
+</div>

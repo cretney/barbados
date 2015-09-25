@@ -1,6 +1,6 @@
 ﻿(function(){
 
-	var app = angular.module('app', ['ui.bootstrap','crudService','dataService'])
+	var app = angular.module('app', ['ui.bootstrap','dataService'])
 	
 	.config(['$httpProvider', function ($httpProvider) {
 	    $httpProvider.defaults.headers.common.Accept = "application/json;odata=verbose";
@@ -17,88 +17,89 @@
 		});
 	}])
 
-	.directive('createImport', ['$modal','$filter','crudService','dataService', function($modal,$filter,crudService,dataService){
-		return{
-			restrict: 'A',
-			scope: {
-				items: '=?'
-			},
-			link: function(scope, elem, attrs){
-				var lists = dataService.getLists();
-				elem.on('click', function(){
-					lists.then(function(data){
-						console.log(JSON.stringify(data.data));
-						if(!scope.items) scope.items = [];
-						scope.form = {
-							data: {
-								importItems: [{}]
-							},
-							options: {
-								units: $filter('filter')(data.data,{listType: 'unitsOfMeasure'}, true)[0].list,
-								countries: $filter('filter')(data.data,{listType: 'country'}, true)[0].list,
-								states: $filter('filter')(data.data,{listType: 'countryState'}, true)[0].list
-							},
-							modal: $modal.open({
-					      		templateUrl: 'views/forms/create-import.html',
-					      		scope: scope
-					    	}),
-					    	submit: function(form){
-					    		if(form.$valid && form.$dirty){ //Validate Form
-					    			crudService.create(this.data).then(function(item){ //POST data
-					    				scope.form.data.formInstanceId = 'abc123'+scope.items.length; //remove later when real GUID is returned
-					    				scope.items.unshift(scope.form.data); //POST - Success - later the returned item object will be used to update view
-					    			},
-					    			function(err){
-					    				console.log(JSON.stringify(err)); //POST - Fail
-					    			});
-						    		this.modal.close();
-					    		}
-					    	},
-					    	cancel: function(){
-					    		this.modal.close();
-					    	}
-					    }
-				    });
-				});
+	.directive('a', [function() {
+		return {
+			restrict: 'E',
+			link: function(scope, elem, attrs) {
+				if(attrs.ngClick || attrs.href === '' || attrs.href === '#'){
+					elem.on('click', function(e){
+						e.preventDefault();
+					});
+				}
 			}
-		}
+		};
 	}])
 
-	.directive('editImport', ['$modal','$q','$filter','crudService','dataService', function($modal,$q,$filter,crudService,dataService){
+	.directive('submission', [function() {
+		return {
+			restrict: 'A',
+			scope: {
+				submission: '='
+			},
+			replace: 'true',
+			templateUrl: 'views/submission.html'
+		};
+	}])
+
+	.directive('history', [function() {
+		return {
+			restrict: 'A',
+			scope: {
+				tasks: '=history'
+			},
+			replace: 'true',
+			templateUrl: 'views/history.html'
+		};
+	}])
+
+	.directive('openForm', ['$q','$modal','$filter','dataService', function($q,$modal,$filter,dataService){
 		return{
 			restrict: 'A',
 			scope: {
-				itemId: '@editImport',
-				items: '=?'
+				itemId: '@openForm'
 			},
 			link: function(scope, elem, attrs){
-				var lists = dataService.getLists();
 				elem.on('click', function(){
-					$q.all([lists, dataService.getForm(scope.itemId)]).then(function(data){
-						if(!scope.items) scope.items = [];
+					$q.all([dataService.getForm(scope.itemId),dataService.getLists(scope.itemId)]).then(function(data){
+						scope.item = data[0].data; //set item variable
+						//any List logic based on the current item would go here...
+						var formsMap = $filter('filter')(data[1].data,{listType: 'formsMap'}, true)[0].list; //get form mappings
+						var form = $filter('filter')(formsMap,{id: scope.item.formId}, true)[0]; //select current form mapping
+						var pre = {}; //create empty object for holding form data
+						if(form.data) pre = scope.item[form.data]; //prefill data
 						scope.form = {
-							data: data[1].data,
+							template: 'views/forms/'+form.template,
+							data: pre,
 							options: {
-								units: $filter('filter')(data[0].data,{listType: 'unitsOfMeasure'}, true)[0].list,
-								countries: $filter('filter')(data[0].data,{listType: 'country'}, true)[0].list,
-								states: $filter('filter')(data[0].data,{listType: 'countryState'}, true)[0].list
+								countries: $filter('filter')(data[1].data,{listType: 'country'}, true)[0].list,
+								suppliers: $filter('filter')(data[1].data,{listType: 'suppliers'}, true)[0].list,
+								organisations: $filter('filter')(data[1].data,{listType: 'organisations'}, true)[0].list,
+								approvalCodes: $filter('filter')(data[1].data,{listType: 'approvalCodes'}, true)[0].list
 							},
 							modal: $modal.open({
-					      		templateUrl: 'views/forms/create-import.html',
+					      		templateUrl: form.shell || 'views/forms/form-default.html',
+					      		size: form.size || 'md',
+					      		backdrop: 'static',
 					      		scope: scope
 					    	}),
 					    	submit: function(form){
-					    		if(form.$valid && form.$dirty){
-					    			console.log(JSON.stringify(this.data));
-									scope.items.unshift(this.data);
-						    		this.modal.close();
+					    		if(form.$valid){
+					    			dataService.postForm(this.data, scope.item.blockId).then(
+					    				function(res){ //post success
+						    				scope.form.modal.close();
+						    			},
+						    			function(){ //post fail
+						    				scope.form.postError = 'Oops! Something went wrong. Please try again';
+						    				console.log('Error posting data: '+JSON.stringify(res));
+						    			}
+					    			);
 					    		}
 					    	},
 					    	cancel: function(){
 					    		this.modal.close();
 					    	}
 					    }
-					})
+					});
 				});
 			}
 		}
