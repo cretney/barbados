@@ -42,3 +42,18 @@ form.ng-submitted.ng-invalid .ng-valid{
 .btn-right{
 	float:right;
 }
+.input-form .related-information{
+	padding:10px 20px;border-bottom:1px solid #ddd;margin-bottom:10px;
+}
+.input-form .related-information .related-link{
+	width:100%;text-align:right;
+}
+.input-form .related-information .tab-content{
+	height:200px;overflow-y:auto;
+}
+.input-form.default .post-error{
+	color:red;font-weight:bold;text-align:center;padding:5px;
+}
+.task-description{
+	padding:5px;margin-bottom:5px;font-weight:bold;border-bottom:1px solid #ddd;
+}
