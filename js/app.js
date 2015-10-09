@@ -52,7 +52,7 @@
 		};
 	}])
 
-	.directive('openForm', ['$q','$modal','$filter','dataService', function($q,$modal,$filter,dataService){
+	.directive('openForm', ['$http','$q','$modal','$filter','dataService', function($http,$q,$modal,$filter,dataService){
 		return{
 			restrict: 'A',
 			scope: {
@@ -77,7 +77,12 @@
 								approvalCodes: $filter('filter')(data[1].data,{listType: 'approvalCodes'}, true)[0].list
 							},
 							modal: $modal.open({
-					      		templateUrl: form.shell || 'views/forms/form-default.html',
+					      		template: (function() {
+				                    var templateUrl = form.shell || 'views/forms/form-default.html';
+				                    return $http.get(templateUrl, {cache: true}).then(function (result) {
+				                        return result.data;
+				                    });
+				                })(),
 					      		size: form.size || 'md',
 					      		backdrop: 'static',
 					      		scope: scope
