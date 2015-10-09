@@ -14,6 +14,7 @@
 				});
 				return def.promise;
 				*/
+				
 			},
 			getForms: function(){
 				return $http.get("http://52.25.174.100/Forms/GetFormData");
