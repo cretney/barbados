@@ -3,7 +3,7 @@
     	<label class="col-sm-2 control-label">Approval</label>
     	<div class="col-sm-10">
     		<div ng-repeat="a in form.options.approvalCodes">
-    			<label><input type="radio" ng-model="form.data.approvalCode" value="{{a.id}}"> {{a.name}}</label>
+    			<label><input type="radio" ng-model="form.data.approvalCode" value="{{a.id}}" ng-required="!form.data.approvalCode"> {{a.name}}</label>
     		</div>
     	</div>
   	</div>
