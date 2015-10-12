@@ -76,10 +76,18 @@
 								organisations: $filter('filter')(data[1].data,{listType: 'organisations'}, true)[0].list,
 								approvalCodes: $filter('filter')(data[1].data,{listType: 'approvalCodes'}, true)[0].list
 							},
+							datepicker: {
+								format: 'MM/dd/yyyy'
+							},
 							modal: $modal.open({
 					      		template: (function() {
 				                    var templateUrl = form.shell || 'views/forms/form-default.html';
-				                    return $http.get(templateUrl, {cache: true}).then(function (result) {
+				                    return $http({
+											  method: 'GET',
+											  url: templateUrl,
+											  cache: true,
+											  headers: 'accept: text/html'
+											}).then(function (result) {
 				                        return result.data;
 				                    });
 				                })(),
