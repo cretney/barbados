@@ -3,7 +3,6 @@
 	var app = angular.module('app', ['ui.bootstrap','dataService'])
 	
 	.config(['$httpProvider', function ($httpProvider) {
-	    $httpProvider.defaults.headers.common.Accept = "application/json;odata=verbose";
 		$httpProvider.defaults.headers.post['Content-Type'] = 'application/json;odata=verbose';
 		$httpProvider.defaults.headers.post['X-Requested-With'] = 'XMLHttpRequest';
 		$httpProvider.defaults.headers.post['If-Match'] = "*";
@@ -80,17 +79,7 @@
 								format: 'MM/dd/yyyy'
 							},
 							modal: $modal.open({
-					      		template: (function() {
-				                    var templateUrl = form.shell || 'views/forms/form-default.html';
-				                    return $http({
-											  method: 'GET',
-											  url: templateUrl,
-											  cache: true,
-											  headers: 'accept: text/html'
-											}).then(function (result) {
-				                        return result.data;
-				                    });
-				                })(),
+					      		templateUrl: form.shell || 'views/forms/form-default.html',
 					      		size: form.size || 'md',
 					      		backdrop: 'static',
 					      		scope: scope
