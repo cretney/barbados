@@ -1,4 +1,4 @@
-<form name="newdocForm" class="form-horizontal input-form default" novalidate ng-submit="form.submit(newdocForm)">
+<form name="lpcoForm" class="form-horizontal input-form default" novalidate ng-submit="form.submit(lpcoForm)">
 	<div class="modal-header">
         <h3 class="modal-title" ng-bind="item.title"></h3>
     </div>
@@ -10,31 +10,28 @@
 	    	<div ng-bind="item.description"></div>
 	  	</div>
 	  	<div class="related-information">
-	  		<div class="related-link">
-		  		<a href="#" ng-click="hideRelated = !hideRelated">
-		    		<span ng-show="hideRelated">View Related Information</span>
-		    		<span ng-hide="hideRelated">Hide Related Information</span>
-		    	</a>
-		  	</div>
-		  	<div ng-hide="hideRelated" tabset="">
-		    	<div tab="" heading="Submission" ng-if="item.submission.importerId">
-		    		<div submission="item.submission" class="tab-content submission"></div>
+		  	<div tabset="">
+		    	<div tab="" heading="Submission">
+		    		<div ng-show="form.showSubmission() && form.page == -1">
+		    			<div submission="item.submission" class="tab-content submission"></div>
+		    		    <div class="modal-footer">
+					        <button type="button" class="btn btn-warning" ng-click="form.cancel()">Cancel</button>
+					        <button type="button" class="btn btn-primary" ng-click="form.pageUp()">Continue</button>
+					    </div>
+					</div>
+		    		<div ng-hide="form.showSubmission() && form.page == -1">
+		    			<div ng-include="form.template" onload="form.loaded = true;"></div>
+		    		</div>
 		    	</div>
-		    	<div tab="" heading="History" ng-if="item.tasks">
+		    	<div tab="" heading="History" ng-if="item.tasks.length">
 		    		<div class="tab-content">
-		    			<div ng-if="item.tasks.length" history="item.tasks" class="history"></div>
-		    			<div ng-if="!item.tasks.length">No history exists for this item.</div>
+		    			<div history="item.tasks" class="history"></div>
 		    		</div>
 		    	</div>
 		    </div>
 	  	</div>
-	    <div ng-include="form.template" onload="form.loaded = true;"></div>
     </div>
     <div class="post-error">
-    	<span ng-if="form.postError" ng-bind="form.postError" ></span>
-    </div>
-    <div class="modal-footer" ng-show="form.loaded">
-        <button type="submit" class="btn btn-primary">OK</button>
-        <button type="button" class="btn btn-warning" ng-click="form.cancel()">Cancel</button>
+    	<span ng-if="form.postError" ng-bind="form.postError"></span>
     </div>
 </form>

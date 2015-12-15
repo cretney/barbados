@@ -1,16 +1,46 @@
 <div>
-	<div class="form-group">
-    	<label class="col-sm-2 control-label">Approval</label>
-    	<div class="col-sm-10">
-    		<div ng-repeat="a in form.options.approvalCodes">
-    			<label><input type="radio" ng-model="form.data.approvalCode" value="{{a.id}}" ng-required="!form.data.approvalCode"> {{a.name}}</label>
-    		</div>
+  <div ng-repeat="commodity in item.submission.commodities" ng-if="$index == form.page" ng-class="{'page-submitted': pageSubmitted}">
+    	<div class="form-group">
+      	<label class="col-sm-2 control-label">Approval</label>
+      	<div class="col-sm-10">
+      		<div ng-repeat="a in form.options.approvalCodes">
+      			<label><input type="radio" ng-model="commodity.approvalCode" value="{{a.id}}" ng-required="!commodity.approvalCode"> {{a.name}}</label>
+      		</div>
+      	</div>
     	</div>
-  	</div>
-  	<div class="form-group">
-    	<label class="col-sm-2 control-label">Comments</label>
-    	<div class="col-sm-10">
-      		<textarea class="form-control" ng-model="form.data.comments" rows="6" ng-required="form.data.approvalCode == 3"></textarea>
+    	<div class="form-group">
+      	<label class="col-sm-2 control-label">Comments</label>
+      	<div class="col-sm-10">
+        		<textarea class="form-control" ng-model="commodity.comments" rows="6" ng-required="commodity.approvalCode == 3"></textarea>
+      	</div>
     	</div>
-  	</div>
+    </div>
+  </div>
+  <div ng-show="form.page < item.submission.commodities.length">
+    <div class="modal-footer">
+      <button type="button" class="btn btn-warning" ng-click="form.cancel()">Cancel</button>
+      <button type="button" class="btn btn-default" ng-click="form.pageDn()">Back</button>
+      <button type="button" class="btn btn-primary" ng-click="form.pageUp(lpcoForm);pageSubmitted = true;">Continue</button>
+    </div>
+  </div>
+  <div ng-hide="form.page < item.submission.commodities.length">
+    <div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Final Review</label>
+        <div class="col-sm-10">
+
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Date</label>
+        <div class="col-sm-10">
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-warning" ng-click="form.cancel()">Cancel</button>
+      <button type="button" class="btn btn-default" ng-click="form.pageDn()">Back</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
 </div>

@@ -60,19 +60,32 @@
 			link: function(scope, elem, attrs){
 				$q.all([dataService.getForm(scope.itemId),dataService.getLists(scope.itemId)]).then(function(data){
 					elem.on('click', function(){
-						scope.item = data[0].data; //set item variable
+						scope.item = angular.copy(data[0].data); //set item variable
 						//any List logic based on the current item would go here...
 						var formsMap = $filter('filter')(data[1].data,{listType: 'formsMap'}, true)[0].list; //get form mappings
 						var form = $filter('filter')(formsMap,{id: scope.item.formId}, true)[0]; //select current form mapping
 						var pre = {}; //create empty object for holding form data
 						if(form.data) pre = scope.item[form.data]; //prefill data
 						scope.form = {
+							page: -1,
+							pageUp: function(validation){
+								if(validation){
+									if(validation.$valid) this.page++;
+								}
+								else this.page++;
+							},
+							pageDn: function(){
+								this.page--;
+							},
 							template: 'views/forms/'+form.template,
 							data: pre,
+							showSubmission: function(){
+								return scope.item.status != 'Draft';
+							},
 							options: {
 								countries: $filter('filter')(data[1].data,{listType: 'country'}, true)[0].list,
 								suppliers: $filter('filter')(data[1].data,{listType: 'suppliers'}, true)[0].list,
-								organisations: $filter('filter')(data[1].data,{listType: 'organisations'}, true)[0].list,
+								companies: $filter('filter')(data[1].data,{listType: 'companies'}, true)[0].list,
 								approvalCodes: $filter('filter')(data[1].data,{listType: 'approvalCodes'}, true)[0].list
 							},
 							datepicker: {

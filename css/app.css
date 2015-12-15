@@ -27,10 +27,13 @@
 .panel-tools{
 	float:right;
 }
-form.ng-submitted .ng-invalid{
+form.ng-submitted .ng-invalid, form .page-submitted .ng-invalid{
 	border: 1px solid red;
 }
-form.ng-submitted.ng-invalid .ng-valid{
+form .page-submitted input[type=radio].ng-invalid{
+	outline: 1px solid red
+}
+form.ng-submitted.ng-invalid .ng-valid, form .page-submitted .ng-valid{
 	border:1px solid lime;
 }
 .document .actions{
@@ -48,12 +51,12 @@ form.ng-submitted.ng-invalid .ng-valid{
 .input-form .related-information .related-link{
 	width:100%;text-align:right;
 }
-.input-form .related-information .tab-content{
-	height:200px;overflow-y:auto;
-}
 .input-form.default .post-error{
 	color:red;font-weight:bold;text-align:center;padding:5px;
 }
 .task-description{
 	padding:5px;margin-bottom:5px;font-weight:bold;border-bottom:1px solid #ddd;
+}
+.modal-footer .btn-warning{
+	float:left;
 }
