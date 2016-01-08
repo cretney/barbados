@@ -60,3 +60,12 @@ form.ng-submitted.ng-invalid .ng-valid, form .page-submitted .ng-valid{
 .modal-footer .btn-warning{
 	float:left;
 }
+.hs-code{
+	padding:5px;margin-bottom:5px;border-bottom:1px solid #ddd;font-weight:bold;
+}
+.hs-code .title{
+	font-size:1.2em;margin-bottom:5px;
+}
+.hs-code .subtitle{
+	font-size:1.1em;margin-bottom:5px;
+}

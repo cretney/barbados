@@ -2,9 +2,11 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/app.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/select.min.css">
 		<script type="text/javascript" src="js/angular.min.js"></script>
 		<script type="text/javascript" src="js/ui-bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/select.min.js"></script>
 		<script type="text/javascript" src="js/services/data-service.js"></script>
 	</head>
 	<body>
@@ -32,16 +34,6 @@
 						    			<button type="button" class="btn btn-danger" delete-doc="doc" items="home.documents">Delete</button>
 						    		</div>
 						    	</div>
-						  	</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="panel panel-default actions-panel">
-						  	<div class="panel-heading">
-						    	<h3 class="panel-title">Actions</h3>
-						  	</div>
-						  	<div class="panel-body">
-						    	<button type="button" class="btn btn-success" ng-if="home.documents.length" open-form="{{home.documents[0].blockId}}">New Document</button>
 						  	</div>
 						</div>
 					</div>
