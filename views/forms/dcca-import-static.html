@@ -45,7 +45,9 @@
         <div class="form-group">
           <label class="col-sm-4 control-label">Company</label>
           <div class="col-sm-8" ng-repeat="item in form.options.companies | filter:{id: ila.submission.companyId}:true | limitTo:'1'">
-            <span ng-bind="item.name"></span>
+            <div ng-bind="item.name"></div>
+            <div ng-bind="item.address"></div>
+            <div ng-bind="item.countryId"></div>
           </div>
         </div>
         <div class="form-group">
