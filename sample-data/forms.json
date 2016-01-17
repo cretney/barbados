@@ -1,57 +1,84 @@
 [
     {
-        "title": "Submit Application",
-        "description": "Please fill out the applicaion and submit it",
+        "title": "Import Licence Application",
+        "description": "Please fill out this applicaion and submit it",
         "blockId": 11,
         "formId": 1,
         "status": "Draft",
         "submission": {
-            "userId": 23,
+            "submitter": "Joe Blow",
+            "applicant": "Billy Bob",
             "commodities": [
                 {
                     "hsCode": "123",
-                    "description": "test"
+                    "description": "test",
+                    "units": [
+                        {
+                            "unitType": "Units"
+                        },
+                        {
+                            "unitType": "Kilograms"
+                        }
+                    ]
                 },
                 {
                     "hsCode": "234",
-                    "description": "test"
+                    "description": "test",
+                    "units": [
+                        {
+                            "unitType": "Units"
+                        }
+                    ]
                 }
-            ]
-        },
-        "tasks": []
+            ],
+            "origin": "United States",
+            "countryConsigned": "Canada",
+            "supplier": "ACME Inc."
+        }
     },
     {
         "blockId": 12,
         "formId": 4,
         "status": "Submitted",
         "submission": {
-            "userId": 23,
+            "submitter": "Joe Blow",
+            "applicant": "Billy Bob",
             "commodities": [
                 {
                     "hsCode": "123",
                     "description": "test",
-                    "quantity": 3,
-                    "pricePerUnit": 12,
-                    "cifValue": 34,
-                    "approvalCode": 1,
-                    "comments": "none"
+                    "units": [
+                        {
+                            "unitType": "Units",
+                            "quantity": 3,
+                            "pricePerUnit": 12,
+                            "cifValue": 34
+                        },
+                        {
+                            "unitType": "Kilograms",
+                            "quantity": 4,
+                            "pricePerUnit": 15,
+                            "cifValue": 35
+                        }
+                    ]
                 },
                 {
                     "hsCode": "234",
                     "description": "test",
-                    "quantity": 4,
-                    "pricePerUnit": 15,
-                    "cifValue": 35,
-                    "approvalCode": 1,
-                    "comments": "none"
+                    "units": [
+                        {
+                            "unitType": "Units",
+                            "quantity": 5,
+                            "pricePerUnit": 20,
+                            "cifValue": 36
+                        }
+                    ]
                 }
             ],
-            "companyId": 1,
-            "originId": "CA",
-            "countryConsignedId": "US",
+            "origin": "United States",
+            "countryConsigned": "Canada",
             "expectedArrival": "2015-09-21T04:00:00.000Z",
-            "supplierId": 2,
-            "onBehalf": true
+            "supplier": "ACME Inc."
         }
     }
 ]

@@ -1,0 +1,24 @@
+<form lpco-form="" name="lpcoForm" class="form-horizontal input-form default" novalidate ng-submit="form.submit(lpcoForm)">
+	<div class="modal-header">
+        <h3 class="modal-title" ng-bind="ila.title"></h3>
+    </div>
+    <div class="modal-body" style="text-align:center;" ng-show="!form.loaded || form.saving">
+        <div>
+            <img ng-src="{{form.spinner}}">
+        </div>
+        <div ng-show="form.saving" style="font-size:1.3em;font-weight:bold;padding:10px;">
+            Saving...
+        </div>
+    </div>
+    <div class="modal-body" ng-show="form.loaded && !form.saving">
+    	<div ng-if="ila.description" class="task-description">
+	    	<div ng-bind="ila.description"></div>
+	  	</div>
+	  	<div class="related-information">
+    		<div ng-include="form.template" onload="form.loaded = true;"></div>
+    	</div>
+    </div>
+    <div class="post-error">
+    	<span ng-if="form.postError" ng-bind="form.postError"></span>
+    </div>
+</form>

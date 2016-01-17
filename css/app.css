@@ -69,3 +69,27 @@ form.ng-submitted.ng-invalid .ng-valid, form .page-submitted .ng-valid{
 .hs-code .subtitle{
 	font-size:1.1em;margin-bottom:5px;
 }
+table.table td.commodity-subtable{
+	padding:0px;vertical-align:middle;
+}
+.commodity-subtable table{
+	width:100%;
+}
+.commodity-subtable table td{
+	width:25%;
+}
+.form-group .control-value{
+	padding-top: 7px;
+	margin-bottom: 0;
+	text-align: left;
+}
+.field-tooltip {
+	font-size:0.7em;
+}
+.field-name {
+}
+.currency > input[type="number"]{
+	width:90%;
+	display:inline-block;
+}
+

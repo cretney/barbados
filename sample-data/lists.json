@@ -112,5 +112,70 @@
 				"name": "Additional Information Required"
 			}
 		]
+	},
+	{
+		"listType": "formFields",
+		"list": [
+			{
+				"internal": "submitter",
+				"display": "Submitter",
+				"description": "The person who submitted the application."
+			},
+			{
+				"internal": "applicant",
+				"display": "Applicant",
+				"description": "The person or company applying for the licence."
+			},
+			{
+				"internal": "hsCode",
+				"display": "HS Code",
+				"description": "The unique code for the commodity."
+			},
+			{
+				"internal": "description",
+				"display": "Description",
+				"description": "Description of the item."
+			},
+			{
+				"internal": "unitType",
+				"display": "Unit of Sale",
+				"description": "The unit of sale."
+			},
+			{
+				"internal": "quantity",
+				"display": "Quantity",
+				"description": "The quantity in units of sale."
+			},
+			{
+				"internal": "pricePerUnit",
+				"display": "Price Per Unit",
+				"description": "In Barbados Dollars"
+			},
+			{
+				"internal": "cifValue",
+				"display": "Customs Value",
+				"description": "In Barbados Dollars"
+			},
+			{
+				"internal": "origin",
+				"display": "Country of Origin",
+				"description": "The country from where the goods originated."
+			},
+			{
+				"internal": "countryConsigned",
+				"display": "Country whence Consigned",
+				"description": "The country where the goods were consigned."
+			},
+			{
+				"internal": "supplier",
+				"display": "Supplier",
+				"description": "The name of the Supplier of the goods."
+			},
+			{
+				"internal": "expectedArrival",
+				"display": "Expected Date of Arrival",
+				"description": "The date that the goods will arrive in Barbados."
+			}
+		]
 	}
 ]

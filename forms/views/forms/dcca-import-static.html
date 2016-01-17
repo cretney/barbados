@@ -1,0 +1,90 @@
+<div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label class="col-sm-4 control-label">
+          <span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'origin'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span>
+        </label>
+        <div class="col-sm-8 control-value" ng-bind="ila.submission.origin">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 control-label">
+          <span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'countryConsigned'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span>
+        </label>
+        <div class="col-sm-8 control-value" ng-bind="ila.submission.countryConsigned">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 control-label">
+          <span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'expectedArrival'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span>
+        </label>
+        <div class="col-sm-8 control-value" ng-bind="ila.submission.expectedArrival | date:form.config.date.dateformat">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label class="col-sm-4 control-label">
+        <span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'submitter'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span>
+        </label>
+        <div class="col-sm-8 control-value" ng-bind="ila.submission.submitter">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 control-label">
+          <span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'applicant'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span>
+        </label>
+        <div class="col-sm-8 control-value" ng-bind="ila.submission.applicant">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 control-label">
+          <span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'supplier'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span>
+        </label>
+        <div class="col-sm-8 control-value" ng-bind="ila.submission.supplier">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <table class="table table-striped table-condensed">
+      <thead>
+        <tr>
+          <td><span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'hsCode'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span></td>
+          <td>
+          <span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'description'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span>
+          </td>
+          <td colspan="4" class="commodity-subtable">
+            <table>
+                <tr>
+                  <td><span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'quantity'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span></td>
+                  <td><span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'unitType'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span></td>
+                  <td><span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'pricePerUnit'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span></td>
+                  <td><span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'cifValue'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span></td>
+                </tr>
+            </table>
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="item in form.data.commodities">
+          <td ng-bind="item.hsCode"></td>
+          <td ng-bind="item.description"></td>
+          <td colspan="4" class="commodity-subtable">
+            <table class="table-condensed">
+              <tbody>
+                <tr ng-repeat="unit in item.units">
+                  <td ng-bind="unit.quantity"></td>
+                  <td ng-bind="unit.unitType"></td>
+                  <td ng-bind="unit.pricePerUnit | currency:form.config.currency.symbol.long" class="currency"></td>
+                  <td ng-bind="unit.cifValue | currency:form.config.currency.symbol.long" class="currency"></td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

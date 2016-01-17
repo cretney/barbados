@@ -1,6 +1,6 @@
 ﻿(function(){
 
-	var app = angular.module('app', ['ui.bootstrap','dataService','ui.select'])
+	var app = angular.module('app', ['ngMessages','ui.bootstrap','dataService','ui.select'])
 	
 	.config(['$httpProvider', function ($httpProvider) {
 		$httpProvider.defaults.headers.post['Content-Type'] = 'application/json;odata=verbose';
@@ -36,53 +36,117 @@
 				itemId: '@openForm'
 			},
 			link: function(scope, elem, attrs){
+				scope.ila = {};
+				elem.on('click', function(){
+					scope.form = {
+						spinner: 'img/spinner.gif',
+						modal: $modal.open({
+				      		templateUrl: './forms/views/forms/form-default.html',
+				      		size: 'lg',
+				      		//backdrop: 'static',
+				      		scope: scope
+				    	}),
+				    	submit: function(form){
+				    		if(form.$valid){
+				    			scope.form.saving = true;
+				    			dataService.postForm(this.data, scope.ila.blockId).then(
+				    				function(res){ //post success
+					    				scope.form.modal.close();
+					    			},
+					    			function(){ //post fail
+					    				scope.form.postError = 'Oops! Something went wrong. Please try again';
+					    				scope.form.saving = false;
+					    				console.log('Error posting data: '+JSON.stringify(res));
+					    			}
+				    			);
+				    		}
+				    	},
+				    	cancel: function(){
+				    		this.modal.close();
+				    	}
+				    }
+				});
+			}
+		}
+	}])
+
+	.directive('embedForm', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			scope: {
+				itemId: '@embedForm'
+			},
+			templateUrl: './forms/views/forms/form-default.html',
+			link: function(scope, elem, attrs){
+				scope.ila = {};
+				scope.form = {
+					spinner: 'img/spinner.gif',
+					submit: function(form){
+			    		if(form.$valid){
+			    			scope.form.saving = true;
+			    			dataService.postForm(this.data, scope.ila.blockId).then(
+			    				function(res){ //post success
+				    				//something on success
+				    			},
+				    			function(){ //post fail
+				    				scope.form.postError = 'Oops! Something went wrong. Please try again';
+				    				scope.form.saving = false;
+				    				console.log('Error posting data: '+JSON.stringify(res));
+				    			}
+			    			);
+			    		}
+			    	},
+			    	cancel: function(){
+			    		//do something
+			    	}
+				}
+			}
+
+		}
+	}])
+
+	.directive('lpcoForm', ['$http','$q','$filter','dataService', function($http,$q,$filter,dataService){
+		return{
+			restrict: 'A',
+			link: function(scope, elem, attrs){
 				$q.all([dataService.getForm(scope.itemId),dataService.getLists(scope.itemId)]).then(function(data){
-					elem.on('click', function(){
-						scope.ila = angular.copy(data[0].data); //set item variable
-						//any List logic based on the current item would go here...
-						var formsMap = $filter('filter')(data[1].data,{listType: 'formsMap'}, true)[0].list; //get form mappings
-						var form = $filter('filter')(formsMap,{id: scope.ila.formId}, true)[0]; //select current form mapping
-						scope.form = {
-							template: 'views/forms/'+form.template,
-							data: {
-								commodities: angular.copy(scope.ila.submission.commodities) || []
+					scope.ila = angular.copy(data[0].data); //set item variable
+					//any List logic based on the current item would go here...
+					var formsMap = $filter('filter')(data[1].data,{listType: 'formsMap'}, true)[0].list; //get form mappings
+					var form = $filter('filter')(formsMap,{id: scope.ila.formId}, true)[0]; //select current form mapping
+					angular.extend(scope.form, {
+						template: 'forms/views/forms/'+form.template,
+						config:{
+							currency:{
+								symbol: {
+									long: 'BBD $',
+									short: '$'
+								},
+								min: 0,
+								pattern: new RegExp("(?=.)^\\$?(([1-9][0-9]{0,2}(,[0-9]{3})*)|[0-9]+)?(\\.[0-9]{1,2})?$") //regex matching currency
 							},
-							showSubmission: function(){
-								return scope.ila.status == 'Submitted';
+							quantity:{
+								min: 0
 							},
-							options: {
-								countries: $filter('filter')(data[1].data,{listType: 'country'}, true)[0].list,
-								suppliers: $filter('filter')(data[1].data,{listType: 'suppliers'}, true)[0].list,
-								companies: $filter('filter')(data[1].data,{listType: 'companies'}, true)[0].list,
-								approvalCodes: $filter('filter')(data[1].data,{listType: 'approvalCodes'}, true)[0].list
-							},
-							datepicker: {
-								format: 'MM/dd/yyyy'
-							},
-							modal: $modal.open({
-					      		templateUrl: form.shell || 'views/forms/form-default.html',
-					      		size: form.size || 'md',
-					      		//backdrop: 'static',
-					      		scope: scope
-					    	}),
-					    	submit: function(form){
-					    		if(form.$valid){
-					    			dataService.postForm(this.data, scope.ila.blockId).then(
-					    				function(res){ //post success
-						    				scope.form.modal.close();
-						    			},
-						    			function(){ //post fail
-						    				scope.form.postError = 'Oops! Something went wrong. Please try again';
-						    				console.log('Error posting data: '+JSON.stringify(res));
-						    			}
-					    			);
-					    		}
-					    	},
-					    	cancel: function(){
-					    		this.modal.close();
-					    	}
-					    }
-					});
+							date: {
+								dateformat: 'MM/dd/yyyy'
+							}
+						},
+						data: {
+							commodities: angular.copy(scope.ila.submission.commodities) || []
+						},
+						showSubmission: function(){
+							return scope.ila.status == 'Submitted';
+						},
+						options: {
+							countries: $filter('filter')(data[1].data,{listType: 'country'}, true)[0].list,
+							suppliers: $filter('filter')(data[1].data,{listType: 'suppliers'}, true)[0].list,
+							companies: $filter('filter')(data[1].data,{listType: 'companies'}, true)[0].list,
+							approvalCodes: $filter('filter')(data[1].data,{listType: 'approvalCodes'}, true)[0].list,
+							formFields: $filter('filter')(data[1].data,{listType: 'formFields'}, true)[0].list
+						}
+				    });
 				});
 			}
 		}

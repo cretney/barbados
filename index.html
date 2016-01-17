@@ -4,6 +4,7 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/select.min.css">
 		<script type="text/javascript" src="js/angular.min.js"></script>
+		<script type="text/javascript" src="js/angular-messages.min.js"></script>
 		<script type="text/javascript" src="js/ui-bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
 		<script type="text/javascript" src="js/select.min.js"></script>
@@ -13,7 +14,7 @@
 		<div ng-app="app" class="app">
 			<div ng-controller="appCtrl">
 				<div class="row">
-					<div class="col-md-8">
+					<div class="col-md-12">
 						<div class="panel panel-default documents-panel">
 						  	<div class="panel-heading">
 						  		<div>
@@ -37,6 +38,9 @@
 						  	</div>
 						</div>
 					</div>
+				</div>
+				<div class="row">
+					<div ng-if="home.documents.length" embed-form="{{home.documents[1].blockId}}"></div>
 				</div>
 			</div>
 		</div>
