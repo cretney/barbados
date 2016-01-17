@@ -76,10 +76,10 @@
             <table class="table-condensed">
               <tbody>
                 <tr ng-repeat="unit in item.units">
-                  <td><input name="quantity" type="number" class="form-control" ng-model="unit.quantity" min="{{form.config.quantity.min}}" required></td>
+                  <td><input name="{{'quantity_'+item.hsCode+'_'+$index}}" type="number" class="form-control" ng-model="unit.quantity" min="{{form.config.quantity.min}}" required></td>
                   <td ng-bind="unit.unitType"></td>
-                  <td class="currency"><span ng-bind="form.config.currency.symbol.short"></span><input name="pricePerUnit" type="number" class="form-control" ng-model="unit.pricePerUnit" min="{{form.config.currency.min}}" ng-pattern="form.config.currency.pattern" required></td>
-                  <td class="currency"><span ng-bind="form.config.currency.symbol.short"></span><input name="cifValue" type="number" class="form-control" ng-model="unit.cifValue" min="{{form.config.currency.min}}" ng-pattern="form.config.currency.pattern" required></td>
+                  <td class="currency"><span ng-bind="form.config.currency.symbol.short"></span><input name="{{'pricePerUnit_'+item.hsCode+'_'+$index}}" type="number" class="form-control" ng-model="unit.pricePerUnit" min="{{form.config.currency.min}}" ng-pattern="form.config.currency.pattern" required></td>
+                  <td class="currency"><span ng-bind="form.config.currency.symbol.short"></span><input name="{{'cifValue_'+item.hsCode+'_'+$index}}" type="number" class="form-control" ng-model="unit.cifValue" min="{{form.config.currency.min}}" ng-pattern="form.config.currency.pattern" required></td>
                 </tr>
               </tbody>
             </table>
@@ -96,19 +96,23 @@
     <div ng-messages="lpcoForm.expectedArrival.$error">
         <div class="alert alert-danger" ng-message="required">Please enter the date the goods are expected to arrive in Barbados.</div>
     </div>
-    <div ng-messages="lpcoForm.quantity.$error">
-        <div class="alert alert-danger" ng-message="min">The minimum quantity is {{form.config.quantity.min}}.</div>
-        <div class="alert alert-danger" ng-message="required">Please enter the Quantity in units of sale.</div>
-    </div>
-    <div ng-messages="lpcoForm.pricePerUnit.$error">
-        <div class="alert alert-danger" ng-message="min">The minimum Price Per Unit is {{form.config.currency.min}}.</div>
-        <div class="alert alert-danger" ng-message="pattern">Price Per Unit must be a valid dollar amount.</div>
-        <div class="alert alert-danger" ng-message="required">Please enter the Price Per Unit.</div>
-    </div>
-    <div ng-messages="lpcoForm.cifValue.$error">
-        <div class="alert alert-danger" ng-message="min">The minimum Customs Value is {{form.config.currency.min}}.</div>
-        <div class="alert alert-danger" ng-message="pattern">Customs Value must be a valid dollar amount.</div>
-        <div class="alert alert-danger" ng-message="required">Please enter the Customs Value.</div>
+    <div ng-repeat="item in form.data.commodities">
+      <div ng-repeat="unit in item.units">
+        <div ng-messages="lpcoForm['quantity_'+item.hsCode+'_'+$index].$error">
+            <div class="alert alert-danger" ng-message="min">Commodity {{item.hsCode}}: The minimum quantity is {{form.config.quantity.min}}.</div>
+            <div class="alert alert-danger" ng-message="required">Commodity {{item.hsCode}}: Please enter the Quantity in units of sale.</div>
+        </div>
+        <div ng-messages="lpcoForm['pricePerUnit_'+item.hsCode+'_'+$index].$error">
+            <div class="alert alert-danger" ng-message="min">Commodity {{item.hsCode}}: The minimum Price Per Unit is {{form.config.currency.min}}.</div>
+            <div class="alert alert-danger" ng-message="pattern">Commodity {{item.hsCode}}: Price Per Unit must be a valid dollar amount.</div>
+            <div class="alert alert-danger" ng-message="required">Commodity {{item.hsCode}}: Please enter the Price Per Unit.</div>
+        </div>
+        <div ng-messages="lpcoForm['cifValue_'+item.hsCode+'_'+$index].$error">
+            <div class="alert alert-danger" ng-message="min">Commodity {{item.hsCode}}: The minimum Customs Value is {{form.config.currency.min}}.</div>
+            <div class="alert alert-danger" ng-message="pattern">Commodity {{item.hsCode}}: Customs Value must be a valid dollar amount.</div>
+            <div class="alert alert-danger" ng-message="required">Commodity {{item.hsCode}}: Please enter the Customs Value.</div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
