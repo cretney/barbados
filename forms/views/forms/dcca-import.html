@@ -20,7 +20,7 @@
           <span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'expectedArrival'}:true | limitTo:'1'"><span ng-bind="field.display"></span> <span class="field-tooltip glyphicon glyphicon-info-sign" tooltip="{{field.description}}"></span></span>
         </label>
         <div class="col-sm-8 control-value">
-          <input name="expectedArrival" type="text" class="form-control" datepicker-popup="{{form.config.date.dateformat}}" ng-model="form.data.expectedArrival" ng-click="picker.open = !picker.open" is-open="picker.open" close-text="Close" required>
+          <input name="expectedArrival" type="date" class="form-control" datepicker-popup ng-model="form.data.expectedArrival" ng-click="picker.open = !picker.open" is-open="picker.open" close-text="Close" required>
         </div>
       </div>
     </div>
@@ -58,6 +58,7 @@
   <div ng-if="lpcoForm.$submitted">
     <div ng-messages="lpcoForm.expectedArrival.$error">
         <div class="alert alert-danger" ng-message="required">Please enter the date the goods are expected to arrive in Barbados.</div>
+        <div class="alert alert-danger" ng-message="date">Please enter a valid arrival date in the format: {{form.config.date.datepickerformat}}</div>
     </div>
     <div validate-commodities=""></div>
   </div>
