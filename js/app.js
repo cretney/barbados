@@ -154,7 +154,8 @@
 								min: 0
 							},
 							date: {
-								dateformat: 'MM/dd/yyyy'
+								dateformat: 'MM/dd/yyyy',
+								datepickerformat: 'yyyy-mm-dd'
 							}
 						},
 						data: {
