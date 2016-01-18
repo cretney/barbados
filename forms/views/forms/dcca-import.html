@@ -49,44 +49,7 @@
     </div>
   </div>
   <div class="row">
-    <table class="table table-striped table-condensed">
-      <thead>
-        <tr>
-          <td><span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'hsCode'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span></td>
-          <td>
-          <span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'description'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span>
-          </td>
-          <td colspan="4" class="commodity-subtable">
-            <table>
-                <tr>
-                  <td><span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'quantity'}:true | limitTo:'1'"><span ng-bind="field.display"></span> <span class="field-tooltip glyphicon glyphicon-info-sign" tooltip="{{field.description}}"></span></span></td>
-                  <td><span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'unitType'}:true | limitTo:'1'"><span ng-bind="field.display"></span> <span class="field-tooltip glyphicon glyphicon-info-sign" tooltip="{{field.description}}"></span></span></td>
-                  <td><span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'pricePerUnit'}:true | limitTo:'1'"><span ng-bind="field.display"></span> <span class="field-tooltip glyphicon glyphicon-info-sign" tooltip="{{field.description}}"></span></span></td>
-                  <td><span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'cifValue'}:true | limitTo:'1'"><span ng-bind="field.display"></span> <span class="field-tooltip glyphicon glyphicon-info-sign" tooltip="{{field.description}}"></span></span></td>
-                </tr>
-            </table>
-          </td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr ng-repeat="item in form.data.commodities">
-          <td ng-bind="item.hsCode"></td>
-          <td ng-bind="item.description"></td>
-          <td colspan="4" class="commodity-subtable">
-            <table class="table-condensed">
-              <tbody>
-                <tr ng-repeat="unit in item.units">
-                  <td><input name="{{'quantity_'+item.hsCode+'_'+$index}}" type="number" class="form-control" ng-model="unit.quantity" min="{{form.config.quantity.min}}" required></td>
-                  <td ng-bind="unit.unitType"></td>
-                  <td class="currency"><span ng-bind="form.config.currency.symbol.short"></span><input name="{{'pricePerUnit_'+item.hsCode+'_'+$index}}" type="number" class="form-control" ng-model="unit.pricePerUnit" min="{{form.config.currency.min}}" ng-pattern="form.config.currency.pattern" required></td>
-                  <td class="currency"><span ng-bind="form.config.currency.symbol.short"></span><input name="{{'cifValue_'+item.hsCode+'_'+$index}}" type="number" class="form-control" ng-model="unit.cifValue" min="{{form.config.currency.min}}" ng-pattern="form.config.currency.pattern" required></td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div edit-commodities=""></div>
   </div>
   <div class="modal-footer">
       <button type="button" class="btn btn-warning" ng-click="form.cancel()">Cancel</button>
@@ -96,23 +59,6 @@
     <div ng-messages="lpcoForm.expectedArrival.$error">
         <div class="alert alert-danger" ng-message="required">Please enter the date the goods are expected to arrive in Barbados.</div>
     </div>
-    <div ng-repeat="item in form.data.commodities">
-      <div ng-repeat="unit in item.units">
-        <div ng-messages="lpcoForm['quantity_'+item.hsCode+'_'+$index].$error">
-            <div class="alert alert-danger" ng-message="min">Commodity {{item.hsCode}}: The minimum quantity is {{form.config.quantity.min}}.</div>
-            <div class="alert alert-danger" ng-message="required">Commodity {{item.hsCode}}: Please enter the Quantity in units of sale.</div>
-        </div>
-        <div ng-messages="lpcoForm['pricePerUnit_'+item.hsCode+'_'+$index].$error">
-            <div class="alert alert-danger" ng-message="min">Commodity {{item.hsCode}}: The minimum Price Per Unit is {{form.config.currency.min}}.</div>
-            <div class="alert alert-danger" ng-message="pattern">Commodity {{item.hsCode}}: Price Per Unit must be a valid dollar amount.</div>
-            <div class="alert alert-danger" ng-message="required">Commodity {{item.hsCode}}: Please enter the Price Per Unit.</div>
-        </div>
-        <div ng-messages="lpcoForm['cifValue_'+item.hsCode+'_'+$index].$error">
-            <div class="alert alert-danger" ng-message="min">Commodity {{item.hsCode}}: The minimum Customs Value is {{form.config.currency.min}}.</div>
-            <div class="alert alert-danger" ng-message="pattern">Commodity {{item.hsCode}}: Customs Value must be a valid dollar amount.</div>
-            <div class="alert alert-danger" ng-message="required">Commodity {{item.hsCode}}: Please enter the Customs Value.</div>
-        </div>
-      </div>
-    </div>
+    <div validate-commodities=""></div>
   </div>
 </div>

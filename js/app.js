@@ -70,6 +70,30 @@
 		}
 	}])
 
+	.directive('viewCommodities', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: './forms/views/partials/view-commodities.html'
+		}
+	}])
+
+	.directive('editCommodities', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: './forms/views/partials/edit-commodities.html'
+		}
+	}])
+
+	.directive('validateCommodities', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: './forms/views/partials/validate-commodities.html'
+		}
+	}])
+
 	.directive('embedForm', [function(){
 		return{
 			restrict: 'A',

@@ -1,0 +1,18 @@
+<div ng-repeat="item in form.data.commodities">
+  <div ng-repeat="unit in item.units">
+    <div ng-messages="lpcoForm['quantity_'+item.hsCode+'_'+$index].$error">
+        <div class="alert alert-danger" ng-message="min">Commodity {{item.hsCode}}: The minimum quantity is {{form.config.quantity.min}}.</div>
+        <div class="alert alert-danger" ng-message="required">Commodity {{item.hsCode}}: Please enter the Quantity in units of sale.</div>
+    </div>
+    <div ng-messages="lpcoForm['pricePerUnit_'+item.hsCode+'_'+$index].$error">
+        <div class="alert alert-danger" ng-message="min">Commodity {{item.hsCode}}: The minimum Price Per Unit is {{form.config.currency.min}}.</div>
+        <div class="alert alert-danger" ng-message="pattern">Commodity {{item.hsCode}}: Price Per Unit must be a valid dollar amount.</div>
+        <div class="alert alert-danger" ng-message="required">Commodity {{item.hsCode}}: Please enter the Price Per Unit.</div>
+    </div>
+    <div ng-messages="lpcoForm['cifValue_'+item.hsCode+'_'+$index].$error">
+        <div class="alert alert-danger" ng-message="min">Commodity {{item.hsCode}}: The minimum Customs Value is {{form.config.currency.min}}.</div>
+        <div class="alert alert-danger" ng-message="pattern">Commodity {{item.hsCode}}: Customs Value must be a valid dollar amount.</div>
+        <div class="alert alert-danger" ng-message="required">Commodity {{item.hsCode}}: Please enter the Customs Value.</div>
+    </div>
+  </div>
+</div>
