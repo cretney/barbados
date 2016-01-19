@@ -83,15 +83,7 @@
 				"size": "lg"
 			},
 			{
-				"id": 2,
-				"template": "approval-default.html"
-			},
-			{
-				"id": 3,
-				"template": "confirmation-default.html"
-			},
-			{
-				"id": 4,
+				"id": 16,
 				"template": "dcca-import-static.html"
 			}
 		]
@@ -117,64 +109,64 @@
 		"listType": "formFields",
 		"list": [
 			{
-				"internal": "submitter",
+				"field": "submitter",
 				"display": "Submitter",
-				"description": "The person who submitted the application."
+				"definition": "The person who submitted the application."
 			},
 			{
-				"internal": "applicant",
+				"field": "applicant",
 				"display": "Applicant",
-				"description": "The person or company applying for the licence."
+				"definition": "The person or company applying for the licence."
 			},
 			{
-				"internal": "hsCode",
+				"field": "hsCode",
 				"display": "HS Code",
-				"description": "The unique code for the commodity."
+				"definition": "The unique code for the commodity."
 			},
 			{
-				"internal": "description",
+				"field": "description",
 				"display": "Description",
-				"description": "Description of the item."
+				"definition": "Description of the item."
 			},
 			{
-				"internal": "unitType",
+				"field": "unitType",
 				"display": "Unit of Sale",
-				"description": "The unit of sale."
+				"definition": "The unit of sale."
 			},
 			{
-				"internal": "quantity",
+				"field": "quantity",
 				"display": "Quantity",
-				"description": "The quantity in units of sale."
+				"definition": "The quantity in units of sale."
 			},
 			{
-				"internal": "pricePerUnit",
+				"field": "pricePerUnit",
 				"display": "Price Per Unit",
-				"description": "In Barbados Dollars"
+				"definition": "In Barbados Dollars"
 			},
 			{
-				"internal": "cifValue",
+				"field": "cifValue",
 				"display": "Customs Value",
-				"description": "In Barbados Dollars"
+				"definition": "In Barbados Dollars"
 			},
 			{
-				"internal": "origin",
+				"field": "origin",
 				"display": "Country of Origin",
-				"description": "The country from where the goods originated."
+				"definition": "The country from where the goods originated."
 			},
 			{
-				"internal": "countryConsigned",
+				"field": "countryConsigned",
 				"display": "Country whence Consigned",
-				"description": "The country where the goods were consigned."
+				"definition": "The country where the goods were consigned."
 			},
 			{
-				"internal": "supplier",
+				"field": "supplier",
 				"display": "Supplier",
-				"description": "The name of the Supplier of the goods."
+				"definition": "The name of the Supplier of the goods."
 			},
 			{
-				"internal": "expectedArrival",
+				"field": "expectedArrival",
 				"display": "Expected Date of Arrival",
-				"description": "The date that the goods will arrive in Barbados."
+				"definition": "The date that the goods will arrive in Barbados."
 			}
 		]
 	}

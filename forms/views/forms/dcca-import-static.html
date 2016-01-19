@@ -3,21 +3,21 @@
     <div class="col-sm-6">
       <div class="form-group">
         <label class="col-sm-4 control-label">
-          <span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'origin'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span>
+          <span class="field-name" ng-repeat="field in form.options.formFields | filter:{field: 'origin'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span>
         </label>
         <div class="col-sm-8 control-value" ng-bind="ila.submission.origin">
         </div>
       </div>
       <div class="form-group">
         <label class="col-sm-4 control-label">
-          <span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'countryConsigned'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span>
+          <span class="field-name" ng-repeat="field in form.options.formFields | filter:{field: 'countryConsigned'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span>
         </label>
         <div class="col-sm-8 control-value" ng-bind="ila.submission.countryConsigned">
         </div>
       </div>
       <div class="form-group">
         <label class="col-sm-4 control-label">
-          <span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'expectedArrival'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span>
+          <span class="field-name" ng-repeat="field in form.options.formFields | filter:{field: 'expectedArrival'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span>
         </label>
         <div class="col-sm-8 control-value" ng-bind="ila.submission.expectedArrival | date:form.config.date.dateformat">
         </div>
@@ -26,21 +26,21 @@
     <div class="col-sm-6">
       <div class="form-group">
         <label class="col-sm-4 control-label">
-        <span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'submitter'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span>
+        <span class="field-name" ng-repeat="field in form.options.formFields | filter:{field: 'submitter'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span>
         </label>
         <div class="col-sm-8 control-value" ng-bind="ila.submission.submitter">
         </div>
       </div>
       <div class="form-group">
         <label class="col-sm-4 control-label">
-          <span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'applicant'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span>
+          <span class="field-name" ng-repeat="field in form.options.formFields | filter:{field: 'applicant'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span>
         </label>
         <div class="col-sm-8 control-value" ng-bind="ila.submission.applicant">
         </div>
       </div>
       <div class="form-group">
         <label class="col-sm-4 control-label">
-          <span class="field-name" ng-repeat="field in form.options.formFields | filter:{internal: 'supplier'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span>
+          <span class="field-name" ng-repeat="field in form.options.formFields | filter:{field: 'supplier'}:true | limitTo:'1'"><span ng-bind="field.display"></span></span>
         </label>
         <div class="col-sm-8 control-value" ng-bind="ila.submission.supplier">
         </div>
