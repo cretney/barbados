@@ -94,6 +94,23 @@
 		}
 	}])
 
+	.directive('fieldName', ['$filter', function($filter){
+		return{
+			restrict: 'A',
+			replace: true,
+			scope: {
+				id: '@fieldName',
+				fields: '=formFields',
+				tt: '@fieldTooltip'
+			},
+			templateUrl: './forms/views/partials/field-name.html',
+			link: function(scope, elem, attrs){
+				scope.field = $filter('filter')(scope.fields, {id: parseInt(scope.id)}, true)[0];
+				if(scope.tt && scope.tt.toLowerCase() == 'true') scope.field.tooltip = true;
+			}
+		}
+	}])
+
 	.directive('embedForm', [function(){
 		return{
 			restrict: 'A',

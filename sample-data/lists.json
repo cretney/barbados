@@ -109,61 +109,73 @@
 		"listType": "formFields",
 		"list": [
 			{
+				"id": 1,
 				"field": "submitter",
 				"display": "Submitter",
 				"definition": "The person who submitted the application."
 			},
 			{
+				"id": 2,
 				"field": "applicant",
 				"display": "Applicant",
 				"definition": "The person or company applying for the licence."
 			},
 			{
+				"id": 13,
 				"field": "hsCode",
 				"display": "HS Code",
 				"definition": "The unique code for the commodity."
 			},
 			{
+				"id": 16,
 				"field": "description",
 				"display": "Description",
 				"definition": "Description of the item."
 			},
 			{
+				"id": 18,
 				"field": "unitType",
 				"display": "Unit of Sale",
 				"definition": "The unit of sale."
 			},
 			{
+				"id": 19,
 				"field": "quantity",
 				"display": "Quantity",
 				"definition": "The quantity in units of sale."
 			},
 			{
+				"id": 20,
 				"field": "pricePerUnit",
 				"display": "Price Per Unit",
 				"definition": "In Barbados Dollars"
 			},
 			{
+				"id": 21,
 				"field": "cifValue",
 				"display": "Customs Value",
 				"definition": "In Barbados Dollars"
 			},
 			{
+				"id": 4,
 				"field": "origin",
 				"display": "Country of Origin",
 				"definition": "The country from where the goods originated."
 			},
 			{
+				"id": 5,
 				"field": "countryConsigned",
 				"display": "Country whence Consigned",
 				"definition": "The country where the goods were consigned."
 			},
 			{
+				"id": 8,
 				"field": "supplier",
 				"display": "Supplier",
 				"definition": "The name of the Supplier of the goods."
 			},
 			{
+				"id": 6,
 				"field": "expectedArrival",
 				"display": "Expected Date of Arrival",
 				"definition": "The date that the goods will arrive in Barbados."
