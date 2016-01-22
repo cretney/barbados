@@ -184,8 +184,6 @@
 						options: {
 							countries: $filter('filter')(data[1].data,{listType: 'country'}, true)[0].list,
 							suppliers: $filter('filter')(data[1].data,{listType: 'suppliers'}, true)[0].list,
-							companies: $filter('filter')(data[1].data,{listType: 'companies'}, true)[0].list,
-							approvalCodes: $filter('filter')(data[1].data,{listType: 'approvalCodes'}, true)[0].list,
 							formFields: $filter('filter')(data[1].data,{listType: 'formFields'}, true)[0].list
 						}
 				    });

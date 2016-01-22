@@ -15,7 +15,7 @@
 				return $http.post("http://52.25.174.100/api/Forms/PostForm",{formData: JSON.stringify(data)});
 			},
 			getLists: function(id,types){
-				var t = types || ['country','unitsOfMeasure','suppliers','reason','comment','recommendation','condition','companies','formsMap','approvalCodes'];
+				var t = types || ['country','unitsOfMeasure','suppliers','formsMap','formFields'];
 				return $http.get("http://52.25.174.100/api/Forms/GetLists?blockId="+id+"&listTypes="+t.join(','), {cache: true});
 			}
 		}
