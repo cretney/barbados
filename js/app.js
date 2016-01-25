@@ -29,7 +29,7 @@
 		};
 	}])
 
-	.directive('openForm', ['$http','$q','$modal','$filter','dataService', function($http,$q,$modal,$filter,dataService){
+	.directive('openForm', ['$modal','dataService', function($modal,dataService){
 		return{
 			restrict: 'A',
 			scope: {
@@ -70,48 +70,7 @@
 		}
 	}])
 
-	.directive('viewCommodities', [function(){
-		return{
-			restrict: 'A',
-			replace: true,
-			templateUrl: './forms/views/partials/view-commodities.html'
-		}
-	}])
-
-	.directive('editCommodities', [function(){
-		return{
-			restrict: 'A',
-			replace: true,
-			templateUrl: './forms/views/partials/edit-commodities.html'
-		}
-	}])
-
-	.directive('validateCommodities', [function(){
-		return{
-			restrict: 'A',
-			replace: true,
-			templateUrl: './forms/views/partials/validate-commodities.html'
-		}
-	}])
-
-	.directive('fieldName', ['$filter', function($filter){
-		return{
-			restrict: 'A',
-			replace: true,
-			scope: {
-				id: '@fieldName',
-				fields: '=formFields',
-				tt: '@fieldTooltip'
-			},
-			templateUrl: './forms/views/partials/field-name.html',
-			link: function(scope, elem, attrs){
-				scope.field = $filter('filter')(scope.fields, {id: parseInt(scope.id)}, true)[0];
-				if(scope.tt && scope.tt.toLowerCase() == 'true') scope.field.tooltip = true;
-			}
-		}
-	}])
-
-	.directive('embedForm', [function(){
+	.directive('embedForm', ['dataService', function(dataService){
 		return{
 			restrict: 'A',
 			replace: true,
@@ -188,6 +147,47 @@
 						}
 				    });
 				});
+			}
+		}
+	}])
+
+	.directive('viewCommodities', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: './forms/views/partials/view-commodities.html'
+		}
+	}])
+
+	.directive('editCommodities', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: './forms/views/partials/edit-commodities.html'
+		}
+	}])
+
+	.directive('validateCommodities', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: './forms/views/partials/validate-commodities.html'
+		}
+	}])
+
+	.directive('fieldName', ['$filter', function($filter){
+		return{
+			restrict: 'A',
+			replace: true,
+			scope: {
+				id: '@fieldName',
+				fields: '=formFields',
+				tt: '@fieldTooltip'
+			},
+			templateUrl: './forms/views/partials/field-name.html',
+			link: function(scope, elem, attrs){
+				scope.field = $filter('filter')(scope.fields, {id: parseInt(scope.id)}, true)[0];
+				if(scope.tt && scope.tt.toLowerCase() == 'true') scope.field.tooltip = true;
 			}
 		}
 	}])
