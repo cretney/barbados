@@ -53,10 +53,10 @@
 				    				function(res){ //post success
 					    				scope.form.modal.close();
 					    			},
-					    			function(){ //post fail
+					    			function(err){ //post fail
 					    				scope.form.postError = 'Oops! Something went wrong. Please try again';
 					    				scope.form.saving = false;
-					    				console.log('Error posting data: '+JSON.stringify(res));
+					    				console.log('Error posting data: '+JSON.stringify(err));
 					    			}
 				    			);
 				    		}
@@ -128,18 +128,18 @@
 			    			scope.form.saving = true;
 			    			dataService.postForm(this.data, scope.ila.blockId).then(
 			    				function(res){ //post success
-				    				//something on success
+				    				submitted(); //ATS function
 				    			},
-				    			function(){ //post fail
+				    			function(err){ //post fail
 				    				scope.form.postError = 'Oops! Something went wrong. Please try again';
 				    				scope.form.saving = false;
-				    				console.log('Error posting data: '+JSON.stringify(res));
+				    				console.log('Error posting data: '+JSON.stringify(err));
 				    			}
 			    			);
 			    		}
 			    	},
 			    	cancel: function(){
-			    		//do something
+			    		cancelled(); //ATS function
 			    	}
 				}
 			}
