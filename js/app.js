@@ -14,6 +14,12 @@
 				documents: forms.data
 			};
 		});
+
+    $scope.isGrey = [];
+
+    $scope.toggleClass = function (id) {
+	    $scope.isGrey[id] = $scope.isGrey[id]=='error'?'':'error';
+    };		
 	}])
 
 	.directive('a', [function() {
@@ -155,7 +161,7 @@
 		return{
 			restrict: 'A',
 			replace: true,
-			templateUrl: './forms/views/partials/view-commodities.html'
+			templateUrl: './forms/views/partials/view-commodities2.html'
 		}
 	}])
 
@@ -163,7 +169,7 @@
 		return{
 			restrict: 'A',
 			replace: true,
-			templateUrl: './forms/views/partials/edit-commodities.html'
+			templateUrl: './forms/views/partials/edit-commodities2.html'
 		}
 	}])
 

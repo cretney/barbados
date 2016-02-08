@@ -1,0 +1,41 @@
+<table class="table table-condensed">
+  <thead>
+    <tr>
+      <th>
+        <span field-name="13" form-fields="form.options.formFields"></span>
+      </th>
+      <th>
+        <span field-name="16" form-fields="form.options.formFields"></span>
+      </th>
+      <th>
+        <span field-name="19" form-fields="form.options.formFields"></span>
+      </th>
+      <th>
+        <span field-name="18" form-fields="form.options.formFields"></span>
+      </th>
+      <th>
+        <span field-name="20" form-fields="form.options.formFields"></span>
+      </th>
+      <th>
+        <span field-name="21" form-fields="form.options.formFields"></span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat-start="item in form.data.commodities" ng-class-odd="'odd'" ng-class-even="'even'">
+      <td rowspan="{{item.units.length}}" ng-bind="item.hsCode"></td>
+      <td rowspan="{{item.units.length}}" ng-bind="item.description"></td>
+      <td ng-bind="item.units[0].quantity"></td>
+      <td ng-bind="item.units[0].unitType"></td>
+      <td ng-bind="item.units[0].pricePerUnit | currency:form.config.currency.symbol.long" class="currency"></td>
+      <td ng-bind="item.units[0].cifValue | currency:form.config.currency.symbol.long" class="currency"></td>
+    </tr>
+    <tr ng-repeat-end ng-repeat="unit in item.units.slice(1)"  ng-class-odd="'odd'" ng-class-even="'even'">
+      <td ng-bind="unit.quantity"></td>
+      <td ng-bind="unit.unitType"></td>
+      <td ng-bind="unit.pricePerUnit | currency:form.config.currency.symbol.long" class="currency"></td>
+      <td ng-bind="unit.cifValue | currency:form.config.currency.symbol.long" class="currency"></td>
+    </tr>
+  </tbody>
+</table>
+

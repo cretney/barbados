@@ -1,3 +1,5 @@
+/* @override http://localhost:3000/css/app.css */
+
 .nav, .pagination, .carousel, .panel-title a {
 	cursor: pointer;
 }
@@ -93,3 +95,9 @@ table.table td.commodity-subtable{
 	display:inline-block;
 }
 
+.odd {
+    background-color: #fafafa;
+}
+.even {
+    background-color: #FFF;
+}

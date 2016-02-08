@@ -83,8 +83,12 @@
 				"size": "lg"
 			},
 			{
-				"id": 16,
+				"id": 5,
 				"template": "dcca-import-static.html"
+			},
+			{
+				"id": 12,
+				"template": "plant-import.html"
 			}
 		]
 	},
