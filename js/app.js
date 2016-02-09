@@ -1,6 +1,6 @@
 ﻿(function(){
 
-	var app = angular.module('app', ['ngMessages','ui.bootstrap','dataService','ui.select'])
+	var app = angular.module('app', ['ngMessages','ui.bootstrap','dataService','ui.select', 'ngAnimate', 'ui.router'])
 	
 	.config(['$httpProvider', function ($httpProvider) {
 		$httpProvider.defaults.headers.post['Content-Type'] = 'application/json;odata=verbose';
@@ -21,6 +21,79 @@
 	    $scope.isGrey[id] = $scope.isGrey[id]=='error'?'':'error';
     };		
 	}])
+
+	// .controller('WizardCtrl', ['$scope',
+	// 	function ($scope) {
+	//     $scope.currentStep = 1;
+
+	//     // Initial Value
+	//     $scope.form = {
+
+	//         next: function (form) {
+	//             // $scope.toTheTop();
+
+	//             if (form.$valid) {
+	//             	form.$setPristine();
+	//                 nextStep();
+	//             } else {
+	//                 var field = null, firstError = null;
+	//                 for (field in form) {
+	//                     if (field[0] != '$') {
+	//                         if (firstError === null && !form[field].$valid) {
+	//                             firstError = form[field].$name;
+	//                         }
+
+	//                         if (form[field].$pristine) {
+	//                             form[field].$dirty = true;
+	//                         }
+	//                     }
+	//                 }
+
+	//                 angular.element('.ng-invalid[name=' + firstError + ']').focus();
+	//                 errorMessage();
+	//             }
+	//         },
+	//         prev: function (form) {
+	//             // $scope.toTheTop();
+	//             prevStep();
+	//         },
+	//         goTo: function (form, i) {
+	//             if (parseInt($scope.currentStep) > parseInt(i)) {
+	//                 // $scope.toTheTop();
+	//                 goToStep(i);
+
+	//             } else {
+	//                 if (form.$valid) {
+	//                     // $scope.toTheTop();
+	//                     goToStep(i);
+
+	//                 } else
+	//                     errorMessage();
+	//             }
+	//         },
+	//         submit: function () {
+
+	//         },
+	//         reset: function () {
+
+	//         }
+	//     };
+
+
+	//     var nextStep = function () {
+	//         $scope.currentStep++;
+	//     };
+	//     var prevStep = function () {
+	//         $scope.currentStep--;
+	//     };
+	//     var goToStep = function (i) {
+	//         $scope.currentStep = i;
+	//     };
+	//     var errorMessage = function (i) {
+	//         // toaster.pop('error', 'Error', 'please complete the form in this step before proceeding');
+	//     };
+
+	// }])
 
 	.directive('a', [function() {
 		return {
@@ -44,6 +117,7 @@
 			link: function(scope, elem, attrs){
 				scope.ila = {};
 				elem.on('click', function(){
+					scope.currentStep = 1;
 					scope.form = {
 						spinner: 'img/spinner.gif',
 						modal: $modal.open({
@@ -52,6 +126,58 @@
 				      		//backdrop: 'static',
 				      		scope: scope
 				    	}),
+
+
+			        next: function (form) {
+			            // $scope.toTheTop();
+
+			            if (form.$valid) {
+			            	form.$setPristine();
+			                nextStep();
+			            } else {
+			                var field = null, firstError = null;
+			                for (field in form) {
+			                    if (field[0] != '$') {
+			                        if (firstError === null && !form[field].$valid) {
+			                            firstError = form[field].$name;
+			                        }
+
+			                        if (form[field].$pristine) {
+			                            form[field].$dirty = true;
+			                        }
+			                    }
+			                }
+
+			                angular.element('.ng-invalid[name=' + firstError + ']').focus();
+			                errorMessage();
+			            }
+			        },
+			        prev: function (form) {
+			            // $scope.toTheTop();
+			            prevStep();
+			        },
+			        goTo: function (form, i) {
+			            if (parseInt(scope.currentStep) > parseInt(i)) {
+			                // $scope.toTheTop();
+			                goToStep(i);
+
+			            } else {
+			                if (form.$valid) {
+			                    // $scope.toTheTop();
+			                    goToStep(i);
+
+			                } else
+			                    errorMessage();
+			            }
+			        },
+			        submit: function () {
+
+			        },
+			        reset: function () {
+
+			        },
+
+
 				    	submit: function(form){
 				    		if(form.$valid){
 				    			scope.form.saving = true;
@@ -70,7 +196,22 @@
 				    	cancel: function(){
 				    		this.modal.close();
 				    	}
-				    }
+				  };
+
+			    var nextStep = function () {
+			        scope.currentStep++;
+			    };
+			    var prevStep = function () {
+			        scope.currentStep--;
+			    };
+			    var goToStep = function (i) {
+			        scope.currentStep = i;
+			    };
+			    var errorMessage = function (i) {
+			        // toaster.pop('error', 'Error', 'please complete the form in this step before proceeding');
+			    };
+
+
 				});
 			}
 		}

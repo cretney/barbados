@@ -1,0 +1,12 @@
+<div class="form-group col-sm-6">
+  <label class="col-sm-4 control-label" for="">
+    <span field-name="33" form-fields="form.options.formFields"></span>
+  </label>
+  <div class="col-sm-8" ng-repeat="consignment in consignments">
+    <label class="radio" for="">
+      <input name="{{consignment.name}}" type="radio" value="">&nbsp&nbsp
+      {{consignment.name}}
+    </label>
+  </div>
+</div>
+        
