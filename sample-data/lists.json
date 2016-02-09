@@ -210,7 +210,7 @@
 			},
 			{
 				"id": 50,
-				"field": "containerNumber",
+				"field": "container_number",
 				"display": "Container Number",
 				"definition": ""
 			},
