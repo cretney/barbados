@@ -15,6 +15,26 @@
 				"name": "Albania"
 			}
 		]
+	},	
+	{
+		"listType": "locations",
+		"list": [
+			{
+				"id": 1,
+				"name": "Place 1",
+				"address": "767 Road 1, Barbados"
+			},
+			{
+				"id": 2,
+				"name": "Place 2",
+				"address": "879 Road 35, Barbados"
+			},
+			{
+				"id": 3,
+				"name": "Place 3",
+				"address": "877 1st Av., Barbados"
+			}
+		]
 	},
 	{
 		"listType": "companies",
@@ -89,6 +109,10 @@
 			{
 				"id": 12,
 				"template": "plant-import.html"
+			},
+			{
+				"id": 50,
+				"template": "admin-lpco-dcca.html"
 			}
 		]
 	},
@@ -183,6 +207,18 @@
 				"field": "expectedArrival",
 				"display": "Expected Date of Arrival",
 				"definition": "The date that the goods will arrive in Barbados."
+			},
+			{
+				"id": 50,
+				"field": "containerNumber",
+				"display": "Container Number",
+				"definition": ""
+			},
+			{
+				"id": 51,
+				"field": "inspection_place",
+				"display": "Place of Inspection",
+				"definition": "The place of inspection."
 			}
 		]
 	}

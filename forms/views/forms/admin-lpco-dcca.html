@@ -1,0 +1,54 @@
+<div>
+  <div class="row">
+    <div class="col-sm-offset-3 col-sm-6">
+
+      <div class="form-group">
+        <label class="col-sm-4 control-label">
+          <span field-name="1" form-fields="form.options.formFields"></span>
+        </label>
+        <div class="col-sm-8 control-value" ng-bind="ila.submission.submitter">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 control-label">
+          <span field-name="2" form-fields="form.options.formFields"></span>
+        </label>
+        <div class="col-sm-8 control-value" ng-bind="ila.submission.applicant">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 control-label">
+          <span field-name="50" form-fields="form.options.formFields"></span>
+        </label>
+        <div class="col-sm-8 control-value">
+          <input name="containerNumber" type="text" class="form-control" ng-model="ila.submission.containerNumber" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-4 control-label">
+          <span field-name="51" form-fields="form.options.formFields"></span>
+        </label>
+        <div class="col-sm-8">
+          <ui-select ng-model="form.data.originId" theme="bootstrap">
+            <ui-select-match placeholder="Select location...">{{$select.selected.name}}</ui-select-match>
+              <ui-select-choices repeat="item.id as item in form.options.locations | propsFilter: {name: $select.search}">
+                <div ng-bind="item.name"></div>
+              </ui-select-choices>
+          </ui-select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+      <button type="button" class="btn btn-warning" ng-click="form.cancel()">Cancel</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+  <div ng-if="lpcoForm.$submitted">
+    <div ng-messages="lpcoForm.expectedArrival.$error">
+        <div class="alert alert-danger" ng-message="required">Please enter the date the goods are expected to arrive in Barbados.</div>
+        <div class="alert alert-danger" ng-message="date">Please enter a valid arrival date in the format: {{form.config.date.datepickerformat}}</div>
+    </div>
+    <div validate-commodities=""></div>
+  </div>
+</div>

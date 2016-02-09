@@ -147,6 +147,7 @@
 							return scope.ila.status == 'Submitted';
 						},
 						options: {
+							locations: $filter('filter')(data[1].data,{listType: 'locations'}, true)[0].list,
 							countries: $filter('filter')(data[1].data,{listType: 'country'}, true)[0].list,
 							suppliers: $filter('filter')(data[1].data,{listType: 'suppliers'}, true)[0].list,
 							formFields: $filter('filter')(data[1].data,{listType: 'formFields'}, true)[0].list
