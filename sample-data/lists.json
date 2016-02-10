@@ -210,13 +210,13 @@
 			},
 			{
 				"id": 50,
-				"field": "container_number",
+				"field": "containerNumber",
 				"display": "Container Number",
 				"definition": ""
 			},
 			{
 				"id": 51,
-				"field": "inspection_place",
+				"field": "inspectionPlace",
 				"display": "Place of Inspection",
 				"definition": "The place of inspection."
 			}

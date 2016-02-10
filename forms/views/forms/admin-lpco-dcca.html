@@ -21,7 +21,7 @@
           <span field-name="50" form-fields="form.options.formFields"></span>
         </label>
         <div class="col-sm-8 control-value">
-          <input name="containerNumber" type="text" class="form-control" ng-model="ila.submission.container_number" required>
+          <input name="containerNumber" type="text" class="form-control" ng-model="form.data.containerNumber" ng-init="form.data.containerNumber=ila.submission.containerNumber" required>
         </div>
       </div>
 
@@ -30,7 +30,7 @@
           <span field-name="51" form-fields="form.options.formFields"></span>
         </label>
         <div class="col-sm-8">
-          <ui-select ng-model="form.data.originId" theme="bootstrap">
+          <ui-select ng-model="form.data.inspectionPlace" theme="bootstrap">
             <ui-select-match placeholder="Select location...">{{$select.selected.name}}</ui-select-match>
               <ui-select-choices repeat="item.id as item in form.options.locations | propsFilter: {name: $select.search}">
                 <div ng-bind="item.name"></div>
@@ -38,6 +38,8 @@
           </ui-select>
         </div>
       </div>
+        <pre>{{form | json}}</pre>
+
     </div>
   </div>
   <div class="modal-footer">
