@@ -60,6 +60,8 @@
 			        next: function (form) {
 			            // $scope.toTheTop();
 
+			            console.log(form);
+			            
 			            if (form.$valid) {
 			            	form.$setPristine();
 			                nextStep();
