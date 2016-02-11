@@ -209,6 +209,26 @@
 				"definition": "The date that the goods will arrive in Barbados."
 			},
 			{
+				"id": 33,
+				"field": "consigments",
+				"display": "Number of Consignments",
+				"definition": ""
+			},
+			{
+				"id": 34,
+				"field": "intendedUse",
+				"display": "Intended use",
+				"definition": "",
+				"options": ["Consumption","Processing","Sale Distribution","Sowing/Propagation","Other"]
+			},
+			{
+				"id": 35,
+				"field": "meansConveyance",
+				"display": "Means of Conveyance",
+				"definition": "",
+				"options": ["Sea","Air","Mail","Personal Bagage"]
+			},
+			{
 				"id": 50,
 				"field": "containerNumber",
 				"display": "Container Number",

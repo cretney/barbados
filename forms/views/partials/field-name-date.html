@@ -1,0 +1,11 @@
+<div class="form-group">
+  <label class="col-sm-4 control-label">
+		<span class="field-name">
+			<span ng-bind="field.display"></span>
+			<span ng-if="field.tooltip" class="field-tooltip glyphicon glyphicon-info-sign" tooltip="{{field.definition}}"></span>
+		</span>
+  </label>
+  <div class="col-sm-8 control-value">
+    <input name="{{field.field}}" type="date" class="form-control" ng-model="form.data[field.field]" datepicker-popup ng-click="picker.open = !picker.open" is-open="picker.open" close-text="Close" required>
+  </div>
+</div>

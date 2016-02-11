@@ -245,6 +245,21 @@
 			templateUrl: './forms/views/partials/edit-commodities2.html'
 		}
 	}])
+	.directive('viewCommoditiesNoPrice', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: './forms/views/partials/view-commodities-no-price.html'
+		}
+	}])
+
+	.directive('editCommoditiesNoPrice', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: './forms/views/partials/edit-commodities-no-price.html'
+		}
+	}])
 
 	.directive('validateCommodities', [function(){
 		return{
@@ -261,13 +276,30 @@
 			scope: {
 				id: '@fieldName',
 				fields: '=formFields',
-				tt: '@fieldTooltip'
+				tt: '@fieldTooltip',
+				readonly: '=readonly',
+				datatype: '=datatype',
+				ila: '=ila',
+				form: '=form',
+				options: '=options'
 			},
-			templateUrl: './forms/views/partials/field-name.html',
 			link: function(scope, elem, attrs){
+				scope.fields = scope.fields || scope.form.options.formFields;
 				scope.field = $filter('filter')(scope.fields, {id: parseInt(scope.id)}, true)[0];
+				scope.field.options = scope.field.options || scope.options
 				if(scope.tt && scope.tt.toLowerCase() == 'true') scope.field.tooltip = true;
-			}
+				scope.getContentUrl = function() {
+					if (scope.field.options)
+						return './forms/views/partials/field-name-radio-options.html';
+					else if (scope.field.readonly || scope.readonly)
+						return './forms/views/partials/field-name-readonly.html';
+					else if (scope.field.datatype == "Date" || scope.datatype == "Date")
+						return './forms/views/partials/field-name-date.html';
+					else
+						return './forms/views/partials/field-name.html';          
+        }
+			},
+			template: '<div ng-include="getContentUrl()"></div>'			
 		}
 	}])
 
