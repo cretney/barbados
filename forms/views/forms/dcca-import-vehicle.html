@@ -1,0 +1,45 @@
+<div>
+  <div class="row">
+    <div class="col-sm-6">
+      <span field-name="4" form='form' readonly="true" ila='ila'></span>
+      <span field-name="5" form='form' readonly="true" ila='ila'></span>
+      <span field-name="6" form='form' datatype="'Date'"></span>
+    </div>
+    <div class="col-sm-6">
+      <span field-name="1" form='form' readonly="true" ila='ila'></span>
+      <span field-name="2" form='form' readonly="true" ila='ila'></span>
+      <span field-name="8" form='form' readonly="true" ila='ila'></span>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">  
+      <div edit-commodities=""></div>
+    </div>
+  </div>
+  <div class="row">
+    <hr>
+    <div class="col-sm-6">
+      <span field-name="36" form='form' datatype="'String'"></span>
+      <span field-name="38" form='form' datatype="'String'"></span>
+      <span field-name="40" form='form' datatype="'String'"></span>
+    </div>
+    <div class="col-sm-6">
+      <span field-name="37" form='form' datatype="'String'"></span>
+      <span field-name="39" form='form' datatype="'String'"></span>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="modal-footer">
+      <button type="button" class="btn btn-warning" ng-click="form.cancel()">Cancel</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+  <div ng-if="lpcoForm.$submitted">
+    <div ng-messages="lpcoForm.expectedArrival.$error">
+        <div class="alert alert-danger" ng-message="required">Please enter the date the goods are expected to arrive in Barbados.</div>
+        <div class="alert alert-danger" ng-message="date">Please enter a valid arrival date in the format: {{form.config.date.datepickerformat}}</div>
+    </div>
+    <div validate-commodities=""></div>
+  </div>
+</div>
