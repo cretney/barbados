@@ -1,6 +1,6 @@
 ﻿(function(){
 
-	var app = angular.module('app', ['ngMessages','ui.bootstrap','dataService','ui.select', 'ngAnimate', 'ui.router'])
+	var app = angular.module('app', ['ngMessages','ui.bootstrap','dataService','ui.select'])
 	
 	.config(['$httpProvider', function ($httpProvider) {
 		$httpProvider.defaults.headers.post['Content-Type'] = 'application/json;odata=verbose';
@@ -289,14 +289,19 @@
 				scope.field.options = scope.field.options || scope.options
 				if(scope.tt && scope.tt.toLowerCase() == 'true') scope.field.tooltip = true;
 				scope.getContentUrl = function() {
-					if (scope.field.options)
-						return './forms/views/partials/field-name-radio-options.html';
-					else if (scope.field.readonly || scope.readonly)
+					if (scope.field.readonly || scope.readonly)
 						return './forms/views/partials/field-name-readonly.html';
+					else if (scope.field.options)
+						return './forms/views/partials/field-name-radio-options.html';
+					else if (scope.field.datatype == "String" || scope.datatype == "String") {
+						console.log(scope);
+						return './forms/views/partials/field-name-string.html';
+					}
 					else if (scope.field.datatype == "Date" || scope.datatype == "Date")
 						return './forms/views/partials/field-name-date.html';
-					else
+					else {
 						return './forms/views/partials/field-name.html';          
+					}
         }
 			},
 			template: '<div ng-include="getContentUrl()"></div>'			

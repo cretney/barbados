@@ -107,8 +107,24 @@
 				"template": "dcca-import-static.html"
 			},
 			{
+				"id": 11,
+				"template": "plant-import-issued.html"
+			},
+			{
 				"id": 12,
 				"template": "plant-import.html"
+			},
+			{
+				"id": 21,
+				"template": "dcca-import-vehicle.html"
+			},
+			{
+				"id": 22,
+				"template": "dcca-import-vehicle-notification.html"
+			},
+			{
+				"id": 23,
+				"template": "dcca-import-vehicle-issued.html"
 			},
 			{
 				"id": 50,
@@ -227,6 +243,37 @@
 				"display": "Means of Conveyance",
 				"definition": "",
 				"options": ["Sea","Air","Mail","Personal Bagage"]
+			},
+			{
+				"id": 36,
+				"field": "vehicleMark",
+				"display": "Mark of Vehicle",
+				"definition": "Mark or Brand of vehicle"
+			},
+			{
+				"id": 37,
+				"field": "vehicleModel",
+				"display": "Model of Vehicle",
+				"definition": ""
+			},
+			{
+				"id": 38,
+				"field": "vehicleYear",
+				"display": "Year of Vehicle",
+				"definition": ""
+			},
+			{
+				"id": 39,
+				"field": "vehicleEngine",
+				"display": "Engine capacity",
+				"definition": "Engine capacity of vehicle"
+			},
+			{
+				"id": 40,
+				"field": "odometer",
+				"display": "Odometer (Kms)",
+				"definition": "Odometer reading in kilometers",
+				"datatype": "String"
 			},
 			{
 				"id": 50,
