@@ -6,6 +6,7 @@
 		</span>
   </label>
   <div class="col-sm-5 control-value">
-    <input name="{{field.field}}" type="text" class="form-control" ng-model="form.data[field.field]"  required>
+    <input name="{{field.field}}" type="text" class="form-control" ng-model="form.data[field.field]"  required ng-if="item==undefined">
+    <input name="{{field.field}}" type="text" class="form-control" ng-model="item[field.field]"  required ng-if="item!==undefined">
   </div>
 </div>

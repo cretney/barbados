@@ -1,0 +1,12 @@
+<div class="form-group">
+  <label class="col-sm-2 control-label">
+		<span class="field-name">
+			<span ng-bind="field.display"></span>
+			<span ng-if="field.definition != ''" class="field-tooltip glyphicon glyphicon-info-sign" tooltip="{{field.definition}}"></span>
+		</span>
+  </label>
+  <div class="col-sm-10 control-value">
+    <textarea name="{{field.field}}" type="text" class="form-control" ng-model="form.data[field.field]"  required ng-if="item==undefined">
+    <textarea name="{{field.field}}" type="text" class="form-control" ng-model="item[field.field]"  required ng-if="item!==undefined">
+  </div>
+</div>

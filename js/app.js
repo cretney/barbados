@@ -15,11 +15,6 @@
 			};
 		});
 
-    $scope.isGrey = [];
-
-    $scope.toggleClass = function (id) {
-	    $scope.isGrey[id] = $scope.isGrey[id]=='error'?'':'error';
-    };		
 	}])
 
 
@@ -60,7 +55,6 @@
 			        next: function (form) {
 			            // $scope.toTheTop();
 
-			            console.log(form);
 			            
 			            if (form.$valid) {
 			            	form.$setPristine();
@@ -252,12 +246,49 @@
 			templateUrl: './forms/views/partials/view-commodities-no-price.html'
 		}
 	}])
+	.directive('viewCommoditiesWithFields', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: './forms/views/partials/view-commodities-with-fields.html'
+		}
+	}])
+
+	// .directive('viewCommoditiesWithFields', [function(){
+	// 	return{
+	// 		restrict: 'A',
+	// 		replace: true,
+	// 		templateUrl: './forms/views/partials/view-commodities-with-fields.html'
+	// 	}
+	// }])
 
 	.directive('editCommoditiesNoPrice', [function(){
 		return{
 			restrict: 'A',
 			replace: true,
 			templateUrl: './forms/views/partials/edit-commodities-no-price.html'
+		}
+	}])
+
+	.directive('editCommoditiesWithFields', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: './forms/views/partials/edit-commodities-with-fields.html',
+	    // scope : {
+	    //   item : "="
+	    // },
+			link: function(scope, elem, attrs){
+		    // scope.entries = 5;
+		    // item.entries = [];
+		    scope.updateEntries = function (item) {		    		
+		        item.entries = [];
+		        for (var i = 0; i < item.quantity; i++) {
+		            item.entries.push({});
+		        }
+		    };
+		    // scope.upateEntries();
+			}			
 		}
 	}])
 
@@ -281,7 +312,8 @@
 				datatype: '=datatype',
 				ila: '=ila',
 				form: '=form',
-				options: '=options'
+				options: '=options',
+				item: '=item'
 			},
 			link: function(scope, elem, attrs){
 				scope.fields = scope.fields || scope.form.options.formFields;
@@ -291,12 +323,14 @@
 				scope.getContentUrl = function() {
 					if (scope.field.readonly || scope.readonly)
 						return './forms/views/partials/field-name-readonly.html';
+					else if (scope.field.datatype == "Dropdown" || scope.datatype == "Dropdown")
+						return './forms/views/partials/field-name-select.html';
 					else if (scope.field.options)
 						return './forms/views/partials/field-name-radio-options.html';
-					else if (scope.field.datatype == "String" || scope.datatype == "String") {
-						console.log(scope);
+					else if (scope.field.datatype == "String" || scope.datatype == "String")
 						return './forms/views/partials/field-name-string.html';
-					}
+					else if (scope.field.datatype == "Text" || scope.datatype == "Text")
+						return './forms/views/partials/field-name-text.html';
 					else if (scope.field.datatype == "Date" || scope.datatype == "Date")
 						return './forms/views/partials/field-name-date.html';
 					else {

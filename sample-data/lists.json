@@ -127,6 +127,22 @@
 				"template": "dcca-import-vehicle-issued.html"
 			},
 			{
+				"id": 24,
+				"template": "dcca-import-vehicle-inspection.html"
+			},
+			{
+				"id": 25,
+				"template": "dcca-import-vehicle-taxes.html"
+			},
+			{
+				"id": 26,
+				"template": "dcca-import-defence-fire.html"
+			},
+			{
+				"id": 27,
+				"template": "dcca-import-defense-fire-issued.html"
+			},
+			{
 				"id": 50,
 				"template": "admin-lpco-dcca.html"
 			}
@@ -246,9 +262,9 @@
 			},
 			{
 				"id": 36,
-				"field": "vehicleMark",
-				"display": "Mark of Vehicle",
-				"definition": "Mark or Brand of vehicle"
+				"field": "vehicleBrand",
+				"display": "Brand of Vehicle",
+				"definition": "Make or Brand of vehicle"
 			},
 			{
 				"id": 37,
@@ -274,6 +290,34 @@
 				"display": "Odometer (Kms)",
 				"definition": "Odometer reading in kilometers",
 				"datatype": "String"
+			},
+			{
+				"id": 41,
+				"field": "vehicleCase",
+				"display": "Application for",
+				"definition": "Select type of application",
+				"datatype": "Dropdown"
+			},
+			{
+				"id": 42,
+				"field": "displayDescription",
+				"display": "Display Description",
+				"definition": "Description about the display including dates and location of event",
+				"datatype": "Text"
+			},
+			{
+				"id": 43,
+				"field": "displayRisponsible",
+				"display": "Display Risponsible",
+				"definition": "Who will be in charge of the display",
+				"datatype": "Text"
+			},
+			{
+				"id": 44,
+				"field": "contactInspection",
+				"display": "Contact for Inspection",
+				"definition": "Person name, contact information and locations to inspect",
+				"datatype": "Text"
 			},
 			{
 				"id": 50,

@@ -1,0 +1,45 @@
+<div ng-repeat="item in form.data.commodities">
+
+  <table class="table table-striped table-condensed">
+    <thead>
+      <tr>
+        <td width="10%">
+          <span field-name="13" form-fields="form.options.formFields"></span>
+        </td>
+        <td  width="70%">
+          <span field-name="16" form-fields="form.options.formFields"></span>
+        </td>
+        <td  width="20%">
+          <span field-name="19" form-fields="form.options.formFields"></span>
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{item.hsCode}}</td>
+        <td>{{item.description}}</td>
+        <td><input type="number" ng-model="item.quantity" ng-change="updateEntries(item)" class="form-control" id="input_nr{{item.hsCode}}" min="0" max="5" step="1"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div ng-repeat="entry in item.entries track by $index">
+  <div class="row">
+    <div class="col-sm-12">
+      <h4>#{{$index+1}}</h4>
+      <div class="col-sm-6">
+        <span field-name="36" form='form' datatype="'String'" item="entry"></span>
+        <span field-name="38" form='form' datatype="'String'" item="entry"></span>
+        <span field-name="40" form='form' datatype="'String'" item="entry"></span>
+      </div>
+      <div class="col-sm-6">
+        <span field-name="37" form='form' datatype="'String'" item="entry"></span>
+        <span field-name="39" form='form' datatype="'String'" item="entry"></span>
+      </div>
+    </div>
+  </div>
+    <hr>
+    <br>
+  </div>
+
+</div>

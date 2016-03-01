@@ -1303,30 +1303,14 @@
       {
         "hsCode": "123",
         "description": "test",
-        "units": [
+        "quantity": 2,
+        "entries": [
           {
-            "unitType": "Units",
-            "quantity": 3,
-            "pricePerUnit": 12,
-            "cifValue": 34
-          },
-          {
-            "unitType": "Kilograms",
-            "quantity": 4,
-            "pricePerUnit": 15,
-            "cifValue": 35
-          }
-        ]
-      },
-      {
-        "hsCode": "234",
-        "description": "test",
-        "units": [
-          {
-            "unitType": "Units",
-            "quantity": 5,
-            "pricePerUnit": 20,
-            "cifValue": 36
+            "vehicleBrand": "Toyota",
+            "vehicleModel": "RAV4",
+            "vehicleYear": "2013",
+            "vehicleEngine": "2.5 L 4-cylinder",
+            "odometer": "34,234"
           }
         ]
       }
@@ -1336,12 +1320,7 @@
     "origin": "United States",
     "countryConsigned": "Canada",
     "supplier": "ACME Inc.",
-    "expectedArrival": "2015-09-21T04:00:00.000Z",
-    "vehicleMark": "Toyota",
-    "vehicleModel": "RAV4",
-    "vehicleYear": "2013",
-    "vehicleEngine": "2.5 L 4-cylinder",
-    "odometer": "34,234"
+    "expectedArrival": "2015-09-21T04:00:00.000Z"
   }
 },
 {
@@ -1394,30 +1373,68 @@
       {
         "hsCode": "123",
         "description": "test",
-        "units": [
+        "quantity": 2,
+        "entries": [
           {
-            "unitType": "Units",
-            "quantity": 3,
-            "pricePerUnit": 12,
-            "cifValue": 34
+            "vehicleBrand": "Toyota",
+            "vehicleModel": "RAV4",
+            "vehicleYear": "2013",
+            "vehicleEngine": "2.5 L 4-cylinder",
+            "odometer": "34,234"
           },
           {
-            "unitType": "Kilograms",
-            "quantity": 4,
-            "pricePerUnit": 15,
-            "cifValue": 35
+            "vehicleBrand": "Toyota",
+            "vehicleModel": "RAV4-2",
+            "vehicleYear": "2013",
+            "vehicleEngine": "2.5 L 4-cylinder",
+            "odometer": "34,236"
           }
         ]
       },
       {
         "hsCode": "234",
         "description": "test",
-        "units": [
+        "quantity": 1,
+        "entries": [
           {
-            "unitType": "Units",
-            "quantity": 5,
-            "pricePerUnit": 20,
-            "cifValue": 36
+            "vehicleBrand": "Toyota",
+            "vehicleModel": "RAV4-3",
+            "vehicleYear": "2013",
+            "vehicleEngine": "2.5 L 4-cylinder",
+            "odometer": "34,238"
+          }
+        ]      
+      }
+    ],
+    "submitter": "Joe Blow",
+    "applicant": "Billy Bob",
+    "origin": "United States",
+    "countryConsigned": "Canada",
+    "supplier": "ACME Inc.",
+    "expectedArrival": "2015-09-21T04:00:00.000Z",
+    "vehicleCase": "Antique Vehicles"
+  }
+},
+{
+  "blockId": 1082412,
+  "workflowId": 8,
+  "formId": 24,
+  "title": "Notification for Inspection",
+  "description": "Licencing Authority will proceed with Inspection",
+  "status": "Submitted",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test",
+        "quantity": 2,
+        "entries": [
+          {
+            "vehicleBrand": "Toyota",
+            "vehicleModel": "RAV4",
+            "vehicleYear": "2013",
+            "vehicleEngine": "2.5 L 4-cylinder",
+            "odometer": "34,234"
           }
         ]
       }
@@ -1427,12 +1444,39 @@
     "origin": "United States",
     "countryConsigned": "Canada",
     "supplier": "ACME Inc.",
-    "expectedArrival": "2015-09-21T04:00:00.000Z",
-    "vehicleMark": "Toyota",
-    "vehicleModel": "RAV4",
-    "vehicleYear": "2013",
-    "vehicleEngine": "2.5 L 4-cylinder",
-    "odometer": "34,234"
+    "expectedArrival": "2015-09-21T04:00:00.000Z"
+  }
+},
+{
+  "blockId": 1082513,
+  "workflowId": 8,
+  "formId": 25,
+  "title": "Notification for Payment of Duty at Customs",
+  "description": "The importer should make a payment",
+  "status": "Submitted",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test",
+        "quantity": 2,
+        "entries": [
+          {
+            "vehicleBrand": "Toyota",
+            "vehicleModel": "RAV4",
+            "vehicleYear": "2013",
+            "vehicleEngine": "2.5 L 4-cylinder",
+            "odometer": "34,234"
+          }
+        ]
+      }
+    ],
+    "submitter": "Joe Blow",
+    "applicant": "Billy Bob",
+    "origin": "United States",
+    "countryConsigned": "Canada",
+    "supplier": "ACME Inc.",
+    "expectedArrival": "2015-09-21T04:00:00.000Z"
   }
 },
 {
@@ -1570,6 +1614,95 @@
     "countryConsigned": "Canada",
     "supplier": "ACME Inc.",
     "expectedArrival": "2015-09-21T04:00:00.000Z"
+  }
+},
+{
+  "blockId": 1092601,
+  "workflowId": 9,
+  "formId": 26,
+  "title": "Permit Application for Import and Display of Fireworks",
+  "description": "Please add additional information to the Import Permit Application",
+  "status": "Submitted",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units"
+          },
+          {
+            "unitType": "Kilograms"
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units"
+          }
+        ]
+      }
+    ],
+    "submitter": "Joe Blow",
+    "applicant": "Billy Bob",
+    "origin": "United States",
+    "countryConsigned": "Canada",
+    "supplier": "ACME Inc."
+  }
+},
+{
+  "blockId": 1092707,
+  "workflowId": 9,
+  "formId": 27,
+  "title": "Permit for Import and Display of Fireworks",
+  "status": "Issued",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 3,
+            "pricePerUnit": 12,
+            "cifValue": 34
+          },
+          {
+            "unitType": "Kilograms",
+            "quantity": 4,
+            "pricePerUnit": 15,
+            "cifValue": 35
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 5,
+            "pricePerUnit": 20,
+            "cifValue": 36
+          }
+        ]
+      }
+    ],
+    "submitter": "Joe Blow",
+    "applicant": "Billy Bob",
+    "origin": "United States",
+    "countryConsigned": "Canada",
+    "supplier": "ACME Inc.",
+    "expectedArrival": "2015-09-21T04:00:00.000Z",
+    "displayDescription": "at Sandy Lane Hotel, St. James, on Thursday, December 31“, 2015 to coincide with New Year's Eve Celebrations",
+    "displayRisponsible": "Pyro 2000 from the UK at midnight from a barge",
+    "contactInspection": "Henderson Jeremíe at 2l62-2917"
+
   }
 }
 ]
