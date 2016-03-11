@@ -1,0 +1,24 @@
+<div class="form-group">
+  <label class="col-sm-4 control-label">
+		<span class="field-name">
+			<span ng-bind="field.display"></span>
+			<span ng-if="field.tooltip" class="field-tooltip glyphicon glyphicon-info-sign" tooltip="{{field.definition}}"></span>
+		</span>    
+  </label>
+  <div class="col-sm-8 control-value" ng-bind="ila.submission[field.field]['name']" ng-if="item==undefined">
+  </div>
+  <div class="col-sm-8 control-value" ng-bind="item[field.field]['name']"  ng-if="item!==undefined">
+  </div>
+</div>
+<div class="form-group">
+  <label class="col-sm-4 control-label">
+    <span class="field-name">
+      <span ng-bind="field.display+' Address'"></span>
+      <span ng-if="field.tooltip" class="field-tooltip glyphicon glyphicon-info-sign" tooltip="{{field.definition}}"></span>
+    </span>    
+  </label>
+  <div class="col-sm-8 control-value" ng-bind="ila.submission[field.field]['address']+', '+ila.submission[field.field]['country']" ng-if="item==undefined">
+  </div>
+  <div class="col-sm-8 control-value" ng-bind="item[field.field]['address']+', '+item[field.field]['address']"  ng-if="item!==undefined">
+  </div>
+</div>

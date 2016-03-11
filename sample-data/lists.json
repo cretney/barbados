@@ -115,6 +115,22 @@
 				"template": "plant-import.html"
 			},
 			{
+				"id": 13,
+				"template": "drugserv-import-narcotics.html"
+			},
+			{
+				"id": 15,
+				"template": "drugserv-import-narcotics-issued.html"
+			},
+			{
+				"id": 18,
+				"template": "drugserv-import-authorization-narcotics-issued.html"
+			},
+			{
+				"id": 19,
+				"template": "drugserv-import-certificate-narcotics-issued.html"
+			},
+			{
 				"id": 21,
 				"template": "dcca-import-vehicle.html"
 			},
@@ -141,6 +157,14 @@
 			{
 				"id": 27,
 				"template": "dcca-import-defense-fire-issued.html"
+			},
+			{
+				"id": 28,
+				"template": "dcca-import-defence-instruments.html"
+			},
+			{
+				"id": 29,
+				"template": "dcca-import-defense-instruments-issued.html"
 			},
 			{
 				"id": 50,
@@ -237,7 +261,7 @@
 			{
 				"id": 6,
 				"field": "expectedArrival",
-				"display": "Expected Date of Arrival",
+				"display": "Expected Time of Arrival",
 				"definition": "The date that the goods will arrive in Barbados."
 			},
 			{
@@ -330,6 +354,102 @@
 				"field": "inspectionPlace",
 				"display": "Place of Inspection",
 				"definition": "The place of inspection."
+			},
+			{
+				"id": 59,
+				"field": "useByDescription",
+				"display": "To be used by",
+				"definition": "Description about to whom would you like permition to use by"
+			},
+			{
+				"id": 60,
+				"field": "attachment",
+				"display": "Attachment Letter",
+				"definition": "Please attach any document required"
+			},
+			{
+				"id": 61,
+				"field": "endUsers",
+				"display": "Users",
+				"definition": "List employees or other personel whom will be end users of the equipment"
+			},
+			{
+				"id": 62,
+				"field": "contracts",
+				"display": "Contracts",
+				"definition": "List clients or contacts to whom you provide services"
+			},
+			{
+				"id": 63,
+				"field": "nameAgency",
+				"display": "Name of Agency",
+				"definition": ""
+			},
+			{
+				"id": 64,
+				"field": "registrationAgency",
+				"display": "Registration of Agency",
+				"definition": ""
+			},
+			{
+				"id": 65,
+				"field": "addressAgency",
+				"display": "Address of Agency",
+				"definition": ""
+			},
+			{
+				"id": 66,
+				"field": "numberOfGuards",
+				"display": "Number of Guards",
+				"definition": ""
+			},
+			{
+				"id": 67,
+				"field": "numberOfFirearms",
+				"display": "Number of Firearms",
+				"definition": ""
+			},
+			{
+				"id": 68,
+				"field": "typesFirearms",
+				"display": "types of Firearms",
+				"definition": ""
+			},
+			{
+				"id": 69,
+				"field": "reasonDesiringFirearms",
+				"display": "Reason(s) for desiring to have firearms",
+				"definition": ""
+			},
+			{
+				"id": 70,
+				"field": "previousApplication",
+				"display": "Any previous application(s)",
+				"definition": ""
+			},
+			{
+				"id": 71,
+				"field": "numberFirearmsAlreadyIssued",
+				"display": "Firearms already issued",
+				"definition": "Number of firearms for which licences have already been issued"
+			},
+			{
+				"id": 72,
+				"field": "arrangementsTrainingGuards",
+				"display": "Arrangements Training Guards",
+				"definition": "arrangements made for training of guards who be required to use a firearm"
+			},
+			{
+				"id": 73,
+				"field": "otherTypesInstruments",
+				"display": "Other types of instrument",
+				"definition": "other types of instrument of defence"
+			},
+			{
+				"id": 74,
+				"field": "reasonDesiringOtherInstruments",
+				"display": "Reason of other instrument",
+				"definition": "reason(s) for desiring to have other types of instrument of defence"
 			}
 		]
 	}

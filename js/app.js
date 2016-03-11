@@ -309,6 +309,7 @@
 				fields: '=formFields',
 				tt: '@fieldTooltip',
 				readonly: '=readonly',
+				withAddress: '=withAddress',
 				datatype: '=datatype',
 				ila: '=ila',
 				form: '=form',
@@ -316,12 +317,15 @@
 				item: '=item'
 			},
 			link: function(scope, elem, attrs){
+				console.log(scope);
 				scope.fields = scope.fields || scope.form.options.formFields;
 				scope.field = $filter('filter')(scope.fields, {id: parseInt(scope.id)}, true)[0];
 				scope.field.options = scope.field.options || scope.options
 				if(scope.tt && scope.tt.toLowerCase() == 'true') scope.field.tooltip = true;
 				scope.getContentUrl = function() {
-					if (scope.field.readonly || scope.readonly)
+					if (scope.field.withAddress || scope.withAddress)
+						return './forms/views/partials/field-name-readonly-with-address.html';
+					else if (scope.field.readonly || scope.readonly)
 						return './forms/views/partials/field-name-readonly.html';
 					else if (scope.field.datatype == "Dropdown" || scope.datatype == "Dropdown")
 						return './forms/views/partials/field-name-select.html';

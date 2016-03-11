@@ -1,0 +1,68 @@
+<div>
+  <div class="row">
+    <div class="col-sm-6">
+      <span field-name="4" form='form' readonly="true" ila='ila'></span>
+      <span field-name="5" form='form' readonly="true" ila='ila'></span>
+      <span field-name="6" form='form' datatype="'Date'"></span>
+    </div>
+    <div class="col-sm-6">
+      <span field-name="1" form='form' readonly="true" ila='ila'></span>
+      <span field-name="2" form='form' readonly="true" ila='ila'></span>
+      <span field-name="8" form='form' readonly="true" ila='ila'></span>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-sm-12">  
+      <div edit-commodities-no-price=""></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12 end">  
+      <span field-name="59" form='form' datatype="'Text'"></span>
+      <span field-name="60" form='form' readonly="true" datatype="'String'"></span>
+      <span field-name="61" form='form' datatype="'Text'"></span>
+      <span field-name="62" form='form' datatype="'Text'"></span>
+    </div>
+    <div class="col-sm-6 end">  
+      <span field-name="63" form='form' datatype="'String'"></span>
+    </div>
+    <div class="col-sm-6 end">  
+      <span field-name="64" form='form' datatype="'String'"></span>
+    </div>
+    <div class="col-sm-12 end">  
+      <span field-name="65" form='form' datatype="'Text'"></span>
+    </div>
+    <div class="col-sm-6 end">  
+      <span field-name="66" form='form' datatype="'String'"></span>
+    </div>
+    <div class="col-sm-6 end">  
+      <span field-name="67" form='form' datatype="'String'"></span>
+    </div>
+    <div class="col-sm-12 end">  
+      <span field-name="68" form='form' datatype="'Text'"></span>
+      <span field-name="69" form='form' datatype="'Text'"></span>
+      <span field-name="70" form='form' datatype="'Text'"></span>
+      <span field-name="71" form='form' datatype="'Text'"></span>
+      <span field-name="72" form='form' datatype="'Text'"></span>
+      <span field-name="73" form='form' datatype="'Text'"></span>
+      <span field-name="74" form='form' datatype="'Text'"></span>
+    </div>
+  </div>
+
+
+</div>
+
+
+  <div class="modal-footer">
+      <button type="button" class="btn btn-warning" ng-click="form.cancel()">Cancel</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+  <div ng-if="lpcoForm.$submitted">
+    <div ng-messages="lpcoForm.expectedArrival.$error">
+        <div class="alert alert-danger" ng-message="required">Please enter the date the goods are expected to arrive in Barbados.</div>
+        <div class="alert alert-danger" ng-message="date">Please enter a valid arrival date in the format: {{form.config.date.datepickerformat}}</div>
+    </div>
+    <div validate-commodities=""></div>
+  </div>
+</div>
