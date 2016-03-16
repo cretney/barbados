@@ -1,0 +1,53 @@
+<div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label class="col-sm-4 control-label">
+          <span field-name="4" form-fields="form.options.formFields"></span>
+        </label>
+        <div class="col-sm-8 control-value" ng-bind="ila.submission.origin">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 control-label">
+          <span field-name="5" form-fields="form.options.formFields"></span>
+        </label>
+        <div class="col-sm-8 control-value" ng-bind="ila.submission.countryConsigned">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 control-label">
+          <span field-name="6" form-fields="form.options.formFields"></span>
+        </label>
+        <div class="col-sm-8 control-value" ng-bind="ila.submission.expectedArrival | date:form.config.date.dateformat">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label class="col-sm-4 control-label">
+          <span field-name="1" form-fields="form.options.formFields"></span>
+        </label>
+        <div class="col-sm-8 control-value" ng-bind="ila.submission.submitter">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 control-label">
+          <span field-name="2" form-fields="form.options.formFields"></span>
+        </label>
+        <div class="col-sm-8 control-value" ng-bind="ila.submission.applicant">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 control-label">
+          <span field-name="8" form-fields="form.options.formFields"></span>
+        </label>
+        <div class="col-sm-8 control-value" ng-bind="ila.submission.supplier">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div view-commodities=""></div>
+  </div>
+</div>
