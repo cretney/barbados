@@ -2,7 +2,7 @@
 
 	var dataService = angular.module('dataService', [])
 
-	.factory('dataService-Prod', ['$filter','$http','$q', function($filter,$http,$q) {
+	.factory('dataService-Old', ['$filter','$http','$q', function($filter,$http,$q) {
 		return {
 			getForm: function(id){
 				return $http.get("http://52.25.174.100/api/Forms/GetForm/"+id);
@@ -22,6 +22,26 @@
 	}])
 
 	.factory('dataService', ['$filter','$http','$q', function($filter,$http,$q) {
+		return {
+			getForm: function(id){
+				return $http.get("/api/Forms/GetForm/"+id);
+			},
+			getForms: function(){
+				return $http.get("/api/Forms/GetBlockIDs");
+			},
+			postForm: function(data,id){
+				if(id && !data.blockId) data.blockId = id;
+				return $http.post("/api/Forms/PostForm",{formData: JSON.stringify(data)});
+			},
+			getLists: function (id, types) {
+			    var t = types || ['country', 'unitsOfMeasure', 'suppliers', 'formsMap', 'formFields'];
+				return $http.get("/api/Forms/GetLists?blockId="+id+"&listTypes="+t.join(','), {cache: true});
+			}
+		}
+	}])
+
+
+	.factory('dataService-Test', ['$filter','$http','$q', function($filter,$http,$q) {
 		return {
 			getForm: function(id){
 				var def = $q.defer();
