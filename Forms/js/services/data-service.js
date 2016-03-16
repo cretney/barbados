@@ -32,14 +32,14 @@
 				return def.promise;
 			},
 			getForms: function(){
-				return $http.get("sample-data/forms.json");
+				return $http.get("/Forms/sample-data/forms.json");
 			},
 			postForm: function(data,id){
 				if(id && !data.blockId) data.blockId = id;
 				return $http.post("http://52.25.174.100/api/Forms/PostForm",{formData: JSON.stringify(data)});
 			},
 			getLists: function(id,types){
-				return $http.get("sample-data/lists.json");
+				return $http.get("/Forms/sample-data/lists.json");
 			}
 		}
 	}]);

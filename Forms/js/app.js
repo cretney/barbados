@@ -43,9 +43,9 @@
 				elem.on('click', function(){
 					scope.currentStep = 1;
 					scope.form = {
-						spinner: 'img/spinner.gif',
+						spinner: '/Forms/img/spinner.gif',
 						modal: $modal.open({
-				      		templateUrl: './forms/views/forms/form-default.html',
+				      		templateUrl: '/Forms/forms/views/forms/form-default.html',
 				      		size: 'lg',
 				      		//backdrop: 'static',
 				      		scope: scope
@@ -149,11 +149,11 @@
 			scope: {
 				itemId: '@embedForm'
 			},
-			templateUrl: './forms/views/forms/form-default.html',
+			templateUrl: '/Forms/forms/views/forms/form-default.html',
 			link: function(scope, elem, attrs){
 				scope.ila = {};
 				scope.form = {
-					spinner: 'img/spinner.gif',
+					spinner: '/Forms/img/spinner.gif',
 					submit: function(form){
 			    		if(form.$valid){
 			    			scope.form.saving = true;
@@ -188,7 +188,7 @@
 					var formsMap = $filter('filter')(data[1].data,{listType: 'formsMap'}, true)[0].list; //get form mappings
 					var form = $filter('filter')(formsMap,{id: scope.ila.formId}, true)[0]; //select current form mapping
 					angular.extend(scope.form, {
-						template: 'forms/views/forms/'+form.template,
+						template: '/Forms/forms/views/forms/'+form.template,
 						config:{
 							currency:{
 								symbol: {
@@ -228,7 +228,7 @@
 		return{
 			restrict: 'A',
 			replace: true,
-			templateUrl: './forms/views/partials/view-commodities2.html'
+			templateUrl: '/Forms/forms/views/partials/view-commodities2.html'
 		}
 	}])
 
@@ -236,21 +236,21 @@
 		return{
 			restrict: 'A',
 			replace: true,
-			templateUrl: './forms/views/partials/edit-commodities2.html'
+			templateUrl: '/Forms/forms/views/partials/edit-commodities2.html'
 		}
 	}])
 	.directive('viewCommoditiesNoPrice', [function(){
 		return{
 			restrict: 'A',
 			replace: true,
-			templateUrl: './forms/views/partials/view-commodities-no-price.html'
+			templateUrl: '/Forms/forms/views/partials/view-commodities-no-price.html'
 		}
 	}])
 	.directive('viewCommoditiesWithFields', [function(){
 		return{
 			restrict: 'A',
 			replace: true,
-			templateUrl: './forms/views/partials/view-commodities-with-fields.html'
+			templateUrl: '/Forms/forms/views/partials/view-commodities-with-fields.html'
 		}
 	}])
 
@@ -266,7 +266,7 @@
 		return{
 			restrict: 'A',
 			replace: true,
-			templateUrl: './forms/views/partials/edit-commodities-no-price.html'
+			templateUrl: '/Forms/forms/views/partials/edit-commodities-no-price.html'
 		}
 	}])
 
@@ -274,7 +274,7 @@
 		return{
 			restrict: 'A',
 			replace: true,
-			templateUrl: './forms/views/partials/edit-commodities-with-fields.html',
+			templateUrl: '/Forms/forms/views/partials/edit-commodities-with-fields.html',
 	    // scope : {
 	    //   item : "="
 	    // },
@@ -296,7 +296,7 @@
 		return{
 			restrict: 'A',
 			replace: true,
-			templateUrl: './forms/views/partials/validate-commodities.html'
+			templateUrl: '/Forms/forms/views/partials/validate-commodities.html'
 		}
 	}])
 
@@ -324,21 +324,21 @@
 				if(scope.tt && scope.tt.toLowerCase() == 'true') scope.field.tooltip = true;
 				scope.getContentUrl = function() {
 					if (scope.field.withAddress || scope.withAddress)
-						return './forms/views/partials/field-name-readonly-with-address.html';
+						return '/Forms/forms/views/partials/field-name-readonly-with-address.html';
 					else if (scope.field.readonly || scope.readonly)
-						return './forms/views/partials/field-name-readonly.html';
+						return '/Forms/forms/views/partials/field-name-readonly.html';
 					else if (scope.field.datatype == "Dropdown" || scope.datatype == "Dropdown")
-						return './forms/views/partials/field-name-select.html';
+						return '/Forms/forms/views/partials/field-name-select.html';
 					else if (scope.field.options)
-						return './forms/views/partials/field-name-radio-options.html';
+						return '/Forms/forms/views/partials/field-name-radio-options.html';
 					else if (scope.field.datatype == "String" || scope.datatype == "String")
-						return './forms/views/partials/field-name-string.html';
+						return '/Forms/forms/views/partials/field-name-string.html';
 					else if (scope.field.datatype == "Text" || scope.datatype == "Text")
-						return './forms/views/partials/field-name-text.html';
+						return '/Forms/forms/views/partials/field-name-text.html';
 					else if (scope.field.datatype == "Date" || scope.datatype == "Date")
-						return './forms/views/partials/field-name-date.html';
+						return '/Forms/forms/views/partials/field-name-date.html';
 					else {
-						return './forms/views/partials/field-name.html';          
+						return '/Forms/forms/views/partials/field-name.html';          
 					}
         }
 			},
