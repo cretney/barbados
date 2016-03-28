@@ -1,0 +1,17 @@
+<table class="table table-condensed">
+  <thead>
+    <tr>
+      <th width="10%">
+        Order No.
+      </th>
+      <th width="90%">
+        <span field-name="83" form-fields="form.options.formFields" field-tooltip="true"></span>
+      </th>
+  </thead>
+  <tbody>
+    <tr ng-repeat="item in form.data.commodities" ng-class-odd="'odd'" ng-class-even="'even'">
+      <td>{{$index+1}}</td>
+      <td ng-bind="item.rulesOrigin"></td>
+    </tr>
+  </tbody>
+</table>

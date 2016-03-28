@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="form-group">
+
+	  <label class="col-sm-12 control-label">
+			<span class="field-name">
+				<span ng-bind="field.display"></span>
+				<span ng-if="field.tooltip" class="field-tooltip glyphicon glyphicon-info-sign" tooltip="{{field.definition}}"></span>
+			</span>
+	  </label>
+
+	  <div class="col-sm-12 control-value">
+	      <label ng-repeat="option in field.options">
+	        <input type="radio" ng-model="form.data[field.field]" value="{{option}}">
+	        {{option}}
+	        &nbsp;&nbsp;
+	      </label>
+	  </div>
+
+  </div>
+</div>
+
+
+
+

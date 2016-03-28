@@ -1,0 +1,30 @@
+<table class="table table-condensed">
+  <thead>
+    <tr>
+      <th width="10%">
+        Order No.
+      </th>
+      <th>
+        <span field-name="13" form-fields="form.options.formFields"></span>
+      </th>
+      <th width="40%">
+        <span field-name="16" form-fields="form.options.formFields"></span>
+      </th>
+      <th>
+        <span field-name="19" form-fields="form.options.formFields" field-tooltip="true"></span>
+      </th>
+      <th>
+        <span field-name="77" form-fields="form.options.formFields" field-tooltip="true"></span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="item in form.data.commodities" ng-class-odd="'odd'" ng-class-even="'even'">
+      <td>{{$index+1}}</td>
+      <td ng-bind="item.hsCode"></td>
+      <td ng-bind="item.description"></td>
+      <td ng-bind="item.quantity"></td>
+      <td ng-bind="item.fobValue"></td>
+    </tr>
+  </tbody>
+</table>

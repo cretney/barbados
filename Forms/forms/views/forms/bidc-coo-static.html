@@ -1,0 +1,19 @@
+<div>
+  <div class="row">
+    <div class="col-sm-6">
+      <span field-name="75" form='form' datatype="Dropdown" options='["Costa Rica","Colombia","Cuba","Dominican Republic","Venezuela","Caribbean Common Market"]'></span>
+    </div>
+    <div class="col-sm-6">
+    </div>
+  </div>
+  <div class="row">
+  </div>
+
+  <ng-include src="'/Forms/forms/views/partials/bidc-coo-costa-rica-view.html'" ng-if='form.data["destinationCountry"] == "Costa Rica"'></ng-include>
+  <ng-include src="'/Forms/forms/views/partials/bidc-coo-colombia-view.html'" ng-if='form.data["destinationCountry"] == "Colombia"'></ng-include>
+  <ng-include src="'/Forms/forms/views/partials/bidc-coo-cuba-view.html'" ng-if='form.data["destinationCountry"] == "Cuba"'></ng-include>
+  <ng-include src="'/Forms/forms/views/partials/bidc-coo-dominican-republic-view.html'" ng-if='form.data["destinationCountry"] == "Dominican Republic"'></ng-include>
+  <ng-include src="'/Forms/forms/views/partials/bidc-coo-venezuela-view.html'" ng-if='form.data["destinationCountry"] == "Venezuela"'></ng-include>
+  <ng-include src="'/Forms/forms/views/partials/bidc-coo-caribbean-common-view.html'" ng-if='form.data["destinationCountry"] == "Caribbean Common Market"'></ng-include>
+
+</div>

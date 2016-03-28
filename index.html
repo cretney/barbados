@@ -40,7 +40,7 @@
 									    </tr>
 									  </thead>
 									  <tbody>
-									    <tr ng-repeat="doc in home.documents | filter:search.text track by $index">
+									    <tr ng-repeat="doc in home.documents.slice().reverse() | filter:search.text track by $index">
 									      <td><span class="glyphicon glyphicon-file"></span></td>
 									      <td ng-bind="doc.blockId"></td>
 									      <td ng-bind="doc.workflowId"></td>

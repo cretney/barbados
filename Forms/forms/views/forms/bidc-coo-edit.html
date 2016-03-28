@@ -1,0 +1,31 @@
+<div>
+  <div class="row">
+    <div class="col-sm-6">
+      <span field-name="75" form='form' datatype="Dropdown" options='["Costa Rica","Colombia","Cuba","Dominican Republic","Venezuela","Caribbean Common Market"]'></span>
+    </div>
+    <div class="col-sm-6">
+    </div>
+  </div>
+  <div class="row">
+  </div>
+
+  <ng-include src="'/Forms/forms/views/partials/bidc-coo-costa-rica-edit.html'" ng-if='form.data["destinationCountry"] == "Costa Rica"'></ng-include>
+  <ng-include src="'/Forms/forms/views/partials/bidc-coo-colombia-edit.html'" ng-if='form.data["destinationCountry"] == "Colombia"'></ng-include>
+  <ng-include src="'/Forms/forms/views/partials/bidc-coo-cuba-edit.html'" ng-if='form.data["destinationCountry"] == "Cuba"'></ng-include>
+  <ng-include src="'/Forms/forms/views/partials/bidc-coo-dominican-republic-edit.html'" ng-if='form.data["destinationCountry"] == "Dominican Republic"'></ng-include>
+  <ng-include src="'/Forms/forms/views/partials/bidc-coo-venezuela-edit.html'" ng-if='form.data["destinationCountry"] == "Venezuela"'></ng-include>
+  <ng-include src="'/Forms/forms/views/partials/bidc-coo-caribbean-common-edit.html'" ng-if='form.data["destinationCountry"] == "Caribbean Common Market"'></ng-include>
+
+  <div class="modal-footer">
+      <button type="button" class="btn btn-warning" ng-click="form.cancel()">Cancel</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+  <div ng-if="lpcoForm.$submitted">
+    <div ng-messages="lpcoForm.expectedArrival.$error">
+        <div class="alert alert-danger" ng-message="required">Please enter the date the goods are expected to arrive in Barbados.</div>
+        <div class="alert alert-danger" ng-message="date">Please enter a valid arrival date in the format: {{form.config.date.datepickerformat}}</div>
+    </div>
+    <div validate-commodities=""></div>
+  </div>
+
+</div>

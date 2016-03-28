@@ -167,6 +167,14 @@
 				"template": "dcca-import-defense-instruments-issued.html"
 			},
 			{
+				"id": 30,
+				"template": "bidc-coo-edit.html"
+			},
+			{
+				"id": 31,
+				"template": "bidc-coo-static.html"
+			},
+			{
 				"id": 50,
 				"template": "admin-lpco-dcca.html"
 			}
@@ -450,7 +458,100 @@
 				"field": "reasonDesiringOtherInstruments",
 				"display": "Reason of other instrument",
 				"definition": "reason(s) for desiring to have other types of instrument of defence"
+			},
+			{
+				"id": 75,
+				"field": "destinationCountry",
+				"fieldtype":"Dropdown",
+				"display": "Destination Country",
+				"definition": "Destination Country to Export to"
+			},
+			{
+				"id": 76,
+				"field": "observations",
+				"fieldtype":"Text",
+				"display": "Observations",
+				"definition": ""
+			},
+			{
+				"id": 77,
+				"field": "fobValue",
+				"display": "FOB Value (US$)",
+				"definition": "In US Dollars"
+			},
+			{
+				"id": 78,
+				"field": "preferenceCriterion",
+				"display": "Preference Criterion",
+				"definition": ""
+			},
+			{
+				"id": 79,
+				"field": "inFreeTradeZone",
+				"display": "Manufacturer premises located in Free Trade Zone",
+				"definition": "whether Producer is located in the Free Zone"
+			},
+			{
+				"id": 80,
+				"field": "tradedSpecial",
+				"display": "Goods described in box 9 are on Annex IH.04.06 to be traded under Special Arrangements",
+				"definition": "whether the good is on the list in Annex III.04.06"
+			},
+			{
+				"id": 81,
+				"field": "othersAnnex",
+				"display": "Others Annex",
+				"definition": "Others: if in determining the origin of the good one of the procedures set forth in Articles 1V.06 or IV.05 of the Agreement, was used, indicate:"
+			},
+			{
+				"id": 82,
+				"field": "grossWeight",
+				"display": "Gross Weight",
+				"definition": "Indicate the Gross Weight of the Goods to be Exported."
+			},
+			{
+				"id": 83,
+				"field": "rulesOrigin",
+				"display": "Rules of Origin",
+				"definition": "Enter the criteria of origin applicable to each of the goods included."
+			},
+			{
+				"id": 84,
+				"field": "portShipment",
+				"display": "Port of Shipment",
+				"definition": "Indicate Port of Shipment."
+			},
+			{
+				"id": 85,
+				"field": "modeTransport",
+				"display": "Mode of Transportation",
+				"definition": "Mode of Transportation"
+			},
+			{
+				"id": 86,
+				"field": "routeTransport",
+				"display": "Route",
+				"definition": "Route of Transportation"
+			},
+			{
+				"id": 87,
+				"field": "invoiceNumber",
+				"display": "Invoice Number",
+				"definition": "Enter the Number of the Commercial Invoice."
+			},
+			{
+				"id": 88,
+				"field": "invoiceDate",
+				"display": "Invoice Date",
+				"definition": "Enter the Date of the Commercial Invoice."
+			},
+			{
+				"id": 89,
+				"field": "portDischarge",
+				"display": "Port of Discharge",
+				"definition": "Indicate Port of Discharge."
 			}
+
 		]
 	}
 ]

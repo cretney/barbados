@@ -21,7 +21,7 @@
 		}
 	}])
 
-	.factory('dataService', ['$filter','$http','$q', function($filter,$http,$q) {
+	.factory('dataService-Prod', ['$filter','$http','$q', function($filter,$http,$q) {
 		return {
 			getForm: function(id){
 				return $http.get("/api/Forms/GetForm/"+id);
@@ -41,7 +41,7 @@
 	}])
 
 
-	.factory('dataService-Test', ['$filter','$http','$q', function($filter,$http,$q) {
+	.factory('dataService', ['$filter','$http','$q', function($filter,$http,$q) {
 		return {
 			getForm: function(id){
 				var def = $q.defer();

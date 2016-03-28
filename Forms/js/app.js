@@ -239,6 +239,92 @@
 			templateUrl: '/Forms/forms/views/partials/edit-commodities2.html'
 		}
 	}])
+	.directive('editCommoditiesCostaRica', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: '/Forms/forms/views/partials/edit-commodities-costa-rica.html'
+		}
+	}])
+	.directive('editCommoditiesColombia', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: '/Forms/forms/views/partials/edit-commodities-colombia.html'
+		}
+	}])
+	.directive('editCommoditiesCuba', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: '/Forms/forms/views/partials/edit-commodities-cuba.html'
+		}
+	}])
+	.directive('editCommoditiesVenezuela', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: '/Forms/forms/views/partials/edit-commodities-venezuela.html'
+		}
+	}])
+	.directive('editCommoditiesCaribbeanCm', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: '/Forms/forms/views/partials/edit-commodities-caribbean-cm.html'
+		}
+	}])
+	.directive('editCommoditiesRulesOrigin', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: '/Forms/forms/views/partials/edit-commodities-rules-origin.html'
+		}
+	}])
+
+
+	.directive('viewCommoditiesCostaRica', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: '/Forms/forms/views/partials/view-commodities-costa-rica.html'
+		}
+	}])
+	.directive('viewCommoditiesColombia', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: '/Forms/forms/views/partials/view-commodities-colombia.html'
+		}
+	}])
+	.directive('viewCommoditiesCuba', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: '/Forms/forms/views/partials/view-commodities-cuba.html'
+		}
+	}])
+	.directive('viewCommoditiesVenezuela', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: '/Forms/forms/views/partials/view-commodities-venezuela.html'
+		}
+	}])
+	.directive('viewCommoditiesCaribbeanCm', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: '/Forms/forms/views/partials/view-commodities-caribbean-cm.html'
+		}
+	}])
+	.directive('viewCommoditiesRulesOrigin', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: '/Forms/forms/views/partials/view-commodities-rules-origin.html'
+		}
+	}])	
 	.directive('viewCommoditiesNoPrice', [function(){
 		return{
 			restrict: 'A',
@@ -300,6 +386,18 @@
 		}
 	}])
 
+	.directive('labelValue', [function() {
+	    return {
+	        restrict: 'E',
+	        replace: true,
+					templateUrl: '/Forms/forms/views/partials/label-value.html',
+	        scope: {
+	            label: "=",
+	            value: "="
+	        }
+	    };
+	}])
+
 	.directive('fieldName', ['$filter', function($filter){
 		return{
 			restrict: 'A',
@@ -311,13 +409,14 @@
 				readonly: '=readonly',
 				withAddress: '=withAddress',
 				datatype: '=datatype',
+				fieldtype: '=fieldtype',
 				ila: '=ila',
 				form: '=form',
 				options: '=options',
 				item: '=item'
 			},
 			link: function(scope, elem, attrs){
-				console.log(scope);
+				// console.log(scope);
 				scope.fields = scope.fields || scope.form.options.formFields;
 				scope.field = $filter('filter')(scope.fields, {id: parseInt(scope.id)}, true)[0];
 				scope.field.options = scope.field.options || scope.options
@@ -327,7 +426,7 @@
 						return '/Forms/forms/views/partials/field-name-readonly-with-address.html';
 					else if (scope.field.readonly || scope.readonly)
 						return '/Forms/forms/views/partials/field-name-readonly.html';
-					else if (scope.field.datatype == "Dropdown" || scope.datatype == "Dropdown")
+					else if (scope.field.fieldtype == "Dropdown" || scope.fieldtype == "Dropdown")
 						return '/Forms/forms/views/partials/field-name-select.html';
 					else if (scope.field.options)
 						return '/Forms/forms/views/partials/field-name-radio-options.html';
