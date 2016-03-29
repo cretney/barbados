@@ -494,8 +494,8 @@
 			{
 				"id": 80,
 				"field": "tradedSpecial",
-				"display": "Goods described in box 9 are on Annex IH.04.06 to be traded under Special Arrangements",
-				"definition": "whether the good is on the list in Annex III.04.06"
+				"display": "Traded under Special Arrangements",
+				"definition": "Whether the good is on the list in Annex III.04.06 to be traded under Special Arrangements"
 			},
 			{
 				"id": 81,
