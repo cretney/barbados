@@ -101,3 +101,58 @@ table.table td.commodity-subtable{
 .even {
     background-color: #FFF;
 }
+
+
+/*
+  Some styles are shared, the other ones will have their own section which name is the name of
+  Bixal PDF Document.
+*/
+
+/* Commons */
+.top-border {
+  border-top: solid 1px;
+}
+
+.no-margin {
+  margin-top: -65px;
+}
+/* End */
+
+/* Application for permit to import Dairy Products */
+.no-margin-lt {
+  margin-left: -15px;
+  margin-top: -10px;
+}
+
+.no-margin-t {
+  margin-top: -10px;
+}
+
+.under-word {
+  margin-top: -30px;
+  padding-left: 125px;
+}
+/* End */
+
+/* Application to Individual Permit to Import Meat Dairy Poultry */
+.top-padding {
+  padding-top: 10px;
+}
+
+.with-border {
+  border: 1px solid;
+}
+
+.no-border-top {
+  border: 1px solid;
+  border-top: none;
+}
+/* End */
+
+/* Permit to import Dairy Products */
+.thick {
+  height: 2px;
+  color: black;
+  background-color: black;
+}
+/* End */

@@ -13,6 +13,8 @@
 			$scope.home = {
 				documents: forms.data
 			};
+			$scope.hola = "Hola";
+			$scope.current_date = new Date();			
 		});
 
 	}])
@@ -40,6 +42,7 @@
 			},
 			link: function(scope, elem, attrs){
 				scope.ila = {};
+				scope.current_date = new Date();
 				elem.on('click', function(){
 					scope.currentStep = 1;
 					scope.form = {
@@ -152,6 +155,7 @@
 			templateUrl: '/Forms/forms/views/forms/form-default.html',
 			link: function(scope, elem, attrs){
 				scope.ila = {};
+				scope.current_date = new Date();
 				scope.form = {
 					spinner: '/Forms/img/spinner.gif',
 					submit: function(form){

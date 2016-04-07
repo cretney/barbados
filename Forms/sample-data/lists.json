@@ -175,6 +175,50 @@
 				"template": "bidc-coo-static.html"
 			},
 			{
+				"id": 32,
+				"template": "bidc-coo-static.html"
+			},
+			{
+				"id": 33,
+				"template": "vetdairy-import-dairy-products.html"
+			},
+			{
+				"id": 34,
+				"template": "vetdairy-import-dairy-products-issued.html"
+			},
+			{
+				"id": 35,
+				"template": "vs-permit-import.html"
+			},
+			{
+				"id": 36,
+				"template": "vs-permit-import-issued.html"
+			},
+			{
+				"id": 37,
+				"template": "bidc-registration-exporter.html"
+			},
+			{
+				"id": 40,
+				"template": "foodwhole-sampling-goods.html"
+			},
+			{
+				"id": 41,
+				"template": "foodwhole-sampling-goods-issued.html"
+			},
+			{
+				"id": 42,
+				"template": "fs-inspection-request.html"
+			},
+			{
+				"id": 43,
+				"template": "fs-inspection-request-issued.html"
+			},
+			{
+				"id": 45,
+				"template": "fs-unwholesome-food-certificate-issued.html"
+			},
+			{
 				"id": 50,
 				"template": "admin-lpco-dcca.html"
 			}
@@ -550,6 +594,102 @@
 				"field": "portDischarge",
 				"display": "Port of Discharge",
 				"definition": "Indicate Port of Discharge."
+			},
+			{
+				"id": 90,
+				"field": "periodRequestStart",
+				"display": "Period Starting",
+				"definition": "Period Starting of Request"
+			},
+			{
+				"id": 91,
+				"field": "periodRequestEnding",
+				"display": "Period Ending",
+				"definition": "Period Ending of Request"
+			},
+			{
+				"id": 92,
+				"field": "requestType",
+				"display": "Type of Request",
+				"definition": "Request Type (New Request/Renewal)"
+			},
+			{
+				"id": 93,
+				"field": "previousNumber",
+				"display": "Previous Number",
+				"definition": "Previous Permit Number"
+			},
+			{
+				"id": 94,
+				"field": "previousExpiration",
+				"display": "Date Expired",
+				"definition": "Expiration date of previous permit"
+			},
+			{
+				"id": 95,
+				"field": "approvalNumber",
+				"display": "Approval Number",
+				"definition": "Number of Approval Document"
+			},
+			{
+				"id": 96,
+				"field": "receptionDate",
+				"display": "Date Received",
+				"definition": ""
+			},
+			{
+				"id": 97,
+				"field": "issuedDate",
+				"display": "Date Issued",
+				"definition": ""
+			},
+			{
+				"id": 98,
+				"field": "approvedBy",
+				"display": "Approved By",
+				"definition": ""
+			},
+			{
+				"id": 99,
+				"field": "inspectionLocation",
+				"display": "Inspection Location",
+				"definition": ""
+			},
+			{
+				"id": 100,
+				"field": "inspectionDate",
+				"display": "Date Inspection",
+				"definition": ""
+			},
+			{
+				"id": 101,
+				"field": "inspector",
+				"display": "Inspector",
+				"definition": ""
+			},
+			{
+				"id": 102,
+				"field": "inspector",
+				"display": "Inspector",
+				"definition": ""
+			},
+			{
+				"id": 103,
+				"field": "typeFoodCategory",
+				"display": "Food Category",
+				"definition": ""
+			},
+			{
+				"id": 104,
+				"field": "typeFoodDetail",
+				"display": "Food Type",
+				"definition": ""
+			},
+			{
+				"id": 105,
+				"field": "consignee",
+				"display": "Consignee",
+				"definition": ""
 			}
 
 		]

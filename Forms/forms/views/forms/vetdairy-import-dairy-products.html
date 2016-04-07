@@ -1,0 +1,120 @@
+<div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="col-sm-1">
+        <h5>To:</h5>
+      </div>
+      <div class="col-sm-6">
+        <h5>
+          <b>
+            The Senior Veterinary Officer.<br/>
+            Veterinary Services,<br/>
+            Ministry of Agriculture.<br/>
+            The Pine, St. Michael.
+          </b>
+        </h5>
+      </div>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="page-header" align="center">
+      <h4>
+        <b>
+          Application for a Permit to Import <u>Dairy Products</u> into Barbados Under<br/>
+          The Animals (Diseases and Importation) Act, Cap. 253<br/>
+          The Animals (Diseases and Importation Control) Regulations, 1961
+        </b>
+      </h4>
+    </div><!--page-header-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      I, <strong>{{ila.submission.applicant.name}}</strong>,
+      <span ng-if="ila.submission.applicant.name == ila.submission.importer.name"> on my own behalf</span>
+      <span ng-if="ila.submission.applicant.name != ila.submission.importer.name"> on behalf of: <strong>{{ila.submission.importer.name}}</strong></span><br/>
+      {{ila.submission.importer.address}}<br/>
+      Telephone: {{ila.submission.importer.phone}}
+  </div>
+  </div><!--row-->
+  <br>
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <p>
+        Do hereby make application for a permit to import <b>Dairy Products</b> into Barbados during the period of: <br>
+      </p>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-5 col-sm-offset-1">
+      <span field-name="90" form='form' datatype="'Date'"></span>
+    </div>
+    <div class="col-sm-5">
+      <span field-name="91" form='form' datatype="'Date'"></span>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-5 col-sm-offset-1">
+      <p>This application is for:</p>
+      <span field-name="92" form='form' options='["New Permit","Renewal"]'></span> <br>
+    </div>
+    <div class="col-sm-5">
+      <br> <br>
+      <span field-name="93" form='form' datatype="'String'" field-tooltip="true" ng-if="form.data.requestType == 'Renewal'"></span>
+      <br>
+      <span field-name="94" form='form' datatype="'Date'" field-tooltip="true" ng-if="form.data.requestType == 'Renewal'"></span>
+    </div>
+  </div><!--row-->
+
+  <hr>
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <p>
+        I/We hereby agree to comply with all import conditions as may be stipulated in the terms of the permit granted by the Senior Veterinary Officer.
+      </p>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-5 col-sm-offset-1">
+      <p>
+        Signature of Applicant:
+      </p>
+    </div>
+    <div class="col-sm-5">
+      <p>
+        Date: {{current_date  | date:'dd/MM/yyyy'}}
+      </p>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <small>*Delete words not applicable</small>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-offset-1 col-sm-10">
+      <small>
+        A09: VS020 (Crea 01/01/08)
+      </small>
+    </div>
+  </div>
+
+  <div class="modal-footer">
+      <button type="button" class="btn btn-warning" ng-click="form.cancel()">Cancel</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+  <div ng-if="lpcoForm.$submitted">
+    <div ng-messages="lpcoForm.expectedArrival.$error">
+        <div class="alert alert-danger" ng-message="required">Please enter the date the goods are expected to arrive in Barbados.</div>
+        <div class="alert alert-danger" ng-message="date">Please enter a valid arrival date in the format: {{form.config.date.datepickerformat}}</div>
+    </div>
+    <div validate-commodities=""></div>
+  </div>
+
+</div><!--container-->

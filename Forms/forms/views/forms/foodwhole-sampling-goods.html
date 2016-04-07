@@ -1,0 +1,135 @@
+<div>
+<div class="col-sm-offset-1">
+  <div class="row">
+    <div class="col-sm-11">
+      <h5 align="center">
+        <b>
+          MINISTRY OF HEALTH - BARBADOS
+        </b>
+      </h5>
+      <h4 align="center">
+        <b>
+          SAMPLING OF FOODS
+        </b>
+      </h4>
+    </div>
+  </div><!--row-->
+
+  <br><br>
+  <div class="row">
+    <div class="col-sm-11 no-margin">
+      <h6 align="right">
+        A14:411
+      </h6>
+    </div>
+  </div>
+  <br>
+
+
+
+  <div class="row">
+    <div class="col-sm-6">
+      <span field-name="100" form='form' datatype="'Date'"></span>
+      <span field-name="99" form='form' datatype="'String'"></span>
+    </div>
+    <div class="col-sm-6">
+      <span field-name="103" form='form' fieldtype="'Dropdown'" options='["Frozen Foods", "Dairy", "Processed Foods", "Various"]'></span>
+      <span field-name="104" form='form' fieldtype="'Dropdown'" options='["Meat", "Fish", "Poultry", "Shrimp", "Other Sea Foods", "Other"]' ng-if="form.data.typeFoodCategory == 'Frozen Foods'"></span>
+      <span field-name="104" form='form' fieldtype="'Dropdown'" options='["Milk", "Butter", "Cheese", "Yogurt", "Ice Cream", "Other"]' ng-if="form.data.typeFoodCategory == 'Dairy'"></span>
+      <span field-name="104" form='form' fieldtype="'Dropdown'" options='["Meat", "Fish", "Other Sea Foods", "Fruit", "Vegetables", "Jams", "Other"]' ng-if="form.data.typeFoodCategory == 'Processed Foods'"></span>
+      <span field-name="104" form='form' fieldtype="'Dropdown'" options='["Fruit ", "Vegetables", "Fats/Oils", "Grains/Pulses", "Cereals", "Bottled Water", "Beverages", "Condiments", "Confectionery", "Sugar", "Live Lobsters", "Miscellaneous"]' ng-if="form.data.typeFoodCategory == 'Various'"></span>
+    </div>
+  </div>
+
+  <pre>{{form.data.typeFoodCategory}}</pre>
+
+  <br><br>
+  <div class="row">
+    <div class="col-sm-11">
+      To collected and removed samples of the items listed for laboratory investigations
+      <br><br><br><br>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-6">
+
+      <div class="row">
+        <div class="col-sm-8" align="center">
+          <h4>{{ila.submission.consignee.name}}</h4>
+          <div class="top-border">
+            <h6 align="center">
+              <i>
+                Name of Agent/Consignee
+              </i>
+            </h6>
+          </div>    
+        </div>
+      </div><!--row-->
+      <br><br>
+
+      <div class="row">
+        <div class="col-sm-8" align="center">
+          <div class="top-border">
+            <h6 align="center">
+              <i>
+                Signature
+              </i>
+            </h6>
+          </div>    
+        </div>
+      </div><!--row-->
+      <br><br>
+
+    </div>
+
+    <div class="col-sm-6">
+
+      <div class="row">
+        <div class="col-sm-8" align="center">
+          <h4>{{ila.submission.inspector}}</h4>
+          <div class="top-border">
+            <h6 align="center">
+              <i>
+                Public Health Inspector
+              </i>
+            </h6>
+          </div>    
+        </div>
+      </div><!--row-->
+      <br><br>
+
+      <div class="row">
+        <div class="col-sm-8" align="center">
+          <div class="top-border">
+            <h6 align="center">
+              <i>
+                Signature
+              </i>
+            </h6>
+          </div>    
+        </div>
+      </div><!--row-->
+      <br><br>
+
+    </div>
+
+
+  </div><!--row-->
+  <br><br><br>
+
+</div><!--col-sm-offset-1-->
+
+  <div class="modal-footer">
+      <button type="button" class="btn btn-warning" ng-click="form.cancel()">Cancel</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+  <div ng-if="lpcoForm.$submitted">
+    <div ng-messages="lpcoForm.expectedArrival.$error">
+        <div class="alert alert-danger" ng-message="required">Please enter the date the goods are expected to arrive in Barbados.</div>
+        <div class="alert alert-danger" ng-message="date">Please enter a valid arrival date in the format: {{form.config.date.datepickerformat}}</div>
+    </div>
+    <div validate-commodities=""></div>
+  </div>
+
+</div><!--container-->
