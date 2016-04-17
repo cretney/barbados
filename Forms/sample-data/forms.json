@@ -7,8 +7,10 @@
   "description": "Please complete the Import Licence Application",
   "status": "Draft",
   "submission": {
+    "fids":[1,2,4,5,8],
     "commodities": [
       {
+        "fids":[13,16],
         "hsCode": "123",
         "description": "test",
         "units": [
@@ -31,10 +33,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -69,10 +71,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -115,10 +117,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
     "countryConsigned": "Canada",
-    "supplier": "ACME Inc.",
     "expectedArrival": "2015-09-21T04:00:00.000Z"
   }
 },
@@ -154,10 +156,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -192,10 +194,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -239,10 +241,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
     "countryConsigned": "Canada",
-    "supplier": "ACME Inc.",
     "expectedArrival": "2015-09-21T04:00:00.000Z"
   }
 },
@@ -278,10 +280,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -316,10 +318,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -363,10 +365,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
     "countryConsigned": "Canada",
-    "supplier": "ACME Inc.",
     "expectedArrival": "2015-09-21T04:00:00.000Z"
   }
 },
@@ -402,10 +404,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -440,10 +442,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -487,10 +489,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
     "countryConsigned": "Canada",
-    "supplier": "ACME Inc.",
     "expectedArrival": "2015-09-21T04:00:00.000Z"
   }
 },
@@ -526,10 +528,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -564,10 +566,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -611,10 +613,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
     "countryConsigned": "Canada",
-    "supplier": "ACME Inc.",
     "expectedArrival": "2015-09-21T04:00:00.000Z"
   }
 },
@@ -650,10 +652,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -688,10 +690,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -735,10 +737,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
     "countryConsigned": "Canada",
-    "supplier": "ACME Inc.",
     "expectedArrival": "2015-09-21T04:00:00.000Z"
   }
 },
@@ -774,10 +776,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -812,10 +814,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -859,10 +861,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
     "countryConsigned": "Canada",
-    "supplier": "ACME Inc.",
     "expectedArrival": "2015-09-21T04:00:00.000Z"
   }
 },
@@ -898,10 +900,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -936,10 +938,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -983,10 +985,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
     "countryConsigned": "Canada",
-    "supplier": "ACME Inc.",
     "expectedArrival": "2015-09-21T04:00:00.000Z"
   }
 },
@@ -1022,10 +1024,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -1060,10 +1062,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -1107,10 +1109,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
     "countryConsigned": "Canada",
-    "supplier": "ACME Inc.",
     "expectedArrival": "2015-09-21T04:00:00.000Z"
   }
 },
@@ -1123,7 +1125,7 @@
   "status": "Draft",
   "submission": {
     "submitter": "Joe Blow",
-    "applicant": "Stop-n-Go",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
     "containerNumber": "9DFP99NU03"
   }
 },
@@ -1159,10 +1161,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -1197,10 +1199,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -1244,10 +1246,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
     "countryConsigned": "Canada",
-    "supplier": "ACME Inc.",
     "expectedArrival": "2015-09-21T04:00:00.000Z",
     "consigments": "Single",
     "intendedUse": " Sale Distribution",
@@ -1286,10 +1288,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -1317,10 +1319,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
     "countryConsigned": "Canada",
-    "supplier": "ACME Inc.",
     "expectedArrival": "2015-09-21T04:00:00.000Z"
   }
 },
@@ -1356,10 +1358,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -1408,10 +1410,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
     "countryConsigned": "Canada",
-    "supplier": "ACME Inc.",
     "expectedArrival": "2015-09-21T04:00:00.000Z",
     "vehicleCase": "Individual Use Vehicle"
   }
@@ -1441,10 +1443,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
     "countryConsigned": "Canada",
-    "supplier": "ACME Inc.",
     "expectedArrival": "2015-09-21T04:00:00.000Z"
   }
 },
@@ -1473,10 +1475,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
     "countryConsigned": "Canada",
-    "supplier": "ACME Inc.",
     "expectedArrival": "2015-09-21T04:00:00.000Z"
   }
 },
@@ -1521,10 +1523,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
     "countryConsigned": "Canada",
-    "supplier": "ACME Inc.",
     "expectedArrival": "2015-09-21T04:00:00.000Z",
     "consigments": "Single",
     "intendedUse": " Sale Distribution",
@@ -1563,10 +1565,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -1610,10 +1612,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
     "countryConsigned": "Canada",
-    "supplier": "ACME Inc.",
     "expectedArrival": "2015-09-21T04:00:00.000Z"
   }
 },
@@ -1649,10 +1651,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -1695,10 +1697,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
     "countryConsigned": "Canada",
-    "supplier": "ACME Inc.",
     "expectedArrival": "2015-09-21T04:00:00.000Z",
     "displayDescription": "at Sandy Lane Hotel, St. James, on Thursday, December 31“, 2015 to coincide with New Year's Eve Celebrations",
     "displayRisponsible": "Pyro 2000 from the UK at midnight from a barge",
@@ -1738,10 +1740,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -1776,10 +1778,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -1822,10 +1824,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
     "countryConsigned": "Canada",
-    "supplier": "ACME Inc.",
     "expectedArrival": "2015-09-21T04:00:00.000Z"
   }
 },
@@ -1861,10 +1863,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -1899,10 +1901,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -1945,10 +1947,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
     "countryConsigned": "Canada",
-    "supplier": "ACME Inc.",
     "expectedArrival": "2015-09-21T04:00:00.000Z"
   }
 },
@@ -1984,10 +1986,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": "ACME Inc."
+    "countryConsigned": "Canada"
   }
 },
 {
@@ -2030,10 +2032,10 @@
       }
     ],
     "submitter": "Joe Blow",
-    "applicant": "Billy Bob",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
     "countryConsigned": "Canada",
-    "supplier": "ACME Inc.",
     "expectedArrival": "2015-09-21T04:00:00.000Z",
     "displayDescription": "at Sandy Lane Hotel, St. James, on Thursday, December 31“, 2015 to coincide with New Year's Eve Celebrations",
     "displayRisponsible": "Pyro 2000 from the UK at midnight from a barge",
@@ -2311,7 +2313,7 @@
         "preferenceCriterion":"A",
         "othersAnnex":"ACC",
         "grossWeight":"10",
-        "quantity":"1",
+        "quantity":1,
         "rulesOrigin":"A",
         "invoiceNumber":"123456",
         "invoiceDate":"2016-03-07",
@@ -2328,7 +2330,7 @@
         "preferenceCriterion":"B",
         "othersAnnex":"DMI",
         "grossWeight":"20",
-        "quantity":"2",
+        "quantity":2,
         "rulesOrigin":"B",
         "invoiceNumber":"7890123",
         "invoiceDate":"2016-04-07",
@@ -2403,9 +2405,6 @@
   "title": "Permit to Import Dairy Products",
   "status": "Issued",
   "submission": {
-    "commodities":[
-    ],
-
     "requestType":"Renewal",
     "previousNumber":"123456",
     "previousExpiration":"2016-02-07",
@@ -2442,9 +2441,6 @@
         "description": "test",
         "units": [
           {
-            "unitType": "Units"
-          },
-          {
             "unitType": "Kilograms"
           }
         ]
@@ -2454,16 +2450,18 @@
         "description": "test",
         "units": [
           {
-            "unitType": "Units"
+            "unitType": "Kilograms"
           }
         ]
       }
     ],
     "submitter": "Joe Blow",
+    "origin": "United States",
     "applicant": {"id":4, "name":"Exporter Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
     "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"},
     "destination": {"id": 1, "name": "Importer Maple Inc.", "countryId": "CA", "country":"Canada", "address": "1000 Main Av, Toronto, BC, 902", "docid":"3-234-567", "fax":"777-5555", "email":"ghi@example.com"},
-    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"}
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
+    "expectedArrival": "2015-09-21"    
   }
 },
 {
@@ -2473,58 +2471,40 @@
   "title": "Individual Permit to Import Meat Dairy Poulty",
   "status": "Issued",
   "submission": {
-    "commodities":[
+    "commodities": [
       {
-        "hsCode":"123",
-        "description":"test",
-        "fobValue":1000,
-        "preferenceCriterion":"A",
-        "othersAnnex":"ACC",
-        "grossWeight":"10",
-        "quantity":"1",
-        "rulesOrigin":"A",
-        "invoiceNumber":"123456",
-        "invoiceDate":"2016-03-07",
-        "units":[
+        "hsCode": "123",
+        "description": "test",
+        "units": [
           {
-            "unitType":"Units"
+            "unitType": "Units",
+            "quantity": 3
           }
         ]
       },
       {
-        "hsCode":"234",
-        "description":"test",
-        "fobValue":2000,
-        "preferenceCriterion":"B",
-        "othersAnnex":"DMI",
-        "grossWeight":"20",
-        "quantity":"2",
-        "rulesOrigin":"B",
-        "invoiceNumber":"7890123",
-        "invoiceDate":"2016-04-07",
-        "units":[
+        "hsCode": "345",
+        "description": "test2",
+        "units": [
           {
-            "unitType":"Units"
+            "unitType": "Units",
+            "quantity": 4
           }
         ]
       }
     ],
-    "destinationCountry":"Costa Rica",
-    "modeTransport":"Air",
-    "portShipment":"Balboa",
-    "portDischarge":"La Guaira",
-    "routeTransport":"Panama",
-    "invoiceNumber":"123456",
-    "invoiceDate":"2016-03-07T05:00:00.000Z",
-    "inFreeTradeZone":"Yes",
-    "tradedSpecial":"No",
-    "observations":"some observations",
     "submitter": "Joe Blow",
+    "origin":"United States",
+    "approvalNumber":"AP2016-001",
+    "receptionDate":"2016-01-07",
+    "approvalDate":"2016-04-07",
+    "expectedArrival":"2016-05-07",
+    "transhipVia":"Miami",
+    "approvedBy":"John Smith",
     "applicant": {"id":4, "name":"Exporter Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
     "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"},
     "destination": {"id": 1, "name": "Importer Maple Inc.", "countryId": "CA", "country":"Canada", "address": "1000 Main Av, Toronto, BC, 902", "docid":"3-234-567", "fax":"777-5555", "email":"ghi@example.com"},
-    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
-    "expectedArrival": "2015-09-21T04:00:00.000Z"
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"}
   }
 },
 {
@@ -2619,7 +2599,7 @@
         "preferenceCriterion":"A",
         "othersAnnex":"ACC",
         "grossWeight":"10",
-        "quantity":"1",
+        "quantity":1,
         "rulesOrigin":"A",
         "invoiceNumber":"123456",
         "invoiceDate":"2016-03-07",
@@ -2636,7 +2616,7 @@
         "preferenceCriterion":"B",
         "othersAnnex":"DMI",
         "grossWeight":"20",
-        "quantity":"2",
+        "quantity":2,
         "rulesOrigin":"B",
         "invoiceNumber":"7890123",
         "invoiceDate":"2016-04-07",
@@ -2695,7 +2675,7 @@
     ],
     "origin": "United States",
     "submitter": "Joe Blow",
-    "applicant": {"id":4, "name":"Exporter Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "phone":"555-5555", "email":"abc@example.com"},
     "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"},
     "destination": {"id": 1, "name": "Importer Maple Inc.", "countryId": "CA", "country":"Canada", "address": "1000 Main Av, Toronto, BC, 902", "docid":"3-234-567", "fax":"777-5555", "email":"ghi@example.com"},
     "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"}
@@ -2712,14 +2692,10 @@
       {
         "hsCode":"123",
         "description":"test",
-        "fobValue":1000,
-        "preferenceCriterion":"A",
-        "othersAnnex":"ACC",
+        "typeFoodCategory":"Dairy",
+        "typeFoodDetail":"Milk",
         "grossWeight":"10",
-        "quantity":"1",
-        "rulesOrigin":"A",
-        "invoiceNumber":"123456",
-        "invoiceDate":"2016-03-07",
+        "quantity":1,
         "units":[
           {
             "unitType":"Units"
@@ -2729,14 +2705,10 @@
       {
         "hsCode":"234",
         "description":"test",
-        "fobValue":2000,
-        "preferenceCriterion":"B",
-        "othersAnnex":"DMI",
+        "typeFoodCategory":"Frozen Foods",
+        "typeFoodDetail":"Fish",
         "grossWeight":"20",
-        "quantity":"2",
-        "rulesOrigin":"B",
-        "invoiceNumber":"7890123",
-        "invoiceDate":"2016-04-07",
+        "quantity":2,
         "units":[
           {
             "unitType":"Units"
@@ -2744,22 +2716,16 @@
         ]
       }
     ],
-    "destinationCountry":"Costa Rica",
-    "modeTransport":"Air",
-    "portShipment":"Balboa",
-    "portDischarge":"La Guaira",
-    "routeTransport":"Panama",
-    "invoiceNumber":"123456",
-    "invoiceDate":"2016-03-07T05:00:00.000Z",
-    "inFreeTradeZone":"Yes",
-    "tradedSpecial":"No",
-    "observations":"some observations",
+    "vessel": "ISLANDIA",
+    "rotationNumber": "1085 of 12/02/2016",
+    "containerNumber": "TCNU5037395",
+    "dateInspection": "2015-09-21", 
+    "timeInspection": "4.30 <> 8.30",
+    "entryDate": "2015-08-21",
     "submitter": "Joe Blow",
-    "applicant": {"id":4, "name":"Exporter Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "phone":"555-5555", "email":"abc@example.com"},
     "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"},
-    "destination": {"id": 1, "name": "Importer Maple Inc.", "countryId": "CA", "country":"Canada", "address": "1000 Main Av, Toronto, BC, 902", "docid":"3-234-567", "fax":"777-5555", "email":"ghi@example.com"},
-    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
-    "expectedArrival": "2015-09-21T04:00:00.000Z"
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"}
   }
 },
 {
@@ -2777,7 +2743,7 @@
         "preferenceCriterion":"A",
         "othersAnnex":"ACC",
         "grossWeight":"10",
-        "quantity":"1",
+        "quantity":1,
         "rulesOrigin":"A",
         "invoiceNumber":"123456",
         "invoiceDate":"2016-03-07",
@@ -2794,7 +2760,7 @@
         "preferenceCriterion":"B",
         "othersAnnex":"DMI",
         "grossWeight":"20",
-        "quantity":"2",
+        "quantity":2,
         "rulesOrigin":"B",
         "invoiceNumber":"7890123",
         "invoiceDate":"2016-04-07",

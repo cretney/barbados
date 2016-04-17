@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Generated from b with shasum 44ebe7e759d5d654802a3d69af7feecf77c58a73",
+  "type": "object",
+  "required": [
+    "blockId",
+    "workflowId",
+    "formId",
+    "title",
+    "description",
+    "status",
+    "submission"
+  ],
+  "properties": {
+    "blockId": {
+      "type": "integer"
+    },
+    "workflowId": {
+      "type": "integer"
+    },
+    "formId": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "submission": {
+      "type": "object",
+      "required": [
+        "commodities",
+        "submitter",
+        "applicant",
+        "origin",
+        "countryConsigned",
+        "supplier"
+      ],
+      "properties": {
+        "commodities": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+              "hsCode",
+              "description",
+              "units"
+            ],
+            "properties": {
+              "hsCode": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "units": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "unitType"
+                  ],
+                  "properties": {
+                    "unitType": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "submitter": {
+          "type": "string"
+        },
+        "applicant": {
+          "type": "string"
+        },
+        "origin": {
+          "type": "string"
+        },
+        "countryConsigned": {
+          "type": "string"
+        },
+        "supplier": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

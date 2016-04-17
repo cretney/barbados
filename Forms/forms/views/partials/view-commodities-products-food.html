@@ -1,0 +1,30 @@
+<table class="table table-condensed">
+  <thead>
+    <tr>
+      <th width="8%">
+        Order No.
+      </th>
+      <th width="25%">
+        <span field-name="103" form-fields="form.options.formFields" field-tooltip="true"></span>
+      </th>
+      <th width="25%">
+        <span field-name="104" form-fields="form.options.formFields" field-tooltip="true"></span>
+      </th>
+      <th>
+        <span field-name="19" form-fields="form.options.formFields" field-tooltip="true"></span>
+      </th>
+      <th>
+        <span field-name="82" form-fields="form.options.formFields" field-tooltip="true"></span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="item in form.data.commodities" ng-class-odd="'odd'" ng-class-even="'even'">
+      <td>{{$index+1}}</td>
+      <td ng-bind="item.typeFoodCategory"></td>
+      <td ng-bind="item.typeFoodDetail"></td>
+      <td ng-bind="item.quantity"></td>
+      <td ng-bind="item.grossWeight"></td>
+    </tr>
+  </tbody>
+</table>

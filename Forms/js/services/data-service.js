@@ -60,6 +60,9 @@
 			},
 			getLists: function(id,types){
 				return $http.get("/Forms/sample-data/lists.json");
+			},
+			getSchema: function(id,types){
+				return $http.get("/Forms/json-schemas/master.json");
 			}
 		}
 	}]);

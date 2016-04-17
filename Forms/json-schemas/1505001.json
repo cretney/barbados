@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Generated from b with shasum b7dd7458726f12ade66ea0e21c4956e92a899f15",
+  "type": "object",
+  "required": [
+    "blockId",
+    "workflowId",
+    "formId",
+    "title",
+    "description",
+    "status",
+    "submission"
+  ],
+  "properties": {
+    "blockId": {
+      "type": "integer"
+    },
+    "workflowId": {
+      "type": "integer"
+    },
+    "formId": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "submission": {
+      "type": "object",
+      "required": [
+        "submitter",
+        "applicant",
+        "containerNumber"
+      ],
+      "properties": {
+        "submitter": {
+          "type": "string"
+        },
+        "applicant": {
+          "type": "string"
+        },
+        "containerNumber": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

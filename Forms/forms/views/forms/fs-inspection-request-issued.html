@@ -3,14 +3,14 @@
     <div class="col-sm-12">
       <h3 align="center">
         <b>
-          Louis Forde<br><br>
+          {{ila.submission.applicant.name}}<br><br>
         </b>
       </h3>
 
       <h5 align="center">
-        St. Catherine’s St. Philip Barbados<br>
-        <b>246 234 8549</b><br>
-        lafordelogistics@hotmail.com<br>
+        <b>{{ila.submission.applicant.address}}</b><br>
+        <b>{{ila.submission.applicant.phone}}</b><br>
+        {{ila.submission.applicant.email}}<br><br>
       </h5>
     </div><!--col-sm-12-->
   </div><!--row-->
@@ -28,39 +28,55 @@
   </div><!--row-->
 
   <div class="row">
-    <div class="col-sm-4">
-      <b>
-        Importer:<br><br>
-        Country of Origin:<br><br>
-        Vessel:<br><br>
-        Rotation number:<br><br>
-        Container #:<br><br>
-        Contents:<br><br>
-        Quantity:<br><br>
-        Weight:<br><br>
-        Place of inspection:::<br><br>
-        Requested time of inspection:::<br><br>
-        Entry Date:::<br><br>
-      </b>
+    <div class="col-sm-12">
+      <table>
+        <tr>
+          <td width="75%"><b>Importer:</b> <br><br></td>
+           <td>{{ila.submission.applicant.name}}<br><br></td>
+        </tr>
+        <tr>
+          <td><b>Country of Origin:</b> <br><br></td> 
+          <td>{{ila.submission.origin}}<br><br></td>
+        </tr>
+        <tr>
+          <td><b>Vessel or Craft:</b> <br><br></td>
+           <td>{{ila.submission.vessel}}<br><br></td>
+        </tr>
+        <tr>
+          <td><b>Rotation number:</b> <br><br></td> 
+          <td>{{ila.submission.rotationNumber}}<br><br></td>
+        </tr>
+        <tr>
+          <td><b>Container #:</b> <br><br></td>
+           <td>{{ila.submission.containerNumber}}<br><br></td>
+        </tr>
+        <tr>
+          <td><b>Place of inspection:</b> <br><br></td>
+          <td>{{ila.submission.applicant.name}}<br><br></td>
+        </tr>
+        <tr>
+          <td><b>Requested Date of inspection:</b> <br><br></td> 
+          <td>{{ila.submission.dateInspection}}<br><br></td>
+        </tr>
+        <tr>
+          <td><b>Requested time of inspection:</b> <br><br></td> 
+          <td>{{ila.submission.timeInspection}}<br><br></td>
+        </tr>
+        <tr>
+          <td><b>Entry Date:</b> <br><br></td> 
+          <td>{{ila.submission.entryDate}}<br><br></td>
+        </tr>
+      </table>
     </div><!--col-sm-4-->
-    <div class="col-sm-8">
-      <b>
-        F W Woolworth & Co (Bdos) Ltd<br><br>
-      </b>
-      U.S.A<br><br>
-      ISLANDIA<br><br>
-      1085 of 12/02/2016<br><br>
-      TCNU5037395<br><br>
-      Confectionery / Chocolates / Biscuits<br><br>
-      3324 Pieces<br><br>
-      200 kilos<br><br>
-      <b>
-        Old Mico Garment Factory Complex, Harbour Industrial Park, Harbour Rd Btown
-      </b><br><br>
-      Friday 19 th February 2016 4.30 <> 8.30<br><br>
-      16/02/2016<br><br>
-    </div><!--col-sm-8-->
+
   </div><!--row-->
+  <hr>
+  <div class="row">
+    <div class="col-sm-12">  
+      <div view-commodities-products-food=""></div>
+    </div>
+  </div>
+  <hr>
 
   <div class="row">
     <div class="col-sm-12">
@@ -69,4 +85,7 @@
       Customs Broker
     </div>
   </div><!--row-->
+
+
+
 </div><!--container-->

@@ -1,0 +1,123 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Generated from b with shasum 1b418328340e746254f37cb0cfd87e185a4d11b8",
+  "type": "object",
+  "required": [
+    "blockId",
+    "workflowId",
+    "formId",
+    "title",
+    "description",
+    "status",
+    "submission"
+  ],
+  "properties": {
+    "blockId": {
+      "type": "integer"
+    },
+    "workflowId": {
+      "type": "integer"
+    },
+    "formId": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "submission": {
+      "type": "object",
+      "required": [
+        "commodities",
+        "submitter",
+        "applicant",
+        "origin",
+        "countryConsigned",
+        "supplier",
+        "expectedArrival"
+      ],
+      "properties": {
+        "commodities": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+              "hsCode",
+              "description",
+              "quantity",
+              "entries"
+            ],
+            "properties": {
+              "hsCode": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "quantity": {
+                "type": "integer"
+              },
+              "entries": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "vehicleBrand",
+                    "vehicleModel",
+                    "vehicleYear",
+                    "vehicleEngine",
+                    "odometer"
+                  ],
+                  "properties": {
+                    "vehicleBrand": {
+                      "type": "string"
+                    },
+                    "vehicleModel": {
+                      "type": "string"
+                    },
+                    "vehicleYear": {
+                      "type": "string"
+                    },
+                    "vehicleEngine": {
+                      "type": "string"
+                    },
+                    "odometer": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "submitter": {
+          "type": "string"
+        },
+        "applicant": {
+          "type": "string"
+        },
+        "origin": {
+          "type": "string"
+        },
+        "countryConsigned": {
+          "type": "string"
+        },
+        "supplier": {
+          "type": "string"
+        },
+        "expectedArrival": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

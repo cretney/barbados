@@ -551,7 +551,7 @@
 				"id": 82,
 				"field": "grossWeight",
 				"display": "Gross Weight",
-				"definition": "Indicate the Gross Weight of the Goods to be Exported."
+				"definition": "Indicate the Gross Weight of the Goods."
 			},
 			{
 				"id": 83,
@@ -689,6 +689,36 @@
 				"id": 105,
 				"field": "consignee",
 				"display": "Consignee",
+				"definition": ""
+			},
+			{
+				"id": 106,
+				"field": "vessel",
+				"display": "Vessel",
+				"definition": ""
+			},
+			{
+				"id": 107,
+				"field": "rotationNumber",
+				"display": "Rotation Number",
+				"definition": ""
+			},
+			{
+				"id": 108,
+				"field": "dateInspection",
+				"display": "Date of Inspection",
+				"definition": ""
+			},
+			{
+				"id": 109,
+				"field": "timeInspection",
+				"display": "Time of Inspection",
+				"definition": ""
+			},
+			{
+				"id": 110,
+				"field": "entryDate",
+				"display": "Entry Date",
 				"definition": ""
 			}
 

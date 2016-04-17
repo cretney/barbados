@@ -1,6 +1,6 @@
 ﻿(function(){
 
-	var app = angular.module('app', ['ngMessages','ui.bootstrap','dataService','ui.select'])
+	var app = angular.module('app', ['ngMessages','ui.bootstrap','dataService','ui.select','schemaForm'])
 	
 	.config(['$httpProvider', function ($httpProvider) {
 		$httpProvider.defaults.headers.post['Content-Type'] = 'application/json;odata=verbose';
@@ -13,8 +13,31 @@
 			$scope.home = {
 				documents: forms.data
 			};
-			$scope.hola = "Hola";
-			$scope.current_date = new Date();			
+
+			$scope.current_date = new Date();	
+
+		  $scope.schema1 = {
+		    type: "object",
+		    properties: {
+		      name: { type: "string", minLength: 2, title: "Name", description: "Name or alias" },
+		      title: {
+		        type: "string",
+		        enum: ['dr','jr','sir','mrs','mr','NaN','dj']
+		      }
+		    }
+		  };
+
+
+		  $scope.form = [
+		    "*",
+		    {
+		      type: "submit",
+		      title: "Save"
+		    }
+		  ];
+
+		  $scope.model = {};
+
 		});
 
 	}])
@@ -43,6 +66,7 @@
 			link: function(scope, elem, attrs){
 				scope.ila = {};
 				scope.current_date = new Date();
+
 				elem.on('click', function(){
 					scope.currentStep = 1;
 					scope.form = {
@@ -156,6 +180,16 @@
 			link: function(scope, elem, attrs){
 				scope.ila = {};
 				scope.current_date = new Date();
+
+			  scope.form1 = [
+			    "*",
+			    {
+			      type: "submit",
+			      title: "Save"
+			    }
+			  ];
+			  scope.model = {};
+
 				scope.form = {
 					spinner: '/Forms/img/spinner.gif',
 					submit: function(form){
@@ -188,6 +222,11 @@
 			link: function(scope, elem, attrs){
 				$q.all([dataService.getForm(scope.itemId),dataService.getLists(scope.itemId)]).then(function(data){
 					scope.ila = angular.copy(data[0].data); //set item variable
+
+					dataService.getSchema().then(function(schema){
+					  scope.schema = schema.data;
+					});
+
 					//any List logic based on the current item would go here...
 					var formsMap = $filter('filter')(data[1].data,{listType: 'formsMap'}, true)[0].list; //get form mappings
 					var form = $filter('filter')(formsMap,{id: scope.ila.formId}, true)[0]; //select current form mapping
@@ -278,6 +317,13 @@
 			templateUrl: '/Forms/forms/views/partials/edit-commodities-caribbean-cm.html'
 		}
 	}])
+	.directive('editCommoditiesProductsFood', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: '/Forms/forms/views/partials/edit-commodities-products-food.html'
+		}
+	}])
 	.directive('editCommoditiesRulesOrigin', [function(){
 		return{
 			restrict: 'A',
@@ -286,7 +332,13 @@
 		}
 	}])
 
-
+	.directive('viewCommoditiesProductsFood', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: '/Forms/forms/views/partials/view-commodities-products-food.html'
+		}
+	}])
 	.directive('viewCommoditiesCostaRica', [function(){
 		return{
 			restrict: 'A',

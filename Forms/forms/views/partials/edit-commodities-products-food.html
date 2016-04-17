@@ -1,0 +1,46 @@
+<div>
+<table class="table table-condensed">
+  <thead>
+    <tr>
+      <th width="8%">
+        Order No.
+      </th>
+      <th width="25%">
+        <span field-name="103" form-fields="form.options.formFields" field-tooltip="true"></span>
+      </th>
+      <th width="25%">
+        <span field-name="104" form-fields="form.options.formFields" field-tooltip="true"></span>
+      </th>
+      <th>
+        <span field-name="19" form-fields="form.options.formFields" field-tooltip="true"></span>
+      </th>
+      <th>
+        <span field-name="82" form-fields="form.options.formFields" field-tooltip="true"></span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="item in form.data.commodities" ng-class-odd="'odd'" ng-class-even="'even'">
+      <td>{{$index+1}}</td>
+      <td>
+        <ui-select ng-model="item.units[0].typeFoodCategory" theme="bootstrap" ng-required="true">
+          <ui-select-match placeholder="Select ...">{{$select.selected}}</ui-select-match>
+            <ui-select-choices repeat="option in ['Frozen Foods', 'Dairy', 'Processed Foods', 'Various']">
+              <div ng-bind="option"></div>
+            </ui-select-choices>
+        </ui-select>
+      </td>    
+      <td>
+        <ui-select ng-model="item.units[0].typeFoodDetail" theme="bootstrap" ng-required="true">
+          <ui-select-match placeholder="Select ...">{{$select.selected}}</ui-select-match>
+            <ui-select-choices repeat="option in ['Meat', 'Fish', 'Poultry', 'Shrimp', 'Other Sea Foods', 'Other']">
+              <div ng-bind="option"></div>
+            </ui-select-choices>
+        </ui-select>
+      </td>    
+      <td><input name="{{'quantity_'+item.hsCode+'_'+$index}}" type="number" class="form-control" ng-model="item.units[0].quantity" min="{{form.config.quantity.min}}" required></td>
+      <td><input name="{{'grossWeight'+item.hsCode+'_'+$index}}" type="number" class="form-control" ng-model="item.units[0].grossWeight" min="{{form.config.grossWeight.min}}" required></td>
+    </tr>
+  </tbody>
+</table>
+</div>

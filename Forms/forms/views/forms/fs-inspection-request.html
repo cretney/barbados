@@ -1,4 +1,6 @@
 <div>
+
+
   <div class="row">
     <div class="col-sm-12">
       <h3 align="center">
@@ -8,9 +10,9 @@
       </h3>
 
       <h5 align="center">
-        {{ila.submission.applicant.name}}<br>
+        <b>{{ila.submission.applicant.address}}</b><br>
         <b>{{ila.submission.applicant.phone}}</b><br>
-        {{ila.submission.applicant.email}}<br>
+        {{ila.submission.applicant.email}}<br><br>
       </h5>
     </div><!--col-sm-12-->
   </div><!--row-->
@@ -27,77 +29,47 @@
     </div>
   </div><!--row-->
 
-  <div class="row">
-    <div class="col-sm-12">
-      <table>
-        <tr>
-          <td width="75%"><b>Importer:</b> <br><br></td>
-           <td>{{ila.submission.applicant.name}}<br><br></td>
-        </tr>
-        <tr>
-          <td><b>Country of Origin:</b> <br><br></td> 
-          <td>{{ila.submission.origin}}<br><br></td>
-        </tr>
-        <tr>
-          <td><b>Vessel or Craft:</b> <br><br></td>
-           <td>{{ila.submission.vesselOrCraft}}<br><br></td>
-        </tr>
-        <tr>
-          <td><b>Rotation number:</b> <br><br></td> 
-          <td>{{ila.submission.applicant.name}}<br><br></td>
-        </tr>
-        <tr>
-          <td><b>Container #:</b> <br><br></td>
-           <td>{{ila.submission.applicant.name}}<br><br></td>
-        </tr>
-        <tr>
-          <td><b>Contents:</b> <br><br></td>
-           <td>{{ila.submission.applicant.name}}<br><br></td>
-        </tr>
-        <tr>
-          <td><b>Quantity:</b> <br><br></td>
-           <td>{{ila.submission.applicant.name}}<br><br></td>
-        </tr>
-        <tr>
-          <td><b>Weight:</b> <br><br></td>
-           <td>{{ila.submission.applicant.name}}<br><br></td>
-        </tr>
-        <tr>
-          <td><b>Place of inspection:</b> <br><br></td>
-          <td>{{ila.submission.applicant.name}}<br><br></td>
-        </tr>
-        <tr>
-          <td><b>Requested time of inspection:</b> <br><br></td> 
-          <td>{{ila.submission.applicant.name}}<br><br></td>
-        </tr>
-        <tr>
-          <td><b>Entry Date:</b> <br><br></td> 
-          <td>{{ila.submission.applicant.name}}<br><br></td>
-        </tr>
-      </table>
-    </div><!--col-sm-4-->
-
-    <br> <br><br>
-    <div class="col-<br><br>sm-8">
-      ISLANDIA<br><br>
-      1085 of 12/02/2016<br><br>
-      TCNU5037395<br><br>
-      Confectionery / Chocolates / Biscuits<br><br>
-      3324 Pieces<br><br>
-      200 kilos<br><br>
-      <b>
-        Old Mico Garment Factory Complex, Harbour Industrial Park, Harbour Rd Btown
-      </b><br><br>
-      Friday 19 th February 2016 4.30 <> 8.30<br><br>
-      16/02/2016<br><br>
-    </div><!--col-sm-8-->
-  </div><!--row-->
 
   <div class="row">
-    <div class="col-sm-12">
-      Yours respectfully<br><br>
-      Louis Forde<br><br><br><br><br>
-      Customs Broker
+    <div class="col-sm-6">
+      <span field-name="1" form='form' readonly="true" ila='ila'></span>
+      <span field-name="106" form='form' datatype="'String'"></span>
+      <span field-name="50" form='form' datatype="'String'"></span>
+      <span field-name="108" form='form' datatype="'Date'"></span>
+      <span field-name="51" form='form' datatype="'String'"></span>
     </div>
-  </div><!--row-->
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label class="col-sm-4 control-label">
+          <span field-name="2" form-fields="form.options.formFields"></span>
+        </label>
+        <div class="col-sm-8 control-value" ng-bind="ila.submission.applicant.name">
+        </div>
+      </div>
+
+      <span field-name="4" form='form' readonly="true" ila='ila'></span>
+      <span field-name="107" form='form' datatype="'String'"></span>
+      <span field-name="109" form='form' datatype="'String'"></span>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-sm-12">  
+      <div edit-commodities-products-food=""></div>
+    </div>
+  </div>
+
+  <div class="modal-footer">
+      <button type="button" class="btn btn-warning" ng-click="form.cancel()">Cancel</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+  <div ng-if="lpcoForm.$submitted">
+    <div ng-messages="lpcoForm.expectedArrival.$error">
+        <div class="alert alert-danger" ng-message="required">Please enter the date the goods are expected to arrive in Barbados.</div>
+        <div class="alert alert-danger" ng-message="date">Please enter a valid arrival date in the format: {{form.config.date.datepickerformat}}</div>
+    </div>
+    <div validate-commodities=""></div>
+  </div>
+
+
 </div><!--container-->
