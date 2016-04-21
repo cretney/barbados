@@ -1,0 +1,79 @@
+[
+	{
+		"type":"help",
+		"helpvalue":"<div class='row'><div class='colored col-sm-6'></div><div class='col-sm-6 colored'></div>"
+	},
+	{
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+				  {
+				  	"key":"origin",
+				  	"title":"Arriving from",
+				  	"readonly":true
+				  },
+				  {
+				  	"key":"approvalNumber",
+				  	"title":"Permit #"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+          	"key":"vesselOrCraft",
+          	"title":"on (Vessel/Aircraft)"
+        	},
+          {
+          	"key":"consignee.name",
+          	"title":"Consignee"
+        	}
+        ]
+      }
+    ]
+	},
+	{
+		"type":"help",
+		"helpvalue":"<h5>Specify animal condition</h5>"
+	},
+  {
+    "key": "resultInspection",
+    "type": "radios",
+    "titleMap": [
+      {
+        "value": "Healthy",
+        "name": "Find it/them to be healthy and therefore permit entry into Barbados"
+      },
+      {
+        "value": "Conditioned",
+        "name": "Order that it/they be permitted entry into Barbados under the following conditions:"
+      },
+      {
+        "value": "Prohibited Entry",
+        "name": "Order that it/they be prohibited entry into Barbados"
+      }
+    ]
+  },
+  {
+  	"key":"findingsInspection",
+  	"title":"Findings during revision",
+  	"type": "textarea",
+  	"condition": "model.resultInspection == 'Conditioned' || model.resultInspection == 'Prohibited Entry'"
+	},
+  {
+  	"key":"conditionsInspection",
+  	"title":"Conditions for entry permission",
+  	"type": "textarea",
+  	"condition": "model.resultInspection == 'Conditioned'"
+	},
+  {
+    "type": "submit",
+    "title": "Save"
+  }
+]

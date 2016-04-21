@@ -1,0 +1,135 @@
+<div>
+  <div class="row">
+    <div class="col-sm-3">
+      <h6>
+        <b>
+          A09: VS004
+        </b>
+      </h6>
+    </div>
+    <div class="col-sm-6" align="center">
+      <h5>
+        MINISTRY OF AGRICULTURE<br>
+        VETERINARY SERVICES
+      </h5>
+      <h4>
+        <b>
+          Landing Certificate for Animals
+        </b>
+      </h4>
+      <h5>
+        <i>
+          THE ANIMALS (DISEASES AND IMPORTATION) ACT, 1949<br>
+          The Animals (Diseases and Importation) Control Regulations, 1961
+        </i>
+      </h5>
+    </div>
+    <div class="col-sm-3" align="right">
+      <br>
+      BARBADOS, W.I.
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-3">
+      NO. <b>{{ila.submission.landingCertificateNumber}}</b>
+    </div>
+    <div class="col-sm-3 col-sm-offset-6" align="right">
+      {{ila.submission.issuedDate}}
+    </div>
+  </div><!--row-->
+  <br>
+  <br>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h4 align="center">
+        This is to certify that I have this day examined the undermentioned animal(s)/bird(s):
+        <br><br><br>
+      </h4>
+    </div><!--col-sm-12-->
+
+    <div class="col-sm-6">
+      <b>Arriving from:</b> {{ila.submission.origin}}<br>
+      <b>Import Permit #: {{ila.submission.approvalNumber}}</b>
+    </div><!--col-sm-6-->
+    <div class="col-sm-6">
+      <b>on (Vessel/Aircraft):</b> {{ila.submission.vesselOrCraft}}<br>
+      <b>Consignee:</b> {{ila.submission.consignee.name}}
+    </div><!--col-sm-6-->
+  </div><!--row-->
+  <br><br>
+  <div class="row">
+    <div class="col-sm-1">
+      AND
+    </div>
+  </div><!--row-->
+
+  <div class="row" ng-if="ila.submission.resultInspection == 'Healthy'">
+    <div class="col-sm-1" align="right">
+      [ X ]
+    </div>
+    <div class="col-sm-11">
+      Find it/them to be healthy and therefore permit entry into Barbados
+      <br><br><br>
+      <br><br><br>
+    </div>
+  </div><!--row-->
+
+  <div class="row" ng-if="ila.submission.resultInspection == 'Conditioned'">
+    <div class="col-sm-1" align="right">
+      [ X ]
+    </div>
+    <div class="col-sm-11">
+      Find <br>
+      {{ila.submission.findingsInspection}}  
+      <br><br>
+      and therefore order that it/they be permitted entry into Barbados under the following conditions: 
+      <br>
+      {{ila.submission.conditionsInspection}}  
+      <br><br><br>
+      <br><br><br>
+    </div>
+  </div><!--row-->
+
+  <div class="row" ng-if="ila.submission.resultInspection == 'Prohibited Entry'">
+    <div class="col-sm-1" align="right">
+      [ X ]
+    </div>
+    <div class="col-sm-11">
+      Find <br>
+      {{ila.submission.findingsInspection}}  
+      <br><br>
+      and therefore order that it/they be prohibited entry into Barbados.
+      <br><br><br>
+      <br><br><br>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-8 top-border" align="center">
+      <h6>
+        <i>
+          Chief Veterinary Officer<br>
+          Inspector of Animals
+        </i>
+      </h6>
+    </div><!--col-sm-4 col-sm-offset-8-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-2" align="center">
+      Stamp<br><br><br>
+    </div><!--col-sm-2-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-2">
+      <h6>
+        <b>
+          Agr:63 Rev.05/90
+        </b>
+      </h6>
+    </div><!--col-sm-2-->
+  </div><!--row-->
+</div><!--container-->

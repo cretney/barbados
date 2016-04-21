@@ -176,7 +176,7 @@
 			},
 			{
 				"id": 32,
-				"template": "bidc-coo-static.html"
+				"template": "plant-phitosanitary-inspection-issued.html"
 			},
 			{
 				"id": 33,
@@ -217,6 +217,14 @@
 			{
 				"id": 45,
 				"template": "fs-unwholesome-food-certificate-issued.html"
+			},
+			{
+				"id": 46,
+				"template": "vs-landing-certificate-animals.html"
+			},
+			{
+				"id": 47,
+				"template": "vs-landing-certificate-animals-issued.html"
 			},
 			{
 				"id": 50,

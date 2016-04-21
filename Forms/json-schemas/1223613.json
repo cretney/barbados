@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 5979545d77729f2c96bbd243618c960f2f803817",
+  "description": "Generated from b with shasum fda0df9d30bcd32aae2d40dff610da06dd9b8d60",
   "type": "object",
   "required": [
     "blockId",
@@ -30,22 +30,18 @@
       "type": "object",
       "required": [
         "commodities",
-        "destinationCountry",
-        "modeTransport",
-        "portShipment",
-        "portDischarge",
-        "routeTransport",
-        "invoiceNumber",
-        "invoiceDate",
-        "inFreeTradeZone",
-        "tradedSpecial",
-        "observations",
         "submitter",
+        "origin",
+        "approvalNumber",
+        "receptionDate",
+        "approvalDate",
+        "expectedArrival",
+        "transhipVia",
+        "approvedBy",
         "applicant",
         "consignee",
         "destination",
-        "supplier",
-        "expectedArrival"
+        "supplier"
       ],
       "properties": {
         "commodities": {
@@ -57,14 +53,6 @@
             "required": [
               "hsCode",
               "description",
-              "fobValue",
-              "preferenceCriterion",
-              "othersAnnex",
-              "grossWeight",
-              "quantity",
-              "rulesOrigin",
-              "invoiceNumber",
-              "invoiceDate",
               "units"
             ],
             "properties": {
@@ -74,30 +62,6 @@
               "description": {
                 "type": "string"
               },
-              "fobValue": {
-                "type": "integer"
-              },
-              "preferenceCriterion": {
-                "type": "string"
-              },
-              "othersAnnex": {
-                "type": "string"
-              },
-              "grossWeight": {
-                "type": "string"
-              },
-              "quantity": {
-                "type": "string"
-              },
-              "rulesOrigin": {
-                "type": "string"
-              },
-              "invoiceNumber": {
-                "type": "string"
-              },
-              "invoiceDate": {
-                "type": "string"
-              },
               "units": {
                 "type": "array",
                 "minItems": 1,
@@ -105,11 +69,15 @@
                 "items": {
                   "type": "object",
                   "required": [
-                    "unitType"
+                    "unitType",
+                    "quantity"
                   ],
                   "properties": {
                     "unitType": {
                       "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
                     }
                   }
                 }
@@ -117,37 +85,28 @@
             }
           }
         },
-        "destinationCountry": {
-          "type": "string"
-        },
-        "modeTransport": {
-          "type": "string"
-        },
-        "portShipment": {
-          "type": "string"
-        },
-        "portDischarge": {
-          "type": "string"
-        },
-        "routeTransport": {
-          "type": "string"
-        },
-        "invoiceNumber": {
-          "type": "string"
-        },
-        "invoiceDate": {
-          "type": "string"
-        },
-        "inFreeTradeZone": {
-          "type": "string"
-        },
-        "tradedSpecial": {
-          "type": "string"
-        },
-        "observations": {
-          "type": "string"
-        },
         "submitter": {
+          "type": "string"
+        },
+        "origin": {
+          "type": "string"
+        },
+        "approvalNumber": {
+          "type": "string"
+        },
+        "receptionDate": {
+          "type": "string"
+        },
+        "approvalDate": {
+          "type": "string"
+        },
+        "expectedArrival": {
+          "type": "string"
+        },
+        "transhipVia": {
+          "type": "string"
+        },
+        "approvedBy": {
           "type": "string"
         },
         "applicant": {
@@ -305,9 +264,6 @@
               "type": "string"
             }
           }
-        },
-        "expectedArrival": {
-          "type": "string"
         }
       }
     }

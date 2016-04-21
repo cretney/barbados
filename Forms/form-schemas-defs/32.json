@@ -1,0 +1,40 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"consignee.name",
+            "title":"Consigned to",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+				  {
+				  	"key":"origin",
+				  	"title":"Place of origin",
+				  	"readonly":true
+				  }
+        ]
+      }
+    ]
+	},
+  {
+    "type": "submit",
+    "title": "Save"
+  }
+]

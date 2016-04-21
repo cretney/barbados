@@ -1,8 +1,21 @@
-/* @override http://localhost:3000/css/app.css */
+/* @override 
+	http://localhost:3000/css/app.css
+	http://localhost:4000/Forms/css/app.css
+*/
 
 .nav, .pagination, .carousel, .panel-title a {
 	cursor: pointer;
 }
+
+
+
+.row .form-group {
+	width: 100%;
+	margin-left: 0;
+}
+
+
+
 .app{
 	margin:200px;
 }

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum b7dd7458726f12ade66ea0e21c4956e92a899f15",
+  "description": "Generated from b with shasum 614c16331277186ec75dcf205b0f00cc9b80ff50",
   "type": "object",
   "required": [
     "blockId",
@@ -42,7 +42,43 @@
           "type": "string"
         },
         "applicant": {
-          "type": "string"
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address",
+            "docid",
+            "fax",
+            "email"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "docid": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            }
+          }
         },
         "containerNumber": {
           "type": "string"

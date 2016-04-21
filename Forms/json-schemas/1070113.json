@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum b202d37bb8e9b97b457dc1466f2c9894d2c7e284",
+  "description": "Generated from b with shasum 526844de70271dc05a19db11639e94535aa935ad",
   "type": "object",
   "required": [
     "blockId",
@@ -36,9 +36,9 @@
         "commodities",
         "submitter",
         "applicant",
+        "supplier",
         "origin",
-        "countryConsigned",
-        "supplier"
+        "countryConsigned"
       ],
       "properties": {
         "commodities": {
@@ -82,15 +82,87 @@
           "type": "string"
         },
         "applicant": {
-          "type": "string"
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address",
+            "docid",
+            "fax",
+            "email"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "docid": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            }
+          }
+        },
+        "supplier": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address",
+            "docid",
+            "fax",
+            "email"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "docid": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            }
+          }
         },
         "origin": {
           "type": "string"
         },
         "countryConsigned": {
-          "type": "string"
-        },
-        "supplier": {
           "type": "string"
         }
       }

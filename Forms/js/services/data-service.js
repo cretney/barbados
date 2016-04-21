@@ -2,25 +2,6 @@
 
 	var dataService = angular.module('dataService', [])
 
-	.factory('dataService-Old', ['$filter','$http','$q', function($filter,$http,$q) {
-		return {
-			getForm: function(id){
-				return $http.get("http://52.25.174.100/api/Forms/GetForm/"+id);
-			},
-			getForms: function(){
-				return $http.get("http://52.25.174.100/api/Forms/GetBlockIDs");
-			},
-			postForm: function(data,id){
-				if(id && !data.blockId) data.blockId = id;
-				return $http.post("http://52.25.174.100/api/Forms/PostForm",{formData: JSON.stringify(data)});
-			},
-			getLists: function(id,types){
-				var t = types || ['country','unitsOfMeasure','suppliers','formsMap','formFields'];
-				return $http.get("http://52.25.174.100/api/Forms/GetLists?blockId="+id+"&listTypes="+t.join(','), {cache: true});
-			}
-		}
-	}])
-
 	.factory('dataService-Prod', ['$filter','$http','$q', function($filter,$http,$q) {
 		return {
 			getForm: function(id){
@@ -63,8 +44,35 @@
 			},
 			getSchema: function(id,types){
 				return $http.get("/Forms/json-schemas/master.json");
+			},
+			getFormDef: function(id,types){
+				var def = $q.defer();					
+				if (id == 32 || id >= 46)
+					return $http.get("/Forms/form-schemas-defs/"+id+".json");
+				else 
+					return $http.get("/Forms/form-schemas-defs/empty.json");
+			}
+		}
+	}])
+
+	.factory('dataService-Old', ['$filter','$http','$q', function($filter,$http,$q) {
+		return {
+			getForm: function(id){
+				return $http.get("http://52.25.174.100/api/Forms/GetForm/"+id);
+			},
+			getForms: function(){
+				return $http.get("http://52.25.174.100/api/Forms/GetBlockIDs");
+			},
+			postForm: function(data,id){
+				if(id && !data.blockId) data.blockId = id;
+				return $http.post("http://52.25.174.100/api/Forms/PostForm",{formData: JSON.stringify(data)});
+			},
+			getLists: function(id,types){
+				var t = types || ['country','unitsOfMeasure','suppliers','formsMap','formFields'];
+				return $http.get("http://52.25.174.100/api/Forms/GetLists?blockId="+id+"&listTypes="+t.join(','), {cache: true});
 			}
 		}
 	}]);
+
 	
 })();

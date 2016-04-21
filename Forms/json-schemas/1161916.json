@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 7279157d8df0abba0f42d751d66bb682865746f9",
+  "description": "Generated from b with shasum cb1d3adf900d6201e1ffc81aee7d1aa06ec6f48f",
   "type": "object",
   "required": [
     "blockId",
@@ -76,7 +76,7 @@
                       "type": "integer"
                     },
                     "pricePerUnit": {
-                      "type": "integer"
+                      "type": "number"
                     },
                     "cifValue": {
                       "type": "integer"

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum bfa8a3f76307c1dd62e6b0b4a23fbec1eeb5cc65",
+  "description": "Generated from b with shasum 449129225869cbb1d7395a56967e2d10e42fd94e",
   "type": "object",
   "required": [
     "blockId",
@@ -29,7 +29,6 @@
     "submission": {
       "type": "object",
       "required": [
-        "commodities",
         "requestType",
         "previousNumber",
         "previousExpiration",
@@ -50,13 +49,6 @@
         "expectedArrival"
       ],
       "properties": {
-        "commodities": {
-          "type": "array",
-          "minItems": 0,
-          "uniqueItems": true,
-          "items": {
-          }
-        },
         "requestType": {
           "type": "string"
         },

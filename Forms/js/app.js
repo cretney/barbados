@@ -15,29 +15,6 @@
 			};
 
 			$scope.current_date = new Date();	
-
-		  $scope.schema1 = {
-		    type: "object",
-		    properties: {
-		      name: { type: "string", minLength: 2, title: "Name", description: "Name or alias" },
-		      title: {
-		        type: "string",
-		        enum: ['dr','jr','sir','mrs','mr','NaN','dj']
-		      }
-		    }
-		  };
-
-
-		  $scope.form = [
-		    "*",
-		    {
-		      type: "submit",
-		      title: "Save"
-		    }
-		  ];
-
-		  $scope.model = {};
-
 		});
 
 	}])
@@ -122,9 +99,6 @@
 			                    errorMessage();
 			            }
 			        },
-			        submit: function () {
-
-			        },
 			        reset: function () {
 
 			        },
@@ -181,15 +155,6 @@
 				scope.ila = {};
 				scope.current_date = new Date();
 
-			  scope.form1 = [
-			    "*",
-			    {
-			      type: "submit",
-			      title: "Save"
-			    }
-			  ];
-			  scope.model = {};
-
 				scope.form = {
 					spinner: '/Forms/img/spinner.gif',
 					submit: function(form){
@@ -223,6 +188,15 @@
 				$q.all([dataService.getForm(scope.itemId),dataService.getLists(scope.itemId)]).then(function(data){
 					scope.ila = angular.copy(data[0].data); //set item variable
 
+				  // scope.form1 = [
+				  //   "description",
+				  //   {
+				  //     type: "submit",
+				  //     title: "Save"
+				  //   }
+				  // ];
+				  scope.model = {};
+
 					dataService.getSchema().then(function(schema){
 					  scope.schema = schema.data;
 					});
@@ -230,6 +204,10 @@
 					//any List logic based on the current item would go here...
 					var formsMap = $filter('filter')(data[1].data,{listType: 'formsMap'}, true)[0].list; //get form mappings
 					var form = $filter('filter')(formsMap,{id: scope.ila.formId}, true)[0]; //select current form mapping
+					dataService.getFormDef(scope.ila.formId).then(function(formdef){
+					  scope.formdef = formdef.data;
+					  console.log(scope.formdef);
+					});
 					angular.extend(scope.form, {
 						template: '/Forms/forms/views/forms/'+form.template,
 						config:{
@@ -249,14 +227,14 @@
 								datepickerformat: 'yyyy-mm-dd'
 							}
 						},
-						data: {
-							commodities: angular.copy(scope.ila.submission.commodities) || []
-						},
+						data: angular.copy(scope.ila.submission) || [],
+						// data: {
+						// 	commodities: angular.copy(scope.ila.submission.commodities) || []
+						// },
 						showSubmission: function(){
 							return scope.ila.status == 'Submitted';
 						},
 						options: {
-							locations: $filter('filter')(data[1].data,{listType: 'locations'}, true)[0].list,
 							countries: $filter('filter')(data[1].data,{listType: 'country'}, true)[0].list,
 							suppliers: $filter('filter')(data[1].data,{listType: 'suppliers'}, true)[0].list,
 							formFields: $filter('filter')(data[1].data,{listType: 'formFields'}, true)[0].list

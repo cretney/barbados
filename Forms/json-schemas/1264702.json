@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 766ca7aeb290ada9fe4068a14f663f3c7b65be4a",
+  "description": "Generated from b with shasum 93edc29c8faea8181fcee2c3e6783f9d08eb9f5d",
   "type": "object",
   "required": [
     "blockId",
@@ -30,90 +30,45 @@
       "type": "object",
       "required": [
         "commodities",
-        "vessel",
-        "rotationNumber",
-        "containerNumber",
-        "dateInspection",
-        "timeInspection",
-        "entryDate",
+        "origin",
+        "findingsInspection",
+        "conditionsInspection",
         "submitter",
+        "vesselOrCraft",
+        "approvalNumber",
+        "resultInspection",
         "applicant",
         "consignee",
+        "destination",
         "supplier"
       ],
       "properties": {
         "commodities": {
           "type": "array",
-          "minItems": 1,
+          "minItems": 0,
           "uniqueItems": true,
           "items": {
-            "type": "object",
-            "required": [
-              "hsCode",
-              "description",
-              "typeFoodCategory",
-              "typeFoodDetail",
-              "grossWeight",
-              "quantity",
-              "units"
-            ],
-            "properties": {
-              "hsCode": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "typeFoodCategory": {
-                "type": "string"
-              },
-              "typeFoodDetail": {
-                "type": "string"
-              },
-              "grossWeight": {
-                "type": "string"
-              },
-              "quantity": {
-                "type": "integer"
-              },
-              "units": {
-                "type": "array",
-                "minItems": 1,
-                "uniqueItems": true,
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "unitType"
-                  ],
-                  "properties": {
-                    "unitType": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
           }
         },
-        "vessel": {
+        "origin": {
           "type": "string"
         },
-        "rotationNumber": {
+        "findingsInspection": {
           "type": "string"
         },
-        "containerNumber": {
-          "type": "string"
-        },
-        "dateInspection": {
-          "type": "string"
-        },
-        "timeInspection": {
-          "type": "string"
-        },
-        "entryDate": {
+        "conditionsInspection": {
           "type": "string"
         },
         "submitter": {
+          "type": "string"
+        },
+        "vesselOrCraft": {
+          "type": "string"
+        },
+        "approvalNumber": {
+          "type": "string"
+        },
+        "resultInspection": {
           "type": "string"
         },
         "applicant": {
@@ -160,6 +115,45 @@
           }
         },
         "consignee": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address",
+            "docid",
+            "fax",
+            "email"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "docid": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            }
+          }
+        },
+        "destination": {
           "type": "object",
           "required": [
             "id",

@@ -92,13 +92,13 @@
           {
             "unitType": "Units",
             "quantity": 3,
-            "pricePerUnit": 12,
+            "pricePerUnit": 12.00,
             "cifValue": 34
           },
           {
             "unitType": "Kilograms",
             "quantity": 4,
-            "pricePerUnit": 15,
+            "pricePerUnit": 15.00,
             "cifValue": 35
           }
         ]
@@ -110,7 +110,7 @@
           {
             "unitType": "Units",
             "quantity": 5,
-            "pricePerUnit": 20,
+            "pricePerUnit": 20.00,
             "cifValue": 36
           }
         ]
@@ -216,13 +216,13 @@
           {
             "unitType": "Units",
             "quantity": 3,
-            "pricePerUnit": 12,
+            "pricePerUnit": 12.00,
             "cifValue": 34
           },
           {
             "unitType": "Kilograms",
             "quantity": 4,
-            "pricePerUnit": 15,
+            "pricePerUnit": 15.00,
             "cifValue": 35
           }
         ]
@@ -234,7 +234,7 @@
           {
             "unitType": "Units",
             "quantity": 5,
-            "pricePerUnit": 20,
+            "pricePerUnit": 20.00,
             "cifValue": 36
           }
         ]
@@ -340,13 +340,13 @@
           {
             "unitType": "Units",
             "quantity": 3,
-            "pricePerUnit": 12,
+            "pricePerUnit": 12.00,
             "cifValue": 34
           },
           {
             "unitType": "Kilograms",
             "quantity": 4,
-            "pricePerUnit": 15,
+            "pricePerUnit": 15.00,
             "cifValue": 35
           }
         ]
@@ -358,7 +358,7 @@
           {
             "unitType": "Units",
             "quantity": 5,
-            "pricePerUnit": 20,
+            "pricePerUnit": 20.00,
             "cifValue": 36
           }
         ]
@@ -464,13 +464,13 @@
           {
             "unitType": "Units",
             "quantity": 3,
-            "pricePerUnit": 12,
+            "pricePerUnit": 12.00,
             "cifValue": 34
           },
           {
             "unitType": "Kilograms",
             "quantity": 4,
-            "pricePerUnit": 15,
+            "pricePerUnit": 15.00,
             "cifValue": 35
           }
         ]
@@ -482,7 +482,7 @@
           {
             "unitType": "Units",
             "quantity": 5,
-            "pricePerUnit": 20,
+            "pricePerUnit": 20.00,
             "cifValue": 36
           }
         ]
@@ -588,13 +588,13 @@
           {
             "unitType": "Units",
             "quantity": 3,
-            "pricePerUnit": 12,
+            "pricePerUnit": 12.00,
             "cifValue": 34
           },
           {
             "unitType": "Kilograms",
             "quantity": 4,
-            "pricePerUnit": 15,
+            "pricePerUnit": 15.00,
             "cifValue": 35
           }
         ]
@@ -606,7 +606,7 @@
           {
             "unitType": "Units",
             "quantity": 5,
-            "pricePerUnit": 20,
+            "pricePerUnit": 20.00,
             "cifValue": 36
           }
         ]
@@ -712,13 +712,13 @@
           {
             "unitType": "Units",
             "quantity": 3,
-            "pricePerUnit": 12,
+            "pricePerUnit": 12.00,
             "cifValue": 34
           },
           {
             "unitType": "Kilograms",
             "quantity": 4,
-            "pricePerUnit": 15,
+            "pricePerUnit": 15.00,
             "cifValue": 35
           }
         ]
@@ -730,7 +730,7 @@
           {
             "unitType": "Units",
             "quantity": 5,
-            "pricePerUnit": 20,
+            "pricePerUnit": 20.00,
             "cifValue": 36
           }
         ]
@@ -836,13 +836,13 @@
           {
             "unitType": "Units",
             "quantity": 3,
-            "pricePerUnit": 12,
+            "pricePerUnit": 12.00,
             "cifValue": 34
           },
           {
             "unitType": "Kilograms",
             "quantity": 4,
-            "pricePerUnit": 15,
+            "pricePerUnit": 15.00,
             "cifValue": 35
           }
         ]
@@ -854,7 +854,7 @@
           {
             "unitType": "Units",
             "quantity": 5,
-            "pricePerUnit": 20,
+            "pricePerUnit": 20.00,
             "cifValue": 36
           }
         ]
@@ -960,13 +960,13 @@
           {
             "unitType": "Units",
             "quantity": 3,
-            "pricePerUnit": 12,
+            "pricePerUnit": 12.00,
             "cifValue": 34
           },
           {
             "unitType": "Kilograms",
             "quantity": 4,
-            "pricePerUnit": 15,
+            "pricePerUnit": 15.00,
             "cifValue": 35
           }
         ]
@@ -978,7 +978,7 @@
           {
             "unitType": "Units",
             "quantity": 5,
-            "pricePerUnit": 20,
+            "pricePerUnit": 20.00,
             "cifValue": 36
           }
         ]
@@ -1084,13 +1084,13 @@
           {
             "unitType": "Units",
             "quantity": 3,
-            "pricePerUnit": 12,
+            "pricePerUnit": 12.00,
             "cifValue": 34
           },
           {
             "unitType": "Kilograms",
             "quantity": 4,
-            "pricePerUnit": 15,
+            "pricePerUnit": 15.00,
             "cifValue": 35
           }
         ]
@@ -1102,7 +1102,7 @@
           {
             "unitType": "Units",
             "quantity": 5,
-            "pricePerUnit": 20,
+            "pricePerUnit": 20.00,
             "cifValue": 36
           }
         ]
@@ -1221,13 +1221,13 @@
           {
             "unitType": "Units",
             "quantity": 3,
-            "pricePerUnit": 12,
+            "pricePerUnit": 12.00,
             "cifValue": 34
           },
           {
             "unitType": "Kilograms",
             "quantity": 4,
-            "pricePerUnit": 15,
+            "pricePerUnit": 15.00,
             "cifValue": 35
           }
         ]
@@ -1239,7 +1239,7 @@
           {
             "unitType": "Units",
             "quantity": 5,
-            "pricePerUnit": 20,
+            "pricePerUnit": 20.00,
             "cifValue": 36
           }
         ]
@@ -1451,38 +1451,6 @@
   }
 },
 {
-  "blockId": 1082513,
-  "workflowId": 8,
-  "formId": 25,
-  "title": "Notification for Payment of Duty at Customs",
-  "description": "The importer should make a payment",
-  "status": "Submitted",
-  "submission": {
-    "commodities": [
-      {
-        "hsCode": "123",
-        "description": "test",
-        "quantity": 2,
-        "entries": [
-          {
-            "vehicleBrand": "Toyota",
-            "vehicleModel": "RAV4",
-            "vehicleYear": "2013",
-            "vehicleEngine": "2.5 L 4-cylinder",
-            "odometer": "34,234"
-          }
-        ]
-      }
-    ],
-    "submitter": "Joe Blow",
-    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
-    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
-    "origin": "United States",
-    "countryConsigned": "Canada",
-    "expectedArrival": "2015-09-21T04:00:00.000Z"
-  }
-},
-{
   "blockId": 1111105,
   "workflowId": 11,
   "formId": 11,
@@ -1498,13 +1466,13 @@
           {
             "unitType": "Units",
             "quantity": 3,
-            "pricePerUnit": 12,
+            "pricePerUnit": 12.00,
             "cifValue": 34
           },
           {
             "unitType": "Kilograms",
             "quantity": 4,
-            "pricePerUnit": 15,
+            "pricePerUnit": 15.00,
             "cifValue": 35
           }
         ]
@@ -1516,7 +1484,7 @@
           {
             "unitType": "Units",
             "quantity": 5,
-            "pricePerUnit": 20,
+            "pricePerUnit": 20.00,
             "cifValue": 36
           }
         ]
@@ -1587,13 +1555,13 @@
           {
             "unitType": "Units",
             "quantity": 3,
-            "pricePerUnit": 12,
+            "pricePerUnit": 12.00,
             "cifValue": 34
           },
           {
             "unitType": "Kilograms",
             "quantity": 4,
-            "pricePerUnit": 15,
+            "pricePerUnit": 15.00,
             "cifValue": 35
           }
         ]
@@ -1605,7 +1573,7 @@
           {
             "unitType": "Units",
             "quantity": 5,
-            "pricePerUnit": 20,
+            "pricePerUnit": 20.00,
             "cifValue": 36
           }
         ]
@@ -1672,13 +1640,13 @@
           {
             "unitType": "Units",
             "quantity": 3,
-            "pricePerUnit": 12,
+            "pricePerUnit": 12.00,
             "cifValue": 34
           },
           {
             "unitType": "Kilograms",
             "quantity": 4,
-            "pricePerUnit": 15,
+            "pricePerUnit": 15.00,
             "cifValue": 35
           }
         ]
@@ -1690,7 +1658,7 @@
           {
             "unitType": "Units",
             "quantity": 5,
-            "pricePerUnit": 20,
+            "pricePerUnit": 20.00,
             "cifValue": 36
           }
         ]
@@ -1799,13 +1767,13 @@
           {
             "unitType": "Units",
             "quantity": 3,
-            "pricePerUnit": 12,
+            "pricePerUnit": 12.00,
             "cifValue": 34
           },
           {
             "unitType": "Kilograms",
             "quantity": 4,
-            "pricePerUnit": 15,
+            "pricePerUnit": 15.00,
             "cifValue": 35
           }
         ]
@@ -1817,7 +1785,7 @@
           {
             "unitType": "Units",
             "quantity": 5,
-            "pricePerUnit": 20,
+            "pricePerUnit": 20.00,
             "cifValue": 36
           }
         ]
@@ -1922,13 +1890,13 @@
           {
             "unitType": "Units",
             "quantity": 3,
-            "pricePerUnit": 12,
+            "pricePerUnit": 12.00,
             "cifValue": 34
           },
           {
             "unitType": "Kilograms",
             "quantity": 4,
-            "pricePerUnit": 15,
+            "pricePerUnit": 15.00,
             "cifValue": 35
           }
         ]
@@ -1940,7 +1908,7 @@
           {
             "unitType": "Units",
             "quantity": 5,
-            "pricePerUnit": 20,
+            "pricePerUnit": 20.00,
             "cifValue": 36
           }
         ]
@@ -2007,13 +1975,13 @@
           {
             "unitType": "Units",
             "quantity": 3,
-            "pricePerUnit": 12,
+            "pricePerUnit": 12.00,
             "cifValue": 34
           },
           {
             "unitType": "Kilograms",
             "quantity": 4,
-            "pricePerUnit": 15,
+            "pricePerUnit": 15.00,
             "cifValue": 35
           }
         ]
@@ -2025,7 +1993,7 @@
           {
             "unitType": "Units",
             "quantity": 5,
-            "pricePerUnit": 20,
+            "pricePerUnit": 20.00,
             "cifValue": 36
           }
         ]
@@ -2134,13 +2102,13 @@
           {
             "unitType": "Units",
             "quantity": 3,
-            "pricePerUnit": 12,
+            "pricePerUnit": 12.00,
             "cifValue": 34
           },
           {
             "unitType": "Kilograms",
             "quantity": 4,
-            "pricePerUnit": 15,
+            "pricePerUnit": 15.00,
             "cifValue": 35
           }
         ]
@@ -2152,7 +2120,7 @@
           {
             "unitType": "Units",
             "quantity": 5,
-            "pricePerUnit": 20,
+            "pricePerUnit": 20.00,
             "cifValue": 36
           }
         ]
@@ -2181,13 +2149,13 @@
           {
             "unitType": "Units",
             "quantity": 3,
-            "pricePerUnit": 12,
+            "pricePerUnit": 12.00,
             "cifValue": 34
           },
           {
             "unitType": "Kilograms",
             "quantity": 4,
-            "pricePerUnit": 15,
+            "pricePerUnit": 15.00,
             "cifValue": 35
           }
         ]
@@ -2199,7 +2167,7 @@
           {
             "unitType": "Units",
             "quantity": 5,
-            "pricePerUnit": 20,
+            "pricePerUnit": 20.00,
             "cifValue": 36
           }
         ]
@@ -2228,13 +2196,13 @@
           {
             "unitType": "Units",
             "quantity": 3,
-            "pricePerUnit": 12,
+            "pricePerUnit": 12.00,
             "cifValue": 34
           },
           {
             "unitType": "Kilograms",
             "quantity": 4,
-            "pricePerUnit": 15,
+            "pricePerUnit": 15.00,
             "cifValue": 35
           }
         ]
@@ -2246,7 +2214,7 @@
           {
             "unitType": "Units",
             "quantity": 5,
-            "pricePerUnit": 20,
+            "pricePerUnit": 20.00,
             "cifValue": 36
           }
         ]
@@ -2790,6 +2758,100 @@
     "destination": {"id": 1, "name": "Importer Maple Inc.", "countryId": "CA", "country":"Canada", "address": "1000 Main Av, Toronto, BC, 902", "docid":"3-234-567", "fax":"777-5555", "email":"ghi@example.com"},
     "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "expectedArrival": "2015-09-21T04:00:00.000Z"
+  }
+},
+{
+  "blockId": 1264601,
+  "workflowId": 26,
+  "formId": 46,
+  "title": "New Landing Certificate for Animals",
+  "description": "Please complete the Certificate",
+  "status": "Draft",
+  "submission": {
+    "origin": "United States",
+    "findingsInspection":"",
+    "conditionsInspection":"",
+    "submitter": "Joe Blow",
+    "vesselOrCraft": "",
+    "approvalNumber":"",
+    "resultInspection":"",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "phone":"555-5555", "email":"abc@example.com"},
+    "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"},
+    "destination": {"id": 1, "name": "Importer Maple Inc.", "countryId": "CA", "country":"Canada", "address": "1000 Main Av, Toronto, BC, 902", "docid":"3-234-567", "fax":"777-5555", "email":"ghi@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"}
+  }
+},
+{
+  "blockId": 1264702,
+  "workflowId": 26,
+  "formId": 47,
+  "title": "Landing Certificate for Animals",
+  "status": "Issued",
+  "submission": {
+    "landingCertificateNumber": "A2992",
+    "origin": "United States",
+    "resultInspection":"Conditioned",
+    "findingsInspection":"*** findings of Inspection here ***",
+    "conditionsInspection":"*** conditions of Inspection here ***",
+    "submitter": "Joe Blow",
+    "vesselOrCraft": "ISLANDIA",
+    "approvalNumber":"2016-767657",
+    "issuedDate":"2016-04-07",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "phone":"555-5555", "email":"abc@example.com"},
+    "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"},
+    "destination": {"id": 1, "name": "Importer Maple Inc.", "countryId": "CA", "country":"Canada", "address": "1000 Main Av, Toronto, BC, 902", "docid":"3-234-567", "fax":"777-5555", "email":"ghi@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"}
+  }
+},
+{
+  "blockId": 1213001,
+  "workflowId": 21,
+  "formId": 30,
+  "title": "New Application for Certificate of Origin (COO)",
+  "description": "Please complete the Export Application",
+  "status": "Draft",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units"
+          },
+          {
+            "unitType": "Kilograms"
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units"
+          }
+        ]
+      }
+    ],
+    "submitter": "Joe Blow",
+    "applicant": {"id":4, "name":"Exporter Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"},
+    "destination": {"id": 1, "name": "Importer Maple Inc.", "countryId": "CA", "country":"Canada", "address": "1000 Main Av, Toronto, BC, 902", "docid":"3-234-567", "fax":"777-5555", "email":"ghi@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"}
+  }
+},
+{
+  "blockId": 1153212,
+  "workflowId": 15,
+  "formId": 32,
+  "title": "New Phitosanitary Inspection Certificate for Import Release",
+  "description": "Please complete the Inspection Certificate",
+  "status": "Draft",
+  "submission": {
+    "dateInspection": "2016-04-07",
+    "origin":"United States",
+    "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"}
   }
 }
 ]
