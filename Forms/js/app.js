@@ -237,7 +237,488 @@
 						options: {
 							countries: $filter('filter')(data[1].data,{listType: 'country'}, true)[0].list,
 							suppliers: $filter('filter')(data[1].data,{listType: 'suppliers'}, true)[0].list,
-							formFields: $filter('filter')(data[1].data,{listType: 'formFields'}, true)[0].list
+							// formFields: $filter('filter')(data[1].data,{listType: 'formFields'}, true)[0].list
+							formFields: 
+							[
+								{
+									"id": 1,
+									"field": "submitter",
+									"display": "Submitter",
+									"definition": "The person who submitted the application."
+								},
+								{
+									"id": 2,
+									"field": "applicant",
+									"display": "Applicant",
+									"definition": "The person or company applying for the licence."
+								},
+								{
+									"id": 13,
+									"field": "hsCode",
+									"display": "HS Code",
+									"definition": "The unique code for the commodity."
+								},
+								{
+									"id": 16,
+									"field": "description",
+									"display": "Description",
+									"definition": "Description of the item."
+								},
+								{
+									"id": 18,
+									"field": "unitType",
+									"display": "Unit of Sale",
+									"definition": "The unit of sale."
+								},
+								{
+									"id": 19,
+									"field": "quantity",
+									"display": "Quantity",
+									"definition": "The quantity in units of sale."
+								},
+								{
+									"id": 20,
+									"field": "pricePerUnit",
+									"display": "Price Per Unit",
+									"definition": "In Barbados Dollars"
+								},
+								{
+									"id": 21,
+									"field": "cifValue",
+									"display": "Customs Value",
+									"definition": "In Barbados Dollars"
+								},
+								{
+									"id": 4,
+									"field": "origin",
+									"display": "Country of Origin",
+									"definition": "The country from where the goods originated."
+								},
+								{
+									"id": 5,
+									"field": "countryConsigned",
+									"display": "Country whence Consigned",
+									"definition": "The country where the goods were consigned."
+								},
+								{
+									"id": 8,
+									"field": "supplier",
+									"display": "Supplier",
+									"definition": "The name of the Supplier of the goods."
+								},
+								{
+									"id": 6,
+									"field": "expectedArrival",
+									"display": "Expected Time of Arrival",
+									"definition": "The date that the goods will arrive in Barbados."
+								},
+								{
+									"id": 33,
+									"field": "consigments",
+									"display": "Number of Consignments",
+									"definition": ""
+								},
+								{
+									"id": 34,
+									"field": "intendedUse",
+									"display": "Intended use",
+									"definition": "",
+									"options": ["Consumption","Processing","Sale Distribution","Sowing/Propagation","Other"]
+								},
+								{
+									"id": 35,
+									"field": "meansConveyance",
+									"display": "Means of Conveyance",
+									"definition": "",
+									"options": ["Sea","Air","Mail","Personal Bagage"]
+								},
+								{
+									"id": 36,
+									"field": "vehicleBrand",
+									"display": "Brand of Vehicle",
+									"definition": "Make or Brand of vehicle"
+								},
+								{
+									"id": 37,
+									"field": "vehicleModel",
+									"display": "Model of Vehicle",
+									"definition": ""
+								},
+								{
+									"id": 38,
+									"field": "vehicleYear",
+									"display": "Year of Vehicle",
+									"definition": ""
+								},
+								{
+									"id": 39,
+									"field": "vehicleEngine",
+									"display": "Engine capacity",
+									"definition": "Engine capacity of vehicle"
+								},
+								{
+									"id": 40,
+									"field": "odometer",
+									"display": "Odometer (Kms)",
+									"definition": "Odometer reading in kilometers",
+									"datatype": "String"
+								},
+								{
+									"id": 41,
+									"field": "vehicleCase",
+									"display": "Application for",
+									"definition": "Select type of application",
+									"datatype": "Dropdown"
+								},
+								{
+									"id": 42,
+									"field": "displayDescription",
+									"display": "Display Description",
+									"definition": "Description about the display including dates and location of event",
+									"datatype": "Text"
+								},
+								{
+									"id": 43,
+									"field": "displayRisponsible",
+									"display": "Display Risponsible",
+									"definition": "Who will be in charge of the display",
+									"datatype": "Text"
+								},
+								{
+									"id": 44,
+									"field": "contactInspection",
+									"display": "Contact for Inspection",
+									"definition": "Person name, contact information and locations to inspect",
+									"datatype": "Text"
+								},
+								{
+									"id": 50,
+									"field": "containerNumber",
+									"display": "Container Number",
+									"definition": ""
+								},
+								{
+									"id": 51,
+									"field": "inspectionPlace",
+									"display": "Place of Inspection",
+									"definition": "The place of inspection."
+								},
+								{
+									"id": 59,
+									"field": "useByDescription",
+									"display": "To be used by",
+									"definition": "Description about to whom would you like permition to use by"
+								},
+								{
+									"id": 60,
+									"field": "attachment",
+									"display": "Attachment Letter",
+									"definition": "Please attach any document required"
+								},
+								{
+									"id": 61,
+									"field": "endUsers",
+									"display": "Users",
+									"definition": "List employees or other personel whom will be end users of the equipment"
+								},
+								{
+									"id": 62,
+									"field": "contracts",
+									"display": "Contracts",
+									"definition": "List clients or contacts to whom you provide services"
+								},
+								{
+									"id": 63,
+									"field": "nameAgency",
+									"display": "Name of Agency",
+									"definition": ""
+								},
+								{
+									"id": 64,
+									"field": "registrationAgency",
+									"display": "Registration of Agency",
+									"definition": ""
+								},
+								{
+									"id": 65,
+									"field": "addressAgency",
+									"display": "Address of Agency",
+									"definition": ""
+								},
+								{
+									"id": 66,
+									"field": "numberOfGuards",
+									"display": "Number of Guards",
+									"definition": ""
+								},
+								{
+									"id": 67,
+									"field": "numberOfFirearms",
+									"display": "Number of Firearms",
+									"definition": ""
+								},
+								{
+									"id": 68,
+									"field": "typesFirearms",
+									"display": "types of Firearms",
+									"definition": ""
+								},
+								{
+									"id": 69,
+									"field": "reasonDesiringFirearms",
+									"display": "Reason(s) for desiring to have firearms",
+									"definition": ""
+								},
+								{
+									"id": 70,
+									"field": "previousApplication",
+									"display": "Any previous application(s)",
+									"definition": ""
+								},
+								{
+									"id": 71,
+									"field": "numberFirearmsAlreadyIssued",
+									"display": "Firearms already issued",
+									"definition": "Number of firearms for which licences have already been issued"
+								},
+								{
+									"id": 72,
+									"field": "arrangementsTrainingGuards",
+									"display": "Arrangements Training Guards",
+									"definition": "arrangements made for training of guards who be required to use a firearm"
+								},
+								{
+									"id": 73,
+									"field": "otherTypesInstruments",
+									"display": "Other types of instrument",
+									"definition": "other types of instrument of defence"
+								},
+								{
+									"id": 74,
+									"field": "reasonDesiringOtherInstruments",
+									"display": "Reason of other instrument",
+									"definition": "reason(s) for desiring to have other types of instrument of defence"
+								},
+								{
+									"id": 75,
+									"field": "destinationCountry",
+									"fieldtype":"Dropdown",
+									"display": "Destination Country",
+									"definition": "Destination Country to Export to"
+								},
+								{
+									"id": 76,
+									"field": "observations",
+									"fieldtype":"Text",
+									"display": "Observations",
+									"definition": ""
+								},
+								{
+									"id": 77,
+									"field": "fobValue",
+									"display": "FOB Value (US$)",
+									"definition": "In US Dollars"
+								},
+								{
+									"id": 78,
+									"field": "preferenceCriterion",
+									"display": "Preference Criterion",
+									"definition": ""
+								},
+								{
+									"id": 79,
+									"field": "inFreeTradeZone",
+									"display": "Manufacturer premises located in Free Trade Zone",
+									"definition": "whether Producer is located in the Free Zone"
+								},
+								{
+									"id": 80,
+									"field": "tradedSpecial",
+									"display": "Traded under Special Arrangements",
+									"definition": "Whether the good is on the list in Annex III.04.06 to be traded under Special Arrangements"
+								},
+								{
+									"id": 81,
+									"field": "othersAnnex",
+									"display": "Others Annex",
+									"definition": "Others: if in determining the origin of the good one of the procedures set forth in Articles 1V.06 or IV.05 of the Agreement, was used, indicate:"
+								},
+								{
+									"id": 82,
+									"field": "grossWeight",
+									"display": "Gross Weight",
+									"definition": "Indicate the Gross Weight of the Goods."
+								},
+								{
+									"id": 83,
+									"field": "rulesOrigin",
+									"display": "Rules of Origin",
+									"definition": "Enter the criteria of origin applicable to each of the goods included."
+								},
+								{
+									"id": 84,
+									"field": "portShipment",
+									"display": "Port of Shipment",
+									"definition": "Indicate Port of Shipment."
+								},
+								{
+									"id": 85,
+									"field": "modeTransport",
+									"display": "Mode of Transportation",
+									"definition": "Mode of Transportation"
+								},
+								{
+									"id": 86,
+									"field": "routeTransport",
+									"display": "Route",
+									"definition": "Route of Transportation"
+								},
+								{
+									"id": 87,
+									"field": "invoiceNumber",
+									"display": "Invoice Number",
+									"definition": "Enter the Number of the Commercial Invoice."
+								},
+								{
+									"id": 88,
+									"field": "invoiceDate",
+									"display": "Invoice Date",
+									"definition": "Enter the Date of the Commercial Invoice."
+								},
+								{
+									"id": 89,
+									"field": "portDischarge",
+									"display": "Port of Discharge",
+									"definition": "Indicate Port of Discharge."
+								},
+								{
+									"id": 90,
+									"field": "periodRequestStart",
+									"display": "Period Starting",
+									"definition": "Period Starting of Request"
+								},
+								{
+									"id": 91,
+									"field": "periodRequestEnding",
+									"display": "Period Ending",
+									"definition": "Period Ending of Request"
+								},
+								{
+									"id": 92,
+									"field": "requestType",
+									"display": "Type of Request",
+									"definition": "Request Type (New Request/Renewal)"
+								},
+								{
+									"id": 93,
+									"field": "previousNumber",
+									"display": "Previous Number",
+									"definition": "Previous Permit Number"
+								},
+								{
+									"id": 94,
+									"field": "previousExpiration",
+									"display": "Date Expired",
+									"definition": "Expiration date of previous permit"
+								},
+								{
+									"id": 95,
+									"field": "approvalNumber",
+									"display": "Approval Number",
+									"definition": "Number of Approval Document"
+								},
+								{
+									"id": 96,
+									"field": "receptionDate",
+									"display": "Date Received",
+									"definition": ""
+								},
+								{
+									"id": 97,
+									"field": "issuedDate",
+									"display": "Date Issued",
+									"definition": ""
+								},
+								{
+									"id": 98,
+									"field": "approvedBy",
+									"display": "Approved By",
+									"definition": ""
+								},
+								{
+									"id": 99,
+									"field": "inspectionLocation",
+									"display": "Inspection Location",
+									"definition": ""
+								},
+								{
+									"id": 100,
+									"field": "inspectionDate",
+									"display": "Date Inspection",
+									"definition": ""
+								},
+								{
+									"id": 101,
+									"field": "inspector",
+									"display": "Inspector",
+									"definition": ""
+								},
+								{
+									"id": 102,
+									"field": "inspector",
+									"display": "Inspector",
+									"definition": ""
+								},
+								{
+									"id": 103,
+									"field": "typeFoodCategory",
+									"display": "Food Category",
+									"definition": ""
+								},
+								{
+									"id": 104,
+									"field": "typeFoodDetail",
+									"display": "Food Type",
+									"definition": ""
+								},
+								{
+									"id": 105,
+									"field": "consignee",
+									"display": "Consignee",
+									"definition": ""
+								},
+								{
+									"id": 106,
+									"field": "vessel",
+									"display": "Vessel",
+									"definition": ""
+								},
+								{
+									"id": 107,
+									"field": "rotationNumber",
+									"display": "Rotation Number",
+									"definition": ""
+								},
+								{
+									"id": 108,
+									"field": "dateInspection",
+									"display": "Date of Inspection",
+									"definition": ""
+								},
+								{
+									"id": 109,
+									"field": "timeInspection",
+									"display": "Time of Inspection",
+									"definition": ""
+								},
+								{
+									"id": 110,
+									"field": "entryDate",
+									"display": "Entry Date",
+									"definition": ""
+								}
+
+							]
 						}
 				    });
 				});

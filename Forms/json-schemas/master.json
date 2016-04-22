@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 3248d1059e4c334c77cdfe8957ec1675b85ddb0d",
+  "description": "Generated from b with shasum 9f68112425e7379595ea70011516b801075c7811",
   "type": "object",
   "required": [
 
@@ -722,6 +722,11 @@
         "resultInspection": {
           "type": "string",
           "title": "Resultinspection",
+          "description": ""
+        },
+        "landingCertificateNumber": {
+          "type": "string",
+          "title": "Landingcertificatenumber",
           "description": ""
         }
       }

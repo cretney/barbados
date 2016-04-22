@@ -1181,10 +1181,12 @@
         "description": "test",
         "units": [
           {
-            "unitType": "Units"
+            "unitType": "Units",
+            "quantity": 0
           },
           {
-            "unitType": "Kilograms"
+            "unitType": "Kilograms",
+            "quantity": 0
           }
         ]
       },
@@ -1202,7 +1204,11 @@
     "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
     "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada"
+    "countryConsigned": "Canada",
+    "expectedArrival": "",
+    "consigments": "",
+    "intendedUse": "",
+    "meansConveyance": ""
   }
 },
 {
@@ -1220,15 +1226,11 @@
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3,
-            "pricePerUnit": 12.00,
-            "cifValue": 34
+            "quantity": 3
           },
           {
             "unitType": "Kilograms",
-            "quantity": 4,
-            "pricePerUnit": 15.00,
-            "cifValue": 35
+            "quantity": 4
           }
         ]
       },

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 93edc29c8faea8181fcee2c3e6783f9d08eb9f5d",
+  "description": "Generated from b with shasum 0a29ffd875342fe6e84e4539bf7ec5c805431007",
   "type": "object",
   "required": [
     "blockId",
@@ -29,28 +29,28 @@
     "submission": {
       "type": "object",
       "required": [
-        "commodities",
+        "landingCertificateNumber",
         "origin",
+        "resultInspection",
         "findingsInspection",
         "conditionsInspection",
         "submitter",
         "vesselOrCraft",
         "approvalNumber",
-        "resultInspection",
+        "issuedDate",
         "applicant",
         "consignee",
         "destination",
         "supplier"
       ],
       "properties": {
-        "commodities": {
-          "type": "array",
-          "minItems": 0,
-          "uniqueItems": true,
-          "items": {
-          }
+        "landingCertificateNumber": {
+          "type": "string"
         },
         "origin": {
+          "type": "string"
+        },
+        "resultInspection": {
           "type": "string"
         },
         "findingsInspection": {
@@ -68,7 +68,7 @@
         "approvalNumber": {
           "type": "string"
         },
-        "resultInspection": {
+        "issuedDate": {
           "type": "string"
         },
         "applicant": {

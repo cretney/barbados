@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum aea6cf30a7f1330562d5fc64afcbc45e8b7aff01",
+  "description": "Generated from b with shasum fc20c12e76c58aea7c1817621859a54072ccbded",
   "type": "object",
   "required": [
     "blockId",
@@ -38,7 +38,11 @@
         "applicant",
         "supplier",
         "origin",
-        "countryConsigned"
+        "countryConsigned",
+        "expectedArrival",
+        "consigments",
+        "intendedUse",
+        "meansConveyance"
       ],
       "properties": {
         "commodities": {
@@ -71,6 +75,9 @@
                   "properties": {
                     "unitType": {
                       "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
                     }
                   }
                 }
@@ -163,6 +170,18 @@
           "type": "string"
         },
         "countryConsigned": {
+          "type": "string"
+        },
+        "expectedArrival": {
+          "type": "string"
+        },
+        "consigments": {
+          "type": "string"
+        },
+        "intendedUse": {
+          "type": "string"
+        },
+        "meansConveyance": {
           "type": "string"
         }
       }
