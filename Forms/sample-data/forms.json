@@ -1117,19 +1117,6 @@
   }
 },
 {
-  "blockId": 1505001,
-  "workflowId": 50,
-  "formId": 50,
-  "title": "New Admin LPCO",
-  "description": "Please specify task",
-  "status": "Draft",
-  "submission": {
-    "submitter": "Joe Blow",
-    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
-    "containerNumber": "9DFP99NU03"
-  }
-},
-{
   "blockId": 1151201,
   "workflowId": 15,
   "formId": 12,
