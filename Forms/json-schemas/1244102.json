@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum de168afc665039519963b99b2ffd6f0a3900ebfa",
+  "description": "Generated from b with shasum 51063a7b838cfa1a69470af02e7e110ef5f45e07",
   "type": "object",
   "required": [
     "blockId",
@@ -29,7 +29,6 @@
     "submission": {
       "type": "object",
       "required": [
-        "commodities",
         "inspectionLocation",
         "inspectionDate",
         "inspector",
@@ -43,75 +42,6 @@
         "expectedArrival"
       ],
       "properties": {
-        "commodities": {
-          "type": "array",
-          "minItems": 1,
-          "uniqueItems": true,
-          "items": {
-            "type": "object",
-            "required": [
-              "hsCode",
-              "description",
-              "fobValue",
-              "preferenceCriterion",
-              "othersAnnex",
-              "grossWeight",
-              "quantity",
-              "rulesOrigin",
-              "invoiceNumber",
-              "invoiceDate",
-              "units"
-            ],
-            "properties": {
-              "hsCode": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "fobValue": {
-                "type": "integer"
-              },
-              "preferenceCriterion": {
-                "type": "string"
-              },
-              "othersAnnex": {
-                "type": "string"
-              },
-              "grossWeight": {
-                "type": "string"
-              },
-              "quantity": {
-                "type": "integer"
-              },
-              "rulesOrigin": {
-                "type": "string"
-              },
-              "invoiceNumber": {
-                "type": "string"
-              },
-              "invoiceDate": {
-                "type": "string"
-              },
-              "units": {
-                "type": "array",
-                "minItems": 1,
-                "uniqueItems": true,
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "unitType"
-                  ],
-                  "properties": {
-                    "unitType": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        },
         "inspectionLocation": {
           "type": "string"
         },

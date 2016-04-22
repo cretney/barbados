@@ -327,11 +327,6 @@
           "title": "Expected Time of Arrival",
           "description": "The date that the goods will arrive in Barbados."
         },
-        "containerNumber": {
-          "type": "string",
-          "title": "Container Number",
-          "description": ""
-        },
         "consigments": {
           "type": "string",
           "title": "Number of Consignments",
@@ -513,6 +508,31 @@
           "title": "Observations",
           "description": ""
         },
+        "requestType": {
+          "type": "string",
+          "title": "Type of Request",
+          "description": "Request Type (New Request/Renewal)"
+        },
+        "previousNumber": {
+          "type": "string",
+          "title": "Previous Number",
+          "description": "Previous Permit Number"
+        },
+        "previousExpiration": {
+          "type": "date-time",
+          "title": "Date Expired",
+          "description": "Expiration date of previous permit"
+        },
+        "periodRequestStart": {
+          "type": "date-time",
+          "title": "Period Starting",
+          "description": "Period Starting of Request"
+        },
+        "periodRequestEnding": {
+          "type": "date-time",
+          "title": "Period Ending",
+          "description": "Period Ending of Request"
+        },
         "importer": {
           "type": "object",
           "required": [
@@ -566,31 +586,6 @@
             }
           }
         },
-        "requestType": {
-          "type": "string",
-          "title": "Type of Request",
-          "description": "Request Type (New Request/Renewal)"
-        },
-        "previousNumber": {
-          "type": "string",
-          "title": "Previous Number",
-          "description": "Previous Permit Number"
-        },
-        "previousExpiration": {
-          "type": "string",
-          "title": "Date Expired",
-          "description": "Expiration date of previous permit"
-        },
-        "periodRequestStart": {
-          "type": "string",
-          "title": "Period Starting",
-          "description": "Period Starting of Request"
-        },
-        "periodRequestEnding": {
-          "type": "string",
-          "title": "Period Ending",
-          "description": "Period Ending of Request"
-        },
         "approvalNumber": {
           "type": "string",
           "title": "Approval Number",
@@ -602,7 +597,7 @@
           "description": ""
         },
         "periodEnding": {
-          "type": "string",
+          "type": "date-time",
           "title": "Periodending",
           "description": ""
         },
@@ -624,11 +619,6 @@
         "transhipVia": {
           "type": "string",
           "title": "Transhipvia",
-          "description": ""
-        },
-        "vesselOrCraft": {
-          "type": "string",
-          "title": "Vesselorcraft",
           "description": ""
         },
         "inspectionLocation": {
@@ -656,6 +646,11 @@
           "title": "Food Type",
           "description": ""
         },
+        "vesselOrCraft": {
+          "type": "string",
+          "title": "Vesselorcraft",
+          "description": ""
+        },
         "vessel": {
           "type": "string",
           "title": "Vessel",
@@ -664,6 +659,11 @@
         "rotationNumber": {
           "type": "string",
           "title": "Rotation Number",
+          "description": ""
+        },
+        "containerNumber": {
+          "type": "string",
+          "title": "Container Number",
           "description": ""
         },
         "dateInspection": {

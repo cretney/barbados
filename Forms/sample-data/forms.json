@@ -1130,10 +1130,12 @@
         "description": "test",
         "units": [
           {
-            "unitType": "Units"
+            "unitType": "Units",
+            "quantity": 0
           },
           {
-            "unitType": "Kilograms"
+            "unitType": "Kilograms",
+            "quantity": 0
           }
         ]
       },
@@ -1142,7 +1144,8 @@
         "description": "test",
         "units": [
           {
-            "unitType": "Units"
+            "unitType": "Units",
+            "quantity": 0
           }
         ]
       }
@@ -1151,7 +1154,12 @@
     "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
     "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
     "origin": "United States",
-    "countryConsigned": "Canada"
+    "countryConsigned": "Canada",
+    "expectedArrival": "",
+    "consigments": "",
+    "intendedUse": "",
+    "meansConveyance": ""
+
   }
 },
 {
@@ -1227,9 +1235,7 @@
         "units": [
           {
             "unitType": "Units",
-            "quantity": 5,
-            "pricePerUnit": 20.00,
-            "cifValue": 36
+            "quantity": 5
           }
         ]
       }
@@ -1454,15 +1460,11 @@
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3,
-            "pricePerUnit": 12.00,
-            "cifValue": 34
+            "quantity": 3
           },
           {
             "unitType": "Kilograms",
-            "quantity": 4,
-            "pricePerUnit": 15.00,
-            "cifValue": 35
+            "quantity": 4
           }
         ]
       },
@@ -2324,32 +2326,23 @@
   "description": "Please complete the Import Application",
   "status": "Draft",
   "submission": {
-    "commodities": [
-      {
-        "hsCode": "123",
-        "description": "test",
-        "units": [
-          {
-            "unitType": "Units"
-          },
-          {
-            "unitType": "Kilograms"
-          }
-        ]
-      },
-      {
-        "hsCode": "234",
-        "description": "test",
-        "units": [
-          {
-            "unitType": "Units"
-          }
-        ]
-      }
-    ],
+    "requestType":"",
+    "previousNumber":"",
+    "previousExpiration":"",
+    "periodRequestStart":"",
+    "periodRequestEnding":"",
+    "importer": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "phone":"555-5555", "email":"abc@example.com"},
+
+    "approvalNumber":"",
+    "approvedBy":"",
+    "periodEnding":"",
+    "approvalDate":"",
+    "issuedDate":"",
+    "receptionDate":"",
+
+
     "submitter": "Joe Blow",
     "applicant": {"id":4, "name":"Exporter Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
-    "importer": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "phone":"666-6666","email":"abc@example.com"},
     "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"},
     "destination": {"id": 1, "name": "Importer Maple Inc.", "countryId": "CA", "country":"Canada", "address": "1000 Main Av, Toronto, BC, 902", "docid":"3-234-567", "fax":"777-5555", "email":"ghi@example.com"},
     "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"}
@@ -2510,29 +2503,12 @@
   "description": "Please complete the Form for Sampling of Goods' Examination",
   "status": "Draft",
   "submission": {
-    "commodities": [
-      {
-        "hsCode": "123",
-        "description": "test",
-        "units": [
-          {
-            "unitType": "Units"
-          },
-          {
-            "unitType": "Kilograms"
-          }
-        ]
-      },
-      {
-        "hsCode": "234",
-        "description": "test",
-        "units": [
-          {
-            "unitType": "Units"
-          }
-        ]
-      }
-    ],
+    "inspectionLocation":"",
+    "inspectionDate":"",
+    "inspector":"",
+    "typeFoodCategory":"",
+    "typeFoodDetail":"",
+
     "submitter": "Joe Blow",
     "vesselOrCraft": "ISLANDIA",
     "applicant": {"id":4, "name":"Exporter Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
@@ -2548,43 +2524,6 @@
   "title": "Sampling of Goods",
   "status": "Issued",
   "submission": {
-    "commodities":[
-      {
-        "hsCode":"123",
-        "description":"test",
-        "fobValue":1000,
-        "preferenceCriterion":"A",
-        "othersAnnex":"ACC",
-        "grossWeight":"10",
-        "quantity":1,
-        "rulesOrigin":"A",
-        "invoiceNumber":"123456",
-        "invoiceDate":"2016-03-07",
-        "units":[
-          {
-            "unitType":"Units"
-          }
-        ]
-      },
-      {
-        "hsCode":"234",
-        "description":"test",
-        "fobValue":2000,
-        "preferenceCriterion":"B",
-        "othersAnnex":"DMI",
-        "grossWeight":"20",
-        "quantity":2,
-        "rulesOrigin":"B",
-        "invoiceNumber":"7890123",
-        "invoiceDate":"2016-04-07",
-        "units":[
-          {
-            "unitType":"Units"
-          }
-        ]
-      }
-    ],
-
     "inspectionLocation":"1234 Bay Street, St. Michael",
     "inspectionDate":"2016-03-07",
     "inspector":"John Smith",
@@ -2611,18 +2550,23 @@
       {
         "hsCode": "123",
         "description": "test",
+        "typeFoodCategory":"",
+        "typeFoodDetail":"",
+        "grossWeight":0.0,
+        "quantity":1,
         "units": [
           {
             "unitType": "Units"
-          },
-          {
-            "unitType": "Kilograms"
           }
         ]
       },
       {
         "hsCode": "234",
         "description": "test",
+        "typeFoodCategory":"",
+        "typeFoodDetail":"",
+        "grossWeight":0.0,
+        "quantity":1,
         "units": [
           {
             "unitType": "Units"
@@ -2630,6 +2574,12 @@
         ]
       }
     ],
+    "vessel": "",
+    "rotationNumber": "",
+    "containerNumber": "",
+    "dateInspection": "", 
+    "timeInspection": "",
+    "entryDate": "",
     "origin": "United States",
     "submitter": "Joe Blow",
     "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "phone":"555-5555", "email":"abc@example.com"},
@@ -2651,7 +2601,7 @@
         "description":"test",
         "typeFoodCategory":"Dairy",
         "typeFoodDetail":"Milk",
-        "grossWeight":"10",
+        "grossWeight":10.0,
         "quantity":1,
         "units":[
           {
@@ -2664,7 +2614,7 @@
         "description":"test",
         "typeFoodCategory":"Frozen Foods",
         "typeFoodDetail":"Fish",
-        "grossWeight":"20",
+        "grossWeight":20.0,
         "quantity":2,
         "units":[
           {

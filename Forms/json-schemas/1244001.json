@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 41ad4cc58566d83c1e4a02b78ba34e126ac5279b",
+  "description": "Generated from b with shasum 9f1dea58b1572f4992582d9c28ddc0a93cbde475",
   "type": "object",
   "required": [
     "blockId",
@@ -33,7 +33,11 @@
     "submission": {
       "type": "object",
       "required": [
-        "commodities",
+        "inspectionLocation",
+        "inspectionDate",
+        "inspector",
+        "typeFoodCategory",
+        "typeFoodDetail",
         "submitter",
         "vesselOrCraft",
         "applicant",
@@ -42,42 +46,20 @@
         "supplier"
       ],
       "properties": {
-        "commodities": {
-          "type": "array",
-          "minItems": 1,
-          "uniqueItems": true,
-          "items": {
-            "type": "object",
-            "required": [
-              "hsCode",
-              "description",
-              "units"
-            ],
-            "properties": {
-              "hsCode": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "units": {
-                "type": "array",
-                "minItems": 1,
-                "uniqueItems": true,
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "unitType"
-                  ],
-                  "properties": {
-                    "unitType": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          }
+        "inspectionLocation": {
+          "type": "string"
+        },
+        "inspectionDate": {
+          "type": "string"
+        },
+        "inspector": {
+          "type": "string"
+        },
+        "typeFoodCategory": {
+          "type": "string"
+        },
+        "typeFoodDetail": {
+          "type": "string"
         },
         "submitter": {
           "type": "string"

@@ -47,7 +47,13 @@
 		  <div class="row">
 		    <div class="col-sm-6">
 		      <span field-name="4" form='form' readonly="true" ila='ila'></span>
-		      <span field-name="8" form='form' readonly="true" ila='ila'></span>
+		      <div class="form-group">
+		        <label class="col-sm-4 control-label">
+		          <span field-name="8" form-fields="form.options.formFields"></span>
+		        </label>
+		        <div class="col-sm-8 control-value" ng-bind="ila.submission.supplier.name">
+		        </div>
+		      </div>
 		    </div>
 		    <div class="col-sm-6">
 		      <span field-name="5" form='form' readonly="true" ila='ila'></span>

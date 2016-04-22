@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 45fa0fe09ecbf4486be3b12958d51c33a57aa8de",
+  "description": "Generated from b with shasum a311cbca16662e01bdb6074446bf01bbfe77c066",
   "type": "object",
   "required": [
     "blockId",
@@ -34,6 +34,12 @@
       "type": "object",
       "required": [
         "commodities",
+        "vessel",
+        "rotationNumber",
+        "containerNumber",
+        "dateInspection",
+        "timeInspection",
+        "entryDate",
         "origin",
         "submitter",
         "applicant",
@@ -51,6 +57,10 @@
             "required": [
               "hsCode",
               "description",
+              "typeFoodCategory",
+              "typeFoodDetail",
+              "grossWeight",
+              "quantity",
               "units"
             ],
             "properties": {
@@ -59,6 +69,18 @@
               },
               "description": {
                 "type": "string"
+              },
+              "typeFoodCategory": {
+                "type": "string"
+              },
+              "typeFoodDetail": {
+                "type": "string"
+              },
+              "grossWeight": {
+                "type": "number"
+              },
+              "quantity": {
+                "type": "integer"
               },
               "units": {
                 "type": "array",
@@ -78,6 +100,24 @@
               }
             }
           }
+        },
+        "vessel": {
+          "type": "string"
+        },
+        "rotationNumber": {
+          "type": "string"
+        },
+        "containerNumber": {
+          "type": "string"
+        },
+        "dateInspection": {
+          "type": "string"
+        },
+        "timeInspection": {
+          "type": "string"
+        },
+        "entryDate": {
+          "type": "string"
         },
         "origin": {
           "type": "string"
