@@ -968,8 +968,20 @@
       "purpose": "W"
     },
     {
+      "id": 32,
+      "name": "Request for Plant Inspection Letter.pdf",
+      "processType": "I",
+      "purpose": "W"
+    },
+    {
       "id": 45,
       "name": "Permit to import Dairy Products.pdf",
+      "processType": "I",
+      "purpose": "B"
+    },
+    {
+      "id": 46,
+      "name": "Permit to Import Animals and Birds into Barbados.pdf",
       "processType": "I",
       "purpose": "B"
     },
@@ -1190,7 +1202,7 @@
     },
     {
       "id": 33,
-      "readonly": true,
+      "readonly": false,
       "name": "New Permit to import Dairy Products",
       "description": "Permit to import Dairy Products",
       "fileName": "bidc-coo-static.html",
@@ -1210,7 +1222,7 @@
     },
     {
       "id": 35,
-      "readonly": true,
+      "readonly": false,
       "name": "Application to Individual Permit to Import Meat Dairy Poulty",
       "description": "Individual Permit to Import Meat Dairy Poulty",
       "fileName": "bidc-coo-static.html",
@@ -1275,7 +1287,7 @@
       "description": "Landing Certificate",
       "fileName": "dcca-import-static.html",
       "document_ids": [
-
+        46
       ]
     },
     {
@@ -1285,7 +1297,7 @@
       "description": "Landing Certificate",
       "fileName": "dcca-import-static.html",
       "document_ids": [
-
+        46
       ]
     },
     {
@@ -1315,7 +1327,7 @@
       "description": "Plant Inspection Letter",
       "fileName": "plant-request-inspection-letter.html",
       "document_ids": [
-
+        32
       ]
     },
     {
@@ -1325,7 +1337,7 @@
       "description": null,
       "fileName": "plant-request-inspection-letter-issued.html",
       "document_ids": [
-
+        32
       ]
     }
   ],
@@ -1458,7 +1470,7 @@
     },
     {
       "id": 22,
-      "name": "VetDairy",
+      "name": "VetDairyAnnual",
       "owner": "Vet Services",
       "pga_owner_id": 6,
       "document_id": 56,
@@ -1467,10 +1479,10 @@
     },
     {
       "id": 23,
-      "name": "VetMeatPoultry",
+      "name": "VetMeatPoultryAnnual",
       "owner": "Vet Services",
       "pga_owner_id": 6,
-      "document_id": 92,
+      "document_id": 56,
       "processType": "I",
       "purpose": "B"
     },
@@ -1496,7 +1508,10 @@
       "id": 26,
       "name": "VetAnimDomestic",
       "owner": "Vet Services",
-      "pga_owner_id": 6
+      "pga_owner_id": 6,
+      "document_id": 46,
+      "processType": "I",
+      "purpose": "B"
     },
     {
       "id": 27,
@@ -1515,6 +1530,24 @@
       "document_id": 27,
       "processType": "I",
       "purpose": "W"
+    },
+    {
+      "id": 29,
+      "name": "VetDairyShip",
+      "owner": "Vet Services",
+      "pga_owner_id": 6,
+      "document_id": 61,
+      "processType": "I",
+      "purpose": "B"
+    },
+    {
+      "id": 30,
+      "name": "VetMeatPoultryShip",
+      "owner": "Vet Services",
+      "pga_owner_id": 6,
+      "document_id": 61,
+      "processType": "I",
+      "purpose": "B"
     }
   ],
   "workflow_interactions": [
@@ -2000,45 +2033,17 @@
       "description": "Import Permit"
     },
     {
-      "workflow_id": 22,
-      "step": 9,
-      "form_id": 35,
-      "title": "New Application to Individual Permit to Import Meat Dairy Poulty",
-      "description": "Please complete the Import Permit Application"
-    },
-    {
-      "workflow_id": 22,
-      "step": 13,
-      "form_id": 36,
-      "title": "Individual Permit to Import Meat Dairy Poulty",
-      "description": "Import Permit"
-    },
-    {
       "workflow_id": 23,
       "step": 1,
-      "form_id": 12,
-      "title": "New Import Phytosanitary Permit Application for the importation of Plants",
+      "form_id": 33,
+      "title": "New Application for permit to import Meat Dairy Poulty Products",
       "description": "Please complete the Import Permit Application"
     },
     {
       "workflow_id": 23,
-      "step": 5,
-      "pga_id": 7,
-      "title": "Verify information correct and conformity regulations",
-      "description": "Please verify the correct and conformity regulations"
-    },
-    {
-      "workflow_id": 23,
-      "step": 10,
-      "form_id": 12,
-      "title": "New Import Permit Application for the importation of Plants",
-      "description": "Please complete the Import Permit Application"
-    },
-    {
-      "workflow_id": 23,
-      "step": 11,
-      "form_id": 11,
-      "title": "Phytosanitary Import Permit",
+      "step": 4,
+      "form_id": 34,
+      "title": "Permit to import Poultry Products",
       "description": "Import Permit"
     },
     {
@@ -2120,24 +2125,52 @@
     },
     {
       "workflow_id": 28,
-      "step": 12,
+      "step": 15,
+      "form_id": 48,
+      "title": "New Request for Plant Inspection Letter",
+      "description": "Plant Inspection Letter"
+    },
+    {
+      "workflow_id": 28,
+      "step": 15,
+      "form_id": 49,
+      "title": "Request for Plant Inspection Letter",
+      "description": "Plant Inspection Letter"
+    },
+    {
+      "workflow_id": 28,
+      "step": 21,
       "form_id": 32,
       "title": "Phitosanitary Inspection Certificate for Import Release",
       "description": "Phitosanitary Inspection Certificate"
     },
     {
-      "workflow_id": 28,
-      "step": 36,
-      "form_id": 48,
-      "title": "New Landing Certificate for Animals",
-      "description": "Landing Certificate"
+      "workflow_id": 29,
+      "step": 9,
+      "form_id": 35,
+      "title": "New Application to Individual Permit to Import Meat Dairy Poulty",
+      "description": "Please complete the Import Permit Application"
     },
     {
-      "workflow_id": 28,
-      "step": 37,
-      "form_id": 49,
-      "title": "Landing Certificate for Animals",
-      "description": "Landing Certificate"
+      "workflow_id": 29,
+      "step": 13,
+      "form_id": 36,
+      "title": "Individual Permit to Import Meat Dairy Poulty",
+      "description": "Import Permit"
+    },
+    {
+      "workflow_id": 30,
+      "step": 9,
+      "form_id": 35,
+      "title": "New Application to Individual Permit to Import Meat Dairy Poulty",
+      "description": "Please complete the Import Permit Application"
+    },
+    {
+      "workflow_id": 30,
+      "step": 13,
+      "form_id": 36,
+      "title": "Individual Permit to Import Meat Dairy Poulty",
+      "description": "Import Permit"
     }
   ],
   "hscodes_workflows": [
@@ -2862,6 +2895,121 @@
       "notes": "Wood ears (Auricularia spp.)"
     },
     {
+      "hscode": "01.05 ",
+      "id": 22,
+      "notes": "Live poultry"
+    },
+    {
+      "hscode": "02.01 ",
+      "id": 22,
+      "notes": "Meat of bovine animals, fresh or chilled"
+    },
+    {
+      "hscode": "02.02 ",
+      "id": 22,
+      "notes": "Meat of bovine animals, frozen"
+    },
+    {
+      "hscode": "02.03 ",
+      "id": 22,
+      "notes": "Meat of swine, fresh chilled or frozen"
+    },
+    {
+      "hscode": "02.04 ",
+      "id": 22,
+      "notes": "Meat of sheep or goats, fresh, chilled or frozen"
+    },
+    {
+      "hscode": "02.07",
+      "id": 22,
+      "notes": "Meatofpoultryofheading01.05,fresh,chilledorfrozen. Meatofpoultryofheading01.05,fresh,chilledorfroze"
+    },
+    {
+      "hscode": "0210.101 ",
+      "id": 22,
+      "notes": "Ham 0210.102 Bacon"
+    },
+    {
+      "hscode": "04.01 ",
+      "id": 22,
+      "notes": "Milk and cream, not concentrated nor containing added sugar or other sweetening matter"
+    },
+    {
+      "hscode": "04.02 ",
+      "id": 22,
+      "notes": "Milk and cream, concentrated or containing added sugar or other sweetening matter"
+    },
+    {
+      "hscode": "16.01 ",
+      "id": 22,
+      "notes": "Sausages and similar products, of meat, meat offal or blood; food preparations based on these products"
+    },
+    {
+      "hscode": "16.02 ",
+      "id": 22,
+      "notes": "Other prepared or preserved meat, meat offal or blood"
+    },
+    {
+      "hscode": "1602.32 ",
+      "id": 22,
+      "notes": "Other than Corned Beef"
+    },
+    {
+      "hscode": "2105.001 ",
+      "id": 22,
+      "notes": "Ice cream"
+    },
+    {
+      "hscode": "02.01 ",
+      "id": 23,
+      "notes": "Meat of bovine animals, fresh or chilled"
+    },
+    {
+      "hscode": "02.02 ",
+      "id": 23,
+      "notes": "Meat of bovine animals, frozen"
+    },
+    {
+      "hscode": "02.03 ",
+      "id": 23,
+      "notes": "Meat of swine, fresh, chilled or frozen"
+    },
+    {
+      "hscode": "02.04 ",
+      "id": 23,
+      "notes": "Meat of sheep or goats, fresh, chilled or frozen"
+    },
+    {
+      "hscode": "02.05 ",
+      "id": 23,
+      "notes": "Meat of horses, asses, mules or hinnies, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.06 ",
+      "id": 23,
+      "notes": "Edible offal of bovine animals, swine, sheep, goats, horses, asses, mules or hinnies, fresh, chilled or frozen. 02.07 Meat and edible offal, of the poultry of heading 01.05, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.08 ",
+      "id": 23,
+      "notes": "Other meat and edible meat offal, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.09 ",
+      "id": 23,
+      "notes": "Pig fat, free of lean meat, and poultry fat, not rendered or otherwise extracted, fresh, chilled, frozen, salted, in brine, dried or smoked 02.10 Meat and edible meat offal, salted, in brine, dried or smoked; edible flours and meals of meat or meat offal."
+    },
+    {
+      "hscode": "16.01 ",
+      "id": 23,
+      "notes": "Sausages and similar products, of meat, meat offal or blood; food preparations based on these products."
+    },
+    {
+      "hscode": "16.02 ",
+      "id": 23,
+      "notes": "Other prepared or preserved meat, meat offal or blood"
+    },
+    {
       "hscode": "02.01 ",
       "id": 24,
       "notes": "Meat of bovine animals, fresh or chilled"
@@ -5375,6 +5523,121 @@
       "hscode": "071232 00 000 ",
       "id": 28,
       "notes": "Wood ears (Auricularia spp.)"
+    },
+    {
+      "hscode": "01.05 ",
+      "id": 29,
+      "notes": "Live poultry"
+    },
+    {
+      "hscode": "02.01 ",
+      "id": 29,
+      "notes": "Meat of bovine animals, fresh or chilled"
+    },
+    {
+      "hscode": "02.02 ",
+      "id": 29,
+      "notes": "Meat of bovine animals, frozen"
+    },
+    {
+      "hscode": "02.03 ",
+      "id": 29,
+      "notes": "Meat of swine, fresh chilled or frozen"
+    },
+    {
+      "hscode": "02.04 ",
+      "id": 29,
+      "notes": "Meat of sheep or goats, fresh, chilled or frozen"
+    },
+    {
+      "hscode": "02.07",
+      "id": 29,
+      "notes": "Meatofpoultryofheading01.05,fresh,chilledorfrozen. Meatofpoultryofheading01.05,fresh,chilledorfroze"
+    },
+    {
+      "hscode": "0210.101 ",
+      "id": 29,
+      "notes": "Ham 0210.102 Bacon"
+    },
+    {
+      "hscode": "04.01 ",
+      "id": 29,
+      "notes": "Milk and cream, not concentrated nor containing added sugar or other sweetening matter"
+    },
+    {
+      "hscode": "04.02 ",
+      "id": 29,
+      "notes": "Milk and cream, concentrated or containing added sugar or other sweetening matter"
+    },
+    {
+      "hscode": "16.01 ",
+      "id": 29,
+      "notes": "Sausages and similar products, of meat, meat offal or blood; food preparations based on these products"
+    },
+    {
+      "hscode": "16.02 ",
+      "id": 29,
+      "notes": "Other prepared or preserved meat, meat offal or blood"
+    },
+    {
+      "hscode": "1602.32 ",
+      "id": 29,
+      "notes": "Other than Corned Beef"
+    },
+    {
+      "hscode": "2105.001 ",
+      "id": 29,
+      "notes": "Ice cream"
+    },
+    {
+      "hscode": "02.01 ",
+      "id": 30,
+      "notes": "Meat of bovine animals, fresh or chilled"
+    },
+    {
+      "hscode": "02.02 ",
+      "id": 30,
+      "notes": "Meat of bovine animals, frozen"
+    },
+    {
+      "hscode": "02.03 ",
+      "id": 30,
+      "notes": "Meat of swine, fresh, chilled or frozen"
+    },
+    {
+      "hscode": "02.04 ",
+      "id": 30,
+      "notes": "Meat of sheep or goats, fresh, chilled or frozen"
+    },
+    {
+      "hscode": "02.05 ",
+      "id": 30,
+      "notes": "Meat of horses, asses, mules or hinnies, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.06 ",
+      "id": 30,
+      "notes": "Edible offal of bovine animals, swine, sheep, goats, horses, asses, mules or hinnies, fresh, chilled or frozen. 02.07 Meat and edible offal, of the poultry of heading 01.05, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.08 ",
+      "id": 30,
+      "notes": "Other meat and edible meat offal, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.09 ",
+      "id": 30,
+      "notes": "Pig fat, free of lean meat, and poultry fat, not rendered or otherwise extracted, fresh, chilled, frozen, salted, in brine, dried or smoked 02.10 Meat and edible meat offal, salted, in brine, dried or smoked; edible flours and meals of meat or meat offal."
+    },
+    {
+      "hscode": "16.01 ",
+      "id": 30,
+      "notes": "Sausages and similar products, of meat, meat offal or blood; food preparations based on these products."
+    },
+    {
+      "hscode": "16.02 ",
+      "id": 30,
+      "notes": "Other prepared or preserved meat, meat offal or blood"
     }
   ]
 }
