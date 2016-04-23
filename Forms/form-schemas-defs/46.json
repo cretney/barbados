@@ -1,9 +1,5 @@
 [
 	{
-		"type":"help",
-		"helpvalue":"<div class='row'><div class='colored col-sm-6'></div><div class='col-sm-6 colored'></div>"
-	},
-	{
     "type": "section",
     "htmlClass": "row",
     "items": [

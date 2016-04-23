@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 9f68112425e7379595ea70011516b801075c7811",
+  "description": "Generated from b with shasum 60f6f8e2218d5f210cc52963ac3da6cc5901297d",
   "type": "object",
   "required": [
 
@@ -98,7 +98,7 @@
                       "description": "The unit of sale."
                     },
                     "quantity": {
-                      "type": "integer",
+                      "type": "number",
                       "title": "Quantity",
                       "description": "The quantity in units of sale."
                     },
@@ -174,7 +174,7 @@
                 "description": "Others: if in determining the origin of the good one of the procedures set forth in Articles 1V.06 or IV.05 of the Agreement, was used, indicate:"
               },
               "grossWeight": {
-                "type": "string",
+                "type": "number",
                 "title": "Gross Weight",
                 "description": "Indicate the Gross Weight of the Goods."
               },
@@ -727,6 +727,16 @@
         "landingCertificateNumber": {
           "type": "string",
           "title": "Landingcertificatenumber",
+          "description": ""
+        },
+        "dateArrival": {
+          "type": "date-time",
+          "title": "Datearrival",
+          "description": ""
+        },
+        "phytosanitaryCertificate": {
+          "type": "string",
+          "title": "Phytosanitarycertificate",
           "description": ""
         }
       }

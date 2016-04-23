@@ -1,0 +1,97 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"origin",
+            "title":"Country of Origin",
+            "readonly":true
+          },
+          {
+            "key":"vesselOrCraft",
+            "title":"Vessel/Aircraft"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"consignee.name",
+            "title":"Consignee/Broker",
+            "readonly":true
+          },
+          {
+            "key":"rotationNumber",
+            "title":"Rotation #"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"dateArrival",
+            "title":"Date of Arrival"
+          },
+          {
+            "key":"containerNumber",
+            "title":"Container No / AWB No"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"<hr/>"
+  },
+	{
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+				  {
+				  	"key":"dateInspection",
+				  	"title":"Inspection Date"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"timeInspection",
+            "title":"Time of Inspection"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"phytosanitaryCertificate",
+            "title":"Phytosanitary Certificate"
+          }
+        ]
+      }
+    ]
+	},
+  {
+    "key":"inspectionLocation",
+    "title":"Place of Inspection (with brief description/direction)",
+  	"type": "textarea"
+	}
+]

@@ -2271,7 +2271,7 @@
         "fobValue":1000,
         "preferenceCriterion":"A",
         "othersAnnex":"ACC",
-        "grossWeight":"10",
+        "grossWeight":10.0,
         "quantity":1,
         "rulesOrigin":"A",
         "invoiceNumber":"123456",
@@ -2288,7 +2288,7 @@
         "fobValue":2000,
         "preferenceCriterion":"B",
         "othersAnnex":"DMI",
-        "grossWeight":"20",
+        "grossWeight":20.0,
         "quantity":2,
         "rulesOrigin":"B",
         "invoiceNumber":"7890123",
@@ -2649,7 +2649,7 @@
         "fobValue":1000,
         "preferenceCriterion":"A",
         "othersAnnex":"ACC",
-        "grossWeight":"10",
+        "grossWeight":10.0,
         "quantity":1,
         "rulesOrigin":"A",
         "invoiceNumber":"123456",
@@ -2666,7 +2666,7 @@
         "fobValue":2000,
         "preferenceCriterion":"B",
         "othersAnnex":"DMI",
-        "grossWeight":"20",
+        "grossWeight":20.0,
         "quantity":2,
         "rulesOrigin":"B",
         "invoiceNumber":"7890123",
@@ -2781,14 +2781,117 @@
   }
 },
 {
-  "blockId": 1153212,
-  "workflowId": 15,
+  "blockId": 1283212,
+  "workflowId": 28,
   "formId": 32,
   "title": "New Phitosanitary Inspection Certificate for Import Release",
   "description": "Please complete the Inspection Certificate",
-  "status": "Draft",
+  "status": "Issued",
   "submission": {
     "dateInspection": "2016-04-07",
+    "origin":"United States",
+    "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"}
+  }
+},
+{
+  "blockId": 1284813,
+  "workflowId": 28,
+  "formId": 48,
+  "title": "New Request for Plant Inspection Letter",
+  "description": "Please complete the Plant Inspection Letter",
+  "status": "Draft",
+  "submission": {
+    "commodities":[
+      {
+        "hsCode":"123",
+        "description":"test",
+        "units":[
+          {
+            "quantity":0.0,
+            "unitType":"Units"
+          },
+          {
+            "quantity":0.0,
+            "unitType":"Kilograms"
+          }
+        ]
+      },
+      {
+        "hsCode":"234",
+        "description":"test",
+        "units":[
+          {
+            "quantity":0.0,
+            "unitType":"Units"
+          },
+          {
+            "quantity":0.0,
+            "unitType":"Kilograms"
+          }
+        ]
+      }
+    ],
+    "rotationNumber": "",
+    "containerNumber": "",
+    "vesselOrCraft": "",
+    "dateArrival": "",
+    "dateInspection": "",
+    "timeInspection": "",
+    "inspectionLocation":"",
+    "entryDate": "",
+    "phytosanitaryCertificate":"",
+    "approvalNumber":"",    
+    "origin":"United States",
+    "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"}
+  }
+},
+{
+  "blockId": 1284913,
+  "workflowId": 28,
+  "formId": 49,
+  "title": "Request for Plant Inspection Letter",
+  "status": "Issued",
+  "submission": {
+    "commodities":[
+      {
+        "hsCode":"123",
+        "description":"test",
+        "units":[
+          {
+            "quantity":10.0,
+            "unitType":"Units"
+          },
+          {
+            "quantity":100.0,
+            "unitType":"Kilograms"
+          }
+        ]
+      },
+      {
+        "hsCode":"234",
+        "description":"test",
+        "units":[
+          {
+            "quantity":20.0,
+            "unitType":"Units"
+          },
+          {
+            "quantity":200.0,
+            "unitType":"Kilograms"
+          }
+        ]
+      }
+    ],
+    "rotationNumber": "1085 of 12/02/2016",
+    "containerNumber": "TCNU5037395",
+    "vesselOrCraft": "ISLANDIA",
+    "dateArrival": "2016-04-07",
+    "dateInspection": "2016-04-07",
+    "timeInspection": "4.30 <> 8.30",
+    "inspectionLocation":"1234 Bay Street, St. Michael",
+    "entryDate": "2015-08-21",
+    "phytosanitaryCertificate":"78686786",
+    "approvalNumber":"979-23445",
     "origin":"United States",
     "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"}
   }

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 6412031bd92829004280b292230ad72138d6a63a",
+  "description": "Generated from b with shasum 1e2d6678172ade85664f13de57532cfd730cad15",
   "type": "object",
   "required": [
     "blockId",
@@ -84,7 +84,7 @@
                 "type": "string"
               },
               "grossWeight": {
-                "type": "string"
+                "type": "number"
               },
               "quantity": {
                 "type": "integer"

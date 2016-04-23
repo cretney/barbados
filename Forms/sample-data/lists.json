@@ -227,8 +227,12 @@
 				"template": "vs-landing-certificate-animals-issued.html"
 			},
 			{
-				"id": 50,
-				"template": "admin-lpco-dcca.html"
+				"id": 48,
+				"template": "plant-request-inspection-letter.html"
+			},
+			{
+				"id": 49,
+				"template": "plant-request-inspection-letter-issued.html"
 			}
 		]
 	},

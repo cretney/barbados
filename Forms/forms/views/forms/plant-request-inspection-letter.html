@@ -1,0 +1,96 @@
+<div>
+  <div class="row">
+    <div class="col-sm-11">
+      <h4 align="center">
+        <b>
+          MINISTRY OF AGRICULTURE, FOOD,<br>
+          FISHERIES, AND WATER RESOURCE
+        </b>
+      </h4>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-11">
+      <h6 align="center">
+        <b>
+          P.O. BOX 505, GRAEME HALL, CHRIST CHURCH, BARBADOS, WEST INDIES<br><br>
+        </b>
+      </h6>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2">
+      <h6>
+        <b>
+          Our Ref:
+        </b>
+      </h6>
+    </div>
+    <div class="col-sm-7" align="center">
+      <h6>
+        <b>
+          Your Ref:
+        </b>
+      </h6>
+    </div>
+    <div class="col-sm-2" align="right">
+      <h6>
+        <b>
+          Tel: (246) 426‐1222,<br>
+          Fax (246) 426‐6927
+        </b>
+      </h6>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-11">
+      <h6 align="center">
+        Plant Quarantine Division<br>
+        Tel: (246) 426‐1222, Fax (246) 426‐6927<br>
+        Email: <b>quarantine_bdos@Caribsurf.com</b>
+      </h6>
+    </div><!--col-sm-11-->
+  </div><!--row-->
+  <br> <br>
+  <div class="row">
+    <div class="col-sm-11">
+        <b>Consignee/Broker:</b> {{ila.submission.consignee.name}}<br>
+        <b>Address:</b> {{ila.submission.consignee.address}}<br>
+        <b>Telephone No:</b> {{ila.submission.consignee.phone}}<br>
+        <b>Date:</b> {{current_date  | date:'dd/MM/yyyy'}}<br><br>
+
+      <h5>
+        Oficer-in-Charge<br>
+        Plant Quarantine<br>
+        Crumpton Street<br>
+        St. Michael<br><br>
+      </h5>
+
+      <p>
+        Dear Sir,<br><br>
+
+        Please provide the services of a Plant Quantine Officer to examine the under mentioned cargo es per particulars below.
+      </p>
+    </div><!--col-sm-11-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div sf-schema="schema" sf-form="formdef" sf-model="form.data"></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div edit-commodities-no-price=""></div>
+    </div>
+  </div>
+  
+  <div class="modal-footer">
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+
+</div><!--container-->
