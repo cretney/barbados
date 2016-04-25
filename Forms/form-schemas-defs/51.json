@@ -1,0 +1,27 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"serialNumberCertificate",
+            "title":"Serial Number"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key":"reason",
+    "title":"Reasons for the determination that the food is unfit for human consumption",
+  	"type": "textarea"
+	},
+  {
+    "type":"help",
+    "helpvalue":"<br/><hr/>"
+  }
+]

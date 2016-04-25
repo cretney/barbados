@@ -681,6 +681,11 @@
           "title": "Entry Date",
           "description": ""
         },
+        "serialNumberCertificate": {
+          "type": "string",
+          "title": "Serialnumbercertificate",
+          "description": ""
+        },
         "carrier": {
           "type": "object",
           "required": [

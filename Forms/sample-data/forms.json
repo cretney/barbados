@@ -2927,48 +2927,42 @@
   "title": "Unwholesome Food Certificate",
   "status": "Issued",
   "submission": {
-    "commodities":[
-      {
-        "hsCode":"123",
-        "description":"test",
-        "fobValue":1000,
-        "preferenceCriterion":"A",
-        "othersAnnex":"ACC",
-        "grossWeight":10.0,
-        "quantity":1,
-        "rulesOrigin":"A",
-        "invoiceNumber":"123456",
-        "invoiceDate":"2016-03-07",
-        "units":[
-          {
-            "unitType":"Units"
-          }
-        ]
-      },
-      {
-        "hsCode":"234",
-        "description":"test",
-        "fobValue":2000,
-        "preferenceCriterion":"B",
-        "othersAnnex":"DMI",
-        "grossWeight":20.0,
-        "quantity":2,
-        "rulesOrigin":"B",
-        "invoiceNumber":"7890123",
-        "invoiceDate":"2016-04-07",
-        "units":[
-          {
-            "unitType":"Units"
-          }
-        ]
-      }
-    ],
+    "serialNumberCertificate":"765765756",
     "carrier": {"idNumber":"9879879-677", "name":"Ultramar Carrier Inc."},
     "typeFoodCategory":"FROZEN FOODS",
     "typeFoodDetail":"Shrimp",
     "inspectionLocation":"1234 Bay Street, St. Michael",
     "supportingDocumentation":"Inspection certificates issued in the country of origin, temperature control charts from the carrier",
     "reason":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "inspectionDate":"2016-03-07",
+    "approvedBy":"John Smith",
+
+
+    "origin": "United States",
+
+
+    "submitter": "Joe Blow",
+    "applicant": {"id":4, "name":"Exporter Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"},
+    "destination": {"id": 1, "name": "Importer Maple Inc.", "countryId": "CA", "country":"Canada", "address": "1000 Main Av, Toronto, BC, 902", "docid":"3-234-567", "fax":"777-5555", "email":"ghi@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
+    "expectedArrival": "2015-09-21T04:00:00.000Z"
+  }
+},
+{
+  "blockId": 1255123,
+  "workflowId": 25,
+  "formId": 51,
+  "title": "Unwholesome Food Certificate Request",
+  "status": "Draft",
+  "submission": {
+    "serialNumberCertificate":"",
+    "carrier": {"idNumber":"9879879-677", "name":"Ultramar Carrier Inc."},
+    "typeFoodCategory":"FROZEN FOODS",
+    "typeFoodDetail":"Shrimp",
+    "inspectionLocation":"1234 Bay Street, St. Michael",
+    "supportingDocumentation":"Inspection certificates issued in the country of origin, temperature control charts from the carrier",
+    "reason":"",
     "inspectionDate":"2016-03-07",
     "approvedBy":"John Smith",
 
