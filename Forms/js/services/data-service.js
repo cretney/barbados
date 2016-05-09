@@ -44,6 +44,7 @@
 			},
 			getSchema: function(id,types){
 				return $http.get("/Forms/json-schemas/master.json");
+				// return $http.get("/Forms/json-schemas/"+id+".json");
 			},
 			getFormDef: function(id,types){
 				var def = $q.defer();					

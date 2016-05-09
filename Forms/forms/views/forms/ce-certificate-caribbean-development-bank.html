@@ -1,0 +1,80 @@
+<div>
+  <div class="row">
+    <div class="col-sm-9">
+      <h5>
+        Our Ref:
+      </h5>
+      <br><br><br><br><br><br>
+      <h5>
+        Dear Mr. {{ila.submission.submitter}},
+      </h5>
+    </div>
+    <div class="col-sm-3">
+      <h5>
+        Date: {{ila.submission.issuedDate  | date:'dd/MM/yyyy'}}
+      </h5>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h5 align="center">
+        <b>
+          <u>
+            Re: Duty Free Concessions
+            <br><br>
+          </u>
+        </b>
+      </h5>
+
+      <p align="justify">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have been directed to inform you that the Minister of Finance and Economic Affairs has approved a waiver of the Import Duty and Excise Tax payable on the under mentioned vehicle being purchased by Mr. {{ila.submission.applicant.name}}, Specialist, on the staff of the Caribbean Development Bank.
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+
+  <div class="row">
+    <div class="col-sm-5 col-sm-offset-1">
+      <table class="table">
+        <tr><td>Make:</td><td>{{ila.submission.commodities[0].entries[0].vehicleBrand}}</td></tr>
+        <tr><td>Model:</td><td>{{ila.submission.commodities[0].entries[0].vehicleModel}}</td></tr>
+        <tr><td>Engine No.:</td><td>{{ila.submission.commodities[0].entries[0].vehicleEngine}}</td></tr>
+        <tr><td>Chassis No.:</td><td>{{ila.submission.commodities[0].entries[0].chassisNumber}}</td></tr>
+        <tr><td>C.I.F. Value:</td><td>${{ila.submission.commodities[0].entries[0].costCIF}}</td></tr>
+        <tr><td>Vessel:</td><td>{{ila.submission.vesselOrCraft}}</td></tr>
+        <tr><td>Arrival Date:</td><td>{{ila.submission.expectedArrival}}</td></tr>
+        <tr><td>Origin</td><td>{{ila.submission.origin}}</td></tr>
+      </table>
+    </div><!--col-sm-10 col-sm-offset-1-->
+  </div><!--row-->
+
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p align="justify">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am also directed to inform you that in accordance with Section 50(j) of the Headquarters Agreement between Caribbean Development Bank and the Government of Barbados, the vehicle is also exempt from the payment of Value Added Tax.
+      </p>
+
+      <p align="center">
+        Yours faithfully,
+        <br><br><br><br>
+        for Permanent Secretary, Finance
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-1">
+      <p>
+        cc.:
+      </p>
+    </div><!--col-sm-1-->
+    <div class="col-sm-11">
+      <p>
+        Comptroller of Customs<br>
+        Auditor General
+      </p>
+    </div><!--col-sm-11-->
+  </div><!--row-->
+</div><!--container-->

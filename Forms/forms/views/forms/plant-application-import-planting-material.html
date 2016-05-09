@@ -1,0 +1,142 @@
+
+<div>
+  <div class="row">
+    <div class="col-sm-3">
+      (LOGO)
+    </div>
+    <div class="col-sm-6">
+      <h4 align="center">
+        <b>
+          MINISTRY OF AGRICULTURE<br>
+          AND RURAL DEVELOPMENT
+        </b>
+      </h4>
+      <h6>
+        <b>
+          P.O. BOX 505, GRAEME HALL, CHRIST CHURCH, BARBADOS, WEST INDIES
+        </b>
+      </h6>
+    </div>
+    <div class="col-sm-3" align="right">
+      (LOGO)
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-4">
+      <h6>
+        <b>
+          <i>
+            Our Ref:
+          </i>
+        </b>
+      </h6>
+    </div>
+    <div class="col-sm-4">
+      <h6>
+        <b>
+          <i>
+            Your Ref: {{ila.submission.referenceNumber}}
+          </i>
+        </b>
+      </h6>
+    </div>
+    <div class="col-sm-4">
+      <h6 align="right">
+        <b>
+          <i>
+            Tel: (246) 428‐4150<br>
+            Fax No.: (246) 420‐8444
+          </i>
+        </b>
+      </h6>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h5 align="center">
+        Plant Quarantine Division, Crumpton Street, Bridgetown -Tel: 426-1222 Fax: 426-6927
+      </h5>
+      <h5 align="center">
+        Application for the Importation of Planting Material<br>
+        (Ornamentals, Orchids, Seeds etc)
+      </h5>
+    </div>
+  </div><!--row-->
+
+
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div sf-schema="schema" sf-form="formdef" sf-model="form.data"></div>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div edit-commodities-no-price=""></div>
+    </div>
+  </div>
+
+ <div class="modal-footer">
+      <button type="button" class="btn btn-warning" ng-click="form.cancel()">Cancel</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+
+<br><br><br>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p align="justify">
+        <b>
+          <u>
+            N.B. Applications must be made in advance of Tuesdays and Fridays for issue on these days
+          </u>
+          <br>
+          On receipt of the application material, the Importer agrees that if pests and diseases are present, the planting material will be treated at the Importer's risk and the Ministry of Agriculture and Rural Development will not be responsible for damage to plants or seeds.
+        </b>
+      </p>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-1">
+      <h6>
+        <b>
+          <u>
+            N.B.
+          </u>
+        </b>
+      </h6>
+    </div>
+    <div class="col-sm-11">
+      <h6>
+        <b>
+          Due to the danger of introducing viral and bacterial diseases, no permits for the import of citrus, mango or avocado plants will be issued
+        </b>
+      </h6>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-6">
+      <h4>
+        <i>
+          Signature: {{ila.submission.submitter}}
+        </i>
+      </h4>
+    </div>
+    <div class="col-sm-6">
+      <h4>
+        <i>
+          Date: {{current_date  | date:'dd/MM/yyyy'}}
+        </i>
+      </h4>
+    </div>
+  </div><!--row-->
+
+
+</div>

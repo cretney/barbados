@@ -197,7 +197,7 @@
 				  // ];
 				  scope.model = {};
 
-					dataService.getSchema().then(function(schema){
+					dataService.getSchema(scope.itemId).then(function(schema){
 					  scope.schema = schema.data;
 					});
 
@@ -817,6 +817,13 @@
 			restrict: 'A',
 			replace: true,
 			templateUrl: '/Forms/forms/views/partials/view-commodities-cuba.html'
+		}
+	}])
+	.directive('viewCommoditiesBds', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: '/Forms/forms/views/partials/view-commodities-bds.html'
 		}
 	}])
 	.directive('viewCommoditiesVenezuela', [function(){

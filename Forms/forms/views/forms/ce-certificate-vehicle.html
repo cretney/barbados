@@ -1,0 +1,89 @@
+<div>
+  <div class="row">
+    <div class="col-sm-9">
+      <h5>
+        Ref:
+      </h5>
+      <br><br><br><br>
+      <h5>
+        <b>To: {{ila.submission.applicant.name}}</b> <br><br><br>
+        Dear Sir <br>
+      </h5>
+    </div>
+    <div class="col-sm-3">
+      <h5>
+        Date: {{ila.submission.issuedDate  | date:'dd/MM/yyyy'}}
+      </h5>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h5 align="center">
+        <b>
+          <u>
+            Re: Duty Free Concessions - Z.
+            <br><br>
+          </u>
+        </b>
+      </h5>
+
+      <p align="justify">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I have been directed to inform you that the Minister of Finance and Economic Affairs has granted approval in accordance with the provisions of item 41 Part II B of the Customs Tariff for the waiver of Import Duty payable on the under‐mentioned vehicle being purchased by you to replace the taxi Z.
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-5 col-sm-offset-1">
+      <u>Details:</u><br><br>
+      <table class="table">
+        <tr><td>Make:</td><td>{{ila.submission.commodities[0].entries[0].vehicleBrand}}</td></tr>
+        <tr><td>Model:</td><td>{{ila.submission.commodities[0].entries[0].vehicleModel}}</td></tr>
+        <tr><td>Engine No.:</td><td>{{ila.submission.commodities[0].entries[0].vehicleEngine}}</td></tr>
+        <tr><td>Chassis No.:</td><td>{{ila.submission.commodities[0].entries[0].chassisNumber}}</td></tr>
+        <tr><td>Customs Value:</td><td>${{ila.submission.commodities[0].entries[0].costCIF}}</td></tr>
+        <tr><td>Vessel:</td><td>{{ila.submission.vesselOrCraft}}</td></tr>
+        <tr><td>Arrival Date:</td><td>{{ila.submission.expectedArrival}}</td></tr>
+      </table>
+    </div><!--ccol-sm-5 col-sm-offset-1-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p align="justify">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am also directed to inform you that the above-mentioned vehicle is exempt from the payment of excise tax.
+      </p>
+
+      <p align="justify">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You are advised that the vehicle must not be sold or otherwise disposed of within five (5) years of the date of this letter unless the unexpired portions of the Import Duty and Excise Tax are repaid, or else waived by the Minister responsible for Finance and Economic Affairs.
+      </p>
+
+      <p align="justify">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You are advised that within five (5) business days of the vehicle being purchased, <b><u>an official copy of the Customs Declaration Form (C63) as well as the registration document from the Barbados Licensing Authority</u></b> must be submitted to the Revenue Section, Ministry of Finance.
+      </p>
+
+      <p align="center">
+        Yours faithfully,
+        <br><br><br><br>
+        for Permanent Secretary, Finance
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-1">
+      <p>
+        cc.:
+      </p>
+    </div><!--col-sm-1-->
+    <div class="col-sm-11">
+      <p>
+        Chief Licensing Officer<br>
+        Revenue Commissioner, Barbados Revenue Authority<br>
+        Comptroller of Customs<br>
+        Auditor General<br>
+      </p>
+    </div><!--col-sm-11-->
+  </div><!--row-->
+</div><!--container-->

@@ -1,0 +1,71 @@
+<div>
+  <div class="row">
+    <div class="col-sm-12">
+      <p align="center">(LOGO)</p>
+      <h5 align="center">
+        BARBADOS DRUG SERVICE<br>
+        MINISTRY OF HEALTH<br>
+        Duty Free Certificate<br>
+        NO: {{ila.submission.serialNumberCertificate}}
+      </h5>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+  <br><br>
+
+  <div class="row">
+    <div class="col-sm-4">
+      BDS REF NO: {{ila.submission.referenceNumber}}<br>
+      INVOICE NO: {{ila.submission.invoiceNumber}}<br>
+      CONTRACT NUMBER: {{ila.submission.contractNumber}}
+    </div><!--col-sm-4-->
+    <div class="col-sm-4 col-sm-offset-4">
+      ISSUE DATE: {{ila.submission.issuedDate}}<br>
+      PROCESS DATE: {{ila.submission.approvalDate}}<br>
+      INVOICE DATE: {{ila.submission.invoiceDate}}
+    </div><!--col-sm-4 col-sm-offset-4-->
+  </div><!--row-->
+  <br>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p>
+        TO THE COMPTROLLER OF H.M. CUSTOMS:
+      </p>
+      <p>
+        THIS IS TO CERTIFY THAT A CONTRACT HAS BEEN AWARDED TO: <b>{{ila.submission.applicant.name}}</b>
+      </p>
+      <p>
+        FOR THE SUPPLY OF THE FOLLOWING ITEMS MANUFACTURED BY: <b>{{ila.submission.supplier.name}}</b>
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div view-commodities-bds=""></div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p>
+        PURCHASED FROM    <b>{{ila.submission.applicant.name}}</b><br>
+        TO BE USED EXCLUSIVELY BY THE BARBADOS DRUG SERVICE AND ARE EXEMPT FROM:<br>
+        1.Import Duty under the First Schedule Part 11 Section B Item 29 of the Customs Act Cap. 66.<br>
+        2.Environmental Levy exempted as per SI 1997 #120 of 1997-11-19 Part 2 Section B Item No. 1<br>
+        3.Vat Zero Rated under the Third Schedule Item 3 of the Vat Act 1996-15.with reference to first scheduled item 8 (d).
+      </p>
+      <br><br>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-2 top-border">
+      Signature, BDS
+    </div>
+  </div>
+
+
+</div><!--container-->

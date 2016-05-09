@@ -1,0 +1,109 @@
+<div>
+  <div class="row">
+    <div class="col-sm-3">
+      (LOGO)
+    </div>
+    <div class="col-sm-6" align="center">
+      <h3>
+        <b><i>
+          MINISTRY OF AGRICULTURE<br>
+          AND RURAL DEVELOPMENT
+        </i></b>
+      </h3>
+      <h4>
+        <i>
+          VETERINARY SERVICES<br>
+        </i>
+        THE PINE, ST MICHAEL BB11091<br>
+        BARBADOS
+      </h4>
+    </div>
+    <div class="col-sm-3" align="right">
+      (Logo)
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-7">
+      <h5>
+        <b>
+          ANIMAL HEALTH ADMINISTRATION [ ]<br><br>
+          VETERINARY SERVICES LABORATORY [ ]
+        </b>
+      </h5>
+    </div>
+    <div class="col-sm-5" align="right">
+      <h5>
+        <b>
+          TEL. NOS: (246) 427-5073<br>
+          (246) 427-5492<br>
+          FAX. NO: (246) 429-2143<br>
+          E-Mail: vetservices@caribsurf.com<br>
+          Website: http://agriculture.gov.bb
+        </b>
+      </h5>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h2 align="center">
+        <u>
+          VETERINARY SERVICES PASSENGER MEAT<br>
+          APPLICATION FORM
+        </u>
+      </h2>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>NAME OF PASSENGER: {{ila.submission.applicant.name}}</h3>
+      <h3>COUNTRY OF ORIGIN: {{ila.submission.applicant.country}}</h3>
+      <h3>ADDRESS IN BARBADOS: {{ila.submission.applicant.barbadosAddress}}</h3>
+      <h3>ESTIMATED DATE OF ARRIVAL: {{ila.submission.expectedArrival}}</h3>
+      <h3>COUNTRY WHERE PRODUCT<br>
+      IS COMING FROM: {{ila.submission.origin}}</h3>
+      <br>
+      <h3>CONTACT INFORMATION (FOR RECEIPT OF PERMIT):</h3>
+    </div><!--col-sm-12-->
+    <div class="col-sm-6">
+      <h3>PHONE: {{ila.submission.applicant.phone}}</h3>
+      <h3>EMAIL: {{ila.submission.applicant.email}}</h3><br><br>
+      <h3>SIGNATURE</h3><br>
+      <h5>
+        <i>
+          Application Fee: $25.00
+        </i>
+      </h5>
+    </div><!--col-sm-6-->
+    <div class="col-sm-6">
+      <h3>FAX: {{ila.submission.applicant.fax}}</h3><br><br><br><br>
+      <h3>DATE: {{ila.submission.entryDate  | date:'dd/MM/yyyy'}}</h3>
+    </div><!--col-sm-6-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table black-border">
+        <tr>
+          <td>
+            <div class="row">
+              <div class="col-sm-12">
+                <h5 align="center">
+                  <b>
+                    <i>OFFICE USE ONLY</i>
+                  </b>
+                </h5>
+                <p>
+                  Received: ... By {{ila.submission.receptionDate  | date:'dd/MM/yyyy'}} Issued: ... By {{ila.submission.issuedDate  | date:'dd/MM/yyyy'}}<br>
+                  Fee paid: ... Permit Number: {{ila.submission.approvalNumber  | date:'dd/MM/yyyy'}} Products approved: ...
+                </p>
+              </div><!--col-sm-12-->
+            </div><!--row-->
+          </td>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+</div><!--container-->

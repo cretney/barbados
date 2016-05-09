@@ -1,0 +1,174 @@
+
+<div>
+  <div class="row">
+    <div class="col-sm-3">
+      (LOGO)
+    </div>
+    <div class="col-sm-6">
+      <h4 align="center">
+        <b>
+          MINISTRY OF AGRICULTURE<br>
+          AND RURAL DEVELOPMENT
+        </b>
+      </h4>
+      <h6>
+        <b>
+          P.O. BOX 505, GRAEME HALL, CHRIST CHURCH, BARBADOS, WEST INDIES
+        </b>
+      </h6>
+    </div>
+    <div class="col-sm-3" align="right">
+      (LOGO)
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-4">
+      <h6>
+        <b>
+          <i>
+            Our Ref:
+          </i>
+        </b>
+      </h6>
+    </div>
+    <div class="col-sm-4">
+      <h6>
+        <b>
+          <i>
+            Your Ref: {{ila.submission.referenceNumber}}
+          </i>
+        </b>
+      </h6>
+    </div>
+    <div class="col-sm-4">
+      <h6 align="right">
+        <b>
+          <i>
+            Tel: (246) 428‐4150<br>
+            Fax No.: (246) 420‐8444
+          </i>
+        </b>
+      </h6>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h5 align="center">
+        Plant Quarantine Division, Crumpton Street, Bridgetown -Tel: 426-1222 Fax: 426-6927
+      </h5>
+      <h5 align="center">
+        Application for the Importation of Planting Material<br>
+        (Ornamentals, Orchids, Seeds etc)
+      </h5>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h5>
+        1. Full name and address of Importer:
+      </h5>
+      &nbsp;&nbsp;&nbsp;&nbsp;<b>{{ila.submission.applicant.name}}</b><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;{{ila.submission.applicant.address}}<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;Phone: {{ila.submission.applicant.phone}}<br><br><br>
+      <h5>
+        2. Name and address of Exporter:
+      </h5>
+      &nbsp;&nbsp;&nbsp;&nbsp;<b>{{ila.submission.supplier.name}}</b><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;{{ila.submission.supplier.address}}<br><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<b>Mean of transport:</b> {{ila.submission.modeTransport}}<br><br><br>
+
+      <h5>
+        3. Common or Scientific Name(s) of Plant(s):
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div view-commodities-no-price=""></div>
+    </div>
+  </div>
+  <hr>
+  <br><br>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p align="justify">
+        <b>
+          <u>
+            N.B. Applications must be made in advance of Tuesdays and Fridays for issue on these days
+          </u>
+          <br>
+          On receipt of the application material, the Importer agrees that if pests and diseases are present, the planting material will be treated at the Importer's risk and the Ministry of Agriculture and Rural Development will not be responsible for damage to plants or seeds.
+        </b>
+      </p>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-1">
+      <h6>
+        <b>
+          <u>
+            N.B.
+          </u>
+        </b>
+      </h6>
+    </div>
+    <div class="col-sm-11">
+      <h6>
+        <b>
+          Due to the danger of introducing viral and bacterial diseases, no permits for the import of citrus, mango or avocado plants will be issued
+        </b>
+      </h6>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-6">
+      <h4>
+        <i>
+          Signature: {{ila.submission.submitter}}
+        </i>
+      </h4>
+    </div>
+    <div class="col-sm-6">
+      <h4>
+        <i>
+          Date: {{ila.submission.approvalDate}}
+        </i>
+      </h4>
+    </div>
+  </div><!--row-->
+
+  <hr class="thick">
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h4>
+        <b>
+          OFFICIAL USE ONLY:
+        </b>
+      </h4>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-6">
+      <h5>
+        <b>
+          Import Permit No: {{ila.submission.approvalNumber}}
+        </b>
+      </h5>
+    </div>
+    <div class="col-sm-6">
+      <h5>
+        <b>
+          Date Issued: {{ila.submission.approvalDate}}
+        </b>
+      </h5>
+    </div>
+  </div><!--row-->
+</div>

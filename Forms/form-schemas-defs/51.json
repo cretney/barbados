@@ -19,9 +19,5 @@
     "key":"reason",
     "title":"Reasons for the determination that the food is unfit for human consumption",
   	"type": "textarea"
-	},
-  {
-    "type":"help",
-    "helpvalue":"<br/><hr/>"
-  }
+	}
 ]

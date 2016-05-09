@@ -1,0 +1,38 @@
+<table class="table table-condensed">
+  <thead>
+    <tr>
+      <th width="10%">
+        Order No.
+      </th>
+      <th>
+        <span field-name="13" form-fields="form.options.formFields"></span>
+      </th>
+      <th width="40%">
+        <span field-name="16" form-fields="form.options.formFields"></span>
+      </th>
+      <th>
+        <span field-name="19" form-fields="form.options.formFields" field-tooltip="true"></span>
+      </th>
+      <th>
+        <span field-name="20" form-fields="form.options.formFields" field-tooltip="true"></span>
+      </th>
+      <th>BDS CODE</th>
+      <th>ITEM NAME FORMAT\STRENGTH</th>
+      <th>PACK SIZE</th>
+      <th>EXTENDED COST BDS$</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="item in form.data.commodities" ng-class-odd="'odd'" ng-class-even="'even'">
+      <td>{{$index+1}}</td>
+      <td ng-bind="item.hsCode"></td>
+      <td ng-bind="item.description"></td>
+      <td ng-bind="item.units[0].quantity"></td>
+      <td ng-bind="item.units[0].pricePerUnit"></td>
+      <td ng-bind="item.units[0].code"></td>
+      <td ng-bind="item.units[0].name"></td>
+      <td ng-bind="item.units[0].pack_size"></td>
+      <td ng-bind="item.units[0].extendedCost"></td>
+    </tr>
+  </tbody>
+</table>

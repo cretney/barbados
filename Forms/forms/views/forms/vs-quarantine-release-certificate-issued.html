@@ -1,0 +1,104 @@
+<div>
+  <div class="row">
+    <div class="col-sm-1">
+      <h6>
+        <b>A09:vs009</b>
+      </h6>
+    </div>
+    <div class="col-sm-10" align="center">
+      <h4>
+        MINISTRY OF AGRICULTURE<br>
+        VETERINARY SERVICES<br>
+        BARBADOS
+      </h4>
+      <h3>
+        <b>Quarantine Release Certificate</b>
+      </h3>
+      <h4>
+        <i>
+          Animals (Diseases and Importation) Act, Cap. 253<br>
+          Animals (Diseases and Importation Control) Regulations, 1961
+        </i>
+      </h4>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-6">
+      <h5>
+        NO. <span class="bigger">{{ila.submission.landingCertificateNumber}}</span>
+      </h5>
+    </div>
+    <div class="col-sm-6" align="right">
+      <h5>
+        <b>{{ila.submission.issuedDate  | date:'dd/MM/yyyy'}}</b>
+      </h5>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p>
+        This is to certity that I have this day inspected the below mentioned animal(s)/bird(s) which entered the Island on <b>{{ila.submission.portDischarge}}</b> at <b>{{ila.submission.dateArrival}}</b>
+      </p>
+    </div><!--col-sm-12-->
+
+    <div class="col-sm-11 col-sm-offset-1">
+      <p>
+        <b><span ng-if="ila.submission.resultInspection=='Healthy'">X</span></b>
+        <b><span ng-if="ila.submission.resultInspection!='Healthy'">_</span></b>
+        - find it/them to be healthy and therefore permit their release from <b>Quarantine</b>.
+      </p>
+      <p>
+        <b><span ng-if="ila.submission.resultInspection!='Healthy'">X</span></b>
+        <b><span ng-if="ila.submission.resultInspection=='Healthy'">_</span></b>
+        - find it/them to be untit and direct that
+      </p>
+    </div><!--col-sm-11 col-sm-offset-1-->
+
+    <div class="col-sm-10 col-sm-offset-2">
+      <p>
+        <b><span ng-if="ila.submission.resultInspection=='Destroy'">X</span></b>
+        <b><span ng-if="ila.submission.resultInspection!='Destroy'">_</span></b>
+        - it/they be destroyed and disposed of at the Importer's expense.
+      </p>
+      <p>
+        <b><span ng-if="ila.submission.resultInspection!='Destroy'">X</span></b>
+        <b><span ng-if="ila.submission.resultInspection=='Destroy'">_</span></b>
+        - direct that the Quarentine period be extended and it/they
+      </p>
+      <p>
+        &nbsp;&nbsp;be treated with <b>{{ila.submission.quarentineTreatment}}</b> for <b>{{ila.submission.quarentineTreatmentTime}}</b> days prior to reinspection.
+      </p>
+    </div><!--col-sm-10 col-sm-offset-2-->
+  </div><!--row-->
+  <br><br>
+  <div class="row">
+    <div class="col-sm-12">
+      <p>
+        <b>Name and Address of Importer:</b><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<b>{{ila.submission.applicant.name}}</b><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;{{ila.submission.applicant.address}}<br><br>
+      </p>
+      <p>
+        <b>Address of Designed Quarantine Premises:</b><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;{{ila.submission.inspectionLocation}}<br><br>        
+      </p>
+      <p>
+        <b>Description of Animal(s)/Bird(s):</b><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;{{ila.submission.inspectionDescription}}<br><br>        
+      </p>
+      <p>
+        <b>Landing Certificate #:</b> {{ila.submission.landingCertificateNumber}}
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-5 col-sm-offset-7 top-border">
+      <p align="center">
+        <i>Chief Veterinary Officer</i>
+      </p>
+    </div><!--col-sm-5 col-sm-offset-7-->
+  </div><!--row-->
+</div><!--container-->

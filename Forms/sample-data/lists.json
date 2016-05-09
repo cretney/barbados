@@ -237,6 +237,254 @@
 			{
 				"id": 51,
 				"template": "fs-unwholesome-food-certificate.html"
+			},
+			{
+				"id": 52,
+				"template": "ce-certificate-postman.html"
+			},
+			{
+				"id": 53,
+				"template": "ce-certificate-postman-issued.html"
+			},
+			{
+				"id": 54,
+				"template": "ce-certificate-vehicle.html"
+			},
+			{
+				"id": 55,
+				"template": "ce-certificate-vehicle-issued.html"
+			},
+			{
+				"id": 56,
+				"template": "ce-application-letter-taxi.html"
+			},
+			{
+				"id": 57,
+				"template": "ce-application-letter-taxi-readonly.html"
+			},
+			{
+				"id": 58,
+				"template": "ce-certificate-caribbean-development-bank.html"
+			},
+			{
+				"id": 59,
+				"template": "ce-certificate-caribbean-development-bank-issued.html"
+			},
+			{
+				"id": 60,
+				"template": "ce-letter-caribbean-development-bank.html"
+			},
+			{
+				"id": 61,
+				"template": "ce-letter-caribbean-development-bank-readonly.html"
+			},
+			{
+				"id": 62,
+				"template": "ce-postman-duty-free-motorcicle.html"
+			},
+			{
+				"id": 63,
+				"template": "ce-postman-duty-free-motorcicle-issued.html"
+			},
+			{
+				"id": 64,
+				"template": "ce-duty-free-letter-postmaster.html"
+			},
+			{
+				"id": 65,
+				"template": "ce-duty-free-letter-postmaster-issued.html"
+			},
+			{
+				"id": 66,
+				"template": "ce-letter-postmaster-no-df-concession.html"
+			},
+			{
+				"id": 67,
+				"template": "ce-letter-postmaster-no-df-concession-issued.html"
+			},
+			{
+				"id": 69,
+				"template": "bds-duty-free-certificate.html"
+			},
+			{
+				"id": 70,
+				"template": "plantpa-certificate-inspection.html",
+				"document":"New Certificate of Inspection Slip (from booklet).html"
+			},
+			{
+				"id": 71,
+				"template": "plantpa-certificate-inspection-readonly.html",
+				"document":"Certificate of Inspection Slip (from booklet).html"
+			},
+			{
+				"id": 72,
+				"template": "plant-application-import-planting-material.html",
+				"document":"New Application to Import Planting Material.pdf"
+			},
+			{
+				"id": 73,
+				"template": "plant-application-import-planting-material-issued.html",
+				"document":"Application to Import Planting Material.pdf"
+			},
+			{
+				"id": 74,
+				"template": "plantpa-specimen-samples-plant-pests-prohibited.html",
+				"document":"Specimen Samples - Plant Pests - Prohibited Materials Inteceptions .pdf"
+			},
+			{
+				"id": 76,
+				"template": "plant-quarantine-waiver-application.html",
+				"document":"Plant Quarantine Waiver Application.pdf"
+			},
+			{
+				"id": 78,
+				"template": "plantpa-letter-entry-abscene-phytosanitary-certificate.html",
+				"document":"Letter to Customs to Process Entry in Abscene of Phytosanitary Certificate.pdf"
+			},
+			{
+				"id": 79,
+				"template": "plantpa-letter-entry-abscene-phytosanitary-certificate-issued.html",
+				"document":"Letter to Customs to Process Entry in Abscene of Phytosanitary Certificate.pdf"
+			},
+			{
+				"id": 80,
+				"template": "bds-license-import-store.html",
+				"document":"Licence to Import and Store.pdf"
+			},
+			{
+				"id": 82,
+				"template": "bds-export-authorization-narcotics.html",
+				"document":"Export Authorization Narcotics.pdf"
+			},
+			{
+				"id": 84,
+				"template": "plant-phytosanitary-certificate.html",
+				"document":"Phytosanitary Certificate.pdf"
+			},
+			{
+				"id": 86,
+				"template": "vs-application-import-cats-dogs.html",
+				"document":"Application for Import of Cats and dogs.pdf"
+			},
+			{
+				"id": 88,
+				"template": "vs-application-permit-import-semen-artificial-insemination.html",
+				"document":"Application for permit to import Semen for Artificial Insemination.pdf"
+			},
+			{
+				"id": 90,
+				"template": "vs-application-permit-import-veterinary-biologicals.html",
+				"document":"Application for permit to import Veterinary Biologicals.pdf"
+			},
+			{
+				"id": 92,
+				"template": "vs-application-import-animal-products-shipment.html",
+				"document":"Application to Import Animal Products per shipment.pdf"
+			},
+			{
+				"id": 94,
+				"template": "plantpa-certificate-custody.html",
+				"document":"Certificate of Custody Slip (from booklet).pdf"
+			},
+			{
+				"id": 95,
+				"template": "plantpa-certificate-custody-issued.html",
+				"document":"Certificate of Custody Slip (from booklet).pdf"
+			},
+			{
+				"id": 96,
+				"template": "vs-export-health-certificate.html",
+				"document":"Veterinary Export Health Certificate.pdf"
+			},
+			{
+				"id": 98,
+				"template": "vs-permit-import-semen-eggs-germ-plasm.html",
+				"document":"Permit to Import into Barbados Semen Eggs Germ Plasm.pdf"
+			},
+			{
+				"id": 100,
+				"template": "vs-quarantine-release-certificate.html",
+				"document":"New Quarantine Release Certificate.pdf"
+			},
+			{
+				"id": 101,
+				"template": "vs-quarantine-release-certificate-issued.html",
+				"document":"Quarantine Release Certificate.pdf"
+			},
+			{
+				"id": 102,
+				"template": "vs-permit-import-meat-poultry-products.html",
+				"document":"Permit to import Meat and Poultry Products.pdf"
+			},
+			{
+				"id": 104,
+				"template": "vs-permit-import-other-than-meat-products.html",
+				"document":"Permit to import Other than Meat Products.pdf"
+			},
+			{
+				"id": 106,
+				"template": "vs-official-veterinary-meat-inspection-certificate.html",
+				"document":"Official Veterinary Meat Inspection Certificate.pdf"
+			},
+			{
+				"id": 108,
+				"template": "vs-veterinary-export-health-certificate-avian.html",
+				"document":"Veterinary Export Health Certificate Avian.pdf"
+			},
+			{
+				"id": 110,
+				"template": "pcb-application-licence-import-manufacture-pesticide.html",
+				"document":"Application for a Licence to Import/manufacture a Pesticide.pdf"
+			},
+			{
+				"id": 112,
+				"template": "das-application-permission-use-firearms.html",
+				"document":"Application for Permission to Use Firearms.pdf"
+			},
+			{
+				"id": 114,
+				"template": "vs-application-transit-animals.html",
+				"document":"Application for Transit of Animals.pdf"
+			},
+			{
+				"id": 116,
+				"template": "plant-permit-import-plant-material-class-c.html",
+				"document":"Permit to Import Plant Material Class C.pdf"
+			},
+			{
+				"id": 118,
+				"template": "vs-application-traveller-passengers-import-meat.html",
+				"document":"New Application for Traveller Passengers Import Meat.pdf"
+			},
+			{
+				"id": 119,
+				"template": "vs-application-traveller-passengers-import-meat-issued.html",
+				"document":"Application for Traveller Passengers Import Meat.pdf"
+			},
+			{
+				"id": 120,
+				"template": "vs-application-import-animals-domestic.html",
+				"document":"New Application to Import of Animals / Domestic.pdf"
+			},
+			{
+				"id": 121,
+				"template": "vs-application-import-animals-domestic-issued.html",
+				"document":"Application to Import of Animals / Domestic.pdf"
+			},
+			{
+				"id": 122,
+				"template": "fs-certificate-condemnation-food.html",
+				"document":"New Certificate of Condemnation of Food.pdf"
+			},
+			{
+				"id": 123,
+				"template": "fs-certificate-condemnation-food-issued.html",
+				"document":"Certificate of Condemnation of Food.pdf"
+			},
+			{
+				"id": 124,
+				"template": "vs-endorsement-customs-entry-approval-stamp.html",
+				"document":"Endorsement of Customs Entry with Approval Stamp.pdf"
 			}
 		]
 	},

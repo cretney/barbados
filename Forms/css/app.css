@@ -129,7 +129,45 @@ table.table td.commodity-subtable{
 .no-margin {
   margin-top: -65px;
 }
-/* End */
+
+.thick {
+  height: 2px;
+  color: black;
+  background-color: black;
+}
+
+.big {
+  font-size: 22px
+}
+
+.bigger {
+  font-size: 32px;
+}
+
+.with-border {
+  border: 1px solid;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.black-border th, .black-border td {
+  border: 1px solid black !important;
+}
+
+.with-top {
+  border-top: 1px solid black !important;
+}
+
+.right-border {
+  border-right: 1px solid black;
+}
+
+.bottom-border {
+  border-bottom: 1px solid black;
+}
+/* End of Commons */
 
 /* Application for permit to import Dairy Products */
 .no-margin-lt {
@@ -152,20 +190,58 @@ table.table td.commodity-subtable{
   padding-top: 10px;
 }
 
-.with-border {
-  border: 1px solid;
-}
-
 .no-border-top {
   border: 1px solid;
   border-top: none;
 }
 /* End */
 
-/* Permit to import Dairy Products */
-.thick {
-  height: 2px;
-  color: black;
-  background-color: black;
+/* Duty Free Certificate */
+.inverse th {
+  font-weight: normal;
+}
+
+.inverse td {
+  font-weight: bold;
+}
+/* End */
+
+/* Export Authorization Narcotics */
+.authorisation td, .authorisation tr {
+  border: 2px solid black;
+}
+/* End */
+
+/* Plant Quarantine Waiver Application */
+.no-top-td td, .no-top {
+  border-top: none !important;
+}
+
+.no-bottom-th th, .no-bottom {
+  border-bottom: none !important;
+}
+
+.center-align {
+  text-align: center;
+}
+/* End */
+
+/* Veterinary Export Health Certificate Avian */
+.rotate {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.narrow-cells td p {
+  width: 7px;
+  position: absolute;
+  top: 215px;
+}
+
+.narrow-cells td {
+  width: 25px;
 }
 /* End */

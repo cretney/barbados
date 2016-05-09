@@ -1,0 +1,168 @@
+[
+  {
+    "key":"supplier.name",
+    "title":"Garage Name"
+  },
+  {
+    "type":"help",
+    "helpvalue":"The details for the vehicle are as follows:<br><br>"
+  },
+  {
+    "key": "commodities",
+    "title":"Type of Vehicle",
+    "add": "New",
+    "style": {
+      "add": "hidden"
+    },
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key":"commodities[].hsCode",
+                "readonly":true
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-8",
+            "items": [
+              {
+                "key":"commodities[].description",
+                "readonly":true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "commodities[].entries",
+        "title":"Vehicle",
+        "add": "Add Other",
+        "style": {
+          "add": "hidden"
+        },
+        "items": [
+          {
+            "type":"help",
+            "helpvalue":"<br>"
+          },
+
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-sm-3",
+                "items": [
+                  "commodities[].entries[].vehicleBrand"
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-3",
+                "items": [
+                  "commodities[].entries[].vehicleModel"
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-3",
+                "items": [
+                  "commodities[].entries[].vehicleYear"
+                ]
+              }
+            ]
+          },        
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-sm-3",
+                "items": [
+                  "commodities[].entries[].vehicleEngine"
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-3",
+                "items": [
+                  {
+                    "key":"commodities[].entries[].chassisNumber",
+                    "title":"Chassis Number"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-3",
+                "items": [
+                  {
+                    "key":"commodities[].entries[].costCIF",
+                    "title":"Cost (CIF)"
+                  }
+                ]
+              }
+            ]
+          }        
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"The vehicle will be shipped to Barbados on:<br><br>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"vesselOrCraft",
+            "title":"Vessel"
+          }
+          
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"expectedArrival",
+            "title":"Expected Arrival"
+          }          
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"origin",
+            "title":"Country of Origin",
+            "description":""
+          }          
+        ]
+      }
+    ]
+  },  
+  {
+    "type": "submit",
+    "style": "btn-info",
+    "title": "Save"
+  }
+]

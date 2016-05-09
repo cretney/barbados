@@ -1,0 +1,111 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"applicant.name",
+            "title":"Name of Passenger",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+				  {
+				  	"key":"applicant.country",
+				  	"title":"Country of Origin",
+				  	"readonly":true
+				  }
+        ]
+      }
+    ]
+  },
+  {
+    "key":"applicant.address",
+    "title":"Passenger's Address",
+    "readonly":true
+  },
+  {
+    "key":"applicant.barbadosAddress",
+    "title":"Address in Barbados"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"expectedArrival",
+            "title":"Estimated Date of Arrival"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"origin",
+            "title":"Country where Product is comming from",
+            "description":"",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"<h4>CONTACT INFORMATION (FOR RECEIPT OF PERMIT):</h4>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"applicant.phone",
+            "title":"Phone",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"applicant.fax",
+            "title":"Fax",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"applicant.email",
+            "title":"Email",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  }
+
+]

@@ -1,0 +1,137 @@
+<div>
+  <div class="row">
+    <div class="col-sm-12">
+      <h5>
+        <b>{{ila.submission.entryDate  | date:'dd/MM/yyyy'}}</b>
+      </h5>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+  <div class="row">
+    <div class="col-sm-6">
+      <h5>
+        Veterinary Services BB
+      </h5>
+    </div>
+    <div class="col-sm-4" align="right">
+      <h5>
+        4207118
+      </h5>
+    </div>
+    <div class="col-sm-2" align="right">
+      <h5>
+        p.1
+      </h5>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h5>
+        A09:VS014<!--REVISAR, LÍNEA CORTADA-->
+      </h5>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-1">
+      <h5>To:</h5>
+    </div>
+    <div class="col-sm-11">
+      Chief Veterinary Officer<br>
+      Veterinary Services<br>
+      Ministry of Agriculture<br>
+      The Pine. St. Michael
+    </div>
+  </div><!--row-->
+
+  <br>
+  <div class="row">
+    <div class="col-sm-12">
+      <h5 align="center">
+        <b>
+          APPLICATION FOR A PERMIT TO IMPORT ANIMALS/DOMESTIC POULTRY/BIRDS
+        </b>
+      </h5>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+  <br><br>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p>
+        I/We <b>{{ila.submission.submitter}}</b> of <b>{{ila.submission.applicant.name}}</b>
+        <br><br>
+        hereby apply for a permit to import from <b>{{ila.submission.supplier.name}}, {{ila.submission.supplier.address}}</b>
+        <br><br>
+        the following animal(s)/Domestic Poultry/Birds(s) into Barbados.
+      </p>
+    </div><!--col-sm-11 col-sm-offset-1-->
+  </div><!--row-->
+  <br>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <b>Country of Origin:</b> {{ila.submission.origin}}
+    </div>
+  </div>
+  <br><br>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div view-commodities-no-price=""></div>
+    </div>
+  </div>
+
+
+  <br><br>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p>
+        I/We hereby agree to comply with Import Conditions required in the event that permission is granted.
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-8">
+      <h5>
+        Signature:
+      </h5>
+      <h5>
+        Date: <b>{{ila.submission.issuedDate  | date:'dd/MM/yyyy'}}</b>
+      </h5>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-9 col-sm-offset-3">
+      <table class="table with-border">
+        <tr>
+          <th class="with-top center-align" colspan="2">
+            FOR OFFICE USE ONLY
+          </th>
+        </tr>
+        <tr>
+          <th class="no-top">
+            Application approved:
+          </th>
+          <th class="no-top">
+            Yes [ ] &nbsp;&nbsp; No [ ]
+          </th>
+        </tr>
+        <tr>
+          <th class="no-top" colspan="2">
+            If yes, Permit Number issued: <b>{{ila.submission.serialNumberCertificate }}</b>
+          </th>
+        </tr>
+        <tr>
+          <th class="no-top"></th>
+          <th class="no-top">
+            Date:
+          </th>
+        </tr>
+      </table>
+    </div><!--col-sm-9 col-sm-offset-3-->
+  </div><!--row-->
+</div><!--container-->

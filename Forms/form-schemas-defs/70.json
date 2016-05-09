@@ -1,0 +1,16 @@
+[
+	{
+		"key":"applicant.name",
+		"title":"Consigned to",
+  	"readonly":true		
+	},
+	{
+		"key":"origin",
+		"title":"Place of Origin",
+  	"type": "textarea"
+	},
+  {
+    "type": "submit",
+    "title": "Save"
+  }
+]

@@ -1,0 +1,79 @@
+<div>
+  <div class="row">
+    <div class="col-sm-12">
+      <h5>
+        The Permanent Secretary<br>
+        Ministry of Finance & Economic Affairs<br>
+        Government Headquarters<br>
+        Bay Street<br>
+        <b><u>ST. MICHAEL</u></b><br><br>
+      </h5>
+
+      <p>
+        Dear Sir,<br>
+        <b>{{ila.submission.applicant.name}}</b> is hereby requesting permission for Duty Free Concession on Taxi Registration.
+        <br><br>
+        The details for the vehicle are as follows:
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-5 col-sm-offset-1">
+      <table class="table">
+        <tr><td>Make:</td><td>{{ila.submission.commodities[0].entries[0].vehicleBrand}}</td></tr>
+        <tr><td>Model:</td><td>{{ila.submission.commodities[0].entries[0].vehicleModel}}</td></tr>
+        <tr><td>Engine No.:</td><td>{{ila.submission.commodities[0].entries[0].vehicleEngine}}</td></tr>
+        <tr><td>Chassis No.:</td><td>{{ila.submission.commodities[0].entries[0].chassisNumber}}</td></tr>
+        <tr><td>C.I.F. Value:</td><td>${{ila.submission.commodities[0].entries[0].costCIF}}</td></tr>
+      </table>
+    </div><!--col-sm-10 col-sm-offset-1-->
+  </div><!--row-->
+
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p>
+        The vehicle will be shipped to Barbados on:
+    </div><!--col-sm-10 col-sm-offset-1-->
+  </div><!--row-->
+  <div class="row">
+    <div class="col-sm-5 col-sm-offset-1">
+      <table class="table">
+        <tr><td>Vessel:</td><td>{{ila.submission.vesselOrCraft}}</td></tr>
+        <tr><td>Arrival Date:</td><td>{{ila.submission.expectedArrival}}</td></tr>
+      </table>
+    </div><!--ccol-sm-5 col-sm-offset-1-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">  
+        <br><br>
+        Please also be advised that I am still the owner of the following vehicle that is being replaced: 
+        <br><br>
+    </div><!--col-sm-10 col-sm-offset-1-->
+  </div><!--row-->
+  <div class="row">
+    <div class="col-sm-5 col-sm-offset-1">
+      <table class="table">
+        <tr><td>Vehicle Brand:</td><td>{{ila.submission.oldVehicleBrand}}</td></tr>
+        <tr><td>Vehicle Model:</td><td>{{ila.submission.oldVehicleModel}}</td></tr>
+        <tr><td>Vehicle Year:</td><td>{{ila.submission.oldVehicleYear}}</td></tr>
+        <tr><td>Registration Number:</td><td>{{ila.submission.oldVehicleRegistrationNumber}}</td></tr>
+      </table>
+    </div><!--ccol-sm-5 col-sm-offset-1-->
+  </div><!--row-->
+  <div class="row">
+    <div class="col-sm-12">
+        <br><br>
+        We look forward to your assistance in this matter.
+        <br><br>
+        Yours sincerely,
+        <br><br><br><br><br>
+        <b>
+          Owner/Operator
+        </b>
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+</div><!--container-->

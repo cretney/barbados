@@ -1,0 +1,56 @@
+<div>
+  <div class="row">
+    <div class="col-sm-12">
+      <h4 align="center">
+        <b>
+          MINISTRY OF AGRICULTURE
+        </b>
+      </h4>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-5 col-sm-offset-1">
+      No. <span class="bigger">{{ila.submission.referenceNumber}}</span>
+    </div>
+    <div class="col-sm-5">
+      <h5>
+        <b>
+          Date: {{ila.submission.issuedDate  | date:'dd/MM/yyyy'}}
+        </b>
+      </h5>
+    </div>
+  </div><!--row-->
+  <br>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p align="justify">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is to Certify that the undermentioned has been inspected and found to be apparently free from plant pests and diseases and may be delivered.
+      </p>
+      <p>
+        <b>Consigned to: {{ila.submission.applicant.name}}</b>
+      </p>
+      <p>
+        <b>Place of origin:</b> {{ila.submission.origin}}
+      </p>
+      <br><br><br><br><br><br><br>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+  
+
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-6">
+      <p>
+        <i>
+          Signed
+        </i>
+      </p>
+      <p align="center">
+        <i>
+          for Chief Agricultural Officer
+        </i>
+      </p>
+    </div>
+  </div><!--row-->
+</div><!--container-->

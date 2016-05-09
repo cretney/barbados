@@ -1,0 +1,66 @@
+<div>
+  <div class="row">
+    <div class="col-sm-12">
+      <h4 align="center">
+        <b>
+          MINISTRY OF AGRICULTURE, FOOD & FICHERIES
+        </b>
+      </h4>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-6">
+      <h5>
+        <b>No.</b>
+        <span class="bigger">{{ila.submission.serialNumberCertificate}}</span>
+      </h5>
+    </div>
+    <div class="col-sm-6">
+      <h5>
+        <i>Date:</i> {{ila.submission.issuedDate  | date:'dd/MM/yyyy'}}
+      </h5>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p>
+        This is to certify that the following items were taken in custody by the Ministry of Agriculture for the purpose of
+      </p>
+      <p><b>Consigned to:</b> {{ila.submission.applicant.name}}</p>
+      <p><b>Place of origin:</b> {{ila.submission.origin}}</p>
+      <p><b>Place inspected:</b> {{ila.submission.inspectionLocation}}</p>
+      <br>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <h4>Item and quantity:</h4>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div view-commodities-no-price=""></div>
+    </div>
+  </div>
+
+  <br><br>
+  <br><br>
+  <div class="row">
+    <div class="col-sm-6">
+      <h5>
+        Signed:
+      </h5>
+      <h5 align="center">
+        <i>Representative of Consignee</i>
+      </h5>
+    </div><!--col-sm-6-->
+    <div class="col-sm-6">
+      <h5>
+        Signed:
+      </h5>
+      <h5 align="center">
+        <i>for Chief Agricultural Officer</i>
+      </h5>
+    </div><!--col-sm-6-->
+  </div><!--row-->
+</div><!--container-->

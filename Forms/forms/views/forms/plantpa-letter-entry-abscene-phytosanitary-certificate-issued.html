@@ -1,0 +1,134 @@
+<div>
+  <div class="row">
+    <div class="col-sm-12">
+      <h5>
+        <b>
+          PQ Customs: <span class="big">{{ila.submission.serialNumberCertificate}}</span>
+        </b>
+      </h5>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-3">
+      (LOGO)
+    </div>
+    <div class="col-sm-6">
+      <h4 align="center">
+        <b>
+          MINISTRY OF AGRICULTURE<br>
+          AND RURAL DEVELOPMENT
+        </b>
+      </h4>
+      <h6 align="center">
+        <b>
+          P.O. BOX 505, GRAEME HALL, CHRIST CHURCH, BARBADOS, WEST INDIES
+        </b>
+      </h6>
+    </div>
+    <div class="col-sm-3" align="right">
+      (LOGO)
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-3">
+      <h6>
+        <b>
+          <i>
+            Our Ref:
+          </i>
+        </b>
+      </h6>
+    </div>
+    <div class="col-sm-6">
+      <h6 align="center">
+        <b>
+          <i>
+            Your Ref:
+          </i>
+        </b>
+      </h6>
+    </div>
+    <div class="col-sm-3">
+      <h6 align="right">
+        <b>
+          Tel:(246) 434‐5000<br>
+          Fax No.:(246) 420-8444
+        </b>
+      </h6>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h6 align="center">
+        <b>
+          <i><!--REVISAR TEXTO, NO PUDE LEER BIEN EL PDF-->
+            Plant Quarantine Division, Crumpton Sirce,t Bridgetown - Tel: (246) 426‐1222 Fax: (246) 426‐6927
+          </i>
+        </b>
+      </h6>
+    </div>
+  </div><!--row-->
+  
+  <br><br>
+  <div class="row">
+    <div class="col-sm-12">
+        <h5>
+          Date: {{ila.submission.issuedDate  | date:'dd/MM/yyyy'}}
+        </h5><br>
+        <p>
+          The Comptroller of Customs,
+          <br><br>
+          Please process entry in absence of a Phytosanitary/Treatment certificate.
+          <br><br>
+          Plant Quarantine will perform the necessary inspection and supervise any treatment(s) as may be warranted.
+        </p><br>
+        <p>
+          <b>Importer's Name:</b><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;<b>{{ila.submission.applicant.name}}</b><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;{{ila.submission.applicant.address}}<br>
+          <br>
+          <b>Container No:</b> {{ila.submission.containerNumber}}<br><br>
+          <b>Rotation No. & Date:</b> &nbsp;{{ila.submission.rotationNumber}}&nbsp;<b>of</b> &nbsp;{{ila.submission.rotationDate}}<br><br>
+          <b>DeclarationDate:</b> {{ila.submission.inspectionDate}}<br><br>
+          <b>Place of Inspection:</b> {{ila.submission.inspectionLocation}}
+        </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+
+  <hr>
+  <h4>Contents:</h4>
+  <div class="row">
+    <div class="col-sm-12">
+      <div view-commodities-no-price=""></div>
+    </div>
+  </div>
+
+
+  <br><br>
+  <div class="row">
+    <div class="col-sm-12">
+        <p>
+          NB. This document does not absolve the contents listed above from an on-site Inspection by Plant Quarantine
+        </p><br><br>
+        <p>
+          <u>
+            Stamp of Service
+          </u>
+        </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+  
+  <br><br><br>
+  <b>{{ila.submission.submitter}}</b> <br>
+  <div class="row">
+    <div class="col-sm-4 top-border">
+      <b>
+        Plant Quarantine Officer
+      </b>
+    </div>
+  </div><!--row-->
+</div><!--container-->

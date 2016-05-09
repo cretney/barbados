@@ -1,0 +1,19 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+				  {
+				  	"key":"origin",
+				  	"title":"Place of origin",
+				  	"readonly":true
+				  }
+        ]
+      }
+    ]
+	}
+]

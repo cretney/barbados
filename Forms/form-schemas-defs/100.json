@@ -1,0 +1,189 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"portDischarge",
+            "title":"Entry Location"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"dateArrival",
+            "title":"Arrival Date"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "resultInspection",
+    "type": "radios",
+    "title":"Results",
+    "description":"",
+    "titleMap": [
+      {
+        "value": "Healthy",
+        "name": "find it/them to be healthy and therefore permit their release from Quarantine."
+      },
+      {
+        "value": "Unfit",
+        "name": "find it/them to be unfit and direct that:"
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-1",
+        "items": [
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-11",
+        "items": [
+          {
+            "key": "resultInspection2",
+            "condition":"model.resultInspection =='Unfit'",
+            "title":"",
+            "type": "radios",
+            "titleMap": [
+              {
+                "value": "Destroy",
+                "name": "it/they be destroyed and disposed of at the Importer's expense."
+              },
+              {
+                "value": "Treated",
+                "name": "direct that the Quarentine period be extended and it/they be treated prior to reinspection."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },  
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "condition":"model.resultInspection2 =='Treated'",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-2",
+        "items": [
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-10",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key":"quarentineTreatment",
+                    "title":"To be treated with"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key":"quarentineTreatmentTime",
+                    "title":"Number of days"
+                  }
+                ]
+              }
+            ]
+          }
+
+        ]
+      }
+    ]
+  }, 
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  }, 
+
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"applicant.name",
+            "title":"Importer",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+				  {
+				  	"key":"applicant.address",
+				  	"title":"Importer's Address",
+				  	"readonly":true
+				  }
+        ]
+      }
+    ]
+  },
+  {
+    "key":"inspectionLocation",
+    "title":"Address of Designed Quarantine Premises"
+  },
+  {
+    "key":"inspectionDescription",
+    "title":"Description of Animal(s) / Bird(s)",
+    "type": "textarea"
+  },
+
+
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"previousNumber",
+            "title":"Landing Certificate #",
+            "description":""
+          }
+        ]
+      }
+    ]
+  }
+
+
+
+
+]
