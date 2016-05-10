@@ -15,7 +15,7 @@
 				"name": "Albania"
 			}
 		]
-	},	
+	},
 	{
 		"listType": "locations",
 		"list": [
@@ -414,6 +414,11 @@
 			{
 				"id": 102,
 				"template": "vs-permit-import-meat-poultry-products.html",
+				"document":"Permit to import Meat and Poultry Products.pdf"
+			},
+			{
+				"id": 103,
+				"template": "vs-permit-import-meat-poultry-products-issued.html",
 				"document":"Permit to import Meat and Poultry Products.pdf"
 			},
 			{

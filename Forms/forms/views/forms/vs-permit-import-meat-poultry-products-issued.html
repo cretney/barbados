@@ -10,7 +10,7 @@
       </h4>
       <h4>
         <b>
-          NO: 
+          NO: {{ila.submission.approvalNumber}}
         </b>
       </h4>
       <h4 align="center">
@@ -46,23 +46,23 @@
       </h5>
       <br><br>
       <h5>
-        <b>
-          ...<br>
-          Of ...<br>
+        <b>{{ila.submission.applicant.name}}</b><br>
+          Of <b>{{ila.submission.applicant.address}}</b><br>
           TO IMPORT INTO BARBADOS MEAT AND/OR POULTRY PRODUCTS DURING THE PERIOD<br>
-          ... TO ...
-        </b>
+          <b>{{ila.submission.periodRequestStart}}</b> TO <b>{{ila.submission.periodRequestEnding}}</b>
       </h5>
       <br><br>
       <h5 align="right">
+        <b>{{ila.submission.submitter}}</b><br>
         <i>Senior Veterinary Officer.</i>
       </h5>
       <br><br>
       <h5 align="right">
+        <b>{{ila.submission.approvalDate}}</b><br>
         Date
       </h5>
       <h5>
-        <b>NOTE:</b>
+        NOTE:
       </h5>
     </div><!--col-sm-12-->
   </div><!--row-->
