@@ -1,0 +1,100 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"applicant.name",
+            "title":"Name of owner/agent:",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+				  {
+				  	"key":"applicant.address",
+				  	"title":"Address:",
+				  	"readonly":true
+				  }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"origin",
+            "title":"Country of Origin/Name of Ship:"
+          },
+          {
+            "key":"dateArrival",
+            "title":"Date & Time of Arrival:"
+          },
+          {
+            "key":"vesselArrive",
+            "title":"via Airline Flight #/ Vessel:"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"destinationCountry",
+            "title":"Country of Destination/Name of Ship:"
+          },
+          {
+            "key":"dateDeparture",
+            "title":"Date & Time of Departure:"
+          },
+          {
+            "key":"vesselDepart",
+            "title":"via Airline Flight #/ Vessel:"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"submitter",
+            "title":"Signature of Applicant:",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"entryDate",
+            "title":"Date:",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  }
+]

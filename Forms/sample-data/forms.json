@@ -4585,7 +4585,7 @@
   "workflowId": 99,
   "formId": 103,
   "title": "Permit to import Meat and Poultry Products",
-  "status": "Draft",
+  "status": "Issued",
   "submission": {
     "approvalNumber": "1234567",
     "approvalDate":"2016-04-30",
@@ -4885,55 +4885,102 @@
   "blockId": 19911401,
   "workflowId": 99,
   "formId": 114,
-  "title": "Application for Transit of Animals",
+  "title": "New Application for Transit of Animals",
   "status": "Draft",
   "submission": {
     "commodities": [
       {
         "hsCode": "123",
-        "description": "test",
+        "description": "red-tailed parrots",
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3,
-            "pricePerUnit": 12.00,
-            "cifValue": 34,
-            "code":"14624",
-            "name":"TEGRETOL 200MG TAB",
-            "pack_size":"100'S",
-            "extendedCost": 14.00
+            "quantity": 3
           }
         ]
       },
       {
         "hsCode": "234",
-        "description": "test",
+        "description": "large cheetahs",
         "units": [
           {
             "unitType": "Units",
-            "quantity": 5,
-            "pricePerUnit": 20.00,
-            "cifValue": 36,
-            "code":"55311",
-            "name":"EXFORGE 5MG A/80MG V TAB",
-            "pack_size":"14'S",
-            "extendedCost": 24.00
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "hsCode": "345",
+        "description": "lemurs",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 22
           }
         ]
       }
     ],
-    "referenceNumber":"RN-7657657",
-    "serialNumberCertificate":"CN-68686",
-    "contractNumber":"C-879789",
-    "approvalDate":"2016-04-30",
-    "issuedDate":"2016-05-01",
-    "invoiceDate":"2016-03-01",
-    "invoiceNumber":"IN-5646546",
-    "containerNumber":"CONT-3324",
+    "entryDate": "2015-01-30",
     "submitter": "Joe Blow",
     "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
     "origin": "United States",
-    "countryConsigned": "Canada",
+    "destinationCountry":"Costa Rica",
+    "dateArrival": "2015-09-21",
+    "dateDeparture": "2015-03-01",
+    "vesselArrive": "S.S. Esses",
+    "vesselDepart": "H.M.S. James Cretney",
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
+},
+{
+  "blockId": 19911501,
+  "workflowId": 99,
+  "formId": 115,
+  "title": "Application for Transit of Animals",
+  "status": "Issued",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "red-tailed parrots",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "large cheetahs",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "hsCode": "345",
+        "description": "lemurs",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 22
+          }
+        ]
+      }
+    ],
+    "entryDate": "2015-01-30",
+    "approvalDate":"2016-04-30",
+    "approvalNumber": "22222222",
+    "approvedBy": "Joe Schmoe",
+    "serialNumberCertificate": "AB-234567",
+    "submitter": "Joe Blow",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "origin": "United States",
+    "vesselOrCraft": "SS Esses",
+    "dateDeparture": "2015-03-01",
     "expectedArrival": "2015-09-21T04:00:00.000Z",
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }

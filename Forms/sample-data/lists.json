@@ -452,6 +452,11 @@
 				"document":"Application for Transit of Animals.pdf"
 			},
 			{
+				"id": 115,
+				"template": "vs-application-transit-animals-issued.html",
+				"document":"Application for Transit of Animals.pdf"
+			},
+			{
 				"id": 116,
 				"template": "plant-permit-import-plant-material-class-c.html",
 				"document":"Permit to Import Plant Material Class C.pdf"
