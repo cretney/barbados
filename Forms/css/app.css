@@ -1,4 +1,4 @@
-/* @override 
+/* @override
 	http://localhost:3000/css/app.css
 	http://localhost:4000/Forms/css/app.css
 */
@@ -251,4 +251,25 @@ table.table td.commodity-subtable{
 .no-border-td td {
   border: none !important;
 }
+
+
+/*Timepicker Format*/
+.datetime {
+	margin-bottom: 50px;
+}
+
+.datetime .date, .datetime .time {
+	float: none;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.datetime .time {
+	padding-left: 15px;
+}
+
+.time table tbody > tr:first-child, .time table tbody > tr:last-child {
+	display: none;
+}
+
 /* End */

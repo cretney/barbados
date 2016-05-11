@@ -33,6 +33,29 @@
         </div>
       </div>
 
+      <div class="row datetime">
+        <div class="col-sm-6">
+          <label class="control-label">Date & Time of Arrival:</label>
+            <span class="date">
+              <input name="dateArrival" type="date" class="form-control" ng-model="ila.submission.dateArrival" datepicker-popup ng-click="picker.open = !picker.open" is-open="picker.open" close-text="Close">
+            </span>
+            <span class="time">
+              <input name="timeArrival" type="time" ng-model="ila.submission.timeArrival" timepicker show-meridian="false">
+            </span>
+          </div>
+
+          <div class="col-sm-6">
+            <label class="control-label">Date & Time of Departure:</label>
+              <span class="date">
+                <input name="dateDeparture" type="date" class="form-control" ng-model="ila.submission.dateDeparture" datepicker-popup ng-click="picker.open = !picker.open" is-open="picker.open" close-text="Close">
+              </span>
+              <span class="time">
+                <input name="timeDeparture" type="time" ng-model="ila.submission.timeDeparture" timepicker show-meridian="false">
+              </span>
+            </div>
+        </div>
+      </div>
+
       <hr>
       <h4>Details of Animals/Birds/Reptiles:</h4>
 
@@ -62,33 +85,6 @@
     </div>
   </div><!--row-->
 
-
-
-  <hr class="thick">
-
-  <div class="row">
-    <div class="col-sm-12">
-      <h5>
-        <b>For Office Use Only</b>
-      </h5>
-    </div>
-
-    <div class="col-sm-4">
-      <h5>Application #:</h5><br>
-      <h5><b>Application Approved By:</b></h5><br>
-      <h5>Date of Arrival:</h5>
-    </div><!--col-sm-4-->
-    <div class="col-sm-4">
-      <h5>Date Approved:</h5><br><br>
-      <h5>Chief Veterinary Officer</h5>
-    </div><!--col-sm-4-->
-    <div class="col-sm-4">
-      <h5 align="right">Permit #:</h5><br><br><br><br>
-      <h5>Date of Departure</h5>
-    </div><!--col-sm-4-->
-  </div><!--row-->
-  <br>
-
   <div class="row">
     <div class="col-sm-12">
       <div>
@@ -103,4 +99,9 @@
       </div>
     </div><!--col-sm-12-->
   </div><!--row-->
+
+  <div class="modal-footer">
+      <button type="button" class="btn btn-warning" ng-click="form.cancel()">Cancel</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
 </div><!--container-->
