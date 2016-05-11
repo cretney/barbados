@@ -4231,56 +4231,107 @@
   "blockId": 19909001,
   "workflowId": 99,
   "formId": 90,
-  "title": "Application for permit to import Veterinary Biologicals",
+  "title": "New Application for permit to import Veterinary Biologicals",
   "status": "Draft",
   "submission": {
     "commodities": [
       {
         "hsCode": "123",
-        "description": "test",
+        "description": "samples of black stallion hair for cloning",
         "units": [
           {
             "unitType": "Units",
             "quantity": 3,
-            "pricePerUnit": 12.00,
-            "cifValue": 34,
-            "code":"14624",
-            "name":"TEGRETOL 200MG TAB",
-            "pack_size":"100'S",
-            "extendedCost": 14.00
+            "name":"Horse Hair",
+            "manufacturer": {
+              "name": "Horse Genetics LLC",
+              "address": "1234 Stallion Lane, Bridgeville, KY, USA"
+            },
+            "supplier": {
+              "name": "Equestria, Ltd.",
+              "address": "666 Main Street #666, Miami, FL, USA"
+            }
           }
         ]
       },
       {
         "hsCode": "234",
-        "description": "test",
+        "description": "individual feet of rabbits",
         "units": [
           {
             "unitType": "Units",
-            "quantity": 5,
-            "pricePerUnit": 20.00,
-            "cifValue": 36,
-            "code":"55311",
-            "name":"EXFORGE 5MG A/80MG V TAB",
-            "pack_size":"14'S",
-            "extendedCost": 24.00
+            "quantity": 150,
+            "name":"RABBIT FEET",
+            "manufacturer": {
+              "name": "Butcher Bob's Animal Parts",
+              "address": "88 Rabbit Run, Johnson City, IA, USA"
+            },
+            "supplier": {
+              "name": "Lucky Charms",
+              "address": "2525 Calle Santa Joselo, Mexico City, Mexico"
+            }
           }
         ]
       }
     ],
-    "referenceNumber":"RN-7657657",
-    "serialNumberCertificate":"CN-68686",
-    "contractNumber":"C-879789",
-    "approvalDate":"2016-04-30",
-    "issuedDate":"2016-05-01",
-    "invoiceDate":"2016-03-01",
-    "invoiceNumber":"IN-5646546",
-    "containerNumber":"CONT-3324",
+    "entryDate": "2016-02-15",
     "submitter": "Joe Blow",
     "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
-    "origin": "United States",
-    "countryConsigned": "Canada",
-    "expectedArrival": "2015-09-21T04:00:00.000Z",
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
+},
+{
+  "blockId": 19909101,
+  "workflowId": 99,
+  "formId": 91,
+  "title": "Application for permit to import Veterinary Biologicals",
+  "status": "Issued",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "samples of black stallion hair for cloning",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 3,
+            "name":"Horse Hair",
+            "manufacturer": {
+              "name": "Horse Genetics LLC",
+              "address": "1234 Stallion Lane, Bridgeville, KY, USA"
+            },
+            "supplier": {
+              "name": "Equestria, Ltd.",
+              "address": "666 Main Street #666, Miami, FL, USA"
+            }
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "individual feet of rabbits",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 150,
+            "name":"RABBIT FEET",
+            "manufacturer": {
+              "name": "Butcher Bob's Animal Parts",
+              "address": "88 Rabbit Run, Johnson City, IA, USA"
+            },
+            "supplier": {
+              "name": "Lucky Charms",
+              "address": "2525 Calle Santa Joselo, Mexico City, Mexico"
+            }
+          }
+        ]
+      }
+    ],
+    "entryDate": "2016-02-15",
+    "serialNumberCertificate":"CN-68686",
+    "approvalDate":"2016-04-30",
+    "submitter": "Joe Blow",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
 },
