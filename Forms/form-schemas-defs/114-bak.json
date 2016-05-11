@@ -13,16 +13,10 @@
             "readonly":true
           }
         ]
-      }
-    ]
-  },
-  {
-    "type": "section",
-    "htmlClass": "row",
-    "items": [
+      },
       {
         "type": "section",
-        "htmlClass": "col-sm-12",
+        "htmlClass": "col-sm-6",
         "items": [
 				  {
 				  	"key":"applicant.address",
@@ -51,7 +45,7 @@
           },
           {
             "key":"vesselArrive",
-            "title":"Arrive via Airline Flight #/ Vessel:"
+            "title":"via Airline Flight #/ Vessel:"
           }
         ]
       },
@@ -69,7 +63,35 @@
           },
           {
             "key":"vesselDepart",
-            "title":"Depart via Airline Flight #/ Vessel:"
+            "title":"via Airline Flight #/ Vessel:"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"submitter",
+            "title":"Signature of Applicant:",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"entryDate",
+            "title":"Date:",
+            "readonly":true
           }
         ]
       }
