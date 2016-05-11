@@ -4979,9 +4979,10 @@
     "submitter": "Joe Blow",
     "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
     "origin": "United States",
+    "destinationCountry":"Costa Rica",
     "vesselOrCraft": "SS Esses",
     "dateDeparture": "2015-03-01",
-    "expectedArrival": "2015-09-21T04:00:00.000Z",
+    "dateArrival": "2015-09-21T04:00:00.000Z",
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
 },

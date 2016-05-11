@@ -20,11 +20,9 @@
       </h5>
 
       <p>
-        <b>
-          Name of owner/agent:<br><br>
-          Address:<br><br>
+          Name of owner/agent: <b>{{ila.submission.applicant.name}}</b><br><br>
+          Address: <b>{{ila.submission.applicant.address}}, {{ila.submission.applicant.country}}</b><br><br>
           Details of Animals/Birds/Reptiles:
-        </b>
       </p>
 
       <table class="table black-border">
@@ -36,9 +34,9 @@
             Number
           </th>
         </tr>
-        <tr>
-          <td><br><br><br><br><br></td>
-          <td></td>
+        <tr ng-repeat="animal in ila.submission.commodities">
+          <td><b>{{animal.description}}</b></td>
+          <td><b>{{animal.units[0].quantity}}</b></td>
         </tr>
       </table>
     </div><!--col-sm-12-->
@@ -48,10 +46,10 @@
     <div class="col-sm-6">
       <p>
         <b>
-          Country of Origin/Name of Ship:<br><br>
-          Country of Destination/Name of Ship:<br><br>
-          Date & Time of Arrival:<br><br>
-          Date & Time of Departure:<br><br><br>
+          Country of Origin/Name of Ship: <b>{{ila.submission.origin}}</b><br><br>
+          Country of Destination/Name of Ship: <b>{{ila.submission.destinationCountry}}</b><br><br>
+          Date & Time of Arrival: <b>{{ila.submission.dateArrival | date:'dd/MM/yyyy, HH:mm'}}</b><br><br>
+          Date & Time of Departure:<br><b>{{ila.submission.dateDeparture | date:'dd/MM/yyyy, HH:mm'}}</b><br><br>
           <i>Signature of Applicant</i>
         </b>
       </p>
