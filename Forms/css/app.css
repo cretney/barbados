@@ -245,3 +245,10 @@ table.table td.commodity-subtable{
   width: 25px;
 }
 /* End */
+
+
+/* Application for Approval of Pesticide */
+.no-border-td td {
+  border: none !important;
+}
+/* End */
