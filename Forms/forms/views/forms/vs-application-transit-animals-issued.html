@@ -45,26 +45,29 @@
   <div class="row">
     <div class="col-sm-6">
       <p>
-        <b>
           Country of Origin/Name of Ship: <b>{{ila.submission.origin}}</b><br><br>
           Country of Destination/Name of Ship: <b>{{ila.submission.destinationCountry}}</b><br><br>
-          Date & Time of Arrival: <b>{{ila.submission.dateArrival | date:'dd/MM/yyyy, HH:mm'}}</b><br><br>
-          Date & Time of Departure:<br><b>{{ila.submission.dateDeparture | date:'dd/MM/yyyy, HH:mm'}}</b><br><br>
-          <i>Signature of Applicant</i>
-        </b>
+          Date & Time of Arrival: <b>{{ila.submission.dateArrival | date:'dd/MM/yyyy'}} {{ila.submission.timeArrival | date:'HH:mm'}}</b><br><br>
+          Date & Time of Departure:<br><b>{{ila.submission.dateDeparture | date:'dd/MM/yyyy'}} {{ila.submission.timeDeparture | date:'HH:mm'}}</b><br><br>
       </p>
     </div>
     <div class="col-sm-6">
       <p>
-        <b>
           <br><br><br><br>
-          via Airline Flight #/ Vessel:<br><br>
-          via Airline Flight #/ Vessel:<br><br><br>
-          <i>Date</i>
-        </b>
+          Arrival via Airline Flight #/ Vessel: <b>{{ila.submission.vesselArrive}}</b><br><br>
+          Departure via Airline Flight #/ Vessel: <b>{{ila.submission.vesselDepart}}</b><br><br><br>
       </p>
     </div>
   </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-6">
+      <b><i>Signature of Applicant</i>: {{ila.submission.submitter}}</b>
+    </div>
+    <div class="col-sm-6">
+      <b><i>Date</i>: {{ila.submission.entryDate | date:'dd/MM/yyyy'}}</b>
+    </div>
+  </div>
 
   <hr class="thick">
 
@@ -76,17 +79,18 @@
     </div>
 
     <div class="col-sm-4">
-      <h5>Application #:</h5><br>
-      <h5><b>Application Approved By:</b></h5><br>
-      <h5>Date of Arrival:</h5>
+      <h5>Application #: <b>{{ila.submission.approvalNumber}}</b></h5><br>
+      <h5>Application Approved By:   </h5><br>
+      <h5>Date of Arrival: <b>{{ila.submission.dateArrival | date:'dd/MM/yyyy'}}</b></h5>
     </div><!--col-sm-4-->
     <div class="col-sm-4">
-      <h5>Date Approved:</h5><br><br>
-      <h5>Chief Veterinary Officer</h5>
+      <h5>Date Approved: <b>{{ila.submission.approvalDate | date:'dd/MM/yyyy'}}</b></h5><br>
+      <h5><b>{{ila.submission.approvedBy}}</b><br>
+      Chief Veterinary Officer</h5>
     </div><!--col-sm-4-->
     <div class="col-sm-4">
-      <h5 align="right">Permit #:</h5><br><br><br><br>
-      <h5>Date of Departure</h5>
+      <h5 align="right">Permit #: <b>{{ila.submission.serialNumberCertificate}}</b></h5><br><br><br><br>
+      <h5>Date of Departure: <b>{{ila.submission.dateDeparture | date:'dd/MM/yyyy'}}</b></h5>
     </div><!--col-sm-4-->
   </div><!--row-->
   <br>
