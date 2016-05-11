@@ -861,20 +861,6 @@
 			templateUrl: '/Forms/forms/views/partials/view-commodities-with-fields.html'
 		}
 	}])
-	.directive('viewCommoditiesWithSupplier', [function(){
-		return{
-			restrict: 'A',
-			replace: true,
-			templateUrl: '/Forms/forms/views/partials/view-commodities-with-supplier.html'
-		}
-	}])
-	.directive('editCommoditiesWithSupplier', [function(){
-		return{
-			restrict: 'A',
-			replace: true,
-			templateUrl: '/Forms/forms/views/partials/edit-commodities-with-supplier.html'
-		}
-	}])
 
 	// .directive('viewCommoditiesWithFields', [function(){
 	// 	return{
