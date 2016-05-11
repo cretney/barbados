@@ -4238,38 +4238,38 @@
       {
         "hsCode": "123",
         "description": "samples of black stallion hair for cloning",
+        "manufacturer": {
+          "name": "Horse Genetics LLC",
+          "address": "1234 Stallion Lane, Bridgeville, KY, USA"
+        },
+        "supplier": {
+          "name": "Equestria, Ltd.",
+          "address": "666 Main Street #666, Miami, FL, USA"
+        },
+        "name":"Horse Hair",
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3,
-            "name":"Horse Hair",
-            "manufacturer": {
-              "name": "Horse Genetics LLC",
-              "address": "1234 Stallion Lane, Bridgeville, KY, USA"
-            },
-            "supplier": {
-              "name": "Equestria, Ltd.",
-              "address": "666 Main Street #666, Miami, FL, USA"
-            }
+            "quantity": 3
           }
         ]
       },
       {
         "hsCode": "234",
         "description": "individual feet of rabbits",
+        "name":"RABBIT FEET",
+        "manufacturer": {
+          "name": "Butcher Bob's Animal Parts",
+          "address": "88 Rabbit Run, Johnson City, IA, USA"
+        },
+        "supplier": {
+          "name": "Lucky Charms",
+          "address": "2525 Calle Santa Joselo, Mexico City, Mexico"
+        },
         "units": [
           {
             "unitType": "Units",
-            "quantity": 150,
-            "name":"RABBIT FEET",
-            "manufacturer": {
-              "name": "Butcher Bob's Animal Parts",
-              "address": "88 Rabbit Run, Johnson City, IA, USA"
-            },
-            "supplier": {
-              "name": "Lucky Charms",
-              "address": "2525 Calle Santa Joselo, Mexico City, Mexico"
-            }
+            "quantity": 150
           }
         ]
       }
