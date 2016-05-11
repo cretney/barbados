@@ -46,10 +46,6 @@
             "title":"Country of Origin/Name of Ship:"
           },
           {
-            "key":"dateArrival",
-            "title":"Date & Time of Arrival:"
-          },
-          {
             "key":"vesselArrive",
             "title":"Arrive via Airline Flight #/ Vessel:"
           }
@@ -62,10 +58,6 @@
           {
             "key":"destinationCountry",
             "title":"Country of Destination/Name of Ship:"
-          },
-          {
-            "key":"dateDeparture",
-            "title":"Date & Time of Departure:"
           },
           {
             "key":"vesselDepart",

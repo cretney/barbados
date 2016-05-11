@@ -4926,7 +4926,9 @@
     "origin": "United States",
     "destinationCountry":"Costa Rica",
     "dateArrival": "2015-09-21",
-    "dateDeparture": "2015-03-01",
+    "timeArrival": "18:10",
+    "dateDeparture": "2015-10-01",
+    "timeDeparture": "09:30",
     "vesselArrive": "S.S. Esses",
     "vesselDepart": "H.M.S. James Cretney",
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
@@ -4981,8 +4983,10 @@
     "origin": "United States",
     "destinationCountry":"Costa Rica",
     "vesselOrCraft": "SS Esses",
-    "dateDeparture": "2015-03-01",
-    "dateArrival": "2015-09-21T04:00:00.000Z",
+    "dateArrival": "2015-09-21",
+    "timeArrival": "18:10",
+    "dateDeparture": "2015-10-01",
+    "timeDeparture": "09:30",
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
 },

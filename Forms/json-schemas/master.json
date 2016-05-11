@@ -316,6 +316,16 @@
       "title": "Date of Departure",
       "description": "The date that the goods departed from the country of origin."
     },
+    "timeArrival": {
+      "type": "date-time",
+      "title": "Time of Arrival",
+      "description": "The time that the goods arrived."
+    },
+    "timeDeparture": {
+      "type": "date-time",
+      "title": "Time of Departure",
+      "description": "The time that the goods departed."
+    },
     "consigments": {
       "type": "string",
       "title": "Number of Consignments",
