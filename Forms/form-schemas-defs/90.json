@@ -1,0 +1,98 @@
+[
+  {
+    "key": "commodities",
+    "title":"Type of Vehicle",
+    "add": "New",
+    "style": {
+      "add": "hidden"
+    },
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key":"commodities[].hsCode",
+                "title":"HS Code",
+                "description":"",
+                "readonly":true
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-7",
+            "items": [
+              {
+                "key":"commodities[].description",
+                "title":"Product description",
+                "description":"",
+                "readonly":true
+              }
+              
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key":"commodities[].units[0].quantity",
+                "title":"Quantity"
+              }            
+              
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-4",
+            "items": [
+              {
+                "key":"commodities[].supplier.name",
+                "title":"Supplier",
+                "description":""
+              },
+              {
+                "key":"commodities[].manufacturer.name",
+                "title":"Manufacturer",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-7",
+            "items": [
+              {
+                "key":"commodities[].supplier.address",
+                "title":"Address",
+                "description":""
+              },
+              {
+                "key":"commodities[].manufacturer.address",
+                "title":"Address",
+                "description":""
+              }
+              
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "submit",
+    "style": "btn-info",
+    "title": "Save"
+  }
+]
