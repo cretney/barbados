@@ -1,7 +1,7 @@
 [
   {
     "key": "commodities",
-    "title":"Type of Vehicle",
+    "title":"",
     "add": "New",
     "style": {
       "add": "hidden"
@@ -33,7 +33,7 @@
                 "description":"",
                 "readonly":true
               }
-              
+
             ]
           },
           {
@@ -43,8 +43,8 @@
               {
                 "key":"commodities[].units[0].quantity",
                 "title":"Quantity"
-              }            
-              
+              }
+
             ]
           }
         ]
@@ -83,7 +83,7 @@
                 "title":"Address",
                 "description":""
               }
-              
+
             ]
           }
         ]

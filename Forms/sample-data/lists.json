@@ -374,6 +374,11 @@
 			{
 				"id": 90,
 				"template": "vs-application-permit-import-veterinary-biologicals.html",
+				"document":"New Application for permit to import Veterinary Biologicals.pdf"
+			},
+			{
+				"id": 91,
+				"template": "vs-application-permit-import-veterinary-biologicals-issued.html",
 				"document":"Application for permit to import Veterinary Biologicals.pdf"
 			},
 			{

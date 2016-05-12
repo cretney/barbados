@@ -24,10 +24,8 @@
       </h4>
       <br>
       <p>
-        <b>
-          I/We ... of ... <br>
-          the following Veterinary Biological Products.
-        </b>
+        I/We <b>{{ila.submission.applicant.name}}</b> of <b>{{ila.submission.applicant.address}}</b> <br>
+        the following Veterinary Biological Products:
       </p>
     </div><!--col-sm-11-->
   </div><!--row-->
@@ -41,13 +39,14 @@
           <th class="center-align">Name of Address of Supplier</th>
           <th class="center-align">Quantity</th>
         </tr>
-        <tr>
-          <td>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-          </td>
-          <td></td>
-          <td></td>
-          <td></td>
+        <tr ng-repeat="item in ila.submission.commodities">
+          <td>{{item.units[0].name}}<br>
+          {{item.description}}</td>
+          <td>{{item.units[0].manufacturer.name}}<br>
+          {{item.units[0].manufacturer.address}}</td>
+          <td>{{item.units[0].supplier.name}}<br>
+          {{item.units[0].supplier.address}}</td>
+          <td>{{item.units[0].quantity}}</td>
         </tr>
       </table>
     </div><!--col-sm-12-->
@@ -67,9 +66,9 @@
   <div class="row">
     <div class="col-sm-5 col-sm-offset-7">
       <h5>
-        <b>Signature:</b>
+        Signature: <b>{{ila.submission.submitter}}</b>
         <br><br>
-        <b>Date:</b>
+        Date: <b>{{ila.submission.entryDate | date:'dd/MM/yyyy'}}</b>
       </h5>
     </div><!--col-sm-12-->
   </div><!--row-->
@@ -88,18 +87,19 @@
             Application approved:
           </th>
           <th class="no-top">
-            Yes [ ] &nbsp;&nbsp; No [ ]
+            <span ng-if="ila.submission.approvalDate!=''">Yes [X] &nbsp;&nbsp; No [ ]</span>
+            <span ng-if="ila.submission.approvalDate==''">Yes [ ] &nbsp;&nbsp; No [X]</span>
           </th>
         </tr>
         <tr>
           <th class="no-top" colspan="2">
-            If yes, Permit Number issued:
+            If yes, Permit Number issued: {{ila.submission.serialNumberCertificate}}
           </th>
         </tr>
         <tr>
           <th class="no-top"></th>
           <th class="no-top">
-            Date:
+            Date: {{ila.submission.approvalDate | date:'dd/MM/yyyy'}}
           </th>
         </tr>
       </table>
