@@ -16,43 +16,26 @@
         Ministry of Agriculture<br>
         The Pine, St. Michael
       </h5>
+      <br>
       <h4 align="center">
         <b>
-          APPLICATION FOR A PERMIT TO IMPORT SEMEN FOR THE ARTIFICIAL<br>
-          INSEMINATION OF ANIMALS
+          APPLICATION FOR A PERMIT TO IMPORT SEMEN FOR THE ARTIFICIAL INSEMINATION OF ANIMALS
         </b>
       </h4>
       <br>
       <p>
-        <b>
-          I/We ... of ... <br>
-          hereby apply for a permit to import the following semen for the artificial insemination of animals from ...
-        </b>
-        <i>(name and address of supplier)</i>
+        I/We <b>{{ila.submission.applicant.name}}</b> of <b>{{ila.submission.applicant.address}}</b> <br>
+          hereby apply for a permit to import the following semen for the artificial insemination of animals from: <br>
+        <b>{{ila.submission.supplier.name}}</b> of <b>{{ila.submission.supplier.address}}</b>
       </p>
     </div><!--col-sm-11-->
   </div><!--row-->
 
   <div class="row">
     <div class="col-sm-12">
-      <table class="table black-border">
-        <tr>
-          <th class="center-align">Details of Donor Animal</th>
-          <th class="center-align">Address where Animal kept</th>
-          <th class="center-align">Name of Address of Collection Agency</th>
-          <th class="center-align">Quantity</th>
-        </tr>
-        <tr>
-          <td>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-          </td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
-    </div><!--col-sm-12-->
-  </div><!--row-->
+      <div sf-schema="schema" sf-form="formdef" sf-model="form.data"></div>
+    </div>
+  </div>
 
   <div class="row">
     <div class="col-sm-12">
@@ -67,41 +50,11 @@
   <div class="row">
     <div class="col-sm-5 col-sm-offset-7">
       <h5>
-        <b>Signature:</b>
+        Signature: <b>{{ila.submission.submitter}}</b>
         <br><br>
-        <b>Date:</b>
+        Date: <b>{{ila.submission.entryDate | date:'dd/MM/yyyy'}}</b>
       </h5>
     </div><!--col-sm-12-->
   </div><!--row-->
 
-  <div class="row">
-    <div class="col-sm-9 col-sm-offset-3">
-      <table class="table with-border">
-        <tr>
-          <th class="with-top center-align" colspan="2">
-            FOR OFFICE USE ONLY
-          </th>
-        </tr>
-        <tr>
-          <th class="no-top">
-            Application approved:
-          </th>
-          <th class="no-top">
-            Yes [ ] &nbsp;&nbsp; No [ ]
-          </th>
-        </tr>
-        <tr>
-          <th class="no-top" colspan="2">
-            If yes, Permit Number issued:
-          </th>
-        </tr>
-        <tr>
-          <th class="no-top"></th>
-          <th class="no-top">
-            Date:
-          </th>
-        </tr>
-      </table>
-    </div><!--col-sm-9 col-sm-offset-3-->
-  </div><!--row-->
 </div><!--container-->

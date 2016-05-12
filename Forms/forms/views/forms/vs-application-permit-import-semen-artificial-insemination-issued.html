@@ -1,7 +1,7 @@
 <div>
   <div class="row">
     <div class="col-sm-12">
-      <h5>AO9:VS017</h5>
+      <h5>AO9:VS018</h5>
     </div>
   </div><!--row-->
 
@@ -19,13 +19,14 @@
       <br>
       <h4 align="center">
         <b>
-          APPLICATION FOR A PERMIT TO IMPORT VETERINARY BIOLOGICAL PRODUCTS OTHER THAN SEMEN
+          APPLICATION FOR A PERMIT TO IMPORT SEMEN FOR THE ARTIFICIAL INSEMINATION OF ANIMALS
         </b>
       </h4>
       <br>
       <p>
         I/We <b>{{ila.submission.applicant.name}}</b> of <b>{{ila.submission.applicant.address}}</b> <br>
-        the following Veterinary Biological Products:
+          hereby apply for a permit to import the following semen for the artificial insemination of animals from: <br>
+        <b>{{ila.submission.supplier.name}}</b> of <b>{{ila.submission.supplier.address}}</b>
       </p>
     </div><!--col-sm-11-->
   </div><!--row-->
@@ -34,18 +35,17 @@
     <div class="col-sm-12">
       <table class="table black-border">
         <tr>
-          <th class="center-align">Name of Product & Description</th>
-          <th class="center-align">Name & Address of Manufacturer</th>
-          <th class="center-align">Name of Address of Supplier</th>
+          <th class="center-align">Details of Donor Animal</th>
+          <th class="center-align">Address where Animal kept</th>
+          <th class="center-align">Name of Address of Collection Agency</th>
           <th class="center-align">Quantity</th>
         </tr>
         <tr ng-repeat="item in ila.submission.commodities">
           <td>{{item.units[0].name}}<br>
           {{item.description}}</td>
-          <td>{{item.units[0].manufacturer.name}}<br>
-          {{item.units[0].manufacturer.address}}</td>
-          <td>{{item.units[0].supplier.name}}<br>
-          {{item.units[0].supplier.address}}</td>
+          <td>{{item.units[0].address}}</td>
+          <td>{{item.units[0].collectionAgency.name}}<br>
+          {{item.units[0].collectionAgency.address}}</td>
           <td>{{item.units[0].quantity}}</td>
         </tr>
       </table>
@@ -61,7 +61,6 @@
       </p>
     </div><!--col-sm-12-->
   </div><!--row-->
-  <br>
 
   <div class="row">
     <div class="col-sm-5 col-sm-offset-7">
@@ -72,7 +71,6 @@
       </h5>
     </div><!--col-sm-12-->
   </div><!--row-->
-  <br>
 
   <div class="row">
     <div class="col-sm-9 col-sm-offset-3">

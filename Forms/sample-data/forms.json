@@ -4174,56 +4174,95 @@
   "blockId": 19908801,
   "workflowId": 99,
   "formId": 88,
-  "title": "Application for permit to import Semen for Artificial Insemination",
+  "title": "New Application for permit to import Semen for Artificial Insemination",
   "status": "Draft",
   "submission": {
     "commodities": [
       {
         "hsCode": "123",
-        "description": "test",
+        "description": "a rare plaid-coated Hyena",
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3,
-            "pricePerUnit": 12.00,
-            "cifValue": 34,
-            "code":"14624",
-            "name":"TEGRETOL 200MG TAB",
-            "pack_size":"100'S",
-            "extendedCost": 14.00
+            "quantity": 16,
+            "address": "345 Laughing Lane, Windsor, Ontario, Canada",
+            "name": "Checkers",
+            "collectionAgency": {
+              "name": "Endangered Hyena Breeding, Inc.",
+              "address": "2525 Calle Santa Joselo, Mexico City, Mexico"
+            }
           }
         ]
       },
       {
         "hsCode": "234",
-        "description": "test",
+        "description": "another rare plaid-coated Hyena",
         "units": [
           {
             "unitType": "Units",
-            "quantity": 5,
-            "pricePerUnit": 20.00,
-            "cifValue": 36,
-            "code":"55311",
-            "name":"EXFORGE 5MG A/80MG V TAB",
-            "pack_size":"14'S",
-            "extendedCost": 24.00
+            "quantity": 30,
+            "address": "345 Laughing Lane, Windsor, Ontario, Canada",
+            "name": "Chess",
+            "collectionAgency": {
+              "name": "Endangered Hyena Breeding, Inc.",
+              "address": "2525 Calle Santa Joselo, Mexico City, Mexico"
+            }
           }
         ]
       }
     ],
-    "referenceNumber":"RN-7657657",
-    "serialNumberCertificate":"CN-68686",
-    "contractNumber":"C-879789",
-    "approvalDate":"2016-04-30",
-    "issuedDate":"2016-05-01",
-    "invoiceDate":"2016-03-01",
-    "invoiceNumber":"IN-5646546",
-    "containerNumber":"CONT-3324",
+    "entryDate":"2015-10-31",
     "submitter": "Joe Blow",
     "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
-    "origin": "United States",
-    "countryConsigned": "Canada",
-    "expectedArrival": "2015-09-21T04:00:00.000Z",
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
+},
+{
+  "blockId": 19908901,
+  "workflowId": 99,
+  "formId": 89,
+  "title": "Application for permit to import Semen for Artificial Insemination",
+  "status": "Issued",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "a rare plaid-coated Hyena",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 16,
+            "address": "345 Laughing Lane, Windsor, Ontario, Canada",
+            "name": "Checkers",
+            "collectionAgency": {
+              "name": "Endangered Hyena Breeding, Inc.",
+              "address": "2525 Calle Santa Joselo, Mexico City, Mexico"
+            }
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "another rare plaid-coated Hyena",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 30,
+            "address": "345 Laughing Lane, Windsor, Ontario, Canada",
+            "name": "Chess",
+            "collectionAgency": {
+              "name": "Endangered Hyena Breeding, Inc.",
+              "address": "2525 Calle Santa Joselo, Mexico City, Mexico"
+            }
+          }
+        ]
+      }
+    ],
+    "entryDate":"2015-10-31",
+    "serialNumberCertificate":"CN-68686",
+    "approvalDate":"2016-04-30",
+    "submitter": "Joe Blow",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
 },

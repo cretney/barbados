@@ -369,6 +369,11 @@
 			{
 				"id": 88,
 				"template": "vs-application-permit-import-semen-artificial-insemination.html",
+				"document":"New Application for permit to import Semen for Artificial Insemination.pdf"
+			},
+			{
+				"id": 89,
+				"template": "vs-application-permit-import-semen-artificial-insemination-issued.html",
 				"document":"Application for permit to import Semen for Artificial Insemination.pdf"
 			},
 			{

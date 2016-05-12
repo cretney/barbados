@@ -1,0 +1,98 @@
+[
+  {
+    "key": "commodities",
+    "title":"",
+    "add": "New",
+    "style": {
+      "add": "hidden"
+    },
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key":"commodities[].units[0].name",
+                "title":"Donor animal name",
+                "description":"",
+                "readonly":true
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-8",
+            "items": [
+              {
+                "key":"commodities[].description",
+                "title":"Donor animal description",
+                "description":"",
+                "readonly":true
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-9",
+            "items": [
+              {
+                "key":"commodities[].units[0].address",
+                "title":"Address where animal kept",
+                "description":"",
+                "readonly":true
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key":"commodities[].units[0].quantity",
+                "title":"Quantity"
+              }
+
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-4",
+            "items": [
+              {
+                "key":"commodities[].units[0].collectionAgency.name",
+                "title":"Collection agency name",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-7",
+            "items": [
+              {
+                "key":"commodities[].units[0].collectionAgency.address",
+                "title":"Collection agency address",
+                "description":""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "submit",
+    "style": "btn-info",
+    "title": "Save"
+  }
+]
