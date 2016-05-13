@@ -525,6 +525,16 @@
 				"id": 130,
 				"template": "pcb-application-approval-pesticide.html",
 				"document":"Application for Approval of Pesticide.pdf"
+			},
+			{
+				"id": 132,
+				"template": "fd-application-registration-fishery-worker.html",
+				"document":"Application for Registration of a Fishery Worker.pdf"
+			},
+			{
+				"id": 134,
+				"template": "fd-atlantic-swordfish-certificate-elegibility.html",
+				"document":"Atlantic Swordfish Certificate of Elegibility (COE).pdf"
 			}
 		]
 	},

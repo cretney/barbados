@@ -152,6 +152,10 @@ table.table td.commodity-subtable{
   text-align: right;
 }
 
+.no-top-td td, .no-top {
+  border-top: none !important;
+}
+
 .black-border th, .black-border td {
   border: 1px solid black !important;
 }
@@ -213,10 +217,6 @@ table.table td.commodity-subtable{
 /* End */
 
 /* Plant Quarantine Waiver Application */
-.no-top-td td, .no-top {
-  border-top: none !important;
-}
-
 .no-bottom-th th, .no-bottom {
   border-bottom: none !important;
 }
@@ -251,6 +251,36 @@ table.table td.commodity-subtable{
 .no-border-td td {
   border: none !important;
 }
+/* End */
+
+.no-border-th th {
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.no-top-th .th-top {
+  border-top: none !important;
+}
+
+.no-top-td .no-top-cell {
+  border-top: none !important;
+}
+
+.no-right-td .no-right-cell {
+  border-right: none !important;
+}
+
+.no-bottom-td .no-bottom-cell {
+  border-bottom: none !important;
+}
+
+.no-left-td .no-left-cell {
+  border-left: none !important;
+}
+
+
+/* End of HTML conversion */
+
 
 
 /*Timepicker Format*/
