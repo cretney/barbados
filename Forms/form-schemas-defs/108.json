@@ -1,0 +1,249 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"consignee.name",
+            "title":"Consignee",
+            "description":""
+          },
+          {
+            "key":"applicant.name",
+            "title":"Exporter",
+            "description":""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-7",
+        "items": [
+          {
+            "key":"consignee.address",
+            "title":"Address",
+            "description":""
+          },
+          {
+            "key":"applicant.address",
+            "title":"Address",
+            "description":""
+          }
+
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"<br>"
+  },  
+  {
+    "key": "commodities",
+    "title":"",
+    "add": "New",
+    "style": {
+      "add": "hidden"
+    },
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key":"commodities[].hsCode",
+                "title":"HS Code",
+                "description":"",
+                "readonly":true
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-9",
+            "items": [
+              {
+                "key":"commodities[].description",
+                "title":"Product description",
+                "description":"",
+                "readonly":true
+              }
+
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-7",
+            "items": [
+              {
+                "key": "commodities[].type",
+                "title": "Avian Type",
+                "type": "radios-inline",
+                "titleMap": {
+                  "broiler":"BROILER",
+                  "layer":"LAYER",
+                  "turkey":"TURKEY",
+                  "other":"OTHER"
+                }
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key":"commodities[].units[0].quantity",
+                "title":"Quantity"
+              }
+
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key":"commodities[].age",
+                "title":"Age"
+              }
+
+            ]
+          }
+
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-7",
+            "items": [
+              {
+                "key": "commodities[].sex",
+                "title": "Sex",
+                "type": "radios-inline",
+                "titleMap": {
+                  "male":"MALE",
+                  "female":"FEMALE",
+                  "unsexed":"UNSEXED"
+                }
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-4",
+            "items": [
+              {
+                "key": "commodities[].condition",
+                "title": "Condition",
+                "type": "radios-inline",
+                "titleMap": {
+                  "fed":"Fed",
+                  "watered":"Watered"
+                }
+              }
+            ]
+          }
+
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-12",
+            "items": [
+              {
+                "key": "commodities[].vaccinations",
+                "title": "Vaccinations",
+                "type": "checkboxes",
+                "htmlClass": "inline",
+                "titleMap": {
+                  "mareks":"MAREKS",
+                  "fowlpox":"FOWLPOX",
+                  "newcastle":"NEWCASTLE",
+                  "aib":"AIB",
+                  "gumboro":"GUMBORO",
+                  "other":"OTHER"
+                }
+              }
+            ]
+          }
+
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-12",
+            "items": [
+              {
+                "key": "commodities[].vaccinations",
+                "title": "Vaccinations",
+                "type": "radios-inline",
+                "titleMap": {
+                  "mareks":"MAREKS",
+                  "fowlpox":"FOWLPOX",
+                  "newcastle":"NEWCASTLE",
+                  "aib":"AIB",
+                  "gumboro":"GUMBORO",
+                  "other":"OTHER"
+                }
+              }
+            ]
+          }
+
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key":"commodities",
+            "title": "",
+            "type": "checkboxes",
+            "titleMap": {
+              "from_hatcheries":"1. The birds originate from Hatcheries participating in the Hatchery Sanitation Scheme of the Ministry of Agriculture.",
+              "healthy":"2. In my opinion the bird(s) is/are in good health and free from clinical symptoms of communicable disease and insofar as can be determined has/have not been exposed to Fowl Cholera, Fowl Typhoid, New Castle Disease and Avian Influenza (Fowl Plague)."
+            }
+          }
+        ]
+      }
+    ]
+  },  
+  {
+    "type": "submit",
+    "style": "btn-info",
+    "title": "Save"
+  }
+]

@@ -1,4 +1,4 @@
-/* @override
+/* @override 
 	http://localhost:3000/css/app.css
 	http://localhost:4000/Forms/css/app.css
 */
@@ -303,9 +303,19 @@ table.table td.commodity-subtable{
 }
 
 /*schema checkboxes inline*/
-.schema-form-checkboxes .checkbox {
-	display: inline-block;
-	padding-right: 40px;
+
+.schema-form-checkboxes.inline label.control-label {
+	float: left;
+	text-align: left;
+	width: 100%;
 }
 
+.schema-form-checkboxes.inline .checkbox {
+	float: left;
+	padding-right: 25px;
+}
+
+
+
 /* End */
+

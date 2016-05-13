@@ -449,6 +449,11 @@
 			{
 				"id": 108,
 				"template": "vs-veterinary-export-health-certificate-avian.html",
+				"document":"New Veterinary Export Health Certificate Avian.pdf"
+			},
+			{
+				"id": 109,
+				"template": "vs-veterinary-export-health-certificate-avian-issued.html",
 				"document":"Veterinary Export Health Certificate Avian.pdf"
 			},
 			{
