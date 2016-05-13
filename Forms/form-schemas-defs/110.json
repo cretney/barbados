@@ -13,10 +13,16 @@
             "readonly":true
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
       {
         "type": "section",
-        "htmlClass": "col-sm-6",
+        "htmlClass": "col-sm-12",
         "items": [
 				  {
 				  	"key":"applicant.address",
@@ -28,12 +34,16 @@
     ]
   },
   {
+    "type":"help",
+    "helpvalue":"<hr>"
+  },  
+  {
     "type": "section",
     "htmlClass": "row",
     "items": [
       {
         "type": "section",
-        "htmlClass": "col-sm-6 col-sm-offset-3",
+        "htmlClass": "col-sm-6",
         "items": [
           {
             "key":"commodities[0].description",
