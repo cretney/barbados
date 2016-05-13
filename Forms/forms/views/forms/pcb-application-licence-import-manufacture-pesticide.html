@@ -16,26 +16,14 @@
         </b>
       </h4><br>
       <h5 align="right">
-        <i>Date...</i>
+        <i>Date: <b>{{current_date | date: 'dd/MM/yyyy'}}</b></i>
       </h5><br><br>
-      <h5>
-        The Secretary<br>
-        Pesticides Control Board<br>
-        Ministry of Agriculture<br>
-        Graeme Hall<br>
-        Christ Church
-      </h5>
 
-      <p>
-        I ... (name)<br>
-        of ... (address)<br>
-        hereby apply to the Pesticides Control Board for a licence to import/manufacture the pesticide ... containing the active ingredients ...<br><br><br>
-        in the formulations<br><br><br><br><br><br>
-      </p>
-
-      <p align="right">
-        <i>Applicant</i>
-      </p>
+      <div class="row">
+        <div class="col-sm-12">
+          <div sf-schema="schema" sf-form="formdef" sf-model="form.data"></div>
+        </div>
+      </div>
     </div><!--col-sm-12-->
   </div><!--row-->
 </div><!--container-->

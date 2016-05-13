@@ -1,0 +1,48 @@
+<div>
+  <div class="row">
+    <div class="col-sm-12">
+      <h6 align="right">
+        Form 3
+      </h6>
+      <h5 align="center">
+        <b>
+          THE PESTICIDES CONTROL (APPROVAL OF PESTICIDES)<br>
+          REGULATIONS, 1974
+        </b>
+      </h5>
+      <h4 align="center">
+        <b>
+          APPLICATION FOR A LICENCE TO IMPORT/MANUFACTURE A PESTICIDE
+        </b>
+      </h4><br>
+      <h5 align="right">
+        <i>Date: <b>{{ila.submission.entryDate | date: 'dd/MM/yyyy'}}</b></i>
+      </h5><br>
+      <h5>
+        The Secretary<br>
+        Pesticides Control Board<br>
+        Ministry of Agriculture<br>
+        Graeme Hall<br>
+        Christ Church
+      </h5>
+
+      <br><br>
+
+      <p>
+        I, <b>{{ila.submission.applicant.name}}</b><br>
+        of <b>{{ila.submission.applicant.address}}, {{ila.submission.applicant.country}}</b><br>
+        hereby apply to the Pesticides Control Board for a licence to import/manufacture the pesticide <b>{{ila.submission.commodities[0].description}}</b> containing the active ingredients:<br><br>
+        <b>{{ila.submission.commodities[0].activeIngredients}}</b><br><br>
+        in the formulations:<br><br>
+        <b>{{ila.submission.commodities[0].formulations}}</b>
+      </p>
+
+      <br><br><br>
+
+      <p align="right">
+        <b>{{ila.submission.submitter}}</b><br>
+        <i>Applicant</i>
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+</div><!--container-->

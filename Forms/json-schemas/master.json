@@ -176,6 +176,16 @@
             "type": "string",
             "title": "Food Type",
             "description": ""
+          },
+          "activeIngredients": {
+            "type": "string",
+            "title": "Active Ingredients",
+            "description": "pesticide active ingredients"
+          },
+          "formulations": {
+            "type": "string",
+            "title": "Formulations",
+            "description": "pesticide formulations"
           }
         }
       }

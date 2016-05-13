@@ -457,6 +457,11 @@
 				"document":"Application for a Licence to Import/manufacture a Pesticide.pdf"
 			},
 			{
+				"id": 111,
+				"template": "pcb-application-licence-import-manufacture-pesticide-issued.html",
+				"document":"Application for a Licence to Import/manufacture a Pesticide.pdf"
+			},
+			{
 				"id": 112,
 				"template": "das-application-permission-use-firearms.html",
 				"document":"Application for Permission to Use Firearms.pdf"
