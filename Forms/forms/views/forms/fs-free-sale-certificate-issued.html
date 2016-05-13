@@ -1,6 +1,11 @@
 <div>
+<div class="row">
+<div class="col-sm-10 col-sm-offset-1">
   <div class="row">
-    <div class="col-sm-6 col-sm-offset-3" align="center">
+    <div class="col-sm-3">
+      (LOGO)
+    </div><!--col-sm-3-->
+    <div class="col-sm-6" align="center">
       <h3><b>
         MINISTRY OF HEALTH
       </b></h3>
@@ -13,6 +18,9 @@
         BARBADOS, WEST INDIES
       </h5>
     </div><!--col-sm-6-->
+    <div class="col-sm-3" align="right">
+      (LOGO)
+    </div><!--col-sm-3-->
   </div><!--row-->
 
   <div class="row">
@@ -41,15 +49,26 @@
       <h5 align="center"><b><u>
         FREE SALE CERTIFICATE
       </u></b></h5>
-      <p>I certify that the following products are produced by the Company in accordance with all sanitary specifications as required by the Health Services (Food & Hygiene) Regulations, 1969.
+      <p>I certify that the products:<br>
+      <span ng-repeat="product in ila.submission.commodities"><b>{{product.name}}</b><br></span>
+      </p><br>
+      <p>are produced by the Company <b>{{ila.submission.supplier.name}}</b> in accordance with all sanitary specifications as required by the Health Services (Food & Hygiene) Regulations, 1969.
+        <br><br>
         These products are legally authorized for human consumption in Barbados and are for sale in our country and in other foreign countries.
       </p>
 
-      <div class="row">
-        <div class="col-sm-12">
-          <div sf-schema="schema" sf-form="formdef" sf-model="form.data"></div>
-        </div>
-      </div>
+      <table class="table black-border">
+        <tr>
+          <th class="center-align">DESCRIPTION</th>
+          <th class="center-align">UNIT SIZE</th>
+        </tr>
+        <tr ng-repeat="product in ila.submission.commodities">
+          <td><b>{{product.description}}</b></td>
+          <td><b>{{product.units[0].unitSize}} {{product.units[0].unitType}}</b></td>
+        </tr>
+      </table>
     </div><!--col-sm-12-->
   </div><!--row-->
+</div><!--col-sm-10 col-sm-offset-1-->
+</div><!--row-->
 </div><!--container-->
