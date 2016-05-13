@@ -1,0 +1,108 @@
+<div>
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2" align="center">
+      <h4>
+        MINISTRY OF AGRICULTURE<br>
+        VETERINARY SERVICES
+      </h4>
+      <h4>
+        <b>Permit to Import into Barbados</b>
+      </h4>
+    </div>
+    <div class="col-sm-2">
+      <h5>
+        <br>
+        <b>BARBADOS, W.I.</b>
+      </h5>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h5 align="center">
+        <b><i>
+          The Animals (Diseases and Importation) Act, Cap. 253<br>
+          The Animals (Diseases and Importation Control) Regulations, 1961
+        </i></b>
+      </h5>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p>
+        NO.
+        <span class="big"><b>A</b></span>
+        <span class="bigger">3644</span>
+      </p>
+      <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Permission is hereby granted to <b>{{ila.submission.applicant.name}}</b> <br>
+        of <b>{{ila.submission.applicant.address}}, {{ila.submission.applicant.country}}</b> <br>
+        to import into Barbados from <b>{{ila.submission.supplier.name}}</b> <br>
+        of <b>{{ila.submission.supplier.address}}, {{ila.submission.supplier.country}}</b> <br>
+        the following:
+      </p>
+    </div><!--col-sm-12-->
+
+    <div class="col-sm-4">
+      <p>
+        <span ng-if="ila.submission.commodities.indexOf('hatcheggs') == -1">[&nbsp;&nbsp;]</span>
+        <span ng-if="ila.submission.commodities.indexOf('hatcheggs') > -1">[X]</span>
+        Hatching Eggs
+      </p>
+      <p>
+        <span ng-if="ila.submission.commodities.indexOf('gplasm') == -1">[&nbsp;&nbsp;]</span>
+        <span ng-if="ila.submission.commodities.indexOf('gplasm') > -1">[X]</span>
+        Germ Plasm
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <p>
+        <span ng-if="ila.submission.commodities.indexOf('semen') == -1">[&nbsp;&nbsp;]</span>
+        <span ng-if="ila.submission.commodities.indexOf('semen') > -1">[X]</span>
+        Semen
+      </p>
+      <p>
+        <span ng-if="ila.submission.commodities.indexOf('vetbio') == -1">[&nbsp;&nbsp;]</span>
+        <span ng-if="ila.submission.commodities.indexOf('vetbio') > -1">[X]</span>
+        Veterinary Biologicals
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <p>
+        <span ng-if="ila.submission.commodities.indexOf('other') == -1">[&nbsp;&nbsp;]</span>
+        <span ng-if="ila.submission.commodities.indexOf('other') > -1">[X]</span>
+        Other<span ng-if="ila.submission.commodities.indexOf('other') > -1">: {{ila.submission.otherDetails}}</span>
+      </p>
+
+    </div>
+
+    <div class="col-sm-12">
+      <p>
+        subject to Attached Conditions.<br>
+        This permit is valid until <b>{{ila.submission.periodEnding | date: 'dd/MM/yyyy'}}</b>
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-7">
+      <br><br><br>
+      <h6>
+        <b>Revised 90/07/01</b>
+      </h6>
+    </div>
+    <div class="col-sm-5">
+      <br>
+      <p align="center">
+        <b>{{ila.submission.approvedBy}}</b>
+      </p>
+      <p class="top-border" align="center">
+        <i>Chief Veterinary Officer</i>
+      </p>
+      <p align="right">
+        Date: <b>{{ila.submission.approvalDate | date: 'dd/MM/yyyy'}}</b>
+      </p>
+    </div>
+  </div><!--row-->
+</div><!--container-->

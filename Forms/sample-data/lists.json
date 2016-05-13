@@ -412,9 +412,14 @@
 				"document":"Permit to Import into Barbados Semen Eggs Germ Plasm.pdf"
 			},
 			{
+				"id": 99,
+				"template": "vs-permit-import-semen-eggs-germ-plasm-issued.html",
+				"document":"Permit to Import into Barbados Semen Eggs Germ Plasm.pdf"
+			},
+			{
 				"id": 100,
 				"template": "vs-quarantine-release-certificate.html",
-				"document":"New Quarantine Release Certificate.pdf"
+				"document":"Quarantine Release Certificate.pdf"
 			},
 			{
 				"id": 101,

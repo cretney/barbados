@@ -272,4 +272,10 @@ table.table td.commodity-subtable{
 	display: none;
 }
 
+/*schema checkboxes inline*/
+.schema-form-checkboxes .checkbox {
+	display: inline-block;
+	padding-right: 40px;
+}
+
 /* End */

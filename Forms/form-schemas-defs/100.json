@@ -74,7 +74,7 @@
         ]
       }
     ]
-  },  
+  },
   {
     "type": "section",
     "htmlClass": "row",
@@ -120,11 +120,11 @@
         ]
       }
     ]
-  }, 
+  },
   {
     "type": "help",
     "helpvalue": "<hr>"
-  }, 
+  },
 
   {
     "type": "section",
@@ -182,8 +182,5 @@
       }
     ]
   }
-
-
-
 
 ]

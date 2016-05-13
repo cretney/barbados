@@ -768,5 +768,10 @@
       "title": "Oldvehicleregistrationnumber",
       "description": ""
     }
+  },
+  "otherDetails": {
+    "type": "string",
+    "title": "Provide Details",
+    "description": "conditional field for 'other' options"
   }
 }
