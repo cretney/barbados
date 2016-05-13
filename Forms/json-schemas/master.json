@@ -41,6 +41,11 @@
             "title": "HS Code",
             "description": "The unique code for the commodity."
           },
+          "name": {
+            "type": "string",
+            "title": "Name of Item/Product",
+            "description": "Name of the item."
+          },
           "description": {
             "type": "string",
             "title": "Description",
@@ -60,6 +65,11 @@
                   "type": "string",
                   "title": "Unit of Sale",
                   "description": "The unit of sale."
+                },
+                "unitSize": {
+                  "type": "string",
+                  "title": "Unit Size",
+                  "description": "The size of each unit of the product."
                 },
                 "quantity": {
                   "type": "number",

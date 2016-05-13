@@ -1,0 +1,108 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"supplier.name",
+            "title":"Producer Name",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+				  {
+				  	"key":"supplier.address",
+				  	"title":"Producer Address",
+				  	"readonly":true
+				  }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "commodities",
+    "title":"",
+    "add": "New",
+    "style": {
+      "add": "hidden"
+    },
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key":"commodities[].hsCode",
+                "title":"HS Code",
+                "description":"",
+                "readonly":true
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-8",
+            "items": [
+              {
+                "key":"commodities[].name",
+                "title":"Product name",
+                "description":"",
+                "readonly":true
+              }
+
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key":"commodities[].units[0].unitType",
+                "title":"Unit Type"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key":"commodities[].units[0].unitSize",
+                "title":"Unit Size"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-12",
+            "items": [
+              {
+                "key":"commodities[].description",
+                "type":"textarea",
+                "title":"Product Description",
+                "description":""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "submit",
+    "style": "btn-info",
+    "title": "Save"
+  }
+]

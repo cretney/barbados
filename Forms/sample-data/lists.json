@@ -527,6 +527,11 @@
 				"document":"Free Sale Certificate.pdf"
 			},
 			{
+				"id": 127,
+				"template": "fs-free-sale-certificate-issued.html",
+				"document":"Free Sale Certificate.pdf"
+			},
+			{
 				"id": 128,
 				"template": "fs-wholesome-food-certificate.html",
 				"document":"Wholesome Food Certificate.pdf"

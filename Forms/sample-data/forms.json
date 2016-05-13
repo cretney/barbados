@@ -5310,33 +5310,92 @@
   "blockId": 19912601,
   "workflowId": 99,
   "formId": 126,
-  "title": "Free Sale Certificate",
+  "title": "New Free Sale Certificate",
   "status": "Draft",
   "submission": {
     "commodities": [
       {
         "hsCode": "123",
-        "description": "test",
+        "name": "Product 1",
+        "description": "test description for product 1",
         "units": [
           {
-            "unitType": "Units",
-            "quantity": 3
+            "unitType": "Boxes",
+            "unitSize": 12
           }
         ]
       },
       {
         "hsCode": "234",
-        "description": "test",
+        "name": "Product 2: Electric Boogaloo",
+        "description": "Product 2 is a product. It is similar to the first product, but different. It is electric and knows how to boogie.",
         "units": [
           {
             "unitType": "Units",
-            "quantity": 5
+            "unitSize": 5
+          }
+        ]
+      },
+      {
+        "hsCode": "345",
+        "name": "Reconstituted Carrot Rinds in the shape of Spongebob Squarepants",
+        "description": "this is also a product, believe it or not. It is not like the other two products, but it is similar in that is has a shape. Food, art and science unite.",
+        "units": [
+          {
+            "unitType": "Grams",
+            "unitSize": 888
           }
         ]
       }
     ],
-    "referenceNumber":"RN-7657657",
-    "serialNumberCertificate":"CN-68686",
+    "issuedDate":"2016-05-01",
+    "submitter": "Joe Blow",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
+},
+{
+  "blockId": 19912701,
+  "workflowId": 99,
+  "formId": 127,
+  "title": "Free Sale Certificate",
+  "status": "Issued",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "name": "Product 1",
+        "description": "test for product 1",
+        "units": [
+          {
+            "unitType": "Boxes",
+            "unitSize": 12
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "name": "Product 2: Electric Boogaloo",
+        "description": "Product 2 is a product. It is similar to the first product, but different. It is electric and knows how to boogie.",
+        "units": [
+          {
+            "unitType": "Units",
+            "unitSize": 5
+          }
+        ]
+      },
+      {
+        "hsCode": "345",
+        "name": "Reconstituted Carrot Rinds in the shape of Spongebob Squarepants",
+        "description": "this is a product. It is not like the other two products, but it is similar in that is has a shape. Food, art and science unite.",
+        "units": [
+          {
+            "unitType": "Grams",
+            "unitSize": 888
+          }
+        ]
+      }
+    ],
     "issuedDate":"2016-05-01",
     "submitter": "Joe Blow",
     "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
