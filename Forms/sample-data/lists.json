@@ -550,6 +550,16 @@
 				"id": 134,
 				"template": "fd-atlantic-swordfish-certificate-elegibility.html",
 				"document":"Atlantic Swordfish Certificate of Elegibility (COE).pdf"
+			},
+			{
+				"id": 136,
+				"template": "fd-application-registration-local-fishing-vessel.html",
+				"document":"Application for Registration of a Local Fishing Vessel.pdf"
+			},
+			{
+				"id": 138,
+				"template": "fd-application-registration-processor.html",
+				"document":"Application for Registration of a Processor.pdf"
 			}
 		]
 	},
