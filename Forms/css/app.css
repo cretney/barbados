@@ -164,6 +164,14 @@ table.table td.commodity-subtable{
   border-top: 1px solid black !important;
 }
 
+.with-right {
+  border-right: 1px solid black !important;
+}
+
+.with-left {
+  border-left: 1px solid black !important;
+}
+
 .no-border-th th {
   border-left: none !important;
   border-right: none !important;
@@ -271,10 +279,15 @@ table.table td.commodity-subtable{
 }
 /* End */
 
-
 /* Application for Approval of Pesticide */
 .no-border-td td {
   border: none !important;
+}
+/* End */
+
+/* CITES Permit - sample data */
+.custom-table td {
+  padding-left: 10px;
 }
 /* End */
 

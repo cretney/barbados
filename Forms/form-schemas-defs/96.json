@@ -1,0 +1,69 @@
+[
+  {
+    "type":"help",
+    "helpvalue":"THIS IS TO CERTIFY that I have examined at the request of: "
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-5",
+        "items": [
+          {
+            "key":"applicant.name",
+            "title":"Exporter",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-7",
+        "items": [
+          {
+            "key":"applicant.address",
+            "title":"Address",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"the undermentioned animal(s) to be shipped:"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-5",
+        "items": [
+          {
+            "key":"destinationCountry",
+            "title":"Destination Country"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"dateDeparture",
+				  	"title":"Departure Date"
+				  }
+        ]
+      }
+    ]
+	},
+  {
+    "key":"description",
+    "title":"Animal(s) description",
+    "type": "textarea"
+  }  
+]

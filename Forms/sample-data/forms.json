@@ -7,10 +7,8 @@
   "description": "Please complete the Import Licence Application",
   "status": "Draft",
   "submission": {
-    "fids":[1,2,4,5,8],
     "commodities": [
       {
-        "fids":[13,16],
         "hsCode": "123",
         "description": "test",
         "units": [
@@ -1116,6 +1114,48 @@
     "expectedArrival": "2015-09-21T04:00:00.000Z"
   }
 },
+
+{
+  "blockId": 19900901,
+  "workflowId": 99,
+  "formId": 9,
+  "title": "New Application to import Radioactive Materials",
+  "status": "Draft",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 5
+          }
+        ]
+      }
+    ],
+    "referenceNumber":"RN-7657657",
+    "serialNumberCertificate":"CN-68686",
+    "issuedDate":"2016-05-01",
+    "submitter": "Joe Blow",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
+},
+
+
+
+
 {
   "blockId": 11501201,
   "workflowId": 15,
@@ -4517,56 +4557,35 @@
   "blockId": 19909601,
   "workflowId": 99,
   "formId": 96,
-  "title": "Veterinary Export Health Certificate",
+  "title": "New Veterinary Export Health Certificate",
   "status": "Draft",
   "submission": {
-    "commodities": [
-      {
-        "hsCode": "123",
-        "description": "test",
-        "units": [
-          {
-            "unitType": "Units",
-            "quantity": 3,
-            "pricePerUnit": 12.00,
-            "cifValue": 34,
-            "code":"14624",
-            "name":"TEGRETOL 200MG TAB",
-            "pack_size":"100'S",
-            "extendedCost": 14.00
-          }
-        ]
-      },
-      {
-        "hsCode": "234",
-        "description": "test",
-        "units": [
-          {
-            "unitType": "Units",
-            "quantity": 5,
-            "pricePerUnit": 20.00,
-            "cifValue": 36,
-            "code":"55311",
-            "name":"EXFORGE 5MG A/80MG V TAB",
-            "pack_size":"14'S",
-            "extendedCost": 24.00
-          }
-        ]
-      }
-    ],
-    "referenceNumber":"RN-7657657",
-    "serialNumberCertificate":"CN-68686",
-    "contractNumber":"C-879789",
-    "approvalDate":"2016-04-30",
-    "issuedDate":"2016-05-01",
-    "invoiceDate":"2016-03-01",
-    "invoiceNumber":"IN-5646546",
-    "containerNumber":"CONT-3324",
+    "serialNumberCertificate":"",
+    "destinationCountry":"",
+    "dateDeparture": "",
+    "description": "",
+    "approvalDate":"",
+    "approvedBy": "",
     "submitter": "Joe Blow",
     "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
-    "origin": "United States",
-    "countryConsigned": "Canada",
-    "expectedArrival": "2015-09-21T04:00:00.000Z",
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
+},
+{
+  "blockId": 19909701,
+  "workflowId": 99,
+  "formId": 97,
+  "title": "Veterinary Export Health Certificate",
+  "status": "Issued",
+  "submission": {
+    "serialNumberCertificate":"CN-68686",
+    "destinationCountry":"Costa Rica",
+    "dateDeparture": "2015-10-01",
+    "description": "5 (FIVE) HOLSTEN BULLS,  2 (TWO) RED POLE HEIFERS",
+    "issuedDate":"2016-04-30",
+    "approvedBy": "Joe Blow",
+    "submitter": "Joe Blow",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
 },
@@ -4580,7 +4599,7 @@
     "commodities": ["semen", "gplasm", "other"],
     "otherDetails":"animal viagra",
     "periodEnding":"2019-04-30",
-    "approvalDate":"2016-04-30",
+    "issuedDate":"2016-04-30",
     "approvedBy": "Joe Blow",
     "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
@@ -4665,57 +4684,30 @@
   "blockId": 19910401,
   "workflowId": 99,
   "formId": 104,
-  "title": "Permit to import Other than Meat Products",
+  "title": "New Permit to import Other than Meat Products",
   "status": "Draft",
   "submission": {
-    "commodities": [
-      {
-        "hsCode": "123",
-        "description": "test",
-        "units": [
-          {
-            "unitType": "Units",
-            "quantity": 3,
-            "pricePerUnit": 12.00,
-            "cifValue": 34,
-            "code":"14624",
-            "name":"TEGRETOL 200MG TAB",
-            "pack_size":"100'S",
-            "extendedCost": 14.00
-          }
-        ]
-      },
-      {
-        "hsCode": "234",
-        "description": "test",
-        "units": [
-          {
-            "unitType": "Units",
-            "quantity": 5,
-            "pricePerUnit": 20.00,
-            "cifValue": 36,
-            "code":"55311",
-            "name":"EXFORGE 5MG A/80MG V TAB",
-            "pack_size":"14'S",
-            "extendedCost": 24.00
-          }
-        ]
-      }
-    ],
-    "referenceNumber":"RN-7657657",
-    "serialNumberCertificate":"CN-68686",
-    "contractNumber":"C-879789",
-    "approvalDate":"2016-04-30",
-    "issuedDate":"2016-05-01",
-    "invoiceDate":"2016-03-01",
-    "invoiceNumber":"IN-5646546",
-    "containerNumber":"CONT-3324",
+    "serialNumberCertificate":"",
+    "issuedDate":"",
+    "periodRequestStart":"",
+    "periodRequestEnding":"",
     "submitter": "Joe Blow",
-    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
-    "origin": "United States",
-    "countryConsigned": "Canada",
-    "expectedArrival": "2015-09-21T04:00:00.000Z",
-    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"}
+  }
+},
+{
+  "blockId": 19910501,
+  "workflowId": 99,
+  "formId": 105,
+  "title": "Permit to import Other than Meat Products",
+  "status": "Issued",
+  "submission": {
+    "serialNumberCertificate":"CN-68686",
+    "issuedDate":"2016-05-01",
+    "periodRequestStart":"2016-01-01",
+    "periodRequestEnding":"2016-11-01",
+    "submitter": "Joe Blow",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"}
   }
 },
 {
@@ -4789,8 +4781,8 @@
         "type":"broiler",
         "age":"days 20",
         "sex":"male",
-        "condition":"fed",
-
+        "condition":["fed","watered"],
+        "vaccinations":["mareks","fowlpox"],
         "units": [
           {
             "unitType": "Units",
@@ -4809,6 +4801,55 @@
         ]
       }
     ],
+    "safety":["safe_hatcheries","healthy"],
+    "serialNumberCertificate":"CN-68686",
+    "approvalDate":"2016-04-30",
+    "issuedDate":"2016-05-01",
+    "submitter": "Joe Blow",
+    "applicant": {"id":4, "name":"Exporter Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"}
+  }
+},
+{
+  "blockId": 19910901,
+  "workflowId": 99,
+  "formId": 109,
+  "title": "Veterinary Export Health Certificate Avian",
+  "status": "Issued",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test",
+        "type":"broiler",
+        "age":"days 20",
+        "sex":"male",
+        "condition":["fed","watered"],
+        "vaccinations":["mareks","fowlpox"],
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "test",
+        "type":"other",
+        "age":"days 15",
+        "sex":"female",
+        "condition":["watered"],
+        "vaccinations":["newcastle","aib","gumboro","other"],
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 5
+          }
+        ]
+      }
+    ],
+    "safety":["safe_hatcheries","healthy"],
     "serialNumberCertificate":"CN-68686",
     "approvalDate":"2016-04-30",
     "issuedDate":"2016-05-01",
@@ -5592,6 +5633,228 @@
   "workflowId": 99,
   "formId": 138,
   "title": "New Application for Registration of a Processor",
+  "status": "Draft",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 5
+          }
+        ]
+      }
+    ],
+    "referenceNumber":"RN-7657657",
+    "serialNumberCertificate":"CN-68686",
+    "issuedDate":"2016-05-01",
+    "submitter": "Joe Blow",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
+},
+{
+  "blockId": 19914001,
+  "workflowId": 99,
+  "formId": 140,
+  "title": "New Primary Inspection Report (Live Plants)",
+  "status": "Draft",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 5
+          }
+        ]
+      }
+    ],
+    "referenceNumber":"RN-7657657",
+    "serialNumberCertificate":"CN-68686",
+    "issuedDate":"2016-05-01",
+    "submitter": "Joe Blow",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
+},
+{
+  "blockId": 19914201,
+  "workflowId": 99,
+  "formId": 142,
+  "title": "New Veterinary Export Health Certificate Equine",
+  "status": "Draft",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 5
+          }
+        ]
+      }
+    ],
+    "referenceNumber":"RN-7657657",
+    "serialNumberCertificate":"CN-68686",
+    "issuedDate":"2016-05-01",
+    "submitter": "Joe Blow",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
+},
+{
+  "blockId": 19914401,
+  "workflowId": 99,
+  "formId": 144,
+  "title": "New CITES Permit",
+  "status": "Draft",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 5
+          }
+        ]
+      }
+    ],
+    "referenceNumber":"RN-7657657",
+    "serialNumberCertificate":"CN-68686",
+    "issuedDate":"2016-05-01",
+    "submitter": "Joe Blow",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
+},
+{
+  "blockId": 19914601,
+  "workflowId": 99,
+  "formId": 146,
+  "title": "New Notification of Detention of food for further Examination",
+  "status": "Draft",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 5
+          }
+        ]
+      }
+    ],
+    "referenceNumber":"RN-7657657",
+    "serialNumberCertificate":"CN-68686",
+    "issuedDate":"2016-05-01",
+    "submitter": "Joe Blow",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
+},
+{
+  "blockId": 19914801,
+  "workflowId": 99,
+  "formId": 148,
+  "title": "New Post Entry Inspection Report (Live Plants)",
+  "status": "Draft",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 5
+          }
+        ]
+      }
+    ],
+    "referenceNumber":"RN-7657657",
+    "serialNumberCertificate":"CN-68686",
+    "issuedDate":"2016-05-01",
+    "submitter": "Joe Blow",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
+},
+{
+  "blockId": 19915001,
+  "workflowId": 99,
+  "formId": 150,
+  "title": "New Duty Free Concession Certificate",
   "status": "Draft",
   "submission": {
     "commodities": [

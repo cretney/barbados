@@ -1,0 +1,68 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"applicant.name",
+            "title":"Importer",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  },
+ {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key":"applicant.address",
+            "title":"Address",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"TO IMPORT INTO BARBADOS ANIMAL PRODUCTS<sup>1</sup> DURING THE PERIOD:"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"periodRequestStart",
+            "title":"From",
+            "description":"Start of period"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"periodRequestEnding",
+				  	"title":"To",
+            "description":"End of period"            
+				  }
+        ]
+      }
+    ]
+	}
+]

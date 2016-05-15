@@ -10,7 +10,7 @@
       </h4>
       <h4>
         <b>
-          NO: 
+          NO: {{ila.submission.serialNumberCertificate}}
         </b>
       </h4>
       <h4 align="center">
@@ -46,16 +46,14 @@
         </b>
       </h5>
       <br><br>
+      <h5>
+        <b>{{ila.submission.applicant.name}}</b><br>
+        Of <b>{{ila.submission.applicant.address}}</b><br>
+        TO IMPORT INTO BARBADOS ANIMAL PRODUCTS<sup>1</sup> DURING THE PERIOD<br>
+        <b>{{ila.submission.periodRequestStart}}</b> TO <b>{{ila.submission.periodRequestEnding}}</b>
+      </h5>
     </div><!--col-sm-12-->
   </div><!--row-->
-
-
-  <div class="row">
-    <div class="col-sm-12">
-      <div sf-schema="schema" sf-form="formdef" sf-model="form.data"></div>
-    </div>
-  </div>
-
 
   <div class="row">
     <div class="col-sm-offset-8 col-sm-4">
@@ -65,7 +63,7 @@
       </h5>
       <br>
       <h5 align="center">
-        Date: {{current_date  | date:'dd/MM/yyyy'}}
+        Date: {{ila.submission.issuedDate  | date:'dd/MM/yyyy'}}
       </h5>
       <br>
     </div><!--col-sm-12-->
@@ -82,10 +80,7 @@
         <b>NOTE:</b>
       </h5>
     </div><!--col-sm-12-->
-  </div><!--row-->
-
-
-
+  </div><!--row-->  
 
   <div class="row">
     <div class="col-sm-11 col-sm-offset-1">

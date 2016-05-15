@@ -107,6 +107,11 @@
 				"template": "dcca-import-static.html"
 			},
 			{
+				"id": 9,
+				"template": "dcca-application-import-radioactive-materials.html",
+				"document":"Application to import Radioactive Materials.pdf"
+			},
+			{
 				"id": 11,
 				"template": "plant-import-issued.html"
 			},
@@ -404,6 +409,11 @@
 			{
 				"id": 96,
 				"template": "vs-export-health-certificate.html",
+				"document":"New Veterinary Export Health Certificate.pdf"
+			},
+			{
+				"id": 97,
+				"template": "vs-export-health-certificate-issued.html",
 				"document":"Veterinary Export Health Certificate.pdf"
 			},
 			{
@@ -439,6 +449,11 @@
 			{
 				"id": 104,
 				"template": "vs-permit-import-other-than-meat-products.html",
+				"document":"Permit to import Other than Meat Products.pdf"
+			},
+			{
+				"id": 105,
+				"template": "vs-permit-import-other-than-meat-products-issued.html",
 				"document":"Permit to import Other than Meat Products.pdf"
 			},
 			{
@@ -560,6 +575,36 @@
 				"id": 138,
 				"template": "fd-application-registration-processor.html",
 				"document":"Application for Registration of a Processor.pdf"
+			},
+			{
+				"id": 140,
+				"template": "pqu-primary-inspection-report-live-plants.html",
+				"document":"Primary Inspection Report (Live Plants).pdf"
+			},
+			{
+				"id": 142,
+				"template": "vs-veterinary-export-health-certificate-equine.html",
+				"document":"Veterinary Export Health Certificate Equine.pdf"
+			},
+			{
+				"id": 144,
+				"template": "vs-cites-permit.html",
+				"document":"CITES Permit - sample data.pdf"
+			},
+			{
+				"id": 146,
+				"template": "fs-notification-detention-food-further-examination.html",
+				"document":"Notification of Detention of food for further Examination.pdf"
+			},
+			{
+				"id": 148,
+				"template": "pqu-post-entry-inspection-report-live-plants.html",
+				"document":"Post Entry Inspection Report (Live Plants).pdf"
+			},
+			{
+				"id": 150,
+				"template": "fd-duty-free-concession-certificate.html",
+				"document":"Duty Free Concession Certificate.pdf"
 			}
 		]
 	},
