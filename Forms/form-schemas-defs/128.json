@@ -1,0 +1,163 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6 col-sm-offset-3",
+        "items": [
+          {
+            "key":"applicant.name",
+            "title":"Importer Name",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+				  {
+				  	"key":"applicant.address",
+				  	"title":"Importer Address",
+				  	"readonly":true
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-8",
+        "items": [
+          {
+            "key":"carrier.name",
+            "title":"Carrier Name",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"carrier.idNumber",
+            "title":"Carrier ID #",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6 col-sm-offset-3",
+        "items": [
+          {
+            "key":"origin",
+            "title":"Country of origin of food",
+            "description":"",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "commodities",
+    "title":"Products",
+    "add": "New",
+    "style": {
+      "add": "hidden"
+    },
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key":"commodities[].hsCode",
+                "title":"HS Code",
+                "description":"",
+                "readonly":true
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-8",
+            "items": [
+              {
+                "key":"commodities[].description",
+                "title":"Type of food",
+                "description":"",
+                "readonly":true
+              }
+
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key":"commodities[].units[0].unitType",
+                "title":"Unit Type"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key":"commodities[].units[0].quantity",
+                "title":"Unit Size"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key":"supportingDocumentation",
+            "title":"Supporting Documentation Requested",
+            "description": "inspection certificates issued in the country of origin, temperature control charts from the carrier"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key":"inspectionLocation",
+            "title":"Inspection Location",
+            "description": "Premises where the food is examined"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key":"inspector",
+            "title":"Name of Public Health Inspector"
+          }
+        ]
+      }
+    ]
+  }
+]

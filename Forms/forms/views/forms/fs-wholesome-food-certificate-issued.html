@@ -1,0 +1,124 @@
+<div>
+<div class="row">
+<div class="col-sm-8 col-sm-offset-2">
+  <div class="row">
+    <div class="col-sm-12">
+      <h5 align="right">
+        A14:209
+      </h5>
+      <h4 align="center">
+        MINISTRY OF HEALTH
+      </h4>
+      <h4 align="center"><b>
+        WHOLESOME FOOD CERTIFICATE
+      </b></h4>
+      <h2>
+        82586
+      </h2>
+      <h5>
+        Serial Number
+      </h5>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+  <br>
+
+  <div class="row">
+    <div class="col-sm-12" align="center">
+      <div class="bottom-border"><b>{{ila.submission.applicant.name}}</b></div>
+      <h6>
+        Name of Importer
+      </h6><br>
+      <div class="bottom-border"><b>{{ila.submission.applicant.address}}, {{ila.submission.applicant.country}}</b></div>
+      <h6>
+        Address of Importer
+      </h6><br>
+      <div class="bottom-border"><b>{{ila.submission.carrier.name}}<span ng-if="ila.submission.carrier.idNumber != ''">: {{ila.submission.carrier.idNumber}}</span></b></div>
+      <h6>
+        Name and identification number of the carrier
+      </h6><br>
+      <div class="bottom-border"><b>{{ila.submission.origin}}</b></div>
+      <h6>
+        Country of origin of food
+      </h6><br>
+      <div class="bottom-border">
+        <b><span ng-repeat="food in ila.submission.commodities">{{food.description}}<span ng-show="!$last">, </span></span></b>
+      </div>
+      <h6>
+        Type of food
+      </h6><br>
+      <div class="bottom-border">
+        <b><span ng-repeat="food in ila.submission.commodities">{{food.description}}: {{food.units[0].quantity}} {{food.units[0].unitType}}<span ng-show="!$last">; </span></span></b>
+      </div>
+      <h6>
+        Quantity of food
+      </h6><br>
+      <div class="bottom-border"><b>{{ila.submission.supportingDocumentation}}</b></div>
+      <h6>
+        Suporting documentation requested<br>
+        (inspection certificates issued in the country of origin,<br>
+        temperature control charts from the carrier)
+      </h6><br>
+      <div class="bottom-border"><b>{{ila.submission.inspectionLocation}}</b></div>
+      <h6>
+        Premises where the food is examined
+      </h6><br>
+    </div>
+    <div class="row">
+      <span class="col-sm-1">I, </span><b><span class="col-sm-11 bottom-border" align="center">{{ila.submission.inspector}}</span></b>
+      <h6 class="col-sm-11 col-sm-offset-1" align="center">
+        Name of Public Health Inspector
+      </h6><br><br><br>
+      <span class="col-sm-3">certify that the </span>
+      <b><span class="col-sm-6 bottom-border" align="center">
+        <span ng-repeat="food in ila.submission.commodities">{{food.description}}<span ng-show="!$last">, </span></span></span></b>
+          <span class="col-sm-3">imported by</span>
+      <h6 class="col-sm-6 col-sm-offset-3" align="center">
+        Specify type of food
+      </h6><br><br>
+      <span class="col-sm-10 bottom-border" align="center"><b>{{ila.submission.applicant.name}}</b></span>
+      <span class="col-sm-2">on the</span>
+      <h6 class="col-sm-10" align="center">
+        Name of Importer
+      </h6>
+    </div>
+    <div class="row">
+      <span class="col-sm-1 bottom-border" align="center"><b>{{ila.submission.dateArrival | date: 'dd'}}</b></span>
+      <span class="col-sm-2"> day of </span>
+      <span class="col-sm-3 bottom-border" align="center"><b>{{ila.submission.dateArrival | date:'MMMM'}}</b></span>
+      <span class="col-sm-2 col-sm-offset-1 bottom-border" align="center"><b>{{ila.submission.dateArrival | date:'yyyy'}}</b></span>
+      <span class="col-sm-3"> and inspected </span>
+      <div class="col-md-12" style="padding:0">
+        <h6 class="col-sm-1" align="center" style="padding:0">Day</h6>
+        <h6 class="col-sm-3 col-sm-offset-2" align="center">Month</h6>
+        <h6 class="col-sm-2 col-sm-offset-1" align="center">Year</h6>
+      </div>
+      <span class="col-sm-3" style="padding-left:0">by me on the</span>
+      <span class="col-sm-1 bottom-border" align="center"><b>{{ila.submission.inspectionDate | date: 'dd'}}</b></span>
+      <span class="col-sm-2"> day of </span>
+      <span class="col-sm-3 bottom-border" align="center"><b>{{ila.submission.inspectionDate | date:'MMMM'}}</b></span>
+      <span class="col-sm-2 col-sm-offset-1 bottom-border" align="center"><b>{{ila.submission.inspectionDate | date:'yyyy'}}</b></span>
+      <div class="col-md-12" style="padding:0">
+        <h6 class="col-sm-1 col-sm-offset-3" align="center" style="padding:0">Day</h6>
+        <h6 class="col-sm-3 col-sm-offset-2" align="center">Month</h6>
+        <h6 class="col-sm-2 col-sm-offset-1" align="center">Year</h6>
+      </div>
+      <br>
+      <span align="left">
+        is fit for human consumption.
+      </span><br><br>
+    </div><!--col-sm-12-->
+
+    <div class="row">
+      <span class="col-sm-4 col-sm-offset-1 bottom-border" align="center"><b>{{ila.submission.submitter}}</b></span>
+      <span class="col-sm-4 col-sm-offset-2 bottom-border" align="center"><b>{{ila.submission.inspectionDate | date: 'dd/MM/yyyy'}}</b></span>
+      <div class="col-sm-6">
+        <h6 align="center">Signature of Public Health Inspector</h6>
+      </div><!--col-sm-6-->
+      <div class="col-sm-4 col-sm-offset-1">
+        <h6 align="center">Date of Inspection</h6>
+      </div><!--col-sm-6-->
+    </div><!--row-->
+  </div><!--row-->
+</div><!--col-sm-8 col-sm-offset-2-->
+</div><!--row-->
+</div><!--container-->

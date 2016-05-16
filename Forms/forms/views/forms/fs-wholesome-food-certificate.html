@@ -1,6 +1,4 @@
 <div>
-<div class="row">
-<div class="col-sm-8 col-sm-offset-2">
   <div class="row">
     <div class="col-sm-12">
       <h5 align="right">
@@ -23,72 +21,29 @@
   <br>
 
   <div class="row">
-    <div class="col-sm-12" align="center">
-      <h6>
-        Name of Importer
-      </h6><br><br>
-      <h6>
-        Address of Importer
-      </h6><br><br>
-      <h6>
-        Name and identification number of the carrier
-      </h6><br><br>
-      <h6>
-        Country of origin of food
-      </h6><br><br>
-      <h6>
-        Type of food
-      </h6><br><br>
-      <h6>
-        Quantity of food
-      </h6><br><br>
-      <h6>
-        Suporting documentation requested<br>
-        (inspection certificates issued in the country of origin,<br>
-        temperature control charts from the carrier)
-      </h6><br><br>
-      <h6>
-        Premises where the food is examined
-      </h6><br><br>
-      <h6>
-        Name of Public Health Inspector
-      </h6><br><br>
-      <h5>
-        certify that the ... imported by
-      </h5>
-      <h6>
-        Specify type of food
-      </h6><br><br>
-      <h5>
-        ... on the
-      </h5>
-      <h6>
-        Name of Importer
-      </h6><br><br>
-      <h5>
-        ... day of ... ...
-      </h5>
-      <h6>
-        Day Month Year
-      </h6><br>
-      <h5 align="left">
-        is fit for human consumption.
-      </h5><br><br>
-    </div><!--col-sm-12-->
+    <div class="col-sm-12">
+      <div sf-schema="schema" sf-form="formdef" sf-model="form.data"></div>
+    </div>
+  </div>
 
-    <div class="row">
+  <div class="row datetime">
+    <div class="col-sm-6">
+      <label class="control-label">Arrival Date:</label>
+      <span class="date">
+        <input name="dateArrival" type="date" class="form-control" ng-model="ila.submission.dateArrival" datepicker-popup ng-click="picker.open = !picker.open" is-open="picker.open" close-text="Close">
+      </span>
+    </div>
+
       <div class="col-sm-6">
-        <h6 align="center">
-          Signature of Public Health Inspector
-        </h6>
-      </div><!--col-sm-6-->
-      <div class="col-sm-6">
-        <h6 align="center">
-          Date of Inspection
-        </h6>
-      </div><!--col-sm-6-->
-    </div><!--row-->
-  </div><!--row-->
-</div><!--col-sm-8 col-sm-offset-2-->
-</div><!--row-->
+        <label class="control-label">Inspection Date:</label>
+        <span class="date">
+          <input name="inspectionDate" type="date" class="form-control" ng-model="ila.submission.inspectionDate" datepicker-popup ng-click="picker.open = !picker.open" is-open="picker.open" close-text="Close">
+        </span>
+      </div>
+  </div>
+
+  <div class="modal-footer">
+      <button type="button" class="btn btn-warning" ng-click="form.cancel()">Cancel</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
 </div><!--container-->

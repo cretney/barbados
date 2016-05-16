@@ -537,6 +537,11 @@
 				"document":"Wholesome Food Certificate.pdf"
 			},
 			{
+				"id": 129,
+				"template": "fs-wholesome-food-certificate-issued.html",
+				"document":"Wholesome Food Certificate.pdf"
+			},
+			{
 				"id": 130,
 				"template": "pcb-application-approval-pesticide.html",
 				"document":"Application for Approval of Pesticide.pdf"
