@@ -164,12 +164,45 @@ table.table td.commodity-subtable{
   border-top: 1px solid black !important;
 }
 
+.with-right {
+  border-right: 1px solid black !important;
+}
+
+.with-left {
+  border-left: 1px solid black !important;
+}
+
+.no-border-th th {
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.no-top-th .th-top {
+  border-top: none !important;
+}
+
 .right-border {
   border-right: 1px solid black;
 }
 
 .bottom-border {
   border-bottom: 1px solid black;
+}
+
+.no-top-td .no-top-cell {
+  border-top: none !important;
+}
+
+.no-right-td .no-right-cell {
+  border-right: none !important;
+}
+
+.no-bottom-td .no-bottom-cell {
+  border-bottom: none !important;
+}
+
+.no-left-td .no-left-cell {
+  border-left: none !important;
 }
 /* End of Commons */
 
@@ -246,38 +279,17 @@ table.table td.commodity-subtable{
 }
 /* End */
 
-
 /* Application for Approval of Pesticide */
 .no-border-td td {
   border: none !important;
 }
 /* End */
 
-.no-border-th th {
-  border-left: none !important;
-  border-right: none !important;
+/* CITES Permit - sample data */
+.custom-table td {
+  padding-left: 10px;
 }
-
-.no-top-th .th-top {
-  border-top: none !important;
-}
-
-.no-top-td .no-top-cell {
-  border-top: none !important;
-}
-
-.no-right-td .no-right-cell {
-  border-right: none !important;
-}
-
-.no-bottom-td .no-bottom-cell {
-  border-bottom: none !important;
-}
-
-.no-left-td .no-left-cell {
-  border-left: none !important;
-}
-
+/* End */
 
 /* End of HTML conversion */
 

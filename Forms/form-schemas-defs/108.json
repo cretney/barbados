@@ -154,7 +154,8 @@
               {
                 "key": "commodities[].condition",
                 "title": "Condition",
-                "type": "radios-inline",
+                "type": "checkboxes",
+                "htmlClass": "inline",
                 "titleMap": {
                   "fed":"Fed",
                   "watered":"Watered"
@@ -191,32 +192,6 @@
           }
 
         ]
-      },
-      {
-        "type": "section",
-        "htmlClass": "row",
-        "items": [
-          {
-            "type": "section",
-            "htmlClass": "col-sm-12",
-            "items": [
-              {
-                "key": "commodities[].vaccinations",
-                "title": "Vaccinations",
-                "type": "radios-inline",
-                "titleMap": {
-                  "mareks":"MAREKS",
-                  "fowlpox":"FOWLPOX",
-                  "newcastle":"NEWCASTLE",
-                  "aib":"AIB",
-                  "gumboro":"GUMBORO",
-                  "other":"OTHER"
-                }
-              }
-            ]
-          }
-
-        ]
       }
     ]
   },
@@ -229,11 +204,11 @@
         "htmlClass": "col-sm-12",
         "items": [
           {
-            "key":"commodities",
+            "key":"safety",
             "title": "",
             "type": "checkboxes",
             "titleMap": {
-              "from_hatcheries":"1. The birds originate from Hatcheries participating in the Hatchery Sanitation Scheme of the Ministry of Agriculture.",
+              "safe_hatcheries":"1. The birds originate from Hatcheries participating in the Hatchery Sanitation Scheme of the Ministry of Agriculture.",
               "healthy":"2. In my opinion the bird(s) is/are in good health and free from clinical symptoms of communicable disease and insofar as can be determined has/have not been exposed to Fowl Cholera, Fowl Typhoid, New Castle Disease and Avian Influenza (Fowl Plague)."
             }
           }

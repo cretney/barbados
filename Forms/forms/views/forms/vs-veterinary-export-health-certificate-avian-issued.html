@@ -34,24 +34,33 @@
       <h4>
         <b>
           NO. 
-          <span class="big">A</span>
-          ... <span class="bigger">10621</span>
+          <span class="big"></span>
+          <span class="bigger">{{ila.submission.serialNumberCertificate}}</span>
         </b>
       </h4>
-      <p>
-        Consignee...<br><br>
-        Exporter...
-      </p>
     </div>
     <div class="col-sm-6">
       <br>
-      <h5 align="right">...20...</h5>
+      <h5 align="right">{{ila.submission.issuedDate  | date:'dd/MM/yyyy'}}</h5>
+    </div>
+  </div><!--row-->
+  <br><br>
+
+  <div class="row">
+    <div class="col-sm-5">
       <p>
-        Address...<br><br>
-        Address...
+        <b>Consignee:</b> {{ila.submission.consignee.name}}<br><br>
+        <b>Exporter:</b> {{ila.submission.applicant.name}}
+      </p>
+    </div>
+    <div class="col-sm-7">
+      <p>
+        <b>Address:</b> {{ila.submission.consignee.address}}<br><br>
+        <b>Address:</b> {{ila.submission.applicant.address}}
       </p>
     </div>
   </div><!--row-->
+  <br><br>
 
   <div class="row">
     <div class="col-sm-10 col-sm-offset-1" style="max-width: 100%">
@@ -160,32 +169,32 @@
           </td>
         </tr>
         <tr ng-repeat="item in form.data.commodities">
-          <td><spand ng-if="item.type =='broiler'">X</span></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td><span ng-if="item.type =='broiler'">X</span></td>
+          <td><span ng-if="item.type =='layer'">X</span></td>
+          <td><span ng-if="item.type =='turkey'">X</span></td>
+          <td><span ng-if="item.type =='other'">X</span></td>
           <td ng-bind="item.units[0].quantity"></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td><span ng-if="item.sex =='male'">X</span></td>
+          <td><span ng-if="item.sex =='female'">X</span></td>
+          <td><span ng-if="item.sex =='unsexed'">X</span></td>
+          <td ng-bind="item.age"></td>
+          <td><span ng-if="item.condition.indexOf('fed') !== -1">X</span></td>
+          <td><span ng-if="item.condition.indexOf('watered') !== -1">X</span></td>
+          <td><span ng-if="item.vaccinations.indexOf('mareks') !== -1">X</span></td>
+          <td><span ng-if="item.vaccinations.indexOf('fowlpox') !== -1">X</span></td>
+          <td><span ng-if="item.vaccinations.indexOf('newcastle') !== -1">X</span></td>
+          <td><span ng-if="item.vaccinations.indexOf('aib') !== -1">X</span></td>
+          <td><span ng-if="item.vaccinations.indexOf('gumboro') !== -1">X</span></td>
+          <td><span ng-if="item.vaccinations.indexOf('other') !== -1">X</span></td>
         </tr>
       </table>
     </div><!--col-sm-10 col-sm-offset-1-->
   </div><!--row-->
-
+  <br><br>
   <div class="row">
     <div class="col-sm-1" align="right">
-      <p>[ ] 1.</p>
-      <p>[ ] 2.</p>
+      <p>[<span ng-if="form.data.indexOf('safe_hatcheries') !== -1">X</span>] 1.</p>
+      <p>[<span ng-if="form.data.indexOf('healthy') !== -1">X</span>] 2.</p>
     </div><!--col-sm-1-->
     <div class="col-sm-11">
       <p>
@@ -201,7 +210,9 @@
   <div class="row">
     <div class="col-sm-3 col-sm-offset-9">
       <p align="center">
+        <b>{{ila.submission.submitter}}</b> <br>
         <i>Chief Veterinary Officer</i>
+        }
       </p>
     </div>
   </div><!--row-->
