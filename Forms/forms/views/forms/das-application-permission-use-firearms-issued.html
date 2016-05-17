@@ -1,0 +1,77 @@
+<div>
+<br>  <div class="row">
+    <div class="col-sm-12" align="center">
+      <h4>
+        <b>
+          PRIVATE INVESTIGATORS AND SECURITY GUARDS<br> ACT 1984, 1985-1
+        </b>
+      </h4>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2" align="center">
+      <h4>
+        <b>
+          FORM F
+        </b>
+      </h4>
+    </div><!--col-sm-8 col-sm-offset-2-->
+    <div class="col-sm-2" align="right">
+      <h4>
+        [Section 26(1)]
+      </h4>
+    </div><!--col-sm-2-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12" align="center">
+      <h4>
+        APPLICATION FROM AGENCY FOR PERMISSION TO USE<br>
+        FIREARMS AND OTHER INSTRUMENTS OF DEFENCE<br>
+      </h4>
+      <h5>
+        <b>(NOTE: THIS APPLICATION MUST BE SUBMITTED IN DUPLICATE)</b>
+      </h5>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <ol><br>
+        <li>NAME AND REGISTRATION OF AGENCY: <b>{{ila.submission.applicant.name}}</b></li><br>
+        <li>ADDRESS OF AGENCY: <b>{{ila.submission.applicant.address}}, {{ila.submission.applicant.country}}</b></li><br>
+        <li>NUMBER OF GUARDS: <b>{{ila.submission.numGuards}}</b></li><br>
+        <li>NUMBER OF FIREARMS: <b>{{ila.submission.numWeapons}}</b></li><br>
+        <li>TYPES OF FIREARMS: <b><span ng-repeat="gun in ila.submission.commodities">{{gun.description}}<span ng-show="!$last">, </span></span></b></li><br>
+        <li>REASON(S) FOR DESIRING TO HAVE FIREARMS: <b>{{ila.submission.reasonFirearms}}</b></li><br>
+        <li>ANY PREVIOUS APPLICATION(S): <b><span ng-repeat="app in ila.submission.prevApplications">{{app.applicationId}}<span ng-show="!$last">, </span></span></b></li><br>
+        <li>NUMBER OF FIREARMS FOR WHICH LICENCES HAVE ALREADY BEEN ISSUED: <b>{{ila.submission.totalLicensed}}</b></li><br>
+        <li>ARRANGEMENTS MADE FOR TRAINING OF GUARDS WHO WILL BE REQUIRED TO USE FIREARMS: <b>{{ila.submission.trainingArrangements}}</b></li><br>
+        <li>OTHER TYPES OF INSTRUMENT OF DEFENCE: <b>{{ila.submission.otherWeapons}}</b></li><br>
+        <li>REASON(S) FOR DESIRING TO HAVE OTHER TYPES OF INSTRUMENTS OF DEFENCE: <b>{{ila.submission.reasonOtherWeapons}}</b></li>
+
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-8">
+      <h5>
+        <b>Footnotes:</b>
+      </h5>
+      <h5>
+        1. *Instruments of Defence includes<br>
+        truncheon, shock stick, handcuffs,<br>
+        security blanket or other like<br>
+        instrument.
+      </h5>
+    </div><!--col-sm-8-->
+    <div class="col-sm-4" align="center">
+      <br><br>
+      <div class="bottom-border"><b>{{ila.submission.submitter}}</b></div>
+      <h5>
+          Signature of Applicant
+      </h5>
+    </div><!--col-sm-4-->
+  </div><!--row-->
+</div><!--container-->

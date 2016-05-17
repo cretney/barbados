@@ -4901,57 +4901,84 @@
   "blockId": 19911201,
   "workflowId": 99,
   "formId": 112,
-  "title": "Application for Permission to Use Firearms",
+  "title": "New Application for Permission to Use Firearms",
   "status": "Draft",
   "submission": {
     "commodities": [
       {
         "hsCode": "123",
-        "description": "test",
+        "description": "AK-47s",
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3,
-            "pricePerUnit": 12.00,
-            "cifValue": 34,
-            "code":"14624",
-            "name":"TEGRETOL 200MG TAB",
-            "pack_size":"100'S",
-            "extendedCost": 14.00
+            "quantity": 150,
+            "numWithLicense": 100
           }
         ]
       },
       {
         "hsCode": "234",
-        "description": "test",
+        "description": ".35mm Pistols",
         "units": [
           {
             "unitType": "Units",
-            "quantity": 5,
-            "pricePerUnit": 20.00,
-            "cifValue": 36,
-            "code":"55311",
-            "name":"EXFORGE 5MG A/80MG V TAB",
-            "pack_size":"14'S",
-            "extendedCost": 24.00
+            "quantity": 250,
+            "numWithLicense": 125
           }
         ]
       }
     ],
-    "referenceNumber":"RN-7657657",
-    "serialNumberCertificate":"CN-68686",
-    "contractNumber":"C-879789",
-    "approvalDate":"2016-04-30",
-    "issuedDate":"2016-05-01",
-    "invoiceDate":"2016-03-01",
-    "invoiceNumber":"IN-5646546",
-    "containerNumber":"CONT-3324",
+    "numGuards": 60,
+    "reasonFirearms":"for exercising the duties of protecting the security of physical structures and people",
+    "trainingArrangements":"All guards will undergo comprehensive firearms training prior to placement in the field, both in general and in use of the specific firearm with which they will be equipped.",
+    "prevApplications": [{"name":"Application for the Use of Firearms","applicationId":"CN-68686"}, {"name":"Application for the Import of Firearms", "applicationId":"RS-123456"}],
+    "otherWeapons": "truncheon, handcuffs, pepper spray",
+    "reasonOtherWeapons": "Security guards should be able to carry their defence duties through methods that do not necessarily involve killing people, and these instruments serve that goal.",
     "submitter": "Joe Blow",
-    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
-    "origin": "United States",
-    "countryConsigned": "Canada",
-    "expectedArrival": "2015-09-21T04:00:00.000Z",
-    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"}
+  }
+},
+{
+  "blockId": 19911301,
+  "workflowId": 99,
+  "formId": 113,
+  "title": "Application for Permission to Use Firearms",
+  "status": "Issued",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "AK-47s",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 150,
+            "numWithLicense": 100
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": ".35mm Pistols",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 250,
+            "numWithLicense": 125
+          }
+        ]
+      }
+    ],
+    "numWeapons": 400,
+    "totalLicensed": 225,
+    "numGuards": 60,
+    "reasonFirearms":"for exercising the duties of protecting the security of physical structures and people",
+    "trainingArrangements":"All guards will undergo comprehensive firearms training prior to placement in the field, both in general and in use of the specific firearm with which they will be equipped.",
+    "prevApplications": [{"name":"Application for the Use of Firearms","applicationId":"CN-68686"}, {"name":"Application for the Import of Firearms", "applicationId":"RS-123456"}],
+    "otherWeapons": "truncheon, handcuffs, pepper spray",
+    "reasonOtherWeapons": "Security guards should be able to carry their defence duties through methods that do not necessarily involve killing people, and these instruments serve that goal.",
+    "submitter": "Joe Blow",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"}
   }
 },
 {

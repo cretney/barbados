@@ -85,6 +85,11 @@
                   "type": "integer",
                   "title": "Customs Value",
                   "description": "In Barbados Dollars"
+                },
+                "numWithLicense": {
+                  "type": "integer",
+                  "title": "Number with License",
+                  "description": "Number of Firearms for Which Licenses Have Already Been Issued"
                 }
               }
             }
@@ -793,5 +798,53 @@
     "type": "string",
     "title": "Provide Details",
     "description": "conditional field for 'other' options"
+  },
+  "numGuards": {
+    "type": "integer",
+    "title": "Number of Guards",
+    "description": "Number of Guards in Agency"
+  },
+  "reasonFirearms": {
+    "type": "string",
+    "title": "Reason(s) for Desiring to Have Firearms",
+    "description": ""
+  },
+  "trainingArrangements": {
+    "type": "string",
+    "title": "Training Arrangements",
+    "description": "Arrangements Made for Training of Guards who will be Required to Use Firearms"
+  },
+  "prevApplications": {
+    "type": "array",
+    "minItems": 1,
+    "uniqueItems": true,
+    "items": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Name of Item/Product",
+          "description": "Name of the item."
+        },
+        "applicationId": {
+          "type": "string",
+          "title": "Application ID#",
+          "description": ""
+        }
+      }
+    }
+  },
+  "otherWeapons": {
+    "type": "string",
+    "title": "Other Types of Instrument of Defence",
+    "description": ""
+  },
+  "reasonOtherWeapons": {
+    "type": "string",
+    "title": "Reason(s) for Desiring to Have Other Types of Instruments of Defence",
+    "description": ""
   }
 }

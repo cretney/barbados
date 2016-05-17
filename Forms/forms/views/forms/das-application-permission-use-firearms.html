@@ -37,75 +37,13 @@
   </div><!--row-->
 
   <div class="row">
-    <div class="col-sm-1">
-      <p>1</p><br>
-      <p>2</p><br>
-      <p>3</p>
-      <p>4</p>
-      <p>5</p>
-      <p>6</p><br><br>
-      <p>7</p>
-      <p>8</p><br><br>
-      <p>9</p><br><br><br>
-      <p>10</p><br>
-      <p>11</p><br><br>
-    </div><!--col-sm-1-->
-    <div class="col-sm-11">
-      <p><!--1-->
-        NAME AND REGISTRATION OF AGENCY: ...<br><br>
-      </p>
-      <p><!--2-->
-        ADDRESS OF AGENCY: ...<br><br>
-      </p>
-      <p><!--3-->
-        NUMBER OF GUARDS: ...
-      </p>
-      <p><!--4-->
-        NUMBER OF FIREARMS: ...
-      </p>
-      <p><!--5-->
-        TYPES OF FIREARMS: ...
-      </p>
-      <p><!--6-->
-        REASON(S) FOR DESIRING TO HAVE FIREARMS: ...<br><br><br>
-      </p>
-      <p><!--7-->
-        ANY PREVIOUS APPLICATION(S): ...
-      </p>
-      <p><!--8-->
-        NUMBER OF FIREARMS FOR WHICH LICENCES HAVE ALREADY BEEN ISSUED: ...<br><br><br>
-      </p>
-      <p><!--9-->
-        ARRANGEMENTS MADE FOR TRAINING OF GUARDS WHO WILL BE REQUIRED TO USE FIREARMS: ...<br><br><br><br>
-      </p>
-      <p><!--10-->
-        OTHER TYPES OF INSTRUMENT OF DEFENCE: ...<br><br>
-      </p>
-      <p><!--11-->
-        REASON(S) FOR DESIRING TO HAVE OTHER TYPES OF INSTRUMENTS OF DEFENCE: ...<br><br><br>
-      </p>
-    </div><!--col-sm-11-->
-  </div><!--row-->
+    <div class="col-sm-12">
+      <div sf-schema="schema" sf-form="formdef" sf-model="form.data"></div>
+    </div>
+  </div>
 
-  <div class="row">
-    <div class="col-sm-8">
-      <h5>
-        <b>Footnotes:</b>
-      </h5>
-      <h5>
-        1. *Instruments of Defence includes<br>
-        truncheon, shock stick, handcuffs,<br>
-        security blanket or other like<br>
-        instrument.
-      </h5>
-    </div><!--col-sm-8-->
-    <div class="col-sm-4" align="center">
-      <br><br><br>
-      <h5>
-        <b>
-          Signature of Applicant
-        </b>
-      </h5>
-    </div><!--col-sm-4-->
-  </div><!--row-->
+  <div class="modal-footer">
+      <button type="button" class="btn btn-warning" ng-click="form.cancel()">Cancel</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
 </div><!--container-->

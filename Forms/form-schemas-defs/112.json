@@ -1,0 +1,186 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6 col-sm-offset-3",
+        "items": [
+          {
+            "key":"applicant.name",
+            "title":"Name of Agency",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-9",
+        "items": [
+				  {
+				  	"key":"applicant.address",
+				  	"title":"Address of Agency",
+				  	"readonly":true
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"numGuards",
+            "title":"Number of Guards"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "commodities",
+    "title":"Details of Firearms",
+    "add": "",
+    "style": {
+      "add": "hidden"
+    },
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-12 col-md-5",
+            "items": [
+              {
+                "key":"commodities[].description",
+                "title":"Type of Firearm",
+                "description":"",
+                "readonly":true
+
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-6 col-md-3",
+            "items": [
+              {
+                "key":"commodities[].units[0].quantity",
+                "title":"Quantity",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-6 col-md-3",
+            "items": [
+              {
+                "key":"commodities[].units[0].numWithLicense",
+                "title":"# Already with License",
+                "description":""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key":"reasonFirearms",
+            "type":"textarea",
+            "title":"Reason(s) for Desiring to Have Firearms"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key":"trainingArrangements",
+            "type":"textarea",
+            "title":"Arrangements Made for Training of Guards who will be Required to Use Firearms"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "commodities",
+    "title":"Any Previous Application(s)",
+    "add": "Add New Application",
+    "style": {
+
+    },
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-8",
+            "items": [
+              {
+                "key":"prevApplications[].name",
+                "title":"Application Name",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key":"prevApplications[].applicationId",
+                "title":"Application ID#",
+                "description":""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key":"otherWeapons",
+            "title":"Other Types of Instrument of Defence",
+            "description":"Instruments of Defence includes: truncheon, shock stick, handcuffs, security blanket or other like instrument."
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key":"reasonOtherWeapons",
+            "type":"textarea",
+            "title":"Reason(s) for Desiring to Have Other Types of Instruments of Defence",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  }
+]

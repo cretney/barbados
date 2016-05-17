@@ -487,6 +487,11 @@
 				"document":"Application for Permission to Use Firearms.pdf"
 			},
 			{
+				"id": 113,
+				"template": "das-application-permission-use-firearms-issued.html",
+				"document":"Application for Permission to Use Firearms.pdf"
+			},
+			{
 				"id": 114,
 				"template": "vs-application-transit-animals.html",
 				"document":"Application for Transit of Animals.pdf"
