@@ -846,5 +846,28 @@
     "type": "string",
     "title": "Reason(s) for Desiring to Have Other Types of Instruments of Defence",
     "description": ""
+  },
+  "agencyApprovals": {
+    "type": "array",
+    "minItems": 1,
+    "uniqueItems": true,
+    "items": {
+      "type": "object",
+      "required": [
+
+      ],
+      "agencyName": {
+        "name": {
+          "type": "string",
+          "title": "Name of Agency",
+          "description": "Name of the Agency."
+        },
+        "approved": {
+          "type": "boolean",
+          "title": "Is Entry Approved?",
+          "description": ""
+        }
+      }
+    }
   }
 }

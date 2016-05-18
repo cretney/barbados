@@ -547,6 +547,11 @@
 				"document":"Endorsement of Customs Entry with Approval Stamp.pdf"
 			},
 			{
+				"id": 125,
+				"template": "vs-endorsement-customs-entry-approval-stamp-issued.html",
+				"document":"Endorsement of Customs Entry with Approval Stamp.pdf"
+			},
+			{
 				"id": 126,
 				"template": "fs-free-sale-certificate.html",
 				"document":"Free Sale Certificate.pdf"

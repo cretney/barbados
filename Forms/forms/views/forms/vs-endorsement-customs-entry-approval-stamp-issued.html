@@ -29,7 +29,20 @@
   </div><!--row-->
 
   <div class="row">
-    <div class="col-sm-2 col-sm-offset-8">
+    <div class="col-sm-4">
+      <h6>
+        <b>ANIMAL HEALTH ADMINISTRATION</b><br>
+        <b>VETERINARY SERVICES LABORATORY</b>
+      </h6>
+    </div>
+    <div class="col-sm-2">
+      <span ng-if="ila.submission.agencyApprovals[0].approved == true">[X]</span>
+      <span ng-if="ila.submission.agencyApprovals[0].approved == false">[&nbsp; ]</span>
+      <br>
+      <span ng-if="ila.submission.agencyApprovals[1].approved == true">[X]</span>
+      <span ng-if="ila.submission.agencyApprovals[1].approved == false">[&nbsp; ]</span>
+    </div>
+    <div class="col-sm-2 col-sm-offset-2">
       <b>
         TEL. NOS:<br><br>
         FAX. NO:
@@ -56,33 +69,6 @@
   <br><br><br><br><br>
 
   <div class="row">
-    <div class="col-sm-12" align="center">
-      <h2>Agency Approvals</h2>
-    </div>
-    <div class="col-sm-10 col-sm-offset-2">
-      <h4>
-        <b>ANIMAL HEALTH ADMINISTRATION</b>:&nbsp;&nbsp;&nbsp;&nbsp;
-        <span ng-if="ila.submission.agencyApprovals[0].approved == false">
-          <button class="btn btn-danger" type="button" ng-click="ila.submission.agencyApprovals[0].approved = !ila.submission.agencyApprovals[0].approved">Click to Approve</button>
-        </span>
-        <span ng-if="ila.submission.agencyApprovals[0].approved == true">
-          <button class="btn btn-success" type="button" ng-click="ila.submission.agencyApprovals[0].approved = !ila.submission.agencyApprovals[0].approved">Reverse Approval</button>
-        </span>
-          <!-- <input type="checkbox" ng-model="ila.submission.agencyApprovals[0].approved">
-        </label> -->
-          <br><br>
-        <b>VETERINARY SERVICES LABORATORY:</b>&nbsp;&nbsp;&nbsp;&nbsp;
-        <span ng-if="ila.submission.agencyApprovals[1].approved == false">
-          <button class="btn btn-danger" type="button" ng-click="ila.submission.agencyApprovals[1].approved = !ila.submission.agencyApprovals[1].approved">Click to Approve</button>
-        </span>
-        <span ng-if="ila.submission.agencyApprovals[1].approved == true">
-          <button class="btn btn-success" type="button" ng-click="ila.submission.agencyApprovals[1].approved = !ila.submission.agencyApprovals[1].approved">Reverse Approval</button>
-        </span>
-      </h4>
-    </div>
-  </div>
-
-  <div class="row">
     <div class="col-sm-12">
       <h5 align="center">
         <b>
@@ -93,6 +79,22 @@
       <p align="justified">
         Endorsement of Customs Entry documents, particularly a copy of the APPROVED Application to import Meat & Meat Products, Dairy & Dairy ....... form # A09:VS013 with stamp:
       </p>
+
+      <h5 align="center">
+        <b>
+          ENTRY APPROVED<br>
+          MINISTRY OF AGRICULTURE<br>
+          ANIMAL QUARANTINE<br>
+        </b>
+      </h5>
+
+      <h6>
+        <b>
+          <i>
+            SAMPLE:
+          </i>
+        </b>
+      </h6>
     </div>
   </div><!--row-->
 
@@ -113,14 +115,8 @@
         FOR SENIOR VETERINARY OFFICER<br><br><br>
       </h6>
       <h6>
-        DATE: <b>{{current_date | date: 'dd/MM/yyyy'}}</b>
+        DATE: <b>{{ila.submission.approvalDate | date: 'dd/MM/yyyy'}}</b>
       </h6>
     </div>
   </div><!--row-->
-  <br>
-
-  <div class="modal-footer">
-      <button type="button" class="btn btn-warning" ng-click="form.cancel()">Cancel</button>
-      <button type="submit" class="btn btn-primary">Submit</button>
-  </div>
 </div><!--container-->
