@@ -49,7 +49,7 @@
         <b>{{ila.submission.applicant.name}}</b><br>
           Of <b>{{ila.submission.applicant.address}}</b><br>
           TO IMPORT INTO BARBADOS MEAT AND/OR POULTRY PRODUCTS DURING THE PERIOD<br>
-          <b>{{ila.submission.periodRequestStart}}</b> TO <b>{{ila.submission.periodRequestEnding}}</b>
+          <b>{{ila.submission.periodRequestStart  | date:'dd/MM/yyyy'}}</b> TO <b>{{ila.submission.periodRequestEnding  | date:'dd/MM/yyyy'}}</b>
       </h5>
       <br><br>
       <h5 align="right">
@@ -58,7 +58,7 @@
       </h5>
       <br><br>
       <h5 align="right">
-        <b>{{ila.submission.approvalDate}}</b><br>
+        <b>{{ila.submission.approvalDate | date:'dd/MM/yyyy'}}</b><br>
         Date
       </h5>
       <h5>
