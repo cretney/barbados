@@ -1,0 +1,84 @@
+[
+  {
+    "type":"help",
+    "helpvalue":"Permission is hereby given to:"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"applicant.name",
+            "title":"Name of Importer",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+				  {
+				  	"key":"applicant.country",
+				  	"title":"Country of Origin",
+				  	"readonly":true
+				  }
+        ]
+      }
+    ]
+  },
+  {
+    "key":"applicant.address",
+    "title":"Importer's Address",
+    "readonly":true
+  },
+  {
+    "type":"help",
+    "helpvalue":"*2. The importation will be subject to the following conditions:"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+				  {
+				  	"key":"conditions",
+            "title": "",
+            "type": "checkboxes",
+				  	"titleMap": [
+              {
+                "value":"certificate",
+                "name":"(a) The material must be accompanied by a certificate from responsible authority in the country of export that the material has been inspected and found free of any pest or disease."
+              },
+              {
+                "value":"inspection",
+                "name":"(b) The material shall be inspected by the Chief Agricultural Officer before importation into this Island."
+              },
+              {
+                "value":"desinfected",
+                "name":"(c) The material shall be disinfected or fumigated to the satisfaction of the Chief Agricultural Officer b`efore being landed into this Island."
+              },
+              {
+                "value":"other1",
+                "name":""
+              }
+            ]
+				  },
+          "conditions[3].name"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "submit",
+    "style": "btn-info",
+    "title": "Save"
+  }
+]
