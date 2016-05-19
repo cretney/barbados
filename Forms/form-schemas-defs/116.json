@@ -48,30 +48,36 @@
         "type": "section",
         "htmlClass": "col-sm-12",
         "items": [
-				  {
-				  	"key":"conditions",
-            "title": "",
-            "type": "checkboxes",
-				  	"titleMap": [
-              {
-                "value":"certificate",
-                "name":"(a) The material must be accompanied by a certificate from responsible authority in the country of export that the material has been inspected and found free of any pest or disease."
-              },
-              {
-                "value":"inspection",
-                "name":"(b) The material shall be inspected by the Chief Agricultural Officer before importation into this Island."
-              },
-              {
-                "value":"desinfected",
-                "name":"(c) The material shall be disinfected or fumigated to the satisfaction of the Chief Agricultural Officer b`efore being landed into this Island."
-              },
-              {
-                "value":"other1",
-                "name":""
-              }
-            ]
+          {
+            "key":"conditions.certificate",
+            "title":"(a) The material must be accompanied by a certificate from responsible authority in the country of export that the material has been inspected and found free of any pest or disease."
+          },
+          {
+            "key":"conditions.inspection",
+            "title":"(b) The material shall be inspected by the Chief Agricultural Officer before importation into this Island."
+          },
+          {
+				  	"key":"conditions.desinfected",
+            "title": "(c) The material shall be disinfected or fumigated to the satisfaction of the Chief Agricultural Officer b`efore being landed into this Island."
 				  },
-          "conditions[3].name"
+          {
+				  	"key":"conditions.other1",
+            "title": ""
+				  },
+          {
+				  	"key":"conditions.other1_description",
+            "title": "",
+            "type":"textarea"
+				  },
+          {
+				  	"key":"conditions.other2",
+            "title": ""
+				  },
+          {
+				  	"key":"conditions.other2_description",
+            "title": "",
+            "type":"textarea"
+				  }
         ]
       }
     ]
