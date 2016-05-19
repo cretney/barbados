@@ -5345,8 +5345,7 @@
   "status": "Draft",
   "submission": {
     "agencyApprovals": [{"name":"Animal Health Administration","approved":false}, {"name":"Veterinary Services Laboratory", "approved":false}],
-    "approvalDate":"2016-05-01",
-    "approvedBy": "Joe Blow"
+    "consignee": "Joe Schmoe"
   }
 },
 {
@@ -5357,6 +5356,7 @@
   "status": "Draft",
   "submission": {
     "agencyApprovals": [{"name":"Animal Health Administration","approved":true}, {"name":"Veterinary Services Laboratory", "approved":false}],
+    "consignee": "Joe Schmoe",
     "approvalDate":"2016-05-01",
     "approvedBy": "Joe Blow"
   }
@@ -5843,31 +5843,48 @@
     "commodities": [
       {
         "hsCode": "123",
-        "description": "test",
+        "description": "Bananas",
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3
-          }
-        ]
-      },
-      {
-        "hsCode": "234",
-        "description": "test",
-        "units": [
-          {
-            "unitType": "Units",
-            "quantity": 5
+            "quantity": 150
           }
         ]
       }
     ],
-    "referenceNumber":"RN-7657657",
-    "serialNumberCertificate":"CN-68686",
-    "issuedDate":"2016-05-01",
+    "dateArrival":"2016-04-01",
+    "quarantinePeriod":3,
+    "quaratineAnalysis": {"analysisType": "bacteriological", "agency": "Ministry Of Health - Food Safety"},
     "submitter": "Joe Blow",
-    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
-    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+    "importer": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"}
+  }
+},
+{
+  "blockId": 19914701,
+  "workflowId": 99,
+  "formId": 147,
+  "title": "Notification of Detention of food for further Examination",
+  "status": "Issued",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "Bananas",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 150
+          }
+        ]
+      }
+    ],
+    "serialNumberCertificate":"CN-68686",
+    "entryDate":"2016-05-01",
+    "dateArrival":"2016-04-01",
+    "quarantinePeriod":3,
+    "quaratineAnalysis": {"analysisType": "bacteriological", "agency": "Ministry Of Health - Food Safety"},
+    "submitter": "Joe Blow",
+    "importer": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"}
   }
 },
 {

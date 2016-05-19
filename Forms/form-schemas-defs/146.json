@@ -1,0 +1,88 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"importer.name",
+            "title":"Importer Name",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key":"importer.address",
+            "title":"Importer Address",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type":"help",
+    "htmlClass": "text-center",
+    "helpvalue":"<h3>Details of Quarantine</h3>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"quarantinePeriod",
+            "type":"number",
+            "title":"Length of Quarantine",
+            "description":"Number of Days"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"quaratineAnalysis.analysisType",
+            "title": "Type of Analysis",
+            "type": "radios",
+            "titleMap": {
+              "bio": "Bacteriological",
+              "chem": "Chemical"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"quaratineAnalysis.agency",
+            "title":"Agency performing the analysis"
+          }
+        ]
+      }
+    ]
+	}
+]

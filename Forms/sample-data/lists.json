@@ -612,6 +612,11 @@
 				"document":"Notification of Detention of food for further Examination.pdf"
 			},
 			{
+				"id": 147,
+				"template": "fs-notification-detention-food-further-examination-issued.html",
+				"document":"Notification of Detention of food for further Examination.pdf"
+			},
+			{
 				"id": 148,
 				"template": "pqu-post-entry-inspection-report-live-plants.html",
 				"document":"Post Entry Inspection Report (Live Plants).pdf"

@@ -1,0 +1,95 @@
+<div>
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <div class="row">
+        <div class="col-sm-12" align="center">
+          <h5>
+            <b><u>
+              SCHEDULE FORM 3<br><br>
+            </u></b>
+          </h5>
+          <h4>
+            <b>
+              MINISTRY OF HEALTH<br><br>
+              <em>Notification of Detention of food for further examination</em>
+            </b>
+          </h4>
+        </div><!--col-sm-12-->
+      </div><!--row-->
+
+      <div class="row">
+        <div class="col-sm-12">
+          <h6>Serial Number: <b>{{ila.submission.serialNumberCertificate}}</b></h6>
+          <br>
+        </div>
+        <div class="col-sm-1">
+          <h5>
+            <b>To:</b>
+          </h5>
+        </div>
+        <div class="col-sm-11">
+          <b><div class="bottom-border" align="center">{{ila.submission.importer.name}}</div></b>
+          <h6 align="center"><b>Name of Importer</b></h6><br>
+          <b><div class="bottom-border" align="center">{{ila.submission.importer.address}}, {{ila.submission.importer.country}}</div>
+          <h6 align="center"><b>Address of Importer</b></h6>
+        </div>
+      </div>
+
+      <div class="row">
+        <br>
+        <div class="col-sm-4">
+          <h4>
+            <b>TAKE NOTICE that the:</b>
+          </h4>
+        </div>
+        <div class="col-sm-8">
+          <b><div class="bottom-border"><h4 align="center">{{ila.submission.commodities[0].description}}, {{ila.submission.commodities[0].units[0].quantity}} {{ila.submission.commodities[0].units[0].unitType}}</h4></div></b>
+          <h6 align="center"><b>Specify type and quantity of food</b></h6>
+        </div>
+        <div class="col-sm-12">
+          <br>
+          <span class="col-sm-3" style="padding-left:0">imported by you on the:</span>
+          <span class="col-sm-1 bottom-border" align="center"><b>{{ila.submission.dateArrival | date: 'dd'}}</b></span>
+          <span class="col-sm-2"> day of </span>
+          <span class="col-sm-3 bottom-border" align="center"><b>{{ila.submission.dateArrival | date:'MMMM'}}</b></span>
+          <span class="col-sm-2 col-sm-offset-1 bottom-border" align="center"><b>{{ila.submission.dateArrival | date:'yyyy'}}</b></span>
+          <div class="col-md-12" style="padding:0">
+            <h6 class="col-sm-1 col-sm-offset-3" align="center" style="padding:0">Day</h6>
+            <h6 class="col-sm-3 col-sm-offset-2" align="center">Month</h6>
+            <h6 class="col-sm-2 col-sm-offset-1" align="center">Year</h6>
+          </div>
+          <br>
+
+          <h5>
+            <b>is detained as part of the inspection process for bacteriological and/or chemical analysis by the<b>
+          </h5><br>
+
+          <b><div class="bottom-border" align="center">{{ila.submission.quaratineAnalysis.agency}}</div></b>
+          <h6 align="center">
+            Agency performing the analysis<br><br><br>
+          </h6>
+          <h5>
+            <b>AND TAKE FURTHER NOTICE</b> that you, <b>{{ila.submission.importer.name}}</b><br><br>
+          </h5>
+          <h5>
+            <i>
+              Will be required to <b>PAY THE COST</b> of the examination and if necessary, storage cost, plug charges, the costs of the re-export, destruction or disposal of the food.<br><br><br><br><br>
+            </i>
+          </h5>
+
+          <div class="col-sm-6" align="center">
+            <div class="bottom-border">{{ila.submission.submitter}}, {{ila.submission.entryDate | date: 'dd/MM/yyyy'}}
+          </div>
+          <h6><i>
+            <b>
+            Signature of Import or Agent and Date<br><br><br><br><br>
+          </i></h6>
+
+          <!-- <h6><i>
+            Signature of Environmental Health Officer and Date
+          </i></h6> -->
+        </div><!--col-sm-12-->
+      </div><!--row-->
+    </div><!--col-sm-10-->
+  </div><!--row-->
+</div><!--container-->

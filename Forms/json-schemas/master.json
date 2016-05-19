@@ -814,6 +814,34 @@
     "title": "Training Arrangements",
     "description": "Arrangements Made for Training of Guards who will be Required to Use Firearms"
   },
+  "quaratineAnalysis": {
+    "type": "object",
+    "required": [
+
+    ],
+    "properties": {
+      "analysisType": {
+        "type": "string",
+        "title": "Quarantine Analysis Type",
+        "description": "bacteriological or chemical"
+      },
+      "agency": {
+        "type": "string",
+        "title": "Agency performing the analysis",
+        "description": ""
+      }
+    }
+  },
+  "quarantinePeriod": {
+    "type": "number",
+    "title": "Number of Days",
+    "description": "Length of Initial Quarantine Period in Days"
+  },
+  "quarentineTreatmentTime": {
+    "type": "number",
+    "title": "Number of Days",
+    "description": "Length of Quarantine Treatment Period in Days"
+  },
   "prevApplications": {
     "type": "array",
     "minItems": 1,
@@ -856,7 +884,7 @@
       "required": [
 
       ],
-      "agencyName": {
+      "properties": {
         "name": {
           "type": "string",
           "title": "Name of Agency",
