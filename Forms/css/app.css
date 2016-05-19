@@ -327,4 +327,9 @@ table.table td.commodity-subtable{
 	padding-right: 25px;
 }
 
+.form-inline-number {
+	width: 50px;
+	text-align: center;
+}
+
 /* End */

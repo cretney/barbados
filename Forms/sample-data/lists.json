@@ -635,6 +635,11 @@
 				"id": 152,
 				"template": "vs-permit-import-animals-birds.html",
 				"document":"Permit to Import Animals and Birds into Barbados.pdf"
+			},
+			{
+				"id": 153,
+				"template": "vs-permit-import-animals-birds-issued.html",
+				"document":"Permit to Import Animals and Birds into Barbados.pdf"
 			}
 		]
 	},

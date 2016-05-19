@@ -24,41 +24,34 @@
     </div><!--col-sm-2-->
   </div><!--row-->
 
+
   <div class="row">
     <div class="col-sm-12">
-      <h5>
-        NO.
-        <span class="big">A</span>
-        <span class="bigger">4909</span>
-      </h5>
+      <div sf-schema="schema" sf-form="formdef" sf-model="form.data"></div>
+    </div>
+  </div>
 
-      <p>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Permission is hereby granted to ...<br>
-        of ... <br>
-        to import into Barbados from (name/address/country)<br>
-        the following:
-        <br><br>
-        subject to the Attached Conditions.<br>
-        This permit is valid for ... month(s) from the date of issue.
+  <br>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <div edit-commodities-with-fields=""></div>
+    </div>
+  </div>
+  <br>
+  
+  <div class="row">
+    <div class="col-sm-12">
+        This permit is valid for <input class="form-inline-number" type="number" ng-model="ila.submission.permitLength" min="0" required> month(s) from the date of issue.
       </p>
     </div><!--col-sm-12-->
   </div><!--row-->
+  <br><br>
 
-  <div class="row">
-    <div class="col-sm-4 col-sm-offset-8" align="center">
-      <p><i>
-        Chief Veterinary Officer
-      </i></p>
-      <p>Date:</p>
-    </div><!--col-sm-4 col-sm-offset-8-->
-  </div><!--row-->
-
-  <div class="row">
-    <div class="col-sm-12">
-      <h6>Revised 90/07/01</h6>
-      <h6>Previously Agr. 5</h6>
-    </div><!--col-sm-12-->
-  </div><!--row-->
+  <div class="modal-footer">
+      <button type="button" class="btn btn-warning" ng-click="form.cancel()">Cancel</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
 </div><!--col-sm-10 col-sm-offset-1-->
 </div><!--row-->
 </div><!--container-->

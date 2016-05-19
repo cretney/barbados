@@ -920,5 +920,10 @@
         }
       }
     }
+  },
+  "permitLength": {
+    "type": "number",
+    "title": "Length of Permit",
+    "description": "Number of months"
   }
 }
