@@ -5095,57 +5095,32 @@
   "blockId": 19911601,
   "workflowId": 99,
   "formId": 116,
-  "title": "Permit to Import Plant Material Class C",
+  "title": "New Permit to Import Plant Material Class C",
   "status": "Draft",
   "submission": {
-    "commodities": [
-      {
-        "hsCode": "123",
-        "description": "test",
-        "units": [
-          {
-            "unitType": "Units",
-            "quantity": 3,
-            "pricePerUnit": 12.00,
-            "cifValue": 34,
-            "code":"14624",
-            "name":"TEGRETOL 200MG TAB",
-            "pack_size":"100'S",
-            "extendedCost": 14.00
-          }
-        ]
-      },
-      {
-        "hsCode": "234",
-        "description": "test",
-        "units": [
-          {
-            "unitType": "Units",
-            "quantity": 5,
-            "pricePerUnit": 20.00,
-            "cifValue": 36,
-            "code":"55311",
-            "name":"EXFORGE 5MG A/80MG V TAB",
-            "pack_size":"14'S",
-            "extendedCost": 24.00
-          }
-        ]
-      }
-    ],
-    "referenceNumber":"RN-7657657",
-    "serialNumberCertificate":"CN-68686",
-    "contractNumber":"C-879789",
-    "approvalDate":"2016-04-30",
-    "issuedDate":"2016-05-01",
-    "invoiceDate":"2016-03-01",
-    "invoiceNumber":"IN-5646546",
-    "containerNumber":"CONT-3324",
+    "conditions":{"inspection":true, "certificate":true, "desinfected":true, "other1":false, "other2":false, "other1_description":"", "other2_description":""},
+    "serialNumberCertificate":"",
+    "approvalDate":"",
+    "issuedDate":"",
     "submitter": "Joe Blow",
     "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
-    "origin": "United States",
-    "countryConsigned": "Canada",
-    "expectedArrival": "2015-09-21T04:00:00.000Z",
-    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+    "origin": "United States"
+  }
+},
+{
+  "blockId": 19911701,
+  "workflowId": 99,
+  "formId": 117,
+  "title": "Permit to Import Plant Material Class C",
+  "status": "Issued",
+  "submission": {
+    "conditions":{"inspection":true, "certificate":false, "desinfected":true, "other1":false, "other2":false, "other1_description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", "other2_description":"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."},
+    "serialNumberCertificate":"CN-68686",
+    "approvalDate":"2016-04-30",
+    "issuedDate":"2016-05-01",
+    "submitter": "Joe Blow",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "origin": "United States"
   }
 },
 {

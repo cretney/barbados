@@ -1,0 +1,90 @@
+[
+  {
+    "type":"help",
+    "helpvalue":"Permission is hereby given to:"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"applicant.name",
+            "title":"Name of Importer",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+				  {
+				  	"key":"applicant.country",
+				  	"title":"Country of Origin",
+				  	"readonly":true
+				  }
+        ]
+      }
+    ]
+  },
+  {
+    "key":"applicant.address",
+    "title":"Importer's Address",
+    "readonly":true
+  },
+  {
+    "type":"help",
+    "helpvalue":"*2. The importation will be subject to the following conditions:"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key":"conditions.certificate",
+            "title":"(a) The material must be accompanied by a certificate from responsible authority in the country of export that the material has been inspected and found free of any pest or disease."
+          },
+          {
+            "key":"conditions.inspection",
+            "title":"(b) The material shall be inspected by the Chief Agricultural Officer before importation into this Island."
+          },
+          {
+				  	"key":"conditions.desinfected",
+            "title": "(c) The material shall be disinfected or fumigated to the satisfaction of the Chief Agricultural Officer b`efore being landed into this Island."
+				  },
+          {
+				  	"key":"conditions.other1",
+            "title": ""
+				  },
+          {
+				  	"key":"conditions.other1_description",
+            "title": "",
+            "type":"textarea"
+				  },
+          {
+				  	"key":"conditions.other2",
+            "title": ""
+				  },
+          {
+				  	"key":"conditions.other2_description",
+            "title": "",
+            "type":"textarea"
+				  }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "submit",
+    "style": "btn-info",
+    "title": "Save"
+  }
+]

@@ -482,6 +482,29 @@
         }
       }
     },
+    "conditions": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "certificate": {
+          "type": "boolean"
+        },
+        "inspection": {
+          "type": "boolean"
+        },
+        "desinfected": {
+          "type": "boolean"
+        },
+        "other1": {
+          "type": "boolean"
+        },
+        "other2": {
+          "type": "boolean"
+        }
+      }
+    },
     "destinationCountry": {
       "type": "string",
       "title": "Destination Country",

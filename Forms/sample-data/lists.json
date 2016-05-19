@@ -507,6 +507,11 @@
 				"document":"Permit to Import Plant Material Class C.pdf"
 			},
 			{
+				"id": 117,
+				"template": "plant-permit-import-plant-material-class-c-issued.html",
+				"document":"Permit to Import Plant Material Class C.pdf"
+			},
+			{
 				"id": 118,
 				"template": "vs-application-traveller-passengers-import-meat.html",
 				"document":"New Application for Traveller Passengers Import Meat.pdf"
