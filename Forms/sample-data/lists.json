@@ -462,6 +462,11 @@
 				"document":"Official Veterinary Meat Inspection Certificate.pdf"
 			},
 			{
+				"id": 107,
+				"template": "vs-official-veterinary-meat-inspection-certificate-issued.html",
+				"document":"Official Veterinary Meat Inspection Certificate.pdf"
+			},
+			{
 				"id": 108,
 				"template": "vs-veterinary-export-health-certificate-avian.html",
 				"document":"New Veterinary Export Health Certificate Avian.pdf"

@@ -4714,57 +4714,110 @@
   "blockId": 19910601,
   "workflowId": 99,
   "formId": 106,
-  "title": "Official Veterinary Meat Inspection Certificate",
+  "title": "New Official Veterinary Meat Inspection Certificate",
   "status": "Draft",
   "submission": {
     "commodities": [
       {
         "hsCode": "123",
-        "description": "test",
+        "description": "Product description for 123",
         "units": [
           {
-            "unitType": "Units",
-            "quantity": 3,
-            "pricePerUnit": 12.00,
-            "cifValue": 34,
-            "code":"14624",
-            "name":"TEGRETOL 200MG TAB",
-            "pack_size":"100'S",
-            "extendedCost": 14.00
+            "unitType": "Kilograms",
+            "quantity": 3
+          },
+          {
+            "unitType": "Packages",
+            "quantity": 4
           }
         ]
       },
       {
         "hsCode": "234",
-        "description": "test",
+        "description": "Product description for 234",
         "units": [
           {
-            "unitType": "Units",
-            "quantity": 5,
-            "pricePerUnit": 20.00,
-            "cifValue": 36,
-            "code":"55311",
-            "name":"EXFORGE 5MG A/80MG V TAB",
-            "pack_size":"14'S",
-            "extendedCost": 24.00
+            "unitType": "Kilograms",
+            "quantity": 5
+          },
+          {
+            "unitType": "Packages",
+            "quantity": 6
           }
         ]
       }
     ],
     "referenceNumber":"RN-7657657",
+    "shippingInfo": "Shipping-8768678",
+    "vesselOrCraft": "ISLANDIA",
+    "containerNumber": "C-6575777",
+    "sealNumber": "Seal-6546546",
     "serialNumberCertificate":"CN-68686",
-    "contractNumber":"C-879789",
+    "referencedCertificate":"REF-68686",
+    "referencedCertificateDate":"2016-03-01",
     "approvalDate":"2016-04-30",
+    "exportDate":"2016-04-30",
     "issuedDate":"2016-05-01",
-    "invoiceDate":"2016-03-01",
-    "invoiceNumber":"IN-5646546",
-    "containerNumber":"CONT-3324",
     "submitter": "Joe Blow",
-    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
-    "origin": "United States",
-    "countryConsigned": "Canada",
-    "expectedArrival": "2015-09-21T04:00:00.000Z",
-    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+    "conditions":{"condition1":false, "condition2":false},
+    "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"},
+    "supplier": {"id": 1, "name": "Supplier Inc", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "registrationNo":"1234567"},
+    "producer": {"id": 1, "name": "Producer Inc", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "registrationNo":"7890123"}
+  }
+},
+{
+  "blockId": 19910701,
+  "workflowId": 99,
+  "formId": 107,
+  "title": "Official Veterinary Meat Inspection Certificate",
+  "status": "Issued",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "Product description for 123",
+        "units": [
+          {
+            "unitType": "Kilograms",
+            "quantity": 3
+          },
+          {
+            "unitType": "Packages",
+            "quantity": 4
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "Product description for 234",
+        "units": [
+          {
+            "unitType": "Kilograms",
+            "quantity": 5
+          },
+          {
+            "unitType": "Packages",
+            "quantity": 6
+          }
+        ]
+      }
+    ],
+    "referenceNumber":"RN-7657657",
+    "shippingInfo": "Shipping-8768678",
+    "vesselOrCraft": "ISLANDIA",
+    "containerNumber": "C-6575777",
+    "sealNumber": "Seal-6546546",
+    "serialNumberCertificate":"CN-68686",
+    "referencedCertificate":"REF-68686",
+    "referencedCertificateDate":"2016-03-01",
+    "approvalDate":"2016-04-30",
+    "exportDate":"2016-04-30",
+    "issuedDate":"2016-05-01",
+    "submitter": "Joe Blow",
+    "conditions":{"condition1":true, "condition2":false},
+    "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"},
+    "supplier": {"id": 1, "name": "Supplier Inc", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "registrationNo":"1234567"},
+    "producer": {"id": 1, "name": "Producer Inc", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "registrationNo":"7890123"}
   }
 },
 {

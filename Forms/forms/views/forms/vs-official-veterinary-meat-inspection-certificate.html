@@ -21,129 +21,68 @@
 
   <div class="row">
     <div class="col-sm-12">
-      <table class="table with-border">
-        <tr>
-          <td class="with-top right-border">
-            CONSIGNEE
-          </td>
-          <td class="with-top">
-            CERTIFICATE NO.:
-          </td>
-        </tr>
-        <tr>
-          <td class="no-top right-border"></td>
-          <td class="with-top">
-            DATE OF EXPORT
-          </td>
-        </tr>
-        <tr>
-          <td class="with-top right-border">
-            EXPORTED BY<br><br>
-          </td>
-          <td class="with-top">
-            ESTABLISHMENT NO.:
-          </td>
-        </tr>
-        <tr>
-          <td class="with-top right-border">
-            PRODUCED BY<br><br>
-          </td>
-          <td class="with-top">
-            ESTABLISHMENT NO.:
-          </td>
-        </tr>
-        <tr>
-          <td class="with-top" colspan="2">
-            <div class="row">
-              <div class="col-sm-6">
-                DESCRIPTION OF PRODUCT
-                <br><br><br><br><br><br><br>
-                <h6>
-                  <i>
-                    (For additional space list overleaf)
-                  </i>
-                </h6>
-              </div>
-              <div class="col-sm-3">
-                NET WEIGHT
-              </div>
-              <div class="col-sm-3">
-                NO. PACKAGES
-              </div>
-            </div><!--row-->
-          </td>
-        </tr>
-        <tr>
-          <th class="with-top">
-            Total marked Net Weight:
-          </th>
-          <th>
-            Total no. pkgs:
-          </th>
-        </tr>
-        <tr>
-          <th class="with-top">
-            Shipping Marks:
-          </th>
-          <th class="with-top">
-            Vessel/Carrier
-          </th>
-        </tr>
-        <tr>
-          <th class="no-top">
-            Container #:
-          </th>
-          <th class="no-top">
-            Seal #:
-          </th>
-        </tr>
-      </table>
-    </div><!--col-sm-12-->
-  </div><!--row-->
+      <div sf-schema="schema" sf-form="formdef1" sf-model="form.data"></div>
+    </div>
+  </div>
+
+  <hr>
 
   <div class="row">
-    <div class="col-sm-8 col-sm-offset-1">
-      <h5>
-        <b>
-          M. O. H. Wholesome Food Certificate No.:
-        </b>
-      </h5>
+    <div class="col-sm-12">
+	    <div edit-commodities-no-price=""></div>
     </div>
-    <div class="col-sm-3">
-      <h5>
-        <b>Date:</b>
-      </h5>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-offset-2 col-sm-5">
+      <h4>Total marked Net Weight: <span class="sum" ng-bind="ila.submission.commodities | sum:0"></span></h4>
     </div>
+    <div class="col-sm-5">
+      <h4>Total no. pkgs: <span class="sum" ng-bind="ila.submission.commodities | sum:1"></span></h4>
+    </div>
+  </div>
+  <hr>
+  <br>
 
-    <div class="col-sm-1">
-      <h3>[ ]</h3>
-      <h3>[ ]</h3>
-    </div><!--col-sm-1-->
-    <div class="col-sm-11" align="justify">
-      <h6><br>
-        This is to certify that the meat or meat product(s) specified herein was/were derived from animals either born and reared locally or from meat/meat trimmings imported into Barbados in accordance with the Animals (Diseases and Importation) Act, Cap. 253 and regulations made under this Act.
-      </h6>
-      <h6><br>
-        This is to certify that the poultry or poultry product(s) specified herein was/were derived from birds either hatched and reared locally or from poultry meat imported into Barbados in accordance with the Animals (Diseases and Importation) Act, Cap. 253 and regulations made under this Act.
-      </h6>
-    </div><!--col-sm-11-->
+  <div class="row">
+    <div class="col-sm-12">
+      <div sf-schema="schema" sf-form="formdef2" sf-model="form.data"></div>
+    </div>
+  </div>
+
+
+  <div class="row">
     <div class="col-sm-1 col-sm-offset-1" align="right">
-      <h6>1</h6><br>
-      <h6>2</h6>
-      <h6>3</h6>
+      <h6>1</h6>
     </div><!--col-sm-1 col-sm-offset-1-->
     <div class="col-sm-10" align="justify">
       <h6>
         Barbados is free from Foot and Mouth Disease, Hog Cholera, African Swine Fever, Swine Vesicular Disease and Velogenic Viscerotropic Newcastle Disease. Importations are not allowed from countries enzootic for these diseases.
       </h6>
+    </div><!--col-sm-10-->
+  </div><!--row-->
+  <div class="row">
+    <div class="col-sm-1 col-sm-offset-1" align="right">
+      <h6>2</h6>
+    </div><!--col-sm-1 col-sm-offset-1-->
+    <div class="col-sm-10" align="justify">
       <h6>
         The Animals/Birds from which the above product(s) was/were derived received antemortem and postmortem veterinary inspection at the time of slaughter and were found to be free from disease and fit for human consumption.
       </h6>
+    </div><!--col-sm-10-->
+  </div><!--row-->
+  <div class="row">
+    <div class="col-sm-1 col-sm-offset-1" align="right">
+      <h6>3</h6>
+    </div><!--col-sm-1 col-sm-offset-1-->
+    <div class="col-sm-10" align="justify">
       <h6>
         The product(s) has/have not been treated with and does/do not contain prohibited preservatives or colouring matter injurious to health and has/have been processed under sanitary conditions.
       </h6>
     </div><!--col-sm-10-->
   </div><!--row-->
+  <br>
+  <br>
   <br>
 
   <div class="row">

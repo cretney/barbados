@@ -46,11 +46,14 @@
 				return $http.get("/Forms/json-schemas/master.json");
 				// return $http.get("/Forms/json-schemas/"+id+".json");
 			},
-			getFormDef: function(id,types){
-				var def = $q.defer();					
+			getFormDef: function(id,post){
+				var def = $q.defer();
 				if (id == 32 || id >= 46)
+					if (post!=undefined)
+						return $http.get("/Forms/form-schemas-defs/"+id+"-"+post+".json");
+					else
 					return $http.get("/Forms/form-schemas-defs/"+id+".json");
-				else 
+				else
 					return $http.get("/Forms/form-schemas-defs/empty.json");
 			}
 		}
@@ -75,5 +78,5 @@
 		}
 	}]);
 
-	
+
 })();
