@@ -1,0 +1,108 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"shippingInfo",
+            "title":"Shipping Marks"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"vesselOrCraft",
+            "title":"Vessel/Carrier"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"containerNumber",
+            "title":"Container #"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"sealNumber",
+            "title":"Seal #"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"referencedCertificate",
+            "title":"M. O. H. Wholesome Food Certificate No"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"referencedCertificateDate",
+            "title":"Date"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key":"conditions.condition1",
+            "title":"This is to certify that the meat or meat product(s) specified herein was/were derived from animals either born and reared locally or from meat/meat trimmings imported into Barbados in accordance with the Animals (Diseases and Importation) Act, Cap. 253 and regulations made under this Act."
+          },
+          {
+            "key":"conditions.condition2",
+            "title":"This is to certify that the poultry or poultry product(s) specified herein was/were derived from birds either hatched and reared locally or from poultry meat imported into Barbados in accordance with the Animals (Diseases and Importation) Act, Cap. 253 and regulations made under this Act."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "submit",
+    "title": "Save"
+  }
+]

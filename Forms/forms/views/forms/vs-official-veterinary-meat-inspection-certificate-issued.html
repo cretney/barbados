@@ -1,0 +1,192 @@
+<div>
+  <div class="row">
+    <div class="col-sm-2">
+      <h6>
+        A09: VS 002
+      </h6>
+    </div>
+    <div class="col-sm-8" align="center">
+      <h5>
+        GOVERNMENT OF BARBADOS<br>
+        MINISTRIES OF AGRICULTURE AND HEALTH<br>
+        MEAT AND POULTRY INSPECTION SERVICE
+      </h5>
+      <h4>
+        <b>
+          Official Veterinary Meat Inspection Certificate
+        </b>
+      </h4>
+    </div><!--col-sm-8-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table with-border">
+        <tr>
+          <td class="with-top right-border">
+            CONSIGNEE <br>
+            <b>{{ila.submission.consignee.name}}</b>
+          </td>
+          <td class="with-top">
+            CERTIFICATE NO.: <b>{{ila.submission.serialNumberCertificate}}</b>
+          </td>
+        </tr>
+        <tr>
+          <td class="no-top right-border"></td>
+          <td class="with-top">
+            DATE OF EXPORT: <b>{{ila.submission.exportDate}}</b>
+          </td>
+        </tr>
+        <tr>
+          <td class="with-top right-border">
+            EXPORTED BY<br>
+            <b>{{ila.submission.supplier.name}}</b>
+          </td>
+          <td class="with-top">
+            ESTABLISHMENT NO.: <b>{{ila.submission.supplier.registrationNo}}</b>
+          </td>
+        </tr>
+        <tr>
+          <td class="with-top right-border">
+            PRODUCED BY<br>
+            <b>{{ila.submission.producer.name}}</b>
+          </td>
+          <td class="with-top">
+            ESTABLISHMENT NO.:  <b>{{ila.submission.producer.registrationNo}}</b>
+          </td>
+        </tr>
+        <tr>
+          <td class="with-top" colspan="2">
+            <div class="row">
+              <div class="col-sm-12">
+          	    <div view-commodities-no-price=""></div>
+              </div>
+            </div><!--row-->
+          </td>
+        </tr>
+        <tr>
+          <th class="with-top">
+            Total marked Net Weight: <span class="sum" ng-bind="ila.submission.commodities | sum:0"></span>
+          </th>
+          <th>
+            Total no. pkgs: <span class="sum" ng-bind="ila.submission.commodities | sum:1"></span>
+          </th>
+        </tr>
+        <tr>
+          <th class="with-top">
+            Shipping Marks: <b>{{ila.submission.shippingInfo}}</b>
+          </th>
+          <th class="with-top">
+            Vessel/Carrier: <b>{{ila.submission.vesselOrCraft}}</b>
+          </th>
+        </tr>
+        <tr>
+          <th class="no-top">
+            Container #: <b>{{ila.submission.containerNumber}}</b>
+          </th>
+          <th class="no-top">
+            Seal #: <b>{{ila.submission.sealNumber}}</b>
+          </th>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-1">
+      <h5>
+        <b>
+          M. O. H. Wholesome Food Certificate No.: <b>{{ila.submission.referencedCertificate}}</b>
+        </b>
+      </h5>
+    </div>
+    <div class="col-sm-3">
+      <h5>
+        <b>Date:</b> <b>{{ila.submission.referencedCertificateDate}}</b>
+      </h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-1">
+      <h3>
+        <span ng-if="ila.submission.conditions.condition1">[x]</span>
+        <span ng-if="!ila.submission.conditions.condition1">[  ]</span>
+      </h3>
+    </div><!--col-sm-1-->
+    <div class="col-sm-11" align="justify">
+      <h6><br>
+        This is to certify that the meat or meat product(s) specified herein was/were derived from animals either born and reared locally or from meat/meat trimmings imported into Barbados in accordance with the Animals (Diseases and Importation) Act, Cap. 253 and regulations made under this Act.
+      </h6>
+    </div><!--col-sm-11-->
+  </div>
+  <div class="row">
+    <div class="col-sm-1">
+      <h3>
+        <span ng-if="ila.submission.conditions.condition2">[x]</span>
+        <span ng-if="!ila.submission.conditions.condition2">[  ]</span>
+      </h3>
+    </div><!--col-sm-1-->
+    <div class="col-sm-11" align="justify">
+      <h6><br>
+        This is to certify that the poultry or poultry product(s) specified herein was/were derived from birds either hatched and reared locally or from poultry meat imported into Barbados in accordance with the Animals (Diseases and Importation) Act, Cap. 253 and regulations made under this Act.
+      </h6>
+    </div><!--col-sm-11-->
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="col-sm-1 col-sm-offset-1" align="right">
+      <h6>1</h6>
+    </div><!--col-sm-1 col-sm-offset-1-->
+    <div class="col-sm-10" align="justify">
+      <h6>
+        Barbados is free from Foot and Mouth Disease, Hog Cholera, African Swine Fever, Swine Vesicular Disease and Velogenic Viscerotropic Newcastle Disease. Importations are not allowed from countries enzootic for these diseases.
+      </h6>
+    </div><!--col-sm-10-->
+  </div><!--row-->
+  <div class="row">
+    <div class="col-sm-1 col-sm-offset-1" align="right">
+      <h6>2</h6>
+    </div><!--col-sm-1 col-sm-offset-1-->
+    <div class="col-sm-10" align="justify">
+      <h6>
+        The Animals/Birds from which the above product(s) was/were derived received antemortem and postmortem veterinary inspection at the time of slaughter and were found to be free from disease and fit for human consumption.
+      </h6>
+    </div><!--col-sm-10-->
+  </div><!--row-->
+  <div class="row">
+    <div class="col-sm-1 col-sm-offset-1" align="right">
+      <h6>3</h6>
+    </div><!--col-sm-1 col-sm-offset-1-->
+    <div class="col-sm-10" align="justify">
+      <h6>
+        The product(s) has/have not been treated with and does/do not contain prohibited preservatives or colouring matter injurious to health and has/have been processed under sanitary conditions.
+      </h6>
+    </div><!--col-sm-10-->
+  </div><!--row-->
+  <br>
+  <br>
+  <br>
+
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-8">
+      <h6 align="center">
+        <i>
+          Chief Veterinary Officer,<br>
+          Veterinary Services, Ministry of Agriculture
+        </i>
+      </h6>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-2" align="right">
+      <h6>
+        <b>
+          Stamp<br>
+          Updated 90/05/31
+        </b>
+      </h6>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+</div><!--container-->

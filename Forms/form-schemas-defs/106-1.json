@@ -1,0 +1,81 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-9",
+        "items": [
+          {
+            "key":"consignee.name",
+            "title":"Consigned to",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"exportDate",
+            "title":"Date of Export"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-9",
+        "items": [
+          {
+            "key":"supplier.name",
+            "title":"Exported by"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"supplier.registrationNo",
+            "title":"Establishment No"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-9",
+        "items": [
+          {
+            "key":"producer.name",
+            "title":"Produced by"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"producer.registrationNo",
+            "title":"Establishment No"
+          }
+        ]
+      }
+    ]
+  }
+]
