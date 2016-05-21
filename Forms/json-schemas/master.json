@@ -488,6 +488,12 @@
 
       ],
       "properties": {
+        "condition1": {
+          "type": "boolean"
+        },
+        "condition2": {
+          "type": "boolean"
+        },
         "certificate": {
           "type": "boolean"
         },
