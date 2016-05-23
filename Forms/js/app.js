@@ -1,7 +1,7 @@
 ﻿(function(){
 
 	var app = angular.module('app', ['ngMessages','ui.bootstrap','dataService','ui.select','schemaForm'])
-	
+
 	.config(['$httpProvider', function ($httpProvider) {
 		$httpProvider.defaults.headers.post['Content-Type'] = 'application/json;odata=verbose';
 		$httpProvider.defaults.headers.post['X-Requested-With'] = 'XMLHttpRequest';
@@ -14,7 +14,7 @@
 				documents: forms.data
 			};
 
-			$scope.current_date = new Date();	
+			$scope.current_date = new Date();
 		});
 
 	}])
@@ -59,7 +59,7 @@
 			        next: function (form) {
 			            // $scope.toTheTop();
 
-			            
+
 			            if (form.$valid) {
 			            	form.$setPristine();
 			                nextStep();
@@ -206,7 +206,15 @@
 					var form = $filter('filter')(formsMap,{id: scope.ila.formId}, true)[0]; //select current form mapping
 					dataService.getFormDef(scope.ila.formId).then(function(formdef){
 					  scope.formdef = formdef.data;
-					  console.log(scope.formdef);
+					  // console.log(scope.formdef);
+					});
+					dataService.getFormDef(scope.ila.formId, '1').then(function(formdef){
+					  scope.formdef1 = formdef.data;
+					  // console.log(scope.formdef);
+					});
+					dataService.getFormDef(scope.ila.formId, '2').then(function(formdef){
+					  scope.formdef2 = formdef.data;
+					  // console.log(scope.formdef);
 					});
 					angular.extend(scope.form, {
 						template: '/Forms/forms/views/forms/'+form.template,
@@ -238,7 +246,7 @@
 							countries: $filter('filter')(data[1].data,{listType: 'country'}, true)[0].list,
 							suppliers: $filter('filter')(data[1].data,{listType: 'suppliers'}, true)[0].list,
 							// formFields: $filter('filter')(data[1].data,{listType: 'formFields'}, true)[0].list
-							formFields: 
+							formFields:
 							[
 								{
 									"id": 1,
@@ -846,7 +854,7 @@
 			replace: true,
 			templateUrl: '/Forms/forms/views/partials/view-commodities-rules-origin.html'
 		}
-	}])	
+	}])
 	.directive('viewCommoditiesNoPrice', [function(){
 		return{
 			restrict: 'A',
@@ -889,14 +897,14 @@
 			link: function(scope, elem, attrs){
 		    // scope.entries = 5;
 		    // item.entries = [];
-		    scope.updateEntries = function (item) {		    		
+		    scope.updateEntries = function (item) {
 		        item.entries = [];
 		        for (var i = 0; i < item.quantity; i++) {
 		            item.entries.push({});
 		        }
 		    };
 		    // scope.upateEntries();
-			}			
+			}
 		}
 	}])
 
@@ -959,13 +967,23 @@
 					else if (scope.field.datatype == "Date" || scope.datatype == "Date")
 						return '/Forms/forms/views/partials/field-name-date.html';
 					else {
-						return '/Forms/forms/views/partials/field-name.html';          
+						return '/Forms/forms/views/partials/field-name.html';
 					}
         }
 			},
-			template: '<div ng-include="getContentUrl()"></div>'			
+			template: '<div ng-include="getContentUrl()"></div>'
 		}
 	}])
+
+	.filter('sum', function() {
+     return function(groups, index) {
+         var total = 0;
+         for (i=0; i<groups.length; i++) {
+             total = total + groups[i].units[index].quantity;
+          };
+         return total;
+     };
+ 	})
 
 	.filter('propsFilter', [function() {
   		return function(items, props) {
@@ -997,5 +1015,5 @@
     		return out;
   		}
 	}])
-	
+
 })();

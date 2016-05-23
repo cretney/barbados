@@ -1,0 +1,287 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"collectionDate",
+            "title":"Date of Collection"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"entryDate",
+            "title":"Date of Entry"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"portDischarge",
+            "title":"Port of Entry (P.Q. Station)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "commodities",
+    "title":"Commodities",
+    "add": "New",
+    "style": {
+      "add": "hidden"
+    },
+    "items": [
+      {
+        "type":"help",
+        "helpvalue":"<br>"
+      },
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key":"commodities[].hsCode",
+                "title":"Hs Code",
+                "description":"",
+                "readonly":true
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-4",
+            "items": [
+              {
+                "key":"commodities[].description",
+                "title":"Commodity",
+                "description":"",
+                "readonly":true
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key":"commodities[].units[0].quantity",
+                "title":"Quantity",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key":"commodities[].units[1].quantity",
+                "title":"Weight (kgs)",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key":"commodities[].collected",
+                "title":"Sample",
+                "description":"Collected"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"consignee.name",
+            "title":"Consignee",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"origin",
+            "title":"Country of Origin",
+            "description":""
+          }
+        ]
+      }
+    ]
+  },
+  "consignee.address",
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"inspector",
+            "title":"Inpecting P.Q. Officer"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"coordinator",
+            "title":"P.Q. Group Coordinator"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "problemEncountered",
+            "title":"Problem Encountered",
+            "type": "radios",
+            "titleMap": {
+              "pests":"Pests",
+              "disease":"Disease",
+              "indeterminate":"Indeterminate",
+              "prohibited":"Prohibited Material",
+              "other":"Other"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"observations",
+            "title":"Observations",
+            "type":"textarea"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "actionTaken",
+            "title":"Action Taken",
+            "type": "radios",
+            "titleMap": {
+              "held_information":"Held Pending Further Information",
+              "held_identification":"Held Pending Pest/Disease Identification",
+              "confiscated":"Confiscated",
+              "other":"Other"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"details",
+            "title":"Details",
+            "type":"textarea"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "submittedTo",
+            "title": "Sample Submitted to",
+            "type": "radios",
+            "titleMap": {
+              "pathology":"Plant Pathology",
+              "entomology":"Entomology ",
+              "other":"Other"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"recommendations",
+            "title":"Diagnosis/ Recommendations ",
+            "type":"textarea"
+          }
+        ]
+      }
+    ]
+  }
+
+
+
+]

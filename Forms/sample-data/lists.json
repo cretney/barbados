@@ -337,6 +337,11 @@
 				"document":"Specimen Samples - Plant Pests - Prohibited Materials Inteceptions .pdf"
 			},
 			{
+				"id": 75,
+				"template": "plantpa-specimen-samples-plant-pests-prohibited-issued.html",
+				"document":"Specimen Samples - Plant Pests - Prohibited Materials Inteceptions .pdf"
+			},
+			{
 				"id": 76,
 				"template": "plant-quarantine-waiver-application.html",
 				"document":"Plant Quarantine Waiver Application.pdf"
@@ -459,6 +464,11 @@
 			{
 				"id": 106,
 				"template": "vs-official-veterinary-meat-inspection-certificate.html",
+				"document":"Official Veterinary Meat Inspection Certificate.pdf"
+			},
+			{
+				"id": 107,
+				"template": "vs-official-veterinary-meat-inspection-certificate-issued.html",
 				"document":"Official Veterinary Meat Inspection Certificate.pdf"
 			},
 			{
