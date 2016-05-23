@@ -3762,56 +3762,93 @@
   "blockId": 19907401,
   "workflowId": 99,
   "formId": 74,
-  "title": "Specimen Samples - Plant Pests - Prohibited Materials Inteceptions",
+  "title": "New Specimen Samples - Plant Pests - Prohibited Materials Inteceptions",
   "status": "Draft",
   "submission": {
     "commodities": [
       {
         "hsCode": "123",
         "description": "test",
+        "collected":2,
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3,
-            "pricePerUnit": 12.00,
-            "cifValue": 34,
-            "code":"14624",
-            "name":"TEGRETOL 200MG TAB",
-            "pack_size":"100'S",
-            "extendedCost": 14.00
-          }
-        ]
-      },
-      {
-        "hsCode": "234",
-        "description": "test",
-        "units": [
+            "quantity": 3
+          },
           {
-            "unitType": "Units",
-            "quantity": 5,
-            "pricePerUnit": 20.00,
-            "cifValue": 36,
-            "code":"55311",
-            "name":"EXFORGE 5MG A/80MG V TAB",
-            "pack_size":"14'S",
-            "extendedCost": 24.00
+            "unitType": "Kilograms",
+            "quantity": 6
           }
         ]
       }
     ],
     "referenceNumber":"RN-7657657",
     "serialNumberCertificate":"CN-68686",
-    "contractNumber":"C-879789",
     "approvalDate":"2016-04-30",
+    "collectionDate":"2016-04-30",
+    "entryDate":"2016-03-30",
     "issuedDate":"2016-05-01",
-    "invoiceDate":"2016-03-01",
-    "invoiceNumber":"IN-5646546",
     "containerNumber":"CONT-3324",
+    "inspector": "John Smith",
+    "coordinator": "Robert Williams",
+    "problemEncountered":"disease",
+    "observations":"*** observations ***",
+    "details":"*** details ***",
+    "submittedTo":"entomology",
+    "recommendations":"*** recommendations ***",
+    "actionTaken":"confiscated",
     "submitter": "Joe Blow",
-    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "approvedBy": "",
+    "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"},
+    "portDischarge":"La Guaira",
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "expectedArrival": "2015-09-21T04:00:00.000Z",
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
+},
+{
+  "blockId": 19907501,
+  "workflowId": 99,
+  "formId": 75,
+  "title": "Specimen Samples - Plant Pests - Prohibited Materials Inteceptions",
+  "status": "Issued",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test",
+        "collected":2,
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 3
+          },
+          {
+            "unitType": "Kilograms",
+            "quantity": 6
+          }
+        ]
+      }
+    ],
+    "referenceNumber":"RN-7657657",
+    "serialNumberCertificate":"CN-68686",
+    "approvalDate":"2016-04-30",
+    "collectionDate":"2016-04-30",
+    "entryDate":"2016-03-30",
+    "issuedDate":"2016-05-01",
+    "containerNumber":"CONT-3324",
+    "inspector": "John Smith",
+    "coordinator": "Robert Williams",
+    "problemEncountered":"disease",
+    "observations":"*** observations ***",
+    "details":"*** details ***",
+    "submittedTo":"entomology",
+    "recommendations":"*** recommendations ***",
+    "actionTaken":"confiscated",
+    "submitter": "Joe Blow",
+    "approvedBy": "Joe Blow",
+    "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"},
+    "portDischarge":"La Guaira",
+    "origin": "United States",
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
 },

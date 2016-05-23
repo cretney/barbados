@@ -1,0 +1,255 @@
+<div>
+  <div class="row">
+    <div class="col-sm-3">
+      (LOGO)
+    </div>
+    <div class="col-sm-6" align="center">
+      <h4>
+        <b>
+          MINISTRY OF AGRICULTURE, FOOD, FISHERIES,<br>
+          AND WATER RESOURCE MANAGEMENT
+        </b>
+      </h4>
+      <h6>
+        P.O. BOX 505, GRAEME HALL, CHRIST CHURCH, BARBADOS, WEST INDIES
+      </h6>
+    </div><!--col-sm-6-->
+    <div class="col-sm-3" align="right">
+      (LOGO)
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-4">
+      <br>
+      <h6>
+        <i>Our Ref:<b>{{ila.submission.referenceNumber}}</b></i>
+      </h6>
+    </div>
+    <div class="col-sm-4">
+      <br>
+      <h6>
+        <i>Your Ref: </i>
+      </h6>
+    </div>
+    <div class="col-sm-4">
+      <h6 align="right">
+        <i>Tel: (246) 426‐1222</i><br><br>
+        <i>Fax: (246) 426‐6927</i>
+      </h6>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h4 align="center">
+        <b>
+          Plant Quarantine Division, Crumpton Street, Bridgetown
+        </b>
+      </h4>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table black-border">
+        <tr>
+          <th>
+            <h4 align="center">
+              <b>
+                Specimen Samples - Plant Pests/ Prohibited Materials Interceptions
+              </b>
+            </h4>
+          </th>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table black-border">
+        <tr>
+          <td colspan="2">
+            Date of Collection<br>
+            <b>{{ila.submission.collectionDate   | date:'dd/MM/yyyy'}}</b>
+          </td>
+          <td colspan="2">
+            Port of Entry (P.Q. Station)<br>
+            <b>{{ila.submission.portDischarge}}</b>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Commodity<br>
+            <b>{{ila.submission.commodities[0].hsCode}} - {{ila.submission.commodities[0].description}}</b>
+          </td>
+          <td>
+            Quantity<br>
+            <b>{{ila.submission.commodities[0].units[0].quantity}}</b>
+          </td>
+          <td>
+            Weight (kgs)<br>
+            <b>{{ila.submission.commodities[0].units[1].quantity}}</b>
+          </td>
+          <td>
+            Sample Collected<br>
+            <b>{{ila.submission.commodities[0].collected}}</b>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            Country of Origin<br>
+            <b>{{ila.submission.origin}}</b>
+          </td>
+          <td>
+            Date of Entry<br>
+            <b>{{ila.submission.entryDate  | date:'dd/MM/yyyy'}}</b>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            Consignee & Address<br>
+            <b>{{ila.submission.consignee.name}}, {{ila.submission.consignee.address}}</b>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            Inpecting P.Q. Officer<br>
+            <b>{{ila.submission.inspector}}</b>
+          </td>
+          <td colspan="2">
+            P.Q. Group Coordinator<br>
+            <b>{{ila.submission.coordinator}}</b>
+          </td>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table with-border">
+        <tr>
+          <td colspan="3" class="with-top">Problem Encountered</td>
+        </tr>
+        <tr>
+          <td class="no-top">
+            <span ng-if="ila.submission.problemEncountered=='pests'">[x]</span>
+            <span ng-if="ila.submission.problemEncountered!='pests'">[  ]</span>
+            Pests:
+          </td>
+          <td class="no-top">
+            <span ng-if="ila.submission.problemEncountered=='disease'">[x]</span>
+            <span ng-if="ila.submission.problemEncountered!='disease'">[  ]</span>
+            Disease:</td>
+          <td class="no-top right-align">
+            <span ng-if="ila.submission.problemEncountered=='indeterminate'">[x]</span>
+            <span ng-if="ila.submission.problemEncountered!='indeterminate'">[  ]</span>
+            Indeterminate
+          </td>
+        </tr>
+        <tr>
+          <td class="no-top">
+            <span ng-if="ila.submission.problemEncountered=='prohibited'">[x]</span>
+            <span ng-if="ila.submission.problemEncountered!='prohibited'">[  ]</span>
+            Prohibited Material:
+          </td>
+          <td class="no-top" colspan="2">
+            <span ng-if="ila.submission.problemEncountered=='other'">[x]</span>
+            <span ng-if="ila.submission.problemEncountered!='other'">[  ]</span>
+            Other:
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" class="with-top">
+            Observations<br>
+            <b>{{ila.submission.observations}}</b>
+          </td>
+        </tr>
+        <tr>
+          <td class="with-top" colspan="3">Action Taken:</td>
+        </tr>
+        <tr>
+          <td class="no-top">
+            <span ng-if="ila.submission.actionTaken=='held_information'">[x]</span>
+            <span ng-if="ila.submission.actionTaken!='held_information'">[  ]</span>
+            Held Pending Further Information
+          </td>
+          <td class="no-top" colspan="2">
+            <span ng-if="ila.submission.actionTaken=='held_identification'">[x]</span>
+            <span ng-if="ila.submission.actionTaken!='held_identification'">[  ]</span>
+            Held Pending Pest/Disease Identification
+          </td>
+        </tr>
+        <tr>
+          <td class="no-top">
+            <span ng-if="ila.submission.actionTaken=='confiscated'">[x]</span>
+            <span ng-if="ila.submission.actionTaken!='confiscated'">[  ]</span>
+            Confiscated
+          </td>
+          <td class="no-top" colspan="2">
+            <span ng-if="ila.submission.actionTaken=='other'">[x]</span>
+            <span ng-if="ila.submission.actionTaken!='other'">[  ]</span>
+            Other:
+          </td>
+        </tr>
+        <tr>
+          <td class="no-top" colspan="3">
+            Details:<br>
+            <b>{{ila.submission.details}}</b>
+          </td>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table with-border">
+        <tr>
+          <td class="with-top" colspan="3">Sample Submitted to:</td>
+        </tr>
+        <tr>
+          <td class="no-top">
+            <span ng-if="ila.submission.submittedTo=='pathology'">[x]</span>
+            <span ng-if="ila.submission.submittedTo!='pathology'">[  ]</span>
+            Plant Pathology
+          </td>
+          <td class="no-top">
+            <span ng-if="ila.submission.submittedTo=='entomology'">[x]</span>
+            <span ng-if="ila.submission.submittedTo!='entomology'">[  ]</span>
+            Entomology
+          </td>
+          <td class="no-top">
+            <span ng-if="ila.submission.submittedTo=='other'">[x]</span>
+            <span ng-if="ila.submission.submittedTo!='other'">[  ]</span>
+            Other:
+          </td>
+        </tr>
+        <tr>
+          <td class="with-top" colspan="3">
+            Diagnosis/ Recommendations<br>
+            <b>{{ila.submission.recommendations}}</b>
+          </td>
+        </tr>
+        <tr>
+          <td class="no-top" colspan="2">
+            Verified by: <b>{{ila.submission.approvedBy}}</b>
+          </td>
+          <td class="no-top">Date: <b>{{ila.submission.approvalDate  | date:'dd/MM/yyyy'}}</b></td>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p>
+        <b>
+          Attach copies of documents relevant to the inspection (e.g. Phytosanitary Certificates, Import Permits, Treatment Certificates, Shipment Invoices etc.)
+        </b>
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+</div><!--container-->
