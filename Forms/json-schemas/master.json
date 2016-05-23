@@ -366,6 +366,24 @@
       "title": "Number of Consignments",
       "description": ""
     },
+    "consignmentNote": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "number": {
+          "type": "string",
+          "title": "Air Waybill or Bill of Lading Number",
+          "description": ""
+        },
+        "date": {
+          "type": "date-time",
+          "title": "Air Waybill or Bill of Lading Date",
+          "description": ""
+        }
+      }
+    },
     "intendedUse": {
       "type": "string",
       "title": "Intended use",
@@ -765,6 +783,11 @@
           "title": "Idnumber",
           "description": ""
         },
+        "idNumber2": {
+          "type": "string",
+          "title": "Idnumber2",
+          "description": ""
+        },
         "name": {
           "type": "string",
           "title": "Name",
@@ -964,5 +987,10 @@
     "type": "string",
     "title": "From Atlantic?",
     "description": "Whether the swordfish was harvested from the Atlantic Ocean, and whether contains swordfish less than 33 lb"
+  },
+  "totalValue": {
+    "type": "number",
+    "title": "Total Customs Value Bds. $",
+    "description": ""
   }
 }

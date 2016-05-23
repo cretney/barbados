@@ -1,0 +1,40 @@
+<table class="table table-striped table-condensed">
+  <thead>
+    <tr>
+      <td width="10%">
+        <span field-name="13" form-fields="form.options.formFields"></span>
+      </td>
+      <td width="50%">
+        <span field-name="16" form-fields="form.options.formFields"></span>
+      </td>
+      <td width="40%" class="commodity-subtable">
+        <table>
+            <tr>
+              <td>
+                <span field-name="19" form-fields="form.options.formFields" field-tooltip="true"></span>
+              </td>
+              <td>
+                <span field-name="21" form-fields="form.options.formFields" field-tooltip="true"></span>
+              </td>
+            </tr>
+        </table>
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="item in form.data.commodities">
+      <td width="10%" ng-bind="item.hsCode"></td>
+      <td width="50%" ng-bind="item.description"></td>
+      <td width="40%" class="commodity-subtable">
+        <table class="table-condensed">
+          <tbody>
+            <tr ng-repeat="unit in item.units">
+              <td><input name="{{'quantity_'+item.hsCode+'_'+$index}}" type="number" class="form-control" ng-model="unit.quantity" min="{{form.config.quantity.min}}" required></td>
+              <td class="currency"><span ng-bind="form.config.currency.symbol.short"></span><input name="{{'cifValue_'+item.hsCode+'_'+$index}}" type="number" class="form-control" ng-model="unit.cifValue" min="{{form.config.currency.min}}" ng-pattern="form.config.currency.pattern" required></td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>

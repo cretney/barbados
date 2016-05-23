@@ -647,6 +647,11 @@
 				"document":"Duty Free Concession Certificate.pdf"
 			},
 			{
+				"id": 151,
+				"template": "fd-duty-free-concession-certificate-issued.html",
+				"document":"Duty Free Concession Certificate.pdf"
+			},
+			{
 				"id": 152,
 				"template": "vs-permit-import-animals-birds.html",
 				"document":"Permit to Import Animals and Birds into Barbados.pdf"

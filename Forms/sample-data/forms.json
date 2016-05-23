@@ -6026,29 +6026,82 @@
     "commodities": [
       {
         "hsCode": "123",
-        "description": "test",
+        "description": "test 1",
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3
+            "quantity": 3,
+            "cifValue": 500
           }
         ]
       },
       {
         "hsCode": "234",
-        "description": "test",
+        "description": "test 2",
         "units": [
           {
             "unitType": "Units",
-            "quantity": 5
+            "quantity": 5,
+            "cifValue": 445566
+          }
+        ]
+      },
+      {
+        "hsCode": "345",
+        "description": "test 3",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 5,
+            "cifValue":20000
+          }
+        ]
+      },
+      {
+        "hsCode": "456",
+        "description": "test 4",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 10,
+            "cifValue":1050
+          }
+        ]
+      },
+      {
+        "hsCode": "567",
+        "description": "test 5",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 11,
+            "cifValue": 55
+          }
+        ]
+      },
+      {
+        "hsCode": "678",
+        "description": "test 6",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 200,
+            "cifValue": 8675309
           }
         ]
       }
     ],
-    "referenceNumber":"RN-7657657",
+    "totalValue": 1234567,
+    "consignments":"this is a description of the stuff",
+    "carrier": {"name":"S.S. Esses", "idNumber":"ABC12345", "idNumber2":"F151515"},
+    "modeTransport":"",
+    "consignmentNote": {"number":"XIQ123", "date": "2016-03-01"},
+    "invoiceNumber":"RN-7657657",
+    "invoiceDate":"2016-01-01",
     "serialNumberCertificate":"CN-68686",
-    "issuedDate":"2016-05-01",
+    "entryDate":"2016-05-01",
     "submitter": "Joe Blow",
+    "importer": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "phone":"555-5555", "email":"abc@example.com"},
     "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
