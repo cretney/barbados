@@ -1,6 +1,4 @@
 <div>
-<div class="row">
-<div class="col-sm-10 col-sm-offset-1">
   <div class="row">
     <div class="col-sm-4" align="center">
       (LOGO)
@@ -32,25 +30,14 @@
           <td>
             Name of Authorized Officer
           </td>
-          <td></td>
-          <td class="no-bottom-cell">
-            Date<br>
-            / &nbsp;&nbsp;&nbsp; /
-          </td>
-          <td class="no-bottom-cell">
-            Certificate no:
-          </td>
+          <td><b>{{ila.submission.officer.name}}</b></td>
         </tr>
         <tr class="center-align">
           <td>
             Title of Authorized Officer
             <br><br>
           </td>
-          <td></td>
-          <td class="no-top-cell">
-            DD/MM/YY
-          </td>
-          <td class="no-top-cell"></td>
+          <td><b>{{ila.submission.officer.title}}</b></td>
         </tr>
       </table>
     </div><!--col-sm-12-->
@@ -61,93 +48,18 @@
       <p>
         This is to certify that the shipment of swordﬁsh (Xiphias gladius) accompanied by this certiﬁcate consisting of:
       </p>
-
-      <table class="table black-border">
-        <tr>
-          <td>
-            Total weight (lb / kg)
-            <br><br>
-          </td>
-          <td></td>
-          <td>
-            Number of packages
-          </td>
-          <td></td>
-          <td>
-            Description of packages
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="3">
-            Bearing the following marks:
-            <br><br>
-          </td>
-          <td colspan="3"></td>
-        </tr>
-      </table>
-
-      <table class="table black-border">
-        <tr>
-          <td></td>
-          <td>(A)</td>
-          <td>
-            Contains no swordﬁsh harvested from the Atlantic Ocean
-          </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>(B)</td>
-          <td>
-            Contains no swordﬁsh or pieces of swordﬁsh harvested from the Atlantic Ocean that are less than 33 lb (15 kg)
-          </td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>(C)</td>
-          <td>
-            Contains pieces of swordﬁsh harvested from the Atlantic Ocean that are less than 33 lb (15 kg) dressed weight.
-          </td>
-        </tr>
-      </table>
-
-      <p>
-        This further certifies that such swordﬁsh were caught in the waters of the Atlantic Ocean by a vessel subject to the jurisdiction of ...
-      </p>
-    </div><!--col-sm-12-->
-  </div><!--row-->
+    </div>
+  </div>
 
   <div class="row">
-    <div class="col-sm-6">
-      <br><br><br><br>
-      <h5>
-        Signature of Authorized Officer
-      </h5>
-      <br><br><br>
-      <table class="table black-border">
-        <tr>
-          <td>
-            Form 7501 Entry Number
-            <i>(to be added by importer)</i>
-          </td>
-        </tr>
-        <tr>
-          <td><br><br></td>
-        </tr>
-      </table>
-    </div><!--col-sm-6-->
-    <div class="col-sm-6">
-      <table class="table black-border">
-        <tr>
-          <td class="center-align">
-            <br><br><br><br><br><br><br><br>
-            <i>Official stamp</i>
-            <br><br><br><br>
-          </td>
-        </tr>
-      </table>
-    </div><!--col-sm-6-->
-  </div><!--row-->
-</div><!--col-sm-10 col-sm-offset-1-->
-</div><!--row-->
+    <div class="col-sm-12">
+      <div sf-schema="schema" sf-form="formdef" sf-model="form.data"></div>
+    </div>
+  </div>
+
+  <div class="modal-footer">
+      <button type="button" class="btn btn-warning" ng-click="form.cancel()">Cancel</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+
 </div><!--container-->

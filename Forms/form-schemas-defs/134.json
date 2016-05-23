@@ -1,0 +1,122 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row swordfish-commodity",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4 col-lg-2",
+        "items": [
+          {
+            "key":"commodities[0].grossWeight",
+            "type": "number",
+            "title":"Total weight"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-2",
+        "items": [
+          {
+            "key":"commodities[0].grossWeightUnits",
+            "title":"Units",
+            "type":"radios",
+            "titleMap": {
+              "lb":"lb",
+              "kg":"kg"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6 col-lg-3",
+        "items": [
+          {
+            "key":"commodities[0].units[0].quantity",
+            "type": "number",
+            "title":"Number of packages"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-lg-5",
+        "items": [
+          {
+            "key":"commodities[0].description",
+            "type":"textarea",
+            "title":"Description of Packages"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+				  {
+				  	"key":"commodities[0].descriptionDetail",
+            "type":"textarea",
+				  	"title":"Bearing the following marks:"
+				  }
+        ]
+      }
+    ]
+	},
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "swordfishAtlantic",
+            "type": "radios",
+            "title": "Select the correct category:",
+            "titleMap": {
+              "A": "Contains no swordfish harvested from the Atlantic Ocean",
+              "B": "Contains no swordfish or pieces of swordfish harvested from the Atlantic Ocean that are less than 33 lb (15 kg)",
+              "C": "Contains pieces of swordfish harvested from the Atlantic Ocean that are less than 33 lb (15 kg) dressed weight."
+            }
+          }
+        ]
+      },
+      {
+        "type":"section",
+        "htmlClass": "col-sm-7",
+        "items": [
+          {
+            "type": "help",
+            "helpvalue": "Country of origin of vessel used to catch swordfish in Atlantic Ocean:"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-5",
+        "items": [
+          {
+            "key": "origin",
+            "title": "",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6 col-sm-offset-3",
+        "items": [
+          {
+            "key": "referenceNumber",
+            "title": "Form 7501 Entry Number",
+            "description":"added by importer",
+            "readonly": true
+          }
+        ]
+      }
+    ]
+  }
+]

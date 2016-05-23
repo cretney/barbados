@@ -1,0 +1,164 @@
+<div>
+<div class="row">
+<div class="col-sm-10 col-sm-offset-1">
+  <div class="row">
+    <div class="col-sm-4" align="center">
+      (LOGO)
+    </div><!--col-sm-4-->
+    <div class="col-sm-8">
+      <h4>
+        Fisheries Division
+      </h4>
+      <h5>
+        Ministry of Agriculture and Rural Development<br>
+        Princess Alice Highway<br>
+        Bridgetown, Barbados<br>
+        Tel.: 246-426-3745 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fax: 246-436-9068<br>
+        e-mail: fishbarbados@caribsurf.com
+      </h5>
+    </div><!--col-sm-8-->
+  </div><!--row-->
+
+  <hr class="thick">
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h4 align="center"><b>
+        ATLANTIC SWORDFISH CERTIFICATE OF ELIGIBILITY (COE)
+      </b></h4>
+
+      <table class="table black-border no-top-td no-bottom-td">
+        <tr class="center-align">
+          <td>
+            Name of Authorized Officer
+          </td>
+          <td><b>{{ila.submission.officer.name}}</b></td>
+          <td class="no-bottom-cell">
+            Date<br>
+            <b>{{ila.submission.issuedDate | date: 'dd'}}/{{ila.submission.issuedDate | date: 'MM'}}/{{ila.submission.issuedDate | date: 'yy'}}</b>
+          </td>
+          <td class="no-bottom-cell">
+            Certificate no:
+          </td>
+        </tr>
+        <tr class="center-align">
+          <td>
+            Title of Authorized Officer
+            <br><br>
+          </td>
+          <td><b>{{ila.submission.officer.title}}</b></td>
+          <td class="no-top-cell">
+            DD/MM/YY
+          </td>
+          <td class="no-top-cell"><b>{{ila.submission.serialNumberCertificate}}</b></td>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p>
+        This is to certify that the shipment of swordﬁsh (Xiphias gladius) accompanied by this certiﬁcate consisting of:
+      </p>
+
+      <table class="table black-border">
+        <tr>
+          <td>
+            Total weight<br>(lb / kg)
+            <br>
+          </td>
+          <td><b>{{ila.submission.commodities[0].grossWeight}} {{ila.submission.commodities[0].grossWeightUnits}}</b></td>
+          <td>
+            Number of packages
+          </td>
+          <td><b>{{ila.submission.commodities[0].units[0].quantity}}</b></td>
+          <td>
+            Description of packages
+          </td>
+          <td><b>{{ila.submission.commodities[0].description}}</b></td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            Bearing the following marks:
+            <br>
+          </td>
+          <td colspan="3"><b>{{ila.submission.commodities[0].descriptionDetail}}</b></td>
+        </tr>
+      </table>
+
+      <table class="table black-border">
+        <tr>
+          <td>
+            <span ng-if="ila.submission.swordfishAtlantic == 'A'"><b>X</b></span>
+            <span ng-if="ila.submission.swordfishAtlantic != 'A'"> &nbsp; </span>
+          </td>
+          <td>(A)</td>
+          <td>
+            Contains no swordﬁsh harvested from the Atlantic Ocean
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span ng-if="ila.submission.swordfishAtlantic == 'B'"><b>X</b></span>
+            <span ng-if="ila.submission.swordfishAtlantic != 'B'"> &nbsp; </span>
+          </td>
+          <td>(B)</td>
+          <td>
+            Contains no swordﬁsh or pieces of swordﬁsh harvested from the Atlantic Ocean that are less than 33 lb (15 kg)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span ng-if="ila.submission.swordfishAtlantic == 'C'"><b>X</b></span>
+            <span ng-if="ila.submission.swordfishAtlantic != 'C'"> &nbsp; </span>
+          </td>
+          <td>(C)</td>
+          <td>
+            Contains pieces of swordﬁsh harvested from the Atlantic Ocean that are less than 33 lb (15 kg) dressed weight.
+          </td>
+        </tr>
+      </table>
+
+      <p>
+        This further certifies that such swordﬁsh were caught in the waters of the Atlantic Ocean by a vessel subject to the jurisdiction of <b>{{ila.submission.origin}}</b>.
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-6">
+      <br><br><br>
+
+      <p class="bottom-border"><b>{{ila.submission.officer.name}}</b></p>
+      <h5>
+        Signature of Authorized Officer
+      </h5>
+      <br><br><br>
+      <table class="table black-border">
+        <tr>
+          <td>
+            Form 7501 Entry Number
+            <i>(to be added by importer)</i>
+          </td>
+        </tr>
+        <tr>
+          <td><b>{{ila.submission.referenceNumber}}</b><br></td>
+        </tr>
+      </table>
+    </div><!--col-sm-6-->
+    <div class="col-sm-6">
+      <table class="table black-border">
+        <tr>
+          <td class="center-align">
+            <br><br><br><br><br><br><br><br>
+            <i>Official stamp</i>
+            <br><br><br><br>
+          </td>
+        </tr>
+      </table>
+    </div><!--col-sm-6-->
+  </div><!--row-->
+</div><!--col-sm-10 col-sm-offset-1-->
+</div><!--row-->
+</div><!--container-->

@@ -332,4 +332,17 @@ table.table td.commodity-subtable{
 	text-align: center;
 }
 
+
+/*radios inline with input box - Atlantic Swordfish Certificate, 134*/
+
+.swordfish-commodity .radio {
+	padding-top: 0;
+	min-height: auto;
+}
+
+.swordfish-commodity .radio label, .swordfish-commodity .radio input {
+	line-height: 1em;
+	margin-top: 0;
+}
+
 /* End */

@@ -584,7 +584,12 @@
 			{
 				"id": 134,
 				"template": "fd-atlantic-swordfish-certificate-elegibility.html",
-				"document":"Atlantic Swordfish Certificate of Elegibility (COE).pdf"
+				"document":"Atlantic Swordfish Certificate of Eligibility (COE).pdf"
+			},
+			{
+				"id": 135,
+				"template": "fd-atlantic-swordfish-certificate-elegibility-issued.html",
+				"document":"Atlantic Swordfish Certificate of Eligibility (COE).pdf"
 			},
 			{
 				"id": 136,

@@ -5590,27 +5590,20 @@
   "blockId": 19913401,
   "workflowId": 99,
   "formId": 134,
-  "title": "Atlantic Swordfish Certificate of Elegibility (COE)",
+  "title": "New Atlantic Swordfish Certificate of Eligibility (COE)",
   "status": "Draft",
   "submission": {
     "commodities": [
       {
         "hsCode": "123",
-        "description": "test",
+        "description": "wooden, roughly cubic crates",
+        "descriptionDetail": "seal markings on top of crates",
+        "grossWeight": 529,
+        "grossWeightUnits": "kg",
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3
-          }
-        ]
-      },
-      {
-        "hsCode": "234",
-        "description": "test",
-        "units": [
-          {
-            "unitType": "Units",
-            "quantity": 5
+            "quantity": 25
           }
         ]
       }
@@ -5618,7 +5611,41 @@
     "referenceNumber":"RN-7657657",
     "serialNumberCertificate":"CN-68686",
     "issuedDate":"2016-05-01",
-    "submitter": "Joe Blow",
+    "officer": {"name":"Joe Schmoe", "title":"Chief Swordfish Inspector"},
+    "swordfishAtlantic": "B",
+    "origin": "Spain",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
+},
+{
+  "blockId": 19913501,
+  "workflowId": 99,
+  "formId": 135,
+  "title": "Atlantic Swordfish Certificate of Eligibility (COE)",
+  "status": "Issued",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "wooden, roughly cubic crates",
+        "descriptionDetail": "seal markings on top of crates",
+        "grossWeight": 529,
+        "grossWeightUnits": "kg",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 25
+          }
+        ]
+      }
+    ],
+    "referenceNumber":"RN-7657657",
+    "serialNumberCertificate":"CN-68686",
+    "issuedDate":"2016-05-01",
+    "officer": {"name":"Joe Schmoe", "title":"Chief Swordfish Inspector"},
+    "swordfishAtlantic": "B",
+    "origin": "Spain",
     "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
