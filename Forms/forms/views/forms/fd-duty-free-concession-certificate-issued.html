@@ -1,0 +1,133 @@
+<div>
+<div class="row">
+<div class="col-sm-10 col-sm-offset-1">
+  <div class="row">
+    <div class="col-sm-9"><br><br><br>
+      <h5>
+        Date: <b>{{ila.submission.entryDate | date: 'd MMMM yyyy'}}</b>
+      </h5><br>
+    </div><!--col-sm-9-->
+    <div class="col-sm-3">
+      <h5 align="right">
+        <b>05-2014-FD27</b>
+      </h5>
+      <table class="table black-border">
+        <tr>
+          <td>OFFICIAL USE</td>
+        </tr>
+        <tr>
+          <td>Hull No.: <b>{{ila.submission.carrier.idNumber}}</b></td>
+        </tr>
+        <tr>
+          <td>Form No.: <b>????</b></td>
+        </tr>
+      </table>
+    </div><!--col-sm-9-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h5>
+        <b>
+          The Comptroller of Customs<br>
+          Port Authority Building<br>
+          The Harbour Road<br>
+          BRIDGETOWN
+          <br><br>
+          Dear Sir
+          <br><br>
+        </b>
+      </h5>
+      <p>
+          I, <b>{{ila.submission.applicant.name}}</b> owner of fishing vessel Reg. Number <b>{{ila.submission.carrier.idNumber}}</b> and Fisher Number <b>{{ila.submission.carrier.idNumber2}}</b> hereby request permission to import the following items free of duty as per Customs (Amendment) Regulation 2009, Customs Tariff (Amendment) (No. 9) Order 2009 Part II ‐ Section B, Item 37A and 37D; obtain same items Zero rated from VAT as per 3rd schedule of the VALUE ADDED TAX ACT item 3 with reference to the first schedule item 7 (1) VAT Regulation 1996, of the same ACT. Exemption from, Environmental Levy as per S. I. 1997 No. 120 Part 2 Section B, Item 3, and the Excise Tax Act CAP. 69.
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <hr>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h5 align="center">
+        <b><u>
+          REMARKS
+        </u></b>
+      </h5>
+
+      <p>
+        Importer (if not self): <span ng-if="ila.submission.importer.name !== ila.submission.applicant.name"><b>{{ila.submission.importer.name}}</b></span>
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-6">
+      <p>Invoice Number: <b>{{ila.submission.invoiceNumber}}</b></p>
+      <p>Air Waybill Number: <span ng-if="ila.submission.modeTransport == 'air'"><b>{{ila.submission.consignmentNote.number}}</b></span></p>
+      <p>Or Bill of Lading Number: <span ng-if="ila.submission.modeTransport == 'other'"><b>{{ila.submission.consignmentNote.number}}</b></span></p>
+    </div><!--col-sm-6-->
+    <div class="col-sm-6">
+      <p>Invoice Date: <b>{{ila.submission.invoiceDate | date:'dd MMMM yyyy'}}</b></p>
+      <p>Air Waybill Date: <span ng-if="ila.submission.modeTransport == 'air'"><b>{{ila.submission.consignmentNote.date | date:'dd MMMM yyyy'}}</b></span></p>
+      <p>Bill of Lading Date: <span ng-if="ila.submission.modeTransport == 'other'"><b>{{ila.submission.consignmentNote.date | date:'dd MMMM yyyy'}}</b></span></p>
+    </div><!--col-sm-6-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p>
+        Supplier Name: <b>{{ila.submission.supplier.name}}</b>
+      </p>
+      <p>
+        Supplier Address: <b>{{ila.submission.supplier.address}}, {{ila.submission.supplier.country}}</b>
+      </p>
+      <br>
+      <hr><br>
+      <p>
+        Item Description: <b>{{ila.submission.consignments}}</b>
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row bottom-border">
+    <div class="col-sm-6">
+      <p><b>
+        Item Name
+      </b></p>
+    </div><!--col-sm-6-->
+    <div class="col-sm-6">
+      <p><b>Item Number</b></p>
+    </div><!--col-sm-6-->
+  </div><!--row-->
+
+  <div class="row left-border bottom-border" ng-repeat="item in ila.submission.commodities">
+    <div class="col-sm-6 right-border">
+      <p><b>
+        {{item.description}}
+      </b></p>
+    </div><!--col-sm-6-->
+    <div class="col-sm-6 right-border">
+      <p><b>{{item.units[0].quantity}}</b></p>
+    </div><!--col-sm-6-->
+  </div><!--row-->
+
+<br>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p>
+        Total Customs Value: <b>Bds. ${{ila.submission.totalValue | number}}
+      </b></p>
+    </div><br><br>
+    <div class="col-sm-4">
+      <p>
+        <b>Yours Faithfully,</b>
+      </p>
+      <p>
+        <b><div class="bottom-border">{{ila.submission.submitter}}</div></b>
+      </p>
+    </div><!--col-sm-4-->
+  </div><!--row-->
+</div><!--col-sm-10 col-sm-offset-1-->
+</div><!--row-->
+</div><!--container-->

@@ -908,6 +908,14 @@
 		}
 	}])
 
+	.directive('editCommodities3', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: '/Forms/forms/views/partials/edit-commodities3.html'
+		}
+	}])
+
 	.directive('validateCommodities', [function(){
 		return{
 			restrict: 'A',

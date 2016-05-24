@@ -185,6 +185,10 @@ table.table td.commodity-subtable{
   border-right: 1px solid black;
 }
 
+.left-border {
+  border-left: 1px solid black;
+}
+
 .bottom-border {
   border-bottom: 1px solid black;
 }
