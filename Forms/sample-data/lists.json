@@ -617,6 +617,11 @@
 				"document":"Primary Inspection Report (Live Plants).pdf"
 			},
 			{
+				"id": 141,
+				"template": "pqu-primary-inspection-report-live-plants-issued.html",
+				"document":"Primary Inspection Report (Live Plants).pdf"
+			},
+			{
 				"id": 142,
 				"template": "vs-veterinary-export-health-certificate-equine.html",
 				"document":"Veterinary Export Health Certificate Equine.pdf"

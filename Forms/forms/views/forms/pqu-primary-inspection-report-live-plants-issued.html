@@ -1,0 +1,224 @@
+<div>
+  <div class="row">
+    <div class="col-sm-2">
+      (LOGO)
+    </div><!--col-sm-2-->
+    <div class="col-sm-8" align="center">
+      <h4><b>
+        MINISTRY OF AGRICULTURE, FOOD, FISHERIES,<br>
+        AND WATER RESOURCE MANAGEMENT
+      </b></h4>
+      <h6>
+        P.O. Box 505, GRAEME HALL, CHRIST CHURCH, BARBADOS, WEST INDIES
+      </h6>
+    </div><!--col-sm-8-->
+    <div class="col-sm-2" align="right">
+      (LOGO)
+    </div><!--col-sm-2-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-4">
+      <h6><b><i>
+        Our Ref: {{ila.submission.referenceNumber}}
+      </i></b></h6>
+    </div>
+    <div class="col-sm-6">
+      <h6><b><i>
+        Your Ref: {{ila.submission.referenceNumber}}
+      </i></b></h6>
+    </div>
+    <div class="col-sm-2" align="right">
+      <h6><b><i>
+        Tel: (246)426‐1222
+        <br><br>
+        Fax: (246)426‐6927
+      </i></b></h6>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12" align="center">
+      <h5><b>
+        Plant Quarantine Division, Crumpton Street, Bridgetown, St. Michael
+      </b></h5>
+      <h4><b>
+        PRIMARY INSPECTION REPORT (LIVE PLANTS)
+      </b></h4>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row"><!--1-->
+    <div class="col-sm-12">
+      <table class="table black-border">
+        <tr>
+          <td>
+            <div class="row">
+              <div class="col-sm-12">
+                <h5><b>
+                  1. PHYTOSANITARY INSPECTION (PORT OF ENTRY)
+                </b></h5>
+              </div>
+
+              <div class="col-sm-10">
+                <p>Name of P.Q. Inspector: <b>{{ila.submission.inspector}}</b></p>
+              </div>
+              <div class="col-sm-2" align="right">
+                <p>(PLEASE PRINT)</p>
+              </div>
+
+              <div class="col-sm-3">
+                <p>Place of Inspection:</p>
+              </div>
+              <div class="col-sm-3"><b>
+                <span ng-if="ila.submission.inspectionLocation == 'airport'">
+                  <p>[ X ] G.A. Int'l Airport</p>
+                </span>
+                <span ng-if="ila.submission.inspectionLocation != 'airport'">
+                  <p>[ &nbsp; ] G.A. Int'l Airport</p>
+                </span></b>
+              </div>
+              <div class="col-sm-6"><b>
+                <span ng-if="ila.submission.inspectionLocation == 'harbour'">
+                  <p>[ X ] Bridgetown Harbour</p>
+                </span>
+                <span ng-if="ila.submission.inspectionLocation != 'harbour'">
+                  <p>[ &nbsp; ] Bridgetown Harbour</p>
+                </span></b>
+              </div>
+              <div class="col-sm-9 col-sm-offset-3"><b>
+                <span ng-if="ila.submission.inspectionLocation == 'other'">
+                  <p>[ X ] Other: {{ila.submission.otherDetails}}</p>
+                </span>
+                <span ng-if="ila.submission.inspectionLocation != 'other'">
+                  <p>[ &nbsp; ] Other:</p>
+                </span></b>
+              </div>
+              <div class="col-sm-12">
+                <p>Date of inspection (DD/MM/YY): <b>{{ila.submission.inspectionDate | date: 'dd/MM/yy'}}</b></p>
+              </div>
+            </div><!--row-->
+          </td>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row"><!--2-->
+    <div class="col-sm-12">
+      <table class="table black-border">
+        <tr>
+          <td>
+            <div class="row">
+              <div class="col-sm-12">
+                <h5><b>
+                  2. CONSIGNEE INFORMATION
+                </b></h5>
+              </div>
+
+              <div class="col-sm-12">
+                <p>Name of Consignee: <b>{{ila.submission.consignee.name}}</b></p>
+                <p>Address: <b>{{ila.submission.consignee.address}}, {{ila.submission.consignee.country}}</b></p><br>
+              </div>
+            </div><!--row-->
+          </td>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row"><!--3-->
+    <div class="col-sm-12">
+      <table class="table black-border">
+        <tr>
+          <td>
+            <div class="row">
+              <div class="col-sm-12">
+                <h5><b>
+                  3. CONSIGNMENT INFORMATION
+                </b></h5>
+                <p>Country of Origin: <b>{{ila.submission.origin}}</b></p>
+                <p>Place of Inspection:<b>
+                  <span ng-if="ila.submission.inspectionLocation == 'harbour'">Bridgetown Harbour</span>
+                  <span ng-if="ila.submission.inspectionLocation == 'airport'">G.A. Int'l Airport</span>
+                  <span ng-if="ila.submission.inspectionLocation == 'other'">{{ila.submission.otherDetails}}</span>
+                </b></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <p>Phytosanitary Certificate #: <b>{{ila.submission.phytosanitaryCertificate}}</b></p>
+              </div>
+              <div class="col-sm-6">
+                <p>Date of Issue (DD/MM/YY): <b>{{ila.submission.dateInspection | date:'dd/MM/yy'}}</b></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <p>Import Permit #: <b>{{ila.submission.permitNumber}}</b></p>
+              </div>
+              <div class="col-sm-6">
+                <p>Expiry Date: (DD/MM/YY): <b>{{ila.submission.periodEnding | date:'dd/MM/yy'}}</b></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <p>Treatment Certificate #: <b>{{ila.submission.serialNumberCertificate}}</b></p>
+              </div>
+              <div class="col-sm-6">
+                <p>Date of Issue (DD/MM/YY): <b>{{ila.submission.issuedDate | date:'dd/MM/yy'}}</b></p>
+              </div>
+            </div><!--row-->
+          </td>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row"><!--4-->
+    <div class="col-sm-12">
+      <table class="table black-border">
+        <tr>
+          <td>
+            <div class="row">
+              <div class="col-sm-12">
+                <h5><b>
+                  4. INSPECTION DETAILS
+                </b></h5>
+              </div>
+
+              <div class="col-sm-12">
+                <table class="table black-border">
+                  <tr class="center-align">
+                    <td>Quantity <br>(NO. OF PLANTS)</td>
+                    <td>Commodity</td>
+                    <td>Weight</td>
+                    <td>Pcs. Inspected</td>
+                  </tr>
+                  <tr class="center-align" ng-repeat="plant in ila.submission.commodities">
+                    <td><b>{{plant.units[0].quantity}}</b></td>
+                    <td><b>{{plant.description}}</b></td>
+                    <td><b>{{plant.grossWeight}} {{plant.grossWeightUnits}}</b></td>
+                    <td><b>{{plant.units[0].numInspected}}</b></td>
+                </table>
+              </div><!--col-sm-12-->
+
+              <div class="col-sm-12">
+                <p>
+                  Remarks/ Recommendations:<br><br>
+                  <b>{{ila.submission.remarks}}</b>
+                  <br><br>
+                </p>
+                <div class="col-sm-2">
+                  Signature:
+                </div>
+                <div class="col-sm-4 bottom-border">
+                  <b>{{ila.submission.submitter}}</b>
+              </div>
+            </div><!--row-->
+          </td>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+</div><!--container-->
