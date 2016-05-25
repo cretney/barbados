@@ -95,6 +95,11 @@
                   "type": "integer",
                   "title": "Number with License",
                   "description": "Number of Firearms for Which Licenses Have Already Been Issued"
+                },
+                "numInspected": {
+                  "type": "integer",
+                  "title": "Number with License",
+                  "description": "Number of Firearms for Which Licenses Have Already Been Issued"
                 }
               }
             }
@@ -835,6 +840,11 @@
       "title": "Phytosanitarycertificate",
       "description": ""
     },
+    "permitNumber": {
+      "type": "string",
+      "title": "Import Permit Number",
+      "description": "Import Permit Number"
+    },
     "oldVehicleBrand": {
       "type": "string",
       "title": "Oldvehiclebrand",
@@ -991,6 +1001,11 @@
   "totalValue": {
     "type": "number",
     "title": "Total Customs Value Bds. $",
+    "description": ""
+  },
+  "remarks": {
+    "type": "string",
+    "title": "Remarks/Recommendations",
     "description": ""
   }
 }
