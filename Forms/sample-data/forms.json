@@ -5810,6 +5810,33 @@
     "serialNumberCertificate":"CN-68686",
     "issuedDate":"2016-05-01",
     "submitter": "Joe Blow",
+    "staff": [
+      {
+        "title":"in_office",
+        "male":0,
+        "female":0
+      },
+      {
+        "title":"scalers",
+        "male":0,
+        "female":0
+      },
+      {
+        "title":"boners",
+        "male":0,
+        "female":0
+      },
+      {
+        "title":"saw_operators",
+        "male":0,
+        "female":0
+      },
+      {
+        "title":"general_workers",
+        "male":0,
+        "female":0
+      }
+    ],
     "applicant": {
       "id":4,
       "name":"COLLINS LTD",
@@ -5825,7 +5852,6 @@
       "phone":"",
       "fax":"",
       "email":"",
-      "mailingAddress:":"",
       "directors:":"",
       "Contact Person:":{
         "name":"",

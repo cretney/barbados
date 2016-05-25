@@ -9,10 +9,10 @@
     "items": [
       {
         "type": "section",
-        "htmlClass": "col-sm-6",
+        "htmlClass": "col-sm-4",
         "items": [
           {
-            "key": "businessNature",
+            "key": "applicant.businessNature",
             "title":"Nature of Business",
             "type": "radios-inline",
             "titleMap": {
@@ -24,12 +24,73 @@
       },
       {
         "type": "section",
-        "htmlClass": "col-sm-6",
+        "htmlClass": "col-sm-offset-4 col-sm-4",
         "items": [
 				  {
 				  	"key":"applicant.country",
-				  	"title":"Country of Origin",
-				  	"readonly":true
+				  	"title":"Customs Registration no"
+				  }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+				  	"key":"applicant.registrationNo",
+				  	"title":"Company Registration No"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+				  {
+				  	"key":"applicant.companyNo",
+				  	"title":"Company No"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+				  	"key":"applicant.registrationNo",
+				  	"title":"Processing Plant Licensing No"
+				  }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-8",
+        "items": [
+				  {
+				  	"key":"applicant.companyNo",
+				  	"title":"Company Name"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+				  	"key":"applicant.registrationNo",
+				  	"title":"Brand Name"
 				  }
         ]
       }
@@ -37,12 +98,123 @@
   },
   {
     "key":"applicant.address",
-    "title":"Importer's Address",
-    "readonly":true
+    "title":"Mailing Address"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+				  	"key":"applicant.phone",
+				  	"title":"Company Tel"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+				  	"key":"applicant.fax",
+				  	"title":"Fax"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+				  {
+				  	"key":"applicant.email",
+				  	"title":"Email Address"
+				  }
+        ]
+      }
+    ]
+  },
+  {
+    "key":"applicant.address",
+    "title":"CEO / Directors:"
   },
   {
     "type":"help",
-    "helpvalue":"*2. The importation will be subject to the following conditions:"
+    "helpvalue":"<h5>CONTACT</h5>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "applicant.businessNature",
+            "title":"Contact Person"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"applicant.country",
+            "title":"Email Address"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "applicant.businessNature",
+            "title":"Home Phone"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "applicant.businessNature",
+            "title":"Work Phone"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "applicant.businessNature",
+            "title":"Celular Phone"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"applicant.country",
+            "title":"Fax"
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "section",
