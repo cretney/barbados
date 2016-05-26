@@ -1,0 +1,142 @@
+[
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "applicant.name",
+            "title": "NAME OF IMPORTER",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "permitNumber",
+            "title": "Permit #",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "origin",
+            "title": "Country of Origin",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "dateArrival",
+            "title": "Estimated Date of Arrival",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "vesselArrive",
+            "title": "Via Vessel/Carrier",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "transhipVia",
+            "title": "To tranship via",
+            "description": "(if applicable)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "supplier.name",
+            "title": "Overseas Agent/Broker",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-8",
+        "items": [
+          {
+            "key": "supplier.address",
+            "title": "Agent/Broker Address",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-0",
+        "items": [
+          {
+            "key": "supplier.country",
+            "title": "Agent/Broker Country",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "",
+            "title": "",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  }
+]

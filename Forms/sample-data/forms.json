@@ -4461,50 +4461,159 @@
     "commodities": [
       {
         "hsCode": "123",
-        "description": "test",
+        "description": "Slim Jim smoked snack sticks",
         "units": [
           {
-            "unitType": "Units",
-            "quantity": 3,
-            "pricePerUnit": 12.00,
-            "cifValue": 34,
-            "code":"14624",
-            "name":"TEGRETOL 200MG TAB",
-            "pack_size":"100'S",
-            "extendedCost": 14.00
+            "unitType": "kg",
+            "quantity": 250
           }
         ]
       },
       {
         "hsCode": "234",
-        "description": "test",
+        "description": "Hostess Twinkies",
         "units": [
           {
-            "unitType": "Units",
-            "quantity": 5,
-            "pricePerUnit": 20.00,
-            "cifValue": 36,
-            "code":"55311",
-            "name":"EXFORGE 5MG A/80MG V TAB",
-            "pack_size":"14'S",
-            "extendedCost": 24.00
+            "unitType": "kg",
+            "quantity": 1200
+          }
+        ]
+      },
+      {
+        "hsCode": "345",
+        "description": "Carnation powdered condensed milk",
+        "units": [
+          {
+            "unitType": "kg",
+            "quantity": 80
+          }
+        ]
+      },
+      {
+        "hsCode": "456",
+        "description": "ConAgra 'all-beef' patties (for McDonald's) - contains soy, tree nuts, and cedar wood chips",
+        "units": [
+          {
+            "unitType": "kg",
+            "quantity": 250
+          }
+        ]
+      },
+      {
+        "hsCode": "567",
+        "description": "Velveeta cheese spread product",
+        "units": [
+          {
+            "unitType": "kg",
+            "quantity": 40520
+          }
+        ]
+      },
+      {
+        "hsCode": "678",
+        "description": "Trump Steaks",
+        "units": [
+          {
+            "unitType": "kg",
+            "quantity": 1000000
           }
         ]
       }
     ],
     "referenceNumber":"RN-7657657",
-    "serialNumberCertificate":"CN-68686",
-    "contractNumber":"C-879789",
+    "permitNumber":"IM-37465",
     "approvalDate":"2016-04-30",
-    "issuedDate":"2016-05-01",
-    "invoiceDate":"2016-03-01",
-    "invoiceNumber":"IN-5646546",
-    "containerNumber":"CONT-3324",
+    "entryDate": "2016-02-15",
+    "dateArrival":"2016-03-01",
+    "vesselArrive": "S.S. Esses",
+    "origin": "United States",
+    "transhipVia":"Miami",
+    "approvedBy": "Joe Schmoe",
     "submitter": "Joe Blow",
     "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
+},
+{
+  "blockId": 19909301,
+  "workflowId": 99,
+  "formId": 93,
+  "title": "Application to Import Animal Products per shipment",
+  "status": "Issued",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "Slim Jim smoked snack sticks",
+        "units": [
+          {
+            "unitType": "kg",
+            "quantity": 250
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "Hostess Twinkies",
+        "units": [
+          {
+            "unitType": "kg",
+            "quantity": 1200
+          }
+        ]
+      },
+      {
+        "hsCode": "345",
+        "description": "Carnation powdered condensed milk",
+        "units": [
+          {
+            "unitType": "kg",
+            "quantity": 80
+          }
+        ]
+      },
+      {
+        "hsCode": "456",
+        "description": "ConAgra 'all-beef' patties (for McDonald's) - contains soy, tree nuts, and cedar wood chips",
+        "units": [
+          {
+            "unitType": "kg",
+            "quantity": 250
+          }
+        ]
+      },
+      {
+        "hsCode": "567",
+        "description": "Velveeta cheese spread product",
+        "units": [
+          {
+            "unitType": "kg",
+            "quantity": 40520
+          }
+        ]
+      },
+      {
+        "hsCode": "678",
+        "description": "Trump Steaks",
+        "units": [
+          {
+            "unitType": "kg",
+            "quantity": 1000000
+          }
+        ]
+      }
+    ],
+    "referenceNumber":"RN-7657657",
+    "permitNumber":"IM-37465",
+    "approvalDate":"2016-04-30",
+    "entryDate": "2016-02-15",
+    "dateArrival":"2016-03-01",
+    "vesselArrive": "S.S. Esses",
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "expectedArrival": "2015-09-21T04:00:00.000Z",
+    "transhipVia":"Miami",
+    "submitter": "Joe Blow",
+    "approvedBy": "Joe Schmoe",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
 },

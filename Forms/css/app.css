@@ -349,4 +349,9 @@ table.table td.commodity-subtable{
 	margin-top: 0;
 }
 
+.approve-right-align {
+	display: inline-block;
+	float: right;
+}
+
 /* End */
