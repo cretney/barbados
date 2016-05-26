@@ -1,0 +1,109 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Generated from b with shasum a074bf732f932832b2a55079feced624a7f82d8b",
+  "type": "object",
+  "required": [
+    "blockId",
+    "workflowId",
+    "formId",
+    "title",
+    "status",
+    "submission"
+  ],
+  "properties": {
+    "blockId": {
+      "type": "integer"
+    },
+    "workflowId": {
+      "type": "integer"
+    },
+    "formId": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "submission": {
+      "type": "object",
+      "required": [
+        "portDischarge",
+        "dateArrival",
+        "resultInspection",
+        "landingCertificateNumber",
+        "inspectionLocation",
+        "inspectionDescription",
+        "quarentineTreatment",
+        "quarentineTreatmentTime",
+        "serialNumberCertificate",
+        "issuedDate",
+        "submitter",
+        "applicant"
+      ],
+      "properties": {
+        "portDischarge": {
+          "type": "string"
+        },
+        "dateArrival": {
+          "type": "string"
+        },
+        "resultInspection": {
+          "type": "string"
+        },
+        "landingCertificateNumber": {
+          "type": "string"
+        },
+        "inspectionLocation": {
+          "type": "string"
+        },
+        "inspectionDescription": {
+          "type": "string"
+        },
+        "quarentineTreatment": {
+          "type": "string"
+        },
+        "quarentineTreatmentTime": {
+          "type": "integer"
+        },
+        "serialNumberCertificate": {
+          "type": "string"
+        },
+        "issuedDate": {
+          "type": "string"
+        },
+        "submitter": {
+          "type": "string"
+        },
+        "applicant": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

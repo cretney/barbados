@@ -5812,27 +5812,27 @@
     "submitter": "Joe Blow",
     "staff": [
       {
-        "title":"in_office",
+        "title":"In Office",
         "male":0,
         "female":0
       },
       {
-        "title":"scalers",
+        "title":"Scalers",
         "male":0,
         "female":0
       },
       {
-        "title":"boners",
+        "title":"Boners",
         "male":0,
         "female":0
       },
       {
-        "title":"saw_operators",
+        "title":"Saw Operators",
         "male":0,
         "female":0
       },
       {
-        "title":"general_workers",
+        "title":"General Workers",
         "male":0,
         "female":0
       }
@@ -5845,24 +5845,367 @@
       "address":"1234 Bay Street, St. Michael",
       "businessNature":"processor",
       "customsRegistrationNo":"",
-      "registrationNo":"",
-      "companyNo":"",
-      "processingPlantLicensingNo":"",
-      "brandName:":"",
-      "phone":"",
-      "fax":"",
-      "email":"",
-      "directors:":"",
-      "Contact Person:":{
-        "name":"",
-        "address:":"",
-        "home_phone":"",
-        "work_phone":"",
-        "mobile_phone":"",
-        "fax":"",
-        "email":""
+      "registrationNo":"RN-765765",
+      "companyNo":"CN-5353543",
+      "processingPlantLicensingNo":"PPL-435367",
+      "brandName:":"SuperBrand",
+      "phone":"555-5555",
+      "fax":"666-6666",
+      "email":"email@example.com",
+      "directors:":"Michael Sandler",
+      "contact:":{
+        "name":"Mary Lyndon",
+        "address:":"768 Main St",
+        "home_phone":"777-5555",
+        "work_phone":"888-5555",
+        "mobile_phone":"999-5555",
+        "fax":"222-5555",
+        "email":"mary@example.com"
       }
     },
+    "fishSource":[
+      {
+        "boatRegistrationNo":"",
+      	"boatType":"",
+      	"landingSites":"",
+        "locally": {"total":0},
+        "imported": {"total":0}
+      }
+    ],
+    "fishPurchasedLocally":[
+      {
+          "species":"SWORDFISH",
+          "lbs":0,
+          "tons":0
+      },
+      {
+          "species":"KINGFISH",
+          "lbs":0,
+          "tons":0
+      },
+      {
+          "species":"BILLFISH",
+          "lbs":0,
+          "tons":0
+      },
+      {
+          "species":"TUNA",
+          "lbs":0,
+          "tons":0
+      },
+      {
+          "species":"SHARK",
+          "lbs":0,
+          "tons":0
+      },
+      {
+          "species":"DOLPHIN",
+          "lbs":0,
+          "tons":0
+      },
+      {
+          "species":"FLYING FISH",
+          "lbs":0,
+          "tons":0
+      }
+    ],
+    "fishPurchasedImported":[
+      {
+          "species":"SWORDFISH",
+          "lbs":0,
+          "tons":0
+      },
+      {
+          "species":"KINGFISH",
+          "lbs":0,
+          "tons":0
+      },
+      {
+          "species":"BILLFISH",
+          "lbs":0,
+          "tons":0
+      },
+      {
+          "species":"TUNA",
+          "lbs":0,
+          "tons":0
+      },
+      {
+          "species":"SHARK",
+          "lbs":0,
+          "tons":0
+      },
+      {
+          "species":"DOLPHIN",
+          "lbs":0,
+          "tons":0
+      },
+      {
+          "species":"FLYING FISH",
+          "lbs":0,
+          "tons":0
+      },
+      {
+          "species":"SHELL FISH",
+          "lbs":0,
+          "tons":0
+      }
+    ],
+    "fishSold": {
+      "locally": {
+        "total":0,
+        "superMarkets":0,
+        "miniMarts":0,
+        "hotels":0,
+        "restaurants":0,
+        "vendors":0,
+        "hawkers":0,
+        "generalPublic":0,
+        "publicInstitutions":0,
+        "hospitals":0,
+        "schools":0,
+        "other":0
+      },
+      "exported": {
+        "total":0,
+        "inRegion":0,
+        "outRegion":0
+      },
+      "spoilage": {
+        "total":0
+      }
+    },
+    "equipment": {
+      "capacityChiller":0,
+      "coldStorage":0,
+      "freezerType":{"blast":false, "contact":false, "capacityUnitFreeze":false},
+      "coldStore": {"owned":false, "rented":false},
+      "otherEquipment":{"filletingMachine":false, "fishWasher":false, "pattyFormer":false, "iceMachine":false, "other":false},
+      "methodFishTransport":{"van":false, "refrigerateTruck":false, "flatBadTruck":false, "other":false}
+    },
+    "methodDisposal":"",
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
+},
+{
+  "blockId": 19913901,
+  "workflowId": 99,
+  "formId": 139,
+  "title": "Application for Registration of a Processor",
+  "status": "Issued",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 5
+          }
+        ]
+      }
+    ],
+    "referenceNumber":"RN-7657657",
+    "serialNumberCertificate":"CN-68686",
+    "issuedDate":"2016-05-01",
+    "submitter": "Joe Blow",
+    "staff": [
+      {
+        "title":"In Office",
+        "male":10,
+        "female":11
+      },
+      {
+        "title":"Scalers",
+        "male":4,
+        "female":1
+      },
+      {
+        "title":"Boners",
+        "male":5,
+        "female":2
+      },
+      {
+        "title":"Saw Operators",
+        "male":8,
+        "female":0
+      },
+      {
+        "title":"General Workers",
+        "male":3,
+        "female":2
+      },
+      {
+        "title":"Other Staff 1",
+        "male":11,
+        "female":12
+      }
+    ],
+    "applicant": {
+      "id":4,
+      "name":"COLLINS LTD",
+      "countryId":"BB",
+      "country":"Barbados",
+      "address":"1234 Bay Street, St. Michael",
+      "businessNature":"processor",
+      "customsRegistrationNo":"CRN-652983",
+      "registrationNo":"RN-765765",
+      "companyNo":"CN-5353543",
+      "processingPlantLicensingNo":"PPL-435367",
+      "brandName":"SuperBrand",
+      "phone":"555-5555",
+      "fax":"666-6666",
+      "email":"email@example.com",
+      "directors":"Michael Sandler",
+      "contact":{
+        "name":"Mary Lyndon",
+        "address":"768 Main St",
+        "home_phone":"777-5555",
+        "work_phone":"888-5555",
+        "mobile_phone":"999-5555",
+        "fax":"222-5555",
+        "email":"mary@example.com"
+      }
+    },
+    "fishSource":[
+      {
+        "boatRegistrationNo":"BR-876876",
+      	"boatType":"Yatch",
+      	"landingSites":"LS1"
+      },
+      {
+        "boatRegistrationNo":"BR-456790",
+      	"boatType":"Small boat",
+      	"landingSites":"LS2"
+      }
+    ],
+    "fish":{
+      "locally":40,
+      "imported":50
+    },
+    "fishPurchasedLocally":[
+      {
+          "species":"SWORDFISH",
+          "lbs":10,
+          "tons":20
+      },
+      {
+          "species":"KINGFISH",
+          "lbs":30,
+          "tons":40
+      },
+      {
+          "species":"BILLFISH",
+          "lbs":50,
+          "tons":60
+      },
+      {
+          "species":"TUNA",
+          "lbs":70,
+          "tons":80
+      },
+      {
+          "species":"SHARK",
+          "lbs":90,
+          "tons":100
+      },
+      {
+          "species":"DOLPHIN",
+          "lbs":110,
+          "tons":120
+      },
+      {
+          "species":"FLYING FISH",
+          "lbs":130,
+          "tons":140
+      }
+    ],
+    "fishPurchasedImported":[
+      {
+          "species":"SWORDFISH",
+          "lbs":10,
+          "tons":20
+      },
+      {
+          "species":"KINGFISH",
+          "lbs":30,
+          "tons":40
+      },
+      {
+          "species":"BILLFISH",
+          "lbs":50,
+          "tons":60
+      },
+      {
+          "species":"TUNA",
+          "lbs":70,
+          "tons":80
+      },
+      {
+          "species":"SHARK",
+          "lbs":90,
+          "tons":100
+      },
+      {
+          "species":"DOLPHIN",
+          "lbs":110,
+          "tons":120
+      },
+      {
+          "species":"FLYING FISH",
+          "lbs":130,
+          "tons":140
+      },
+      {
+          "species":"SHELL FISH",
+          "lbs":150,
+          "tons":160
+      }
+    ],
+    "fishSold": {
+      "locally": {
+        "total":10,
+        "superMarkets":1,
+        "miniMarts":2,
+        "hotels":3,
+        "restaurants":4,
+        "vendors":5,
+        "hawkers":6,
+        "generalPublic":7,
+        "publicInstitutions":8,
+        "hospitals":9,
+        "schools":10,
+        "other":18
+      },
+      "exported": {
+        "total":20,
+        "inRegion":50,
+        "outRegion":40
+      },
+      "spoilage": {
+        "total":30
+      }
+    },
+    "equipment": {
+      "capacityChiller":1000,
+      "coldStorage":2000,
+      "freezerType":{"blast":true, "contact":false, "capacityUnitFreeze":true},
+      "coldStore": {"owned":true, "rented":false},
+      "otherEquipment":{"filletingMachine":true, "fishWasher":false, "pattyFormer":false, "iceMachine":false, "other":true},
+      "methodFishTransport":{"van":true, "refrigerateTruck":false, "flatBadTruck":false, "other":true}
+    },
+    "methodDisposal":"",
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
 },

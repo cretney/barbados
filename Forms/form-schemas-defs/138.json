@@ -63,7 +63,7 @@
         "htmlClass": "col-sm-4",
         "items": [
           {
-				  	"key":"applicant.registrationNo",
+				  	"key":"applicant.processingPlantLicensingNo",
 				  	"title":"Processing Plant Licensing No"
 				  }
         ]
@@ -79,7 +79,7 @@
         "htmlClass": "col-sm-8",
         "items": [
 				  {
-				  	"key":"applicant.companyNo",
+				  	"key":"applicant.name",
 				  	"title":"Company Name"
 				  }
         ]
@@ -89,7 +89,7 @@
         "htmlClass": "col-sm-4",
         "items": [
           {
-				  	"key":"applicant.registrationNo",
+				  	"key":"applicant.brandName",
 				  	"title":"Brand Name"
 				  }
         ]
@@ -153,7 +153,7 @@
         "htmlClass": "col-sm-6",
         "items": [
           {
-            "key": "applicant.businessNature",
+            "key": "contact.name",
             "title":"Contact Person"
           }
         ]
@@ -163,7 +163,7 @@
         "htmlClass": "col-sm-6",
         "items": [
           {
-            "key":"applicant.country",
+            "key":"contact.email",
             "title":"Email Address"
           }
         ]
@@ -179,7 +179,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key": "applicant.businessNature",
+            "key": "contact.home_phone",
             "title":"Home Phone"
           }
         ]
@@ -189,7 +189,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key": "applicant.businessNature",
+            "key": "contact.work_phone",
             "title":"Work Phone"
           }
         ]
@@ -199,8 +199,8 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key": "applicant.businessNature",
-            "title":"Celular Phone"
+            "key": "contact.mobile_phone",
+            "title":"Mobile Phone"
           }
         ]
       },
@@ -209,32 +209,586 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key":"applicant.country",
+            "key":"contact.fax",
             "title":"Fax"
           }
         ]
       }
     ]
   },
-
   {
-    "key": "Staff",
-    "add": "New",
+    "type":"help",
+    "helpvalue":"<br><h4>STAFF DETAILS</h4>"
+  },
+  {
+    "key": "staff",
+    "add": "Add Staff",
+    "title":"",
     "style": {
       "add": "btn-success"
     },
     "items": [
       {
-        "key": "staff[].title",
-        "title": "Staff"
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-7",
+            "items": [
+              {
+                "key": "staff[].title",
+                "title": "Staff"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key": "staff[].male",
+                "title": "Male"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key": "staff[].female",
+                "title": "Female"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "type":"help",
+            "helpvalue":"<br><h4>SOURCE OF FISH</h4>"
+          },
+          {
+            "key": "fishSource",
+            "add": "Add Fish Source",
+            "title":"",
+            "style": {
+              "add": "btn-success"
+            },
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "row",
+                "items": [
+                  {
+                    "type": "section",
+                    "htmlClass": "col-sm-5",
+                    "items": [
+                      {
+                        "key": "fishSource[].boatRegistrationNo",
+                        "title": "Boat's Reg. No."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "section",
+                    "htmlClass": "col-sm-3",
+                    "items": [
+                      {
+                        "key": "fishSource[].boatType",
+                        "title": "Boat Type"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "section",
+                    "htmlClass": "col-sm-3",
+                    "items": [
+                      {
+                        "key": "fishSource[].landingSites",
+                        "title": "Landing Sites"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type":"help",
+            "helpvalue":"<br><h4>BREAK DOWN OF FISH SOURCE</h4>"
+          },
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key":"fish.locally",
+                    "title":"Locally %"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key":"fish.imported",
+                    "title":"Imported %"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type":"help",
+            "helpvalue":"<br><h4>AMOUNT OF FISH PURCHASED LOCALLY</h4>"
+          },
+          {
+            "key": "fishPurchasedLocally",
+            "add": "Add Local Fish",
+            "title":"",
+            "style": {
+              "add": "btn-success"
+            },
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "row",
+                "items": [
+                  {
+                    "type": "section",
+                    "htmlClass": "col-sm-5",
+                    "items": [
+                      {
+                        "key": "fishPurchasedLocally[].species",
+                        "title": "Species"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "section",
+                    "htmlClass": "col-sm-3",
+                    "items": [
+                      {
+                        "key": "fishPurchasedLocally[].lbs",
+                        "title": "Lbs"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "section",
+                    "htmlClass": "col-sm-3",
+                    "items": [
+                      {
+                        "key": "fishPurchasedLocally[].tons",
+                        "title": "Tons"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type":"help",
+            "helpvalue":"<br><h4>AMOUNT OF FISH PURCHASED IMPORTED</h4>"
+          },
+          {
+            "key": "fishPurchasedImported",
+            "add": "Add Imported Fish",
+            "title":"",
+            "style": {
+              "add": "btn-success"
+            },
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "row",
+                "items": [
+                  {
+                    "type": "section",
+                    "htmlClass": "col-sm-5",
+                    "items": [
+                      {
+                        "key": "fishPurchasedImported[].species",
+                        "title": "Species"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "section",
+                    "htmlClass": "col-sm-3",
+                    "items": [
+                      {
+                        "key": "fishPurchasedImported[].lbs",
+                        "title": "Lbs"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "section",
+                    "htmlClass": "col-sm-3",
+                    "items": [
+                      {
+                        "key": "fishPurchasedImported[].tons",
+                        "title": "Tons"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       },
       {
-        "key": "staff[].male",
-        "title": "Male"
-      },
-      {
-        "key": "staff[].female",
-        "title": "Female"
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "type":"help",
+            "helpvalue":"<br><h4>FISH SOLD</h4>"
+          },
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key":"fishSold.locally.total",
+                    "title":"Sold Locally %"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key":"fishSold.exported.total",
+                    "title":"Sold Exported %"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key":"fishSold.spoilage.total",
+                    "title":"Sold Spoilage %"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type":"help",
+            "helpvalue":"<br><h4>BREAK DOWN OF FISH SOLD LOCALLY</h4>"
+          },
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key":"fishSold.locally.superMarkets",
+                    "title":"Super Markets %"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key":"fishSold.locally.miniMarts",
+                    "title":"Mini Marts %"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key":"fishSold.locally.hotels",
+                    "title":"Hotels %"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key":"fishSold.locally.restaurants",
+                    "title":"Restaurants %"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key":"fishSold.locally.vendors",
+                    "title":"Vendors %"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key":"fishSold.locally.hawkers",
+                    "title":"Hawkers %"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key":"fishSold.locally.generalPublic",
+                    "title":"General Public %"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key":"fishSold.locally.publicInstitutions",
+                    "title":"Public Institutions %"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key":"fishSold.locally.hospitals",
+                    "title":"Hospitals %"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key":"fishSold.locally.schools",
+                    "title":"Schools %"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key":"fishSold.locally.other",
+                    "title":"Other %"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type":"help",
+            "helpvalue":"<br><h4>BREAK DOWN OF FISH EXPORTED</h4>"
+          },
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key":"fishSold.exported.inRegion",
+                    "title":"In Region %"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key":"fishSold.exported.outRegion",
+                    "title":"Out of Region %"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type":"help",
+            "helpvalue":"<hr><br><h4>COMPANY EQUIPMENT</h4>"
+          },
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-sm-offset-3 col-sm-6",
+                "items": [
+                  {
+                    "type":"help",
+                    "helpvalue":"<h5>Freezer Type:</h5>"
+                  },
+                  {
+                    "key":"equipment.freezerType.blast",
+                    "title":"Blast"
+                  },
+                  {
+                    "key":"equipment.freezerType.contact",
+                    "title":"Contact"
+                  },
+                  {
+                    "key":"equipment.freezerType.capacityUnitFreeze",
+                    "title":"Capacity per Unit Freeze"
+                  },
+                  {
+                    "type":"help",
+                    "helpvalue":"<br><h5>Cold Store:</h5>"
+                  },
+                  {
+                    "key":"equipment.coldStore.owned",
+                    "title":"Owned"
+                  },
+                  {
+                    "key":"equipment.coldStore.rented",
+                    "title":"Rented"
+                  },
+                  {
+                    "type":"help",
+                    "helpvalue":"<br>"
+                  },
+                  {
+                    "type": "section",
+                    "htmlClass": "row",
+                    "items": [
+                      {
+                        "type": "section",
+                        "htmlClass": "col-sm-8",
+                        "items": [
+                          {
+                            "key":"equipment.capacityChiller",
+                            "title":"Capacity of Chiller"
+                          },
+                          {
+                            "key":"equipment.coldStorage",
+                            "title":"Cold Storage"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type":"help",
+                    "helpvalue":"<h5>Other Specialising Equipment:</h5>"
+                  },
+                  {
+                    "key":"equipment.otherEquipment.filletingMachine",
+                    "title":"Filleting Machine"
+                  },
+                  {
+                    "key":"equipment.otherEquipment.fishWasher",
+                    "title":"Fish Washer"
+                  },
+                  {
+                    "key":"equipment.otherEquipment.pattyFormer",
+                    "title":"Patty Former"
+                  },
+                  {
+                    "key":"equipment.otherEquipment.iceMachine",
+                    "title":"Ice Machine"
+                  },
+                  {
+                    "key":"equipment.otherEquipment.other",
+                    "title":"Other"
+                  },
+                  {
+                    "type":"help",
+                    "helpvalue":"<br><h5>Method of Fish Transport:</h5>"
+                  },
+                  {
+                    "key":"equipment.methodFishTransport.van",
+                    "title":"Van"
+                  },
+                  {
+                    "key":"equipment.methodFishTransport.refrigerateTruck",
+                    "title":"Refrigerate Truck/Van"
+                  },
+                  {
+                    "key":"equipment.methodFishTransport.flatBadTruck",
+                    "title":"Flat-bad Truck"
+                  },
+                  {
+                    "key":"equipment.methodFishTransport.other",
+                    "title":"Other"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type":"help",
+            "helpvalue":"<hr><br><h5>FISH DISPOSAL</h5>"
+          },
+          {
+            "key":"methodDisposal",
+            "title":"Method of Offal Disposal"
+          }
+        ]
       }
     ]
   },

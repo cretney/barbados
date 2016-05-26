@@ -1,0 +1,171 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Generated from b with shasum 4bb638a8e55d68c2aa096d94a4bc17e82df056ac",
+  "type": "object",
+  "required": [
+    "blockId",
+    "workflowId",
+    "formId",
+    "title",
+    "description",
+    "status",
+    "submission"
+  ],
+  "properties": {
+    "blockId": {
+      "type": "integer"
+    },
+    "workflowId": {
+      "type": "integer"
+    },
+    "formId": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "submission": {
+      "type": "object",
+      "required": [
+        "commodities",
+        "submitter",
+        "applicant",
+        "supplier",
+        "origin",
+        "countryConsigned"
+      ],
+      "properties": {
+        "commodities": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+              "hsCode",
+              "description",
+              "units"
+            ],
+            "properties": {
+              "hsCode": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "units": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "unitType"
+                  ],
+                  "properties": {
+                    "unitType": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "submitter": {
+          "type": "string"
+        },
+        "applicant": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address",
+            "docid",
+            "fax",
+            "email"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "docid": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            }
+          }
+        },
+        "supplier": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address",
+            "docid",
+            "fax",
+            "email"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "docid": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            }
+          }
+        },
+        "origin": {
+          "type": "string"
+        },
+        "countryConsigned": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
