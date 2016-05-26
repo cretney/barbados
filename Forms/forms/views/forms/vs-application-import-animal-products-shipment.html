@@ -1,21 +1,4 @@
 <div>
-  <div class="row">
-    <div class="col-sm-1">
-      <h5>
-        <b>To:</b>
-      </h5>
-    </div>
-    <div class="col-sm-11">
-      <h5>
-        <b>
-          Chief Veterinary Officer<br>
-          Veterinary Services<br>
-          Ministry of Agriculture<br>
-          The Pine, St. Michael
-        </b>
-      </h5>
-    </div>
-  </div><!--row-->
 
   <div class="row">
     <div class="col-sm-12">
@@ -33,107 +16,17 @@
 
   <div class="row">
     <div class="col-sm-12">
-      <table class="table">
-        <tr>
-          <th class="right-border no-top">
-            NAME OF IMPORTER:
-          </th>
-          <th class="no-top"></th>
-        </tr>
-        <tr>
-          <th class="right-border with-top">
-            Permit #:
-          </th>
-          <th class="with-top">
-            Date Submitted:
-          </th>
-        </tr>
-        <tr>
-          <th class="with-top right-border">
-            Country of Origin:
-          </th>
-          <th class="with-top">
-            Estimated Date of Arrival:
-          </th>
-        </tr>
-        <tr>
-          <th class="with-top right-border">
-            Via Vessel/Carrier:
-          </th>
-          <th class="with-top">
-            To transship via (if applicable):
-          </th>
-        </tr>
-        <tr>
-          <th class="with-top right-border">
-            Overseas Agent/Broker :
-          </th>
-          <th class="with-top"></th>
-        </tr>
-        <tr>
-          <th class="with-top right-border">
-            Address:
-          </th>
-          <th class="with-top"></th>
-        </tr>
-        <tr>
-          <th class="with-top right-border"></th>
-          <th class="with-top"></th>
-        </tr>
-        <tr>
-          <th class="with-top right-border bottom-border"></th>
-          <th class="with-top bottom-border"></th>
-        </tr>
-      </table>
-    </div><!--col-sm-12-->
-  </div><!--row-->
+      <div sf-schema="schema" sf-form="formdef" sf-model="form.data"></div>
+    </div>
+  </div>
+
+  <hr>
 
   <div class="row">
     <div class="col-sm-12">
-      <table class="table">
-        <tr>
-          <th class="no-top right-border">
-            <u>Description of Product (s) (include Brand Name for processed foods)</u>
-          </th>
-          <th class="no-top">
-            <u>Quantity (kg)</u>
-          </th>
-        </tr>
-        <tr>
-          <th class="with-top right-border"></th>
-          <th class="with-top"></th>
-        </tr>
-        <tr>
-          <th class="with-top right-border"></th>
-          <th class="with-top"></th>
-        </tr>
-        <tr>
-          <th class="with-top right-border"></th>
-          <th class="with-top"></th>
-        </tr>
-        <tr>
-          <th class="with-top right-border"></th>
-          <th class="with-top"></th>
-        </tr>
-        <tr>
-          <th class="with-top right-border"></th>
-          <th class="with-top"></th>
-        </tr>
-        <tr>
-          <th class="with-top right-border"></th>
-          <th class="with-top"></th>
-        </tr>
-        <tr>
-          <th class="with-top right-border"></th>
-          <th class="with-top"></th>
-        </tr>
-        <tr>
-          <th class="with-top right-border bottom-border"></th>
-          <th class="with-top bottom-border"></th>
-        </tr>
-      </table>
-    </div><!--col-sm-12-->
-  </div><!--row-->
+      <div edit-commodities-no-price=""></div>
+    </div>
+  </div>
 
   <div class="row">
     <div class="col-sm-1">
@@ -165,197 +58,13 @@
         </b>
       </h6>
     </div><!--col-sm-11-->
-  </div><!--row-->
-
-  <div class="row">
-    <div class="col-sm-7 col-sm-offset-5">
-      <table class="table black-border">
-        <tr>
-          <th>Signature of Applicant:</th>
-        </tr>
-      </table>
-    </div><!--col-sm-7 col-sm-offset-5-->
-  </div><!--row-->
-
-  <div class="row">
-    <div class="col-sm-5">
-      <h6>
-        <u>
-          <br><br><br><br><br><br><br><br><br><br><br><br>
-          A09: VSO13 (Revised 2010/01/14)
-        </u>
-      </h6>
-    </div><!--col-sm-5-->
-    <div class="col-sm-7">
-      <table class="table black-border">
-        <tr>
-          <th>
-            <h5 align="center">
-              <b>
-                <u>For Office Use Only</u>
-              </b>
-            </h5>
-            Application #:
-          </th>
-        </tr>
-        <tr>
-          <th>Date Application Approved:</th>
-        </tr>
-        <tr>
-          <th>Application approved By:</th>
-        </tr>
-        <tr>
-          <th class="right-align">
-            Senior Veterinary Officer
-          </th>
-        </tr>
-      </table>
-    </div><!--col-sm-7-->
   </div><!--row-->
 
   <!--Next Page-->
 
-  <div class="row">
-    <div class="col-sm-12">
-      <h5 align="center">
-        <b><u>
-          Application to Import Meat / Meat Products, Poultry / Poultry Products, Dairy Products and/or Other Products of Animal/Poultry Origin into Barbados DIRECT from Country of Origin (Under the terms of permit granted under Animals (Diseases and Importation) Act. Cap 253)
-        </u></b>
-      </h5>
-      <h5>
-        <b>
-          ***Continuation Sheet***
-        </b>
-      </h5>
-    </div><!--col-sm-12-->
-  </div><!--row-->
+  <div class="modal-footer">
+      <button type="button" class="btn btn-warning" ng-click="form.cancel()">Cancel</button>
+      <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
 
-  <div class="row">
-    <div class="col-sm-12">
-      <table class="table">
-        <tr>
-          <th class="no-top right-border">
-            <u>Description of Product (s) (include Brand Name for processed foods)</u>
-          </th>
-          <th class="no-top">
-            <u>Quantity (kg)</u>
-          </th>
-        </tr>
-        <tr>
-          <td class="with-top right-border"></td>
-          <td class="with-top"></td>
-        </tr>
-        <tr>
-          <td class="with-top right-border"></td>
-          <td class="with-top"></td>
-        </tr>
-        <tr>
-          <td class="with-top right-border"></td>
-          <td class="with-top"></td>
-        </tr>
-        <tr>
-          <td class="with-top right-border"></td>
-          <td class="with-top"></td>
-        </tr>
-        <tr>
-          <td class="with-top right-border"></td>
-          <td class="with-top"></td>
-        </tr>
-        <tr>
-          <td class="with-top right-border"></td>
-          <td class="with-top"></td>
-        </tr>
-        <tr>
-          <td class="with-top right-border"></td>
-          <td class="with-top"></td>
-        </tr>
-        <tr>
-          <td class="with-top right-border"></td>
-          <td class="with-top"></td>
-        </tr>
-        <tr>
-          <td class="with-top right-border"></td>
-          <td class="with-top"></td>
-        </tr>
-        <tr>
-          <td class="with-top right-border"></td>
-          <td class="with-top"></td>
-        </tr>
-        <tr>
-          <td class="with-top right-border"></td>
-          <td class="with-top"></td>
-        </tr>
-        <tr>
-          <td class="with-top right-border"></td>
-          <td class="with-top"></td>
-        </tr>
-        <tr>
-          <td class="with-top right-border"></td>
-          <td class="with-top"></td>
-        </tr>
-        <tr>
-          <td class="with-top right-border bottom-border"></td>
-          <td class="with-top bottom-border"></td>
-        </tr>
-      </table>
-    </div><!--col-sm-12-->
-  </div><!--row-->
-
-  <div class="row">
-    <div class="col-sm-1">
-      <h6 align="right">
-        <b>
-          1.<br>
-          2.<br>
-          3.<br>
-          4.<br>
-          5.<br><br><br>
-          6.
-        </b>
-      </h6>
-    </div><!--col-sm-1-->
-    <div class="col-sm-11">
-      <h6>
-        <b>
-          This application is to be filled out per shipment. in duplicate
-          <br>
-          Request for Transshipments through ANY port MUST be stated in the application.
-          <br>
-          Transshipments MUST FIRST be approved prior to placing order.
-          <br>
-          Additional Items in this shipment must be submitted on an attached sheet
-          <br>
-          The ENDORSED ORIGINAL application along with ORIGINAL Veterinary Sanitary Health Certificate issued by the Veterinary Authority of the country of ORIGIN must accompany the shipment or must arrive prior to the consignment and are to be presented to the Agricultural Quarantine Inspector at Point of Entry prior to inspection of the shipment.
-          <br>
-          The approval of this application MAY BE WITHDRAWN at any time if circumstances arise which warrant such action. Notice of any such action will be given in writing.
-        </b>
-      </h6>
-    </div><!--col-sm-11-->
-  </div><!--row-->
-
-  <div class="row">
-    <div class="col-sm-7 col-sm-offset-5">
-      <table class="table black-border">
-        <tr>
-          <th>Signature of Applicant:</th>
-        </tr>
-      </table>
-    </div><!--col-sm-12-->
-  </div><!--row-->
-
-  <div class="row">
-    <div class="col-sm-12">
-      <p>
-        <b>
-          Page ___ of ___ of Application # _____
-        </b>
-      </p>
-      <br><br>
-      <h6>
-        <b>
-          A09: VSO13/B (modified 2014/12/23)
-        </b>
-      </h6>
-    </div><!--col-sm-12-->
-  </div><!--row-->
 </div><!--container-->
