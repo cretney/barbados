@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Generated from b with shasum 7ad717cf7f67882c036bbf57b4c05f21c8ecee08",
+  "type": "object",
+  "required": [
+    "blockId",
+    "workflowId",
+    "formId",
+    "title",
+    "status",
+    "submission"
+  ],
+  "properties": {
+    "blockId": {
+      "type": "integer"
+    },
+    "workflowId": {
+      "type": "integer"
+    },
+    "formId": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "submission": {
+      "type": "object",
+      "required": [
+        "agencyApprovals",
+        "consignee",
+        "approvalDate",
+        "approvedBy"
+      ],
+      "properties": {
+        "agencyApprovals": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+              "name"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "approved": {
+                "type": "boolean"
+              }
+            }
+          }
+        },
+        "consignee": {
+          "type": "string"
+        },
+        "approvalDate": {
+          "type": "string"
+        },
+        "approvedBy": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -40,71 +40,75 @@
           <th>COMPANY INFORMATION</th>
         </tr>
         <tr>
-          <th>
+          <td>
             <div class="row">
               <div class="col-sm-6">
                 Nature of Business:
-                [ ]-Processor
-                [ ]-Trader
+                <span ng-if="ila.submission.applicant.businessNature=='processor'">[<b>x</b>]</span>
+                <span ng-if="ila.submission.applicant.businessNature!='processor'">[  ]</span>
+                -Processor
+                <span ng-if="ila.submission.applicant.businessNature=='trader'">[<b>x</b>]</span>
+                <span ng-if="ila.submission.applicant.businessNature!='trader'">[  ]</span>
+                -Trader
               </div><!--col-sm-6-->
               <div class="col-sm-6">
-                Customs Registration no.:<br><br>
+                Customs Registration no.: <b>{{ila.submission.applicant.customsRegistrationNo}}</b><br><br>
               </div><!--col-sm-6-->
 
               <div class="col-sm-8">
-                Company Registration No.:
+                Company Registration No.: <b>{{ila.submission.applicant.registrationNo}}</b>
               </div><!--col-sm-8-->
               <div class="col-sm-4">
-                Company No.<br><br>
+                Company No. <b>{{ila.submission.applicant.companyNo}}</b><br><br>
               </div><!--col-sm-4-->
 
               <div class="col-sm-12">
-                Processing Plant Licensing No.:
+                Processing Plant Licensing No.: <b>{{ila.submission.applicant.processingPlantLicensingNo}}</b>
                 <br><br>
-                Brand Name:
+                Brand Name: <b>{{ila.submission.applicant.brandName}}</b>
                 <br><br>
-                Company Name:
+                Company Name: <b>{{ila.submission.applicant.name}}</b>
                 <br><br>
-                Mailing Address:
+                Mailing Address: <b>{{ila.submission.applicant.address}}</b>
                 <br><br><br>
               </div>
 
               <div class="col-sm-8">
-                Company Tel:
+                Company Tel: <b>{{ila.submission.applicant.phone}}</b>
               </div>
               <div class="col-sm-4">
-                Fax:<br><br>
+                Fax: <b>{{ila.submission.applicant.fax}}</b><br><br>
               </div>
 
               <div class="col-sm-12">
-                Email Address:
+                Email Address: <b>{{ila.submission.applicant.email}}</b>
                 <br><br>
-                CEO / Directors:
+                CEO / Directors: <b>{{ila.submission.applicant.directors}}</b>
                 <br><br><br>
-                Contact Person:
+                Contact Person: <b>{{ila.submission.applicant.contact.name}}</b>
                 <br><br>
-                Mailing Address:
+                Mailing Address: <b>{{ila.submission.applicant.contact.address}}</b>
                 <br><br><br>
               </div>
 
               <div class="col-sm-3">
-                Tel: (H):
+                Tel: (H): <b>{{ila.submission.applicant.contact.home_phone}}</b>
               </div>
               <div class="col-sm-3">
-                (W):
+                (W): <b>{{ila.submission.applicant.contact.work_phone}}</b>
               </div>
               <div class="col-sm-3">
-                (C):
+                (C): <b>{{ila.submission.applicant.contact.mobile_phone}}</b>
               </div>
               <div class="col-sm-3">
-                (F):<br><br>
+                (F): <b>{{ila.submission.applicant.contact.fax}}</b><br><br>
               </div>
 
               <div class="col-sm-12">
-                Email Address:
+                Email Address: <b>{{ila.submission.applicant.contact.email}}</b>
               </div>
             </div><!--row-->
-          </th>
+          </td>
         </tr>
       </table>
     </div><!--col-sm-12-->
@@ -121,93 +125,33 @@
             <div class="row">
               <div class="col-sm-6">
                 <table class="table black-border">
-                  <tr>
+                  <tr class="active">
                     <th>Staff</th>
                     <th>Total</th>
                     <th>Male</th>
                     <th>Female</th>
                   </tr>
-                  <tr>
-                    <th>Total Persons</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th>In Office Staff</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th>Scalers</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th>Boners</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th>Saw Operators</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th>General Workers</th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                  <tr ng-repeat="item in form.data.staff.slice(0,5)">
+                    <td ng-bind="item.title"></td>
+                    <td ng-bind="(item.male+item.female)"></td>
+                    <td ng-bind="item.male"></td>
+                    <td ng-bind="item.female"></td>
                   </tr>
                 </table>
               </div><!--col-sm-6-->
               <div class="col-sm-6">
                 <table class="table black-border">
-                  <tr>
+                  <tr class="active">
                     <th>Other Staff</th>
                     <th>Total</th>
                     <th>Male</th>
                     <th>Female</th>
                   </tr>
-                  <tr>
-                    <th><br></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th><br></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th><br></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th><br></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th><br></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <th><br></th>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                  <tr ng-repeat="item in form.data.staff.slice(5)">
+                    <td ng-bind="item.title"></td>
+                    <td ng-bind="(item.male+item.female)"></td>
+                    <td ng-bind="item.male"></td>
+                    <td ng-bind="item.female"></td>
                   </tr>
                 </table>
               </div><!--col-sm-6-->
@@ -237,24 +181,11 @@
                 <th>Landing Sites</th>
               </tr>
               <tr>
-                <td><br></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td><br></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td><br></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td><br></td>
-                <td></td>
-                <td></td>
+                <tr ng-repeat="item in form.data.fishSource">
+                  <td ng-bind="item.boatRegistrationNo"></td>
+                  <td ng-bind="item.boatType"></td>
+                  <td ng-bind="item.landingSites"></td>
+                </tr>
               </tr>
             </table>
 
@@ -264,12 +195,12 @@
                 <th>Total</th>
               </tr>
               <tr>
-                <th>Locally</th>
-                <td class="right-align">%</td>
+                <td>Locally</td>
+                <td class="right-align"><b>{{ila.submission.fish.locally}}%</b></td>
               </tr>
               <tr>
-                <th>Imported</th>
-                <td class="right-align">%</td>
+                <td>Imported</td>
+                <td class="right-align"><b>{{ila.submission.fish.imported}}%</b></td>
               </tr>
             </table>
 
@@ -284,55 +215,10 @@
                 <th>lbs</th>
                 <th>tons</th>
               </tr>
-              <tr>
-                <th>SWORDFISH</th>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>KINGFISH</th>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>BILLFISH</th>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>TUNA</th>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>SHARK</th>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>DOLPHIN</th>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>FLYING FISH</th>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th><br></th>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th><br></th>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th><br></th>
-                <td></td>
-                <td></td>
+              <tr ng-repeat="item in form.data.fishPurchasedLocally">
+                <td ng-bind="item.species"></td>
+                <td ng-bind="item.lbs"></td>
+                <td ng-bind="item.tons"></td>
               </tr>
             </table>
 
@@ -347,55 +233,10 @@
                 <th>lbs</th>
                 <th>tons</th>
               </tr>
-              <tr>
-                <th>SWORDFISH</th>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>KINGFISH</th>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>BILLFISH</th>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>TUNA</th>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>SHARK</th>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>DOLPHIN</th>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>FLYING FISH</th>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th>SHELL FISH</th>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th><br></th>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th><br></th>
-                <td></td>
-                <td></td>
+              <tr ng-repeat="item in form.data.fishPurchasedImported">
+                <td ng-bind="item.species"></td>
+                <td ng-bind="item.lbs"></td>
+                <td ng-bind="item.tons"></td>
               </tr>
             </table>
 
@@ -418,16 +259,16 @@
                 <th>Total</th>
               </tr>
               <tr>
-                <th>Locally</th>
-                <td class="right-align">%</td>
+                <td>Locally</td>
+                <td class="right-align"><b>{{ila.submission.fishSold.locally.total}}%</b></td>
               </tr>
               <tr>
-                <th>Exported</th>
-                <td class="right-align">%</td>
+                <td>Exported</td>
+                <td class="right-align"><b>{{ila.submission.fishSold.exported.total}}%</b></td>
               </tr>
               <tr>
-                <th>Spoilage</th>
-                <td class="right-align">%</td>
+                <td>Spoilage</td>
+                <td class="right-align"><b>{{ila.submission.fishSold.spoilage.total}}%</b></td>
               </tr>
             </table>
 
@@ -437,48 +278,48 @@
                 <th>Total</th>
               </tr>
               <tr>
-                <th>Super Markets</th>
-                <td class="right-align">%</td>
+                <td>Super Markets</td>
+                <td class="right-align"><b>{{ila.submission.fishSold.locally.superMarkets}}%</b></td>
               </tr>
               <tr>
-                <th>Mini Marts</th>
-                <td class="right-align">%</td>
+                <td>Mini Marts</td>
+                <td class="right-align"><b>{{ila.submission.fishSold.locally.miniMarts}}%</b></td>
               </tr>
               <tr>
-                <th>Hotels</th>
-                <td class="right-align">%</td>
+                <td>Hotels</td>
+                <td class="right-align"><b>{{ila.submission.fishSold.locally.hotels}}%</b></td>
               </tr>
               <tr>
-                <th>Restaurants</th>
-                <td class="right-align">%</td>
+                <td>Restaurants</td>
+                <td class="right-align"><b>{{ila.submission.fishSold.locally.restaurants}}%</b></td>
               </tr>
               <tr>
-                <th>Vendors</th>
-                <td class="right-align">%</td>
+                <td>Vendors</td>
+                <td class="right-align"><b>{{ila.submission.fishSold.locally.vendors}}%</b></td>
               </tr>
               <tr>
-                <th>Hawkers</th>
-                <td class="right-align">%</td>
+                <td>Hawkers</td>
+                <td class="right-align"><b>{{ila.submission.fishSold.locally.hawkers}}%</b></td>
               </tr>
               <tr>
-                <th>General Public</th>
-                <td class="right-align">%</td>
+                <td>General Public</td>
+                <td class="right-align"><b>{{ila.submission.fishSold.locally.generalPublic}}%</b></td>
               </tr>
               <tr>
-                <th>Public Institutions</th>
-                <td class="right-align">%</td>
+                <td>Public Institutions</td>
+                <td class="right-align"><b>{{ila.submission.fishSold.locally.publicInstitutions}}%</b></td>
               </tr>
               <tr>
-                <th>Hospitals</th>
-                <td class="right-align">%</td>
+                <td>Hospitals</td>
+                <td class="right-align"><b>{{ila.submission.fishSold.locally.hospitals}}%</b></td>
               </tr>
               <tr>
-                <th>Schools</th>
-                <td class="right-align">%</td>
+                <td>Schools</td>
+                <td class="right-align"><b>{{ila.submission.fishSold.locally.schools}}%</b></td>
               </tr>
               <tr>
-                <th>Other</th>
-                <td class="right-align">%</td>
+                <td>Other</td>
+                <td class="right-align"><b>{{ila.submission.fishSold.locally.other}}%</b></td>
               </tr>
             </table>
 
@@ -488,12 +329,12 @@
                 <th>Total</th>
               </tr>
               <tr>
-                <th>In Region</th>
-                <td class="right-align">%</td>
+                <td>In Region</td>
+                <td class="right-align"><b>{{ila.submission.fishSold.exported.inRegion}}%</b></td>
               </tr>
               <tr>
-                <th>Out of Region</th>
-                <td class="right-align">%</td>
+                <td>Out of Region</td>
+                <td class="right-align"><b>{{ila.submission.fishSold.exported.outRegion}}%</b></td>
               </tr>
             </table>
           </td>
@@ -507,43 +348,89 @@
           </th>
         </tr>
         <tr>
-          <th>
+          <td>
             <div class="row">
               <div class="col-sm-12">
                 <p><u>Freezer Type:</u></p>
-                <p>[ ]-Blast</p>
-                <p>[ ]-Contact</p>
-                <p>[ ]-Capacity per Unit Freeze</p>
+                <p>
+                  <span ng-if="ila.submission.equipment.freezerType.blast">[<b>x</b>]</span>
+                  <span ng-if="!ila.submission.equipment.freezerType.blast">[  ]</span>
+                  -Blast</p>
+                <p>
+                  <span ng-if="ila.submission.equipment.freezerType.contact">[<b>x</b>]</span>
+                  <span ng-if="!ila.submission.equipment.freezerType.contact">[  ]</span>
+                  -Contact</p>
+                <p>
+                  <span ng-if="ila.submission.equipment.freezerType.capacityUnitFreeze">[<b>x</b>]</span>
+                  <span ng-if="!ila.submission.equipment.freezerType.capacityUnitFreeze">[  ]</span>
+                  -Capacity per Unit Freeze</p>
                 <br>
                 <p><u>Cold Store:</u></p>
-                <p>[ ]-Owned</p>
-                <p>[ ]-Rented</p>
+                <p>
+                  <span ng-if="ila.submission.equipment.coldStore.owned">[<b>x</b>]</span>
+                  <span ng-if="!ila.submission.equipment.coldStore.owned">[  ]</span>
+                  -Owned</p>
+                <p>
+                  <span ng-if="ila.submission.equipment.coldStore.rented">[<b>x</b>]</span>
+                  <span ng-if="!ila.submission.equipment.coldStore.rented">[  ]</span>
+                  -Rented</p>
                 <br>
-                <p><u>Capacity of Chiller:</u></p>
+                <p><u>Capacity of Chiller:</u><br>
+                  <b>{{ila.submission.equipment.capacityChiller}}</b>
+                </p>
                 <br>
-                <p><u>Cold Storage:</u></p>
+                <p><u>Cold Storage:</u><br>
+                  <b>{{ila.submission.equipment.coldStorage}}</b>
+                </p>
                 <br>
               </div><!--col-sm-12-->
             </div><!--row-->
-          </th>
-          <th>
+          </td>
+          <td>
             <div class="row">
               <div class="col-sm-12">
                 <p><u>Other Specialising Equipment:</u></p>
-                <p>[ ]-Filleting Machine</p>
-                <p>[ ]-Fish Washer</p>
-                <p>[ ]-Patty Former</p>
-                <p>[ ]-Ice Machine</p>
-                <p>[ ]-Other</p>
+                <p>
+                  <span ng-if="ila.submission.equipment.otherEquipment.filletingMachine">[<b>x</b>]</span>
+                  <span ng-if="!ila.submission.equipment.otherEquipment.filletingMachine">[  ]</span>
+                  -Filleting Machine</p>
+                <p>
+                  <span ng-if="ila.submission.equipment.otherEquipment.fishWasher">[<b>x</b>]</span>
+                  <span ng-if="!ila.submission.equipment.otherEquipment.fishWasher">[  ]</span>
+                  -Fish Washer</p>
+                <p>
+                  <span ng-if="ila.submission.equipment.otherEquipment.pattyFormer">[<b>x</b>]</span>
+                  <span ng-if="!ila.submission.equipment.otherEquipment.pattyFormer">[  ]</span>
+                  -Patty Former</p>
+                <p>
+                  <span ng-if="ila.submission.equipment.otherEquipment.iceMachine">[<b>x</b>]</span>
+                  <span ng-if="!ila.submission.equipment.otherEquipment.iceMachine">[  ]</span>
+                  -Ice Machine</p>
+                <p>
+                  <span ng-if="ila.submission.equipment.otherEquipment.other">[<b>x</b>]</span>
+                  <span ng-if="!ila.submission.equipment.otherEquipment.other">[  ]</span>
+                  -Other</p>
                 <br>
                 <p><u>Method of Fish Transport:</u></p>
-                <p>[ ]-Van</p>
-                <p>[ ]-Refrigerate Truck/Van</p>
-                <p>[ ]-Flat-bad Truck</p>
-                <p>[ ]-Other</p>
+                <p>
+                  <span ng-if="ila.submission.equipment.methodFishTransport.van">[<b>x</b>]</span>
+                  <span ng-if="!ila.submission.equipment.methodFishTransport.van">[  ]</span>
+                  -Van</p>
+                <p>
+                  <span ng-if="ila.submission.equipment.methodFishTransport.refrigerateTruck">[<b>x</b>]</span>
+                  <span ng-if="!ila.submission.equipment.methodFishTransport.refrigerateTruck">[  ]</span>
+                  -Refrigerate Truck/Van</p>
+                <p>
+                  <span ng-if="ila.submission.equipment.methodFishTransport.flatBadTruck">[<b>x</b>]</span>
+                  <span ng-if="!ila.submission.equipment.methodFishTransport.flatBadTruck">[  ]</span>
+                  -Flat-bad Truck</p>
+                <p>
+                  <span ng-if="ila.submission.equipment.methodFishTransport.other">[<b>x</b>]</span>
+                  <span ng-if="!ila.submission.equipment.methodFishTransport.other">[  ]</span>
+                  -Other</p>
               </div><!--col-sm-12-->
             </div><!--row-->
-          </th>
+          </td>
         </tr>
       </table>
     </div><!--col-sm-6-->
@@ -558,12 +445,13 @@
 
     <div class="col-sm-9">
       <h5><b>
+        <b>{{ila.submission.applicant.name}}</b><br>
         Signature of Applicant
       </b></h5>
     </div>
     <div class="col-sm-3">
       <h5><b>
-        Date
+        Date: <b>{{ila.submission.issuedDate  | date:'dd/MM/yyyy'}}</b>
       </b></h5>
     </div>
   </div><!--row-->

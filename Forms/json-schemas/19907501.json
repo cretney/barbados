@@ -1,0 +1,227 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Generated from b with shasum abc26b91cf6f1c0e1a8d5b8199adcc23f3198dfb",
+  "type": "object",
+  "required": [
+    "blockId",
+    "workflowId",
+    "formId",
+    "title",
+    "status",
+    "submission"
+  ],
+  "properties": {
+    "blockId": {
+      "type": "integer"
+    },
+    "workflowId": {
+      "type": "integer"
+    },
+    "formId": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "submission": {
+      "type": "object",
+      "required": [
+        "commodities",
+        "referenceNumber",
+        "serialNumberCertificate",
+        "approvalDate",
+        "collectionDate",
+        "entryDate",
+        "issuedDate",
+        "containerNumber",
+        "inspector",
+        "coordinator",
+        "problemEncountered",
+        "observations",
+        "details",
+        "submittedTo",
+        "recommendations",
+        "actionTaken",
+        "submitter",
+        "approvedBy",
+        "consignee",
+        "portDischarge",
+        "origin",
+        "supplier"
+      ],
+      "properties": {
+        "commodities": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+              "hsCode",
+              "description",
+              "collected",
+              "units"
+            ],
+            "properties": {
+              "hsCode": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "collected": {
+                "type": "integer"
+              },
+              "units": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "unitType",
+                    "quantity"
+                  ],
+                  "properties": {
+                    "unitType": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "referenceNumber": {
+          "type": "string"
+        },
+        "serialNumberCertificate": {
+          "type": "string"
+        },
+        "approvalDate": {
+          "type": "string"
+        },
+        "collectionDate": {
+          "type": "string"
+        },
+        "entryDate": {
+          "type": "string"
+        },
+        "issuedDate": {
+          "type": "string"
+        },
+        "containerNumber": {
+          "type": "string"
+        },
+        "inspector": {
+          "type": "string"
+        },
+        "coordinator": {
+          "type": "string"
+        },
+        "problemEncountered": {
+          "type": "string"
+        },
+        "observations": {
+          "type": "string"
+        },
+        "details": {
+          "type": "string"
+        },
+        "submittedTo": {
+          "type": "string"
+        },
+        "recommendations": {
+          "type": "string"
+        },
+        "actionTaken": {
+          "type": "string"
+        },
+        "submitter": {
+          "type": "string"
+        },
+        "approvedBy": {
+          "type": "string"
+        },
+        "consignee": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address",
+            "docid",
+            "fax",
+            "email"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "docid": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            }
+          }
+        },
+        "portDischarge": {
+          "type": "string"
+        },
+        "origin": {
+          "type": "string"
+        },
+        "supplier": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
