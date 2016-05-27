@@ -367,6 +367,11 @@
 				"document":"Export Authorization Narcotics.pdf"
 			},
 			{
+				"id": 83,
+				"template": "bds-export-authorization-narcotics-issued.html",
+				"document":"Export Authorization Narcotics.pdf"
+			},
+			{
 				"id": 84,
 				"template": "plant-phytosanitary-certificate.html",
 				"document":"Phytosanitary Certificate.pdf"
