@@ -1,0 +1,89 @@
+[
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key":"animalUse",
+            "title": "INTENDED USE:",
+            "type": "checkboxes",
+            "htmlClass": "inline",
+            "titleMap": {
+              "pet":"PET",
+              "breeding":"BREEDING",
+              "working":"WORKING",
+              "service":"SERVICE",
+              "other":"OTHER"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "help",
+        "helpvalue": "<h4>ADDITIONAL INFORMATION*</h4><h6>*If not available when applying for the permit, the following information must be submitted no less than three (3) working days prior to the animal’s arrival.</h6>"
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "carrier.name",
+            "title": "AIRLINE/VESSEL:"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "carrier.idNumber",
+            "title": "FLIGHT NUMBER:"
+          }
+        ]
+      },
+      {
+        "type": "help",
+        "helpvalue": "<h4>CUSTOMS BROKER DETAILS</h4>"
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "customsBroker.name",
+            "title": "NAME:"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "customsBroker.phone",
+            "title": "PHONE:"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,290 @@
+<div>
+  <div class="row">
+    <div class="col-sm-3">
+      (LOGO)
+    </div>
+    <div class="col-sm-6" align="center">
+      <h3>
+        <b>
+          MINISTRY OF AGRICULTURE
+        </b>
+      </h3>
+      <h4>
+        <b>
+          VETERINARY SERVICES
+        </b>
+      </h4>
+      <h4>
+        <b>
+          THE PINE, ST MICHAEL BB11091
+        </b>
+      </h4>
+      <h4>
+        <b>
+          BARBADOS
+        </b>
+      </h4>
+    </div>
+    <div class="col-sm-3" align="right">
+      (LOGO)
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-4" align="center">
+      <h5>TEL. NOS: (246) 427-5073/427-5492</h5>
+    </div>
+    <div class="col-sm-4" align="center">
+      <h5>FAX. NO: (246) 429-2143</h5>
+    </div>
+    <div class="col-sm-4" align="center">
+      <h5>E-Mail: vetservices@caribsurf.com</h5>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h3 align="center">
+        <b>
+          <u>
+            APPLICATION FOR A PERMIT TO IMPORT DOGS AND CATS
+          </u>
+        </b>
+      </h3>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table black-border">
+        <tr>
+          <th><i>IMPORTER DETAILS</i></th>
+          <th><i>EXPORTER DETAILS</i></th>
+        </tr>
+        <tr>
+          <th>NAME: {{ila.submission.applicant.name}}</th>
+          <th>NAME: {{ila.submission.supplier.name}}</th>
+        </tr>
+        <tr>
+          <th>ADDRESS (<i>IN BARBADOS</i> - REQUIRED):<br>{{ila.submission.applicant.address}}, {{ila.submission.applicant.country}}</th>
+          <th>ADDRESS:<br>{{ila.submission.supplier.address}}</th>
+        </tr>
+
+        <tr>
+          <th>
+            <div class="row">
+              <div class="col-sm-6">
+                PHONE: <br>{{ila.submission.applicant.phone}}
+              </div>
+              <div class="col-sm-6">
+                MOBILE: <br>{{ila.submission.applicant.fax}}
+              </div>
+            </div><!--row-->
+            <div class="row">
+              <div class="col-sm-12">
+                E-MAIL: {{ila.submission.applicant.email}}
+              </div><!--col-sm-12-->
+            </div><!--row-->
+          </th>
+          <th>COUNTRY OF EXPORT:<br>{{ila.submission.supplier.country}}</th>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table black-border">
+        <tr>
+          <th colspan="5">
+            <i>DESCRIPTION OF ANIMAL(S)</i>
+          </th>
+        </tr>
+        <tr>
+          <th>SPECIES</th>
+          <th>BREED</th>
+          <th>AGE</th>
+          <th>M/F</th>
+          <th>MICROCHIP NUMBER</th>
+        </tr>
+        <tr ng-repeat="animal in ila.submission.commodities">
+          <th>{{animal.animals[0].species}}</th>
+          <th>{{animal.animals[0].breed}}</th>
+          <th>{{animal.animals[0].age}}</th>
+          <th>{{animal.animals[0].sex}}</th>
+          <th>{{animal.animals[0].microchipNum}}</th>
+        </tr>
+        <tr>
+          <td colspan="5">
+            <div class="row">
+              <div class="col-sm-12">
+                <b><i>
+                  INTENDED USE:
+                </i></b>
+              </div>
+              <div class="col-sm-4 col-md-3 col-md-offset-1">
+                PET
+                <span ng-if="ila.submission.animalUse.indexOf('pet') == -1">[&nbsp;&nbsp;]</span>
+                <span ng-if="ila.submission.animalUse.indexOf('pet') > -1">[<b>X</b>]</span>
+              </div>
+              <div class="col-sm-4">
+                BREEDING
+                <span ng-if="ila.submission.animalUse.indexOf('breeding') == -1">[&nbsp;&nbsp;]</span>
+                <span ng-if="ila.submission.animalUse.indexOf('breeding') > -1">[<b>X</b>]</span>
+              </div>
+              <div class="col-sm-4">
+                WORKING
+                <span ng-if="ila.submission.animalUse.indexOf('working') == -1">[&nbsp;&nbsp;]</span>
+                <span ng-if="ila.submission.animalUse.indexOf('working') > -1">[<b>X</b>]</span>
+              </div>
+              <div class="col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-3">
+                SERVICE
+                <span ng-if="ila.submission.animalUse.indexOf('service') == -1">[&nbsp;&nbsp;]</span>
+                <span ng-if="ila.submission.animalUse.indexOf('service') > -1">[<b>X</b>]</span>
+              </div>
+              <div class="col-sm-4 col-md-3">
+                OTHER
+                <span ng-if="ila.submission.animalUse.indexOf('other') == -1">[&nbsp;&nbsp;]</span>
+                <span ng-if="ila.submission.animalUse.indexOf('other') > -1">[<b>X</b>]</span>
+              </div>
+            </div><!--row-->
+          </td>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table black-border">
+        <tr>
+          <th colspan="2">
+            <i>ADDITIONAL INFORMATION*</i>
+          </th>
+        </tr>
+        <tr>
+          <th>AIRLINE/VESSEL: {{ila.submission.carrier.name}}</th>
+          <th>FLIGHT NUMBER: {{ila.submission.carrier.idNumber}}</th>
+        </tr>
+        <tr>
+          <th colspan="2">
+            EXPECTED DATE and TIME OF ARRIVAL: {{ila.submission.dateArrival | date:'dd/MM/yyyy'}} {{ila.submission.timeArrival | date:'HH:mm'}}
+          </th>
+        </tr>
+        <tr>
+          <th colspan="2">
+            <i>CUSTOMS BROKER DETAILS</i>
+          </th>
+        </tr>
+        <tr>
+          <th>NAME: {{ila.submission.customsBroker.name}}</th>
+          <th>PHONE: {{ila.submission.customsBroker.phone}}</th>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h6>
+        *If not available when applying for the permit, the following information must be submitted no less than three (3) working days prior to the animal’s arrival.
+        <br><br>
+        <b>
+          PLEASE NOTE: The conditions under which animals are permitted entry into Barbados are subject to change at short notice, depending on the animal disease status of the country from which they are being imported.
+        </b>
+      </h6>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table black-border">
+        <tr>
+          <th><i>AGREEMENT</i></th>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h6>
+        I/We the undersigned declare all information provided on this application is true to the best of my/our knowledge and agree to comply with the issued Import Conditions should the application be approved.
+        <br><br>
+        <b>
+          NAME (In block letters): {{ila.submission.applicant.name}}
+          <br>
+        </b>
+      </h6>
+      <div class="row">
+        <div class="col-sm-6">
+          <h6>
+            <b>
+              SIGNATURE: {{ila.submission.applicant.name}}
+            </b>
+          </h6>
+        </div>
+        <div class="col-sm-6">
+          <h6>
+            <b>
+              DATE: {{ila.submission.entryDate | date: 'dd/MM/yyyy'}}
+            </b>
+          </h6>
+        </div>
+      </div>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table black-border">
+        <tr>
+          <th>
+            <div class="row">
+              <div class="col-sm-12">
+                <h5 align="center">
+                  <b>FOR OFFICE USE ONLY</b>
+                </h5>
+              </div><!--col-sm-12-->
+            </div><!--row-->
+            <br>
+            <div class="row">
+              <div class="col-sm-3">
+                <b>Application approved:</b>
+              </div>
+              <div class="col-sm-2">
+                <b>
+                  No
+                  <span ng-if="ila.submission.agencyApprovals[0].approved == false">[X]</span>
+                  <span ng-if="ila.submission.agencyApprovals[0].approved == true">[&nbsp; ]</span>
+                </b>
+              </div>
+              <div class="col-sm-7">
+                <b>
+                  Yes
+                  <span ng-if="ila.submission.agencyApprovals[0].approved == true">[X]</span>
+                  <span ng-if="ila.submission.agencyApprovals[0].approved == false">[&nbsp; ]</span>
+                </b>
+                <br>
+                <b>Permit Number issued: {{ila.submission.permitNumber}}</b>
+              </div>
+            </div><!--row-->
+            <br>
+            <div class="row">
+              <div class="col-sm-6">
+                <b>
+                  Signature: {{ila.submission.approvedBy}}
+                </b>
+              </div>
+              <div class="col-sm-6">
+                <b>
+                  Date: {{ila.submission.approvalDate | date: 'dd/MM/yyyy'}}
+                </b>
+              </div>
+            </div><!--row-->
+          </th>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+</div><!--container-->

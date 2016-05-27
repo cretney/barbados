@@ -1,0 +1,48 @@
+<table class="table table-striped table-condensed">
+  <thead>
+    <tr>
+      <td>
+        <span field-name="13" form-fields="form.options.formFields"></span>
+      </td>
+      <td>
+        <span field-name="111" form-fields="form.options.formFields"></span>
+      </td>
+      <td colspan="4" class="commodity-subtable subtable-animal">
+        <table>
+            <tr>
+              <td>
+                <span field-name="112" form-fields="form.options.formFields"></span>
+              </td>
+              <td>
+                <span field-name="113" form-fields="form.options.formFields"></span>
+              </td>
+              <td>
+                <span field-name="114" form-fields="form.options.formFields"></span>
+              </td>
+              <td>
+                <span field-name="115" form-fields="form.options.formFields"></span>
+              </td>
+            </tr>
+        </table>
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="item in form.data.commodities">
+      <td ng-bind="item.hsCode"></td>
+      <td ng-bind="item.animals[0].species"></td>
+      <td colspan="4" class="commodity-subtable subtable-animal">
+        <table class="table-condensed">
+          <tbody>
+            <tr ng-repeat="unit in item.animals">
+              <td><input name="{{'breed_'+item.hsCode+'_'+$index}}" type="text" class="form-control" ng-model="unit.breed" required></td>
+              <td><input name="{{'age_'+item.hsCode+'_'+$index}}" type="number" class="form-control" ng-model="unit.age" min="{{form.config.quantity.min}}" required></td>
+              <td><input name="{{'sex_'+item.hsCode+'_'+$index}}" type="text" class="form-control" ng-model="unit.sex" required></td>
+              <td><input name="{{'microchipNum_'+item.hsCode+'_'+$index}}" type="text" class="form-control" ng-model="unit.microchipNum" required></td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>

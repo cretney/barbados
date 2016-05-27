@@ -28,23 +28,23 @@
       <div class="row datetime">
         <div class="col-sm-6">
           <label class="control-label">Date & Time of Arrival:</label>
+          <span class="date">
+            <input name="dateArrival" type="date" class="form-control" ng-model="ila.submission.dateArrival" datepicker-popup ng-click="picker.open = !picker.open" is-open="picker.open" close-text="Close">
+          </span>
+          <span class="time">
+            <input name="timeArrival" type="time" ng-model="ila.submission.timeArrival" timepicker show-meridian="false">
+          </span>
+        </div>
+
+        <div class="col-sm-6">
+          <label class="control-label">Date & Time of Departure:</label>
             <span class="date">
-              <input name="dateArrival" type="date" class="form-control" ng-model="ila.submission.dateArrival" datepicker-popup ng-click="picker.open = !picker.open" is-open="picker.open" close-text="Close">
+              <input name="dateDeparture" type="date" class="form-control" ng-model="ila.submission.dateDeparture" datepicker-popup ng-click="picker.open = !picker.open" is-open="picker.open" close-text="Close">
             </span>
             <span class="time">
-              <input name="timeArrival" type="time" ng-model="ila.submission.timeArrival" timepicker show-meridian="false">
+              <input name="timeDeparture" type="time" ng-model="ila.submission.timeDeparture" timepicker show-meridian="false">
             </span>
           </div>
-
-          <div class="col-sm-6">
-            <label class="control-label">Date & Time of Departure:</label>
-              <span class="date">
-                <input name="dateDeparture" type="date" class="form-control" ng-model="ila.submission.dateDeparture" datepicker-popup ng-click="picker.open = !picker.open" is-open="picker.open" close-text="Close">
-              </span>
-              <span class="time">
-                <input name="timeDeparture" type="time" ng-model="ila.submission.timeDeparture" timepicker show-meridian="false">
-              </span>
-            </div>
         </div>
       </div>
 

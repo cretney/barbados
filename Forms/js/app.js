@@ -724,8 +724,37 @@
 									"field": "entryDate",
 									"display": "Entry Date",
 									"definition": ""
+								},
+								{
+									"id": 111,
+									"field": "species",
+									"display": "Species",
+									"definition": ""
+								},
+								{
+									"id": 112,
+									"field": "breed",
+									"display": "Breed",
+									"definition": ""
+								},
+								{
+									"id": 113,
+									"field": "age",
+									"display": "Age (years)",
+									"definition": ""
+								},
+								{
+									"id": 114,
+									"field": "sex",
+									"display": "M/F",
+									"definition": ""
+								},
+								{
+									"id": 115,
+									"field": "microchipNum",
+									"display": "Microchip Number",
+									"definition": ""
 								}
-
 							]
 						}
 				    });
@@ -883,6 +912,14 @@
 			restrict: 'A',
 			replace: true,
 			templateUrl: '/Forms/forms/views/partials/edit-commodities-no-price.html'
+		}
+	}])
+
+	.directive('editCommoditiesAnimals', [function(){
+		return{
+			restrict: 'A',
+			replace: true,
+			templateUrl: '/Forms/forms/views/partials/edit-commodities-animals.html'
 		}
 	}])
 

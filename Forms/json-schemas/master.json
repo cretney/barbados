@@ -157,6 +157,44 @@
               }
             }
           },
+          "animals": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "species": {
+                  "type": "string",
+                  "title": "Species",
+                  "description": ""
+                },
+                "breed": {
+                  "type": "string",
+                  "title": "Breed",
+                  "description": ""
+                },
+                "age": {
+                  "type": "number",
+                  "title": "Age",
+                  "description": "In years"
+                },
+                "sex": {
+                  "type": "string",
+                  "title": "M/F",
+                  "description": ""
+                },
+                "microchipNum": {
+                  "type": "string",
+                  "title": "Microchip Number",
+                  "description": ""
+                }
+              }
+            }
+          },
           "fobValue": {
             "type": "integer",
             "title": "FOB Value (US$)",
@@ -947,6 +985,16 @@
     "title": "Reason(s) for Desiring to Have Other Types of Instruments of Defence",
     "description": ""
   },
+  "animalUse": {
+    "type": "array",
+    "minItems": 1,
+    "uniqueItems": true,
+    "items": {
+      "type": "string",
+      "title": "Intended Use",
+      "description": ""
+    }
+  },
   "agencyApprovals": {
     "type": "array",
     "minItems": 1,
@@ -1007,5 +1055,43 @@
     "type": "string",
     "title": "Remarks/Recommendations",
     "description": ""
+  },
+  "customsBroker": {
+    "type":"object",
+    "required": [
+
+    ],
+    "properties": {
+      "id": {
+        "type": "integer",
+        "title": "Id",
+        "description": ""
+      },
+      "name": {
+        "type": "string",
+        "title": "Name",
+        "description": ""
+      },
+      "countryId": {
+        "type": "string",
+        "title": "Countryid",
+        "description": ""
+      },
+      "country": {
+        "type": "string",
+        "title": "Country",
+        "description": ""
+      },
+      "address": {
+        "type": "string",
+        "title": "Address",
+        "description": ""
+      },
+      "phone": {
+        "type": "string",
+        "title": "Phone",
+        "description": ""
+      }
+    }
   }
 }

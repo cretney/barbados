@@ -377,6 +377,11 @@
 				"document":"Application for Import of Cats and dogs.pdf"
 			},
 			{
+				"id": 87,
+				"template": "vs-application-import-cats-dogs-issued.html",
+				"document":"Application for Import of Cats and dogs.pdf"
+			},
+			{
 				"id": 88,
 				"template": "vs-application-permit-import-semen-artificial-insemination.html",
 				"document":"New Application for permit to import Semen for Artificial Insemination.pdf"
