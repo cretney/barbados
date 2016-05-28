@@ -1,0 +1,121 @@
+<div>
+  <div class="row">
+    <div class="col-sm-12">
+      <h6 align="right">
+        <b>Agr. 1</b>
+      </h6>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12" align="center">
+      <h4>
+        <b>
+          MINISTRY OF AGRICULTURE, FOOD AND FISHERIES
+        </b>
+      </h4>
+      <h3>
+        <b>
+          PHYTOSANITARY CERTIFICATE
+        </b>
+      </h3>
+      <h4>
+        <b>
+          PLANT PROTECTION SERVICE
+        </b>
+      </h4>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-6">
+      <h5>
+        OF BARBADOS, W.I.
+      </h5>
+    </div>
+    <div class="col-sm-6">
+      <h5 align="right">
+        No. <span class="bigger"><b>{{ila.submission.serialNumberCertificate}}</b></span>
+      </h5>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p align="justify">
+        This is to certify that the plants, parts of plants or plant products described below or representative samples of them were thoroughly examined on <b>{{ila.submission.issuedDate  | date:'dd/MM/yyyy'}}</b> by <b>{{ila.submission.inspector}}</b> an authorised officer of the <b>PLANT PROTECTION QUARANTINE</b> and were found to the best of his knowledge to be substantially free from injurious diseases and pests; and that the consignment is believed to conform with the current phytosanitary regulations of the importing country both as stated in the additional declaration hereon and otherwise.
+      </p>
+
+      <hr class="thick">
+
+      <p>
+        <h5>Fumigation or disinfection treatment (if required by ímporting country)</h5><br>
+        Date <b>{{ila.submission.treatmentDate  | date:'dd/MM/yyyy'}}</b>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Treatment <b>{{ila.submission.treatment}}</b><br>
+        Duration of Exposure/temperature <b>{{ila.submission.treatmentDuration}}</b><br>
+        Chemical and Concentration or temperature <b>{{ila.submission.treatmentLevel}}</b>
+      </p>
+
+      <hr class="thick">
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-4">
+      <h5>
+        Additional Declaration
+      </h5>
+      (STAMP)
+      <h5>
+        <i>
+          (Stamp of the Service)
+        </i>
+      </h5>
+    </div><!--col-sm-4-->
+    <div class="col-sm-8">
+      ...<br>
+      ...<br>
+      <h4 align="right">
+        <b>{{ila.submission.inspector}}</b><br>
+        <b>PLANT QUARANTINE OFFICER</b>
+      </h4>
+    </div><!--col-sm-8-->
+  </div><!--row-->
+
+  <br><br>
+  <div class="row">
+    <div class="col-sm-12">
+      <h4 align="center">
+        <b>DESCRIPTION OF THE CONSIGNMENT</b>
+      </h4>
+      <p>
+        Name and address of exporter <b>{{ila.submission.exporter.name}}, {{ila.submission.exporter.address}}</b><br>
+        Name and address of consignee <b>{{ila.submission.consignee.name}}, {{ila.submission.consignee.address}}</b><br>
+        Number and description of packages <b>{{ila.submission.packageNumber}}, {{ila.submission.packageDescription}}</b><br>
+        Distinguishing marks <b>{{ila.submission.distinguishingMarks}}</b>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Origin <b>{{ila.submission.origin}}</b><br>
+        Means of conveyance <b>{{ila.submission.meansConveyance}}</b>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Point of entry <b>{{ila.submission.portDischarge}}</b>  <br><br>
+        <h4>Quantity and name of produce (including Botanical name if required by importing country)</h4>
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <br>
+  <div class="row">
+    <div class="col-sm-12">
+	    <div view-commodities-no-price=""></div>
+    </div>
+  </div>
+
+  <hr>
+  <br>
+  <div class="row">
+    <div class="col-sm-12">
+
+      <p align="justify">
+        No liability shall attach to ... or to any officer or representative of the Ministry with respect to this Certificate.
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+</div><!--container-->

@@ -377,6 +377,11 @@
 				"document":"Phytosanitary Certificate.pdf"
 			},
 			{
+				"id": 85,
+				"template": "plant-phytosanitary-certificate-issued.html",
+				"document":"Phytosanitary Certificate.pdf"
+			},
+			{
 				"id": 86,
 				"template": "vs-application-import-cats-dogs.html",
 				"document":"Application for Import of Cats and dogs.pdf"
