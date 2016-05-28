@@ -6143,7 +6143,7 @@
       "fax":"666-6666",
       "email":"email@example.com",
       "directors:":"Michael Sandler",
-      "contact:":{
+      "contact":{
         "name":"Mary Lyndon",
         "address:":"768 Main St",
         "home_phone":"777-5555",
@@ -6771,29 +6771,150 @@
     "commodities": [
       {
         "hsCode": "123",
-        "description": "test",
+        "description": "Venus fly traps",
+        "grossWeight": 90,
+        "grossWeightUnits": "kg",
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3
+            "quantity": 250
           }
         ]
       },
       {
         "hsCode": "234",
-        "description": "test",
+        "description": "Redwood trees",
+        "grossWeight": 300,
+        "grossWeightUnits": "tonnes",
         "units": [
           {
             "unitType": "Units",
-            "quantity": 5
+            "quantity": 42
+          }
+        ]
+      },
+      {
+        "hsCode": "345",
+        "description": "Honeysuckle vines",
+        "grossWeight": 4444,
+        "grossWeightUnits": "lb",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 8,
+            "numInspected": 5
           }
         ]
       }
     ],
     "referenceNumber":"RN-7657657",
+    "permitNumber":"IM-37465",
+    "phytosanitaryCertificate":"78686786",
     "serialNumberCertificate":"CN-68686",
+    "inspectionLocation":"other",
+    "inspectionDate":"2016-05-01",
+    "inspector":"Joe Schmoe",
+    "origin": "United States",
     "issuedDate":"2016-05-01",
+    "periodEnding":"2016-05-01",
+    "dateInspection":"2016-05-01",
+    "otherDetails": "1234 Bay Street, St. Michael",
+    "remarks": "Handle venus fly traps with care. They like to nibble on fingers.",
     "submitter": "Joe Blow",
+    "observations":"** observations **",
+    "recommendations":"** recommendations **",
+    "comments":"** comments **",
+    "consignee": {
+      "id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com",
+      "contact":{
+        "name":"Mary Lyndon",
+        "address:":"768 Main St",
+        "home_phone":"777-5555",
+        "work_phone":"888-5555",
+        "mobile_phone":"999-5555",
+        "fax":"222-5555",
+        "email":"mary@example.com"
+      }
+    },
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
+},
+{
+  "blockId": 19914901,
+  "workflowId": 99,
+  "formId": 149,
+  "title": "Post Entry Inspection Report (Live Plants)",
+  "status": "Issued",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "Venus fly traps",
+        "grossWeight": 90,
+        "grossWeightUnits": "kg",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 250
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "Redwood trees",
+        "grossWeight": 300,
+        "grossWeightUnits": "tonnes",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 42
+          }
+        ]
+      },
+      {
+        "hsCode": "345",
+        "description": "Honeysuckle vines",
+        "grossWeight": 4444,
+        "grossWeightUnits": "lb",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 8,
+            "numInspected": 5
+          }
+        ]
+      }
+    ],
+    "referenceNumber":"RN-7657657",
+    "permitNumber":"IM-37465",
+    "phytosanitaryCertificate":"78686786",
+    "serialNumberCertificate":"CN-68686",
+    "inspectionLocation":"other",
+    "inspectionDate":"2016-05-01",
+    "inspector":"Joe Schmoe",
+    "origin": "United States",
+    "issuedDate":"2016-05-01",
+    "periodEnding":"2016-05-01",
+    "dateInspection":"2016-05-01",
+    "otherDetails": "1234 Bay Street, St. Michael",
+    "remarks": "Handle venus fly traps with care. They like to nibble on fingers.",
+    "submitter": "Joe Blow",
+    "observations":"** observations **",
+    "recommendations":"** recommendations **",
+    "comments":"** comments **",
+    "consignee": {
+      "id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com",
+      "contact":{
+        "name":"Mary Lyndon",
+        "address:":"768 Main St",
+        "home_phone":"777-5555",
+        "work_phone":"888-5555",
+        "mobile_phone":"999-5555",
+        "fax":"222-5555",
+        "email":"mary@example.com"
+      }
+    },
     "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }

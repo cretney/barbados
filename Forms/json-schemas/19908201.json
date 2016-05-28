@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum e1fbacd3a61b9a0fdff4449928b536bdced48476",
+  "description": "Generated from b with shasum 8cc27ed35d4c16168f3d4809ded36077371fa2ec",
   "type": "object",
   "required": [
     "blockId",
@@ -30,20 +30,20 @@
       "type": "object",
       "required": [
         "commodities",
+        "authorisationNo",
+        "fileNumber",
         "referenceNumber",
-        "serialNumberCertificate",
-        "contractNumber",
+        "importCertificateNo",
+        "importCertificateDate",
+        "importCertificateIssuedBy",
+        "destinationCountry",
+        "customsShipment",
+        "periodEnding",
+        "applicant",
+        "importer",
         "approvalDate",
         "issuedDate",
-        "invoiceDate",
-        "invoiceNumber",
-        "containerNumber",
-        "submitter",
-        "applicant",
-        "origin",
-        "countryConsigned",
-        "expectedArrival",
-        "supplier"
+        "submitter"
       ],
       "properties": {
         "commodities": {
@@ -55,6 +55,8 @@
             "required": [
               "hsCode",
               "description",
+              "name",
+              "kindPackages",
               "units"
             ],
             "properties": {
@@ -62,6 +64,12 @@
                 "type": "string"
               },
               "description": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "kindPackages": {
                 "type": "string"
               },
               "units": {
@@ -72,13 +80,7 @@
                   "type": "object",
                   "required": [
                     "unitType",
-                    "quantity",
-                    "pricePerUnit",
-                    "cifValue",
-                    "code",
-                    "name",
-                    "pack_size",
-                    "extendedCost"
+                    "quantity"
                   ],
                   "properties": {
                     "unitType": {
@@ -86,24 +88,6 @@
                     },
                     "quantity": {
                       "type": "integer"
-                    },
-                    "pricePerUnit": {
-                      "type": "number"
-                    },
-                    "cifValue": {
-                      "type": "integer"
-                    },
-                    "code": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "pack_size": {
-                      "type": "string"
-                    },
-                    "extendedCost": {
-                      "type": "number"
                     }
                   }
                 }
@@ -111,31 +95,31 @@
             }
           }
         },
+        "authorisationNo": {
+          "type": "string"
+        },
+        "fileNumber": {
+          "type": "string"
+        },
         "referenceNumber": {
           "type": "string"
         },
-        "serialNumberCertificate": {
+        "importCertificateNo": {
           "type": "string"
         },
-        "contractNumber": {
+        "importCertificateDate": {
           "type": "string"
         },
-        "approvalDate": {
+        "importCertificateIssuedBy": {
           "type": "string"
         },
-        "issuedDate": {
+        "destinationCountry": {
           "type": "string"
         },
-        "invoiceDate": {
+        "customsShipment": {
           "type": "string"
         },
-        "invoiceNumber": {
-          "type": "string"
-        },
-        "containerNumber": {
-          "type": "string"
-        },
-        "submitter": {
+        "periodEnding": {
           "type": "string"
         },
         "applicant": {
@@ -165,16 +149,7 @@
             }
           }
         },
-        "origin": {
-          "type": "string"
-        },
-        "countryConsigned": {
-          "type": "string"
-        },
-        "expectedArrival": {
-          "type": "string"
-        },
-        "supplier": {
+        "importer": {
           "type": "object",
           "required": [
             "id",
@@ -200,6 +175,15 @@
               "type": "string"
             }
           }
+        },
+        "approvalDate": {
+          "type": "string"
+        },
+        "issuedDate": {
+          "type": "string"
+        },
+        "submitter": {
+          "type": "string"
         }
       }
     }

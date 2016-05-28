@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum b676aeefa73dae6f7517a9ca5110cec370912778",
+  "description": "Generated from b with shasum 8030d877d7acaf17e0191bf46483378172987815",
   "type": "object",
   "required": [
     "blockId",
@@ -31,11 +31,23 @@
       "required": [
         "commodities",
         "referenceNumber",
+        "permitNumber",
+        "phytosanitaryCertificate",
         "serialNumberCertificate",
+        "inspectionLocation",
+        "inspectionDate",
+        "inspector",
+        "origin",
         "issuedDate",
+        "periodEnding",
+        "dateInspection",
+        "otherDetails",
+        "remarks",
         "submitter",
+        "consignee",
         "applicant",
-        "supplier"
+        "supplier",
+        "otherInspectionLocation"
       ],
       "properties": {
         "commodities": {
@@ -47,6 +59,8 @@
             "required": [
               "hsCode",
               "description",
+              "grossWeight",
+              "grossWeightUnits",
               "units"
             ],
             "properties": {
@@ -54,6 +68,12 @@
                 "type": "string"
               },
               "description": {
+                "type": "string"
+              },
+              "grossWeight": {
+                "type": "integer"
+              },
+              "grossWeightUnits": {
                 "type": "string"
               },
               "units": {
@@ -64,13 +84,17 @@
                   "type": "object",
                   "required": [
                     "unitType",
-                    "quantity"
+                    "quantity",
+                    "numInspected"
                   ],
                   "properties": {
                     "unitType": {
                       "type": "string"
                     },
                     "quantity": {
+                      "type": "integer"
+                    },
+                    "numInspected": {
                       "type": "integer"
                     }
                   }
@@ -82,14 +106,119 @@
         "referenceNumber": {
           "type": "string"
         },
+        "permitNumber": {
+          "type": "string"
+        },
+        "phytosanitaryCertificate": {
+          "type": "string"
+        },
         "serialNumberCertificate": {
+          "type": "string"
+        },
+        "inspectionLocation": {
+          "type": "string"
+        },
+        "inspectionDate": {
+          "type": "string"
+        },
+        "inspector": {
+          "type": "string"
+        },
+        "origin": {
           "type": "string"
         },
         "issuedDate": {
           "type": "string"
         },
+        "periodEnding": {
+          "type": "string"
+        },
+        "dateInspection": {
+          "type": "string"
+        },
+        "otherDetails": {
+          "type": "string"
+        },
+        "remarks": {
+          "type": "string"
+        },
         "submitter": {
           "type": "string"
+        },
+        "consignee": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address",
+            "docid",
+            "fax",
+            "email",
+            "contact"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "docid": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "contact": {
+              "type": "object",
+              "required": [
+                "name",
+                "address:",
+                "home_phone",
+                "work_phone",
+                "mobile_phone",
+                "fax",
+                "email"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "address:": {
+                  "type": "string"
+                },
+                "home_phone": {
+                  "type": "string"
+                },
+                "work_phone": {
+                  "type": "string"
+                },
+                "mobile_phone": {
+                  "type": "string"
+                },
+                "fax": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                }
+              }
+            }
+          }
         },
         "applicant": {
           "type": "object",
@@ -144,6 +273,9 @@
               "type": "string"
             }
           }
+        },
+        "otherInspectionLocation": {
+          "type": "string"
         }
       }
     }

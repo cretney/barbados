@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum dc35db8df539f6abb1c878f25142ba0a727952ea",
+  "description": "Generated from b with shasum 233579b4c32fe962ef8269e8835edd3707ee0056",
   "type": "object",
   "required": [
     "blockId",
@@ -31,18 +31,16 @@
       "required": [
         "commodities",
         "referenceNumber",
-        "serialNumberCertificate",
-        "contractNumber",
+        "permitNumber",
         "approvalDate",
-        "issuedDate",
-        "invoiceDate",
-        "invoiceNumber",
-        "containerNumber",
+        "entryDate",
+        "dateArrival",
+        "vesselArrive",
+        "origin",
+        "transhipVia",
+        "approvedBy",
         "submitter",
         "applicant",
-        "origin",
-        "countryConsigned",
-        "expectedArrival",
         "supplier"
       ],
       "properties": {
@@ -72,13 +70,7 @@
                   "type": "object",
                   "required": [
                     "unitType",
-                    "quantity",
-                    "pricePerUnit",
-                    "cifValue",
-                    "code",
-                    "name",
-                    "pack_size",
-                    "extendedCost"
+                    "quantity"
                   ],
                   "properties": {
                     "unitType": {
@@ -86,24 +78,6 @@
                     },
                     "quantity": {
                       "type": "integer"
-                    },
-                    "pricePerUnit": {
-                      "type": "number"
-                    },
-                    "cifValue": {
-                      "type": "integer"
-                    },
-                    "code": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "pack_size": {
-                      "type": "string"
-                    },
-                    "extendedCost": {
-                      "type": "number"
                     }
                   }
                 }
@@ -114,25 +88,28 @@
         "referenceNumber": {
           "type": "string"
         },
-        "serialNumberCertificate": {
-          "type": "string"
-        },
-        "contractNumber": {
+        "permitNumber": {
           "type": "string"
         },
         "approvalDate": {
           "type": "string"
         },
-        "issuedDate": {
+        "entryDate": {
           "type": "string"
         },
-        "invoiceDate": {
+        "dateArrival": {
           "type": "string"
         },
-        "invoiceNumber": {
+        "vesselArrive": {
           "type": "string"
         },
-        "containerNumber": {
+        "origin": {
+          "type": "string"
+        },
+        "transhipVia": {
+          "type": "string"
+        },
+        "approvedBy": {
           "type": "string"
         },
         "submitter": {
@@ -164,15 +141,6 @@
               "type": "string"
             }
           }
-        },
-        "origin": {
-          "type": "string"
-        },
-        "countryConsigned": {
-          "type": "string"
-        },
-        "expectedArrival": {
-          "type": "string"
         },
         "supplier": {
           "type": "object",

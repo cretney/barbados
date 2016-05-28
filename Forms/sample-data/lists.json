@@ -672,6 +672,11 @@
 				"document":"Post Entry Inspection Report (Live Plants).pdf"
 			},
 			{
+				"id": 149,
+				"template": "pqu-post-entry-inspection-report-live-plants-issued.html",
+				"document":"Post Entry Inspection Report (Live Plants).pdf"
+			},
+			{
 				"id": 150,
 				"template": "fd-duty-free-concession-certificate.html",
 				"document":"Duty Free Concession Certificate.pdf"
