@@ -3856,7 +3856,7 @@
   "blockId": 19907601,
   "workflowId": 99,
   "formId": 76,
-  "title": "Plant Quarantine Waiver Application",
+  "title": "New Plant Quarantine Waiver Application",
   "status": "Draft",
   "submission": {
     "commodities": [
@@ -3866,13 +3866,7 @@
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3,
-            "pricePerUnit": 12.00,
-            "cifValue": 34,
-            "code":"14624",
-            "name":"TEGRETOL 200MG TAB",
-            "pack_size":"100'S",
-            "extendedCost": 14.00
+            "quantity": 3
           }
         ]
       },
@@ -3882,17 +3876,19 @@
         "units": [
           {
             "unitType": "Units",
-            "quantity": 5,
-            "pricePerUnit": 20.00,
-            "cifValue": 36,
-            "code":"55311",
-            "name":"EXFORGE 5MG A/80MG V TAB",
-            "pack_size":"14'S",
-            "extendedCost": 24.00
+            "quantity": 5
           }
         ]
       }
     ],
+    "vesselOrCraft": "ISLANDIA",
+    "rotationNumber": "1085 of 12/02/2016",
+    "awl_bl_number":"NYKS8768768",
+    "containerNumber": "TCNU5037395",
+    "dateDeclaration": "2015-09-21",
+    "dateInspection": "2015-09-21",
+    "timeInspection": "4.30 <> 8.30",
+    "entryDate": "2015-08-21",
     "referenceNumber":"RN-7657657",
     "serialNumberCertificate":"CN-68686",
     "contractNumber":"C-879789",
@@ -3905,7 +3901,11 @@
     "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
     "origin": "United States",
     "countryConsigned": "Canada",
-    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"},
+    "dateArrival": "2015-09-21",
+    "timeArrival": "18:30",
+    "supplier": {"id": 1, "name": "Juan Carlos Gil", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"},
+    "customsBroker": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1235 Bay Street, St. Michael", "phone":"555-123-4567"}
   }
 },
 {

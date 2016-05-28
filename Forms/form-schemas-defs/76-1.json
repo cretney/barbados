@@ -1,0 +1,31 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-5",
+        "items": [
+          {
+            "key":"applicant.name",
+            "title":"Importer",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-7",
+        "items": [
+          {
+            "key":"applicant.address",
+            "title":"Importer's Address",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  }
+
+]

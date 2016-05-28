@@ -347,6 +347,11 @@
 				"document":"Plant Quarantine Waiver Application.pdf"
 			},
 			{
+				"id": 77,
+				"template": "plant-quarantine-waiver-application-issued.html",
+				"document":"Plant Quarantine Waiver Application.pdf"
+			},
+			{
 				"id": 78,
 				"template": "plantpa-letter-entry-abscene-phytosanitary-certificate.html",
 				"document":"Letter to Customs to Process Entry in Abscene of Phytosanitary Certificate.pdf"

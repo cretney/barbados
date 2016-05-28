@@ -1157,6 +1157,59 @@
       "title": "Actiontaken",
       "description": ""
     },
+    "awl_bl_number": {
+      "type": "string",
+      "title": "Awl_bl_number",
+      "description": ""
+    },
+    "dateDeclaration": {
+      "type": "date-time",
+      "title": "Datedeclaration",
+      "description": ""
+    },
+    "timeArrival": {
+      "type": "string",
+      "title": "Timearrival",
+      "description": ""
+    },
+    "customsBroker": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "title": "Id",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "countryId": {
+          "type": "string",
+          "title": "Countryid",
+          "description": ""
+        },
+        "country": {
+          "type": "string",
+          "title": "Country",
+          "description": ""
+        },
+        "address": {
+          "type": "string",
+          "title": "Address",
+          "description": ""
+        },
+        "phone": {
+          "type": "string",
+          "title": "Phone",
+          "description": ""
+        }
+      }
+    },
     "rotationDate": {
       "type": "date-time",
       "title": "Rotationdate",
@@ -1275,44 +1328,6 @@
         "description": ""
       }
     },
-    "customsBroker": {
-      "type": "object",
-      "required": [
-
-      ],
-      "properties": {
-        "id": {
-          "type": "integer",
-          "title": "Id",
-          "description": ""
-        },
-        "name": {
-          "type": "string",
-          "title": "Name",
-          "description": ""
-        },
-        "countryId": {
-          "type": "string",
-          "title": "Countryid",
-          "description": ""
-        },
-        "country": {
-          "type": "string",
-          "title": "Country",
-          "description": ""
-        },
-        "address": {
-          "type": "string",
-          "title": "Address",
-          "description": ""
-        },
-        "phone": {
-          "type": "string",
-          "title": "Phone",
-          "description": ""
-        }
-      }
-    },
     "agencyApprovals": {
       "type": "array",
       "minItems": 1,
@@ -1335,11 +1350,6 @@
           }
         }
       }
-    },
-    "timeArrival": {
-      "type": "string",
-      "title": "Timearrival",
-      "description": ""
     },
     "vesselArrive": {
       "type": "string",
@@ -2024,9 +2034,9 @@
         }
       }
     },
-    "otherInspectionLocation": {
+    "comments": {
       "type": "string",
-      "title": "Otherinspectionlocation",
+      "title": "Comments",
       "description": ""
     },
     "totalValue": {

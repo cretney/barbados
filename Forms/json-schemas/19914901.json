@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 20fff39f3e7e11e93c96ef464cbe25d2160ed499",
+  "description": "Generated from b with shasum 978dff5ee3f80827de13f2b4ce329c1db8ed3287",
   "type": "object",
   "required": [
     "blockId",
@@ -30,29 +30,26 @@
       "type": "object",
       "required": [
         "commodities",
-        "vesselOrCraft",
-        "rotationNumber",
-        "awl_bl_number",
-        "containerNumber",
-        "dateDeclaration",
-        "dateInspection",
-        "timeInspection",
-        "entryDate",
         "referenceNumber",
+        "permitNumber",
+        "phytosanitaryCertificate",
         "serialNumberCertificate",
-        "contractNumber",
-        "approvalDate",
-        "issuedDate",
-        "invoiceDate",
-        "invoiceNumber",
-        "submitter",
-        "applicant",
+        "inspectionLocation",
+        "inspectionDate",
+        "inspector",
         "origin",
-        "countryConsigned",
-        "supplier",
-        "dateArrival",
-        "timeArrival",
-        "customsBroker"
+        "issuedDate",
+        "periodEnding",
+        "dateInspection",
+        "otherDetails",
+        "remarks",
+        "submitter",
+        "observations",
+        "recommendations",
+        "comments",
+        "consignee",
+        "applicant",
+        "supplier"
       ],
       "properties": {
         "commodities": {
@@ -64,6 +61,8 @@
             "required": [
               "hsCode",
               "description",
+              "grossWeight",
+              "grossWeightUnits",
               "units"
             ],
             "properties": {
@@ -71,6 +70,12 @@
                 "type": "string"
               },
               "description": {
+                "type": "string"
+              },
+              "grossWeight": {
+                "type": "integer"
+              },
+              "grossWeightUnits": {
                 "type": "string"
               },
               "units": {
@@ -96,53 +101,131 @@
             }
           }
         },
-        "vesselOrCraft": {
-          "type": "string"
-        },
-        "rotationNumber": {
-          "type": "string"
-        },
-        "awl_bl_number": {
-          "type": "string"
-        },
-        "containerNumber": {
-          "type": "string"
-        },
-        "dateDeclaration": {
-          "type": "string"
-        },
-        "dateInspection": {
-          "type": "string"
-        },
-        "timeInspection": {
-          "type": "string"
-        },
-        "entryDate": {
-          "type": "string"
-        },
         "referenceNumber": {
+          "type": "string"
+        },
+        "permitNumber": {
+          "type": "string"
+        },
+        "phytosanitaryCertificate": {
           "type": "string"
         },
         "serialNumberCertificate": {
           "type": "string"
         },
-        "contractNumber": {
+        "inspectionLocation": {
           "type": "string"
         },
-        "approvalDate": {
+        "inspectionDate": {
+          "type": "string"
+        },
+        "inspector": {
+          "type": "string"
+        },
+        "origin": {
           "type": "string"
         },
         "issuedDate": {
           "type": "string"
         },
-        "invoiceDate": {
+        "periodEnding": {
           "type": "string"
         },
-        "invoiceNumber": {
+        "dateInspection": {
+          "type": "string"
+        },
+        "otherDetails": {
+          "type": "string"
+        },
+        "remarks": {
           "type": "string"
         },
         "submitter": {
           "type": "string"
+        },
+        "observations": {
+          "type": "string"
+        },
+        "recommendations": {
+          "type": "string"
+        },
+        "comments": {
+          "type": "string"
+        },
+        "consignee": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address",
+            "docid",
+            "fax",
+            "email",
+            "contact"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "docid": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "contact": {
+              "type": "object",
+              "required": [
+                "name",
+                "address:",
+                "home_phone",
+                "work_phone",
+                "mobile_phone",
+                "fax",
+                "email"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "address:": {
+                  "type": "string"
+                },
+                "home_phone": {
+                  "type": "string"
+                },
+                "work_phone": {
+                  "type": "string"
+                },
+                "mobile_phone": {
+                  "type": "string"
+                },
+                "fax": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                }
+              }
+            }
+          }
         },
         "applicant": {
           "type": "object",
@@ -171,12 +254,6 @@
             }
           }
         },
-        "origin": {
-          "type": "string"
-        },
-        "countryConsigned": {
-          "type": "string"
-        },
         "supplier": {
           "type": "object",
           "required": [
@@ -200,43 +277,6 @@
               "type": "string"
             },
             "address": {
-              "type": "string"
-            }
-          }
-        },
-        "dateArrival": {
-          "type": "string"
-        },
-        "timeArrival": {
-          "type": "string"
-        },
-        "customsBroker": {
-          "type": "object",
-          "required": [
-            "id",
-            "name",
-            "countryId",
-            "country",
-            "address",
-            "phone"
-          ],
-          "properties": {
-            "id": {
-              "type": "integer"
-            },
-            "name": {
-              "type": "string"
-            },
-            "countryId": {
-              "type": "string"
-            },
-            "country": {
-              "type": "string"
-            },
-            "address": {
-              "type": "string"
-            },
-            "phone": {
               "type": "string"
             }
           }

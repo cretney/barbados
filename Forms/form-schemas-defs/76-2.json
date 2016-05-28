@@ -1,0 +1,91 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"containerNumber",
+            "title":"Container #"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"vesselOrCraft",
+            "title":"Vessel"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"origin",
+            "title":"Country of Origin"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"awl_bl_number",
+            "title":"BL # / AWB #"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"dateArrival",
+            "title":"Date of Arrival"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"rotationNumber",
+            "title":"Rotation #"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"dateDeclaration",
+            "title":"Date of Declaration"
+          }
+        ]
+      }
+    ]
+  }
+
+]

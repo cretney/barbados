@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 8030d877d7acaf17e0191bf46483378172987815",
+  "description": "Generated from b with shasum a29a67706bf01e89e1a4900f52159dc94cc29b9f",
   "type": "object",
   "required": [
     "blockId",
@@ -44,10 +44,12 @@
         "otherDetails",
         "remarks",
         "submitter",
+        "observations",
+        "recommendations",
+        "comments",
         "consignee",
         "applicant",
-        "supplier",
-        "otherInspectionLocation"
+        "supplier"
       ],
       "properties": {
         "commodities": {
@@ -84,17 +86,13 @@
                   "type": "object",
                   "required": [
                     "unitType",
-                    "quantity",
-                    "numInspected"
+                    "quantity"
                   ],
                   "properties": {
                     "unitType": {
                       "type": "string"
                     },
                     "quantity": {
-                      "type": "integer"
-                    },
-                    "numInspected": {
                       "type": "integer"
                     }
                   }
@@ -143,6 +141,15 @@
           "type": "string"
         },
         "submitter": {
+          "type": "string"
+        },
+        "observations": {
+          "type": "string"
+        },
+        "recommendations": {
+          "type": "string"
+        },
+        "comments": {
           "type": "string"
         },
         "consignee": {
@@ -273,9 +280,6 @@
               "type": "string"
             }
           }
-        },
-        "otherInspectionLocation": {
-          "type": "string"
         }
       }
     }
