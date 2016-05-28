@@ -3867,6 +3867,10 @@
           {
             "unitType": "Units",
             "quantity": 3
+          },
+          {
+            "unitType": "Kilograms",
+            "quantity": 4
           }
         ]
       },
@@ -3877,6 +3881,10 @@
           {
             "unitType": "Units",
             "quantity": 5
+          },
+          {
+            "unitType": "Kilograms",
+            "quantity": 8
           }
         ]
       }
@@ -3886,6 +3894,8 @@
     "awl_bl_number":"NYKS8768768",
     "containerNumber": "TCNU5037395",
     "dateDeclaration": "2015-09-21",
+    "inspectionLocation":"1234 Bay Street, St. Michael",
+    "inspector":"Sherry Matthews",
     "dateInspection": "2015-09-21",
     "timeInspection": "4.30 <> 8.30",
     "entryDate": "2015-08-21",
@@ -3894,18 +3904,111 @@
     "contractNumber":"C-879789",
     "approvalDate":"2016-04-30",
     "issuedDate":"2016-05-01",
-    "invoiceDate":"2016-03-01",
-    "invoiceNumber":"IN-5646546",
-    "containerNumber":"CONT-3324",
     "submitter": "Joe Blow",
-    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael",
+      "contact":{
+        "name":"Mary Lyndon",
+        "address:":"768 Main St",
+        "home_phone":"777-5555",
+        "work_phone":"888-5555",
+        "mobile_phone":"999-5555",
+        "fax":"222-5555",
+        "email":"mary@example.com"
+      }
+    },
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"},
     "dateArrival": "2015-09-21",
     "timeArrival": "18:30",
-    "supplier": {"id": 1, "name": "Juan Carlos Gil", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"},
-    "customsBroker": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1235 Bay Street, St. Michael", "phone":"555-123-4567"}
+    "customsBroker": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1235 Bay Street, St. Michael", "phone":"555-123-4567",
+      "contact":{
+        "name":"Mary Lyndon",
+        "address:":"768 Main St",
+        "home_phone":"777-5555",
+        "work_phone":"888-5555",
+        "mobile_phone":"999-5555",
+        "fax":"222-5555",
+        "email":"mary@example.com"
+      }
+    }
+  }
+},
+{
+  "blockId": 19907701,
+  "workflowId": 99,
+  "formId": 77,
+  "title": "Plant Quarantine Waiver Application",
+  "status": "Issued",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 3
+          },
+          {
+            "unitType": "Kilograms",
+            "quantity": 4
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 5
+          },
+          {
+            "unitType": "Kilograms",
+            "quantity": 8
+          }
+        ]
+      }
+    ],
+    "vesselOrCraft": "ISLANDIA",
+    "rotationNumber": "1085 of 12/02/2016",
+    "awl_bl_number":"NYKS8768768",
+    "containerNumber": "TCNU5037395",
+    "dateDeclaration": "2015-09-21",
+    "inspectionLocation":"1234 Bay Street, St. Michael",
+    "inspector":"Sherry Matthews",
+    "dateInspection": "2015-09-21",
+    "timeInspection": "4.30 <> 8.30",
+    "entryDate": "2015-08-21",
+    "referenceNumber":"RN-7657657",
+    "serialNumberCertificate":"CN-68686",
+    "approvalDate":"2016-04-30",
+    "issuedDate":"2016-05-01",
+    "submitter": "Joe Blow",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael",
+      "contact":{
+        "name":"Mary Lyndon",
+        "address:":"768 Main St",
+        "home_phone":"777-5555",
+        "work_phone":"888-5555",
+        "mobile_phone":"999-5555",
+        "fax":"222-5555",
+        "email":"mary@example.com"
+      }
+    },
+    "origin": "United States",
+    "dateArrival": "2015-09-21",
+    "timeArrival": "18:30",
+    "customsBroker": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1235 Bay Street, St. Michael", "phone":"555-123-4567",
+      "contact":{
+        "name":"Mary Lyndon",
+        "address:":"768 Main St",
+        "home_phone":"777-5555",
+        "work_phone":"888-5555",
+        "mobile_phone":"999-5555",
+        "fax":"222-5555",
+        "email":"mary@example.com"
+      }
+    }
   }
 },
 {

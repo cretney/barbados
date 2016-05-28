@@ -1,5 +1,9 @@
 [
   {
+    "type": "help",
+    "helpvalue":"<hr><h5><b>IMPORTER</b></h5>"
+  },
+  {
     "type": "section",
     "htmlClass": "row",
     "items": [
@@ -26,6 +30,89 @@
         ]
       }
     ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "applicant.contact.name",
+            "title":"Contact Person",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"applicant.contact.email",
+            "title":"Email Address",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "applicant.contact.home_phone",
+            "title":"Home Phone",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "applicant.contact.work_phone",
+            "title":"Work Phone",
+            "readonly":true
+
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "applicant.contact.mobile_phone",
+            "title":"Mobile Phone",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"applicant.contact.fax",
+            "title":"Fax",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue":"<hr><h5><b>DESCRIPTION OF CONSIGNMENT/ COMMODITY</b></h5>"
   }
 
 ]

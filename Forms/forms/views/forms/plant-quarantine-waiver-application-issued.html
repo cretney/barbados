@@ -23,13 +23,13 @@
     <div class="col-sm-4">
       <br>
       <h6>
-        <i>Our Ref:</i>
+        <i>Our Ref: <b>{{ila.submission.referenceNumber}}</b></i>
       </h6>
     </div>
     <div class="col-sm-4">
       <br>
       <h6>
-        <i>Your Ref:</i>
+        <i>Your Ref: <b>{{ila.submission.referenceNumber}}</b></i>
       </h6>
     </div>
     <div class="col-sm-4">
@@ -54,25 +54,48 @@
       </h4>
     </div><!--col-sm-12-->
   </div><!--row-->
-
+  <br><br><br>
   <div class="row">
     <div class="col-sm-12">
       <table class="table with-border">
         <tr>
-          <th colspan="3" class="with-top">1. Name of Importer</th>
+          <td colspan="3" class="with-top">
+            1. Name of Importer <br>
+            <b>{{ila.submission.applicant.name}}</b>
+          </td>
         </tr>
         <tr>
-          <th colspan="3" class="no-top">Address</th>
+          <td colspan="3" class="no-top">
+            Address<br>
+            <b>{{ila.submission.applicant.address}}</b>
+          </td>
         </tr>
         <tr>
-          <th class="no-top">Contact Numbers</th>
-          <th class="no-top right-align">(Tel.)</th>
-          <th class="no-top right-align">(Cell.)</th>
-        </tr>
-        <tr>
-          <th class="no-top"></th>
-          <th class="no-top right-align">(Fax)</th>
-          <th class="no-top right-align">(Other)</th>
+          <td colspan="3" class="no-top">
+            <div class="row">
+              <div class="col-sm-12">
+                Contact Person: <b>{{ila.submission.applicant.contact.name}}</b>
+                <br><br>
+              </div>
+
+              <div class="col-sm-3">
+                Tel: (H): <b>{{ila.submission.applicant.contact.home_phone}}</b>
+              </div>
+              <div class="col-sm-3">
+                (W): <b>{{ila.submission.applicant.contact.work_phone}}</b>
+              </div>
+              <div class="col-sm-3">
+                (C): <b>{{ila.submission.applicant.contact.mobile_phone}}</b>
+              </div>
+              <div class="col-sm-3">
+                (F): <b>{{ila.submission.applicant.contact.fax}}</b><br><br>
+              </div>
+
+              <div class="col-sm-12">
+                Email Address: <b>{{ila.submission.applicant.contact.email}}</b>
+              </div>
+            </div>
+          </td>
         </tr>
       </table>
     </div><!--col-sm-12-->
@@ -80,57 +103,32 @@
 
   <div class="row"><!--Table 2-->
     <div class="col-sm-12">
+
+      <br>
+      <br>
       <table class="table table-bordered black-border">
         <tr>
           <th colspan="3">
             2. Description of Consignment/ Commodity
           </th>
         </tr>
-        <tr>
-          <th class="center-align">QUANTITY</th>
-          <th class="center-align">ITEM</th>
-          <th class="center-align">WEIGHT</th>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
       </table>
+      <div class="table-bordered black-border" view-commodities-no-price=""></div>
     </div><!--col-sm-12-->
   </div><!--row-->
-
+  <br><br>
   <div class="row"><!--Table 3-4-->
     <div class="col-sm-12">
       <table class="table table-bordered black-border">
         <tr>
-          <th>3. Container #:</th>
-          <th>4. Vessel:</th>
+          <td>
+            3. Container #:<br>
+            <b>{{ila.submission.containerNumber}}</b>
+          </td>
+          <td>
+            4. Vessel:<br>
+            <b>{{ila.submission.vesselOrCraft}}</b>
+          </td>
         </tr>
       </table>
     </div><!--col-sm-12-->
@@ -140,8 +138,14 @@
     <div class="col-sm-12">
       <table class="table table-bordered black-border">
         <tr>
-          <th>5. Country of Origin:</th>
-          <th>6. BL # / AWB #:</th>
+          <td>
+            5. Country of Origin:<br>
+            <b>{{ila.submission.origin}}</b>
+          </td>
+          <td>
+            6. BL # / AWB #:<br>
+            <b>{{ila.submission.awl_bl_number}}</b>
+          </td>
         </tr>
       </table>
     </div><!--col-sm-12-->
@@ -151,14 +155,18 @@
     <div class="col-sm-12">
       <table class="table table-bordered black-border no-top-td no-bottom-th">
         <tr>
-          <th>7. Date of Arrival:</th>
-          <th>8. Rotation #:</th>
-          <th>9. Date of Declaration:</th>
-        </tr>
-        <tr>
-          <td>(DD/MM/YYYY)</td>
-          <td></td>
-          <td>(DD/MM/YYYY)</td>
+          <td>
+            7. Date of Arrival:<br>
+            <b>{{ila.submission.dateArrival  | date:'dd/MM/yy'}}</b>
+          </td>
+          <td>
+            8. Rotation #:<br>
+            <b>{{ila.submission.rotationNumber}}</b>
+          </td>
+          <td>
+            9. Date of Declaration:<br>
+            <b>{{ila.submission.dateDeclaration  | date:'dd/MM/yy'}}</b>
+          </td>
         </tr>
       </table>
     </div><!--col-sm-12-->
@@ -168,7 +176,10 @@
     <div class="col-sm-12">
       <table class="table table-bordered black-border">
         <tr>
-          <th>10. Place of Inspection:</th>
+          <td>
+            10. Place of Inspection:<br>
+            <b>{{ila.submission.inspectionLocation}}</b>
+          </td>
         </tr>
       </table>
     </div><!--col-sm-12-->
@@ -178,25 +189,49 @@
     <div class="col-sm-12">
       <table class="table with-border">
         <tr>
-          <th colspan="3" class="with-top">11. Customs Broker:</th>
+          <td colspan="3" class="with-top">
+            11. Customs Broker:<br>
+            <b>{{ila.submission.customsBroker.name}}</b>
+          </td>
         </tr>
         <tr>
-          <th colspan="3" class="no-top">Address:</th>
+          <td colspan="3" class="no-top">
+            Address:<br>
+            <b>{{ila.submission.customsBroker.address}}</b>
+          </td>
         </tr>
         <tr>
-          <th class="no-top">Contact Numers:</th>
-          <th class="no-top right-align">(Tel.)</th>
-          <th class="no-top right-align">(Cell.)</th>
-        </tr>
-        <tr>
-          <th class="no-top"></th>
-          <th class="no-top right-align">(Fax)</th>
-          <th class="no-top right-align">(Other)</th>
+          <td colspan="3" class="no-top">
+            <div class="row">
+              <div class="col-sm-12">
+                Contact Person: <b>{{ila.submission.customsBroker.contact.name}}</b>
+                <br><br>
+              </div>
+
+              <div class="col-sm-3">
+                Tel: (H): <b>{{ila.submission.customsBroker.contact.home_phone}}</b>
+              </div>
+              <div class="col-sm-3">
+                (W): <b>{{ila.submission.customsBroker.contact.work_phone}}</b>
+              </div>
+              <div class="col-sm-3">
+                (C): <b>{{ila.submission.customsBroker.contact.mobile_phone}}</b>
+              </div>
+              <div class="col-sm-3">
+                (F): <b>{{ila.submission.customsBroker.contact.fax}}</b><br><br>
+              </div>
+
+              <div class="col-sm-12">
+                Email Address: <b>{{ila.submission.customsBroker.contact.email}}</b>
+              </div>
+            </div>
+          </td>
         </tr>
       </table>
     </div><!--col-sm-12-->
   </div><!--row-->
 
+  <br><br>
   <div class="row">
     <div class="col-sm-12">
       <table class="table with-border">
@@ -208,7 +243,7 @@
       </table>
     </div><!--col-sm-12-->
   </div><!--row-->
-
+  <br><br>
   <div class="row">
     <div class="col-sm-12">
       <table class="table with-border">
@@ -224,8 +259,8 @@
           <th colspan="3" class="no-top">Waiver #:</th>
         </tr>
         <tr>
-          <th class="no-top">Date Issued:</th>
-          <th class="no-top right-align">P.Q. Inspector:</th>
+          <th class="no-top">Date Issued: <b>{{ila.submission.issuedDate  | date:'dd/MM/yy'}}</b></th>
+          <th class="no-top right-align">P.Q. Inspector: <b>{{ila.submission.inspector}}</b></th>
           <th class="no-top"></th>
         </tr>
         <tr>
