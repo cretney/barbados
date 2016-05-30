@@ -2665,32 +2665,53 @@
     "commodities": [
       {
         "hsCode": "123",
-        "description": "test",
-        "units": [
-          {
-            "unitType": "Units"
-          },
-          {
-            "unitType": "Kilograms"
-          }
-        ]
+        "description": "test"
       },
       {
         "hsCode": "234",
-        "description": "test",
-        "units": [
-          {
-            "unitType": "Units"
-          }
-        ]
+        "description": "test"
       }
     ],
+    "manufacturing":"** manufacturing **",
     "submitter": "Joe Blow",
     "origin": "United States",
-    "applicant": {"id":4, "name":"Exporter Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
-    "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"},
-    "destination": {"id": 1, "name": "Importer Maple Inc.", "countryId": "CA", "country":"Canada", "address": "1000 Main Av, Toronto, BC, 902", "docid":"3-234-567", "fax":"777-5555", "email":"ghi@example.com"},
-    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"}
+    "applicant": {"id":4, "name":"Exporter Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"}
+  }
+},
+{
+  "blockId": 12003801,
+  "workflowId": 20,
+  "formId": 38,
+  "title": "Application for Certificate of Origin Registration as Exporter",
+  "status": "Issued",
+  "submission": {
+    "materials": [
+      {
+        "hsCode": "123",
+        "description": "Material 1",
+        "origin":"United States"
+      },
+      {
+        "hsCode": "543",
+        "description": "Material 2",
+        "origin":"Canada"
+      }
+    ],
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test"
+      },
+      {
+        "hsCode": "234",
+        "description": "test"
+      }
+    ],
+    "manufacturing":"** manufacturing ** Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "submitter": "Joe Blow",
+    "origin": "United States",
+    "entryDate": "2015-08-21",
+    "applicant": {"id":4, "name":"Exporter Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"}
   }
 },
 {
