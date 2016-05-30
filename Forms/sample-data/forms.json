@@ -2650,6 +2650,18 @@
   "description": "Please complete the Registration Application",
   "status": "Draft",
   "submission": {
+    "materials": [
+      {
+        "hsCode": "123",
+        "description": "Material 1",
+        "origin":"United States"
+      },
+      {
+        "hsCode": "543",
+        "description": "Material 2",
+        "origin":"Canada"
+      }
+    ],
     "commodities": [
       {
         "hsCode": "123",
@@ -2674,6 +2686,7 @@
       }
     ],
     "submitter": "Joe Blow",
+    "origin": "United States",
     "applicant": {"id":4, "name":"Exporter Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
     "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"},
     "destination": {"id": 1, "name": "Importer Maple Inc.", "countryId": "CA", "country":"Canada", "address": "1000 Main Av, Toronto, BC, 902", "docid":"3-234-567", "fax":"777-5555", "email":"ghi@example.com"},

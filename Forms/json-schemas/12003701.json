@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 9d6d509800606c3554e0b48c622f0be83ee91402",
+  "description": "Generated from b with shasum 60905be3229389edfc64367da847fbf128c7d962",
   "type": "object",
   "required": [
     "blockId",
@@ -33,6 +33,7 @@
     "submission": {
       "type": "object",
       "required": [
+        "materials",
         "commodities",
         "submitter",
         "applicant",
@@ -41,6 +42,30 @@
         "supplier"
       ],
       "properties": {
+        "materials": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+              "hsCode",
+              "description",
+              "origin"
+            ],
+            "properties": {
+              "hsCode": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "origin": {
+                "type": "string"
+              }
+            }
+          }
+        },
         "commodities": {
           "type": "array",
           "minItems": 1,

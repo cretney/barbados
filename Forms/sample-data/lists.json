@@ -204,6 +204,10 @@
 				"template": "bidc-registration-exporter.html"
 			},
 			{
+				"id": 38,
+				"template": "bidc-registration-exporter-issued.html"
+			},
+			{
 				"id": 40,
 				"template": "foodwhole-sampling-goods.html"
 			},
