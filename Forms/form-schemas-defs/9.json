@@ -1,0 +1,163 @@
+[
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "help",
+        "helpvalue": "<h4>1. Applicant/Importer Information</h4>"
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "applicant.name",
+            "title": "Company Name",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-8",
+        "items": [
+          {
+            "key": "applicant.address",
+            "title": "Address",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "applicant.parish",
+            "title": "Parish",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-2",
+        "items": [
+          {
+            "type": "help",
+            "helpvalue": "<b>CONTACT PERSON</b>"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-2",
+        "items": [
+          {
+            "key": "applicant.contactPerson.firstName",
+            "title": "First Name",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "origin",
+            "title": "Country of Origin",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "dateArrival",
+            "title": "Estimated Date of Arrival",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "vesselArrive",
+            "title": "Via Vessel/Carrier",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "transhipVia",
+            "title": "To tranship via",
+            "description": "(if applicable)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "supplier.name",
+            "title": "Overseas Agent/Broker",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-8",
+        "items": [
+          {
+            "key": "supplier.address",
+            "title": "Agent/Broker Address",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-0",
+        "items": [
+          {
+            "key": "supplier.country",
+            "title": "Agent/Broker Country",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -112,6 +112,11 @@
 				"document":"Application to import Radioactive Materials.pdf"
 			},
 			{
+				"id": 10,
+				"template": "dcca-application-import-radioactive-materials-issued.html",
+				"document":"Application to import Radioactive Materials.pdf"
+			},
+			{
 				"id": 11,
 				"template": "plant-import-issued.html"
 			},
@@ -618,6 +623,11 @@
 			{
 				"id": 130,
 				"template": "pcb-application-approval-pesticide.html",
+				"document":"Application for Approval of Pesticide.pdf"
+			},
+			{
+				"id": 131,
+				"template": "pcb-application-approval-pesticide-issued.html",
 				"document":"Application for Approval of Pesticide.pdf"
 			},
 			{
