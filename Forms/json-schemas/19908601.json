@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum c4fbeebdf1afff3c2dcc9940adbaedb2f77b30fe",
+  "description": "Generated from b with shasum 89f3327270137fe1c1ad0764d7cfcf91e32b2495",
   "type": "object",
   "required": [
     "blockId",
@@ -30,20 +30,14 @@
       "type": "object",
       "required": [
         "commodities",
-        "referenceNumber",
-        "serialNumberCertificate",
-        "contractNumber",
-        "approvalDate",
-        "issuedDate",
-        "invoiceDate",
-        "invoiceNumber",
+        "permitNumber",
         "containerNumber",
-        "submitter",
+        "animalUse",
+        "carrier",
         "applicant",
-        "origin",
-        "countryConsigned",
         "expectedArrival",
-        "supplier"
+        "supplier",
+        "customsBroker"
       ],
       "properties": {
         "commodities": {
@@ -55,7 +49,7 @@
             "required": [
               "hsCode",
               "description",
-              "units"
+              "animals"
             ],
             "properties": {
               "hsCode": {
@@ -64,46 +58,34 @@
               "description": {
                 "type": "string"
               },
-              "units": {
+              "animals": {
                 "type": "array",
                 "minItems": 1,
                 "uniqueItems": true,
                 "items": {
                   "type": "object",
                   "required": [
-                    "unitType",
-                    "quantity",
-                    "pricePerUnit",
-                    "cifValue",
-                    "code",
-                    "name",
-                    "pack_size",
-                    "extendedCost"
+                    "species",
+                    "breed",
+                    "age",
+                    "sex",
+                    "microchipNum"
                   ],
                   "properties": {
-                    "unitType": {
+                    "species": {
                       "type": "string"
                     },
-                    "quantity": {
+                    "breed": {
+                      "type": "string"
+                    },
+                    "age": {
                       "type": "integer"
                     },
-                    "pricePerUnit": {
-                      "type": "number"
-                    },
-                    "cifValue": {
-                      "type": "integer"
-                    },
-                    "code": {
+                    "sex": {
                       "type": "string"
                     },
-                    "name": {
+                    "microchipNum": {
                       "type": "string"
-                    },
-                    "pack_size": {
-                      "type": "string"
-                    },
-                    "extendedCost": {
-                      "type": "number"
                     }
                   }
                 }
@@ -111,32 +93,34 @@
             }
           }
         },
-        "referenceNumber": {
-          "type": "string"
-        },
-        "serialNumberCertificate": {
-          "type": "string"
-        },
-        "contractNumber": {
-          "type": "string"
-        },
-        "approvalDate": {
-          "type": "string"
-        },
-        "issuedDate": {
-          "type": "string"
-        },
-        "invoiceDate": {
-          "type": "string"
-        },
-        "invoiceNumber": {
+        "permitNumber": {
           "type": "string"
         },
         "containerNumber": {
           "type": "string"
         },
-        "submitter": {
-          "type": "string"
+        "animalUse": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "carrier": {
+          "type": "object",
+          "required": [
+            "idNumber",
+            "name"
+          ],
+          "properties": {
+            "idNumber": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            }
+          }
         },
         "applicant": {
           "type": "object",
@@ -145,7 +129,10 @@
             "name",
             "countryId",
             "country",
-            "address"
+            "address",
+            "phone",
+            "fax",
+            "email"
           ],
           "properties": {
             "id": {
@@ -162,14 +149,17 @@
             },
             "address": {
               "type": "string"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
             }
           }
-        },
-        "origin": {
-          "type": "string"
-        },
-        "countryConsigned": {
-          "type": "string"
         },
         "expectedArrival": {
           "type": "string"
@@ -197,6 +187,37 @@
               "type": "string"
             },
             "address": {
+              "type": "string"
+            }
+          }
+        },
+        "customsBroker": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address",
+            "phone"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "phone": {
               "type": "string"
             }
           }

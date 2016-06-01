@@ -1,0 +1,395 @@
+[
+  {
+    "type": "help",
+    "helpvalue":"<hr><h5><b>PHYTOSANITARY INSPECTION (PORT OF ENTRY)</b></h5>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "inspector",
+            "title": "Name of P.Q. Inspector:"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "inspectionDate",
+            "type": "date-time",
+            "title": "Date of Inspection",
+            "description": "(DD/MM/YY)"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "inspectionLocation",
+            "type": "radios-inline",
+            "title": "Place of Inspection",
+            "titleMap": {
+              "airport": "G.A. Int'l Airport&nbsp;&nbsp;&nbsp;&nbsp;",
+              "harbour": "Bridgetown Harbour&nbsp;&nbsp;&nbsp;&nbsp;",
+              "other": "Other"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "otherDetails",
+            "condition": "model.inspectionLocation == 'other'",
+            "title": "Place of Inspection: Other Detail"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr><h5><b>CONSIGNEE INFORMATION</b></h5>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "consignee.name",
+            "title": "Name of Consignee:"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "consignee.country",
+            "title": "Consignee Country"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "consignee.address",
+            "title": "Consignee Address",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"<h5>CONTACT</h5>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "consignee.contact.name",
+            "title":"Contact Person"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"consignee.contact.email",
+            "title":"Email Address"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "consignee.contact.home_phone",
+            "title":"Home Phone"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "consignee.contact.work_phone",
+            "title":"Work Phone"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "consignee.contact.mobile_phone",
+            "title":"Mobile Phone"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"consignee.contact.fax",
+            "title":"Fax"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr><h5><b>CONSIGNMENT INFORMATION</b></h5>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "origin",
+            "title": "Country of Origin"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "phytosanitaryCertificate",
+            "title": "Phytosanitary Certificate #",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "dateInspection",
+            "type": "date-time",
+            "title": "Date of Issue",
+            "description": "(DD/MM/YY)"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "permitNumber",
+            "title": "Import Permit #",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "periodEnding",
+            "type": "date-time",
+            "title": "Expiry Date",
+            "description": "(DD/MM/YY)"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "serialNumberCertificate",
+            "title": "Treatment Certificate #",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "issuedDate",
+            "type": "date-time",
+            "title": "Date of Issue",
+            "description": "(DD/MM/YY)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr><h5><b>INSPECTION DETAILS</b></h5>"
+  },
+  {
+    "key": "commodities",
+    "title":"",
+    "add": "New",
+    "style": {
+      "add": "hidden"
+    },
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key":"commodities[].hsCode",
+                "title":"HS Code",
+                "description": "",
+                "readonly":true
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-8",
+            "items": [
+              {
+                "key":"commodities[].description",
+                "title":"Commodity",
+                "description": "Name of the plant",
+                "readonly":true
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-4",
+            "items": [
+              {
+                "key":"commodities[].grossWeight",
+                "type": "number",
+                "title":"Weight",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-4",
+            "items": [
+              {
+                "key":"commodities[].grossWeightUnits",
+                "title":"Units",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-4",
+            "items": [
+              {
+                "key":"commodities[].units[0].quantity",
+                "type": "number",
+                "title":"Quantity",
+                "description": "(No. of Plants)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+	},
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "remarks",
+            "type": "textarea",
+            "title": "Remarks"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr><h5><b>OBSERVATIONS</b></h5>"
+  },
+  {
+    "key": "observations",
+    "type": "textarea",
+    "title": ""
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr><h5><b>REMARKS/ RECOMMENDATIONS</b></h5>"
+  },
+  {
+    "key": "recommendations",
+    "type": "textarea",
+    "title": ""
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr><h5><b>CONSIGNEE'S COMMENTS</b></h5>"
+  },
+  {
+    "key": "comments",
+    "type": "textarea",
+    "title": ""
+  },
+  {
+    "type": "submit",
+    "style": "btn-info",
+    "title": "Save"
+  }
+]

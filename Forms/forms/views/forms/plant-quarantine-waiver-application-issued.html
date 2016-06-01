@@ -1,0 +1,272 @@
+<div>
+  <div class="row">
+    <div class="col-sm-3">
+      (LOGO)
+    </div>
+    <div class="col-sm-6" align="center">
+      <h4>
+        <b>
+          MINISTRY OF AGRICULTURE, FOOD, FISHERIES,<br>
+          AND WATER RESOURCE MANAGEMENT
+        </b>
+      </h4>
+      <h6>
+        P.O. BOX 505, GRAEME HALL, CHRIST CHURCH, BARBADOS, WEST INDIES
+      </h6>
+    </div><!--col-sm-6-->
+    <div class="col-sm-3" align="right">
+      (LOGO)
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-4">
+      <br>
+      <h6>
+        <i>Our Ref: <b>{{ila.submission.referenceNumber}}</b></i>
+      </h6>
+    </div>
+    <div class="col-sm-4">
+      <br>
+      <h6>
+        <i>Your Ref: <b>{{ila.submission.referenceNumber}}</b></i>
+      </h6>
+    </div>
+    <div class="col-sm-4">
+      <h6 align="right">
+        <i>Tel: (246) 426‐1222</i><br>
+        <i>Fax: (246) 426‐6927</i>
+      </h6>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12" align="center">
+      <h4>
+        <b>
+          Plant Quarantine Division, Crumpton Street, Bridgetown, St. Michael
+        </b>
+      </h4>
+      <h4>
+        <b>
+          PLANT QUARANTINE/ CUSTOMS WAIVER APPLICATION
+        </b>
+      </h4>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+  <br><br><br>
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table with-border">
+        <tr>
+          <td colspan="3" class="with-top">
+            1. Name of Importer <br>
+            <b>{{ila.submission.applicant.name}}</b>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" class="no-top">
+            Address<br>
+            <b>{{ila.submission.applicant.address}}</b>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" class="no-top">
+            <div class="row">
+              <div class="col-sm-12">
+                Contact Person: <b>{{ila.submission.applicant.contact.name}}</b>
+                <br><br>
+              </div>
+
+              <div class="col-sm-3">
+                Tel: (H): <b>{{ila.submission.applicant.contact.home_phone}}</b>
+              </div>
+              <div class="col-sm-3">
+                (W): <b>{{ila.submission.applicant.contact.work_phone}}</b>
+              </div>
+              <div class="col-sm-3">
+                (C): <b>{{ila.submission.applicant.contact.mobile_phone}}</b>
+              </div>
+              <div class="col-sm-3">
+                (F): <b>{{ila.submission.applicant.contact.fax}}</b><br><br>
+              </div>
+
+              <div class="col-sm-12">
+                Email Address: <b>{{ila.submission.applicant.contact.email}}</b>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row"><!--Table 2-->
+    <div class="col-sm-12">
+
+      <br>
+      <br>
+      <table class="table table-bordered black-border">
+        <tr>
+          <th colspan="3">
+            2. Description of Consignment/ Commodity
+          </th>
+        </tr>
+      </table>
+      <div class="table-bordered black-border" view-commodities-no-price=""></div>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+  <br><br>
+  <div class="row"><!--Table 3-4-->
+    <div class="col-sm-12">
+      <table class="table table-bordered black-border">
+        <tr>
+          <td>
+            3. Container #:<br>
+            <b>{{ila.submission.containerNumber}}</b>
+          </td>
+          <td>
+            4. Vessel:<br>
+            <b>{{ila.submission.vesselOrCraft}}</b>
+          </td>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row"><!--Table 5-6-->
+    <div class="col-sm-12">
+      <table class="table table-bordered black-border">
+        <tr>
+          <td>
+            5. Country of Origin:<br>
+            <b>{{ila.submission.origin}}</b>
+          </td>
+          <td>
+            6. BL # / AWB #:<br>
+            <b>{{ila.submission.awl_bl_number}}</b>
+          </td>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table table-bordered black-border no-top-td no-bottom-th">
+        <tr>
+          <td>
+            7. Date of Arrival:<br>
+            <b>{{ila.submission.dateArrival  | date:'dd/MM/yy'}}</b>
+          </td>
+          <td>
+            8. Rotation #:<br>
+            <b>{{ila.submission.rotationNumber}}</b>
+          </td>
+          <td>
+            9. Date of Declaration:<br>
+            <b>{{ila.submission.dateDeclaration  | date:'dd/MM/yy'}}</b>
+          </td>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row"><!--Table 10-->
+    <div class="col-sm-12">
+      <table class="table table-bordered black-border">
+        <tr>
+          <td>
+            10. Place of Inspection:<br>
+            <b>{{ila.submission.inspectionLocation}}</b>
+          </td>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row"><!--Table 11-->
+    <div class="col-sm-12">
+      <table class="table with-border">
+        <tr>
+          <td colspan="3" class="with-top">
+            11. Customs Broker:<br>
+            <b>{{ila.submission.customsBroker.name}}</b>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" class="no-top">
+            Address:<br>
+            <b>{{ila.submission.customsBroker.address}}</b>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" class="no-top">
+            <div class="row">
+              <div class="col-sm-12">
+                Contact Person: <b>{{ila.submission.customsBroker.contact.name}}</b>
+                <br><br>
+              </div>
+
+              <div class="col-sm-3">
+                Tel: (H): <b>{{ila.submission.customsBroker.contact.home_phone}}</b>
+              </div>
+              <div class="col-sm-3">
+                (W): <b>{{ila.submission.customsBroker.contact.work_phone}}</b>
+              </div>
+              <div class="col-sm-3">
+                (C): <b>{{ila.submission.customsBroker.contact.mobile_phone}}</b>
+              </div>
+              <div class="col-sm-3">
+                (F): <b>{{ila.submission.customsBroker.contact.fax}}</b><br><br>
+              </div>
+
+              <div class="col-sm-12">
+                Email Address: <b>{{ila.submission.customsBroker.contact.email}}</b>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <br><br>
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table with-border">
+        <tr>
+          <td class="with-top">(Name (Please Print))</td>
+          <td class="with-top">(Signature)</td>
+          <td class="with-top">(Date)</td>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+  <br><br>
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table with-border">
+        <tr>
+          <th class="center-align active with-top" colspan="3"><i>OFFICIAL USE ONLY</i></th>
+        </tr>
+        <tr>
+          <th class="with-top">Waiver Type:</th>
+          <th class="with-top">COMMERCIAL [ ]</th>
+          <th class="with-top">NON-COMMERCIAL [ ]</th>
+        </tr>
+        <tr>
+          <th colspan="3" class="no-top">Waiver #:</th>
+        </tr>
+        <tr>
+          <th class="no-top">Date Issued: <b>{{ila.submission.issuedDate  | date:'dd/MM/yy'}}</b></th>
+          <th class="no-top right-align">P.Q. Inspector: <b>{{ila.submission.inspector}}</b></th>
+          <th class="no-top"></th>
+        </tr>
+        <tr>
+          <th colspan="3" class="no-top">Other Details/ Remarks:</th>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+</div><!--container-->

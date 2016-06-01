@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 327fdc808de5fb2e442525a1f73a5b1fc604f110",
+  "description": "Generated from b with shasum 295179223c603c04e98515390503fe597f8f81fa",
   "type": "object",
   "required": [
     "blockId",
@@ -30,24 +30,26 @@
       "type": "object",
       "required": [
         "commodities",
-        "inspectionDate",
+        "vesselOrCraft",
+        "rotationNumber",
+        "awl_bl_number",
+        "containerNumber",
+        "dateDeclaration",
+        "inspectionLocation",
         "inspector",
-        "treatmentDate",
-        "treatment",
-        "treatmentDuration",
-        "treatmentLevel",
-        "packageNumber",
-        "packageDescription",
-        "distinguishingMarks",
-        "meansConveyance",
-        "portDischarge",
-        "origin",
+        "dateInspection",
+        "timeInspection",
+        "entryDate",
+        "referenceNumber",
         "serialNumberCertificate",
         "approvalDate",
         "issuedDate",
         "submitter",
-        "exporter",
-        "consignee"
+        "applicant",
+        "origin",
+        "dateArrival",
+        "timeArrival",
+        "customsBroker"
       ],
       "properties": {
         "commodities": {
@@ -91,40 +93,37 @@
             }
           }
         },
-        "inspectionDate": {
+        "vesselOrCraft": {
+          "type": "string"
+        },
+        "rotationNumber": {
+          "type": "string"
+        },
+        "awl_bl_number": {
+          "type": "string"
+        },
+        "containerNumber": {
+          "type": "string"
+        },
+        "dateDeclaration": {
+          "type": "string"
+        },
+        "inspectionLocation": {
           "type": "string"
         },
         "inspector": {
           "type": "string"
         },
-        "treatmentDate": {
+        "dateInspection": {
           "type": "string"
         },
-        "treatment": {
+        "timeInspection": {
           "type": "string"
         },
-        "treatmentDuration": {
+        "entryDate": {
           "type": "string"
         },
-        "treatmentLevel": {
-          "type": "string"
-        },
-        "packageNumber": {
-          "type": "string"
-        },
-        "packageDescription": {
-          "type": "string"
-        },
-        "distinguishingMarks": {
-          "type": "string"
-        },
-        "meansConveyance": {
-          "type": "string"
-        },
-        "portDischarge": {
-          "type": "string"
-        },
-        "origin": {
+        "referenceNumber": {
           "type": "string"
         },
         "serialNumberCertificate": {
@@ -139,34 +138,7 @@
         "submitter": {
           "type": "string"
         },
-        "exporter": {
-          "type": "object",
-          "required": [
-            "id",
-            "name",
-            "countryId",
-            "country",
-            "address"
-          ],
-          "properties": {
-            "id": {
-              "type": "integer"
-            },
-            "name": {
-              "type": "string"
-            },
-            "countryId": {
-              "type": "string"
-            },
-            "country": {
-              "type": "string"
-            },
-            "address": {
-              "type": "string"
-            }
-          }
-        },
-        "consignee": {
+        "applicant": {
           "type": "object",
           "required": [
             "id",
@@ -174,9 +146,7 @@
             "countryId",
             "country",
             "address",
-            "docid",
-            "fax",
-            "email"
+            "contact"
           ],
           "properties": {
             "id": {
@@ -194,14 +164,116 @@
             "address": {
               "type": "string"
             },
-            "docid": {
+            "contact": {
+              "type": "object",
+              "required": [
+                "name",
+                "address:",
+                "home_phone",
+                "work_phone",
+                "mobile_phone",
+                "fax",
+                "email"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "address:": {
+                  "type": "string"
+                },
+                "home_phone": {
+                  "type": "string"
+                },
+                "work_phone": {
+                  "type": "string"
+                },
+                "mobile_phone": {
+                  "type": "string"
+                },
+                "fax": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "origin": {
+          "type": "string"
+        },
+        "dateArrival": {
+          "type": "string"
+        },
+        "timeArrival": {
+          "type": "string"
+        },
+        "customsBroker": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address",
+            "phone",
+            "contact"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
               "type": "string"
             },
-            "fax": {
+            "countryId": {
               "type": "string"
             },
-            "email": {
+            "country": {
               "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "contact": {
+              "type": "object",
+              "required": [
+                "name",
+                "address:",
+                "home_phone",
+                "work_phone",
+                "mobile_phone",
+                "fax",
+                "email"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "address:": {
+                  "type": "string"
+                },
+                "home_phone": {
+                  "type": "string"
+                },
+                "work_phone": {
+                  "type": "string"
+                },
+                "mobile_phone": {
+                  "type": "string"
+                },
+                "fax": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                }
+              }
             }
           }
         }

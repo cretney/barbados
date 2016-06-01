@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 327fdc808de5fb2e442525a1f73a5b1fc604f110",
+  "description": "Generated from b with shasum fb0eddc78f042c7d4631a6b0c0e5b9ec6433a33e",
   "type": "object",
   "required": [
     "blockId",
@@ -30,24 +30,20 @@
       "type": "object",
       "required": [
         "commodities",
-        "inspectionDate",
-        "inspector",
-        "treatmentDate",
-        "treatment",
-        "treatmentDuration",
-        "treatmentLevel",
-        "packageNumber",
-        "packageDescription",
-        "distinguishingMarks",
-        "meansConveyance",
-        "portDischarge",
-        "origin",
-        "serialNumberCertificate",
+        "authorisationNo",
+        "fileNumber",
+        "referenceNumber",
+        "importCertificateNo",
+        "importCertificateDate",
+        "importCertificateIssuedBy",
+        "destinationCountry",
+        "customsShipment",
+        "periodEnding",
+        "applicant",
+        "importer",
         "approvalDate",
         "issuedDate",
-        "submitter",
-        "exporter",
-        "consignee"
+        "submitter"
       ],
       "properties": {
         "commodities": {
@@ -59,6 +55,8 @@
             "required": [
               "hsCode",
               "description",
+              "name",
+              "kindPackages",
               "units"
             ],
             "properties": {
@@ -66,6 +64,12 @@
                 "type": "string"
               },
               "description": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "kindPackages": {
                 "type": "string"
               },
               "units": {
@@ -91,55 +95,34 @@
             }
           }
         },
-        "inspectionDate": {
+        "authorisationNo": {
           "type": "string"
         },
-        "inspector": {
+        "fileNumber": {
           "type": "string"
         },
-        "treatmentDate": {
+        "referenceNumber": {
           "type": "string"
         },
-        "treatment": {
+        "importCertificateNo": {
           "type": "string"
         },
-        "treatmentDuration": {
+        "importCertificateDate": {
           "type": "string"
         },
-        "treatmentLevel": {
+        "importCertificateIssuedBy": {
           "type": "string"
         },
-        "packageNumber": {
+        "destinationCountry": {
           "type": "string"
         },
-        "packageDescription": {
+        "customsShipment": {
           "type": "string"
         },
-        "distinguishingMarks": {
+        "periodEnding": {
           "type": "string"
         },
-        "meansConveyance": {
-          "type": "string"
-        },
-        "portDischarge": {
-          "type": "string"
-        },
-        "origin": {
-          "type": "string"
-        },
-        "serialNumberCertificate": {
-          "type": "string"
-        },
-        "approvalDate": {
-          "type": "string"
-        },
-        "issuedDate": {
-          "type": "string"
-        },
-        "submitter": {
-          "type": "string"
-        },
-        "exporter": {
+        "applicant": {
           "type": "object",
           "required": [
             "id",
@@ -166,17 +149,14 @@
             }
           }
         },
-        "consignee": {
+        "importer": {
           "type": "object",
           "required": [
             "id",
             "name",
             "countryId",
             "country",
-            "address",
-            "docid",
-            "fax",
-            "email"
+            "address"
           ],
           "properties": {
             "id": {
@@ -193,17 +173,17 @@
             },
             "address": {
               "type": "string"
-            },
-            "docid": {
-              "type": "string"
-            },
-            "fax": {
-              "type": "string"
-            },
-            "email": {
-              "type": "string"
             }
           }
+        },
+        "approvalDate": {
+          "type": "string"
+        },
+        "issuedDate": {
+          "type": "string"
+        },
+        "submitter": {
+          "type": "string"
         }
       }
     }

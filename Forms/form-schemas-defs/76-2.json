@@ -1,0 +1,203 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"containerNumber",
+            "title":"Container #"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"vesselOrCraft",
+            "title":"Vessel"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"origin",
+            "title":"Country of Origin"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"awl_bl_number",
+            "title":"BL # / AWB #"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"dateArrival",
+            "title":"Date of Arrival"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"rotationNumber",
+            "title":"Rotation #"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"dateDeclaration",
+            "title":"Date of Declaration"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key":"inspectionLocation",
+    "title":"Place of Inspection:"
+  },
+  {
+    "type": "help",
+    "helpvalue":"<hr><h5><b>BROKER</b></h5>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-5",
+        "items": [
+          {
+            "key":"customsBroker.name",
+            "title":"Customs Broker"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-7",
+        "items": [
+          {
+            "key":"customsBroker.address",
+            "title":"Broker's Address"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "customsBroker.contact.name",
+            "title":"Contact Person"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"customsBroker.contact.email",
+            "title":"Email Address"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "customsBroker.contact.home_phone",
+            "title":"Home Phone"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "customsBroker.contact.work_phone",
+            "title":"Work Phone"
+
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "customsBroker.contact.mobile_phone",
+            "title":"Mobile Phone"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"customsBroker.contact.fax",
+            "title":"Fax"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "submit",
+    "style": "btn-info",
+    "title": "Save"
+  }
+
+]
