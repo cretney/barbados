@@ -1,0 +1,616 @@
+<div>
+  <div class="row"><!--Header-->
+    <div class="col-sm-12">
+      <h3 align="center">
+        <b><u>
+          Application to Import Radioactive Material
+        </u></b>
+      </h3><br>
+      <h5><b>
+        <u>FIRST TIME APPLICANTS:</u>
+        COMPLETE THE ENTIRE FORM.<br>
+        <u>RENEWALS:</u>
+        OMIT PART 6, unless changes have been made since previous application.
+      </b></h5>
+      <h5>
+        <b><u>
+          PLEASE PRINT ALL RESPONSES
+        </u></b>
+      </h5>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row"><!--1-->
+    <div class="col-sm-7" style="background-color: gray;">
+      <h4><b>
+        1. Applicant/Importer Information
+      </b></h4>
+    </div>
+    <div class="col-sm-5" style="background-color: gray;">
+      <h4><b>Date (dd/mm/yyyy): {{ila.submission.entryDate | date:'dd/MM/yyyy'}}</b></h4>
+    </div>
+
+    <div class="col-sm-12">
+      <h5>
+        Company Name: <b>{{ila.submission.applicant.name}}</b>
+      </h5>
+      <h5>
+        Address: <b>{{ila.submission.applicant.address}}</b>
+      </h5>
+    </div><!--col-sm-12-->
+
+    <div class="col-sm-3 col-sm-offset-6">
+      <h5>Parish: <b>{{ila.submission.applicant.parish}}</b></h5>
+    </div>
+    <div class="col-sm-3">
+      <h5><b>Postal Code: BB</b></h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2" style="background-color: gray;">
+      <h5>
+        <b>CONTACT PERSON</b>
+      </h5>
+    </div>
+    <div class="col-sm-5">
+      <h5>First Name: <b>{{ila.submission.applicant.contactPerson.firstName}}</b></h5>
+    </div>
+    <div class="col-sm-5">
+      <h5>Last Name: <b>{{ila.submission.applicant.contactPerson.lastName}}</b></h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h5>Job Title: <b>{{ila.submission.applicant.contactPerson.title}}</b></h5>
+    </div>
+
+    <div class="col-sm-4">
+      <h5>Email: <b>{{ila.submission.applicant.contactPerson.email}}</b></h5>
+    </div>
+    <div class="col-sm-4">
+      <h5>Phone: <b>(246) {{ila.submission.applicant.contactPerson.work_phone}}</b></h5>
+    </div>
+    <div class="col-sm-4">
+      <h5>Fax: <b>(246) {{ila.submission.applicant.contactPerson.fax}}</b></h5>
+    </div>
+
+    <div class="col-sm-12">
+      <h5>
+        Briefly state purpose for which material will be used:<br>
+        <b>{{ila.submission.intendedUse}}</b>
+      </h5>
+    </div>
+  </div><!--row-->
+
+  <div class="row"><!--2-->
+    <div class="col-sm-12" style="background-color: gray;">
+      <h4><b>
+        2. Supplier Information
+      </b></h4>
+    </div>
+
+    <div class="col-sm-12">
+      <h5>
+        Company Name: <b>{{ila.submission.supplier.name}}</b>
+      </h5>
+      <h5>
+        Address: <b>{{ila.submission.supplier.address}}</b>
+      </h5>
+    </div><!--col-sm-12-->
+
+    <div class="col-sm-3">
+      <h5>City: <b>{{ila.submission.supplier.city}}</b></h5>
+    </div>
+    <div class="col-sm-6">
+      <h5>State: <b>{{ila.submission.supplier.state}}</b></h5>
+    </div>
+    <div class="col-sm-3">
+      <h5>Postal Code: <b>{{ila.submission.supplier.zip}}</b></h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2" style="background-color: gray;">
+      <h5>
+        <b>CONTACT PERSON</b>
+      </h5>
+    </div>
+    <div class="col-sm-5">
+      <h5>First Name: <b>{{ila.submission.supplier.contactPerson.firstName}}</b></h5>
+    </div>
+    <div class="col-sm-5">
+      <h5>Last Name: <b>{{ila.submission.supplier.contactPerson.lastName}}</b></h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <h5>Email: <b>{{ila.submission.supplier.contactPerson.email}}</b></h5>
+    </div>
+    <div class="col-sm-4">
+      <h5>Phone: <b>{{ila.submission.supplier.contactPerson.work_phone}}</b></h5>
+    </div>
+    <div class="col-sm-4">
+      <h5>Fax: <b>{{ila.submission.supplier.contactPerson.fax}}</b></h5>
+    </div>
+  </div><!--row-->
+
+  <div class="row"><!--3-->
+    <div class="col-sm-12" style="background-color: gray;">
+      <h4><b>
+        3. Customs Broker/ Import Agent Information
+      </b></h4>
+    </div>
+
+    <div class="col-sm-12">
+      <h5>Company Name: <b>{{ila.submission.customsBroker.name}}</b></h5>
+      <h5>Address: <b>{{ila.submission.customsBroker.address}}</b></h5>
+    </div><!--col-sm-12-->
+
+    <div class="col-sm-9">
+      <h5>Parish: <b>{{ila.submission.customsBroker.parish}}</b></h5>
+    </div>
+    <div class="col-sm-3">
+      <h5>Postal Code: <b>BB</b></h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2" style="background-color: gray;">
+      <h5>
+        <b>CONTACT PERSON</b>
+      </h5>
+    </div>
+    <div class="col-sm-5">
+      <h5>First Name: <b>{{ila.submission.customsBroker.contactPerson.firstName}}</b></h5>
+    </div>
+    <div class="col-sm-5">
+      <h5>Last Name: <b>{{ila.submission.customsBroker.contactPerson.lastName}}</b></h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <h5>Email: <b>{{ila.submission.customsBroker.contactPerson.email}}</b></h5>
+    </div>
+    <div class="col-sm-4">
+      <h5>Phone: <b>(246) {{ila.submission.customsBroker.contactPerson.work_phone}}</b></h5>
+    </div>
+    <div class="col-sm-4">
+      <h5>Fax: <b>(246) {{ila.submission.customsBroker.contactPerson.fax}}</b></h5>
+    </div>
+  </div><!--row-->
+
+  <div class="row"><!--4-->
+    <div class="col-sm-12" style="background-color: gray;">
+      <h4><b>
+        4. Transportation Information
+      </b></h4>
+    </div>
+
+    <div class="col-sm-12">
+      <h5>Method of Import: &nbsp;&nbsp;&nbsp;
+        <span ng-if="ila.submission.modeTransport == 'air'"><b>Air [ X ]</b></span>
+        <span ng-if="ila.submission.modeTransport != 'air'"><b>Air [ &nbsp; ]</b></span>
+        &nbsp;&nbsp;&nbsp;
+        <span ng-if="ila.submission.modeTransport == 'sea'"><b>Sea [ X ]</b></span>
+        <span ng-if="ila.submission.modeTransport != 'sea'"><b>Sea [ &nbsp; ]</b></span>
+      </h5>
+    </div>
+
+    <div class="col-sm-2" style="background-color: gray;">
+      <h5>
+        Company Name: </h5>
+    </div>
+    <div class="col-sm-10">
+      <h5><b>{{ila.submission.importer.name}}</b></h5>
+    </div>
+    <div class="col-sm-12">
+      <h5>Address: <b>{{ila.submission.importer.address}}</b></h5>
+    </div><!--col-sm-12-->
+
+    <div class="col-sm-9">
+      <h5>Parish: <b>{{ila.submission.importer.parish}}</b></h5>
+    </div>
+    <div class="col-sm-3">
+      <h5>Postal Code: <b>BB</b></h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2" style="background-color: gray;">
+      <h5>
+        <b>CONTACT PERSON</b>
+      </h5>
+    </div>
+    <div class="col-sm-5">
+      <h5>First Name: <b>{{ila.submission.importer.contactPerson.firstName}}</b></h5>
+    </div>
+    <div class="col-sm-5">
+      <h5>Last Name: <b>{{ila.submission.importer.contactPerson.lastName}}</b></h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <h5>Email: <b>{{ila.submission.importer.contactPerson.email}}</b></h5>
+    </div>
+    <div class="col-sm-4">
+      <h5>Phone: <b>(246) {{ila.submission.importer.contactPerson.work_phone}}</b></h5>
+    </div>
+    <div class="col-sm-4">
+      <h5>Fax: <b>(246) {{ila.submission.importer.contactPerson.fax}}</b></h5>
+    </div>
+  </div><!--row-->
+
+  <!--PAGE 2-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h5><b>
+        LOCAL - Company responsible for transportation from the Port of Entry
+      </b></h5>
+    </div>
+
+    <div class="col-sm-2" style="background-color: gray;">
+      <h5>
+        Company Name: </h5>
+    </div>
+    <div class="col-sm-10">
+      <h5><b>{{ila.submission.transporter.name}}</b></h5>
+    </div>
+    <div class="col-sm-12">
+      <h5>
+        Address: <b>{{ila.submission.transporter.address}}</b></h5>
+    </div><!--col-sm-12-->
+
+    <div class="col-sm-9">
+      <h5>Parish: <b>{{ila.submission.transporter.parish}}</b></h5>
+    </div>
+    <div class="col-sm-3">
+      <h5>Postal Code: <b>BB</b></h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2" style="background-color: gray;">
+      <h5>
+        <b>CONTACT PERSON</b>
+      </h5>
+    </div>
+    <div class="col-sm-5">
+      <h5>First Name: <b>{{ila.submission.transporter.contactPerson.firstName}}</b></h5>
+    </div>
+    <div class="col-sm-5">
+      <h5>Last Name: <b>{{ila.submission.transporter.contactPerson.lastName}}</b></h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <h5>Email: <b>{{ila.submission.transporter.contactPerson.email}}</b></h5>
+    </div>
+    <div class="col-sm-4">
+      <h5>Phone: <b>(246) {{ila.submission.transporter.contactPerson.work_phone}}</b></h5>
+    </div>
+    <div class="col-sm-4">
+      <h5>Fax: <b>(246) {{ila.submission.transporter.contactPerson.fax}}</b></h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4" style="background-color: gray;">
+      <h5>
+        Secondary Overland Transporter Company Name: </h5>
+    </div>
+    <div class="col-sm-8">
+      <h5><b>{{ila.submission.transporter2.name}}</b></h5>
+    </div>
+    <div class="col-sm-12">
+      <h5>
+        Address: <b>{{ila.submission.transporter2.address}}</b></h5>
+    </div><!--col-sm-12-->
+
+    <div class="col-sm-9">
+      <h5>Parish: <b>{{ila.submission.transporter2.parish}}</b></h5>
+    </div>
+    <div class="col-sm-3">
+      <h5>Postal Code: <b>BB</b></h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-2" style="background-color: gray;">
+      <h5>
+        <b>CONTACT PERSON</b>
+      </h5>
+    </div>
+    <div class="col-sm-5">
+      <h5>First Name: <b>{{ila.submission.transporter2.contactPerson.firstName}}</b></h5>
+    </div>
+    <div class="col-sm-5">
+      <h5>Last Name: <b>{{ila.submission.transporter2.contactPerson.lastName}}</b></h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <h5>Email: <b>{{ila.submission.transporter2.contactPerson.email}}</b></h5>
+    </div>
+    <div class="col-sm-4">
+      <h5>Phone: <b>(246) {{ila.submission.transporter2.contactPerson.work_phone}}</b></h5>
+    </div>
+    <div class="col-sm-4">
+      <h5>Fax: <b>(246) {{ila.submission.transporter2.contactPerson.fax}}</b></h5>
+    </div>
+  </div><!--row-->
+
+  <div class="row"><!--5-->
+    <div class="col-sm-12" style="background-color: gray">
+      <h4><b>
+        5. Material Information
+      </b></h4>
+    </div><br><br><br>
+
+    <div class="col-sm-12">
+      <table class="black-border" width="100%">
+        <tr>
+          <th class="center-align">Product ID No.</th>
+          <th class="center-align">Description</th>
+          <th class="center-align">Physical Characteristics (S- Solid, L-Liquid, G-Gas)</th>
+          <th class="center-align">Quantity (Maximum Quantity)</th>
+          <th class="center-align">Activity (GBq)</th>
+          <th class="center-align">Radioisotope</th>
+          <th class="center-align">Calibration Date</th>
+        </tr>
+        <tr ng-repeat="item in ila.submission.commodities" align="center">
+          <td>{{item.id}}</td>
+          <td>{{item.description}}</td>
+          <td>{{item.radioactive[0].physicalState}}</td>
+          <td>{{item.radioactive[0].quantity}}</td>
+          <td>{{item.radioactive[0].activity}}</td>
+          <td>{{item.radioactive[0].radioIsotope}}</td>
+          <td>{{item.radioactive[0].calibrationDate | date:'dd/MM/yyyy'}}</td>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+  </div><!--row--><br>
+
+  <div class="row"><!--6-->
+    <div class="col-sm-12" style="background-color: gray">
+      <h4><b>
+        6. Safety - <i>use additional paper</i>
+      </b></h4>
+    </div><!--col-sm-12-->
+    <div class="col-sm-12">
+      <br>
+      <p>
+        * Names & qualifications of persons who will handle the radioactive materials:
+      </p>
+      <table class="black-border" width="100%">
+        <tr>
+          <th>Name</th>
+          <th>Qualifications</th>
+        </tr>
+        <tr ng-repeat="handler in ila.submission.handlers">
+          <td>{{handler.name}}</td>
+          <td>{{handler.qualifications}}</td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-sm-12">
+      <br>
+      <p>
+        * Emergency plans to be followed in cases of accidents or crisis:<br>
+        <b>{{ila.submission.emergencyPlans}}</b>
+      </p>
+    </div>
+    <div class="col-sm-12">
+      <br>
+      <p>
+        * Monitoring procedures ‐ to be employed for radioactive materials:<br>
+        <b>{{ila.submission.monitoring}}</b>
+      </p>
+    </div>
+    <div class="col-sm-12">
+      <br>
+      <p>
+        * Storage location & facilities:<br>
+        <b>{{ila.submission.storage.location}}<br>
+        {{ila.submission.storage.facilities}}</b>
+      </p>
+    </div>
+    <div class="col-sm-12">
+      <br>
+      <p>
+        * Protective equipment ‐ to be used by personnel handling the radioactive materials:<br>
+        <b>{{ila.submission.protectiveEquipment}}</b>
+      </p>
+    </div>
+    <div class="col-sm-12">
+      <br>
+      <p>
+        * Description of containment method & material:<br>
+        <b>{{ila.submission.container}}</b>
+      </p>
+    </div>
+    <div class="col-sm-12">
+      <br>
+      <p>
+        * Proposed transportation routes for the material:<br>
+        <b>{{ila.submission.routeTransport}}</b>
+      </p>
+    </div>
+
+
+  </div><!--row-->
+
+  <div class="row"><!--7-->
+    <div class="col-sm-12" style="background-color: gray;">
+      <h4><b>
+        7. Proposed Method of Disposal of Used Radioactive Material
+      </b></h4>
+    </div>
+    <div class="col-sm-12">
+      <table class="table black-border">
+        <tr>
+          <th width="40%">
+            Expected activity at the end of use:
+          </th>
+          <th>
+            {{ila.submission.endActivity}} GBq
+          </th>
+        </tr>
+        <tr>
+          <th>
+            Explain method by which the material imported will be disposed:
+          </th>
+          <th>{{ila.submission.disposal}}</th>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+
+    <div class="col-sm-12">
+      <br>
+      <h6>
+        ¹ The Department must be notified in writing of any changes to personnel or procedures.
+      </h6>
+    </div>
+  </div><!--row-->
+
+  <!--PAGE 3-->
+
+  <div class="row"><!--8-->
+    <div class="col-sm-12">
+      <h4><b>
+        8. Declaration:
+      </b></h4>
+    </div><!--col-sm-12-->
+
+    <div class="col-sm-12">
+      <h6>
+        I certify that the above information is complete and correct to the best of my knowledge. I also certify that legally‐enforceable written contractual obligations have been entered into, that any applicable insurance or other financial guarantees are in force covering the transboundary movement and that all necessary authorisations have been received from the competent authorities of the States concerned.
+      </h6>
+      <h5><b>
+        Applicant's name: {{ila.submission.submitter}}<br><br>
+        Applicant's Signature: {{ila.submission.submitter}}<br><br>
+        Applicant's Stamp:
+      </b></h5>
+      <h6><b>Date (dd/mm/yyyy): {{ila.submission.entryDate | date:'dd/MM/yyyy'}}</b></h6>
+
+      <h5 align="center">
+        <b><u>
+          RENEWAL APPLICATIONS SHOULD BE MADE TEN (10) BUSINESS DAYS BEFORE THE EXPIRATION<br>
+          OF THE CURRENT APPROVAL
+        </u></b>
+      </h5>
+    </div><!--col-sm-12-->
+
+    <div class="col-sm-12">
+      <table class="custom-table black-border" width="75%" style="background-color: gray;">
+        <tr>
+          <th class="center-align">
+            <h4><b>OFFICIAL USE</b></h4>
+          </th>
+        </tr>
+        <tr>
+          <th class="center-align">
+            <h4><b>ENVIRONMENTAL PROTECTION DEPARTMENT</b></h4>
+          </th>
+        </tr>
+        <tr>
+          <td>DATE RECEIVED: <b>{{ila.submission.receptionDate | date:'dd/MM/yyyy'}}</b></td>
+        </tr>
+        <tr>
+          <td>APPLICANT'S NUMBER: <b>{{ila.submission.applicant.id}}</b></td>
+        </tr>
+        <tr>
+          <td>EXPIRATION DATE: <b>{{ila.submission.previousExpiration}}</b></td>
+        </tr>
+        <tr>
+          <td>
+            <div class="row">
+              <div class="col-sm-7">
+                APPROVED: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span ng-if="ila.submission.agencyApprovals.approved == 'yes'"><b>[ X ]</b></span>
+                <span ng-if="ila.submission.agencyApprovals.approved != 'yes'">[ &nbsp; ]</span>
+              </div>
+              <div class="col-sm-5">
+                REFUSED: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span ng-if="ila.submission.agencyApprovals.approved == 'no'"><b>[ X ]</b></span>
+                <span ng-if="ila.submission.agencyApprovals.approved != 'no'">[ &nbsp; ]</span>
+              </div>
+            </div><!--row-->
+          </td>
+        </tr>
+        <tr>
+          <td>COMMENTS:<br>
+          <b>{{ila.submission.remarks}}</b></td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+          <td>DIRECTOR'S SIGNATURE: <b>{{ila.submission.approvedBy}}</b></td>
+        </tr>
+        <tr>
+          <td>DATE (dd/mm/yyyy): <b>{{ila.submission.approvalDate | date:'dd/MM/yyyy'}}</b></td>
+        </tr>
+      </table><br>
+    </div><!--col-sm-12-->
+
+    <div class="col-sm-12">
+      <table class="custom-table black-border" width="75%">
+        <tr style="background-color: gray;">
+          <th class="center-align" colspan="2">
+            <h4><b>
+              CUSTOMS DEPARTMENT
+            </b></h4>
+            Return this original form to the EPD<br>
+            <h6><b>
+              CONFIRMATION OF ARRIVAL OF RADIOACTIVE MATERIALS AND STAMP OF THE CUSTOMS DEPARTMENT
+            </b></h6>
+          </th>
+        </tr>
+        <tr style="background-color: gray;">
+          <th class="center-align">
+            ENTRY AT PORT
+          </th>
+          <th class="center-align">
+            DEPARTURE FROM PORT
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <h6 align="center">
+              The material described overleaf arrived in the Port on (dd/mm/yyyy)
+            </h6>
+            <h5>Stamp</h5>
+            <br><br><br>
+            <h5>Signature:</h5>
+          </td>
+          <td>
+            <h6 align="center">
+              The material described overleaf departed the Port on (dd/mm/yyyy)
+            </h6>
+            <h5>Stamp</h5>
+            <br><br><br>
+            <h5>Signature:</h5>
+          </td>
+        </tr>
+      </table>
+    </div><!--col-sm-12-->
+
+    <div class="col-sm-11" align="center">
+      <h5><b>
+        THIS APPROVAL EXPIRES ON {{ila.submission.periodRequestEnding | date:'dd'}}/{{ila.submission.periodRequestEnding | date:'MM'}}/20{{ila.submission.periodRequestEnding | date:'yy'}}
+      </b></h5>
+    </div>
+    <div class="col-sm-11 col-sm-offset-1" align="center">
+      <h5><b>
+        THIS APPLICATION IS NON-TRANSFERRABLE
+      </b></h5>
+    </div>
+  </div><!--row-->
+</div><!--container-->

@@ -22,6 +22,10 @@
             "description": "The unique code for the commodity."
           },
           "description": "",
+          "id": {
+            "type": "string",
+            "title": "Product ID No."
+          },
           "units": {
             "type": "array",
             "minItems": 1,
@@ -240,6 +244,44 @@
               }
             }
           },
+          "radioactive": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "physicalState": {
+                  "type": "string",
+                  "title": "Physical Characteristics",
+                  "description": ""
+                },
+                "quantity": {
+                  "type": "string",
+                  "title": "Quantity",
+                  "description": ""
+                },
+                "activity": {
+                  "type": "number",
+                  "title": "Activity",
+                  "description": "GBq"
+                },
+                "radioIsotope": {
+                  "type": "string",
+                  "title": "Radioisotope",
+                  "description": ""
+                },
+                "calibrationDate": {
+                  "type": "date-time",
+                  "title": "Calibration Date",
+                  "description": ""
+                }
+              }
+            }
+          },
           "fobValue": {
             "type": "integer",
             "title": "FOB Value (US$)",
@@ -305,6 +347,21 @@
                 "type": "string",
                 "title": "Address",
                 "description": ""
+              },
+              "address2": {
+                "type": "string",
+                "title": "Postal Address",
+                "description": ""
+              },
+              "email": {
+                "type": "string",
+                "title": "E-mail Address",
+                "description": ""
+              },
+              "regInCountry": {
+                "type": "boolean",
+                "title": "Is the product registered in the manufacturer's home country?",
+                "description": ""
               }
             }
           },
@@ -365,15 +422,143 @@
               "description": ""
             }
           },
-          "activeIngredients": {
-            "type": "string",
-            "title": "Activeingredients",
-            "description": ""
+          "ingredients": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems":true,
+            "items": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "title": "Active Ingredients",
+                  "description": ""
+                },
+                "concentration": {
+                  "type": "number",
+                  "title": "Percentage"
+                },
+                "active": {
+                  "type": "boolean",
+                  "title": "Is the ingredient active?",
+                  "description": ""
+                }
+              }
           },
           "formulations": {
             "type": "string",
             "title": "Formulations",
             "description": ""
+          },
+          "ld50Active": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "animal": {
+                  "type": "string",
+                  "title": "Animal species tested",
+                  "description": ""
+                },
+                "testType": {
+                    "type": "object",
+                    "required": [
+
+                    ],
+                    "properties": {
+                      "oral": {
+                        "type": "string",
+                        "title": "Oral",
+                        "description": ""
+                      },
+                      "dermal": {
+                        "type": "string",
+                        "title": "Dermal",
+                        "description": ""
+                      },
+                      "inhalation": {
+                        "type": "string",
+                        "title": "Inhalation",
+                        "description": ""
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ld50Formulation": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "animal": {
+                  "type": "string",
+                  "title": "Animal species tested",
+                  "description": ""
+                },
+                "testType": {
+                    "type": "object",
+                    "required": [
+
+                    ],
+                    "properties": {
+                      "oral": {
+                        "type": "string",
+                        "title": "Oral",
+                        "description": ""
+                      },
+                      "dermal": {
+                        "type": "string",
+                        "title": "Dermal",
+                        "description": ""
+                      },
+                      "inhalation": {
+                        "type": "string",
+                        "title": "Inhalation",
+                        "description": ""
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "toxicEffects": {
+            "type": "object",
+            "required": [
+
+            ],
+            "properties": {
+              "oral": {
+                "type": "string",
+                "title": "Oral",
+                "description": ""
+              },
+              "dermal": {
+                "type": "string",
+                "title": "Dermal",
+                "description": ""
+              },
+              "inhalation": {
+                "type": "string",
+                "title": "Inhalation",
+                "description": ""
+              }
+            }
           },
           "descriptionDetail": {
             "type": "string",
@@ -385,6 +570,99 @@
             "title": "Grossweightunits",
             "description": ""
           }
+        },
+        "toxicEffectsAnimals": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "birds": {
+              "type": "string",
+              "title": "Birds",
+              "description": ""
+            },
+            "fish": {
+              "type": "string",
+              "title": "Fish",
+              "description": ""
+            },
+            "bees": {
+              "type": "string",
+              "title": "Bees",
+              "description": ""
+            },
+            "otherWildlife": {
+              "type": "string",
+              "title": "Other Wildlife",
+              "description": ""
+            },
+            "domesticAnimals": {
+              "type": "string",
+              "title": "Domestic Animals",
+              "description": ""
+            },
+            "water": {
+              "type": "string",
+              "title": "Water (Kow)",
+              "description": ""
+            },
+            "otherEffects": {
+              "type": "string",
+              "title": "Other environmental effects",
+              "description": ""
+            }
+          }
+        },
+        "firstAid": {
+          "type": "string",
+          "title": "First Aid",
+          "description": ""
+        },
+        "treatment": {
+          "type": "string",
+          "title": "Medical Treatment",
+          "description": ""
+        },
+        "antidote": {
+          "type": "string",
+          "title": "Antidote",
+          "description": ""
+        },
+        "cropsAllowed": {
+          "type": "string",
+          "title": "Crops",
+          "description": "on which the pesticide may be used"
+        },
+        "maxResidueLimit": {
+          "type": "string",
+          "title": "Maximum Residual Limits (MRL)",
+          "description": ""
+        },
+        "tolerance": {
+          "type": "string",
+          "title": "Tolerance levels",
+          "description": "as prescribed by FAO/WHO"
+        },
+        "freqApplication": {
+          "type": "string",
+          "title": "Frequency of Application",
+          "description": "recommended by manufacturer"
+        },
+        "rateApplication": {
+          "type": "string",
+          "title": "Rate of Application",
+          "description": "recommended by manufacturer"
+        },
+        "reentryPeriod": {
+          "type": "string",
+          "title": "Re-Entry Period",
+          "description": "recommended by manufacturer"
+        },
+        "preHarvestInterval": {
+          "type": "string",
+          "title": "Pre-Harvest Interval",
+          "description": ""
         }
       }
     },
@@ -422,6 +700,11 @@
         "address": {
           "type": "string",
           "title": "Address",
+          "description": ""
+        },
+        "parish": {
+          "type": "string",
+          "title": "Parish",
           "description": ""
         },
         "docid": {
@@ -489,12 +772,27 @@
           "title": "Directors:",
           "description": ""
         },
-        "Contact Person:": {
+        "contactPerson:": {
           "type": "object",
           "properties": {
             "name": {
               "type": "string",
               "title": "Name",
+              "description": ""
+            },
+            "firstName": {
+              "type": "string",
+              "title": "First Name",
+              "description": ""
+            },
+            "lastName": {
+              "type": "string",
+              "title": "Last Name",
+              "description": ""
+            },
+            "title": {
+              "type": "string",
+              "title": "Job Title",
               "description": ""
             },
             "address:": {
@@ -562,6 +860,21 @@
           "title": "Address",
           "description": ""
         },
+        "city": {
+          "type": "string",
+          "title": "City",
+          "description": ""
+        },
+        "state": {
+          "type": "string",
+          "title": "State",
+          "description": ""
+        },
+        "zip": {
+          "type": "string",
+          "title": "Postal Code",
+          "description": ""
+        },
         "docid": {
           "type": "string",
           "title": "Docid",
@@ -586,6 +899,61 @@
           "type": "string",
           "title": "Registrationno",
           "description": ""
+        },
+        "contactPerson:": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "firstName": {
+              "type": "string",
+              "title": "First Name",
+              "description": ""
+            },
+            "lastName": {
+              "type": "string",
+              "title": "Last Name",
+              "description": ""
+            },
+            "title": {
+              "type": "string",
+              "title": "Job Title",
+              "description": ""
+            },
+            "address:": {
+              "type": "string",
+              "title": "Address:",
+              "description": ""
+            },
+            "home_phone": {
+              "type": "string",
+              "title": "Home_phone",
+              "description": ""
+            },
+            "work_phone": {
+              "type": "string",
+              "title": "Work_phone",
+              "description": ""
+            },
+            "mobile_phone": {
+              "type": "string",
+              "title": "Mobile_phone",
+              "description": ""
+            },
+            "fax": {
+              "type": "string",
+              "title": "Fax",
+              "description": ""
+            },
+            "email": {
+              "type": "string",
+              "title": "Email",
+              "description": ""
+            }
+          }
         }
       }
     },
@@ -875,6 +1243,56 @@
           "type": "string",
           "title": "Email",
           "description": ""
+        },
+        "contactPerson:": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "firstName": {
+              "type": "string",
+              "title": "First Name",
+              "description": ""
+            },
+            "lastName": {
+              "type": "string",
+              "title": "Last Name",
+              "description": ""
+            },
+            "address:": {
+              "type": "string",
+              "title": "Address:",
+              "description": ""
+            },
+            "home_phone": {
+              "type": "string",
+              "title": "Home_phone",
+              "description": ""
+            },
+            "work_phone": {
+              "type": "string",
+              "title": "Work_phone",
+              "description": ""
+            },
+            "mobile_phone": {
+              "type": "string",
+              "title": "Mobile_phone",
+              "description": ""
+            },
+            "fax": {
+              "type": "string",
+              "title": "Fax",
+              "description": ""
+            },
+            "email": {
+              "type": "string",
+              "title": "Email",
+              "description": ""
+            }
+          }
         }
       }
     },
@@ -1810,11 +2228,6 @@
       "title": "Permitnumber",
       "description": ""
     },
-    "remarks": {
-      "type": "string",
-      "title": "Remarks",
-      "description": ""
-    },
     "quarantinePeriod": {
       "type": "integer",
       "title": "Quarantineperiod",
@@ -1837,11 +2250,6 @@
           "description": ""
         }
       }
-    },
-    "totalValue": {
-      "type": "integer",
-      "title": "Totalvalue",
-      "description": ""
     },
     "consignments": {
       "type": "string",
@@ -1917,12 +2325,398 @@
           "title": "Address",
           "description": ""
         },
+        "parish": {
+          "type": "string",
+          "title": "Parish",
+          "description": ""
+        },
         "phone": {
           "type": "string",
           "title": "Phone",
           "description": ""
+        },
+        "contactPerson:": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "firstName": {
+              "type": "string",
+              "title": "First Name",
+              "description": ""
+            },
+            "lastName": {
+              "type": "string",
+              "title": "Last Name",
+              "description": ""
+            },
+            "address:": {
+              "type": "string",
+              "title": "Address:",
+              "description": ""
+            },
+            "home_phone": {
+              "type": "string",
+              "title": "Home_phone",
+              "description": ""
+            },
+            "work_phone": {
+              "type": "string",
+              "title": "Work_phone",
+              "description": ""
+            },
+            "mobile_phone": {
+              "type": "string",
+              "title": "Mobile_phone",
+              "description": ""
+            },
+            "fax": {
+              "type": "string",
+              "title": "Fax",
+              "description": ""
+            },
+            "email": {
+              "type": "string",
+              "title": "Email",
+              "description": ""
+            }
+          }
         }
       }
+    },
+    "transporter": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "title": "Id",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "countryId": {
+          "type": "string",
+          "title": "Countryid",
+          "description": ""
+        },
+        "country": {
+          "type": "string",
+          "title": "Country",
+          "description": ""
+        },
+        "address": {
+          "type": "string",
+          "title": "Address",
+          "description": ""
+        },
+        "docid": {
+          "type": "string",
+          "title": "Docid",
+          "description": ""
+        },
+        "fax": {
+          "type": "string",
+          "title": "Fax",
+          "description": ""
+        },
+        "phone": {
+          "type": "string",
+          "title": "Phone",
+          "description": ""
+        },
+        "email": {
+          "type": "string",
+          "title": "Email",
+          "description": ""
+        },
+        "contactPerson:": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "firstName": {
+              "type": "string",
+              "title": "First Name",
+              "description": ""
+            },
+            "lastName": {
+              "type": "string",
+              "title": "Last Name",
+              "description": ""
+            },
+            "address:": {
+              "type": "string",
+              "title": "Address:",
+              "description": ""
+            },
+            "home_phone": {
+              "type": "string",
+              "title": "Home_phone",
+              "description": ""
+            },
+            "work_phone": {
+              "type": "string",
+              "title": "Work_phone",
+              "description": ""
+            },
+            "mobile_phone": {
+              "type": "string",
+              "title": "Mobile_phone",
+              "description": ""
+            },
+            "fax": {
+              "type": "string",
+              "title": "Fax",
+              "description": ""
+            },
+            "email": {
+              "type": "string",
+              "title": "Email",
+              "description": ""
+            }
+          }
+        }
+      }
+    },
+    "transporter2": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "title": "Id",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "countryId": {
+          "type": "string",
+          "title": "Countryid",
+          "description": ""
+        },
+        "country": {
+          "type": "string",
+          "title": "Country",
+          "description": ""
+        },
+        "address": {
+          "type": "string",
+          "title": "Address",
+          "description": ""
+        },
+        "docid": {
+          "type": "string",
+          "title": "Docid",
+          "description": ""
+        },
+        "fax": {
+          "type": "string",
+          "title": "Fax",
+          "description": ""
+        },
+        "phone": {
+          "type": "string",
+          "title": "Phone",
+          "description": ""
+        },
+        "email": {
+          "type": "string",
+          "title": "Email",
+          "description": ""
+        },
+        "contactPerson:": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "firstName": {
+              "type": "string",
+              "title": "First Name",
+              "description": ""
+            },
+            "lastName": {
+              "type": "string",
+              "title": "Last Name",
+              "description": ""
+            },
+            "address:": {
+              "type": "string",
+              "title": "Address:",
+              "description": ""
+            },
+            "home_phone": {
+              "type": "string",
+              "title": "Home_phone",
+              "description": ""
+            },
+            "work_phone": {
+              "type": "string",
+              "title": "Work_phone",
+              "description": ""
+            },
+            "mobile_phone": {
+              "type": "string",
+              "title": "Mobile_phone",
+              "description": ""
+            },
+            "fax": {
+              "type": "string",
+              "title": "Fax",
+              "description": ""
+            },
+            "email": {
+              "type": "string",
+              "title": "Email",
+              "description": ""
+            }
+          }
+        }
+      }
+    },
+    "handlers": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name",
+            "description": ""
+          },
+          "qualifications": {
+            "type": "string",
+            "title": "Qualifications",
+            "description": ""
+          }
+        }
+      }
+    },
+    "monitoring": {
+      "type":"string",
+      "title":"Monitoring procedures",
+      "description": ""
+    },
+    "emergencyPlans": {
+      "type":"string",
+      "title":"Emergency plans",
+      "description": ""
+    },
+    "storage": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "location": {
+          "type": "string",
+          "title": "Storage Location",
+          "description": ""
+        },
+        "facilities": {
+          "type": "string",
+          "title": "Storage Facilities",
+          "description": ""
+        },
+        "size": {
+          "type": "string",
+          "title": "Size of Room",
+          "description": "sq ft"
+        },
+        "material": {
+          "type": "string",
+          "title": "Room Material",
+          "description": "wood or stone"
+        },
+        "security": {
+          "type": "string",
+          "title": "Facility Security",
+          "description": ""
+        },
+        "ventilation": {
+          "type": "string",
+          "title": "Ventilation",
+          "description": ""
+        },
+        "elevation": {
+          "type": "string",
+          "title": "Elevation",
+          "description": "describe"
+        },
+        "fireSafety": {
+          "type": "string",
+          "title": "Fire Safety Devices"
+        }
+      }
+    },
+    "protectiveEquipment": {
+      "type": "string",
+      "title": "Protective Equipment",
+      "description": ""
+    },
+    "container": {
+      "type": "string",
+      "title": "Description of Containment Method & Material",
+      "description": ""
+    },
+    "methodLabelAttach": {
+      "type": "string",
+      "title": "Method of Attachment of Label",
+      "description": ""
+    },
+    "endActivity": {
+      "type": "number",
+      "title": "Expected Activity",
+      "description": "at end of use (GBq)"
+    },
+    "disposal": {
+      "type": "string",
+      "title": "Method of Disposal",
+      "description": ""
+    },
+    "countriesRegistered": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "title": "Countries",
+        "description": ""
+      }
+    },
+    "cropsUsed": {
+      "type": "string",
+      "title": "Crops",
+      "description": "on which the pesticide will be used locally"
+    },
+    "pestsUsed": {
+      "type": "string",
+      "title": "Pests",
+      "description": "on which the pesticide is to be used"
     }
   }
 }
