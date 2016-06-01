@@ -371,6 +371,11 @@
 				"document":"Licence to Import and Store.pdf"
 			},
 			{
+				"id": 81,
+				"template": "bds-license-import-store-issued.html",
+				"document":"Licence to Import and Store.pdf"
+			},
+			{
 				"id": 82,
 				"template": "bds-export-authorization-narcotics.html",
 				"document":"Export Authorization Narcotics.pdf"
