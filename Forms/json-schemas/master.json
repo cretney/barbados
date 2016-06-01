@@ -1,1 +1,2861 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Generated from b with shasum c84bdf5eea36b61852f116e64aaf0c6874db05aa",
+  "type": "object",
+  "required": [
 
+  ],
+  "properties": {
+    "commodities": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+
+        ],
+        "properties": {
+          "hsCode": {
+            "type": "string",
+            "title": "HS Code",
+            "description": "The unique code for the commodity."
+          },
+          "description": "",
+          "units": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "unitType": {
+                  "type": "string",
+                  "title": "Unit of Sale",
+                  "description": "The unit of sale."
+                },
+                "quantity": {
+                  "type": "integer",
+                  "title": "Quantity",
+                  "description": "The quantity in units of sale."
+                },
+                "pricePerUnit": {
+                  "type": "number",
+                  "title": "Price Per Unit",
+                  "description": "In Barbados Dollars"
+                },
+                "cifValue": {
+                  "type": "integer",
+                  "title": "Customs Value",
+                  "description": "In Barbados Dollars"
+                },
+                "code": {
+                  "type": "string",
+                  "title": "Code",
+                  "description": ""
+                },
+                "name": {
+                  "type": "string",
+                  "title": "Name",
+                  "description": ""
+                },
+                "pack_size": {
+                  "type": "integer",
+                  "title": "Pack_size",
+                  "description": ""
+                },
+                "extendedCost": {
+                  "type": "number",
+                  "title": "Extendedcost",
+                  "description": ""
+                },
+                "address": {
+                  "type": "string",
+                  "title": "Address",
+                  "description": ""
+                },
+                "collectionAgency": {
+                  "type": "object",
+                  "required": [
+
+                  ],
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "title": "Name",
+                      "description": ""
+                    },
+                    "address": {
+                      "type": "string",
+                      "title": "Address",
+                      "description": ""
+                    }
+                  }
+                },
+                "manufacturer": {
+                  "type": "object",
+                  "required": [
+
+                  ],
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "title": "Name",
+                      "description": ""
+                    },
+                    "address": {
+                      "type": "string",
+                      "title": "Address",
+                      "description": ""
+                    }
+                  }
+                },
+                "supplier": {
+                  "type": "object",
+                  "required": [
+
+                  ],
+                  "properties": {
+                    "name": {
+                      "type": "string",
+                      "title": "Name",
+                      "description": ""
+                    },
+                    "address": {
+                      "type": "string",
+                      "title": "Address",
+                      "description": ""
+                    }
+                  }
+                },
+                "numWithLicense": {
+                  "type": "integer",
+                  "title": "Numwithlicense",
+                  "description": ""
+                },
+                "unitSize": {
+                  "type": "integer",
+                  "title": "Unitsize",
+                  "description": ""
+                },
+                "numInspected": {
+                  "type": "integer",
+                  "title": "Numinspected",
+                  "description": ""
+                }
+              }
+            }
+          },
+          "id": {
+            "type": "string",
+            "title": "Id",
+            "description": ""
+          },
+          "radioactive": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "physicalState": {
+                  "type": "string",
+                  "title": "Physicalstate",
+                  "description": ""
+                },
+                "quantity": {
+                  "type": "string",
+                  "title": "Quantity",
+                  "description": "The quantity in units of sale."
+                },
+                "activity": {
+                  "type": "string",
+                  "title": "Activity",
+                  "description": ""
+                },
+                "radioIsotope": {
+                  "type": "string",
+                  "title": "Radioisotope",
+                  "description": ""
+                },
+                "calibrationDate": {
+                  "type": "date-time",
+                  "title": "Calibrationdate",
+                  "description": ""
+                }
+              }
+            }
+          },
+          "quantity": {
+            "type": "integer",
+            "title": "Quantity",
+            "description": "The quantity in units of sale."
+          },
+          "entries": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "vehicleBrand": {
+                  "type": "string",
+                  "title": "Brand of Vehicle",
+                  "description": "Make or Brand of vehicle"
+                },
+                "vehicleModel": {
+                  "type": "string",
+                  "title": "Model of Vehicle",
+                  "description": ""
+                },
+                "vehicleYear": {
+                  "type": "string",
+                  "title": "Year of Vehicle",
+                  "description": ""
+                },
+                "vehicleEngine": {
+                  "type": "string",
+                  "title": "Engine capacity",
+                  "description": "Engine capacity of vehicle"
+                },
+                "odometer": {
+                  "type": "string",
+                  "title": "Odometer (Kms)",
+                  "description": "Odometer reading in kilometers"
+                },
+                "chassisNumber": {
+                  "type": "string",
+                  "title": "Chassisnumber",
+                  "description": ""
+                },
+                "costCIF": {
+                  "type": "number",
+                  "title": "Costcif",
+                  "description": ""
+                }
+              }
+            }
+          },
+          "fobValue": {
+            "type": "integer",
+            "title": "FOB Value (US$)",
+            "description": "In US Dollars"
+          },
+          "preferenceCriterion": {
+            "type": "string",
+            "title": "Preference Criterion",
+            "description": ""
+          },
+          "othersAnnex": {
+            "type": "string",
+            "title": "Others Annex",
+            "description": "Others: if in determining the origin of the good one of the procedures set forth in Articles 1V.06 or IV.05 of the Agreement, was used, indicate:"
+          },
+          "grossWeight": {
+            "type": "integer",
+            "title": "Gross Weight",
+            "description": "Indicate the Gross Weight of the Goods."
+          },
+          "rulesOrigin": {
+            "type": "string",
+            "title": "Rules of Origin",
+            "description": "Enter the criteria of origin applicable to each of the goods included."
+          },
+          "invoiceNumber": {
+            "type": "string",
+            "title": "Invoice Number",
+            "description": "Enter the Number of the Commercial Invoice."
+          },
+          "invoiceDate": {
+            "type": "date-time",
+            "title": "Invoice Date",
+            "description": "Enter the Date of the Commercial Invoice."
+          },
+          "typeFoodCategory": {
+            "type": "string",
+            "title": "Food Category",
+            "description": ""
+          },
+          "typeFoodDetail": {
+            "type": "string",
+            "title": "Food Type",
+            "description": ""
+          },
+          "collected": {
+            "type": "integer",
+            "title": "Collected",
+            "description": ""
+          },
+          "name": {
+            "type": "string",
+            "title": "Name",
+            "description": ""
+          },
+          "kindPackages": {
+            "type": "string",
+            "title": "Kindpackages",
+            "description": ""
+          },
+          "animals": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "species": {
+                  "type": "string",
+                  "title": "Species",
+                  "description": ""
+                },
+                "breed": {
+                  "type": "string",
+                  "title": "Breed",
+                  "description": ""
+                },
+                "age": {
+                  "type": "integer",
+                  "title": "Age",
+                  "description": ""
+                },
+                "sex": {
+                  "type": "string",
+                  "title": "Sex",
+                  "description": ""
+                },
+                "microchipNum": {
+                  "type": "string",
+                  "title": "Microchipnum",
+                  "description": ""
+                }
+              }
+            }
+          },
+          "manufacturer": {
+            "type": "object",
+            "required": [
+
+            ],
+            "properties": {
+              "name": {
+                "type": "string",
+                "title": "Name",
+                "description": ""
+              },
+              "address": {
+                "type": "string",
+                "title": "Address",
+                "description": ""
+              },
+              "address2": {
+                "type": "string",
+                "title": "Address2",
+                "description": ""
+              },
+              "email": {
+                "type": "string",
+                "title": "Email",
+                "description": ""
+              }
+            }
+          },
+          "supplier": {
+            "type": "object",
+            "required": [
+
+            ],
+            "properties": {
+              "name": {
+                "type": "string",
+                "title": "Name",
+                "description": ""
+              },
+              "address": {
+                "type": "string",
+                "title": "Address",
+                "description": ""
+              }
+            }
+          },
+          "type": {
+            "type": "string"
+          },
+          "title": "Properties",
+          "age": {
+            "type": "string",
+            "title": "Age",
+            "description": ""
+          },
+          "sex": {
+            "type": "string",
+            "title": "Sex",
+            "description": ""
+          },
+          "condition": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "title": "Items",
+              "description": ""
+            }
+          },
+          "vaccinations": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "title": "Items",
+              "description": ""
+            }
+          },
+          "activeIngredients": {
+            "type": "string",
+            "title": "Activeingredients",
+            "description": ""
+          },
+          "formulations": {
+            "type": "string",
+            "title": "Formulations",
+            "description": ""
+          },
+          "ingredients": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "title": "Name",
+                  "description": ""
+                },
+                "concentration": {
+                  "type": "integer",
+                  "title": "Concentration",
+                  "description": ""
+                },
+                "active": {
+                  "type": "boolean",
+                  "title": "Active",
+                  "description": ""
+                }
+              }
+            }
+          },
+          "gravity": {
+            "type": "string",
+            "title": "Gravity",
+            "description": ""
+          },
+          "regInCountry": {
+            "type": "boolean",
+            "title": "Regincountry",
+            "description": ""
+          },
+          "countriesRegistered": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "title": "Items",
+              "description": ""
+            }
+          },
+          "ld50Active": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "animal": {
+                  "type": "string",
+                  "title": "Animal",
+                  "description": ""
+                },
+                "testType": {
+                  "type": "object",
+                  "required": [
+
+                  ],
+                  "properties": {
+                    "oral": {
+                      "type": "string",
+                      "title": "Oral",
+                      "description": ""
+                    },
+                    "inhalation": {
+                      "type": "string",
+                      "title": "Inhalation",
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ld50Formulation": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "animal": {
+                  "type": "string",
+                  "title": "Animal",
+                  "description": ""
+                },
+                "testType": {
+                  "type": "object",
+                  "required": [
+
+                  ],
+                  "properties": {
+                    "oral": {
+                      "type": "string",
+                      "title": "Oral",
+                      "description": ""
+                    },
+                    "inhalation": {
+                      "type": "string",
+                      "title": "Inhalation",
+                      "description": ""
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "toxicEffects": {
+            "type": "object",
+            "required": [
+
+            ],
+            "properties": {
+              "oral": {
+                "type": "string",
+                "title": "Oral",
+                "description": ""
+              },
+              "inhalation": {
+                "type": "string",
+                "title": "Inhalation",
+                "description": ""
+              },
+              "dermal": {
+                "type": "string",
+                "title": "Dermal",
+                "description": ""
+              }
+            }
+          },
+          "toxicEffectsAnimals": {
+            "type": "object",
+            "required": [
+
+            ],
+            "properties": {
+              "birds": {
+                "type": "string",
+                "title": "Birds",
+                "description": ""
+              },
+              "fish": {
+                "type": "string",
+                "title": "Fish",
+                "description": ""
+              },
+              "bees": {
+                "type": "string",
+                "title": "Bees",
+                "description": ""
+              },
+              "otherWildlife": {
+                "type": "string",
+                "title": "Otherwildlife",
+                "description": ""
+              },
+              "domesticAnimals": {
+                "type": "string",
+                "title": "Domesticanimals",
+                "description": ""
+              },
+              "water": {
+                "type": "string",
+                "title": "Water",
+                "description": ""
+              },
+              "otherEffects": {
+                "type": "string",
+                "title": "Othereffects",
+                "description": ""
+              }
+            }
+          },
+          "firstAid": {
+            "type": "string",
+            "title": "Firstaid",
+            "description": ""
+          },
+          "treatment": {
+            "type": "string",
+            "title": "Treatment",
+            "description": ""
+          },
+          "antidote": {
+            "type": "string",
+            "title": "Antidote",
+            "description": ""
+          },
+          "cropsAllowed": {
+            "type": "string",
+            "title": "Cropsallowed",
+            "description": ""
+          },
+          "maxResidueLimit": {
+            "type": "string",
+            "title": "Maxresiduelimit",
+            "description": ""
+          },
+          "tolerance": {
+            "type": "string",
+            "title": "Tolerance",
+            "description": ""
+          },
+          "freqApplication": {
+            "type": "string",
+            "title": "Freqapplication",
+            "description": ""
+          },
+          "rateApplication": {
+            "type": "string",
+            "title": "Rateapplication",
+            "description": ""
+          },
+          "reentryPeriod": {
+            "type": "string",
+            "title": "Reentryperiod",
+            "description": ""
+          },
+          "preHarvestInterval": {
+            "type": "string",
+            "title": "Preharvestinterval",
+            "description": ""
+          },
+          "descriptionDetail": {
+            "type": "string",
+            "title": "Descriptiondetail",
+            "description": ""
+          },
+          "grossWeightUnits": {
+            "type": "string",
+            "title": "Grossweightunits",
+            "description": ""
+          }
+        }
+      }
+    },
+    "submitter": {
+      "type": "string",
+      "title": "Submitter",
+      "description": "The person who submitted the application."
+    },
+    "applicant": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "title": "Id",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "countryId": {
+          "type": "string",
+          "title": "Countryid",
+          "description": ""
+        },
+        "country": {
+          "type": "string",
+          "title": "Country",
+          "description": ""
+        },
+        "address": {
+          "type": "string",
+          "title": "Address",
+          "description": ""
+        },
+        "docid": {
+          "type": "string",
+          "title": "Docid",
+          "description": ""
+        },
+        "fax": {
+          "type": "string",
+          "title": "Fax",
+          "description": ""
+        },
+        "email": {
+          "type": "string",
+          "title": "Email",
+          "description": ""
+        },
+        "parish": {
+          "type": "string",
+          "title": "Parish",
+          "description": ""
+        },
+        "contactPerson": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "title": "Firstname",
+              "description": ""
+            },
+            "lastName": {
+              "type": "string",
+              "title": "Lastname",
+              "description": ""
+            },
+            "title": {
+              "type": "string",
+              "title": "Title",
+              "description": ""
+            },
+            "email": {
+              "type": "string",
+              "title": "Email",
+              "description": ""
+            },
+            "work_phone": {
+              "type": "string",
+              "title": "Work_phone",
+              "description": ""
+            },
+            "fax": {
+              "type": "string",
+              "title": "Fax",
+              "description": ""
+            }
+          }
+        },
+        "phone": {
+          "type": "string",
+          "title": "Phone",
+          "description": ""
+        },
+        "startToWorkDate": {
+          "type": "date-time",
+          "title": "Starttoworkdate",
+          "description": ""
+        },
+        "contact": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "address:": {
+              "type": "string",
+              "title": "Address:",
+              "description": ""
+            },
+            "home_phone": {
+              "type": "string",
+              "title": "Home_phone",
+              "description": ""
+            },
+            "work_phone": {
+              "type": "string",
+              "title": "Work_phone",
+              "description": ""
+            },
+            "mobile_phone": {
+              "type": "string",
+              "title": "Mobile_phone",
+              "description": ""
+            },
+            "fax": {
+              "type": "string",
+              "title": "Fax",
+              "description": ""
+            },
+            "email": {
+              "type": "string",
+              "title": "Email",
+              "description": ""
+            },
+            "address": {
+              "type": "string",
+              "title": "Address",
+              "description": ""
+            }
+          }
+        },
+        "barbadosAddress": {
+          "type": "string",
+          "title": "Barbadosaddress",
+          "description": ""
+        },
+        "businessNature": {
+          "type": "string",
+          "title": "Businessnature",
+          "description": ""
+        },
+        "customsRegistrationNo": {
+          "type": "string",
+          "title": "Customsregistrationno",
+          "description": ""
+        },
+        "registrationNo": {
+          "type": "string",
+          "title": "Registrationno",
+          "description": ""
+        },
+        "companyNo": {
+          "type": "string",
+          "title": "Companyno",
+          "description": ""
+        },
+        "processingPlantLicensingNo": {
+          "type": "string",
+          "title": "Processingplantlicensingno",
+          "description": ""
+        },
+        "brandName:": {
+          "type": "string",
+          "title": "Brandname:",
+          "description": ""
+        },
+        "directors:": {
+          "type": "string",
+          "title": "Directors:",
+          "description": ""
+        },
+        "brandName": {
+          "type": "string",
+          "title": "Brandname",
+          "description": ""
+        },
+        "directors": {
+          "type": "string",
+          "title": "Directors",
+          "description": ""
+        }
+      }
+    },
+    "supplier": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "title": "Id",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "countryId": {
+          "type": "string",
+          "title": "Countryid",
+          "description": ""
+        },
+        "country": {
+          "type": "string",
+          "title": "Country",
+          "description": ""
+        },
+        "address": {
+          "type": "string",
+          "title": "Address",
+          "description": ""
+        },
+        "docid": {
+          "type": "string",
+          "title": "Docid",
+          "description": ""
+        },
+        "fax": {
+          "type": "string",
+          "title": "Fax",
+          "description": ""
+        },
+        "email": {
+          "type": "string",
+          "title": "Email",
+          "description": ""
+        },
+        "city": {
+          "type": "string",
+          "title": "City",
+          "description": ""
+        },
+        "state": {
+          "type": "string",
+          "title": "State",
+          "description": ""
+        },
+        "zip": {
+          "type": "string",
+          "title": "Zip",
+          "description": ""
+        },
+        "contactPerson": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "title": "Firstname",
+              "description": ""
+            },
+            "lastName": {
+              "type": "string",
+              "title": "Lastname",
+              "description": ""
+            },
+            "email": {
+              "type": "string",
+              "title": "Email",
+              "description": ""
+            },
+            "work_phone": {
+              "type": "string",
+              "title": "Work_phone",
+              "description": ""
+            },
+            "fax": {
+              "type": "string",
+              "title": "Fax",
+              "description": ""
+            }
+          }
+        },
+        "phone": {
+          "type": "string",
+          "title": "Phone",
+          "description": ""
+        },
+        "registrationNo": {
+          "type": "string",
+          "title": "Registrationno",
+          "description": ""
+        }
+      }
+    },
+    "origin": {
+      "type": "string",
+      "title": "Country of Origin",
+      "description": "The country from where the goods originated."
+    },
+    "countryConsigned": {
+      "type": "string",
+      "title": "Country whence Consigned",
+      "description": "The country where the goods were consigned."
+    },
+    "expectedArrival": {
+      "type": "date-time",
+      "title": "Expected Time of Arrival",
+      "description": "The date that the goods will arrive in Barbados."
+    },
+    "entryDate": {
+      "type": "date-time",
+      "title": "Entry Date",
+      "description": ""
+    },
+    "modeTransport": {
+      "type": "string",
+      "title": "Mode of Transportation",
+      "description": "Mode of Transportation"
+    },
+    "intendedUse": {
+      "type": "string",
+      "title": "Intended use",
+      "description": ""
+    },
+    "customsBroker": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "title": "Id",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "countryId": {
+          "type": "string",
+          "title": "Countryid",
+          "description": ""
+        },
+        "country": {
+          "type": "string",
+          "title": "Country",
+          "description": ""
+        },
+        "address": {
+          "type": "string",
+          "title": "Address",
+          "description": ""
+        },
+        "parish": {
+          "type": "string",
+          "title": "Parish",
+          "description": ""
+        },
+        "phone": {
+          "type": "string",
+          "title": "Phone",
+          "description": ""
+        },
+        "contactPerson": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "title": "Firstname",
+              "description": ""
+            },
+            "lastName": {
+              "type": "string",
+              "title": "Lastname",
+              "description": ""
+            },
+            "email": {
+              "type": "string",
+              "title": "Email",
+              "description": ""
+            },
+            "work_phone": {
+              "type": "string",
+              "title": "Work_phone",
+              "description": ""
+            },
+            "fax": {
+              "type": "string",
+              "title": "Fax",
+              "description": ""
+            }
+          }
+        },
+        "contact": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "address:": {
+              "type": "string",
+              "title": "Address:",
+              "description": ""
+            },
+            "home_phone": {
+              "type": "string",
+              "title": "Home_phone",
+              "description": ""
+            },
+            "work_phone": {
+              "type": "string",
+              "title": "Work_phone",
+              "description": ""
+            },
+            "mobile_phone": {
+              "type": "string",
+              "title": "Mobile_phone",
+              "description": ""
+            },
+            "fax": {
+              "type": "string",
+              "title": "Fax",
+              "description": ""
+            },
+            "email": {
+              "type": "string",
+              "title": "Email",
+              "description": ""
+            }
+          }
+        }
+      }
+    },
+    "importer": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "title": "Id",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "countryId": {
+          "type": "string",
+          "title": "Countryid",
+          "description": ""
+        },
+        "country": {
+          "type": "string",
+          "title": "Country",
+          "description": ""
+        },
+        "address": {
+          "type": "string",
+          "title": "Address",
+          "description": ""
+        },
+        "parish": {
+          "type": "string",
+          "title": "Parish",
+          "description": ""
+        },
+        "contactPerson": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "title": "Firstname",
+              "description": ""
+            },
+            "lastName": {
+              "type": "string",
+              "title": "Lastname",
+              "description": ""
+            },
+            "email": {
+              "type": "string",
+              "title": "Email",
+              "description": ""
+            },
+            "work_phone": {
+              "type": "string",
+              "title": "Work_phone",
+              "description": ""
+            },
+            "fax": {
+              "type": "string",
+              "title": "Fax",
+              "description": ""
+            }
+          }
+        },
+        "docid": {
+          "type": "string",
+          "title": "Docid",
+          "description": ""
+        },
+        "fax": {
+          "type": "string",
+          "title": "Fax",
+          "description": ""
+        },
+        "phone": {
+          "type": "string",
+          "title": "Phone",
+          "description": ""
+        },
+        "email": {
+          "type": "string",
+          "title": "Email",
+          "description": ""
+        }
+      }
+    },
+    "transporter": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "countryId": {
+          "type": "string",
+          "title": "Countryid",
+          "description": ""
+        },
+        "country": {
+          "type": "string",
+          "title": "Country",
+          "description": ""
+        },
+        "address": {
+          "type": "string",
+          "title": "Address",
+          "description": ""
+        },
+        "parish": {
+          "type": "string",
+          "title": "Parish",
+          "description": ""
+        },
+        "contactPerson": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "title": "Firstname",
+              "description": ""
+            },
+            "lastName": {
+              "type": "string",
+              "title": "Lastname",
+              "description": ""
+            },
+            "email": {
+              "type": "string",
+              "title": "Email",
+              "description": ""
+            },
+            "work_phone": {
+              "type": "string",
+              "title": "Work_phone",
+              "description": ""
+            },
+            "fax": {
+              "type": "string",
+              "title": "Fax",
+              "description": ""
+            }
+          }
+        }
+      }
+    },
+    "transporter2": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "countryId": {
+          "type": "string",
+          "title": "Countryid",
+          "description": ""
+        },
+        "country": {
+          "type": "string",
+          "title": "Country",
+          "description": ""
+        },
+        "address": {
+          "type": "string",
+          "title": "Address",
+          "description": ""
+        },
+        "parish": {
+          "type": "string",
+          "title": "Parish",
+          "description": ""
+        },
+        "contactPerson": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "firstName": {
+              "type": "string",
+              "title": "Firstname",
+              "description": ""
+            },
+            "lastName": {
+              "type": "string",
+              "title": "Lastname",
+              "description": ""
+            },
+            "email": {
+              "type": "string",
+              "title": "Email",
+              "description": ""
+            },
+            "work_phone": {
+              "type": "string",
+              "title": "Work_phone",
+              "description": ""
+            }
+          }
+        }
+      }
+    },
+    "handlers": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name",
+            "description": ""
+          },
+          "qualifications": {
+            "type": "string",
+            "title": "Qualifications",
+            "description": ""
+          }
+        }
+      }
+    },
+    "storage": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "location": {
+          "type": "string",
+          "title": "Location",
+          "description": ""
+        },
+        "facilities": {
+          "type": "string",
+          "title": "Facilities",
+          "description": ""
+        },
+        "size": {
+          "type": "string",
+          "title": "Size",
+          "description": ""
+        },
+        "material": {
+          "type": "string",
+          "title": "Material",
+          "description": ""
+        },
+        "security": {
+          "type": "string",
+          "title": "Security",
+          "description": ""
+        },
+        "ventilation": {
+          "type": "string",
+          "title": "Ventilation",
+          "description": ""
+        },
+        "elevation": {
+          "type": "string",
+          "title": "Elevation",
+          "description": ""
+        }
+      }
+    },
+    "routeTransport": {
+      "type": "string",
+      "title": "Route",
+      "description": "Route of Transportation"
+    },
+    "monitoring": {
+      "type": "string",
+      "title": "Monitoring",
+      "description": ""
+    },
+    "emergencyPlans": {
+      "type": "string",
+      "title": "Emergencyplans",
+      "description": ""
+    },
+    "protectiveEquipment": {
+      "type": "string",
+      "title": "Protectiveequipment",
+      "description": ""
+    },
+    "container": {
+      "type": "string",
+      "title": "Container",
+      "description": ""
+    },
+    "endActivity": {
+      "type": "string",
+      "title": "Endactivity",
+      "description": ""
+    },
+    "disposal": {
+      "type": "string",
+      "title": "Disposal",
+      "description": ""
+    },
+    "receptionDate": {
+      "type": "date-time",
+      "title": "Date Received",
+      "description": ""
+    },
+    "previousExpiration": {
+      "type": "date-time",
+      "title": "Date Expired",
+      "description": "Expiration date of previous permit"
+    },
+    "agencyApprovals": {
+      "type": "array",
+      "required": [
+
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "approved": {
+          "type": "string",
+          "title": "Approved",
+          "description": ""
+        }
+      },
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name",
+            "description": ""
+          },
+          "approved": {
+            "type": "boolean",
+            "title": "Approved",
+            "description": ""
+          }
+        }
+      }
+    },
+    "remarks": {
+      "type": "string",
+      "title": "Remarks",
+      "description": ""
+    },
+    "approvedBy": {
+      "type": "string",
+      "title": "Approved By",
+      "description": ""
+    },
+    "approvalDate": {
+      "type": "date-time",
+      "title": "Approvaldate",
+      "description": ""
+    },
+    "periodRequestEnding": {
+      "type": "date-time",
+      "title": "Period Ending",
+      "description": "Period Ending of Request"
+    },
+    "dateArrival": {
+      "type": "date-time",
+      "title": "Datearrival",
+      "description": ""
+    },
+    "dateDeparture": {
+      "type": "date-time",
+      "title": "Datedeparture",
+      "description": ""
+    },
+    "consigments": {
+      "type": "string",
+      "title": "Number of Consignments",
+      "description": ""
+    },
+    "meansConveyance": {
+      "type": "string",
+      "title": "Means of Conveyance",
+      "description": ""
+    },
+    "vehicleCase": {
+      "type": "string",
+      "title": "Application for",
+      "description": "Select type of application"
+    },
+    "displayDescription": {
+      "type": "string",
+      "title": "Display Description",
+      "description": "Description about the display including dates and location of event"
+    },
+    "displayRisponsible": {
+      "type": "string",
+      "title": "Display Risponsible",
+      "description": "Who will be in charge of the display"
+    },
+    "contactInspection": {
+      "type": "string",
+      "title": "Contact for Inspection",
+      "description": "Person name, contact information and locations to inspect"
+    },
+    "consignee": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "title": "Id",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "countryId": {
+          "type": "string",
+          "title": "Countryid",
+          "description": ""
+        },
+        "country": {
+          "type": "string",
+          "title": "Country",
+          "description": ""
+        },
+        "address": {
+          "type": "string",
+          "title": "Address",
+          "description": ""
+        },
+        "docid": {
+          "type": "string",
+          "title": "Docid",
+          "description": ""
+        },
+        "fax": {
+          "type": "string",
+          "title": "Fax",
+          "description": ""
+        },
+        "email": {
+          "type": "string",
+          "title": "Email",
+          "description": ""
+        },
+        "contact": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "address:": {
+              "type": "string",
+              "title": "Address:",
+              "description": ""
+            },
+            "home_phone": {
+              "type": "string",
+              "title": "Home_phone",
+              "description": ""
+            },
+            "work_phone": {
+              "type": "string",
+              "title": "Work_phone",
+              "description": ""
+            },
+            "mobile_phone": {
+              "type": "string",
+              "title": "Mobile_phone",
+              "description": ""
+            },
+            "fax": {
+              "type": "string",
+              "title": "Fax",
+              "description": ""
+            },
+            "email": {
+              "type": "string",
+              "title": "Email",
+              "description": ""
+            }
+          }
+        }
+      }
+    },
+    "destination": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "title": "Id",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "countryId": {
+          "type": "string",
+          "title": "Countryid",
+          "description": ""
+        },
+        "country": {
+          "type": "string",
+          "title": "Country",
+          "description": ""
+        },
+        "address": {
+          "type": "string",
+          "title": "Address",
+          "description": ""
+        },
+        "docid": {
+          "type": "string",
+          "title": "Docid",
+          "description": ""
+        },
+        "fax": {
+          "type": "string",
+          "title": "Fax",
+          "description": ""
+        },
+        "email": {
+          "type": "string",
+          "title": "Email",
+          "description": ""
+        }
+      }
+    },
+    "destinationCountry": {
+      "type": "string",
+      "title": "Destination Country",
+      "description": "Destination Country to Export to"
+    },
+    "portShipment": {
+      "type": "string",
+      "title": "Port of Shipment",
+      "description": "Indicate Port of Shipment."
+    },
+    "portDischarge": {
+      "type": "string",
+      "title": "Port of Discharge",
+      "description": "Indicate Port of Discharge."
+    },
+    "invoiceNumber": {
+      "type": "string",
+      "title": "Invoice Number",
+      "description": "Enter the Number of the Commercial Invoice."
+    },
+    "invoiceDate": {
+      "type": "date-time",
+      "title": "Invoice Date",
+      "description": "Enter the Date of the Commercial Invoice."
+    },
+    "inFreeTradeZone": {
+      "type": "string",
+      "title": "Manufacturer premises located in Free Trade Zone",
+      "description": "whether Producer is located in the Free Zone"
+    },
+    "tradedSpecial": {
+      "type": "string",
+      "title": "Traded under Special Arrangements",
+      "description": "Whether the good is on the list in Annex III.04.06 to be traded under Special Arrangements"
+    },
+    "observations": {
+      "type": "string",
+      "title": "Observations",
+      "description": ""
+    },
+    "requestType": {
+      "type": "string",
+      "title": "Type of Request",
+      "description": "Request Type (New Request/Renewal)"
+    },
+    "previousNumber": {
+      "type": "string",
+      "title": "Previous Number",
+      "description": "Previous Permit Number"
+    },
+    "periodRequestStart": {
+      "type": "date-time",
+      "title": "Period Starting",
+      "description": "Period Starting of Request"
+    },
+    "approvalNumber": {
+      "type": "string",
+      "title": "Approval Number",
+      "description": "Number of Approval Document"
+    },
+    "periodEnding": {
+      "type": "date-time",
+      "title": "Periodending",
+      "description": ""
+    },
+    "issuedDate": {
+      "type": "date-time",
+      "title": "Date Issued",
+      "description": ""
+    },
+    "transhipVia": {
+      "type": "string",
+      "title": "Transhipvia",
+      "description": ""
+    },
+    "materials": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+
+        ],
+        "properties": {
+          "hsCode": {
+            "type": "string",
+            "title": "HS Code",
+            "description": "The unique code for the commodity."
+          },
+          "description": {
+            "type": "string",
+            "title": "Description",
+            "description": "Description of the item."
+          },
+          "origin": {
+            "type": "string",
+            "title": "Country of Origin",
+            "description": "The country from where the goods originated."
+          }
+        }
+      }
+    },
+    "manufacturing": {
+      "type": "string",
+      "title": "Manufacturing",
+      "description": ""
+    },
+    "inspectionLocation": {
+      "type": "string",
+      "title": "Inspection Location",
+      "description": ""
+    },
+    "inspectionDate": {
+      "type": "date-time",
+      "title": "Date Inspection",
+      "description": ""
+    },
+    "inspector": {
+      "type": "string",
+      "title": "Inspector",
+      "description": ""
+    },
+    "typeFoodCategory": {
+      "type": "string",
+      "title": "Food Category",
+      "description": ""
+    },
+    "typeFoodDetail": {
+      "type": "string",
+      "title": "Food Type",
+      "description": ""
+    },
+    "vesselOrCraft": {
+      "type": "string",
+      "title": "Vesselorcraft",
+      "description": ""
+    },
+    "vessel": {
+      "type": "string",
+      "title": "Vessel",
+      "description": ""
+    },
+    "rotationNumber": {
+      "type": "string",
+      "title": "Rotation Number",
+      "description": ""
+    },
+    "containerNumber": {
+      "type": "string",
+      "title": "Container Number",
+      "description": ""
+    },
+    "dateInspection": {
+      "type": "date-time",
+      "title": "Date of Inspection",
+      "description": ""
+    },
+    "timeInspection": {
+      "type": "string",
+      "title": "Time of Inspection",
+      "description": ""
+    },
+    "serialNumberCertificate": {
+      "type": "string",
+      "title": "Serialnumbercertificate",
+      "description": ""
+    },
+    "carrier": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "idNumber": {
+          "type": "string",
+          "title": "Idnumber",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "idNumber2": {
+          "type": "string",
+          "title": "Idnumber2",
+          "description": ""
+        }
+      }
+    },
+    "supportingDocumentation": {
+      "type": "string",
+      "title": "Supportingdocumentation",
+      "description": ""
+    },
+    "reason": {
+      "type": "string",
+      "title": "Reason",
+      "description": ""
+    },
+    "findingsInspection": {
+      "type": "string",
+      "title": "Findingsinspection",
+      "description": ""
+    },
+    "conditionsInspection": {
+      "type": "string",
+      "title": "Conditionsinspection",
+      "description": ""
+    },
+    "resultInspection": {
+      "type": "string",
+      "title": "Resultinspection",
+      "description": ""
+    },
+    "landingCertificateNumber": {
+      "type": "string",
+      "title": "Landingcertificatenumber",
+      "description": ""
+    },
+    "phytosanitaryCertificate": {
+      "type": "string",
+      "title": "Phytosanitarycertificate",
+      "description": ""
+    },
+    "oldVehicleBrand": {
+      "type": "string",
+      "title": "Oldvehiclebrand",
+      "description": ""
+    },
+    "oldVehicleModel": {
+      "type": "string",
+      "title": "Oldvehiclemodel",
+      "description": ""
+    },
+    "oldVehicleYear": {
+      "type": "string",
+      "title": "Oldvehicleyear",
+      "description": ""
+    },
+    "oldVehicleRegistrationNumber": {
+      "type": "string",
+      "title": "Oldvehicleregistrationnumber",
+      "description": ""
+    },
+    "referenceNumber": {
+      "type": "string",
+      "title": "Referencenumber",
+      "description": ""
+    },
+    "contractNumber": {
+      "type": "string",
+      "title": "Contractnumber",
+      "description": ""
+    },
+    "collectionDate": {
+      "type": "date-time",
+      "title": "Collectiondate",
+      "description": ""
+    },
+    "coordinator": {
+      "type": "string",
+      "title": "Coordinator",
+      "description": ""
+    },
+    "problemEncountered": {
+      "type": "string",
+      "title": "Problemencountered",
+      "description": ""
+    },
+    "details": {
+      "type": "string",
+      "title": "Details",
+      "description": ""
+    },
+    "submittedTo": {
+      "type": "string",
+      "title": "Submittedto",
+      "description": ""
+    },
+    "recommendations": {
+      "type": "string",
+      "title": "Recommendations",
+      "description": ""
+    },
+    "actionTaken": {
+      "type": "string",
+      "title": "Actiontaken",
+      "description": ""
+    },
+    "awl_bl_number": {
+      "type": "string",
+      "title": "Awl_bl_number",
+      "description": ""
+    },
+    "dateDeclaration": {
+      "type": "date-time",
+      "title": "Datedeclaration",
+      "description": ""
+    },
+    "timeArrival": {
+      "type": "string",
+      "title": "Timearrival",
+      "description": ""
+    },
+    "rotationDate": {
+      "type": "date-time",
+      "title": "Rotationdate",
+      "description": ""
+    },
+    "authorisationNo": {
+      "type": "string",
+      "title": "Authorisationno",
+      "description": ""
+    },
+    "fileNumber": {
+      "type": "string",
+      "title": "Filenumber",
+      "description": ""
+    },
+    "importCertificateNo": {
+      "type": "string",
+      "title": "Importcertificateno",
+      "description": ""
+    },
+    "importCertificateDate": {
+      "type": "date-time",
+      "title": "Importcertificatedate",
+      "description": ""
+    },
+    "importCertificateIssuedBy": {
+      "type": "string",
+      "title": "Importcertificateissuedby",
+      "description": ""
+    },
+    "customsShipment": {
+      "type": "string",
+      "title": "Customsshipment",
+      "description": ""
+    },
+    "treatmentDate": {
+      "type": "date-time",
+      "title": "Treatmentdate",
+      "description": ""
+    },
+    "treatment": {
+      "type": "string",
+      "title": "Treatment",
+      "description": ""
+    },
+    "treatmentDuration": {
+      "type": "string",
+      "title": "Treatmentduration",
+      "description": ""
+    },
+    "treatmentLevel": {
+      "type": "string",
+      "title": "Treatmentlevel",
+      "description": ""
+    },
+    "packageNumber": {
+      "type": "string",
+      "title": "Packagenumber",
+      "description": ""
+    },
+    "packageDescription": {
+      "type": "string",
+      "title": "Packagedescription",
+      "description": ""
+    },
+    "distinguishingMarks": {
+      "type": "string",
+      "title": "Distinguishingmarks",
+      "description": ""
+    },
+    "exporter": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "title": "Id",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "countryId": {
+          "type": "string",
+          "title": "Countryid",
+          "description": ""
+        },
+        "country": {
+          "type": "string",
+          "title": "Country",
+          "description": ""
+        },
+        "address": {
+          "type": "string",
+          "title": "Address",
+          "description": ""
+        }
+      }
+    },
+    "permitNumber": {
+      "type": "string",
+      "title": "Permitnumber",
+      "description": ""
+    },
+    "animalUse": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "title": "Items",
+        "description": ""
+      }
+    },
+    "vesselArrive": {
+      "type": "string",
+      "title": "Vesselarrive",
+      "description": ""
+    },
+    "takenPurpose": {
+      "type": "string",
+      "title": "Takenpurpose",
+      "description": ""
+    },
+    "description": {
+      "type": "string",
+      "title": "Description",
+      "description": "Description of the item."
+    },
+    "otherDetails": {
+      "type": "string",
+      "title": "Otherdetails",
+      "description": ""
+    },
+    "inspectionDescription": {
+      "type": "string",
+      "title": "Inspectiondescription",
+      "description": ""
+    },
+    "quarentineTreatment": {
+      "type": "string",
+      "title": "Quarentinetreatment",
+      "description": ""
+    },
+    "quarentineTreatmentTime": {
+      "type": "integer",
+      "title": "Quarentinetreatmenttime",
+      "description": ""
+    },
+    "shippingInfo": {
+      "type": "string",
+      "title": "Shippinginfo",
+      "description": ""
+    },
+    "sealNumber": {
+      "type": "string",
+      "title": "Sealnumber",
+      "description": ""
+    },
+    "referencedCertificate": {
+      "type": "string",
+      "title": "Referencedcertificate",
+      "description": ""
+    },
+    "referencedCertificateDate": {
+      "type": "date-time",
+      "title": "Referencedcertificatedate",
+      "description": ""
+    },
+    "exportDate": {
+      "type": "date-time",
+      "title": "Exportdate",
+      "description": ""
+    },
+    "conditions": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "condition1": {
+          "type": "boolean",
+          "title": "Condition1",
+          "description": ""
+        },
+        "condition2": {
+          "type": "boolean",
+          "title": "Condition2",
+          "description": ""
+        },
+        "inspection": {
+          "type": "boolean",
+          "title": "Inspection",
+          "description": ""
+        },
+        "certificate": {
+          "type": "boolean",
+          "title": "Certificate",
+          "description": ""
+        },
+        "desinfected": {
+          "type": "boolean",
+          "title": "Desinfected",
+          "description": ""
+        },
+        "other1": {
+          "type": "boolean",
+          "title": "Other1",
+          "description": ""
+        },
+        "other2": {
+          "type": "boolean",
+          "title": "Other2",
+          "description": ""
+        },
+        "other1_description": {
+          "type": "string",
+          "title": "Other1_description",
+          "description": ""
+        },
+        "other2_description": {
+          "type": "string",
+          "title": "Other2_description",
+          "description": ""
+        }
+      }
+    },
+    "producer": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "title": "Id",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "countryId": {
+          "type": "string",
+          "title": "Countryid",
+          "description": ""
+        },
+        "country": {
+          "type": "string",
+          "title": "Country",
+          "description": ""
+        },
+        "address": {
+          "type": "string",
+          "title": "Address",
+          "description": ""
+        },
+        "registrationNo": {
+          "type": "string",
+          "title": "Registrationno",
+          "description": ""
+        }
+      }
+    },
+    "safety": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "title": "Items",
+        "description": ""
+      }
+    },
+    "numGuards": {
+      "type": "integer",
+      "title": "Numguards",
+      "description": ""
+    },
+    "reasonFirearms": {
+      "type": "string",
+      "title": "Reasonfirearms",
+      "description": ""
+    },
+    "trainingArrangements": {
+      "type": "string",
+      "title": "Trainingarrangements",
+      "description": ""
+    },
+    "prevApplications": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name",
+            "description": ""
+          },
+          "applicationId": {
+            "type": "string",
+            "title": "Applicationid",
+            "description": ""
+          }
+        }
+      }
+    },
+    "otherWeapons": {
+      "type": "string",
+      "title": "Otherweapons",
+      "description": ""
+    },
+    "reasonOtherWeapons": {
+      "type": "string",
+      "title": "Reasonotherweapons",
+      "description": ""
+    },
+    "numWeapons": {
+      "type": "integer",
+      "title": "Numweapons",
+      "description": ""
+    },
+    "totalLicensed": {
+      "type": "integer",
+      "title": "Totallicensed",
+      "description": ""
+    },
+    "timeDeparture": {
+      "type": "string",
+      "title": "Timedeparture",
+      "description": ""
+    },
+    "vesselDepart": {
+      "type": "string",
+      "title": "Vesseldepart",
+      "description": ""
+    },
+    "foodType": {
+      "type": "string",
+      "title": "Foodtype",
+      "description": ""
+    },
+    "cropsUsed": {
+      "type": "string",
+      "title": "Cropsused",
+      "description": ""
+    },
+    "pestsUsed": {
+      "type": "string",
+      "title": "Pestsused",
+      "description": ""
+    },
+    "methodLabelAttach": {
+      "type": "string",
+      "title": "Methodlabelattach",
+      "description": ""
+    },
+    "officer": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "title": {
+          "type": "string",
+          "title": "Title",
+          "description": ""
+        }
+      }
+    },
+    "swordfishAtlantic": {
+      "type": "string",
+      "title": "Swordfishatlantic",
+      "description": ""
+    },
+    "staff": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+
+        ],
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Title",
+            "description": ""
+          },
+          "male": {
+            "type": "integer",
+            "title": "Male",
+            "description": ""
+          },
+          "female": {
+            "type": "integer",
+            "title": "Female",
+            "description": ""
+          }
+        }
+      }
+    },
+    "fishSource": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+
+        ],
+        "properties": {
+          "boatRegistrationNo": {
+            "type": "string",
+            "title": "Boatregistrationno",
+            "description": ""
+          },
+          "boatType": {
+            "type": "string",
+            "title": "Boattype",
+            "description": ""
+          },
+          "landingSites": {
+            "type": "string",
+            "title": "Landingsites",
+            "description": ""
+          },
+          "locally": {
+            "type": "object",
+            "required": [
+
+            ],
+            "properties": {
+              "total": {
+                "type": "integer",
+                "title": "Total",
+                "description": ""
+              }
+            }
+          },
+          "imported": {
+            "type": "object",
+            "required": [
+
+            ],
+            "properties": {
+              "total": {
+                "type": "integer",
+                "title": "Total",
+                "description": ""
+              }
+            }
+          }
+        }
+      }
+    },
+    "fishPurchasedLocally": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+
+        ],
+        "properties": {
+          "species": {
+            "type": "string",
+            "title": "Species",
+            "description": ""
+          },
+          "lbs": {
+            "type": "integer",
+            "title": "Lbs",
+            "description": ""
+          },
+          "tons": {
+            "type": "integer",
+            "title": "Tons",
+            "description": ""
+          }
+        }
+      }
+    },
+    "fishPurchasedImported": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+
+        ],
+        "properties": {
+          "species": {
+            "type": "string",
+            "title": "Species",
+            "description": ""
+          },
+          "lbs": {
+            "type": "integer",
+            "title": "Lbs",
+            "description": ""
+          },
+          "tons": {
+            "type": "integer",
+            "title": "Tons",
+            "description": ""
+          }
+        }
+      }
+    },
+    "fishSold": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "locally": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "total": {
+              "type": "integer",
+              "title": "Total",
+              "description": ""
+            },
+            "superMarkets": {
+              "type": "integer",
+              "title": "Supermarkets",
+              "description": ""
+            },
+            "miniMarts": {
+              "type": "integer",
+              "title": "Minimarts",
+              "description": ""
+            },
+            "hotels": {
+              "type": "integer",
+              "title": "Hotels",
+              "description": ""
+            },
+            "restaurants": {
+              "type": "integer",
+              "title": "Restaurants",
+              "description": ""
+            },
+            "vendors": {
+              "type": "integer",
+              "title": "Vendors",
+              "description": ""
+            },
+            "hawkers": {
+              "type": "integer",
+              "title": "Hawkers",
+              "description": ""
+            },
+            "generalPublic": {
+              "type": "integer",
+              "title": "Generalpublic",
+              "description": ""
+            },
+            "publicInstitutions": {
+              "type": "integer",
+              "title": "Publicinstitutions",
+              "description": ""
+            },
+            "hospitals": {
+              "type": "integer",
+              "title": "Hospitals",
+              "description": ""
+            },
+            "schools": {
+              "type": "integer",
+              "title": "Schools",
+              "description": ""
+            },
+            "other": {
+              "type": "integer",
+              "title": "Other",
+              "description": ""
+            }
+          }
+        },
+        "exported": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "total": {
+              "type": "integer",
+              "title": "Total",
+              "description": ""
+            },
+            "inRegion": {
+              "type": "integer",
+              "title": "Inregion",
+              "description": ""
+            },
+            "outRegion": {
+              "type": "integer",
+              "title": "Outregion",
+              "description": ""
+            }
+          }
+        },
+        "spoilage": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "total": {
+              "type": "integer",
+              "title": "Total",
+              "description": ""
+            }
+          }
+        }
+      }
+    },
+    "equipment": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "capacityChiller": {
+          "type": "integer",
+          "title": "Capacitychiller",
+          "description": ""
+        },
+        "coldStorage": {
+          "type": "integer",
+          "title": "Coldstorage",
+          "description": ""
+        },
+        "freezerType": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "blast": {
+              "type": "boolean",
+              "title": "Blast",
+              "description": ""
+            },
+            "contact": {
+              "type": "boolean",
+              "title": "Contact",
+              "description": ""
+            },
+            "capacityUnitFreeze": {
+              "type": "boolean",
+              "title": "Capacityunitfreeze",
+              "description": ""
+            }
+          }
+        },
+        "coldStore": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "owned": {
+              "type": "boolean",
+              "title": "Owned",
+              "description": ""
+            },
+            "rented": {
+              "type": "boolean",
+              "title": "Rented",
+              "description": ""
+            }
+          }
+        },
+        "otherEquipment": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "filletingMachine": {
+              "type": "boolean",
+              "title": "Filletingmachine",
+              "description": ""
+            },
+            "fishWasher": {
+              "type": "boolean",
+              "title": "Fishwasher",
+              "description": ""
+            },
+            "pattyFormer": {
+              "type": "boolean",
+              "title": "Pattyformer",
+              "description": ""
+            },
+            "iceMachine": {
+              "type": "boolean",
+              "title": "Icemachine",
+              "description": ""
+            },
+            "other": {
+              "type": "boolean",
+              "title": "Other",
+              "description": ""
+            }
+          }
+        },
+        "methodFishTransport": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "van": {
+              "type": "boolean",
+              "title": "Van",
+              "description": ""
+            },
+            "refrigerateTruck": {
+              "type": "boolean",
+              "title": "Refrigeratetruck",
+              "description": ""
+            },
+            "flatBadTruck": {
+              "type": "boolean",
+              "title": "Flatbadtruck",
+              "description": ""
+            },
+            "other": {
+              "type": "boolean",
+              "title": "Other",
+              "description": ""
+            }
+          }
+        }
+      }
+    },
+    "methodDisposal": {
+      "type": "string",
+      "title": "Methoddisposal",
+      "description": ""
+    },
+    "fish": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "locally": {
+          "type": "integer",
+          "title": "Locally",
+          "description": ""
+        },
+        "imported": {
+          "type": "integer",
+          "title": "Imported",
+          "description": ""
+        }
+      }
+    },
+    "quarantinePeriod": {
+      "type": "integer",
+      "title": "Quarantineperiod",
+      "description": ""
+    },
+    "quaratineAnalysis": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "analysisType": {
+          "type": "string",
+          "title": "Analysistype",
+          "description": ""
+        },
+        "agency": {
+          "type": "string",
+          "title": "Agency",
+          "description": ""
+        }
+      }
+    },
+    "comments": {
+      "type": "string",
+      "title": "Comments",
+      "description": ""
+    },
+    "totalValue": {
+      "type": "integer",
+      "title": "Totalvalue",
+      "description": ""
+    },
+    "consignments": {
+      "type": "string",
+      "title": "Consignments",
+      "description": ""
+    },
+    "consignmentNote": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "number": {
+          "type": "string",
+          "title": "Number",
+          "description": ""
+        },
+        "date": {
+          "type": "date-time",
+          "title": "Date",
+          "description": ""
+        }
+      }
+    },
+    "permitLength": {
+      "type": "integer",
+      "title": "Permitlength",
+      "description": ""
+    }
+  }
+}

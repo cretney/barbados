@@ -1,13 +1,12 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum e32d05e4948d91efd9a3dd095b02f2ab22ed985a",
+  "description": "Generated from b with shasum 452d47e7bd8f3f305a42254d7ce1120054d1cc52",
   "type": "object",
   "required": [
     "blockId",
     "workflowId",
     "formId",
     "title",
-    "description",
     "status",
     "submission"
   ],
@@ -24,9 +23,6 @@
     "title": {
       "type": "string"
     },
-    "description": {
-      "type": "string"
-    },
     "status": {
       "type": "string"
     },
@@ -38,6 +34,7 @@
         "manufacturing",
         "submitter",
         "origin",
+        "entryDate",
         "applicant"
       ],
       "properties": {
@@ -92,6 +89,9 @@
           "type": "string"
         },
         "origin": {
+          "type": "string"
+        },
+        "entryDate": {
           "type": "string"
         },
         "applicant": {

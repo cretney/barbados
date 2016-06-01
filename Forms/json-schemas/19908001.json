@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 604438fd2e17a7dfbc63ba4081738b0528602ca7",
+  "description": "Generated from b with shasum d5b6073171fd27265de894572d64fd3104cb8822",
   "type": "object",
   "required": [
     "blockId",
@@ -72,13 +72,7 @@
                   "type": "object",
                   "required": [
                     "unitType",
-                    "quantity",
-                    "pricePerUnit",
-                    "cifValue",
-                    "code",
-                    "name",
-                    "pack_size",
-                    "extendedCost"
+                    "quantity"
                   ],
                   "properties": {
                     "unitType": {
@@ -86,24 +80,6 @@
                     },
                     "quantity": {
                       "type": "integer"
-                    },
-                    "pricePerUnit": {
-                      "type": "number"
-                    },
-                    "cifValue": {
-                      "type": "integer"
-                    },
-                    "code": {
-                      "type": "string"
-                    },
-                    "name": {
-                      "type": "string"
-                    },
-                    "pack_size": {
-                      "type": "string"
-                    },
-                    "extendedCost": {
-                      "type": "number"
                     }
                   }
                 }
