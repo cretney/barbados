@@ -4230,7 +4230,7 @@
       }
     ],
 
-    "license_to":[],
+    "license_to":["import", "store"],
     "licenseNumber":"L-68686",
     "approvalDate":"2016-04-30",
     "issuedDate":"2016-05-01",
