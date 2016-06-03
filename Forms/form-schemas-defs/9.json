@@ -46,24 +46,158 @@
             "readonly": true
           }
         ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "help",
+        "helpvalue": "<b>CONTACT PERSON</b>"
       },
       {
         "type": "section",
-        "htmlClass": "col-sm-2",
+        "htmlClass": "col-sm-4",
         "items": [
           {
-            "type": "help",
-            "helpvalue": "<b>CONTACT PERSON</b>"
+            "key": "applicant.contactPerson.firstName",
+            "title": "First Name",
+            "description": "",
+            "readonly": true
           }
         ]
       },
       {
         "type": "section",
-        "htmlClass": "col-sm-2",
+        "htmlClass": "col-sm-4",
         "items": [
           {
-            "key": "applicant.contactPerson.firstName",
-            "title": "First Name",
+            "key": "applicant.contactPerson.lastName",
+            "title": "Last Name",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "applicant.contactPerson.title",
+            "title": "Job Title",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "applicant.contactPerson.email",
+            "title": "E-mail",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "applicant.contactPerson.work_phone",
+            "title": "Phone",
+            "description": "(246) area code",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "applicant.contactPerson.fax",
+            "title": "Fax",
+            "description": "(246) area code",
+            "readonly": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "help",
+        "helpvalue": "<h4>2. Supplier Information</h4>"
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "supplier.name",
+            "title": "Company Name",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "supplier.address",
+            "title": "Address",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "supplier.city",
+            "title": "City",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "supplier.state",
+            "title": "State",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "supplier.zip",
+            "title": "Postal Code",
             "description": "",
             "readonly": true
           }
@@ -76,13 +210,18 @@
     "htmlClass": "row",
     "items": [
       {
+        "type": "help",
+        "helpvalue": "<b>CONTACT PERSON</b>"
+      },
+      {
         "type": "section",
         "htmlClass": "col-sm-6",
         "items": [
           {
-            "key": "origin",
-            "title": "Country of Origin",
-            "description": ""
+            "key": "supplier.contactPerson.firstName",
+            "title": "First Name",
+            "description": "",
+            "readonly": true
           }
         ]
       },
@@ -91,31 +230,96 @@
         "htmlClass": "col-sm-6",
         "items": [
           {
-            "key": "dateArrival",
-            "title": "Estimated Date of Arrival",
-            "description": ""
+            "key": "supplier.contactPerson.lastName",
+            "title": "Last Name",
+            "description": "",
+            "readonly": true
           }
         ]
       },
       {
         "type": "section",
-        "htmlClass": "col-sm-6",
+        "htmlClass": "col-sm-4",
         "items": [
           {
-            "key": "vesselArrive",
-            "title": "Via Vessel/Carrier",
-            "description": ""
+            "key": "supplier.contactPerson.email",
+            "title": "E-mail",
+            "description": "",
+            "readonly": true
           }
         ]
       },
       {
         "type": "section",
-        "htmlClass": "col-sm-6",
+        "htmlClass": "col-sm-4",
         "items": [
           {
-            "key": "transhipVia",
-            "title": "To tranship via",
-            "description": "(if applicable)"
+            "key": "supplier.contactPerson.work_phone",
+            "title": "Phone",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "supplier.contactPerson.fax",
+            "title": "Fax",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "help",
+        "helpvalue": "<h4>3. Customs Broker/Import Agent Information</h4>"
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "customsBroker.name",
+            "title": "Company Name",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-8",
+        "items": [
+          {
+            "key": "customsBroker.address",
+            "title": "Address",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "customsBroker.parish",
+            "title": "Parish",
+            "description": "",
+            "readonly": true
           }
         ]
       }
@@ -126,34 +330,647 @@
     "htmlClass": "row",
     "items": [
       {
+        "type": "help",
+        "helpvalue": "<b>CONTACT PERSON</b>"
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "customsBroker.contactPerson.firstName",
+            "title": "First Name",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "customsBroker.contactPerson.lastName",
+            "title": "Last Name",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "customsBroker.contactPerson.email",
+            "title": "E-mail",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "customsBroker.contactPerson.work_phone",
+            "title": "Phone",
+            "description": "(246) area code",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "customsBroker.contactPerson.fax",
+            "title": "Fax",
+            "description": "(246) area code",
+            "readonly": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "help",
+        "helpvalue": "<h4>4. Transportation Information</h4>"
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "modeTransport",
+            "type": "radios",
+            "title": "Method of Import:",
+            "titleMap": {
+              "air": "Air",
+              "sea": "Sea"
+            },
+            "description": ""
+          }
+        ]
+      },
+      {
         "type": "section",
         "htmlClass": "col-sm-12 col-md-6",
         "items": [
           {
-            "key": "supplier.name",
-            "title": "Overseas Agent/Broker",
+            "key": "importer.name",
+            "title": "Company Name",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-8",
+        "items": [
+          {
+            "key": "importer.address",
+            "title": "Address",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "importer.parish",
+            "title": "Parish",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "help",
+        "helpvalue": "<b>CONTACT PERSON</b>"
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "importer.contactPerson.firstName",
+            "title": "First Name",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "importer.contactPerson.lastName",
+            "title": "Last Name",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "importer.contactPerson.email",
+            "title": "E-mail",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "importer.contactPerson.work_phone",
+            "title": "Phone",
+            "description": "(246) area code",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "importer.contactPerson.fax",
+            "title": "Fax",
+            "description": "(246) area code",
+            "readonly": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "help",
+        "helpvalue": "<h4>LOCAL - Company responsible for transportation from the Port of Entry</h4>"
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "transporter.name",
+            "title": "Company Name",
             "description": ""
           }
         ]
       },
       {
         "type": "section",
-        "htmlClass": "col-sm-12 col-md-8",
+        "htmlClass": "col-sm-8",
         "items": [
           {
-            "key": "supplier.address",
-            "title": "Agent/Broker Address",
+            "key": "transporter.address",
+            "title": "Address",
             "description": ""
           }
         ]
       },
       {
         "type": "section",
-        "htmlClass": "col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-0",
+        "htmlClass": "col-sm-4",
         "items": [
           {
-            "key": "supplier.country",
-            "title": "Agent/Broker Country",
+            "key": "transporter.parish",
+            "title": "Parish",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "help",
+        "helpvalue": "<b>CONTACT PERSON</b>"
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "transporter.contactPerson.firstName",
+            "title": "First Name",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "transporter.contactPerson.lastName",
+            "title": "Last Name",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "transporter.contactPerson.email",
+            "title": "E-mail",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "transporter.contactPerson.work_phone",
+            "title": "Phone",
+            "description": "(246) area code"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "transporter.contactPerson.fax",
+            "title": "Fax",
+            "description": "(246) area code"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "help",
+        "helpvalue": "<h4>LOCAL - Secondary Overland Transporter</h4>"
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "transporter2.name",
+            "title": "Company Name",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-8",
+        "items": [
+          {
+            "key": "transporter2.address",
+            "title": "Address",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "transporter2.parish",
+            "title": "Parish",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "help",
+        "helpvalue": "<b>CONTACT PERSON</b>"
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "transporter2.contactPerson.firstName",
+            "title": "First Name",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "transporter2.contactPerson.lastName",
+            "title": "Last Name",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "transporter2.contactPerson.email",
+            "title": "E-mail",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "transporter2.contactPerson.work_phone",
+            "title": "Phone",
+            "description": "(246) area code"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "transporter2.contactPerson.fax",
+            "title": "Fax",
+            "description": "(246) area code"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "help",
+    "helpvalue": "<h4>5. Material Information</h4>"
+  },
+  {
+    "key": "commodities",
+    "title": "",
+    "add": null,
+    "remove": null,
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3 col-lg-2",
+            "items": [
+              {
+                "key": "commodities[].hsCode",
+                "title": "hsCode",
+                "description": "",
+                "readonly": true
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-9 col-lg-10",
+            "items": [
+              {
+                "key": "commodities[].description",
+                "title": "Description",
+                "readonly": true
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-4",
+            "items": [
+              {
+                "key": "commodities[].radioactive[0].physicalState",
+                "type": "select",
+                "title": "Physical Characteristics",
+                "description": "",
+                "titleMap": {
+                  "S": "Solid",
+                  "L": "Liquid",
+                  "G": "Gas"
+                }
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-4",
+            "items": [
+              {
+                "key": "commodities[].radioactive[0].quantity",
+                "title": "Quantity",
+                "description": "(Maximum Quantity)"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-4",
+            "items": [
+              {
+                "key": "commodities[].radioactive[0].activity",
+                "title": "Activity",
+                "description": "(GBq)"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-6",
+            "items": [
+              {
+                "key": "commodities[].radioactive[0].radioIsotope",
+                "title": "Radioisotope",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-6",
+            "items": [
+              {
+                "key": "commodities[].radioactive[0].calibrationDate",
+                "type": "date-time",
+                "title": "Calibration Date",
+                "description": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "help",
+        "helpvalue": "<h4>6. Safety</h4><h6>Note: The Department must be notified in writing of any changes to personnel or procedures.</h6>"
+      },
+      {
+        "key": "handlers",
+        "title": "*Names & qualifications of persons who will handle the radioactive materials:",
+        "add": "New",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-sm-11 col-md-6",
+                "items": [
+                  {
+                    "key": "handlers[].name",
+                    "title": "Name",
+                    "description": ""
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-11",
+                "items": [
+                  {
+                    "key": "handlers[].qualifications",
+                    "title": "Qualifications",
+                    "description": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "emergencyPlans",
+            "type": "textarea",
+            "title": "Emergency plans to be followed in cases of accidents or crisis.",
+            "description": ""
+          },
+          {
+            "key": "monitoring",
+            "type": "textarea",
+            "title": "Monitoring procedures - to be employed for radioactive materials.",
+            "description": ""
+          },
+          {
+            "key": "storage.location",
+            "title": "Storage location",
+            "description": ""
+          },
+          {
+            "key": "storage.facilities",
+            "type": "textarea",
+            "title": "Storage facilities",
+            "description": ""
+          },
+          {
+            "key": "protectiveEquipment",
+            "type": "textarea",
+            "title": "Protective equipment",
+            "description": "to be used by personnel handling the radioactive materials"
+          },
+          {
+            "key": "container",
+            "type": "textarea",
+            "title": "Description of containment method & material",
+            "description": ""
+          },
+          {
+            "key": "routeTransport",
+            "type": "textarea",
+            "title": "Proposed transportation routes for the material",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "endActivity",
+            "title": "Expected Activity at the end of use",
+            "description": "(GBq)"
+          },
+          {
+            "key": "disposal",
+            "type": "textarea",
+            "title": "Explain method by which the material imported will be disposed:",
             "description": ""
           }
         ]
