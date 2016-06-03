@@ -1114,7 +1114,6 @@
     "expectedArrival": "2015-09-21T04:00:00.000Z"
   }
 },
-
 {
   "blockId": 19900901,
   "workflowId": 99,
@@ -1125,37 +1124,93 @@
     "commodities": [
       {
         "hsCode": "123",
-        "description": "test",
-        "units": [
+        "description": "Kryptonite",
+        "id": "12345",
+        "radioactive": [
           {
-            "unitType": "Units",
-            "quantity": 3
-          }
-        ]
-      },
-      {
-        "hsCode": "234",
-        "description": "test",
-        "units": [
-          {
-            "unitType": "Units",
-            "quantity": 5
+            "physicalState": "S",
+            "quantity": "3kg",
+            "activity": "129.5",
+            "radioIsotope": "Kr-85",
+            "calibrationDate": "03/25/2016"
           }
         ]
       }
     ],
-    "referenceNumber":"RN-7657657",
-    "serialNumberCertificate":"CN-68686",
-    "issuedDate":"2016-05-01",
+    "entryDate":"2016-05-01",
     "submitter": "Joe Blow",
-    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
-    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+    "modeTransport": "sea",
+    "intendedUse": "this material will be used to make Superman-resistant kevlar vests, using our patented technology",
+    "applicant": {"id":4, "name":"LUTHOR LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street", "parish":"St. Michael", "contactPerson": {"firstName":"Joe", "lastName":"Blow", "title":"Head Mucketymuck", "email":"joe.blow@collinsltd.com", "work_phone":"555-5555", "fax":"888-8888"}},
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street", "city":"Hollywood", "state":"FL", "zip":"12902", "contactPerson": {"firstName":"Joe", "lastName":"Schmoe", "email":"joe.schmoe@fakenovartis.com", "work_phone":"412-555-5555", "fax":"412-888-8888"}},
+    "customsBroker": {"id":8, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1235 Bay Street", "parish":"St. Michael", "phone":"555-123-4567", "contactPerson": {"firstName":"Carla", "lastName":"Briceno", "email":"emailaddress@collinsltd.com", "work_phone":"123-4567", "fax":"987-6543"}},
+    "importer": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"4321 Not Bay Street", "parish":"St. Andrew", "contactPerson": {"firstName":"Jenny", "lastName":"McGuyver", "email":"mail@address.com", "work_phone":"867-5309", "fax":"530-9867"}},
+    "transporter": {"name":"Acme Trucking", "countryId":"BB", "country":"Barbados", "address":"33 Lois Lane", "parish":"St. George", "contactPerson": {"firstName":"Lois", "lastName":"Lane", "email":"lois@lane.com", "work_phone":"848-4848", "fax":"232-3232"}},
+    "transporter2": {"name":"Kryptonite Special Handlers Corp", "countryId":"BB", "country":"Barbados", "address":"1 Krypton Place", "parish":"St. James", "contactPerson": {"firstName":"Clark", "lastName":"Kent", "email":"superman@krypton.com", "work_phone":"999-9999"}},
+    "handlers": [{"name":"Joe Smith", "qualifications":"certified in handling kryptonite"}, {"name":"Lex Luthor", "qualifications":"has a ring made of radioactive substance, so he is familiar with its properties"}],
+    "storage": {"location": "8210 Crystal Drive, St. Barnabas", "facilities": "a large warehouse that also serves as the secondary office of Luthor Ltd. May also contain nuts."},
+    "routeTransport": "Earth",
+    "monitoring": "something something something safety",
+    "emergencyPlans": "run away",
+    "protectiveEquipment": "non-radioactive kevlar vests",
+    "container": "Cardboard boxes. WHAT?!",
+    "endActivity": "90",
+    "disposal": "The material will be shot into the sun."
   }
 },
-
-
-
-
+{
+  "blockId": 19901001,
+  "workflowId": 99,
+  "formId": 10,
+  "title": "Application to import Radioactive Materials",
+  "status": "Issued",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "Kryptonite",
+        "id": "12345",
+        "radioactive": [
+          {
+            "physicalState": "S",
+            "quantity": "3kg",
+            "activity": "129.5",
+            "radioIsotope": "Kr-85",
+            "calibrationDate": "03/25/2016"
+          }
+        ]
+      }
+    ],
+    "entryDate":"2016-05-01",
+    "submitter": "Joe Blow",
+    "modeTransport": "sea",
+    "intendedUse": "this material will be used to make Superman-resistant kevlar vests, using our patented technology",
+    "applicant": {"id":234567, "name":"LUTHOR LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street", "parish":"St. Michael", "contactPerson": {"firstName":"Joe", "lastName":"Blow", "title":"Head Mucketymuck", "email":"joe.blow@collinsltd.com", "work_phone":"555-5555", "fax":"888-8888"}},
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street", "city":"Hollywood", "state":"FL", "zip":"12902", "contactPerson": {"firstName":"Joe", "lastName":"Schmoe", "email":"joe.schmoe@fakenovartis.com", "work_phone":"(412) 555-5555", "fax":"(412) 888-8888"}},
+    "customsBroker": {"id":8, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1235 Bay Street", "parish":"St. Michael", "phone":"555-123-4567", "contactPerson": {"firstName":"Carla", "lastName":"Briceno", "email":"emailaddress@collinsltd.com", "work_phone":"123-4567", "fax":"987-6543"}},
+    "importer": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"4321 Not Bay Street", "parish":"St. Andrew", "contactPerson": {"firstName":"Jenny", "lastName":"McGuyver", "email":"mail@address.com", "work_phone":"867-5309", "fax":"530-9867"}},
+    "transporter": {"name":"Acme Trucking", "countryId":"BB", "country":"Barbados", "address":"33 Lois Lane", "parish":"St. George", "contactPerson": {"firstName":"Lois", "lastName":"Lane", "email":"lois@lane.com", "work_phone":"848-4848", "fax":"232-3232"}},
+    "transporter2": {"name":"Kryptonite Special Handlers Corp", "countryId":"BB", "country":"Barbados", "address":"1 Krypton Place", "parish":"St. James", "contactPerson": {"firstName":"Clark", "lastName":"Kent", "email":"superman@krypton.com", "work_phone":"999-9999"}},
+    "handlers": [{"name":"Joe Smith", "qualifications":"certified in handling kryptonite"}, {"name":"Lex Luthor", "qualifications":"has a ring made of radioactive substance, so he is familiar with its properties"}],
+    "storage": {"location": "8210 Crystal Drive, St. Barnabas", "facilities": "a large warehouse that also serves as the secondary office of Luthor Ltd. May also contain nuts."},
+    "routeTransport": "Earth",
+    "monitoring": "something something something safety",
+    "emergencyPlans": "run away",
+    "protectiveEquipment": "non-radioactive kevlar vests",
+    "container": "Cardboard boxes. WHAT?!",
+    "endActivity": "90",
+    "disposal": "The material will be shot into the sun.",
+    "receptionDate": "2016-05-03",
+    "previousExpiration": "2016-07-04",
+    "agencyApprovals": {"name":"Environmental Protection Department", "approved":"yes"},
+    "remarks": "Finally, we will destroy Superman HAHAHAHAHAHA",
+    "approvedBy": "Darkseid",
+    "approvalDate": "2016-05-08",
+    "periodRequestEnding": "2017-05-07",
+    "dateArrival": "",
+    "dateDeparture": ""
+  }
+},
 {
   "blockId": 11501201,
   "workflowId": 15,
