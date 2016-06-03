@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum d3a7ad2e18684c69e16411c3d9182784ed4caeb8",
+  "description": "Generated from b with shasum 93c5d2bdd9d62ed54719b0ee0d2e600d1a19cdb4",
   "type": "object",
   "required": [
     "blockId",
@@ -31,7 +31,6 @@
       "required": [
         "commodities",
         "referenceNumber",
-        "serialNumberCertificate",
         "issuedDate",
         "cropsUsed",
         "pestsUsed",
@@ -40,15 +39,11 @@
         "storage",
         "submitter",
         "entryDate",
+        "approvalDate",
+        "approvedBy",
         "intendedUse",
         "applicant",
-        "supplier",
-        "physProperties",
-        "analysis",
-        "firstAid",
-        "residues",
-        "environmentalImpact",
-        "ecotoxicology"
+        "supplier"
       ],
       "properties": {
         "commodities": {
@@ -360,9 +355,6 @@
         "referenceNumber": {
           "type": "string"
         },
-        "serialNumberCertificate": {
-          "type": "string"
-        },
         "issuedDate": {
           "type": "string"
         },
@@ -421,6 +413,12 @@
           "type": "string"
         },
         "entryDate": {
+          "type": "string"
+        },
+        "approvalDate": {
+          "type": "string"
+        },
+        "approvedBy": {
           "type": "string"
         },
         "intendedUse": {
@@ -483,24 +481,6 @@
               "type": "string"
             }
           }
-        },
-        "physProperties": {
-          "type": "string"
-        },
-        "analysis": {
-          "type": "string"
-        },
-        "firstAid": {
-          "type": "string"
-        },
-        "residues": {
-          "type": "string"
-        },
-        "environmentalImpact": {
-          "type": "string"
-        },
-        "ecotoxicology": {
-          "type": "string"
         }
       }
     }

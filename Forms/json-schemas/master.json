@@ -453,6 +453,11 @@
                   "title": "Concentration",
                   "description": ""
                 },
+                "percentage": {
+                  "type": "integer",
+                  "title": "Percentage",
+                  "description": ""
+                },
                 "active": {
                   "type": "boolean",
                   "title": "Active",
@@ -469,6 +474,11 @@
           "regInCountry": {
             "type": "boolean",
             "title": "Regincountry",
+            "description": ""
+          },
+          "regCountryDetail": {
+            "type": "string",
+            "title": "Regcountrydetail",
             "description": ""
           },
           "countriesRegistered": {
@@ -618,6 +628,16 @@
                 "description": ""
               }
             }
+          },
+          "methodAnalysisPesticide": {
+            "type": "string",
+            "title": "Methodanalysispesticide",
+            "description": ""
+          },
+          "methodAnalysisFormulation": {
+            "type": "string",
+            "title": "Methodanalysisformulation",
+            "description": ""
           },
           "firstAid": {
             "type": "string",
@@ -838,6 +858,100 @@
           "type": "string",
           "title": "Barbadosaddress",
           "description": ""
+        },
+        "postalAddress": {
+          "type": "string",
+          "title": "Postaladdress",
+          "description": ""
+        },
+        "firstname": {
+          "type": "string",
+          "title": "Firstname",
+          "description": ""
+        },
+        "middlename": {
+          "type": "string",
+          "title": "Middlename",
+          "description": ""
+        },
+        "lastname": {
+          "type": "string",
+          "title": "Lastname",
+          "description": ""
+        },
+        "nickname": {
+          "type": "string",
+          "title": "Nickname",
+          "description": ""
+        },
+        "home_phone": {
+          "type": "string",
+          "title": "Home_phone",
+          "description": ""
+        },
+        "work_phone": {
+          "type": "string",
+          "title": "Work_phone",
+          "description": ""
+        },
+        "mobile_phone": {
+          "type": "string",
+          "title": "Mobile_phone",
+          "description": ""
+        },
+        "nationalRegistrationNumber": {
+          "type": "string",
+          "title": "Nationalregistrationnumber",
+          "description": ""
+        },
+        "nationalInsuranceNumber": {
+          "type": "string",
+          "title": "Nationalinsurancenumber",
+          "description": ""
+        },
+        "birthDate": {
+          "type": "date-time",
+          "title": "Birthdate",
+          "description": ""
+        },
+        "birthCountry": {
+          "type": "string",
+          "title": "Birthcountry",
+          "description": ""
+        },
+        "nationality": {
+          "type": "string",
+          "title": "Nationality",
+          "description": ""
+        },
+        "gender": {
+          "type": "string",
+          "title": "Gender",
+          "description": ""
+        },
+        "maritalStatus": {
+          "type": "string",
+          "title": "Maritalstatus",
+          "description": ""
+        },
+        "numberDependents": {
+          "type": "integer",
+          "title": "Numberdependents",
+          "description": ""
+        },
+        "trainingInstitutions": {
+          "type": "array",
+          "minItems": 0,
+          "uniqueItems": true,
+          "items": {
+          }
+        },
+        "qualifications": {
+          "type": "array",
+          "minItems": 0,
+          "uniqueItems": true,
+          "items": {
+          }
         },
         "businessNature": {
           "type": "string",
@@ -1399,7 +1513,7 @@
           "description": ""
         },
         "size": {
-          "type": "string",
+          "type": "integer",
           "title": "Size",
           "description": ""
         },
@@ -1421,6 +1535,11 @@
         "elevation": {
           "type": "string",
           "title": "Elevation",
+          "description": ""
+        },
+        "fireSafety": {
+          "type": "string",
+          "title": "Firesafety",
           "description": ""
         }
       }
@@ -1612,6 +1731,11 @@
         "email": {
           "type": "string",
           "title": "Email",
+          "description": ""
+        },
+        "business_hours": {
+          "type": "string",
+          "title": "Business_hours",
           "description": ""
         },
         "contact": {
@@ -2018,6 +2142,31 @@
       "title": "Rotationdate",
       "description": ""
     },
+    "license_to": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "title": "Items",
+        "description": ""
+      }
+    },
+    "licenseNumber": {
+      "type": "string",
+      "title": "Licensenumber",
+      "description": ""
+    },
+    "issuedBy": {
+      "type": "string",
+      "title": "Issuedby",
+      "description": ""
+    },
+    "exceptions": {
+      "type": "string",
+      "title": "Exceptions",
+      "description": ""
+    },
     "authorisationNo": {
       "type": "string",
       "title": "Authorisationno",
@@ -2378,6 +2527,36 @@
     "methodLabelAttach": {
       "type": "string",
       "title": "Methodlabelattach",
+      "description": ""
+    },
+    "physProperties": {
+      "type": "string",
+      "title": "Physproperties",
+      "description": ""
+    },
+    "analysis": {
+      "type": "string",
+      "title": "Analysis",
+      "description": ""
+    },
+    "firstAid": {
+      "type": "string",
+      "title": "Firstaid",
+      "description": ""
+    },
+    "residues": {
+      "type": "string",
+      "title": "Residues",
+      "description": ""
+    },
+    "environmentalImpact": {
+      "type": "string",
+      "title": "Environmentalimpact",
+      "description": ""
+    },
+    "ecotoxicology": {
+      "type": "string",
+      "title": "Ecotoxicology",
       "description": ""
     },
     "officer": {

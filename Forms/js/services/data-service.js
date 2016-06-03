@@ -48,7 +48,7 @@
 			},
 			getFormDef: function(id,post){
 				var def = $q.defer();
-				if (id == 32 || id == 37 || id >= 46)
+				if (id == 9 || id == 32 || id == 37 || id >= 46)
 					if (post!=undefined)
 						return $http.get("/Forms/form-schemas-defs/"+id+"-"+post+".json");
 					else

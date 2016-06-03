@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum bb6e875def5f43a990d5c84a0f613b1d8c960c63",
+  "description": "Generated from b with shasum ff2ac6e2f8428c9dd7e37bc572ee1c1363a28113",
   "type": "object",
   "required": [
     "blockId",
@@ -87,9 +87,10 @@
         },
         "license_to": {
           "type": "array",
-          "minItems": 0,
+          "minItems": 1,
           "uniqueItems": true,
           "items": {
+            "type": "string"
           }
         },
         "licenseNumber": {

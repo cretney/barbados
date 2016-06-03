@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 14ca8baf653b42ff9a0c3d7223185bef3051af3b",
+  "description": "Generated from b with shasum 26b6fce31159f4d47892aeffffb934f32086019a",
   "type": "object",
   "required": [
     "blockId",
@@ -95,16 +95,43 @@
           "type": "object",
           "required": [
             "id",
-            "name",
+            "firstname",
+            "middlename",
+            "lastname",
+            "nickname",
             "countryId",
             "country",
-            "address"
+            "address",
+            "email",
+            "home_phone",
+            "work_phone",
+            "mobile_phone",
+            "fax",
+            "nationalRegistrationNumber",
+            "nationalInsuranceNumber",
+            "birthDate",
+            "birthCountry",
+            "nationality",
+            "gender",
+            "maritalStatus",
+            "numberDependents",
+            "trainingInstitutions",
+            "qualifications"
           ],
           "properties": {
             "id": {
               "type": "integer"
             },
-            "name": {
+            "firstname": {
+              "type": "string"
+            },
+            "middlename": {
+              "type": "string"
+            },
+            "lastname": {
+              "type": "string"
+            },
+            "nickname": {
               "type": "string"
             },
             "countryId": {
@@ -115,6 +142,59 @@
             },
             "address": {
               "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "home_phone": {
+              "type": "string"
+            },
+            "work_phone": {
+              "type": "string"
+            },
+            "mobile_phone": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "nationalRegistrationNumber": {
+              "type": "string"
+            },
+            "nationalInsuranceNumber": {
+              "type": "string"
+            },
+            "birthDate": {
+              "type": "string"
+            },
+            "birthCountry": {
+              "type": "string"
+            },
+            "nationality": {
+              "type": "string"
+            },
+            "gender": {
+              "type": "string"
+            },
+            "maritalStatus": {
+              "type": "string"
+            },
+            "numberDependents": {
+              "type": "integer"
+            },
+            "trainingInstitutions": {
+              "type": "array",
+              "minItems": 0,
+              "uniqueItems": true,
+              "items": {
+              }
+            },
+            "qualifications": {
+              "type": "array",
+              "minItems": 0,
+              "uniqueItems": true,
+              "items": {
+              }
             }
           }
         },
