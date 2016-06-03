@@ -6130,7 +6130,20 @@
     "serialNumberCertificate":"CN-68686",
     "issuedDate":"2016-05-01",
     "submitter": "Joe Blow",
-    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "applicant": {
+      "id":4, "firstname":"John", "middlename":"Fitzgerald", "lastname":"Williams", "nickname":"Hubba", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "email":"hubba@example.com", "home_phone":"777-5555", "work_phone":"888-5555",
+      "mobile_phone":"999-5555", "fax":"222-5555",
+      "nationalRegistrationNumber":"123456-7890",
+      "nationalInsuranceNumber":"123456",
+      "birthDate":"1980-12-20",
+      "birthCountry":"Barbados",
+      "nationality":"Barbados",
+      "gender":"",
+      "maritalStatus":"",
+      "numberDependents":0,
+      "trainingInstitutions":[],
+      "qualifications":[]
+    },
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
 },
