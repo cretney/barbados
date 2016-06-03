@@ -1,0 +1,850 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "commodities[0].description",
+            "title": "Trade Name of Product",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "applicant.name",
+            "title": "Name of applicant:",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "applicant.address",
+            "title": "Applicant's Physical (Street) Address:",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "applicant.postalAddress",
+            "title": "Applicant's Postal Address:",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "commodities[0].type",
+            "title": "Type of Pesticide:",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "intendedUse",
+            "title": "Intended Use:",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-lg-6",
+        "items": [
+          {
+            "key": "commodities[0].manufacturer.name",
+            "title": "Name of Manufacturer of Pesticides Formulation:",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-lg-6",
+        "items": [
+          {
+            "key": "commodities[0].manufacturer.email",
+            "title": "Manufacturer's E-mail Address:",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-lg-6",
+        "items": [
+          {
+            "key": "commodities[0].manufacturer.address",
+            "title": "Manufacturer's Physical (Street) Address:",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-lg-6",
+        "items": [
+          {
+            "key": "commodities[0].manufacturer.address2",
+            "title": "Manufacturer's Postal Address:",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-5",
+        "items": [
+          {
+            "type": "radios",
+            "key": "commodities[0].regInCountry",
+            "title": "Is the product registered in the country of manufacture?",
+            "titleMap": [
+              {
+                "value": true,
+                "name": "Yes"
+              },
+              {
+                "value": false,
+                "name": "No"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-7",
+        "items": [
+          {
+            "type": "textarea",
+            "key": "commodities[0].regCountryDetail",
+            "condition": "model.commodities[0].regInCountry == false",
+            "title": "Give reasons why not:",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "commodities[0].countriesRegistered",
+            "title": "Countries in the Caribbean for which the product is registered:",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "key": "commodities",
+    "title": "Details of Pesticide Formulation:",
+    "add": "New",
+    "remove": null,
+    "style": {
+      "add": "hidden"
+    },
+    "items": [
+      {
+        "key": "commodities[].ingredients",
+        "title":"",
+        "add": "New",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-sm-6 col-md-4",
+                "items": [
+                  {
+                    "key": "commodities[].ingredients[].name",
+                    "title": "Name of Ingredient:",
+                    "description": ""
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-6 col-md-3",
+                "items": [
+                  {
+                    "key": "commodities[].ingredients[].concentration",
+                    "title": "Concentration",
+                    "description": "[g/L, mg/L, g/kg, mg/kg]"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-6 col-md-2",
+                "items": [
+                  {
+                    "key": "commodities[].ingredients[].percentage",
+                    "title": "Percentage",
+                    "description": ""
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-6 col-md-2",
+                "items": [
+                  {
+                    "type": "radiobuttons",
+                    "key": "commodities[].ingredients[].active",
+                    "title": "Active?",
+                    "titleMap": [
+                      {
+                        "value": true,
+                        "name": "Y"
+                      },
+                      {
+                        "value": false,
+                        "name": "N"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "commodities[0].formulations",
+            "title": "Type of formulation:",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "commodities[0].gravity",
+            "title": "Specific Gravity",
+            "description": "(liquids)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "key": "commodities",
+    "title": "LD50 of Pesticide:",
+    "add": "New",
+    "remove": null,
+    "style": {
+      "add": "hidden"
+    },
+    "items": [
+      {
+        "key": "commodities[].ld50Active",
+        "title": "Active Ingredients",
+        "add": "New",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-sm-6",
+                "items": [
+                  {
+                    "key": "commodities[].ld50Active[].animal",
+                    "title": "Animal species tested",
+                    "description": ""
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key": "commodities[].ld50Active[].testType.oral",
+                    "title": "Oral",
+                    "description": ""
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key": "commodities[].ld50Active[].testType.dermal",
+                    "title": "Dermal",
+                    "description": ""
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key": "commodities[].ld50Active[].testType.inhalation",
+                    "title": "Inhalation",
+                    "description": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "commodities[].ld50Formulation",
+        "title": "Formulation",
+        "add": "New",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-sm-6",
+                "items": [
+                  {
+                    "key": "commodities[].ld50Formulation[].animal",
+                    "title": "Animal species tested",
+                    "description": ""
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key": "commodities[].ld50Formulation[].testType.oral",
+                    "title": "Oral",
+                    "description": ""
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key": "commodities[].ld50Formulation[].testType.dermal",
+                    "title": "Dermal",
+                    "description": ""
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-sm-4",
+                "items": [
+                  {
+                    "key": "commodities[].ld50Formulation[].testType.inhalation",
+                    "title": "Inhalation",
+                    "description": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "help",
+        "helpvalue": "<h5>Methods of pesticide formulation and residue analysis</h5>"
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "commodities[0].methodAnalysisPesticide",
+            "title": "Pesticide",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "commodities[0].methodAnalysisFormulation",
+            "title": "Formulation",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "help",
+        "helpvalue": "<h5>Toxic effects on persons using or handling the pesticides:</h5>"
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "commodities[0].toxicEffects.oral",
+            "title": "Ingestion:",
+            "description": ""
+          },
+          {
+            "key": "commodities[0].toxicEffects.inhalation",
+            "title": "Inhalation:",
+            "description": ""
+          },
+          {
+            "key": "commodities[0].toxicEffects.dermal",
+            "title": "Absorption through the skin:",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "help",
+        "helpvalue": "<h5>Toxic effects on the environment and non-target animals:</h5>"
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "commodities[0].toxicEffectsAnimals.birds",
+            "title": "Birds",
+            "description": ""
+          },
+          {
+            "key": "commodities[0].toxicEffectsAnimals.fish",
+            "title": "Fish",
+            "description": ""
+          },
+          {
+            "key": "commodities[0].toxicEffectsAnimals.bees",
+            "title": "Bees",
+            "description": ""
+          },
+          {
+            "key": "commodities[0].toxicEffectsAnimals.otherWildlife",
+            "title": "Other wild life",
+            "description": ""
+          },
+          {
+            "key": "commodities[0].toxicEffectsAnimals.domesticAnimals",
+            "title": "Domestic animals",
+            "description": ""
+          },
+          {
+            "key": "commodities[0].toxicEffectsAnimals.water",
+            "title": "Water",
+            "description": "(Kow)"
+          },
+          {
+            "key": "commodities[0].toxicEffectsAnimals.otherEffects",
+            "title": "Other environmental effects",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "help",
+        "helpvalue": "<h5>First Aid; Medical Treatment Advice; Antidote:</h5>"
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "commodities[0].firstAid",
+            "title": "First Aid:",
+            "description": ""
+          },
+          {
+            "key": "commodities[0].treatment",
+            "title": "Medical Treatment:",
+            "description": ""
+          },
+          {
+            "key": "commodities[0].antidote",
+            "title": "Antidote(s):",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "commodities[0].cropsAllowed",
+            "type": "textarea",
+            "title": "Crops on which pesticide may be used:",
+            "description": ""
+          },
+          {
+            "key": "cropsUsed",
+            "type": "textarea",
+            "title": "State crops on which the pesticides will be used locally",
+            "description": ""
+          },
+          {
+            "key": "pestsUsed",
+            "type": "textarea",
+            "title": "Pests on which pesticide is to be used:",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "help",
+        "helpvalue": "<hr>"
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "commodities[0].maxResidueLimit",
+            "title": "Maximum Residual Limits (MRL)",
+            "description": "for recommended crops"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "commodities[0].tolerance",
+            "title": "Tolerance levels",
+            "description": "as prescribed by FAO / WHO"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "commodities[0].freqApplication",
+            "title": "Frequency of Application",
+            "description": "recommended by manufacturer"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "commodities[0].rateApplication",
+            "title": "Rate of application",
+            "description": "recommended by manufacturer"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "commodities[0].reentryPeriod",
+            "title": "Re-Entry Period",
+            "description": "recommended by manufacturer"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "commodities[0].preHarvestInterval",
+            "title": "Period between final application and harvest (PHI)",
+            "description": "recommended by manufacturer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "commodities[0].descriptionDetail",
+            "type": "textarea",
+            "title": "Other Information",
+            "description": "(usage, etc.)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "help",
+    "helpvalue": "<h4>Details of pesticides imported with the request of this license:</h4>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "commodities[0].units[0].pack_size",
+            "type": "number",
+            "title": "Size of container",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3 col-md-2",
+        "items": [
+          {
+            "key": "commodities[0].units[0].unitType",
+            "type": "select",
+            "title": "Unit Type",
+            "titleMap": {
+              "ml": "ml",
+              "L": "L",
+              "g": "g",
+              "kg": "kg"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-5",
+        "items": [
+          {
+            "key": "commodities[0].units[0].quantity",
+            "type": "number",
+            "title": "Number of containers in this shipment",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "container",
+            "type": "textarea",
+            "title": "Description of container",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "methodLabelAttach",
+            "title": "Method of attachment of label",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "commodities[0].quantity",
+            "title": "Amount annually",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<h4>Details of method of storage:</h4>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "storage.facilities",
+            "type": "textarea",
+            "title": "Manufacturer's recommendations",
+            "description": ""
+          },
+          {
+            "key": "storage.location",
+            "title": "Address of storage area",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<h5>Description of storage area:</h5>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "storage.size",
+            "type": "number",
+            "title": "Size of room",
+            "description": "(sq ft)"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "storage.material",
+            "type": "select",
+            "title": "Wood or stone",
+            "titleMap": {
+              "wood": "Wood",
+              "stone": "Stone"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "storage.security",
+            "title": "Security",
+            "description": ""
+          },
+          {
+            "key": "storage.ventilation",
+            "title": "Ventilation",
+            "description": ""
+          },
+          {
+            "key": "storage.elevation",
+            "title": "Elevation",
+            "description": "describe"
+          },
+          {
+            "key": "storage.fireSafety",
+            "title": "Fire safety devices",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  }
+]

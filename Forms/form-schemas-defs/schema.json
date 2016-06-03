@@ -1,0 +1,36 @@
+
+
+
+
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "",
+            "title": "",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "",
+            "title": "",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  }
