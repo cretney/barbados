@@ -739,6 +739,11 @@
 				"id": 158,
 				"template": "fd-verification.html",
 				"document":"Verification.pdf"
+			},
+			{
+				"id": 160,
+				"template": "tu-registration-telecommunication-sellers-dealers-class-licence.html",
+				"document":"Registration for Telecommunication Sellers and Dealers Class Licence.pdf"
 			}
 		]
 	},
