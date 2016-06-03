@@ -636,6 +636,11 @@
 				"document":"Application for Registration of a Fishery Worker.pdf"
 			},
 			{
+				"id": 133,
+				"template": "fd-application-registration-fishery-worker-issued.html",
+				"document":"Application for Registration of a Fishery Worker.pdf"
+			},
+			{
 				"id": 134,
 				"template": "fd-atlantic-swordfish-certificate-elegibility.html",
 				"document":"Atlantic Swordfish Certificate of Eligibility (COE).pdf"
