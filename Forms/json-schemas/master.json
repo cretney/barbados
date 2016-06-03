@@ -449,7 +449,7 @@
                   "description": ""
                 },
                 "concentration": {
-                  "type": "integer",
+                  "type": "string",
                   "title": "Concentration",
                   "description": ""
                 },
