@@ -32,35 +32,69 @@
   <br><br>
 
   <div class="row">
-    <div class="col-sm-6 col-sm-offset-6 top-border">
+    <div class="col-sm-6 col-sm-offset-6">
       <h5 align="center">
-        (Address)
+        {{ila.submission.applicant.name}}
       </h5>
     </div><!--col-sm-6 col-sm-offset-6-->
-    <br><br><br>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-6 top-border">
+      <br>
+      <h5 align="center">
+        {{ila.submission.applicant.address}}
+      </h5>
+    </div><!--col-sm-6 col-sm-offset-6-->
+    <br>
     <div class="col-sm-6 col-sm-offset-6 top-border"></div>
   </div><!--row-->
 
   <div class="row">
     <div class="col-sm-12">
       <p>
-        To the Licensing Authority,<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Application is hereby made for a licence to
-      </p>
-      <p>
-        <u>import</u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(quantity)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(substance)<br>
-        store
+        To the Licensing Authority,<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Application is hereby made for a licence to <b>{{ila.submission.license_to.join(' and ')}}</b><br>
       </p>
     </div><!--col-sm-12-->
   </div><!--row-->
-  <br><br><br><br>
+  <br>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h5><b>
+        Substances
+      </b></h5>
+    </div>
+
+    <div class="col-sm-12">
+      <table class="table black-border">
+        <tr class="center-align">
+          <td width="20%">HS Code</td>
+          <td width="60%">Substance</td>
+          <td>Quantity</td>
+        </tr>
+        <tr class="center-align" ng-repeat="item in ila.submission.commodities">
+          <td><b>{{item.hsCode}}</b></td>
+          <td><b>{{item.description}}</b></td>
+          <td><b>{{item.units[0].quantity}}</b></td>
+      </table>
+    </div><!--col-sm-12-->
+
+    <div class="col-sm-12">
+      <p><b>
+        Remarks:<br>
+        <b>{{ila.submission.remarks}}</b><br>
+      </b></p>
+    </div>
+  </div><!--row-->
 
   <div class="row">
     <div class="col-sm-12">
       <p>
-        to be obtained from&nbsp;&nbsp;&nbsp;&nbsp;(Name, address, etc. of pharmaceutical firm)
+        to be obtained from <b>{{ila.submission.supplier.name}}, {{ila.submission.supplier.address}}</b>
         <br><br>
-        Storage for the above substance is provided at&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and business hours are
+        Storage for the above substance is provided at <b>{{ila.submission.consignee.name}}, {{ila.submission.consignee.address}}</b> and business hours are <b>{{ila.submission.consignee.business_hours}}</b>
       </p>
       <p align="right">
         Applicant
@@ -73,11 +107,18 @@
   <div class="row">
     <div class="col-sm-12">
       <p align="justify">
-        Mr &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; please report on storage facilities for the above in connection with the issue of a licence under Sections 5 and 6 of the Act.
+        Mr <b>{{ila.submission.inspector}}</b> please report on storage facilities for the above in connection with the issue of a licence under Sections 5 and 6 of the Act.
       </p>
     </div><!--col-sm-12-->
     <br><br><br>
+  </div><!--row-->
 
+  <div class="row">
+    <div class="col-sm-4">
+      <p align="center"><b>{{ila.submission.inspectionDate}}</b></p>
+    </div>
+  </div><!--row-->
+  <div class="row">
     <div class="col-sm-4 top-border">
       <p align="center">(date)</p>
     </div>
@@ -101,7 +142,7 @@
         </b>
       </h6>
       <p>
-        GIVEN at Bridgetown, Barbados this &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; day of &nbsp;
+        GIVEN at Bridgetown, Barbados this <b>{{ila.submission.issuedDate  | date: 'MMMM d, yyyy'}}</b>
       </p>
       <p align="right">
         Licensing Authority.
@@ -112,15 +153,21 @@
   <hr class="thick">
 
   <div class="row">
+    <div class="col-sm-offset-8 col-sm-4">
+      <p align="right"> Date: <b>{{ila.submission.issuedDate  | date: 'MMMM d, yyyy'}}</b> </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+  <div class="row">
     <div class="col-sm-12">
-      <p align="right">Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
       <p>
         Comptroller of Customs,<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is to certify that the pharmaceutical products mentioned above are antibiotic substances/preparations with the exception of any mentioned below:-
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is to certify that the pharmaceutical products mentioned above are antibiotic substances/preparations with the exception of any mentioned below:-
       </p>
-      <br><br><br><br>
+      <br>
+      <b>{{ila.submission.exceptions}}</b>
+      <br><br><br>
       <p align="right">
-        Drug Inspector&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Drug Inspector
       </p>
     </div><!--col-sm-12-->
   </div><!--row-->
