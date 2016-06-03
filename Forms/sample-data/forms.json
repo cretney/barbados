@@ -6087,7 +6087,7 @@
             "active":true
           },
           {
-            "name": "hydrogen dioxide",
+            "name": "dihydrogen oxide",
             "concentration": "500 g/L",
             "percentage": 33,
             "active": false
@@ -6209,37 +6209,128 @@
     "commodities": [
       {
         "hsCode": "123",
-        "description": "test",
+        "type": "Herbicide",
+        "description": "Roundup Weed Killer",
+        "quantity": "500 tons",
+        "ingredients": [
+          {
+            "name": "glyphosate",
+            "concentration": "330 g/L",
+            "percentage": 52,
+            "active":true
+          },
+          {
+            "name": "deoxyribonucleic acid",
+            "concentration": "100 mg/L",
+            "percentage": 10,
+            "active":true
+          },
+          {
+            "name": "dihydrogen oxide",
+            "concentration": "500 g/L",
+            "percentage": 33,
+            "active": false
+          },
+          {
+            "name": "love",
+            "concentration": "10 mg/kg",
+            "percentage": 5,
+            "active": false
+          }
+        ],
+        "formulations": "soluble concentrate",
+        "gravity": "1.0549",
         "units": [
           {
-            "unitType": "Units",
-            "quantity": 3
+            "unitType": "ml",
+            "quantity": 30000,
+            "pack_size": 500
           }
-        ]
-      },
-      {
-        "hsCode": "234",
-        "description": "test",
-        "units": [
+        ],
+        "manufacturer": {
+          "name": "Monsanto Corporation",
+          "address": "333 Freedom Drive, Knoxville, TN, United States",
+          "address2": "P.O. Box 3456, Knoxville, TN, United States",
+          "email": "gmo@monsanto.com"
+        },
+        "regInCountry": true,
+        "regCountryDetail": "this is a test of the conditional",
+        "countriesRegistered": ["Antigua", "Bahamas", "St. Maartens", "Jamaica", "Aruba"],
+        "ld50Active": [
           {
-            "unitType": "Units",
-            "quantity": 5
+            "animal": "lab rats",
+            "testType": {
+              "oral": "3.49 g/kg",
+              "inhalation": "40 mg/kg"
+            }
+          },
+          {
+            "animal": "guinea pigs",
+            "testType": {
+              "oral": "5.83 g/kg",
+              "dermal": "0.87 g/kg"
+            }
           }
-        ]
+        ],
+        "ld50Formulation": [
+          {
+            "animal": "lab rats",
+            "testType": {
+              "oral": "150.5 g/kg",
+              "inhalation": "1.13 g/kg"
+            }
+          },
+          {
+            "animal": "guinea pigs",
+            "testType": {
+              "oral": "184.659 g/kg",
+              "dermal": "35.28 g/kg"
+            }
+          }
+        ],
+        "toxicEffects": {
+          "oral": "you die",
+          "inhalation": "your muscles turn to krazy glue",
+          "dermal": "the bacteria in your gut turn into Jon Voight"
+        },
+        "toxicEffectsAnimals": {
+          "birds": "their wings turn aqua color",
+          "fish": "grow snouts",
+          "bees": "hair grows to 3 feet",
+          "otherWildlife": "horses turn into zebras",
+          "domesticAnimals": "develop constant morning breath",
+          "water": "develops morning breath",
+          "otherEffects": ""
+        },
+        "methodAnalysisPesticide": "acidity test",
+        "methodAnalysisFormulation": "watch plants die",
+        "firstAid": "spray windex on the affected area",
+        "treatment": "smack the entry point with a frying pan 42 times",
+        "antidote": "wait 85 years",
+        "cropsAllowed": "corn, wheat, soy, sugar cane, asparagus",
+        "maxResidueLimit": "0.23 mg/kg",
+        "tolerance": "0.5 ppm",
+        "freqApplication": "daily",
+        "rateApplication": "2 liters/sq ft",
+        "reentryPeriod": "12 hours",
+        "preHarvestInterval": "4 days",
+        "descriptionDetail": "not intended for human ingestion under any circumstances."
       }
     ],
     "referenceNumber":"RN-7657657",
-    "serialNumberCertificate":"CN-68686",
-    "issuedDate":"2016-05-01",
+    "issuedDate":"2016-06-15",
+    "cropsUsed": "sugar cane",
+    "pestsUsed": "dandelions",
+    "container": "White plastic spray bottle with Monsanto logo.",
+    "methodLabelAttach": "glue",
+    "storage": {"facilities": "store in a cool, dry place", "location": "555 Main Street, St. George", "size": 6500, "material": "stone", "security": "padlock", "ventilation": "two chimneys", "elevation": "20 feet above sea level", "fireSafety": "fire extinguisher in room"},
     "submitter": "Joe Blow",
-    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
-    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"},
-    "physProperties": "",
-    "analysis": "",
-    "firstAid": "",
-    "residues": "",
-    "environmentalImpact": "",
-    "ecotoxicology": ""
+    "entryDate":"2016-06-01",
+    "approvalDate": "2016-06-10",
+    "approvedBy": "Joe Schmoe",
+    "intendedUse": "to kill weeds and promote the growth of intended crops",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "postalAddress": "P.O. Box 56789, St. Michael"},
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
 },
 {
