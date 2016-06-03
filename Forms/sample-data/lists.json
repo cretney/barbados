@@ -724,6 +724,21 @@
 				"id": 153,
 				"template": "vs-permit-import-animals-birds-issued.html",
 				"document":"Permit to Import Animals and Birds into Barbados.pdf"
+			},
+			{
+				"id": 154,
+				"template": "fd-dutyfree-concessions-form-application.html",
+				"document":"Dutyfree Concessions form (1).pdf"
+			},
+			{
+				"id": 156,
+				"template": "fd-farmers-registration-form.html",
+				"document":"Farmers' Registration Form.pdf"
+			},
+			{
+				"id": 158,
+				"template": "fd-verification.html",
+				"document":"Verification.pdf"
 			}
 		]
 	},
