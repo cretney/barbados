@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 26995c7fefdb8182c8f8e7da8aac7a44ce1d426e",
+  "description": "Generated from b with shasum 41a8df6381ac4b83499c0ac1b69a36d8c416b46c",
   "type": "object",
   "required": [
     "blockId",
@@ -33,7 +33,14 @@
         "referenceNumber",
         "serialNumberCertificate",
         "issuedDate",
+        "cropsUsed",
+        "pestsUsed",
+        "container",
+        "methodLabelAttach",
+        "storage",
         "submitter",
+        "entryDate",
+        "intendedUse",
         "applicant",
         "supplier"
       ],
@@ -46,14 +53,72 @@
             "type": "object",
             "required": [
               "hsCode",
+              "type",
               "description",
-              "units"
+              "quantity",
+              "ingredients",
+              "formulations",
+              "gravity",
+              "units",
+              "manufacturer",
+              "regInCountry",
+              "countriesRegistered",
+              "ld50Active",
+              "ld50Formulation",
+              "toxicEffects",
+              "toxicEffectsAnimals",
+              "firstAid",
+              "treatment",
+              "antidote",
+              "cropsAllowed",
+              "maxResidueLimit",
+              "tolerance",
+              "freqApplication",
+              "rateApplication",
+              "reentryPeriod",
+              "preHarvestInterval",
+              "descriptionDetail"
             ],
             "properties": {
               "hsCode": {
                 "type": "string"
               },
+              "type": {
+                "type": "string"
+              },
               "description": {
+                "type": "string"
+              },
+              "quantity": {
+                "type": "string"
+              },
+              "ingredients": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "name",
+                    "concentration"
+                  ],
+                  "properties": {
+                    "name": {
+                      "type": "string"
+                    },
+                    "concentration": {
+                      "type": "integer"
+                    },
+                    "active": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              },
+              "formulations": {
+                "type": "string"
+              },
+              "gravity": {
                 "type": "string"
               },
               "units": {
@@ -64,7 +129,8 @@
                   "type": "object",
                   "required": [
                     "unitType",
-                    "quantity"
+                    "quantity",
+                    "pack_size"
                   ],
                   "properties": {
                     "unitType": {
@@ -72,9 +138,199 @@
                     },
                     "quantity": {
                       "type": "integer"
+                    },
+                    "pack_size": {
+                      "type": "integer"
                     }
                   }
                 }
+              },
+              "manufacturer": {
+                "type": "object",
+                "required": [
+                  "name",
+                  "address",
+                  "address2",
+                  "email"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "address": {
+                    "type": "string"
+                  },
+                  "address2": {
+                    "type": "string"
+                  },
+                  "email": {
+                    "type": "string"
+                  }
+                }
+              },
+              "regInCountry": {
+                "type": "boolean"
+              },
+              "countriesRegistered": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "string"
+                }
+              },
+              "ld50Active": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "animal",
+                    "testType"
+                  ],
+                  "properties": {
+                    "animal": {
+                      "type": "string"
+                    },
+                    "testType": {
+                      "type": "object",
+                      "required": [
+                        "oral",
+                        "inhalation",
+                        "dermal"
+                      ],
+                      "properties": {
+                        "oral": {
+                          "type": "string"
+                        },
+                        "inhalation": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "ld50Formulation": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "animal",
+                    "testType"
+                  ],
+                  "properties": {
+                    "animal": {
+                      "type": "string"
+                    },
+                    "testType": {
+                      "type": "object",
+                      "required": [
+                        "oral",
+                        "inhalation",
+                        "dermal"
+                      ],
+                      "properties": {
+                        "oral": {
+                          "type": "string"
+                        },
+                        "inhalation": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "toxicEffects": {
+                "type": "object",
+                "required": [
+                  "oral",
+                  "inhalation",
+                  "dermal"
+                ],
+                "properties": {
+                  "oral": {
+                    "type": "string"
+                  },
+                  "inhalation": {
+                    "type": "string"
+                  },
+                  "dermal": {
+                    "type": "string"
+                  }
+                }
+              },
+              "toxicEffectsAnimals": {
+                "type": "object",
+                "required": [
+                  "birds",
+                  "fish",
+                  "bees",
+                  "otherWildlife",
+                  "domesticAnimals",
+                  "water",
+                  "otherEffects"
+                ],
+                "properties": {
+                  "birds": {
+                    "type": "string"
+                  },
+                  "fish": {
+                    "type": "string"
+                  },
+                  "bees": {
+                    "type": "string"
+                  },
+                  "otherWildlife": {
+                    "type": "string"
+                  },
+                  "domesticAnimals": {
+                    "type": "string"
+                  },
+                  "water": {
+                    "type": "string"
+                  },
+                  "otherEffects": {
+                    "type": "string"
+                  }
+                }
+              },
+              "firstAid": {
+                "type": "string"
+              },
+              "treatment": {
+                "type": "string"
+              },
+              "antidote": {
+                "type": "string"
+              },
+              "cropsAllowed": {
+                "type": "string"
+              },
+              "maxResidueLimit": {
+                "type": "string"
+              },
+              "tolerance": {
+                "type": "string"
+              },
+              "freqApplication": {
+                "type": "string"
+              },
+              "rateApplication": {
+                "type": "string"
+              },
+              "reentryPeriod": {
+                "type": "string"
+              },
+              "preHarvestInterval": {
+                "type": "string"
+              },
+              "descriptionDetail": {
+                "type": "string"
               }
             }
           }
@@ -88,7 +344,60 @@
         "issuedDate": {
           "type": "string"
         },
+        "cropsUsed": {
+          "type": "string"
+        },
+        "pestsUsed": {
+          "type": "string"
+        },
+        "container": {
+          "type": "string"
+        },
+        "methodLabelAttach": {
+          "type": "string"
+        },
+        "storage": {
+          "type": "object",
+          "required": [
+            "facilities",
+            "location",
+            "size",
+            "material",
+            "security",
+            "ventilation",
+            "elevation"
+          ],
+          "properties": {
+            "facilities": {
+              "type": "string"
+            },
+            "location": {
+              "type": "string"
+            },
+            "size": {
+              "type": "string"
+            },
+            "material": {
+              "type": "string"
+            },
+            "security": {
+              "type": "string"
+            },
+            "ventilation": {
+              "type": "string"
+            },
+            "elevation": {
+              "type": "string"
+            }
+          }
+        },
         "submitter": {
+          "type": "string"
+        },
+        "entryDate": {
+          "type": "string"
+        },
+        "intendedUse": {
           "type": "string"
         },
         "applicant": {

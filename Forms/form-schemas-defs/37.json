@@ -1,0 +1,168 @@
+[
+  {
+    "type":"help",
+    "helpvalue":"<p>I, the undersigned, exporter of the goods described in the attached declaration</p>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-5",
+        "items": [
+          {
+            "key":"applicant.name",
+            "title":"Exporter",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-7",
+        "items": [
+				  {
+				  	"key":"applicant.address",
+				  	"title":"Address",
+				  	"readonly":true
+				  }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"<p>DECLARE that the goods were produced in:</p>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-5",
+        "items": [
+          {
+            "key":"origin",
+            "title":"Country of production",
+            "description":""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"<p>SPECIFY as follows the grounds on which the goods are claimed to comply with the provisions governing the determination of Common Market Origin: *1</p>"
+  },
+  {
+    "type":"help",
+    "helpvalue":"<br><p>(a) the materials used and their CCCN heading (s);</p><p>(b) their country of origin;</p>"
+  },
+  {
+    "key": "materials",
+    "add": "Add Material",
+    "title":"",
+    "style": {
+      "add": "btn-success"
+    },
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "materials[].hsCode",
+                "title": "CCCN heading",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-5",
+            "items": [
+              {
+                "key": "materials[].description",
+                "title": "Material"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "materials[].origin",
+                "title": "Country origin"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"<br><p>(c) the manufacturing processes or other circumstances enabling the goods to qualify as being of Common Market origin;</p>"
+  },
+  {
+    "key": "manufacturing",
+    "type": "textarea",
+    "title": "Manufacturing processes"
+  },
+  {
+    "type":"help",
+    "helpvalue":"<br><p>(d) the goods produced and their CCCN heading (s).<br>Where the condition to be complied with is a percentage value-added condition, give information enabling this percentage to be verified ‐ for example - the value of imported materials and those of undetermined origin used and the export price of the finished product.</p>"
+  },
+  {
+    "key": "commodities",
+    "add": "Add Material",
+    "title":"",
+    "style": {
+      "add": "hidden"
+    },
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "commodities[].hsCode",
+                "title": "HS Code",
+                "description":"",
+                "readonly":true
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-7",
+            "items": [
+              {
+                "key": "commodities[].description",
+                "title": "Product description",
+                "description":"",
+                "readonly":true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "submit",
+    "style": "btn-info",
+    "title": "Save"
+  }
+]

@@ -1,0 +1,174 @@
+<div>
+  <div class="row">
+    <div class="col-sm-6">
+      <h5>
+        BARBADOS
+      </h5>
+    </div>
+    <div class="col-sm-6">
+      <h6 align="right">
+        A14:247
+      </h6>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h3 align="center">
+        <b>
+          THE THERAPEUTIC SUBSTANCES ACT, 1949
+        </b>
+      </h3>
+      <h6 align="center">
+        (Sections 5 and 6)
+      </h6>
+      <h4 align="center">
+        <b>
+          LICENCE TO IMPORT AND STORE
+        </b>
+      </h4>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+  <br><br>
+
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-6">
+      <h5 align="center">
+        {{ila.submission.applicant.name}}
+      </h5>
+    </div><!--col-sm-6 col-sm-offset-6-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-6 top-border">
+      <br>
+      <h5 align="center">
+        {{ila.submission.applicant.address}}
+      </h5>
+    </div><!--col-sm-6 col-sm-offset-6-->
+    <br>
+    <div class="col-sm-6 col-sm-offset-6 top-border"></div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p>
+        To the Licensing Authority,<br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Application is hereby made for a licence to <b>{{ila.submission.license_to.join(' and ')}}</b><br>
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+  <br>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h5><b>
+        Substances
+      </b></h5>
+    </div>
+
+    <div class="col-sm-12">
+      <table class="table black-border">
+        <tr class="center-align">
+          <td width="20%">HS Code</td>
+          <td width="60%">Substance</td>
+          <td>Quantity</td>
+        </tr>
+        <tr class="center-align" ng-repeat="item in ila.submission.commodities">
+          <td><b>{{item.hsCode}}</b></td>
+          <td><b>{{item.description}}</b></td>
+          <td><b>{{item.units[0].quantity}}</b></td>
+      </table>
+    </div><!--col-sm-12-->
+
+    <div class="col-sm-12">
+      <p><b>
+        Remarks:<br>
+        <b>{{ila.submission.remarks}}</b><br>
+      </b></p>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p>
+        to be obtained from <b>{{ila.submission.supplier.name}}, {{ila.submission.supplier.address}}</b>
+        <br><br>
+        Storage for the above substance is provided at <b>{{ila.submission.consignee.name}}, {{ila.submission.consignee.address}}</b> and business hours are <b>{{ila.submission.consignee.business_hours}}</b>
+      </p>
+      <p align="right">
+        Applicant
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <hr class="thick">
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p align="justify">
+        Mr <b>{{ila.submission.inspector}}</b> please report on storage facilities for the above in connection with the issue of a licence under Sections 5 and 6 of the Act.
+      </p>
+    </div><!--col-sm-12-->
+    <br><br><br>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-4">
+      <p align="center"><b>{{ila.submission.inspectionDate}}</b></p>
+    </div>
+  </div><!--row-->
+  <div class="row">
+    <div class="col-sm-4 top-border">
+      <p align="center">(date)</p>
+    </div>
+    <div class="col-sm-8">
+      <p align="right">Licensing Authority.</p>
+    </div>
+  </div><!--row-->
+
+  <hr class="thick">
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h6 align="center">
+        <b>
+          LICENCE
+        </b>
+      </h6>
+      <h6 align="justify">
+        <b>
+          This Licence showing my approval of the above application is issued on the special condition that the Applicant notifies the Licencing Authority of the dates on which the above permitted substance (I) arrives in Barbados; (II) is received by him; (III) is stored in accordance with the terms herein approved, and may be suspended or revoked if the licensee contravenes or fails to comply with any of the said conditions or any other conditions contained in the Licence.
+        </b>
+      </h6>
+      <p>
+        GIVEN at Bridgetown, Barbados this <b>{{ila.submission.issuedDate  | date: 'MMMM d, yyyy'}}</b>
+      </p>
+      <p align="right">
+        Licensing Authority.
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <hr class="thick">
+
+  <div class="row">
+    <div class="col-sm-offset-8 col-sm-4">
+      <p align="right"> Date: <b>{{ila.submission.issuedDate  | date: 'MMMM d, yyyy'}}</b> </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+  <div class="row">
+    <div class="col-sm-12">
+      <p>
+        Comptroller of Customs,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is to certify that the pharmaceutical products mentioned above are antibiotic substances/preparations with the exception of any mentioned below:-
+      </p>
+      <br>
+      <b>{{ila.submission.exceptions}}</b>
+      <br><br><br>
+      <p align="right">
+        Drug Inspector
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+</div><!--container-->

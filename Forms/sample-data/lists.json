@@ -209,6 +209,10 @@
 				"template": "bidc-registration-exporter.html"
 			},
 			{
+				"id": 38,
+				"template": "bidc-registration-exporter-issued.html"
+			},
+			{
 				"id": 40,
 				"template": "foodwhole-sampling-goods.html"
 			},
@@ -352,6 +356,11 @@
 				"document":"Plant Quarantine Waiver Application.pdf"
 			},
 			{
+				"id": 77,
+				"template": "plant-quarantine-waiver-application-issued.html",
+				"document":"Plant Quarantine Waiver Application.pdf"
+			},
+			{
 				"id": 78,
 				"template": "plantpa-letter-entry-abscene-phytosanitary-certificate.html",
 				"document":"Letter to Customs to Process Entry in Abscene of Phytosanitary Certificate.pdf"
@@ -367,13 +376,28 @@
 				"document":"Licence to Import and Store.pdf"
 			},
 			{
+				"id": 81,
+				"template": "bds-license-import-store-issued.html",
+				"document":"Licence to Import and Store.pdf"
+			},
+			{
 				"id": 82,
 				"template": "bds-export-authorization-narcotics.html",
 				"document":"Export Authorization Narcotics.pdf"
 			},
 			{
+				"id": 83,
+				"template": "bds-export-authorization-narcotics-issued.html",
+				"document":"Export Authorization Narcotics.pdf"
+			},
+			{
 				"id": 84,
 				"template": "plant-phytosanitary-certificate.html",
+				"document":"Phytosanitary Certificate.pdf"
+			},
+			{
+				"id": 85,
+				"template": "plant-phytosanitary-certificate-issued.html",
 				"document":"Phytosanitary Certificate.pdf"
 			},
 			{
@@ -612,6 +636,11 @@
 				"document":"Application for Registration of a Fishery Worker.pdf"
 			},
 			{
+				"id": 133,
+				"template": "fd-application-registration-fishery-worker-issued.html",
+				"document":"Application for Registration of a Fishery Worker.pdf"
+			},
+			{
 				"id": 134,
 				"template": "fd-atlantic-swordfish-certificate-elegibility.html",
 				"document":"Atlantic Swordfish Certificate of Eligibility (COE).pdf"
@@ -669,6 +698,11 @@
 			{
 				"id": 148,
 				"template": "pqu-post-entry-inspection-report-live-plants.html",
+				"document":"Post Entry Inspection Report (Live Plants).pdf"
+			},
+			{
+				"id": 149,
+				"template": "pqu-post-entry-inspection-report-live-plants-issued.html",
 				"document":"Post Entry Inspection Report (Live Plants).pdf"
 			},
 			{

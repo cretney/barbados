@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 327fdc808de5fb2e442525a1f73a5b1fc604f110",
+  "description": "Generated from b with shasum 978dff5ee3f80827de13f2b4ce329c1db8ed3287",
   "type": "object",
   "required": [
     "blockId",
@@ -30,24 +30,26 @@
       "type": "object",
       "required": [
         "commodities",
+        "referenceNumber",
+        "permitNumber",
+        "phytosanitaryCertificate",
+        "serialNumberCertificate",
+        "inspectionLocation",
         "inspectionDate",
         "inspector",
-        "treatmentDate",
-        "treatment",
-        "treatmentDuration",
-        "treatmentLevel",
-        "packageNumber",
-        "packageDescription",
-        "distinguishingMarks",
-        "meansConveyance",
-        "portDischarge",
         "origin",
-        "serialNumberCertificate",
-        "approvalDate",
         "issuedDate",
+        "periodEnding",
+        "dateInspection",
+        "otherDetails",
+        "remarks",
         "submitter",
-        "exporter",
-        "consignee"
+        "observations",
+        "recommendations",
+        "comments",
+        "consignee",
+        "applicant",
+        "supplier"
       ],
       "properties": {
         "commodities": {
@@ -59,6 +61,8 @@
             "required": [
               "hsCode",
               "description",
+              "grossWeight",
+              "grossWeightUnits",
               "units"
             ],
             "properties": {
@@ -66,6 +70,12 @@
                 "type": "string"
               },
               "description": {
+                "type": "string"
+              },
+              "grossWeight": {
+                "type": "integer"
+              },
+              "grossWeightUnits": {
                 "type": "string"
               },
               "units": {
@@ -91,55 +101,133 @@
             }
           }
         },
+        "referenceNumber": {
+          "type": "string"
+        },
+        "permitNumber": {
+          "type": "string"
+        },
+        "phytosanitaryCertificate": {
+          "type": "string"
+        },
+        "serialNumberCertificate": {
+          "type": "string"
+        },
+        "inspectionLocation": {
+          "type": "string"
+        },
         "inspectionDate": {
           "type": "string"
         },
         "inspector": {
           "type": "string"
         },
-        "treatmentDate": {
-          "type": "string"
-        },
-        "treatment": {
-          "type": "string"
-        },
-        "treatmentDuration": {
-          "type": "string"
-        },
-        "treatmentLevel": {
-          "type": "string"
-        },
-        "packageNumber": {
-          "type": "string"
-        },
-        "packageDescription": {
-          "type": "string"
-        },
-        "distinguishingMarks": {
-          "type": "string"
-        },
-        "meansConveyance": {
-          "type": "string"
-        },
-        "portDischarge": {
-          "type": "string"
-        },
         "origin": {
-          "type": "string"
-        },
-        "serialNumberCertificate": {
-          "type": "string"
-        },
-        "approvalDate": {
           "type": "string"
         },
         "issuedDate": {
           "type": "string"
         },
+        "periodEnding": {
+          "type": "string"
+        },
+        "dateInspection": {
+          "type": "string"
+        },
+        "otherDetails": {
+          "type": "string"
+        },
+        "remarks": {
+          "type": "string"
+        },
         "submitter": {
           "type": "string"
         },
-        "exporter": {
+        "observations": {
+          "type": "string"
+        },
+        "recommendations": {
+          "type": "string"
+        },
+        "comments": {
+          "type": "string"
+        },
+        "consignee": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address",
+            "docid",
+            "fax",
+            "email",
+            "contact"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "docid": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "contact": {
+              "type": "object",
+              "required": [
+                "name",
+                "address:",
+                "home_phone",
+                "work_phone",
+                "mobile_phone",
+                "fax",
+                "email"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "address:": {
+                  "type": "string"
+                },
+                "home_phone": {
+                  "type": "string"
+                },
+                "work_phone": {
+                  "type": "string"
+                },
+                "mobile_phone": {
+                  "type": "string"
+                },
+                "fax": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "applicant": {
           "type": "object",
           "required": [
             "id",
@@ -166,17 +254,14 @@
             }
           }
         },
-        "consignee": {
+        "supplier": {
           "type": "object",
           "required": [
             "id",
             "name",
             "countryId",
             "country",
-            "address",
-            "docid",
-            "fax",
-            "email"
+            "address"
           ],
           "properties": {
             "id": {
@@ -192,15 +277,6 @@
               "type": "string"
             },
             "address": {
-              "type": "string"
-            },
-            "docid": {
-              "type": "string"
-            },
-            "fax": {
-              "type": "string"
-            },
-            "email": {
               "type": "string"
             }
           }

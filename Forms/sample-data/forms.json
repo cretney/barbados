@@ -1125,93 +1125,37 @@
     "commodities": [
       {
         "hsCode": "123",
-        "description": "Kryptonite",
-        "id": "12345",
-        "radioactive": [
+        "description": "test",
+        "units": [
           {
-            "physicalState": "S",
-            "quantity": "3kg",
-            "activity": "129.5",
-            "radioIsotope": "Kr-85",
-            "calibrationDate": "03/25/2016"
+            "unitType": "Units",
+            "quantity": 3
           }
         ]
-      }
-    ],
-    "entryDate":"2016-05-01",
-    "submitter": "Joe Blow",
-    "modeTransport": "sea",
-    "intendedUse": "this material will be used to make Superman-resistant kevlar vests, using our patented technology",
-    "applicant": {"id":4, "name":"LUTHOR LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street", "parish":"St. Michael", "contactPerson": {"firstName":"Joe", "lastName":"Blow", "title":"Head Mucketymuck", "email":"joe.blow@collinsltd.com", "work_phone":"555-5555", "fax":"888-8888"}},
-    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street", "city":"Hollywood", "state":"FL", "zip":"12902", "contactPerson": {"firstName":"Joe", "lastName":"Schmoe", "email":"joe.schmoe@fakenovartis.com", "work_phone":"412-555-5555", "fax":"412-888-8888"}},
-    "customsBroker": {"id":8, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1235 Bay Street", "parish":"St. Michael", "phone":"555-123-4567", "contactPerson": {"firstName":"Carla", "lastName":"Briceno", "email":"emailaddress@collinsltd.com", "work_phone":"123-4567", "fax":"987-6543"}},
-    "importer": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"4321 Not Bay Street", "parish":"St. Andrew", "contactPerson": {"firstName":"Jenny", "lastName":"McGuyver", "email":"mail@address.com", "work_phone":"867-5309", "fax":"530-9867"}},
-    "transporter": {"name":"Acme Trucking", "countryId":"BB", "country":"Barbados", "address":"33 Lois Lane", "parish":"St. George", "contactPerson": {"firstName":"Lois", "lastName":"Lane", "email":"lois@lane.com", "work_phone":"848-4848", "fax":"232-3232"}},
-    "transporter2": {"name":"Kryptonite Special Handlers Corp", "countryId":"BB", "country":"Barbados", "address":"1 Krypton Place", "parish":"St. James", "contactPerson": {"firstName":"Clark", "lastName":"Kent", "email":"superman@krypton.com", "work_phone":"999-9999"}},
-    "handlers": [{"name":"Joe Smith", "qualifications":"certified in handling kryptonite"}, {"name":"Lex Luthor", "qualifications":"has a ring made of radioactive substance, so he is familiar with its properties"}],
-    "storage": {"location": "8210 Crystal Drive, St. Barnabas", "facilities": "a large warehouse that also serves as the secondary office of Luthor Ltd. May also contain nuts."},
-    "routeTransport": "Earth",
-    "monitoring": "something something something safety",
-    "emergencyPlans": "run away",
-    "protectiveEquipment": "non-radioactive kevlar vests",
-    "container": "Cardboard boxes. WHAT?!",
-    "endActivity": "90",
-    "disposal": "The material will be shot into the sun."
-  }
-},
-{
-  "blockId": 19901001,
-  "workflowId": 99,
-  "formId": 10,
-  "title": "Application to import Radioactive Materials",
-  "status": "Issued",
-  "submission": {
-    "commodities": [
+      },
       {
-        "hsCode": "123",
-        "description": "Kryptonite",
-        "id": "12345",
-        "radioactive": [
+        "hsCode": "234",
+        "description": "test",
+        "units": [
           {
-            "physicalState": "S",
-            "quantity": "3kg",
-            "activity": "129.5",
-            "radioIsotope": "Kr-85",
-            "calibrationDate": "03/25/2016"
+            "unitType": "Units",
+            "quantity": 5
           }
         ]
       }
     ],
-    "entryDate":"2016-05-01",
+    "referenceNumber":"RN-7657657",
+    "serialNumberCertificate":"CN-68686",
+    "issuedDate":"2016-05-01",
     "submitter": "Joe Blow",
-    "modeTransport": "sea",
-    "intendedUse": "this material will be used to make Superman-resistant kevlar vests, using our patented technology",
-    "applicant": {"id":234567, "name":"LUTHOR LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street", "parish":"St. Michael", "contactPerson": {"firstName":"Joe", "lastName":"Blow", "title":"Head Mucketymuck", "email":"joe.blow@collinsltd.com", "work_phone":"555-5555", "fax":"888-8888"}},
-    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street", "city":"Hollywood", "state":"FL", "zip":"12902", "contactPerson": {"firstName":"Joe", "lastName":"Schmoe", "email":"joe.schmoe@fakenovartis.com", "work_phone":"(412) 555-5555", "fax":"(412) 888-8888"}},
-    "customsBroker": {"id":8, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1235 Bay Street", "parish":"St. Michael", "phone":"555-123-4567", "contactPerson": {"firstName":"Carla", "lastName":"Briceno", "email":"emailaddress@collinsltd.com", "work_phone":"123-4567", "fax":"987-6543"}},
-    "importer": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"4321 Not Bay Street", "parish":"St. Andrew", "contactPerson": {"firstName":"Jenny", "lastName":"McGuyver", "email":"mail@address.com", "work_phone":"867-5309", "fax":"530-9867"}},
-    "transporter": {"name":"Acme Trucking", "countryId":"BB", "country":"Barbados", "address":"33 Lois Lane", "parish":"St. George", "contactPerson": {"firstName":"Lois", "lastName":"Lane", "email":"lois@lane.com", "work_phone":"848-4848", "fax":"232-3232"}},
-    "transporter2": {"name":"Kryptonite Special Handlers Corp", "countryId":"BB", "country":"Barbados", "address":"1 Krypton Place", "parish":"St. James", "contactPerson": {"firstName":"Clark", "lastName":"Kent", "email":"superman@krypton.com", "work_phone":"999-9999"}},
-    "handlers": [{"name":"Joe Smith", "qualifications":"certified in handling kryptonite"}, {"name":"Lex Luthor", "qualifications":"has a ring made of radioactive substance, so he is familiar with its properties"}],
-    "storage": {"location": "8210 Crystal Drive, St. Barnabas", "facilities": "a large warehouse that also serves as the secondary office of Luthor Ltd. May also contain nuts."},
-    "routeTransport": "Earth",
-    "monitoring": "something something something safety",
-    "emergencyPlans": "run away",
-    "protectiveEquipment": "non-radioactive kevlar vests",
-    "container": "Cardboard boxes. WHAT?!",
-    "endActivity": "90",
-    "disposal": "The material will be shot into the sun.",
-    "receptionDate": "2016-05-03",
-    "previousExpiration": "2016-07-04",
-    "agencyApprovals": {"name":"Environmental Protection Department", "approved":"yes"},
-    "remarks": "Finally, we will destroy Superman HAHAHAHAHAHA",
-    "approvedBy": "Darkseid",
-    "approvalDate": "2016-05-08",
-    "periodRequestEnding": "2017-05-07",
-    "dateArrival": "",
-    "dateDeparture": ""
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
 },
+
+
+
+
 {
   "blockId": 11501201,
   "workflowId": 15,
@@ -2706,34 +2650,68 @@
   "description": "Please complete the Registration Application",
   "status": "Draft",
   "submission": {
+    "materials": [
+      {
+        "hsCode": "123",
+        "description": "Material 1",
+        "origin":"United States"
+      },
+      {
+        "hsCode": "543",
+        "description": "Material 2",
+        "origin":"Canada"
+      }
+    ],
     "commodities": [
       {
         "hsCode": "123",
-        "description": "test",
-        "units": [
-          {
-            "unitType": "Units"
-          },
-          {
-            "unitType": "Kilograms"
-          }
-        ]
+        "description": "test"
       },
       {
         "hsCode": "234",
-        "description": "test",
-        "units": [
-          {
-            "unitType": "Units"
-          }
-        ]
+        "description": "test"
       }
     ],
+    "manufacturing":"** manufacturing **",
     "submitter": "Joe Blow",
-    "applicant": {"id":4, "name":"Exporter Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
-    "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"},
-    "destination": {"id": 1, "name": "Importer Maple Inc.", "countryId": "CA", "country":"Canada", "address": "1000 Main Av, Toronto, BC, 902", "docid":"3-234-567", "fax":"777-5555", "email":"ghi@example.com"},
-    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"}
+    "origin": "United States",
+    "applicant": {"id":4, "name":"Exporter Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"}
+  }
+},
+{
+  "blockId": 12003801,
+  "workflowId": 20,
+  "formId": 38,
+  "title": "Application for Certificate of Origin Registration as Exporter",
+  "status": "Issued",
+  "submission": {
+    "materials": [
+      {
+        "hsCode": "123",
+        "description": "Material 1",
+        "origin":"United States"
+      },
+      {
+        "hsCode": "543",
+        "description": "Material 2",
+        "origin":"Canada"
+      }
+    ],
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test"
+      },
+      {
+        "hsCode": "234",
+        "description": "test"
+      }
+    ],
+    "manufacturing":"** manufacturing ** Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+    "submitter": "Joe Blow",
+    "origin": "United States",
+    "entryDate": "2015-08-21",
+    "applicant": {"id":4, "name":"Exporter Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"}
   }
 },
 {
@@ -3912,7 +3890,7 @@
   "blockId": 19907601,
   "workflowId": 99,
   "formId": 76,
-  "title": "Plant Quarantine Waiver Application",
+  "title": "New Plant Quarantine Waiver Application",
   "status": "Draft",
   "submission": {
     "commodities": [
@@ -3922,13 +3900,11 @@
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3,
-            "pricePerUnit": 12.00,
-            "cifValue": 34,
-            "code":"14624",
-            "name":"TEGRETOL 200MG TAB",
-            "pack_size":"100'S",
-            "extendedCost": 14.00
+            "quantity": 3
+          },
+          {
+            "unitType": "Kilograms",
+            "quantity": 4
           }
         ]
       },
@@ -3938,30 +3914,135 @@
         "units": [
           {
             "unitType": "Units",
-            "quantity": 5,
-            "pricePerUnit": 20.00,
-            "cifValue": 36,
-            "code":"55311",
-            "name":"EXFORGE 5MG A/80MG V TAB",
-            "pack_size":"14'S",
-            "extendedCost": 24.00
+            "quantity": 5
+          },
+          {
+            "unitType": "Kilograms",
+            "quantity": 8
           }
         ]
       }
     ],
+    "vesselOrCraft": "ISLANDIA",
+    "rotationNumber": "1085 of 12/02/2016",
+    "awl_bl_number":"NYKS8768768",
+    "containerNumber": "TCNU5037395",
+    "dateDeclaration": "2015-09-21",
+    "inspectionLocation":"1234 Bay Street, St. Michael",
+    "inspector":"Sherry Matthews",
+    "dateInspection": "2015-09-21",
+    "timeInspection": "4.30 <> 8.30",
+    "entryDate": "2015-08-21",
     "referenceNumber":"RN-7657657",
     "serialNumberCertificate":"CN-68686",
     "contractNumber":"C-879789",
     "approvalDate":"2016-04-30",
     "issuedDate":"2016-05-01",
-    "invoiceDate":"2016-03-01",
-    "invoiceNumber":"IN-5646546",
-    "containerNumber":"CONT-3324",
     "submitter": "Joe Blow",
-    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael",
+      "contact":{
+        "name":"Mary Lyndon",
+        "address:":"768 Main St",
+        "home_phone":"777-5555",
+        "work_phone":"888-5555",
+        "mobile_phone":"999-5555",
+        "fax":"222-5555",
+        "email":"mary@example.com"
+      }
+    },
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+    "dateArrival": "2015-09-21",
+    "timeArrival": "18:30",
+    "customsBroker": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1235 Bay Street, St. Michael", "phone":"555-123-4567",
+      "contact":{
+        "name":"Mary Lyndon",
+        "address:":"768 Main St",
+        "home_phone":"777-5555",
+        "work_phone":"888-5555",
+        "mobile_phone":"999-5555",
+        "fax":"222-5555",
+        "email":"mary@example.com"
+      }
+    }
+  }
+},
+{
+  "blockId": 19907701,
+  "workflowId": 99,
+  "formId": 77,
+  "title": "Plant Quarantine Waiver Application",
+  "status": "Issued",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 3
+          },
+          {
+            "unitType": "Kilograms",
+            "quantity": 4
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 5
+          },
+          {
+            "unitType": "Kilograms",
+            "quantity": 8
+          }
+        ]
+      }
+    ],
+    "vesselOrCraft": "ISLANDIA",
+    "rotationNumber": "1085 of 12/02/2016",
+    "awl_bl_number":"NYKS8768768",
+    "containerNumber": "TCNU5037395",
+    "dateDeclaration": "2015-09-21",
+    "inspectionLocation":"1234 Bay Street, St. Michael",
+    "inspector":"Sherry Matthews",
+    "dateInspection": "2015-09-21",
+    "timeInspection": "4.30 <> 8.30",
+    "entryDate": "2015-08-21",
+    "referenceNumber":"RN-7657657",
+    "serialNumberCertificate":"CN-68686",
+    "approvalDate":"2016-04-30",
+    "issuedDate":"2016-05-01",
+    "submitter": "Joe Blow",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael",
+      "contact":{
+        "name":"Mary Lyndon",
+        "address:":"768 Main St",
+        "home_phone":"777-5555",
+        "work_phone":"888-5555",
+        "mobile_phone":"999-5555",
+        "fax":"222-5555",
+        "email":"mary@example.com"
+      }
+    },
+    "origin": "United States",
+    "dateArrival": "2015-09-21",
+    "timeArrival": "18:30",
+    "customsBroker": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1235 Bay Street, St. Michael", "phone":"555-123-4567",
+      "contact":{
+        "name":"Mary Lyndon",
+        "address:":"768 Main St",
+        "home_phone":"777-5555",
+        "work_phone":"888-5555",
+        "mobile_phone":"999-5555",
+        "fax":"222-5555",
+        "email":"mary@example.com"
+      }
+    }
   }
 },
 {
@@ -4079,7 +4160,7 @@
   "blockId": 19908001,
   "workflowId": 99,
   "formId": 80,
-  "title": "Licence to Import and Store",
+  "title": "New Licence to Import and Store",
   "status": "Draft",
   "submission": {
     "commodities": [
@@ -4089,13 +4170,7 @@
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3,
-            "pricePerUnit": 12.00,
-            "cifValue": 34,
-            "code":"14624",
-            "name":"TEGRETOL 200MG TAB",
-            "pack_size":"100'S",
-            "extendedCost": 14.00
+            "quantity": 3
           }
         ]
       },
@@ -4105,30 +4180,67 @@
         "units": [
           {
             "unitType": "Units",
-            "quantity": 5,
-            "pricePerUnit": 20.00,
-            "cifValue": 36,
-            "code":"55311",
-            "name":"EXFORGE 5MG A/80MG V TAB",
-            "pack_size":"14'S",
-            "extendedCost": 24.00
+            "quantity": 5
           }
         ]
       }
     ],
-    "referenceNumber":"RN-7657657",
-    "serialNumberCertificate":"CN-68686",
-    "contractNumber":"C-879789",
+
+    "license_to":[],
+    "licenseNumber":"L-68686",
     "approvalDate":"2016-04-30",
     "issuedDate":"2016-05-01",
-    "invoiceDate":"2016-03-01",
-    "invoiceNumber":"IN-5646546",
-    "containerNumber":"CONT-3324",
+    "issuedBy":"** Issued by **",
     "submitter": "Joe Blow",
+    "inspectionDate":"2016-04-30",
+    "inspector":"Sherry Matthews",
+    "exceptions":"** Exceptions ** Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
-    "origin": "United States",
-    "countryConsigned": "Canada",
-    "expectedArrival": "2015-09-21T04:00:00.000Z",
+    "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com", "business_hours":"8:00am-12:00pm / 1:00pm-5:00pm"},
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
+},
+{
+  "blockId": 19908101,
+  "workflowId": 99,
+  "formId": 81,
+  "title": "Licence to Import and Store",
+  "status": "Issued",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 5
+          }
+        ]
+      }
+    ],
+
+    "license_to":["import", "store"],
+    "licenseNumber":"L-68686",
+    "approvalDate":"2016-04-30",
+    "issuedDate":"2016-05-01",
+    "issuedBy":"** Issued by **",
+    "submitter": "Joe Blow",
+    "inspectionDate":"2016-04-30",
+    "inspector":"Sherry Matthews",
+    "exceptions":"** Exceptions ** Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com", "business_hours":"8:00am-12:00pm / 1:00pm-5:00pm"},
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
 },
@@ -4136,64 +4248,139 @@
   "blockId": 19908201,
   "workflowId": 99,
   "formId": 82,
-  "title": "Export Authorization Narcotics",
+  "title": "New Export Authorization Narcotics",
   "status": "Draft",
   "submission": {
+
     "commodities": [
       {
         "hsCode": "123",
-        "description": "test",
+        "description": " ** name of drug **",
+        "name": " ** drug international name **",
+      	"kindPackages":"** Package type **",
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3,
-            "pricePerUnit": 12.00,
-            "cifValue": 34,
-            "code":"14624",
-            "name":"TEGRETOL 200MG TAB",
-            "pack_size":"100'S",
-            "extendedCost": 14.00
+            "quantity": 3
+          },
+          {
+            "unitType": "packages",
+            "quantity": 1
+          },
+          {
+            "unitType": "kilograms",
+            "quantity": 5
           }
         ]
       },
       {
-        "hsCode": "234",
-        "description": "test",
+        "hsCode": "456",
+        "description": " ** name of drug 2 **",
+        "name": " ** drug international name 2 **",
+      	"kindPackages":"** Package type 2 **",
         "units": [
           {
             "unitType": "Units",
-            "quantity": 5,
-            "pricePerUnit": 20.00,
-            "cifValue": 36,
-            "code":"55311",
-            "name":"EXFORGE 5MG A/80MG V TAB",
-            "pack_size":"14'S",
-            "extendedCost": 24.00
+            "quantity": 6
+          },
+          {
+            "unitType": "packages",
+            "quantity": 2
+          },
+          {
+            "unitType": "kilograms",
+            "quantity": 10
           }
         ]
       }
     ],
-    "referenceNumber":"RN-7657657",
-    "serialNumberCertificate":"CN-68686",
-    "contractNumber":"C-879789",
+    "authorisationNo":"AUTH-6765765",
+    "fileNumber":"FN-56454336",
+    "referenceNumber":"REF-68790",
+    "importCertificateNo":"IC-89768654",
+    "importCertificateDate":"2016-04-30",
+    "importCertificateIssuedBy":"** Issued by **",
+    "destinationCountry"	:"Trinidad & Tobago",
+    "customsShipment":"** Customs of Shipment **",
+    "periodEnding":"2016-03-01",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "importer": {"id":4, "name":"TT LTD", "countryId":"TT", "country":"Trinidad & Tobago", "address":"1234 Bay Street, Port of Spain, T&T"},
     "approvalDate":"2016-04-30",
     "issuedDate":"2016-05-01",
-    "invoiceDate":"2016-03-01",
-    "invoiceNumber":"IN-5646546",
-    "containerNumber":"CONT-3324",
-    "submitter": "Joe Blow",
+    "submitter": "Joe Blow"
+  }
+},
+{
+  "blockId": 19908301,
+  "workflowId": 99,
+  "formId": 83,
+  "title": "Export Authorization Narcotics",
+  "status": "Issued",
+  "submission": {
+
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": " ** name of drug **",
+        "name": " ** drug international name **",
+      	"kindPackages":"** Package type **",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 3
+          },
+          {
+            "unitType": "packages",
+            "quantity": 1
+          },
+          {
+            "unitType": "kilograms",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "hsCode": "456",
+        "description": " ** name of drug 2 **",
+        "name": " ** drug international name 2 **",
+      	"kindPackages":"** Package type 2 **",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 6
+          },
+          {
+            "unitType": "packages",
+            "quantity": 2
+          },
+          {
+            "unitType": "kilograms",
+            "quantity": 10
+          }
+        ]
+      }
+    ],
+    "authorisationNo":"AUTH-6765765",
+    "fileNumber":"FN-56454336",
+    "referenceNumber":"REF-68790",
+    "importCertificateNo":"IC-89768654",
+    "importCertificateDate":"2016-04-30",
+    "importCertificateIssuedBy":"** Issued by **",
+    "destinationCountry"	:"Trinidad & Tobago",
+    "customsShipment":"** Customs of Shipment **",
+    "periodEnding":"2016-03-01",
     "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
-    "origin": "United States",
-    "countryConsigned": "Canada",
-    "expectedArrival": "2015-09-21T04:00:00.000Z",
-    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+    "importer": {"id":4, "name":"TT LTD", "countryId":"TT", "country":"Trinidad & Tobago", "address":"1234 Bay Street, Port of Spain, T&T"},
+    "approvalDate":"2016-04-30",
+    "issuedDate":"2016-05-01",
+    "submitter": "Joe Blow"
   }
 },
 {
   "blockId": 19908401,
   "workflowId": 99,
   "formId": 84,
-  "title": "Phytosanitary Certificate",
+  "title": "New Phytosanitary Certificate",
   "status": "Draft",
   "submission": {
     "commodities": [
@@ -4203,13 +4390,7 @@
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3,
-            "pricePerUnit": 12.00,
-            "cifValue": 34,
-            "code":"14624",
-            "name":"TEGRETOL 200MG TAB",
-            "pack_size":"100'S",
-            "extendedCost": 14.00
+            "quantity": 3
           }
         ]
       },
@@ -4219,31 +4400,78 @@
         "units": [
           {
             "unitType": "Units",
-            "quantity": 5,
-            "pricePerUnit": 20.00,
-            "cifValue": 36,
-            "code":"55311",
-            "name":"EXFORGE 5MG A/80MG V TAB",
-            "pack_size":"14'S",
-            "extendedCost": 24.00
+            "quantity": 5
           }
         ]
       }
     ],
-    "referenceNumber":"RN-7657657",
+    "inspectionDate":"2016-04-30",
+    "inspector":"Sherry Matthews",
+    "treatmentDate":"2016-04-30",
+    "treatment":"** treatment **",
+    "treatmentDuration":"** treatment duration **",
+    "treatmentLevel":"** treatment level **",
+    "packageNumber":"** package number **",
+    "packageDescription":"** package description **",
+    "distinguishingMarks":"** marks **",
+    "meansConveyance":"** means of conveyance",
+    "portDischarge":"** port of discharge **",
+    "origin": "United States",
     "serialNumberCertificate":"CN-68686",
-    "contractNumber":"C-879789",
     "approvalDate":"2016-04-30",
     "issuedDate":"2016-05-01",
-    "invoiceDate":"2016-03-01",
-    "invoiceNumber":"IN-5646546",
-    "containerNumber":"CONT-3324",
     "submitter": "Joe Blow",
-    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "exporter": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"}
+  }
+},
+{
+  "blockId": 19908501,
+  "workflowId": 99,
+  "formId": 85,
+  "title": "Phytosanitary Certificate",
+  "status": "Issued",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "test",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 5
+          }
+        ]
+      }
+    ],
+    "inspectionDate":"2016-04-30",
+    "inspector":"Sherry Matthews",
+    "treatmentDate":"2016-04-30",
+    "treatment":"** treatment **",
+    "treatmentDuration":"** treatment duration **",
+    "treatmentLevel":"** treatment level **",
+    "packageNumber":"** package number **",
+    "packageDescription":"** package description **",
+    "distinguishingMarks":"** marks **",
+    "meansConveyance":"** means of conveyance",
+    "portDischarge":"** port of discharge **",
     "origin": "United States",
-    "countryConsigned": "Canada",
-    "expectedArrival": "2015-09-21T04:00:00.000Z",
-    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+    "serialNumberCertificate":"CN-68686",
+    "approvalDate":"2016-04-30",
+    "issuedDate":"2016-05-01",
+    "submitter": "Joe Blow",
+    "exporter": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"}
   }
 },
 {
@@ -5636,7 +5864,7 @@
   "blockId": 19912401,
   "workflowId": 99,
   "formId": 124,
-  "title": "New Endorsement of Customs Entry with Approval Stamp.pdf",
+  "title": "New Endorsement of Customs Entry with Approval Stamp",
   "status": "Draft",
   "submission": {
     "agencyApprovals": [{"name":"Animal Health Administration","approved":false}, {"name":"Veterinary Services Laboratory", "approved":false}],
@@ -5647,7 +5875,7 @@
   "blockId": 19912501,
   "workflowId": 99,
   "formId": 125,
-  "title": "Endorsement of Customs Entry with Approval Stamp.pdf",
+  "title": "Endorsement of Customs Entry with Approval Stamp",
   "status": "Draft",
   "submission": {
     "agencyApprovals": [{"name":"Animal Health Administration","approved":true}, {"name":"Veterinary Services Laboratory", "approved":false}],
@@ -5836,7 +6064,7 @@
   "blockId": 19913001,
   "workflowId": 99,
   "formId": 130,
-  "title": "Application for Approval of Pesticide",
+  "title": "New Application for Approval of Pesticide",
   "status": "Draft",
   "submission": {
     "commodities": [
@@ -5847,23 +6075,27 @@
         "quantity": "500 tons",
         "ingredients": [
           {
-            "name": "methabutynol",
-            "concentration": 3,
+            "name": "glyphosate",
+            "concentration": "330 g/L",
+            "percentage": 52,
             "active":true
           },
           {
             "name": "deoxyribonucleic acid",
-            "concentration": 10,
+            "concentration": "100 mg/L",
+            "percentage": 10,
             "active":true
           },
           {
-            "name": "hydrogen dioxide",
-            "concentration": 82,
+            "name": "dihydrogen oxide",
+            "concentration": "500 g/L",
+            "percentage": 33,
             "active": false
           },
           {
             "name": "love",
-            "concentration": 5,
+            "concentration": "10 mg/kg",
+            "percentage": 5,
             "active": false
           }
         ],
@@ -5883,6 +6115,7 @@
           "email": "gmo@monsanto.com"
         },
         "regInCountry": true,
+        "regCountryDetail": "",
         "countriesRegistered": ["Antigua", "Bahamas", "St. Maartens", "Jamaica", "Aruba"],
         "ld50Active": [
           {
@@ -5923,16 +6156,18 @@
         },
         "toxicEffectsAnimals": {
           "birds": "their wings turn aqua color",
-          "fish": "",
-          "bees": "",
+          "fish": "grow snouts",
+          "bees": "hair grows to 3 feet",
           "otherWildlife": "",
           "domesticAnimals": "develop constant morning breath",
           "water": "develops morning breath",
           "otherEffects": ""
         },
-        "firstAid": "",
-        "treatment": "",
-        "antidote": "",
+        "methodAnalysisPesticide": "acidity test",
+        "methodAnalysisFormulation": "watch plants die",
+        "firstAid": "spray windex on the affected area",
+        "treatment": "smack the entry point with a frying pan 42 times",
+        "antidote": "wait 85 years",
         "cropsAllowed": "corn, wheat, soy, sugar cane, asparagus",
         "maxResidueLimit": "0.23 mg/kg",
         "tolerance": "0.5 ppm",
@@ -5946,15 +6181,155 @@
     "referenceNumber":"RN-7657657",
     "serialNumberCertificate":"CN-68686",
     "issuedDate":"2016-05-01",
-    "cropsUsed": "",
-    "pestsUsed": "",
+    "cropsUsed": "sugar cane",
+    "pestsUsed": "dandelions",
     "container": "White plastic spray bottle with Monsanto logo.",
     "methodLabelAttach": "glue",
-    "storage": {"facilities": "store in a cool, dry place", "location": "555 Main Street, St. George", "size": "6500 sq. ft.", "material": "stone", "security": "padlock", "ventilation": "two chimneys", "elevation": ""},
+    "storage": {"facilities": "store in a cool, dry place", "location": "555 Main Street, St. George", "size": 6500, "material": "stone", "security": "padlock", "ventilation": "two chimneys", "elevation": "20 feet above sea level", "fireSafety": "fire extinguisher in room"},
     "submitter": "Joe Blow",
     "entryDate":"2016-06-01",
     "intendedUse": "to kill weeds and promote the growth of intended crops",
-    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "postalAddress": "P.O. Box 56789, St. Michael"},
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"},
+    "physProperties": "",
+    "analysis": "",
+    "firstAid": "",
+    "residues": "",
+    "environmentalImpact": "",
+    "ecotoxicology": ""
+  }
+},
+{
+  "blockId": 19913101,
+  "workflowId": 99,
+  "formId": 131,
+  "title": "Application for Approval of Pesticide",
+  "status": "Draft",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "type": "Herbicide",
+        "description": "Roundup Weed Killer",
+        "quantity": "500 tons",
+        "ingredients": [
+          {
+            "name": "glyphosate",
+            "concentration": "330 g/L",
+            "percentage": 52,
+            "active":true
+          },
+          {
+            "name": "deoxyribonucleic acid",
+            "concentration": "100 mg/L",
+            "percentage": 10,
+            "active":true
+          },
+          {
+            "name": "dihydrogen oxide",
+            "concentration": "500 g/L",
+            "percentage": 33,
+            "active": false
+          },
+          {
+            "name": "love",
+            "concentration": "10 mg/kg",
+            "percentage": 5,
+            "active": false
+          }
+        ],
+        "formulations": "soluble concentrate",
+        "gravity": "1.0549",
+        "units": [
+          {
+            "unitType": "ml",
+            "quantity": 30000,
+            "pack_size": 500
+          }
+        ],
+        "manufacturer": {
+          "name": "Monsanto Corporation",
+          "address": "333 Freedom Drive, Knoxville, TN, United States",
+          "address2": "P.O. Box 3456, Knoxville, TN, United States",
+          "email": "gmo@monsanto.com"
+        },
+        "regInCountry": true,
+        "regCountryDetail": "this is a test of the conditional",
+        "countriesRegistered": ["Antigua", "Bahamas", "St. Maartens", "Jamaica", "Aruba"],
+        "ld50Active": [
+          {
+            "animal": "lab rats",
+            "testType": {
+              "oral": "3.49 g/kg",
+              "inhalation": "40 mg/kg"
+            }
+          },
+          {
+            "animal": "guinea pigs",
+            "testType": {
+              "oral": "5.83 g/kg",
+              "dermal": "0.87 g/kg"
+            }
+          }
+        ],
+        "ld50Formulation": [
+          {
+            "animal": "lab rats",
+            "testType": {
+              "oral": "150.5 g/kg",
+              "inhalation": "1.13 g/kg"
+            }
+          },
+          {
+            "animal": "guinea pigs",
+            "testType": {
+              "oral": "184.659 g/kg",
+              "dermal": "35.28 g/kg"
+            }
+          }
+        ],
+        "toxicEffects": {
+          "oral": "you die",
+          "inhalation": "your muscles turn to krazy glue",
+          "dermal": "the bacteria in your gut turn into Jon Voight"
+        },
+        "toxicEffectsAnimals": {
+          "birds": "their wings turn aqua color",
+          "fish": "grow snouts",
+          "bees": "hair grows to 3 feet",
+          "otherWildlife": "horses turn into zebras",
+          "domesticAnimals": "develop constant morning breath",
+          "water": "develops morning breath",
+          "otherEffects": ""
+        },
+        "methodAnalysisPesticide": "acidity test",
+        "methodAnalysisFormulation": "watch plants die",
+        "firstAid": "spray windex on the affected area",
+        "treatment": "smack the entry point with a frying pan 42 times",
+        "antidote": "wait 85 years",
+        "cropsAllowed": "corn, wheat, soy, sugar cane, asparagus",
+        "maxResidueLimit": "0.23 mg/kg",
+        "tolerance": "0.5 ppm",
+        "freqApplication": "daily",
+        "rateApplication": "2 liters/sq ft",
+        "reentryPeriod": "12 hours",
+        "preHarvestInterval": "4 days",
+        "descriptionDetail": "not intended for human ingestion under any circumstances."
+      }
+    ],
+    "referenceNumber":"RN-7657657",
+    "issuedDate":"2016-06-15",
+    "cropsUsed": "sugar cane",
+    "pestsUsed": "dandelions",
+    "container": "White plastic spray bottle with Monsanto logo.",
+    "methodLabelAttach": "glue",
+    "storage": {"facilities": "store in a cool, dry place", "location": "555 Main Street, St. George", "size": 6500, "material": "stone", "security": "padlock", "ventilation": "two chimneys", "elevation": "20 feet above sea level", "fireSafety": "fire extinguisher in room"},
+    "submitter": "Joe Blow",
+    "entryDate":"2016-06-01",
+    "approvalDate": "2016-06-10",
+    "approvedBy": "Joe Schmoe",
+    "intendedUse": "to kill weeds and promote the growth of intended crops",
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "postalAddress": "P.O. Box 56789, St. Michael"},
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
 },
@@ -5991,7 +6366,20 @@
     "serialNumberCertificate":"CN-68686",
     "issuedDate":"2016-05-01",
     "submitter": "Joe Blow",
-    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "applicant": {
+      "id":4, "firstname":"John", "middlename":"Fitzgerald", "lastname":"Williams", "nickname":"Hubba", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "email":"hubba@example.com", "home_phone":"777-5555", "work_phone":"888-5555",
+      "mobile_phone":"999-5555", "fax":"222-5555",
+      "nationalRegistrationNumber":"123456-7890",
+      "nationalInsuranceNumber":"123456",
+      "birthDate":"1980-12-20",
+      "birthCountry":"Barbados",
+      "nationality":"Barbados",
+      "gender":"",
+      "maritalStatus":"",
+      "numberDependents":0,
+      "trainingInstitutions":[],
+      "qualifications":[]
+    },
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
 },
@@ -6172,7 +6560,7 @@
       "fax":"666-6666",
       "email":"email@example.com",
       "directors:":"Michael Sandler",
-      "contact:":{
+      "contact":{
         "name":"Mary Lyndon",
         "address:":"768 Main St",
         "home_phone":"777-5555",
@@ -6800,29 +7188,150 @@
     "commodities": [
       {
         "hsCode": "123",
-        "description": "test",
+        "description": "Venus fly traps",
+        "grossWeight": 90,
+        "grossWeightUnits": "kg",
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3
+            "quantity": 250
           }
         ]
       },
       {
         "hsCode": "234",
-        "description": "test",
+        "description": "Redwood trees",
+        "grossWeight": 300,
+        "grossWeightUnits": "tonnes",
         "units": [
           {
             "unitType": "Units",
-            "quantity": 5
+            "quantity": 42
+          }
+        ]
+      },
+      {
+        "hsCode": "345",
+        "description": "Honeysuckle vines",
+        "grossWeight": 4444,
+        "grossWeightUnits": "lb",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 8,
+            "numInspected": 5
           }
         ]
       }
     ],
     "referenceNumber":"RN-7657657",
+    "permitNumber":"IM-37465",
+    "phytosanitaryCertificate":"78686786",
     "serialNumberCertificate":"CN-68686",
+    "inspectionLocation":"other",
+    "inspectionDate":"2016-05-01",
+    "inspector":"Joe Schmoe",
+    "origin": "United States",
     "issuedDate":"2016-05-01",
+    "periodEnding":"2016-05-01",
+    "dateInspection":"2016-05-01",
+    "otherDetails": "1234 Bay Street, St. Michael",
+    "remarks": "Handle venus fly traps with care. They like to nibble on fingers.",
     "submitter": "Joe Blow",
+    "observations":"** observations **",
+    "recommendations":"** recommendations **",
+    "comments":"** comments **",
+    "consignee": {
+      "id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com",
+      "contact":{
+        "name":"Mary Lyndon",
+        "address:":"768 Main St",
+        "home_phone":"777-5555",
+        "work_phone":"888-5555",
+        "mobile_phone":"999-5555",
+        "fax":"222-5555",
+        "email":"mary@example.com"
+      }
+    },
+    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
+},
+{
+  "blockId": 19914901,
+  "workflowId": 99,
+  "formId": 149,
+  "title": "Post Entry Inspection Report (Live Plants)",
+  "status": "Issued",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "Venus fly traps",
+        "grossWeight": 90,
+        "grossWeightUnits": "kg",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 250
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "description": "Redwood trees",
+        "grossWeight": 300,
+        "grossWeightUnits": "tonnes",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 42
+          }
+        ]
+      },
+      {
+        "hsCode": "345",
+        "description": "Honeysuckle vines",
+        "grossWeight": 4444,
+        "grossWeightUnits": "lb",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 8,
+            "numInspected": 5
+          }
+        ]
+      }
+    ],
+    "referenceNumber":"RN-7657657",
+    "permitNumber":"IM-37465",
+    "phytosanitaryCertificate":"78686786",
+    "serialNumberCertificate":"CN-68686",
+    "inspectionLocation":"other",
+    "inspectionDate":"2016-05-01",
+    "inspector":"Joe Schmoe",
+    "origin": "United States",
+    "issuedDate":"2016-05-01",
+    "periodEnding":"2016-05-01",
+    "dateInspection":"2016-05-01",
+    "otherDetails": "1234 Bay Street, St. Michael",
+    "remarks": "Handle venus fly traps with care. They like to nibble on fingers.",
+    "submitter": "Joe Blow",
+    "observations":"** observations **",
+    "recommendations":"** recommendations **",
+    "comments":"** comments **",
+    "consignee": {
+      "id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com",
+      "contact":{
+        "name":"Mary Lyndon",
+        "address:":"768 Main St",
+        "home_phone":"777-5555",
+        "work_phone":"888-5555",
+        "mobile_phone":"999-5555",
+        "fax":"222-5555",
+        "email":"mary@example.com"
+      }
+    },
     "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }

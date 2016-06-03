@@ -15,7 +15,7 @@
         APPLICATION FOR APPROVAL OF A PESTICIDE
       </h5>
       <h5 align="right">
-        Date: ...
+        Date: <b>{{ila.submission.entryDate | date:'dd/MM/yyyy'}}</b>
       </h5>
     </div><!--col-sm-12-->
   </div><!--row-->
@@ -23,42 +23,47 @@
   <div class="row">
     <div class="col-sm-12">
       <h5>
-        1. Trade Name of Product:
+        1. Trade Name of Product: <b>{{ila.submission.commodities[0].description}}</b>
       </h5><br>
       <h5>
-        2a. Name of applicant:
-      </h5>
-      <h5>
-        2b. Applicant’s Physical (Street) Address:
+        2a. Name of applicant: <b>{{ila.submission.applicant.name}}</b>
       </h5><br>
       <h5>
-        2c. Applicant’s Postal Address:
-      </h5><br><br>
-      <h5>
-        3. Type of Pesticide:
-      </h5>
-      <h5>
-        4. Intended Use
+        2b. Applicant’s Physical (Street) Address: <br><b>{{ila.submission.applicant.address}}</b>
       </h5><br>
       <h5>
-        5a. Name of Manufacturer of Pesticides Formulation:
+        2c. Applicant’s Postal Address: <br><b>{{ila.submission.applicant.postalAddress}}</b>
       </h5><br>
       <h5>
-        5b. Manufacturer’s Physical (Street) Address:
-      </h5><br><br>
+        3. Type of Pesticide: <b>{{ila.submission.commodities[0].type}}</b>
+      </h5><br>
       <h5>
-        5c. Manufacturer’s Postal Address:
-      </h5><br><br>
+        4. Intended Use: <b>{{ila.submission.intendedUse}}</b>
+      </h5><br>
+      <h5>
+        5a. Name of Manufacturer of Pesticides Formulation: <b>{{ila.submission.commodities[0].manufacturer.name}}</b>
+      </h5><br>
+      <h5>
+        5b. Manufacturer’s Physical (Street) Address:<br> <b>{{ila.submission.commodities[0].manufacturer.address}}</b>
+      </h5><br>
+      <h5>
+        5c. Manufacturer’s Postal Address:<br> <b>{{ila.submission.commodities[0].manufacturer.address2}}</b>
+      </h5><br>
   <!--PAGE 1 END  -->
   <!--PAGE 2 BEGIN-->
       <h5>
-        5d. Manufacturer’s Email Address:
+        5d. Manufacturer’s Email Address: <b>{{ila.submission.commodities[0].manufacturer.email}}</b>
       </h5>
       <h5>
-        6a. Is the product registered in the country of manufacture if no, give reasons ...
-      </h5><br><br><br>
+        6a. Is the product registered in the country of manufacture? If no, give reasons <br>
+        <span ng-if='ila.submission.commodities[0].regInCountry == true'><b>Yes</b></span>
+        <span ng-if='ila.submission.commodities[0].regInCountry != true'><b>No. {{ila.submission.commodities[0].regCountryDetail}}</b></span>
+      </h5><br>
       <h5>
-        7. Countries in the Caribbean for which the product is registered:
+        7. Countries in the Caribbean for which the product is registered: <br>
+        <span ng-repeat='country in ila.submission.commodities[0].countriesRegistered'>
+          <b>{{country}}</b><span ng-show='!$last'>, </span>
+        </span>
       </h5><br><br>
       <div class="row">
         <div class="col-sm-12">
@@ -67,33 +72,36 @@
           </h5>
         </div><!--col-sm-12-->
         <div class="col-sm-4">
-          <h5><u>
-            Constituents
-          </u></h5><br>
-          <p>
-            Active Ingredients<br><br>
-            Non-active Ingredients
-          </p>
+          <b><u>
+            Constituents</u></b><br><br>
+            Active Ingredients<br>
+            <div ng-repeat="i in ila.submission.commodities[0].ingredients | filter:active!=true"><b>{{i.name}}</b></div><br>
+            Non-active Ingredients<br>
+            <div ng-repeat="i in ila.submission.commodities[0].ingredients | filter:active==true"><b>{{i.name}}</b></div>
         </div><!--col-sm-4-->
         <div class="col-sm-4">
-          <h5><u>
-            Concentration
-          </u></h5>
-          <p>
+          <b><u>
+            Concentration</u></b><br>
             [g/L, mg/L, g/kg, mg/kg]
-          </p>
+            <br><br>
+          <div ng-repeat="i in ila.submission.commodities[0].ingredients | filter:active!=true"><b>{{i.concentration}}</b></div><br>
+          <br>
+          <div ng-repeat="i in ila.submission.commodities[0].ingredients | filter:active==true"><b>{{i.concentration}}</b></div>
         </div><!--col-sm-4-->
         <div class="col-sm-4">
-          <h5><u>
-            Percentage
-          </u></h5>
+          <b><u>
+            Percentage</u></b>
+            <br><br><br>
+            <div ng-repeat="i in ila.submission.commodities[0].ingredients | filter:active!=true"><b>{{i.percentage}}%</b></div><br>
+            <br>
+            <div ng-repeat="i in ila.submission.commodities[0].ingredients | filter:active==true"><b>{{i.percentage}}%</b></div>
         </div><!--col-sm-4-->
-      </div><!--row-->
+      </div><!--row--><br>
       <h5>
-        9. Type of formulation:
+        9. Type of formulation: <b>{{ila.submission.commodities[0].formulations}}</b>
       </h5>
       <h5>
-        10. Specific Gravity (liquids):
+        10. Specific Gravity (liquids): <b>{{ila.submission.commodities[0].gravity}}</b>
       </h5>
       <div class="row">
         <div class="col-sm-12">
@@ -115,29 +123,13 @@
                 INHALATION
               </td>
             </tr>
-            <tr>
+            <tr ng-repeat="animal in ila.submission.commodities[0].ld50Active">
               <td>
-                a
+                <b>{{animal.animal}}</b>
               </td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>
-                b
-              </td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>
-                c
-              </td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td><b>{{animal.testType.oral}}</b></td>
+              <td><b>{{animal.testType.dermal}}</b></td>
+              <td><b>{{animal.testType.inhalation}}</b></td>
             </tr>
           </table>
         </div><!--col-sm-12-->
@@ -164,29 +156,13 @@
                 INHALATION
               </td>
             </tr>
-            <tr>
+            <tr ng-repeat="animal in ila.submission.commodities[0].ld50Formulation">
               <td>
-                a
+                <b>{{animal.animal}}</b>
               </td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>
-                b
-              </td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>
-                c
-              </td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td><b>{{animal.testType.oral}}</b></td>
+              <td><b>{{animal.testType.dermal}}</b></td>
+              <td><b>{{animal.testType.inhalation}}</b></td>
             </tr>
           </table>
         </div><!--col-sm-12-->
@@ -195,113 +171,113 @@
         13. Methods of pesticide formulation and residue analysis
       </h5>
       <h5>
-        Pesticide:
+        Pesticide: <b>{{ila.submission.commodities[0].methodAnalysisPesticide}}</b>
       </h5>
       <h5>
-        Formulation:
+        Formulation: <b>{{ila.submission.commodities[0].methodAnalysisFormulation}}</b>
       </h5>
       <h5>
         14. Toxic effects on persons using or handling the pesticides:
       </h5>
       <h5>
-        Ingestion:
+        Ingestion: <b>{{ila.submission.commodities[0].toxicEffects.oral}}</b>
       </h5><br>
       <h5>
-        Inhalation:
+        Inhalation: <b>{{ila.submission.commodities[0].toxicEffects.inhalation}}</b>
       </h5><br>
       <h5>
-        Absorption through the skin:
+        Absorption through the skin: <b>{{ila.submission.commodities[0].toxicEffects.dermal}}</b>
       </h5><br>
       <h5>
         15. Toxic effects on the environment and non-target animals
       </h5>
       <h5>
-        a. Birds
+        a. Birds: <b>{{ila.submission.commodities[0].toxicEffectsAnimals.birds}}</b>
       </h5>
       <h5>
-        b. Fish
+        b. Fish: <b>{{ila.submission.commodities[0].toxicEffectsAnimals.fish}}</b>
       </h5>
       <h5>
-        c. Bees
+        c. Bees: <b>{{ila.submission.commodities[0].toxicEffectsAnimals.bees}}</b>
       </h5>
       <h5>
-        d. Other wild life
+        d. Other wild life: <b>{{ila.submission.commodities[0].toxicEffectsAnimals.otherWildlife}}</b>
       </h5>
   <!--PAGE 3 END  -->
   <!--PAGE 4 BEGIN-->
       <h5>
-        e. Domestic animals
+        e. Domestic animals: <b>{{ila.submission.commodities[0].toxicEffectsAnimals.domesticAnimals}}</b>
       </h5>
       <h5>
-        f. Water (Kow)
+        f. Water (Kow): <b>{{ila.submission.commodities[0].toxicEffectsAnimals.water}}</b>
       </h5>
       <h5>
-        g. Other environmental effects
+        g. Other environmental effects: <b>{{ila.submission.commodities[0].toxicEffectsAnimals.otherEffects}}</b>
       </h5>
       <h5>
         16. First Aid; Medical Treatment Advice; Antidote:
       </h5>
       <h5>
-        First Aid:
+        First Aid: <b>{{ila.submission.commodities[0].firstAid}}</b>
       </h5><br>
       <h5>
-        Medical Treatment:
+        Medical Treatment: <b>{{ila.submission.commodities[0].treatment}}</b>
       </h5><br>
       <h5>
-        Antidote(s):
+        Antidote(s): <b>{{ila.submission.commodities[0].antidote}}</b>
       </h5><br>
       <h5>
-        17. Crops on which pesticide may be used:
+        17. Crops on which pesticide may be used: <b>{{ila.submission.commodities[0].cropsAllowed}}</b>
       </h5><br><br><br>
       <h5>
-        18. State crops on which the pesticides will be used locally
+        18. State crops on which the pesticides will be used locally: <b>{{ila.submission.cropsUsed}}</b>
       </h5><br><br>
       <h5>
-        19. Pests on which pesticide is to be used:
+        19. Pests on which pesticide is to be used: <b>{{ila.submission.pestsUsed}}</b>
       </h5><br><br>
       <h5>
-        20. Maximum Residual Limits (MRL) for recommended crops
+        20. Maximum Residual Limits (MRL) for recommended crops: <b>{{ila.submission.commodities[0].maxResidueLimit}}</b>
       </h5><br>
   <!--PAGE 4 END-->
   <!--PAGE 5 BEGIN-->
       <h5>
-        21. Tolerance levels as prescribed by FAO / WHO
+        21. Tolerance levels as prescribed by FAO / WHO: <b>{{ila.submission.commodities[0].tolerance}}</b>
       </h5><br>
       <h5>
-        22a. Manufacturer’s recommended frequency of application
+        22a. Manufacturer’s recommended frequency of application: <b>{{ila.submission.commodities[0].freqApplication}}</b>
       </h5><br>
       <h5>
-        22b. Manufacturer’s recommended rate of application
+        22b. Manufacturer’s recommended rate of application: <b>{{ila.submission.commodities[0].rateApplication}}</b>
       </h5><br>
       <h5>
-        22c. Manufacturer’s recommended re-entry period:
+        22c. Manufacturer’s recommended re-entry period: <b>{{ila.submission.commodities[0].reentryPeriod}}</b>
       </h5>
       <h5>
-        22d. Recommended period between final application and harvest (PHI)
+        22d. Recommended period between final application and harvest (PHI): <b>{{ila.submission.commodities[0].preHarvestInterval}}</b>
       </h5><br>
       <h5>
-        23. Other information (Usage, etc.)
+        23. Other information (Usage, etc.): <b>{{ila.submission.commodities[0].descriptionDetail}}</b>
       </h5><br><br><br>
       <h5>
         24. Details of pesticides imported with the request of this license:
       </h5>
       <h5>
-        a Size(s) of container(s) [ml, L, g, kg]
+        a. Size(s) of container(s) [ml, L, g, kg]: <b>{{ila.submission.commodities[0].units[0].pack_size}} {{ila.submission.commodities[0].units[0].unitType}}</b>
       </h5><br><br>
       <h5>
-        b. Number of containers in this shipment
+        b. Number of containers in this shipment: <b>{{ila.submission.commodities[0].units[0].quantity | number}}</b>
       </h5><br><br>
   <!--PAGE 5 END-->
   <!--PAGE 6 BEGIN-->
       <h5>
-        b Description of container
+        c. Description of container: <b>{{ila.submission.container}}</b>
       </h5><br><br>
       <!--Revisar si las letras van así o en el documento se equivocaron escribiendo el orden-->
       <h5>
-        c Method of attachment of label
+        d. Method of attachment of label: <b>{{ila.submission.methodLabelAttach}}</b>
       </h5>
       <h5>
-        e. Amount annually
+        e. Amount annually: <b>{{ila.submission.commodities[0].quantity}}</b>
       </h5>
       <div class="row">
         <div class="col-sm-12">
@@ -322,22 +298,22 @@
             </div><!--col-sm-1-->
             <div class="col-sm-11">
               <h5>
-                Manufacturer’s recommendations:
+                Manufacturer’s recommendations: <b>{{ila.submission.storage.facilities}}</b>
               </h5><br><br>
               <h5>
-                Address of storage area:
+                Address of storage area: <b>{{ila.submission.storage.location}}</b>
               </h5><br><br>
               <h5>
                 Description of storage area:
               </h5>
               <div class="row">
                 <div class="col-sm-11 col-sm-offset-1">
-                  <h5>Size room (sq ft)</h5>
-                  <h5>Wood or stone</h5>
-                  <h5>Security</h5>
-                  <h5>Ventilation</h5>
-                  <h5>Elevation (describe)</h5>
-                  <h5>Fire safety devices:</h5>
+                  <h5>Size room: <b>{{ila.submission.storage.size}} sq. ft.</b></h5>
+                  <h5>Wood or stone: <b>{{ila.submission.storage.material}}</b></h5>
+                  <h5>Security: <b>{{ila.submission.storage.security}}</b></h5>
+                  <h5>Ventilation: <b>{{ila.submission.storage.ventilation}}</b></h5>
+                  <h5>Elevation: (describe) <b>{{ila.submission.storage.elevation}}</b></h5>
+                  <h5>Fire safety devices: <b>{{ila.submission.storage.fireSafety}}</b></h5>
                 </div><!--col-sm-11 col-sm-offset-1-->
               </div><!--row-->
             </div><!--col-sm-11-->
@@ -346,13 +322,13 @@
       </div><!--row-->
       <p>
         DECLARATION: I declare that to the best of my knowledge the information I have provided to register this pesticide is true<br>
-        NAME OF APPLICANT IN FULL:<br>
-        SIGNATURE:
+        NAME OF APPLICANT IN FULL: <b>{{ila.submission.applicant.name}}</b><br>
+        SIGNATURE: <b>{{ila.submission.submitter}}</b>
       </p>
       <div class="row">
         <div class="col-sm-6">
           <p>
-            DATE:
+            DATE: <b>{{ila.submission.entryDate | date:'d MMMM yyyy'}}</b>
           </p>
         </div><!--col-sm-6-->
         <div class="col-sm-6">
@@ -397,17 +373,11 @@
           <h5 align="center"><b>
             THIS SECTION IS FOR OFFICIAL USE ONLY
           </b></h5>
-          <h5>
-            DATE APPLICATION ACCEPTED<br>
-            APPLICATION FILE NUMBER<br>
-            NAME IN FULL OF OFFICER PROCESSING APPLICATION:
-          </h5><br><br>
-          <h5>
-            SIGNATURE
-          </h5><br>
-          <h5>
-            Year/Month/Day
-          </h5>
+          <h5>DATE APPLICATION ACCEPTED: <b>{{ila.submission.approvalDate | date: 'd MMMM yyyy'}}</b></h5><br>
+          <h5>APPLICATION FILE NUMBER: <b>{{ila.submission.referenceNumber}}</b></h5><br>
+          <h5>NAME IN FULL OF OFFICER PROCESSING APPLICATION: <b>{{ila.submission.approvedBy}}</b></h5><br>
+          <h5>SIGNATURE: <b>{{ila.submission.approvedBy}}</b></h5><br>
+          <h5>Year/Month/Day: <b>{{ila.submission.issuedDate | date: 'yyyy/MM/dd'}}</b></h5>
         </div><!--col-sm-12-->
       </div><!--row-->
     </div><!--col-sm-12-->

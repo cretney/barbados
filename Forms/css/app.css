@@ -119,6 +119,11 @@ table.table td.commodity-subtable.subtable-animal {
 	margin-bottom: 0;
 	text-align: left;
 }
+
+.form-group .control-label {
+	text-align: left;
+}
+
 .field-tooltip {
 	font-size:0.7em;
 }

@@ -1,0 +1,237 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"applicant.name",
+            "title":"Exporter",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key":"applicant.address",
+            "title":"Exporter's Address",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"importer.name",
+            "title":"Importer"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"destinationCountry",
+            "title":"Country of Destination"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key":"importer.address",
+            "title":"Importer's Address"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"importCertificateNo",
+            "title":"Import Certificate No"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"importCertificateDate",
+            "title":"Date of Import Certificate"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"importCertificateIssuedBy",
+            "title":"Import Certificate Issued By"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"<hr><h4>NARCOTIC DRUGS TO EXPORT:"
+  },
+  {
+    "key": "commodities",
+    "title":"",
+    "add": "New",
+    "style": {
+      "add": "hidden"
+    },
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key":"commodities[].hsCode",
+                "title":"HS Code",
+                "description":"",
+                "readonly":true
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-8",
+            "items": [
+              {
+                "key":"commodities[].description",
+                "title":"Name of Drug",
+                "description":"",
+                "readonly":true
+              }
+
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-5",
+            "items": [
+              {
+                "key":"commodities[].name",
+                "title":"International non-proprietary name (if any)",
+                "description":""
+              }
+
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key":"commodities[].units[0].quantity",
+                "title":"Quantity"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key":"commodities[].units[1].quantity",
+                "title":"Packages"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key":"commodities[].units[2].quantity",
+                "title":"Kilograms"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"<hr><h4>Export shall take place through:"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-8",
+        "items": [
+          {
+            "key":"customsShipment",
+            "title":"Customs Office"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"periodEnding",
+            "title":"Not later than"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "submit",
+    "style": "btn-info",
+    "title": "Save"
+  }
+
+]

@@ -1,0 +1,371 @@
+[
+  {
+    "type": "help",
+    "helpvalue": "<hr><h5><b>CONTACT INFORMATION</b></h5>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "applicant.firstname",
+            "title": "First name of Applicant"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "applicant.middlename",
+            "title": "Middle name(s)"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "applicant.lastname",
+            "title": "Last name"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "applicant.address",
+            "title": "Applicant Address",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "applicant.nickname",
+            "title": "Nickname",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "applicant.email",
+            "title": "Email address",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "applicant.home_phone",
+            "title":"Home Phone"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "applicant.work_phone",
+            "title":"Work Phone"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "applicant.mobile_phone",
+            "title":"Mobile Phone"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"applicant.fax",
+            "title":"Fax"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr><h5><b>PERSONAL DETAILS</b></h5>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "applicant.nationalRegistrationNumber",
+            "title": "National Registration No."
+          },
+          {
+            "key": "applicant.nationalInsuranceNumber",
+            "title": "National Insurance No."
+          },
+          {
+            "key": "applicant.birthDate",
+            "title": "birthDate"
+          },
+          {
+            "key": "applicant.birthCountry",
+            "title": "birthCountry"
+          },
+          {
+            "key": "applicant.nationality",
+            "title": "Nationality"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-offset-1 col-md-3",
+        "items": [
+          {
+            "key": "applicant.gender",
+            "type": "radios",
+            "title": "Sex",
+            "titleMap": {
+              "male": "Male",
+              "female": "Female"
+            }
+          },
+          {
+            "key": "applicant.maritalStatus",
+            "type": "radios",
+            "title": "Marital Status",
+            "titleMap": {
+              "single": "Single",
+              "married": "Married"
+            }
+          },
+          {
+            "key": "applicant.numberDependents",
+            "type": "integer",
+            "title": "No Dependents"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "key": "applicant.trainingInstitutions",
+            "type": "radios",
+            "title": "Training institutions",
+            "titleMap": {
+              "elementary": "Elementary / Primary",
+              "secondary": "Secondary",
+              "polytechnic": "Polytechnic",
+              "college": "College",
+              "university": "University"
+            }
+          },
+          {
+            "key": "applicant.qualifications",
+            "type": "radios",
+            "title": "Qualifications",
+            "titleMap": {
+              "elementary": "Elementary / Primary",
+              "o_level": "O' Level",
+              "a_level": "A' Level",
+              "gce": "GCE",
+              "city_guilds": "City & Guilds",
+              "diploma": "Diploma",
+              "associate_degree": "Associate Degree",
+              "none": "None"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr><h5><b>PASSPORT INFORMATION</b></h5>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "applicant.passport",
+            "title": "Passport No."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-5",
+        "items": [
+          {
+            "key": "applicant.passportOrigin",
+            "title": "Passport Origin"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-offset-1 col-sm-3",
+        "items": [
+          {
+            "key": "applicant.passportDateIssued",
+            "title": "Date Issued"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-5",
+        "items": [
+          {
+            "key": "applicant.passportPlaceIssued",
+            "title": "Place issued"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-offset-1 col-sm-3",
+        "items": [
+          {
+            "key": "applicant.passportDateExpires",
+            "title": "Date Expires"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr><h5><b>EMERGENCY CONTACT</b></h5>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-5",
+        "items": [
+          {
+            "key": "applicant.contact.name",
+            "title": "Name"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "applicant.contact.address",
+            "title": "Address",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "applicant.home_phone",
+            "title":"Home Phone"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "applicant.work_phone",
+            "title":"Work Phone"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "applicant.mobile_phone",
+            "title":"Mobile Phone"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"applicant.fax",
+            "title":"Fax"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr><h5><b>FISHERIES RELATED ACTIVITY DETAILS</b></h5>"
+  },
+  {
+    "type": "submit",
+    "style": "btn-info",
+    "title": "Save"
+  }
+]

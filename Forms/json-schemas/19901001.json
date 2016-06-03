@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum ab9ec8de9122b59e0ce210b2284973f2692a9ddc",
+  "description": "Generated from b with shasum c49e9bca53f53fea641f9feee62291fcdccf8971",
   "type": "object",
   "required": [
     "blockId",
@@ -48,7 +48,16 @@
         "protectiveEquipment",
         "container",
         "endActivity",
-        "disposal"
+        "disposal",
+        "receptionDate",
+        "previousExpiration",
+        "agencyApprovals",
+        "remarks",
+        "approvedBy",
+        "approvalDate",
+        "periodRequestEnding",
+        "dateArrival",
+        "dateDeparture"
       ],
       "properties": {
         "commodities": {
@@ -532,6 +541,45 @@
           "type": "string"
         },
         "disposal": {
+          "type": "string"
+        },
+        "receptionDate": {
+          "type": "string"
+        },
+        "previousExpiration": {
+          "type": "string"
+        },
+        "agencyApprovals": {
+          "type": "object",
+          "required": [
+            "name",
+            "approved"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "approved": {
+              "type": "string"
+            }
+          }
+        },
+        "remarks": {
+          "type": "string"
+        },
+        "approvedBy": {
+          "type": "string"
+        },
+        "approvalDate": {
+          "type": "string"
+        },
+        "periodRequestEnding": {
+          "type": "string"
+        },
+        "dateArrival": {
+          "type": "string"
+        },
+        "dateDeparture": {
           "type": "string"
         }
       }

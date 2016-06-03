@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 327fdc808de5fb2e442525a1f73a5b1fc604f110",
+  "description": "Generated from b with shasum 7b185aa8c39da32e8492cd8ec1521046921ed09b",
   "type": "object",
   "required": [
     "blockId",
@@ -30,24 +30,18 @@
       "type": "object",
       "required": [
         "commodities",
-        "inspectionDate",
-        "inspector",
-        "treatmentDate",
-        "treatment",
-        "treatmentDuration",
-        "treatmentLevel",
-        "packageNumber",
-        "packageDescription",
-        "distinguishingMarks",
-        "meansConveyance",
-        "portDischarge",
-        "origin",
-        "serialNumberCertificate",
+        "referenceNumber",
+        "permitNumber",
         "approvalDate",
-        "issuedDate",
+        "entryDate",
+        "dateArrival",
+        "vesselArrive",
+        "origin",
+        "transhipVia",
         "submitter",
-        "exporter",
-        "consignee"
+        "approvedBy",
+        "applicant",
+        "supplier"
       ],
       "properties": {
         "commodities": {
@@ -91,55 +85,37 @@
             }
           }
         },
-        "inspectionDate": {
+        "referenceNumber": {
           "type": "string"
         },
-        "inspector": {
-          "type": "string"
-        },
-        "treatmentDate": {
-          "type": "string"
-        },
-        "treatment": {
-          "type": "string"
-        },
-        "treatmentDuration": {
-          "type": "string"
-        },
-        "treatmentLevel": {
-          "type": "string"
-        },
-        "packageNumber": {
-          "type": "string"
-        },
-        "packageDescription": {
-          "type": "string"
-        },
-        "distinguishingMarks": {
-          "type": "string"
-        },
-        "meansConveyance": {
-          "type": "string"
-        },
-        "portDischarge": {
-          "type": "string"
-        },
-        "origin": {
-          "type": "string"
-        },
-        "serialNumberCertificate": {
+        "permitNumber": {
           "type": "string"
         },
         "approvalDate": {
           "type": "string"
         },
-        "issuedDate": {
+        "entryDate": {
+          "type": "string"
+        },
+        "dateArrival": {
+          "type": "string"
+        },
+        "vesselArrive": {
+          "type": "string"
+        },
+        "origin": {
+          "type": "string"
+        },
+        "transhipVia": {
           "type": "string"
         },
         "submitter": {
           "type": "string"
         },
-        "exporter": {
+        "approvedBy": {
+          "type": "string"
+        },
+        "applicant": {
           "type": "object",
           "required": [
             "id",
@@ -166,17 +142,14 @@
             }
           }
         },
-        "consignee": {
+        "supplier": {
           "type": "object",
           "required": [
             "id",
             "name",
             "countryId",
             "country",
-            "address",
-            "docid",
-            "fax",
-            "email"
+            "address"
           ],
           "properties": {
             "id": {
@@ -192,15 +165,6 @@
               "type": "string"
             },
             "address": {
-              "type": "string"
-            },
-            "docid": {
-              "type": "string"
-            },
-            "fax": {
-              "type": "string"
-            },
-            "email": {
               "type": "string"
             }
           }

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 579699d6dd81c599b7fdb5a4c4e3c6e708247da8",
+  "description": "Generated from b with shasum 8e810ea9ae92a8c4b6231832134e24f452f7b6bd",
   "type": "object",
   "required": [
     "blockId",
@@ -37,6 +37,7 @@
         "staff",
         "applicant",
         "fishSource",
+        "fish",
         "fishPurchasedLocally",
         "fishPurchasedImported",
         "fishSold",
@@ -135,11 +136,11 @@
             "registrationNo",
             "companyNo",
             "processingPlantLicensingNo",
-            "brandName:",
+            "brandName",
             "phone",
             "fax",
             "email",
-            "directors:",
+            "directors",
             "contact"
           ],
           "properties": {
@@ -173,7 +174,7 @@
             "processingPlantLicensingNo": {
               "type": "string"
             },
-            "brandName:": {
+            "brandName": {
               "type": "string"
             },
             "phone": {
@@ -185,14 +186,14 @@
             "email": {
               "type": "string"
             },
-            "directors:": {
+            "directors": {
               "type": "string"
             },
             "contact": {
               "type": "object",
               "required": [
                 "name",
-                "address:",
+                "address",
                 "home_phone",
                 "work_phone",
                 "mobile_phone",
@@ -203,7 +204,7 @@
                 "name": {
                   "type": "string"
                 },
-                "address:": {
+                "address": {
                   "type": "string"
                 },
                 "home_phone": {
@@ -234,9 +235,7 @@
             "required": [
               "boatRegistrationNo",
               "boatType",
-              "landingSites",
-              "locally",
-              "imported"
+              "landingSites"
             ],
             "properties": {
               "boatRegistrationNo": {
@@ -247,29 +246,22 @@
               },
               "landingSites": {
                 "type": "string"
-              },
-              "locally": {
-                "type": "object",
-                "required": [
-                  "total"
-                ],
-                "properties": {
-                  "total": {
-                    "type": "integer"
-                  }
-                }
-              },
-              "imported": {
-                "type": "object",
-                "required": [
-                  "total"
-                ],
-                "properties": {
-                  "total": {
-                    "type": "integer"
-                  }
-                }
               }
+            }
+          }
+        },
+        "fish": {
+          "type": "object",
+          "required": [
+            "locally",
+            "imported"
+          ],
+          "properties": {
+            "locally": {
+              "type": "integer"
+            },
+            "imported": {
+              "type": "integer"
             }
           }
         },

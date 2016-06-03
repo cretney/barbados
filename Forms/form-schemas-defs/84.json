@@ -1,0 +1,201 @@
+[
+  {
+    "type":"help",
+    "helpvalue":"<h4>Fumigation or disinfection treatment (if required by importing country):</h4>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"treatmentDate",
+            "title":"Date"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-8",
+        "items": [
+          {
+            "key":"treatment",
+            "title":"Treatment"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"treatmentDuration",
+            "title":"Duration of Exposure/temperature"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-8",
+        "items": [
+          {
+            "key":"treatmentLevel",
+            "title":"Chemical and Concentration or temperature"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"<h4>DESCRIPTION OF THE CONSIGNMENT</h4>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"exporter.name",
+            "title":"Exporter",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-8",
+        "items": [
+          {
+            "key":"exporter.address",
+            "title":"Exporter's Address",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"consignee.name",
+            "title":"Consignee",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-8",
+        "items": [
+          {
+            "key":"consignee.address",
+            "title":"Consignee's Address",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"packageNumber",
+            "title":"Number of packages"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-8",
+        "items": [
+          {
+            "key":"packageDescription",
+            "title":"Description of packages"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"distinguishingMarks",
+            "title":"Distinguishing marks"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"origin",
+            "title":"Origin"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"meansConveyance",
+            "title":"Means of conveyance"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"portDischarge",
+            "title":"Point of entry"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"<br><h4>Quantity and name of produce (including Botanical name if required by importing country):</h4>"
+  }
+
+]

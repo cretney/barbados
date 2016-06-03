@@ -10,20 +10,51 @@
     </div>
   </div><!--row-->
 
-
-  <div class="row">
-    <div class="col-sm-12">
-      <div sf-schema="schema" sf-form="formdef" sf-model="form.data"></div>
-    </div>
-  </div>
-
   <div class="row">
     <div class="col-sm-12">
       <p align="justify">
-        <br>
+        I, the undersigned, exporter of the goods described in the attached declaration,<br><br>
+
+        DECLARE that the goods were produced in <b>{{ila.submission.origin}}</b><br><br>
+
+        SPECIFY as follows the grounds on which the goods are claimed to comply with the provisions governing the determination of Common Market Origin: *1
+        <br><br>
+
+        <h4>Materials</h4>
+
+        <table class="table black-border">
+          <tr class="center-align">
+            <td width="200">CCCN heading</td>
+            <td>Material</td>
+            <td>Origin</td>
+          </tr>
+          <tr class="center-align" ng-repeat="material in ila.submission.materials">
+            <td><b>{{material.hsCode}}</b></td>
+            <td><b>{{material.description}}</b></td>
+            <td><b>{{material.origin}}</b></td>
+        </table>
+        <br><br>
+
+        <h4>Manufacturing process</h4>
+        <p>
+          <b>{{ila.submission.manufacturing}}</b>
+        </p>
+        <br><br>
+
+        <h4>Goods produced</h4>
+        <table class="table black-border">
+          <tr class="center-align">
+            <td width="200">HS Code</td>
+            <td>Product</td>
+          </tr>
+          <tr class="center-align" ng-repeat="product in ila.submission.commodities">
+            <td><b>{{product.hsCode}}</b></td>
+            <td><b>{{product.description}}</b></td>
+        </table>
+        <br><br>
 
         SUBMIT the following supporting documents: *2
-        <br><br>
+        <br><br><br><br><br>
 
         UNDERTAKE to submit, at the request of the appropriate authorities, any additional supporting evidence which those authorities may require for the purpose of issuing the certificate of origin, and undertake, if required to agree to any inspection of my accounts and to any check on the processes of manufacture of the above goods, carried out by the said authorities,
         <br><br>
@@ -35,10 +66,20 @@
   </div><!--row-->
 
   <div class="row">
+    <div class="col-sm-4 col-sm-offset-8" align="center">
+      <p>
+        <b>{{ila.submission.entryDate | date: 'dd/MM/yy'}}</b><br>
+      </p>
+    </div><!--col-sm-3 col-sm-offset-9-->
     <div class="col-sm-4 col-sm-offset-8 top-border" align="center">
       <p>
         Place and Date
         <br><br><br>
+      </p>
+    </div><!--col-sm-3 col-sm-offset-9-->
+    <div class="col-sm-4 col-sm-offset-8" align="center">
+      <p>
+        <b>{{ila.submission.submitter}}</b><br>
       </p>
     </div><!--col-sm-3 col-sm-offset-9-->
     <div class="col-sm-4 col-sm-offset-8 top-border" align="center">
