@@ -7698,5 +7698,26 @@
     "applicant": {"id":4, "name":"Barbara Greenridge", "countryId":"BB", "country":"Barbados", "address":"#9 Freshwater Bay, Spring Garden, St. Michael"},
     "supplier": {"id": 1, "name": "Joseph Smith", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
+},
+{
+  "blockId": 19916201,
+  "workflowId": 99,
+  "formId": 162,
+  "title": "Letter - Duty-free Concession - Vehicle",
+  "status": "Draft",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "Dog",
+        "quantity": 1
+      }
+    ],
+    "issuedDate":"2016-05-01",
+    "submitter": "Joe Blow",
+    "permitLength": 6,
+    "applicant": {"id":4, "name":"Barbara Greenridge", "countryId":"BB", "country":"Barbados", "address":"#9 Freshwater Bay, Spring Garden, St. Michael"},
+    "supplier": {"id": 1, "name": "Joseph Smith", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
 }
 ]
