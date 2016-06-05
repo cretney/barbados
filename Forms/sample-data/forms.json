@@ -3997,7 +3997,7 @@
     "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael",
       "contact":{
         "name":"Mary Lyndon",
-        "address:":"768 Main St",
+        "address":"768 Main St",
         "home_phone":"777-5555",
         "work_phone":"888-5555",
         "mobile_phone":"999-5555",
@@ -4011,7 +4011,7 @@
     "customsBroker": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1235 Bay Street, St. Michael", "phone":"555-123-4567",
       "contact":{
         "name":"Mary Lyndon",
-        "address:":"768 Main St",
+        "address":"768 Main St",
         "home_phone":"777-5555",
         "work_phone":"888-5555",
         "mobile_phone":"999-5555",
@@ -4076,7 +4076,7 @@
     "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael",
       "contact":{
         "name":"Mary Lyndon",
-        "address:":"768 Main St",
+        "address":"768 Main St",
         "home_phone":"777-5555",
         "work_phone":"888-5555",
         "mobile_phone":"999-5555",
@@ -4090,7 +4090,7 @@
     "customsBroker": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1235 Bay Street, St. Michael", "phone":"555-123-4567",
       "contact":{
         "name":"Mary Lyndon",
-        "address:":"768 Main St",
+        "address":"768 Main St",
         "home_phone":"777-5555",
         "work_phone":"888-5555",
         "mobile_phone":"999-5555",
@@ -6431,9 +6431,58 @@
       "nationality":"Barbados",
       "gender":"",
       "maritalStatus":"",
-      "numberDependents":0,
       "trainingInstitutions":[],
-      "qualifications":[]
+      "qualifications":[],
+      "numberDependents":0,
+      "passport":"P68768768",
+      "passportOrigin":"Venezuela",
+      "passportPlaceIssued":"Venezuela",
+      "passportDateIssued":"2012-05-01",
+      "passportDateExpires":"2012-05-01",
+      "contact":{
+        "name":"Carol Lima",
+        "address":"768 Main St",
+        "home_phone":"777-5555",
+        "work_phone":"888-5555",
+        "mobile_phone":"999-5555",
+        "fax":"222-5555",
+        "email":"mary@example.com"
+      }
+    },
+    "trainingInstitutions":[],
+    "qualifications":[],
+    "fishery_activities":{
+      "organisation":"Fishery organization",
+      "memberNo":"M7686876",
+      "time_involved":"10 years",
+      "proportionTime":"",
+      "reasonOnIndustry":"** reason **",
+      "relatives":false,
+      "numberRelatives":0,
+      "stateRelationship":"** state relationship **",
+      "formTransportation":"",
+      "otherOccupation":"** other occupation",
+      "roles":{
+        "boat_owner":{"value":false, "years":0},
+        "boat_agent":{"value":false, "years":0},
+        "captain":{"value":false, "years":0},
+        "fisherman":{"value":false, "years":0},
+        "aquaculturist":{"value":false, "years":0},
+        "peocessor":{"value":false, "years":0},
+        "boner":{"value":false, "years":0},
+        "skinner":{"value":false, "years":0},
+        "vendor":{"value":false, "years":0},
+        "hawker":{"value":false, "years":0},
+        "wholesaler":{"value":false, "years":0},
+        "electrician":{"value":false, "years":0},
+        "mechanic":{"value":false, "years":0},
+        "technician":{"value":false, "years":0},
+        "welder":{"value":false, "years":0},
+        "boat_painter":{"value":false, "years":0},
+        "boat_builder":{"value":false, "years":0},
+        "shipwright":{"value":false, "years":0},
+        "surveyor":{"value":false, "years":0}
+      }
     },
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
@@ -6617,7 +6666,7 @@
       "directors:":"Michael Sandler",
       "contact":{
         "name":"Mary Lyndon",
-        "address:":"768 Main St",
+        "address":"768 Main St",
         "home_phone":"777-5555",
         "work_phone":"888-5555",
         "mobile_phone":"999-5555",
@@ -7300,7 +7349,7 @@
       "id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com",
       "contact":{
         "name":"Mary Lyndon",
-        "address:":"768 Main St",
+        "address":"768 Main St",
         "home_phone":"777-5555",
         "work_phone":"888-5555",
         "mobile_phone":"999-5555",
@@ -7379,7 +7428,7 @@
       "id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com",
       "contact":{
         "name":"Mary Lyndon",
-        "address:":"768 Main St",
+        "address":"768 Main St",
         "home_phone":"777-5555",
         "work_phone":"888-5555",
         "mobile_phone":"999-5555",
@@ -7704,6 +7753,27 @@
   "workflowId": 99,
   "formId": 162,
   "title": "Letter - Duty-free Concession - Vehicle",
+  "status": "Draft",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "Dog",
+        "quantity": 1
+      }
+    ],
+    "issuedDate":"2016-05-01",
+    "submitter": "Joe Blow",
+    "permitLength": 6,
+    "applicant": {"id":4, "name":"Barbara Greenridge", "countryId":"BB", "country":"Barbados", "address":"#9 Freshwater Bay, Spring Garden, St. Michael"},
+    "supplier": {"id": 1, "name": "Joseph Smith", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
+},
+{
+  "blockId": 19916401,
+  "workflowId": 99,
+  "formId": 164,
+  "title": "Memorandum of Understanding between",
   "status": "Draft",
   "submission": {
     "commodities": [

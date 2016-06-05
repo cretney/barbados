@@ -180,9 +180,9 @@
         "htmlClass": "col-md-4",
         "items": [
           {
-            "key": "applicant.trainingInstitutions",
-            "type": "radios",
+            "key": "applicant.rainingInstitutions",
             "title": "Training institutions",
+            "type": "checkboxes",
             "titleMap": {
               "elementary": "Elementary / Primary",
               "secondary": "Secondary",
@@ -193,8 +193,8 @@
           },
           {
             "key": "applicant.qualifications",
-            "type": "radios",
             "title": "Qualifications",
+            "type": "checkboxes",
             "titleMap": {
               "elementary": "Elementary / Primary",
               "o_level": "O' Level",
@@ -322,7 +322,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key": "applicant.home_phone",
+            "key": "applicant.contact.home_phone",
             "title":"Home Phone"
           }
         ]
@@ -332,7 +332,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key": "applicant.work_phone",
+            "key": "applicant.contact.work_phone",
             "title":"Work Phone"
           }
         ]
@@ -342,7 +342,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key": "applicant.mobile_phone",
+            "key": "applicant.contact.mobile_phone",
             "title":"Mobile Phone"
           }
         ]
@@ -352,7 +352,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key":"applicant.fax",
+            "key":"applicant.contact.fax",
             "title":"Fax"
           }
         ]
@@ -362,6 +362,905 @@
   {
     "type": "help",
     "helpvalue": "<hr><h5><b>FISHERIES RELATED ACTIVITY DETAILS</b></h5>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "fishery_activities.organisation",
+            "title": "Fisher organisation"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "fishery_activities.memberNo",
+            "title": "Member No"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "type": "help",
+            "helpvalue": "<b>How long have you been involved in fisheries related activities</b>"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "fishery_activities.time_involved",
+            "title": "Time on activity"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "fishery_activities.proportionTime",
+            "title": "Proportion of time",
+            "type": "radios",
+            "titleMap": {
+              "full": "Full time",
+              "partial": "Partial time"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "fishery_activities.reasonOnIndustry",
+    "title": "Reasons for entering the industry"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "type": "help",
+            "helpvalue": "<b>Do you have other relatives in the industry?</b>"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "type": "radiobuttons",
+            "key": "fishery_activities.relatives",
+            "title": "Relatives?",
+            "titleMap": [
+              {
+                "value": true,
+                "name": "Y"
+              },
+              {
+                "value": false,
+                "name": "N"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "fishery_activities.proportionTime",
+            "title": "Proportion of time",
+            "type": "radios",
+            "titleMap": {
+              "full": "Full time",
+              "partial": "Partial time"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "fishery_activities.stateRelationship",
+    "title": "State relationship"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-md-6",
+        "items": [
+          {
+            "key": "applicant.formTransportation",
+            "type": "radios-inline",
+            "title": "Form of transportation",
+            "titleMap": {
+              "truck":"Truck",
+              "van":"Van",
+              "car":"Car",
+              "bicycle":"Bicycle",
+              "other":"Other"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "key": "fishery_activities.otherOccupation",
+            "title": "Any other occupation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<h5>Role(s) in Industry</h5>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-md-7",
+                "items": [
+                  {
+                    "type": "help",
+                    "helpvalue": "&nbsp;&nbsp;"
+                  },
+                  {
+                    "key": "fishery_activities.roles.boat_owner.value",
+                    "title": "Boat Owner"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-md-5",
+                "items": [
+                  {
+                    "type": "help",
+                    "helpvalue": "Years"
+                  },
+                  {
+                    "key": "fishery_activities.roles.boat_owner.years",
+                    "title": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-md-7",
+                "items": [
+                  {
+                    "type": "help",
+                    "helpvalue": "&nbsp;&nbsp;"
+                  },
+                  {
+                    "key": "fishery_activities.roles.aquaculturist.value",
+                    "title": "Aquaculturist"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-md-5",
+                "items": [
+                  {
+                    "type": "help",
+                    "helpvalue": "Years"
+                  },
+                  {
+                    "key": "fishery_activities.roles.aquaculturist.years",
+                    "title": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-md-7",
+                "items": [
+                  {
+                    "type": "help",
+                    "helpvalue": "&nbsp;&nbsp;"
+                  },
+                  {
+                    "key": "fishery_activities.roles.electrician.value",
+                    "title": "Electrician"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-md-5",
+                "items": [
+                  {
+                    "type": "help",
+                    "helpvalue": "Years"
+                  },
+                  {
+                    "key": "fishery_activities.roles.electrician.years",
+                    "title": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-md-7",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.boat_agent.value",
+                    "title": "Boat Agent"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-md-5",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.boat_agent.years",
+                    "title": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-md-7",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.peocessor.value",
+                    "title": "Peocessor"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-md-5",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.peocessor.years",
+                    "title": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-md-7",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.mechanic.value",
+                    "title": "Mechanic"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-md-5",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.mechanic.years",
+                    "title": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-md-7",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.captain.value",
+                    "title": "Captain"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-md-5",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.captain.years",
+                    "title": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-md-7",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.boner.value",
+                    "title": "Boner"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-md-5",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.boner.years",
+                    "title": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-md-7",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.technician.value",
+                    "title": "Technician"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-md-5",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.technician.years",
+                    "title": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-md-7",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.fisherman.value",
+                    "title": "Fisherman"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-md-5",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.fisherman.years",
+                    "title": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-md-7",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.skinner.value",
+                    "title": "Skinner"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-md-5",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.skinner.years",
+                    "title": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-md-7",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.welder.value",
+                    "title": "Welder"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-md-5",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.welder.years",
+                    "title": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "help",
+            "helpvalue": "&nbsp;&nbsp;"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-md-7",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.vendor.value",
+                    "title": "Vendor"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-md-5",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.vendor.years",
+                    "title": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-md-7",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.boat_painter.value",
+                    "title": "Boat Painter"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-md-5",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.boat_painter.years",
+                    "title": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "help",
+            "helpvalue": "&nbsp;&nbsp;"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-md-7",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.hawker.value",
+                    "title": "Hawker"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-md-5",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.hawker.years",
+                    "title": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-md-7",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.boat_builder.value",
+                    "title": "Boat Builder"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-md-5",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.boat_builder.years",
+                    "title": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "help",
+            "helpvalue": "&nbsp;&nbsp;"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-md-7",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.wholesaler.value",
+                    "title": "Wholesaler"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-md-5",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.wholesaler.years",
+                    "title": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-md-7",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.shipwright.value",
+                    "title": "Shipwright"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-md-5",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.shipwright.years",
+                    "title": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "help",
+            "helpvalue": "&nbsp;&nbsp;"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "help",
+            "helpvalue": "&nbsp;&nbsp;"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "row",
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "col-md-7",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.surveyor.value",
+                    "title": "Surveyor"
+                  }
+                ]
+              },
+              {
+                "type": "section",
+                "htmlClass": "col-md-5",
+                "items": [
+                  {
+                    "key": "fishery_activities.roles.surveyor.years",
+                    "title": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<b>Vessel(s) Applicant is Working On or Associated With:</b>"
   },
   {
     "type": "submit",

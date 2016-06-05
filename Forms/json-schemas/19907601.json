@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum a651da6456dc20c4ba0987c6079dde376d2e4afe",
+  "description": "Generated from b with shasum 181266b135eeaba1293097e8384ae9d1cead4a9a",
   "type": "object",
   "required": [
     "blockId",
@@ -172,7 +172,7 @@
               "type": "object",
               "required": [
                 "name",
-                "address:",
+                "address",
                 "home_phone",
                 "work_phone",
                 "mobile_phone",
@@ -183,7 +183,7 @@
                 "name": {
                   "type": "string"
                 },
-                "address:": {
+                "address": {
                   "type": "string"
                 },
                 "home_phone": {
@@ -248,7 +248,7 @@
               "type": "object",
               "required": [
                 "name",
-                "address:",
+                "address",
                 "home_phone",
                 "work_phone",
                 "mobile_phone",
@@ -259,7 +259,7 @@
                 "name": {
                   "type": "string"
                 },
-                "address:": {
+                "address": {
                   "type": "string"
                 },
                 "home_phone": {
