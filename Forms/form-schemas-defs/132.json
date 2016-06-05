@@ -1263,6 +1263,307 @@
     "helpvalue": "<b>Vessel(s) Applicant is Working On or Associated With:</b>"
   },
   {
+    "key": "workVessels",
+    "add": "Add Vessel",
+    "title":"",
+    "style": {
+      "add": "btn-success"
+    },
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "workVessels[].registrationNo",
+                "title": "Reg. No.",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-7",
+            "items": [
+              {
+                "key": "workVessels[].type",
+                "title": "Type of Vessel",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "workVessels[].mooringSite",
+                "title": "Mooring Site",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "workVessels[].landingSite",
+                "title": "Landing Site",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "workVessels[].role",
+                "title": "Role on Vessel",
+                "description":""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "key": "fishery_activities.companyName",
+            "title": "Company Name",
+            "description":""
+          },
+          {
+            "key": "fishery_activities.operatingSites",
+            "title": "Operating site(s)",
+            "type": "checkboxes",
+            "titleMap": {
+              "home": "Home",
+              "market": "Market"
+            }
+          },
+          {
+            "key": "fishery_activities.operatingSites1",
+            "title": "(1)",
+            "description":""
+          },
+          {
+            "key": "fishery_activities.operatingSites2",
+            "title": "(2)",
+            "description":""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "key": "fishery_activities.relatedCourses",
+            "title": "Related courses done",
+            "type": "checkboxes",
+            "titleMap": {
+              "basic": "Basic Seaman's",
+              "fish": "Fish Handing & Sanitation",
+              "navigation": "Navigation Training",
+              "business": "Business Management",
+              "other": "Other"
+            }
+          },
+          {
+            "key": "fishery_activities.otherCourses",
+            "title": "Other",
+            "description":""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-4",
+        "items": [
+          {
+            "key": "fishery_activities.localOversea",
+            "title": "L/O",
+            "type":"textarea",
+            "description":"Local Oversea"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "key": "fishery_activities.species",
+    "title": "Species",
+    "htmlClass":"inline",
+    "type": "checkboxes",
+    "titleMap": {
+      "none": "None",
+      "caught": "Caught",
+      "farmed": "Farmed",
+      "processed": "Processed",
+      "retailed": "Retailed"
+    }
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-md-3",
+        "items": [
+          {
+            "key": "fishery_activities.offshore",
+            "title": "Offshore Pelagics",
+            "type": "checkboxes",
+            "titleMap": {
+              "swordfish":"SWORDFISH",
+              "kingfish":"KINGFISH",
+              "billfish":"BILLFISH",
+              "tuna":"TUNA",
+              "shark":"SHARK",
+              "dolphin":"DOLPHIN",
+              "flying_fish":"FLYING FISH"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-3",
+        "items": [
+          {
+            "key": "fishery_activities.coastal",
+            "title": "Coastal Pelagics",
+            "type": "checkboxes",
+            "titleMap": {
+              "bait_fish":"BAIT FISH",
+              "cavally":"CAVALLY",
+              "jacks":"JACKS",
+              "blowgoat":"BLOWGOAT",
+              "barracuda":"BARRACUDA",
+              "bonita":"BONITA"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-3",
+        "items": [
+          {
+            "key": "fishery_activities.demersal",
+            "title": "Demersal",
+            "type": "checkboxes",
+            "titleMap": {
+              "snapper":"SNAPPER",
+              "pot_fish":"POT FISH",
+              "ningnings":"NINGNINGS",
+              "tilapia":"TILAPIA",
+              "ornamental":"ORNAMENTAL"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-3",
+        "items": [
+          {
+            "key": "fishery_activities.nonfish",
+            "title": "Non Fin-Fish",
+            "type": "checkboxes",
+            "titleMap": {
+              "conch":"CONCH",
+              "sea_eggs":"SEA EGGS",
+              "lobster":"LOBSTER",
+              "sea_cat":"SEA CAT",
+              "sea_moss":"SEA MOSS"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-md-6",
+        "items": [
+          {
+            "key": "fishery_activities.speciesOther",
+            "title": "Other"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "key": "fishery_activities.gear",
+    "title": "Harvesting Gear Used",
+    "type": "checkboxes",
+    "htmlClass":"inline",
+    "titleMap": {
+      "gill-nets":"GILL-NETS",
+      "seine_nets":"SEINE NETS",
+      "cast_nets":"CAST NETS",
+      "dip_nets ":"DIP NETS ",
+      "traps":"TRAPS",
+      "pots":"POTS",
+      "spear_gun ":"SPEAR GUN ",
+      "hand_lines":"HAND LINES",
+      "trolling_lines":"TROLLING LINES",
+      "long-lines":"LONG-LINES",
+      "brim_lines":"BRIM LINES",
+      "pillar-stick":"PILLAR STICK",
+      "rod_reel":"ROD & REEL"
+    }
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-md-6",
+        "items": [
+          {
+            "key": "fishery_activities.speciesOther",
+            "title": "Other"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "type": "submit",
     "style": "btn-info",
     "title": "Save"

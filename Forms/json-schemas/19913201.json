@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 1291cd7de8121fc077a90c0ff229dd549136dc13",
+  "description": "Generated from b with shasum 361da0f271ad5018e43bc0b8f103d532939060db",
   "type": "object",
   "required": [
     "blockId",
@@ -38,6 +38,7 @@
         "trainingInstitutions",
         "qualifications",
         "fishery_activities",
+        "workVessels",
         "supplier"
       ],
       "properties": {
@@ -190,16 +191,18 @@
             },
             "trainingInstitutions": {
               "type": "array",
-              "minItems": 0,
+              "minItems": 1,
               "uniqueItems": true,
               "items": {
+                "type": "string"
               }
             },
             "qualifications": {
               "type": "array",
-              "minItems": 0,
+              "minItems": 1,
               "uniqueItems": true,
               "items": {
+                "type": "string"
               }
             },
             "numberDependents": {
@@ -259,16 +262,18 @@
         },
         "trainingInstitutions": {
           "type": "array",
-          "minItems": 0,
+          "minItems": 1,
           "uniqueItems": true,
           "items": {
+            "type": "string"
           }
         },
         "qualifications": {
           "type": "array",
-          "minItems": 0,
+          "minItems": 1,
           "uniqueItems": true,
           "items": {
+            "type": "string"
           }
         },
         "fishery_activities": {
@@ -284,7 +289,15 @@
             "stateRelationship",
             "formTransportation",
             "otherOccupation",
-            "roles"
+            "roles",
+            "companyName",
+            "operatingSites",
+            "operatingSites1",
+            "operatingSites2",
+            "relatedCourses",
+            "otherCourses",
+            "localOversea",
+            "species"
           ],
           "properties": {
             "organisation": {
@@ -626,6 +639,72 @@
                     }
                   }
                 }
+              }
+            },
+            "companyName": {
+              "type": "string"
+            },
+            "operatingSites": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            },
+            "operatingSites1": {
+              "type": "string"
+            },
+            "operatingSites2": {
+              "type": "string"
+            },
+            "relatedCourses": {
+              "type": "string"
+            },
+            "otherCourses": {
+              "type": "string"
+            },
+            "localOversea": {
+              "type": "string"
+            },
+            "species": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "workVessels": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+              "registrationNo",
+              "typeVessel",
+              "mooringSite",
+              "landingSite",
+              "role"
+            ],
+            "properties": {
+              "registrationNo": {
+                "type": "string"
+              },
+              "typeVessel": {
+                "type": "string"
+              },
+              "mooringSite": {
+                "type": "string"
+              },
+              "landingSite": {
+                "type": "string"
+              },
+              "role": {
+                "type": "string"
               }
             }
           }

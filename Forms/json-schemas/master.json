@@ -929,6 +929,26 @@
           "title": "Maritalstatus",
           "description": ""
         },
+        "trainingInstitutions": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
+        },
+        "qualifications": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
+        },
         "numberDependents": {
           "type": "integer",
           "title": "Numberdependents",
@@ -2567,16 +2587,22 @@
     },
     "trainingInstitutions": {
       "type": "array",
-      "minItems": 0,
+      "minItems": 1,
       "uniqueItems": true,
       "items": {
+        "type": "string",
+        "title": "Items",
+        "description": ""
       }
     },
     "qualifications": {
       "type": "array",
-      "minItems": 0,
+      "minItems": 1,
       "uniqueItems": true,
       "items": {
+        "type": "string",
+        "title": "Items",
+        "description": ""
       }
     },
     "fishery_activities": {
@@ -2983,6 +3009,94 @@
                 }
               }
             }
+          }
+        },
+        "companyName": {
+          "type": "string",
+          "title": "Companyname",
+          "description": ""
+        },
+        "operatingSites": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
+        },
+        "operatingSites1": {
+          "type": "string",
+          "title": "Operatingsites1",
+          "description": ""
+        },
+        "operatingSites2": {
+          "type": "string",
+          "title": "Operatingsites2",
+          "description": ""
+        },
+        "relatedCourses": {
+          "type": "string",
+          "title": "Relatedcourses",
+          "description": ""
+        },
+        "otherCourses": {
+          "type": "string",
+          "title": "Othercourses",
+          "description": ""
+        },
+        "localOversea": {
+          "type": "string",
+          "title": "Localoversea",
+          "description": ""
+        },
+        "species": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
+        }
+      }
+    },
+    "workVessels": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+
+        ],
+        "properties": {
+          "registrationNo": {
+            "type": "string",
+            "title": "Registrationno",
+            "description": ""
+          },
+          "typeVessel": {
+            "type": "string",
+            "title": "Typevessel",
+            "description": ""
+          },
+          "mooringSite": {
+            "type": "string",
+            "title": "Mooringsite",
+            "description": ""
+          },
+          "landingSite": {
+            "type": "string",
+            "title": "Landingsite",
+            "description": ""
+          },
+          "role": {
+            "type": "string",
+            "title": "Role",
+            "description": ""
           }
         }
       }
