@@ -754,6 +754,11 @@
 				"id": 164,
 				"template": "su-memorandum-understanding.html",
 				"document":"Memorandum of Understanding between.pdf"
+			},
+			{
+				"id": 166,
+				"template": "tu-application-telecommunications-sellers-dealers-individual-licence.html",
+				"document":"Application for Telecommunications  Sellers and  Dealer’s (Individual) Licence.pdf"
 			}
 		]
 	},
