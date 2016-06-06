@@ -744,6 +744,26 @@
 				"id": 158,
 				"template": "fd-verification.html",
 				"document":"Verification.pdf"
+			},
+			{
+				"id": 160,
+				"template": "tu-registration-telecommunication-sellers-dealers-class-licence.html",
+				"document":"Registration for Telecommunication Sellers and Dealers Class Licence.pdf"
+			},
+			{
+				"id": 162,
+				"template": "ce-letter-duty-free-concession-vehicle.html",
+				"document":"Letter - Duty-free Concession - Vehicle - Bruce Bayley, Clifton Plantation Feb.10, 2016.pdf"
+			},
+			{
+				"id": 164,
+				"template": "su-memorandum-understanding.html",
+				"document":"Memorandum of Understanding between.pdf"
+			},
+			{
+				"id": 166,
+				"template": "tu-application-telecommunications-sellers-dealers-individual-licence.html",
+				"document":"Application for Telecommunications  Sellers and  Dealer’s (Individual) Licence.pdf"
 			}
 		]
 	},

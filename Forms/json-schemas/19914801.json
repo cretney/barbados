@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum a29a67706bf01e89e1a4900f52159dc94cc29b9f",
+  "description": "Generated from b with shasum 93d35f098aa293516efcb91ce50d159063cf10eb",
   "type": "object",
   "required": [
     "blockId",
@@ -194,7 +194,7 @@
               "type": "object",
               "required": [
                 "name",
-                "address:",
+                "address",
                 "home_phone",
                 "work_phone",
                 "mobile_phone",
@@ -205,7 +205,7 @@
                 "name": {
                   "type": "string"
                 },
-                "address:": {
+                "address": {
                   "type": "string"
                 },
                 "home_phone": {

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 26b6fce31159f4d47892aeffffb934f32086019a",
+  "description": "Generated from b with shasum 361da0f271ad5018e43bc0b8f103d532939060db",
   "type": "object",
   "required": [
     "blockId",
@@ -35,6 +35,10 @@
         "issuedDate",
         "submitter",
         "applicant",
+        "trainingInstitutions",
+        "qualifications",
+        "fishery_activities",
+        "workVessels",
         "supplier"
       ],
       "properties": {
@@ -114,9 +118,15 @@
             "nationality",
             "gender",
             "maritalStatus",
-            "numberDependents",
             "trainingInstitutions",
-            "qualifications"
+            "qualifications",
+            "numberDependents",
+            "passport",
+            "passportOrigin",
+            "passportPlaceIssued",
+            "passportDateIssued",
+            "passportDateExpires",
+            "contact"
           ],
           "properties": {
             "id": {
@@ -179,21 +189,522 @@
             "maritalStatus": {
               "type": "string"
             },
-            "numberDependents": {
-              "type": "integer"
-            },
             "trainingInstitutions": {
               "type": "array",
-              "minItems": 0,
+              "minItems": 1,
               "uniqueItems": true,
               "items": {
+                "type": "string"
               }
             },
             "qualifications": {
               "type": "array",
-              "minItems": 0,
+              "minItems": 1,
               "uniqueItems": true,
               "items": {
+                "type": "string"
+              }
+            },
+            "numberDependents": {
+              "type": "integer"
+            },
+            "passport": {
+              "type": "string"
+            },
+            "passportOrigin": {
+              "type": "string"
+            },
+            "passportPlaceIssued": {
+              "type": "string"
+            },
+            "passportDateIssued": {
+              "type": "string"
+            },
+            "passportDateExpires": {
+              "type": "string"
+            },
+            "contact": {
+              "type": "object",
+              "required": [
+                "name",
+                "address",
+                "home_phone",
+                "work_phone",
+                "mobile_phone",
+                "fax",
+                "email"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "home_phone": {
+                  "type": "string"
+                },
+                "work_phone": {
+                  "type": "string"
+                },
+                "mobile_phone": {
+                  "type": "string"
+                },
+                "fax": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "trainingInstitutions": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "qualifications": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "fishery_activities": {
+          "type": "object",
+          "required": [
+            "organisation",
+            "memberNo",
+            "time_involved",
+            "proportionTime",
+            "reasonOnIndustry",
+            "relatives",
+            "numberRelatives",
+            "stateRelationship",
+            "formTransportation",
+            "otherOccupation",
+            "roles",
+            "companyName",
+            "operatingSites",
+            "operatingSites1",
+            "operatingSites2",
+            "relatedCourses",
+            "otherCourses",
+            "localOversea",
+            "species"
+          ],
+          "properties": {
+            "organisation": {
+              "type": "string"
+            },
+            "memberNo": {
+              "type": "string"
+            },
+            "time_involved": {
+              "type": "string"
+            },
+            "proportionTime": {
+              "type": "string"
+            },
+            "reasonOnIndustry": {
+              "type": "string"
+            },
+            "relatives": {
+              "type": "boolean"
+            },
+            "numberRelatives": {
+              "type": "integer"
+            },
+            "stateRelationship": {
+              "type": "string"
+            },
+            "formTransportation": {
+              "type": "string"
+            },
+            "otherOccupation": {
+              "type": "string"
+            },
+            "roles": {
+              "type": "object",
+              "required": [
+                "boat_owner",
+                "boat_agent",
+                "captain",
+                "fisherman",
+                "aquaculturist",
+                "peocessor",
+                "boner",
+                "skinner",
+                "vendor",
+                "hawker",
+                "wholesaler",
+                "electrician",
+                "mechanic",
+                "technician",
+                "welder",
+                "boat_painter",
+                "boat_builder",
+                "shipwright",
+                "surveyor"
+              ],
+              "properties": {
+                "boat_owner": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "years"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "boolean"
+                    },
+                    "years": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "boat_agent": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "years"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "boolean"
+                    },
+                    "years": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "captain": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "years"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "boolean"
+                    },
+                    "years": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "fisherman": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "years"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "boolean"
+                    },
+                    "years": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "aquaculturist": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "years"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "boolean"
+                    },
+                    "years": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "peocessor": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "years"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "boolean"
+                    },
+                    "years": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "boner": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "years"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "boolean"
+                    },
+                    "years": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "skinner": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "years"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "boolean"
+                    },
+                    "years": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "vendor": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "years"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "boolean"
+                    },
+                    "years": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "hawker": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "years"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "boolean"
+                    },
+                    "years": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "wholesaler": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "years"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "boolean"
+                    },
+                    "years": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "electrician": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "years"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "boolean"
+                    },
+                    "years": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "mechanic": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "years"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "boolean"
+                    },
+                    "years": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "technician": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "years"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "boolean"
+                    },
+                    "years": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "welder": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "years"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "boolean"
+                    },
+                    "years": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "boat_painter": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "years"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "boolean"
+                    },
+                    "years": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "boat_builder": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "years"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "boolean"
+                    },
+                    "years": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "shipwright": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "years"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "boolean"
+                    },
+                    "years": {
+                      "type": "integer"
+                    }
+                  }
+                },
+                "surveyor": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "years"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": "boolean"
+                    },
+                    "years": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            },
+            "companyName": {
+              "type": "string"
+            },
+            "operatingSites": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            },
+            "operatingSites1": {
+              "type": "string"
+            },
+            "operatingSites2": {
+              "type": "string"
+            },
+            "relatedCourses": {
+              "type": "string"
+            },
+            "otherCourses": {
+              "type": "string"
+            },
+            "localOversea": {
+              "type": "string"
+            },
+            "species": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "workVessels": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+              "registrationNo",
+              "typeVessel",
+              "mooringSite",
+              "landingSite",
+              "role"
+            ],
+            "properties": {
+              "registrationNo": {
+                "type": "string"
+              },
+              "typeVessel": {
+                "type": "string"
+              },
+              "mooringSite": {
+                "type": "string"
+              },
+              "landingSite": {
+                "type": "string"
+              },
+              "role": {
+                "type": "string"
               }
             }
           }
