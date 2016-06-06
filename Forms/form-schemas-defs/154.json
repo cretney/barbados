@@ -1,0 +1,154 @@
+[
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "importer.name",
+            "title": "Name of Farmer/Agribusiness",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "importer.type",
+            "title": "Type of Farm/Company Service",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-8",
+        "items": [
+          {
+            "key": "importer.address",
+            "title": "Address",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "importer.country",
+            "title": "Country",
+            "description": "",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "importer.docid",
+            "title": "Registration #",
+            "description": "w/ Ministry of Agriculture, Food, Fisheries and Water Resource Management",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "importer.phone",
+            "title": "Phone",
+            "description": "(246) area code",
+            "readonly": true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "importer.fax",
+            "title": "Fax",
+            "description": "(246) area code",
+            "readonly": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "help",
+    "helpvalue": "<h4>Remarks</h4>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "invoiceNumber",
+            "title": "Invoice Number",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-6",
+        "items": [
+          {
+            "key": "supplier.name",
+            "title": "Supplier Name",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-8",
+        "items": [
+          {
+            "key": "supplier.address",
+            "title": "Supplier Address",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "supplier.country",
+            "title": "Supplier Country",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  }
+]

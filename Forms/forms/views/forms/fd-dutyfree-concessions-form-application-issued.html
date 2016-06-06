@@ -12,7 +12,7 @@
 
   <div class="row">
     <div class="col-sm-5 col-sm-offset-7">
-      <h5>Date: ...</h5>
+      <h5>Date: <b>{{ila.submission.entryDate | date: 'd MMMM yyyy'}}</b></h5>
     </div>
   </div><!--row-->
 
@@ -24,10 +24,10 @@
           ON AGRICULTURAL INPUTS
         </u></b>
       </h5>
-      <p>Name of Farmer/Agribusiness: ...</p>
-      <p>Type of Farm/Company Service: ...</p>
-      <p>Address: ...</p>
-      <p>Ministry of Agriculture, Food, Fisheries and Water Resource Management Registration No: ... Tel. No.: ... Fax No.: ...</p>
+      <p>Name of Farmer/Agribusiness: <b>{{ila.submission.importer.name}}</b></p>
+      <p>Type of Farm/Company Service: <b>{{ila.submission.importer.type}}</b></p>
+      <p>Address: <b>{{ila.submission.importer.address}}, {{ila.submission.importer.country}}</b></p>
+      <p>Ministry of Agriculture, Food, Fisheries and Water Resource Management Registration No: <b>{{ila.submission.importer.docid}}</b> Tel. No.: <b>{{ila.submission.importer.phone}}</b> Fax No.: <b>{{ila.submission.importer.fax}}</b></p>
 
       <h6 align="justify"><b>
         Request permission to import the following items free of duty and taxes including value added tax (VAT) as per directive from the Ministry of Finance and Economic Affairs, Ref.: 5007/7/3 dated 1994-09-30. VAT exemption will be according to the VAT Act.
@@ -38,13 +38,14 @@
           REMARKS
         </u></b>
       </h5>
-      <p>Invoice Number: ...</p>
-      <p>Supplier's Name & Address: ...</p>
+      <p>Invoice Number: <b>{{ila.submission.invoiceNumber}}</b></p>
+      <p>Supplier's Name & Address: <b>{{ila.submission.supplier.name}}<br>
+      {{ila.submission.supplier.address}}, {{ila.submission.supplier.country}}</b></p>
       <br>
     </div><!--col-sm-12-->
   </div><!--row-->
 
-  <div class="row">
+  <div class="row bottom-border">
     <div class="col-sm-4">
       <h5 align="center"><b><u>
         ITEM NAME
@@ -60,39 +61,50 @@
         PART NO.
       </u></b></h5>
     </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-    <h5 align="right"><b>
-      Please Complete Page 2
-    </b></h5>
+  </div><!--row-->
+  <div class="row left-border bottom-border" ng-repeat="item in ila.submission.commodities">
+    <div class="col-sm-4 right-border">
+      <p><b>
+        {{item.name}}
+      </b></p>
+    </div><!--col-sm-4-->
+    <div class="col-sm-5 right-border">
+      <p><b>
+        {{item.description}}
+      </b></p>
+    </div><!--col-sm-5-->
+    <div class="col-sm-3 right-border" align="center">
+      <p><b>{{item.units[0].quantity}}</b></p>
+    </div><!--col-sm-3-->
   </div><!--row-->
 
   <!--NEXT PAGE-->
-
+  <br><br>
   <div class="row">
     <div class="col-sm-12">
       <h5><b><u>
         REQUESTED BY:
       </u></b></h5>
-      <p>Name of Person/Company: ...</p>
-      <p>Title: ...</p>
-      <p>Total Cost: ...</p>
+      <p>Name of Person/Company: <b><span ng-if="ila.submission.applicant.contactPerson.name != ''">{{ila.submission.applicant.contactPerson.name}}, </span>{{ila.submission.applicant.name}}</b></p>
+      <p>Title: <b><span ng-if="ila.submission.applicant.contactPerson.title != ''">{{ila.submission.applicant.contactPerson.title}}</span></b></p>
+      <p>Total Cost: <b>Bds. ${{ila.submission.totalValue | number}}</b></p>
     </div><!--col-sm-12-->
   </div><!--row-->
   <br><br>
 
   <div class="row">
     <div class="col-sm-9 col-sm-offset-3">
-      <p>Signature: ...</p>
+      <p>Signature: <b>{{ila.submission.submitter}}</b></p>
     </div><!--row-->
   </div><!--row-->
 
   <div class="row">
-    <div class="col-sm-1">
+    <div class="col-sm-2 col-lg-1">
       <h6><b>
         WARNING:
       </b></h6>
     </div><!--col-sm-2-->
-    <div class="col-sm-11">
+    <div class="col-sm-10 col-lg-11">
       <h6><b>
         A signed Declaration constitutes a statement that all particulars are true and correct, and use of a Customs Procedure code (CPC) constitutes the necessary form of Declaration.
       </b></h6>

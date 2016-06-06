@@ -7821,15 +7821,173 @@
     "commodities": [
       {
         "hsCode": "123",
-        "description": "Dog",
-        "quantity": 1
+        "name": "test 1",
+        "description": "this is a description",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 3,
+            "cifValue": 500
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "name": "test 2",
+        "description": "this is a description",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 5,
+            "cifValue": 445566
+          }
+        ]
+      },
+      {
+        "hsCode": "345",
+        "name": "test 3",
+        "description": "this is a description",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 5,
+            "cifValue":20000
+          }
+        ]
+      },
+      {
+        "hsCode": "456",
+        "name": "test 4",
+        "description": "this is a description",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 10,
+            "cifValue":1050
+          }
+        ]
+      },
+      {
+        "hsCode": "567",
+        "name": "test 5",
+        "description": "this is a description",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 11,
+            "cifValue": 55
+          }
+        ]
+      },
+      {
+        "hsCode": "678",
+        "name": "test 6",
+        "description": "this is a description",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 200,
+            "cifValue": 8675309
+          }
+        ]
       }
     ],
-    "issuedDate":"2016-05-01",
-    "submitter": "Joe Blow",
-    "permitLength": 6,
-    "applicant": {"id":4, "name":"Barbara Greenridge", "countryId":"BB", "country":"Barbados", "address":"#9 Freshwater Bay, Spring Garden, St. Michael"},
-    "supplier": {"id": 1, "name": "Joseph Smith", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+    "totalValue": 1234567,
+    "invoiceNumber":"IN-5646546",
+    "submitter": "Barbara Greenridge",
+    "applicant": {"id":4, "name":"ACME Corporation", "countryId":"BB", "country":"Barbados", "address":"#9 Freshwater Bay, Spring Garden, St. Michael", "contactPerson": {"name": "Barbara Greenridge", "title": "Head Carroteer"}},
+    "importer": {"id":8, "name":"Bugs Bunny", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "phone":"555-5555", "type": "Baby carrot producer"},
+    "supplier": {"id": 1, "name": "Joseph Blough", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
+},
+{
+  "blockId": 19915501,
+  "workflowId": 99,
+  "formId": 155,
+  "title": "Dutyfree Concessions Form Application",
+  "status": "Issued",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "name": "test 1",
+        "description": "this is a description",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 3,
+            "cifValue": 500
+          }
+        ]
+      },
+      {
+        "hsCode": "234",
+        "name": "test 2",
+        "description": "this is a description",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 5,
+            "cifValue": 445566
+          }
+        ]
+      },
+      {
+        "hsCode": "345",
+        "name": "test 3",
+        "description": "this is a description",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 5,
+            "cifValue":20000
+          }
+        ]
+      },
+      {
+        "hsCode": "456",
+        "name": "test 4",
+        "description": "this is a description",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 10,
+            "cifValue":1050
+          }
+        ]
+      },
+      {
+        "hsCode": "567",
+        "name": "test 5",
+        "description": "this is a description",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 11,
+            "cifValue": 55
+          }
+        ]
+      },
+      {
+        "hsCode": "678",
+        "name": "test 6",
+        "description": "this is a description",
+        "units": [
+          {
+            "unitType": "Units",
+            "quantity": 200,
+            "cifValue": 8675309
+          }
+        ]
+      }
+    ],
+    "totalValue": 1234567,
+    "invoiceNumber":"IN-5646546",
+    "entryDate":"2016-05-01",
+    "submitter": "Barbara Greenridge",
+    "applicant": {"id":4, "name":"ACME Corporation", "countryId":"BB", "country":"Barbados", "address":"#9 Freshwater Bay, Spring Garden, St. Michael", "contactPerson": {"name": "Barbara Greenridge", "title": "Head Carroteer"}},
+    "importer": {"id":8, "name":"Bugs Bunny", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "phone":"555-5555", "type": "Baby carrot producer"},
+    "supplier": {"id": 1, "name": "Joseph Blough", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
 },
 {
