@@ -751,6 +751,11 @@
 				"document":"Registration for Telecommunication Sellers and Dealers Class Licence.pdf"
 			},
 			{
+				"id": 161,
+				"template": "tu-registration-telecommunication-sellers-dealers-class-licence-issued.html",
+				"document":"Registration for Telecommunication Sellers and Dealers Class Licence.pdf"
+			},
+			{
 				"id": 162,
 				"template": "ce-letter-duty-free-concession-vehicle.html",
 				"document":"Letter - Duty-free Concession - Vehicle - Bruce Bayley, Clifton Plantation Feb.10, 2016.pdf"
