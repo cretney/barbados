@@ -196,7 +196,6 @@
             "title": "Qualifications",
             "type": "checkboxes",
             "titleMap": {
-              "elementary": "Elementary / Primary",
               "o_level": "O' Level",
               "a_level": "A' Level",
               "gce": "GCE",

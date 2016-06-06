@@ -62,40 +62,40 @@
 					</th>
 				</tr>
 				<tr>
-					<th>
+					<td>
 						<div class="row">
 							<div class="col-sm-12">
-								Application name: (Last name) ... (Middle name(s)) ... (First name)
+								Application name: <b>{{ila.submission.applicant.lastname}} {{ila.submission.applicant.middlename}} {{ila.submission.applicant.firstname}}</b>
 							</div><!--class="col-sm-12-->
 							<br><br>
 
 							<div class="col-sm-6">
-								Nicknames:
+								Nicknames: <b>{{ila.submission.applicant.nickname}}</b>
 							</div><!--col-sm-6-->
 							<div class="col-sm-6">
-								Email address:
+								Email address: <b>{{ila.submission.applicant.email}}</b>
 							</div><!--col-sm-6-->
 							<br><br>
 
 							<div class="col-sm-12">
-								Mailing address:<br>
+								Mailing address: <b>{{ila.submission.applicant.address}}</b><br>
 							</div>
 							<br><br><br>
 
 							<div class="col-sm-3">
-								Tel: (H):
+								Tel: (H): <b>{{ila.submission.applicant.home_phone}}</b>
 							</div>
 							<div class="col-sm-3">
-								(W):
+								(W): <b>{{ila.submission.applicant.work_phone}}</b>
 							</div>
 							<div class="col-sm-3">
-								(C):
+								(C): <b>{{ila.submission.applicant.mobile_phone}}</b>
 							</div>
 							<div class="col-sm-3">
-								(F):
+								(F): <b>{{ila.submission.applicant.fax}}</b>
 							</div>
 						</div><!--row-->
-					</th>
+					</td>
 				</tr>
 			</table>
 		</div><!--col-sm-12-->
@@ -110,56 +110,93 @@
 					</th>
 				</tr>
 				<tr>
-					<th>
+					<td>
 						National registration no.:<br>
-						_ _ _ _ _ _ - _ _ _ _<br><br>
-						National insurance no.: _ _ _ _ _ _<br><br>
-						Date of birth: (Year)-(Month)-(Day)<br><br>
-						Country of birth:<br><br>
-						Nationality:<br>
-					</th>
-					<th>
+						<b>{{ila.submission.applicant.nationalRegistrationNumber}}</b><br><br>
+						National insurance no.:<br><b>{{ila.submission.applicant.nationalInsuranceNumber}}</b><br>
+						Date of birth: <b>{{ila.submission.applicant.birthDate}}</b><br><br>
+						Country of birth: <b>{{ila.submission.applicant.birthCountry}}</b><br><br>
+						Nationality:<b>{{ila.submission.applicant.nationality}}</b><br>
+					</td>
+					<td>
 						<table class="table no-border-th no-bottom-th no-top-th">
 							<tr>
-								<th class="th-top">
+								<td class="th-top">
 									Sex:<br>
-									_ - Male<br>
-									_ - Female
-								</th>
+									<span ng-if="ila.submission.applicant.gender == 'male'">
+										<b>X</b> - Male<br>
+										_ - Female
+									</span>
+									<span ng-if="ila.submission.applicant.gender == 'female'">
+										_ - Male<br>
+										<b>X</b> - Female
+									</span>
+								</td>
 							</tr>
 							<tr>
-								<th>
+								<td>
 									Marital status:<br>
-									_ - Single<br>
-									_ - Married
-								</th>
+									<span ng-if="ila.submission.applicant.maritalStatus == 'single'">
+										<b>X</b> - Single<br>
+										_ - Married
+									</span>
+									<span ng-if="ila.submission.applicant.maritalStatus == 'married'">
+										_ - Single<br>
+										<b>X</b> - Married
+									</span>
+								</td>
 							</tr>
 							<tr>
-								<th>
+								<td>
 									No. Dependents:<br>
+									<b>{{ila.submission.applicant.numberDependents}}</b>
 									<br>
-								</th>
+								</td>
 							</tr>
 						</table>
-					</th>
-					<th>
+					</td>
+					<td>
 						Training institutions:<br>
-						_ - Elementary / Primary<br>
-						_ - Secondary<br>
-						_ - Polytechnic<br>
-						_ - College<br>
-						_ - University
-					</th>
-					<th>
+						<span ng-if="ila.submission.applicant.trainingInstitutions.indexOf('elementary') == -1">_ - </span>
+		        <span ng-if="ila.submission.applicant.trainingInstitutions.indexOf('elementary') > -1"><b>X</b> - </span>
+						Elementary / Primary<br>
+						<span ng-if="ila.submission.applicant.trainingInstitutions.indexOf('secondary') == -1">_ - </span>
+		        <span ng-if="ila.submission.applicant.trainingInstitutions.indexOf('secondary') > -1"><b>X</b> - </span>
+						Secondary<br>
+						<span ng-if="ila.submission.applicant.trainingInstitutions.indexOf('polytechnic') == -1">_ - </span>
+		        <span ng-if="ila.submission.applicant.trainingInstitutions.indexOf('polytechnic') > -1"><b>X</b> - </span>
+						Polytechnic<br>
+						<span ng-if="ila.submission.trainingInstitutions.applicant.indexOf('college') == -1">_ - </span>
+		        <span ng-if="ila.submission.trainingInstitutions.applicant.indexOf('college') > -1"><b>X</b> - </span>
+						College<br>
+						<span ng-if="ila.submission.applicant.trainingInstitutions.indexOf('university') == -1">_ - </span>
+		        <span ng-if="ila.submission.applicant.trainingInstitutions.indexOf('university') > -1"><b>X</b> - </span>
+						University
+					</td>
+					<td>
 						Qualifications:<br>
-						_ - O' Level<br>
-						_ - A' Level<br>
-						_ - GCE<br>
-						_ - City & Guilds<br>
-						_ - Diploma<br>
-						_ - Associate Degree<br>
-						_ - None
-					</th>
+						<span ng-if="ila.submission.applicant.qualifications.indexOf('o_level') == -1">_ - </span>
+						<span ng-if="ila.submission.applicant.qualifications.indexOf('o_level') > -1"><b>X</b> - </span>
+						O' Level<br>
+						<span ng-if="ila.submission.applicant.qualifications.indexOf('a_level') == -1">_ - </span>
+						<span ng-if="ila.submission.applicant.qualifications.indexOf('a_level') > -1"><b>X</b> - </span>
+						A' Level<br>
+						<span ng-if="ila.submission.applicant.qualifications.indexOf('gce') == -1">_ - </span>
+						<span ng-if="ila.submission.applicant.qualifications.indexOf('gce') > -1"><b>X</b> - </span>
+						GCE<br>
+						<span ng-if="ila.submission.applicant.qualifications.indexOf('city_guilds') == -1">_ - </span>
+						<span ng-if="ila.submission.applicant.qualifications.indexOf('city_guilds') > -1"><b>X</b> - </span>
+						City & Guilds<br>
+						<span ng-if="ila.submission.applicant.qualifications.indexOf('diploma') == -1">_ - </span>
+						<span ng-if="ila.submission.applicant.qualifications.indexOf('diploma') > -1"><b>X</b> - </span>
+						Diploma<br>
+						<span ng-if="ila.submission.applicant.qualifications.indexOf('associate_degree') == -1">_ - </span>
+						<span ng-if="ila.submission.applicant.qualifications.indexOf('associate_degree') > -1"><b>X</b> - </span>
+						Associate Degree<br>
+						<span ng-if="ila.submission.applicant.qualifications.indexOf('none') == -1">_ - </span>
+						<span ng-if="ila.submission.applicant.qualifications.indexOf('none') > -1"><b>X</b> - </span>
+						None
+					</td>
 				</tr>
 			</table>
 		</div><!--col-sm-12-->
@@ -174,22 +211,22 @@
 					</th>
 				</tr>
 				<tr>
-					<th>
+					<td>
 						<div class="row">
 							<div class="col-sm-12">
-								Passport No.: _ _ _ _ _ _ _ _ _ _ _ _ <!--12 campos-->
+								Passport No.: <b>{{ila.submission.applicant.passport}}</b>
 								<br><br>
 							</div><!--col-sm-12-->
 							<div class="col-sm-6">
-								Passport origin:<br><br>
-								Place issued:
+								Passport origin: <b>{{ila.submission.applicant.passportOrigin}}</b><br><br>
+								Place issued: <b>{{ila.submission.applicant.passportPlaceIssued}}</b>
 							</div><!--col-sm-6-->
 							<div class="col-sm-6">
-								Date issued:<br><br>
-								Date expires:
+								Date issued: <b>{{ila.submission.applicant.passportDateIssued}}</b><br><br>
+								Date expires: <b>{{ila.submission.applicant.passportDateExpires}}</b>
 							</div><!--col-sm-6-->
 						</div><!--row-->
-					</th>
+					</td>
 				</tr>
 			</table>
 		</div><!--col-sm-12-->
@@ -204,26 +241,26 @@
 					</th>
 				</tr>
 				<tr>
-					<th>
+					<td>
 						<div class="row">
 							<div class="col-sm-12">
-								Name:<br><br>
-								Address:<br><br>
+								Name: <b>{{ila.submission.applicant.contact.name}}</b><br><br>
+								Address: <b>{{ila.submission.applicant.contact.address}}</b><br><br>
 							</div><!--col-sm-12-->
 							<div class="col-sm-3">
-								Relation:
+								Relation: <b>{{ila.submission.applicant.contact.relationship}}</b>
 							</div><!--col-sm-3-->
 							<div class="col-sm-3">
-								Tel: (H):
+								Tel: (H): <b>{{ila.submission.applicant.contact.home_phone}}</b>
 							</div><!--col-sm-3-->
 							<div class="col-sm-3">
-								(W):
+								(W): <b>{{ila.submission.applicant.contact.work_phone}}</b>
 							</div><!--col-sm-3-->
 							<div class="col-sm-3">
-								(C):
+								(C): <b>{{ila.submission.applicant.contact.mobile_phone}}</b>
 							</div><!--col-sm-3-->
 						</div><!--row-->
-					</th>
+					</td>
 				</tr>
 			</table>
 		</div><!--col-sm-12-->
@@ -242,46 +279,98 @@
 				<tr>
 					<td>
 						<div class="row">
-							<div class="col-sm-9">
-								<b>Fisher organisation:</b>
+							<div class="col-sm-8">
+								Fisher organisation: <b>{{ila.submission.fishery_activities.organisation}}</b>
 							</div><!--col-sm-9-->
-							<div class="col-sm-3">
-								<b>Member No.:</b>
+							<div class="col-sm-4">
+								Member No.: <b>{{ila.submission.fishery_activities.memberNo}}</b>
 							</div><!--col-sm-3-->
 							<br><br>
 
 							<div class="col-sm-8">
-								<b>How long have you been involved in fisheries related activities:</b>
+								How long have you been involved in fisheries related activities: <b>{{ila.submission.fishery_activities.time_involved}}</b> <br>
 							</div><!--col-sm-8-->
 							<div class="col-sm-4">
-								<b>Proportion of time:</b> _ - Full Time &nbsp;&nbsp; _ - Part Time
+								Proportion of time:</b> <br>
+								<span ng-if="ila.submission.fishery_activities.proportionTime == 'full'">
+									&nbsp;&nbsp; <b>X</b> - Full Time
+									&nbsp;&nbsp; _ - Part Time
+								</span>
+								<span ng-if="ila.submission.fishery_activities.proportionTime == 'partial'">
+									&nbsp;&nbsp; _ - Full Time
+									&nbsp;&nbsp; <b>X</b> - Part Time
+								</span>
 							</div><!--col-sm-3-->
 							<br><br>
 
 							<div class="col-sm-12">
-								<b>easons for entering the industry:</b>
+								Reasons for entering the industry: <b>{{ila.submission.fishery_activities.reasonOnIndustry}}</b>
 							</div><!--col-sm-12-->
 							<br><br>
 
-							<div class="col-sm-7">
-								<b>Do you have other relatives in the industry:</b> _ - Yes &nbsp;&nbsp; _ - No
+							<div class="col-sm-8">
+								Do you have other relatives in the industry:
+								<span ng-if="ila.submission.fishery_activities.relatives">
+									&nbsp;&nbsp; <b>X</b> - Yes
+									&nbsp;&nbsp; _ - No
+								</span>
+								<span ng-if="!ila.submission.fishery_activities.relatives">
+									&nbsp;&nbsp; _ - Yes
+									&nbsp;&nbsp; <b>X</b> - No
+								</span>
 							</div><!--col-sm-7-->
-							<div class="col-sm-5">
-								<b>Number of relatives:</b>
+							<div class="col-sm-4">
+								Number of relatives: <b>{{ila.submission.fishery_activities.numberRelatives}}</b>
 							</div><!--col-sm-5-->
 							<br><br>
 
 							<div class="col-sm-12">
-								<b>State relationship:</b>
+								State relationship: <b>{{ila.submission.fishery_activities.stateRelationship}}</b>
 							</div><!--col-sm-12-->
 							<br><br>
 
 							<div class="col-sm-7">
-								<b>Form of transportation:</b>
-								_ - Truck &nbsp;&nbsp; _ - Van &nbsp;&nbsp; _ - Car &nbsp;&nbsp; _ - Bicycle &nbsp;&nbsp; _ - None
+								<b>Form of transportation:</b> <br>
+								<span ng-if="ila.submission.fishery_activities.formTransportation == 'truck'">
+									<b>X</b> - Truck &nbsp;&nbsp;
+									_ - Van &nbsp;&nbsp;
+									_ - Car &nbsp;&nbsp;
+									_ - Bicycle &nbsp;&nbsp;
+									_ - None
+								</span>
+								<span ng-if="ila.submission.fishery_activities.formTransportation == 'van'">
+									_ - Truck &nbsp;&nbsp;
+									<b>X</b> - Van &nbsp;&nbsp;
+									_ - Car &nbsp;&nbsp;
+									_ - Bicycle &nbsp;&nbsp;
+									_ - None
+								</span>
+								<span ng-if="ila.submission.fishery_activities.formTransportation == 'car'">
+									_ - Truck &nbsp;&nbsp;
+									_ - Van &nbsp;&nbsp;
+									<b>X</b> - Car &nbsp;&nbsp;
+									_ - Bicycle &nbsp;&nbsp;
+									_ - None
+								</span>
+								<span ng-if="ila.submission.fishery_activities.formTransportation == 'bicycle'">
+									_ - Truck &nbsp;&nbsp;
+									_ - Van &nbsp;&nbsp;
+									_ - Car &nbsp;&nbsp;
+									<b>X</b> - Bicycle &nbsp;&nbsp;
+									_ - None
+								</span>
+								<span ng-if="ila.submission.fishery_activities.formTransportation == 'none'">
+									_ - Truck &nbsp;&nbsp;
+									_ - Van &nbsp;&nbsp;
+									_ - Car &nbsp;&nbsp;
+									_ - Bicycle &nbsp;&nbsp;
+									<b>X</b> - None
+								</span>
+								<br><br>
 							</div><!--col-sm-7-->
 							<div class="col-sm-5">
-								<b>Any other occupation:</b>
+								Any other occupation:<br>
+								<b>{{ila.submission.fishery_activities.otherOccupation}}</b>
 							</div><!--col-sm-5-->
 							<br><br>
 						</div><!--row-->
@@ -301,75 +390,35 @@
 									</tr>
 									<tr>
 										<td class="no-top-cell no-bottom-cell no-left-cell">
-											[ ] _ BOAT OWNER
+											<span ng-if="ila.submission.fishery_activities.roles.boat_owner.value"><b>X</b> - </span>
+											<span ng-if="!ila.submission.fishery_activities.roles.boat_owner.value">_ - </span>
+											BOAT OWNER
 										</td>
-										<td></td>
+										<td align="center"><b>{{ila.submission.fishery_activities.roles.boat_owner.years}}</b></td>
 									</tr>
 									<tr>
 										<td class="no-top-cell no-bottom-cell no-left-cell">
-											[ ] _ BOAT AGENT
+											<span ng-if="ila.submission.fishery_activities.roles.boat_agent.value"><b>X</b> - </span>
+											<span ng-if="!ila.submission.fishery_activities.roles.boat_agent.value">_ - </span>
+											BOAT AGENT
 										</td>
-										<td></td>
+										<td align="center"><b>{{ila.submission.fishery_activities.roles.boat_agent.years}}</b></td>
 									</tr>
 									<tr>
 										<td class="no-top-cell no-bottom-cell no-left-cell">
-											[ ] _ CAPTAIN
+											<span ng-if="ila.submission.fishery_activities.roles.captain.value"><b>X</b> - </span>
+											<span ng-if="!ila.submission.fishery_activities.roles.captain.value">_ - </span>
+											CAPTAIN
 										</td>
-										<td></td>
+										<td align="center"><b>{{ila.submission.fishery_activities.roles.captain.years}}</b></td>
 									</tr>
 									<tr>
 										<td class="no-top-cell no-bottom-cell no-left-cell">
-											[ ] _ FISHERMAN
+											<span ng-if="ila.submission.fishery_activities.roles.fisherman.value"><b>X</b> - </span>
+											<span ng-if="!ila.submission.fishery_activities.roles.fisherman.value">_ - </span>
+											FISHERMAN
 										</td>
-										<td></td>
-									</tr>
-								</table>
-								<br>
-
-								<table class="no-top-td no-bottom-td no-left-td"
-									style="width: 100%;"
-								>
-									<tr>
-										<td class="no-top-cell no-bottom-cell no-left-cell">
-											[ ] _ AQUACULTURIST
-										</td>
-										<td style="width: 30%;"></td>
-									</tr>
-									<tr>
-										<td class="no-top-cell no-bottom-cell no-left-cell">
-											[ ] _ PEOCESSOR
-										</td>
-										<td></td>
-									</tr>
-									<tr>
-										<td class="no-top-cell no-bottom-cell no-left-cell">
-											[ ] _ BONER
-										</td>
-										<td></td>
-									</tr>
-									<tr>
-										<td class="no-top-cell no-bottom-cell no-left-cell">
-											[ ] _ SKINNER
-										</td>
-										<td></td>
-									</tr>
-									<tr>
-										<td class="no-top-cell no-bottom-cell no-left-cell">
-											[ ] _ VENDOR
-										</td>
-										<td></td>
-									</tr>
-									<tr>
-										<td class="no-top-cell no-bottom-cell no-left-cell">
-											[ ] _ HAWKER
-										</td>
-										<td></td>
-									</tr>
-									<tr>
-										<td class="no-top-cell no-bottom-cell no-left-cell">
-											[ ] _ WHOLESALER
-										</td>
-										<td></td>
+										<td align="center"><b>{{ila.submission.fishery_activities.roles.fisherman.years}}</b></td>
 									</tr>
 								</table>
 								<br>
@@ -379,51 +428,129 @@
 								>
 									<tr>
 										<td class="no-top-cell no-bottom-cell no-left-cell">
-											[ ] _ ELECTRICIAN
+											<span ng-if="ila.submission.fishery_activities.roles.aquaculturist.value"><b>X</b> - </span>
+											<span ng-if="!ila.submission.fishery_activities.roles.aquaculturist.value">_ - </span>
+											AQUACULTURIST
 										</td>
-										<td style="width: 30%;"></td>
+										<td style="width: 30%;" align="center"><b>{{ila.submission.fishery_activities.roles.aquaculturist.years}}</b></td>
 									</tr>
 									<tr>
 										<td class="no-top-cell no-bottom-cell no-left-cell">
-											[ ] _ MECHANIC
+											<span ng-if="ila.submission.fishery_activities.roles.processor.value"><b>X</b> - </span>
+											<span ng-if="!ila.submission.fishery_activities.roles.processor.value">_ - </span>
+											PROCESSOR
 										</td>
-										<td style="width: 30%;"></td>
+										<td style="width: 30%;" align="center"><b>{{ila.submission.fishery_activities.roles.processor.years}}</b></td>
 									</tr>
 									<tr>
 										<td class="no-top-cell no-bottom-cell no-left-cell">
-											[ ] _ TECHNICIAN
+											<span ng-if="ila.submission.fishery_activities.roles.boner.value"><b>X</b> - </span>
+											<span ng-if="!ila.submission.fishery_activities.roles.boner.value">_ - </span>
+											BONER
 										</td>
-										<td style="width: 30%;"></td>
+										<td style="width: 30%;" align="center"><b>{{ila.submission.fishery_activities.roles.boner.years}}</b></td>
 									</tr>
 									<tr>
 										<td class="no-top-cell no-bottom-cell no-left-cell">
-											[ ] _ WELDER
+											<span ng-if="ila.submission.fishery_activities.roles.skinner.value"><b>X</b> - </span>
+											<span ng-if="!ila.submission.fishery_activities.roles.skinner.value">_ - </span>
+											SKINNER
 										</td>
-										<td style="width: 30%;"></td>
+										<td style="width: 30%;" align="center"><b>{{ila.submission.fishery_activities.roles.skinner.years}}</b></td>
 									</tr>
 									<tr>
 										<td class="no-top-cell no-bottom-cell no-left-cell">
-											[ ] _ BOAT PAINTER
+											<span ng-if="ila.submission.fishery_activities.roles.vendor.value"><b>X</b> - </span>
+											<span ng-if="!ila.submission.fishery_activities.roles.vendor.value">_ - </span>
+											VENDOR
 										</td>
-										<td style="width: 30%;"></td>
+										<td style="width: 30%;" align="center"><b>{{ila.submission.fishery_activities.roles.vendor.years}}</b></td>
 									</tr>
 									<tr>
 										<td class="no-top-cell no-bottom-cell no-left-cell">
-											[ ] _ BOAT BUILDER
+											<span ng-if="ila.submission.fishery_activities.roles.hawker.value"><b>X</b> - </span>
+											<span ng-if="!ila.submission.fishery_activities.roles.hawker.value">_ - </span>
+											HAWKER
 										</td>
-										<td style="width: 30%;"></td>
+										<td style="width: 30%;" align="center"><b>{{ila.submission.fishery_activities.roles.hawker.years}}</b></td>
 									</tr>
 									<tr>
 										<td class="no-top-cell no-bottom-cell no-left-cell">
-											[ ] _ SHIPWRIGHT
+											<span ng-if="ila.submission.fishery_activities.roles.wholesaler.value"><b>X</b> - </span>
+											<span ng-if="!ila.submission.fishery_activities.roles.wholesaler.value">_ - </span>
+											WHOLESALER
 										</td>
-										<td style="width: 30%;"></td>
+										<td style="width: 30%;" align="center"><b>{{ila.submission.fishery_activities.roles.wholesaler.years}}</b></td>
+									</tr>
+								</table>
+								<br>
+
+								<table class="no-top-td no-bottom-td no-left-td"
+									style="width: 100%;"
+								>
+									<tr>
+										<td class="no-top-cell no-bottom-cell no-left-cell">
+											<span ng-if="ila.submission.fishery_activities.roles.electrician.value"><b>X</b> - </span>
+											<span ng-if="!ila.submission.fishery_activities.roles.electrician.value">_ - </span>
+											ELECTRICIAN
+										</td>
+										<td style="width: 30%;" align="center"><b>{{ila.submission.fishery_activities.roles.electrician.years}}</b></td>
 									</tr>
 									<tr>
 										<td class="no-top-cell no-bottom-cell no-left-cell">
-											[ ] _ SURVEYOR
+											<span ng-if="ila.submission.fishery_activities.roles.mechanic.value"><b>X</b> - </span>
+											<span ng-if="!ila.submission.fishery_activities.roles.mechanic.value">_ - </span>
+											MECHANIC
 										</td>
-										<td style="width: 30%;"></td>
+										<td style="width: 30%;" align="center"><b>{{ila.submission.fishery_activities.roles.mechanic.years}}</b></td>
+									</tr>
+									<tr>
+										<td class="no-top-cell no-bottom-cell no-left-cell">
+											<span ng-if="ila.submission.fishery_activities.roles.technician.value"><b>X</b> - </span>
+											<span ng-if="!ila.submission.fishery_activities.roles.technician.value">_ - </span>
+											TECHNICIAN
+										</td>
+										<td style="width: 30%;" align="center"><b>{{ila.submission.fishery_activities.roles.technician.years}}</b></td>
+									</tr>
+									<tr>
+										<td class="no-top-cell no-bottom-cell no-left-cell">
+											<span ng-if="ila.submission.fishery_activities.roles.welder.value"><b>X</b> - </span>
+											<span ng-if="!ila.submission.fishery_activities.roles.welder.value">_ - </span>
+											WELDER
+										</td>
+										<td style="width: 30%;" align="center"><b>{{ila.submission.fishery_activities.roles.welder.years}}</b></td>
+									</tr>
+									<tr>
+										<td class="no-top-cell no-bottom-cell no-left-cell">
+											<span ng-if="ila.submission.fishery_activities.roles.boat_painter.value"><b>X</b> - </span>
+											<span ng-if="!ila.submission.fishery_activities.roles.boat_painter.value">_ - </span>
+											BOAT PAINTER
+										</td>
+										<td style="width: 30%;" align="center"><b>{{ila.submission.fishery_activities.roles.boat_painter.years}}</b></td>
+									</tr>
+									<tr>
+										<td class="no-top-cell no-bottom-cell no-left-cell">
+											<span ng-if="ila.submission.fishery_activities.roles.boat_builder.value"><b>X</b> - </span>
+											<span ng-if="!ila.submission.fishery_activities.roles.boat_builder.value">_ - </span>
+											BOAT BUILDER
+										</td>
+										<td style="width: 30%;" align="center"><b>{{ila.submission.fishery_activities.roles.boat_builder.years}}</b></td>
+									</tr>
+									<tr>
+										<td class="no-top-cell no-bottom-cell no-left-cell">
+											<span ng-if="ila.submission.fishery_activities.roles.shipwright.value"><b>X</b> - </span>
+											<span ng-if="!ila.submission.fishery_activities.roles.shipwright.value">_ - </span>
+											SHIPWRIGHT
+										</td>
+										<td style="width: 30%;" align="center"><b>{{ila.submission.fishery_activities.roles.shipwright.years}}</b></td>
+									</tr>
+									<tr>
+										<td class="no-top-cell no-bottom-cell no-left-cell">
+											<span ng-if="ila.submission.fishery_activities.roles.surveyor.value"><b>X</b> - </span>
+											<span ng-if="!ila.submission.fishery_activities.roles.surveyor.value">_ - </span>
+											SURVEYOR
+										</td>
+										<td style="width: 30%;" align="center"><b>{{ila.submission.fishery_activities.roles.surveyor.years}}</b></td>
 									</tr>
 								</table>
 							</div><!--col-sm-3-->
@@ -443,42 +570,28 @@
 												<div class="col-sm-12">
 													<table style="width: 100%;">
 														<tr>
-															<td class="center-align">
+															<th class="center-align">
 																Reg. No.
-															</td>
-															<td class="center-align">
+															</th>
+															<th class="center-align">
 																Type of Vessel
-															</td>
-															<td class="center-align">
+															</th>
+															<th class="center-align">
 																Mooring Site
-															</td>
-															<td class="center-align">
+															</th>
+															<th class="center-align">
 																Landing Site
-															</td>
-															<td class="center-align">
+															</th>
+															<th class="center-align">
 																Role on Vessel
-															</td>
+															</th>
 														</tr>
-														<tr>
-															<td><br></td>
-															<td></td>
-															<td></td>
-															<td></td>
-															<td></td>
-														</tr>
-														<tr>
-															<td><br></td>
-															<td></td>
-															<td></td>
-															<td></td>
-															<td></td>
-														</tr>
-														<tr>
-															<td><br></td>
-															<td></td>
-															<td></td>
-															<td></td>
-															<td></td>
+														<tr ng-repeat="item in ila.submission.workVessels">
+															<td ng-bind="item.registrationNo"></td>
+															<td ng-bind="item.typeVessel"></td>
+															<td ng-bind="item.mooringSite"></td>
+															<td ng-bind="item.landingSite"></td>
+															<td ng-bind="item.role"></td>
 														</tr>
 													</table>
 													<br>
@@ -488,13 +601,16 @@
 															<td>
 																<div class="row">
 																	<div class="col-sm-12">
-																		<b>Company name:</b>
+																		Company name: <br>
+																		<b>{{ila.submission.fishery_activities.companyName}}</b>
 																		<br><br><br>
-																		<b>Operating site(s):</b> _ - Home _ - Market
+																		Operating site(s):<br>
+																		 _ - Home
+																		 _ - Market
 																		<br><br>
-																		(1)
+																		(1) <b>{{ila.submission.fishery_activities.operatingSites1}}</b>
 																		<br><br>
-																		(2)
+																		(2) <b>{{ila.submission.fishery_activities.operatingSites2}}</b>
 																	</div><!--col-sm-12-->
 																</div><!--row-->
 															</td>
@@ -511,14 +627,15 @@
 																		<br><br>
 																		_ - Business Management
 																		<br><br>
-																		Other:
+																		Other: <b>{{ila.submission.fishery_activities.otherCourses}}</b>
 																	</div><!--col-sm-12-->
 																</div><!--row-->
 															</td>
 															<td>
 																<b>L / O</b>
-																<br><br><br><br><br><br><br><br><br><br>
-																Local Oversea
+																<br>
+																<br>
+																<b>{{ila.submission.fishery_activities.localOversea}}</b>
 															</td>
 														</tr>
 													</table>
@@ -545,19 +662,29 @@
 								Species:
 							</div><!--col-sm-2-->
 							<div class="col-sm-2">
-								[ ] - None
+								<span ng-if="ila.submission.fishery_activities.species.indexOf('none') == -1">_ - </span>
+				        <span ng-if="ila.submission.fishery_activities.species.indexOf('none') > -1"><b>X</b> - </span>
+								None
 							</div><!--col-sm-2-->
 							<div class="col-sm-2">
-								[ ] - Caught
+								<span ng-if="ila.submission.fishery_activities.species.indexOf('caught') == -1">_ - </span>
+				        <span ng-if="ila.submission.fishery_activities.species.indexOf('caught') > -1"><b>X</b> - </span>
+								Caught
 							</div><!--col-sm-2-->
 							<div class="col-sm-2">
-								[ ] - Farmed
+								<span ng-if="ila.submission.fishery_activities.species.indexOf('farmed') == -1">_ - </span>
+				        <span ng-if="ila.submission.fishery_activities.species.indexOf('farmed') > -1"><b>X</b> - </span>
+								Farmed
 							</div><!--col-sm-2-->
 							<div class="col-sm-2">
-								[ ] - Processed
+								<span ng-if="ila.submission.fishery_activities.species.indexOf('processed') == -1">_ - </span>
+				        <span ng-if="ila.submission.fishery_activities.species.indexOf('processed') > -1"><b>X</b> - </span>
+								Processed
 							</div><!--col-sm-2-->
 							<div class="col-sm-2">
-								[ ] - Retailed
+								<span ng-if="ila.submission.fishery_activities.species.indexOf('retailed') == -1">_ - </span>
+				        <span ng-if="ila.submission.fishery_activities.species.indexOf('retailed') > -1"><b>X</b> - </span>
+								Retailed
 							</div><!--col-sm-2-->
 						</div><!--row-->
 					</th>
@@ -567,49 +694,95 @@
 						<h5 align="center"><u><i>
 							Offshore Pelagics
 						</i></u></h5>
-						[ ] SWORDFISH<br>
-						[ ] KINGFISH<br>
-						[ ] BILLFISH<br>
-						[ ] TUNA<br>
-						[ ] SHARK<br>
-						[ ] DOLPHIN<br>
-						[ ] FLYING FISH
+						<span ng-if="ila.submission.fishery_activities.offshore.indexOf('swordfish') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.offshore.indexOf('swordfish') > -1"><b>X</b> - </span>
+						SWORDFISH<br>
+						<span ng-if="ila.submission.fishery_activities.offshore.indexOf('kingfish') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.offshore.indexOf('kingfish') > -1"><b>X</b> - </span>
+						KINGFISH<br>
+						<span ng-if="ila.submission.fishery_activities.offshore.indexOf('billfish') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.offshore.indexOf('billfish') > -1"><b>X</b> - </span>
+						BILLFISH<br>
+						<span ng-if="ila.submission.fishery_activities.offshore.indexOf('tuna') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.offshore.indexOf('tuna') > -1"><b>X</b> - </span>
+						TUNA<br>
+						<span ng-if="ila.submission.fishery_activities.offshore.indexOf('shark') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.offshore.indexOf('shark') > -1"><b>X</b> - </span>
+						SHARK<br>
+						<span ng-if="ila.submission.fishery_activities.offshore.indexOf('dolphin') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.offshore.indexOf('dolphin') > -1"><b>X</b> - </span>
+						DOLPHIN<br>
+						<span ng-if="ila.submission.fishery_activities.offshore.indexOf('flying_fish') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.offshore.indexOf('flying_fish') > -1"><b>X</b> - </span>
+						FLYING FISH
 					</td>
 					<td>
 						<h5 align="center"><u><i>
 							Coastal Pelagics
 						</i></u></h5>
-						[ ] BAIT FISH<br>
-						[ ] CAVALLY<br>
-						[ ] JACKS<br>
-						[ ] BLOWGOAT<br>
-						[ ] BARRACUDA<br>
-						[ ] BONITA
+						<span ng-if="ila.submission.fishery_activities.coastal.indexOf('bait_fish') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.coastal.indexOf('bait_fish') > -1"><b>X</b> - </span>
+						BAIT FISH<br>
+						<span ng-if="ila.submission.fishery_activities.coastal.indexOf('cavally') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.coastal.indexOf('cavally') > -1"><b>X</b> - </span>
+						CAVALLY<br>
+						<span ng-if="ila.submission.fishery_activities.coastal.indexOf('jacks') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.coastal.indexOf('jacks') > -1"><b>X</b> - </span>
+						JACKS<br>
+						<span ng-if="ila.submission.fishery_activities.coastal.indexOf('blowgoat') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.coastal.indexOf('blowgoat') > -1"><b>X</b> - </span>
+						BLOWGOAT<br>
+						<span ng-if="ila.submission.fishery_activities.coastal.indexOf('barracuda') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.coastal.indexOf('barracuda') > -1"><b>X</b> - </span>
+						BARRACUDA<br>
+						<span ng-if="ila.submission.fishery_activities.coastal.indexOf('bonita') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.coastal.indexOf('bonita') > -1"><b>X</b> - </span>
+						BONITA
 					</td>
 					<td>
 						<h5 align="center"><u><i>
 							Demersal
 						</i></u></h5>
-						[ ] SNAPPER<br>
-						[ ] POT FISH<br>
-						[ ] NINGNINGS<br>
-						[ ] TILAPIA<br>
-						[ ] ORNAMENTAL
+						<span ng-if="ila.submission.fishery_activities.demersal.indexOf('snapper') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.demersal.indexOf('snapper') > -1"><b>X</b> - </span>
+						SNAPPER<br>
+						<span ng-if="ila.submission.fishery_activities.demersal.indexOf('pot_fish') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.demersal.indexOf('pot_fish') > -1"><b>X</b> - </span>
+						POT FISH<br>
+						<span ng-if="ila.submission.fishery_activities.demersal.indexOf('ningnings') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.demersal.indexOf('ningnings') > -1"><b>X</b> - </span>
+						NINGNINGS<br>
+						<span ng-if="ila.submission.fishery_activities.demersal.indexOf('tilapia') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.demersal.indexOf('tilapia') > -1"><b>X</b> - </span>
+						TILAPIA<br>
+						<span ng-if="ila.submission.fishery_activities.demersal.indexOf('ornamental') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.demersal.indexOf('ornamental') > -1"><b>X</b> - </span>
+						ORNAMENTAL
 					</td>
 					<td>
 						<h5 align="center"><u><i>
 							Non Fin-Fish
 						</i></u></h5>
-						[ ] CONCH<br>
-						[ ] SEA EGGS<br>
-						[ ] LOBSTER<br>
-						[ ] SEA CAT<br>
-						[ ] SEA MOSS
+						<span ng-if="ila.submission.fishery_activities.nonfish.indexOf('conch') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.nonfish.indexOf('conch') > -1"><b>X</b> - </span>
+						CONCH<br>
+						<span ng-if="ila.submission.fishery_activities.nonfish.indexOf('sea_eggs') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.nonfish.indexOf('sea_eggs') > -1"><b>X</b> - </span>
+						SEA EGGS<br>
+						<span ng-if="ila.submission.fishery_activities.nonfish.indexOf('lobster') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.nonfish.indexOf('lobster') > -1"><b>X</b> - </span>
+						LOBSTER<br>
+						<span ng-if="ila.submission.fishery_activities.nonfish.indexOf('sea_cat') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.nonfish.indexOf('sea_cat') > -1"><b>X</b> - </span>
+						SEA CAT<br>
+						<span ng-if="ila.submission.fishery_activities.nonfish.indexOf('sea_moss') == -1">_ - </span>
+						<span ng-if="ila.submission.fishery_activities.nonfish.indexOf('sea_moss') > -1"><b>X</b> - </span>
+						SEA MOSS
 					</td>
 				</tr>
 				<tr>
 					<td colspan="4">
-						Other:
+						Other: <b>{{ila.submission.fishery_activities.speciesOther}}</b>
 					</td>
 				</tr>
 			</table>
@@ -625,29 +798,60 @@
 					<td>
 						<div class="row">
 							<div class="col-sm-6">
-								[ ] GILL-NETS<br>
-								[ ] SEINE NETS<br>
-								[ ] CAST NETS<br>
-								[ ] DIP NETS
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('gill-nets') == -1">_ - </span>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('gill-nets') > -1"><b>X</b> - </span>
+								GILL-NETS
+								<br>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('seine_nets') == -1">_ - </span>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('seine_nets') > -1"><b>X</b> - </span>
+								SEINE NETS
+								<br>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('cast_nets') == -1">_ - </span>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('cast_nets') > -1"><b>X</b> - </span>
+								CAST NETS
+								<br>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('dip_nets') == -1">_ - </span>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('dip_nets') > -1"><b>X</b> - </span>
+								DIP NETS
 								<br><br>
-								[ ] TRAPS<br>
-								[ ] POTS<br>
-								[ ] SPEAR GUN
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('traps') == -1">_ - </span>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('traps') > -1"><b>X</b> - </span>
+								TRAPS
+								<br>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('pots') == -1">_ - </span>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('pots') > -1"><b>X</b> - </span>
+								POTS
+								<br>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('spear_gun') == -1">_ - </span>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('spear_gun') > -1"><b>X</b> - </span>
+								SPEAR GUN
 							</div><!--col-sm-6-->
 							<div class="col-sm-6">
-								[ ] HAND LINES<br>
-								[ ] TROLLING LINES<br>
-								[ ] LONG-LINES<br>
-								[ ] BRIM LINES<br>
-								[ ] PILLAR STICK<br>
-								[ ] ROD & REEL
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('hand_lines') == -1">_ - </span>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('hand_lines') > -1"><b>X</b> - </span>
+								HAND LINES<br>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('trolling_lines') == -1">_ - </span>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('trolling_lines') > -1"><b>X</b> - </span>
+								TROLLING LINES<br>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('long-lines') == -1">_ - </span>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('long-lines') > -1"><b>X</b> - </span>
+								LONG-LINES<br>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('brim_lines') == -1">_ - </span>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('brim_lines') > -1"><b>X</b> - </span>
+								BRIM LINES<br>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('pillar-stick') == -1">_ - </span>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('pillar-stick') > -1"><b>X</b> - </span>
+								PILLAR STICK<br>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('rod_reel') == -1">_ - </span>
+								<span ng-if="ila.submission.fishery_activities.gear.indexOf('rod_reel') > -1"><b>X</b> - </span>
+								ROD & REEL
 							</div><!--col-sm-6-->
 						</div><!--row-->
 					</td>
 				</tr>
 				<tr>
 					<td>
-						Other:
+						Other: <b>{{ila.submission.fishery_activities.gearOther}}</b>
 					</td>
 				</tr>
 			</table>
@@ -663,7 +867,8 @@
 			</p>
 			<p>
 				<b>
-					Signature of Applicant ... Date (Year) (Month) (Day)
+					Signature of Applicant: <b>{{ila.submission.applicant.lastname}} {{ila.submission.applicant.middlename}} {{ila.submission.applicant.firstname}}</b>
+					Date {{ila.submission.entryDate}}
 				</b>
 			</p>
 		</div><!--col-sm-12-->
