@@ -1,0 +1,332 @@
+<div>
+  <div class="row">
+    <div class="col-sm-3 col-sm-offset-3" align="center">
+      (LOGO)
+    </div>
+    <div class="col-sm-3">
+      <h3 align="center"><b>
+        TU040
+      </b></h3>
+    </div>
+
+    <div class="col-sm-12">
+      <h3 align="center"><b>
+        Registration for Telecommunication<br>
+        Sellers and Dealers Class Licence
+      </b></h3>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h5>
+        Telecommunications Unit<br>
+        Ministry responsible for Telecommunications<br>
+        “The Business Centre”<br>
+        <b>Upton</b><br>
+        St. Michael<br>
+        Tel No:  430-2200   Fax:  426-0960
+      </h5>
+      <h5><b>
+        IMPORTANT INFORMATION
+      </b></h5>
+    </div><!--col-sm-12-->
+  </div>
+
+  <div class="row">
+    <div class="col-sm-1" align="center">
+      <p>1.</p>
+    </div><!--col-sm-1-->
+    <div class="col-sm-11">
+      <p>
+        This is a registration form for Sellers and Dealers who deal and sell telecommunication and radiocommunication equipment.
+      </p>
+    </div><!--col-sm-11-->
+  </div><!--row-->
+  <div class="row">
+    <div class="col-sm-1" align="center">
+      <p>2.</p>
+    </div><!--col-sm-1-->
+    <div class="col-sm-11">
+      <p>
+        Registration fee is $100.00 for 5 years.
+      </p>
+    </div><!--col-sm-11-->
+  </div><!--row-->
+  <div class="row">
+    <div class="col-sm-1" align="center">
+      <p>3.</p>
+    </div><!--col-sm-1-->
+    <div class="col-sm-11">
+      <p>
+        Sellers and Dealer’s Class Licence conditions.
+      </p>
+    </div><!--col-sm-11-->
+  </div><!--row-->
+  <div class="row">
+    <div class="col-sm-1" align="center">
+      <p>4.</p>
+    </div><!--col-sm-1-->
+    <div class="col-sm-11">
+      <p>
+        The application must be made by an authorised officer of the company.
+      </p>
+    </div><!--col-sm-11-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <table class="table black-border">
+        <tr>
+          <th class="active" colspan="2">
+            Company Information
+          </th>
+        </tr>
+        <tr>
+          <td width="30%">
+            <b>Name</b> (Company)
+          </td>
+          <td><b>{{ila.submission.applicant.name}}</b></td>
+        </tr>
+        <tr>
+          <td><b>Contact Person Name</b> (as in Passport)</td>
+          <td><b>{{ila.submission.applicant.contact.name}}</b></td>
+        </tr>
+        <tr>
+          <th>Contact Person Designation</th>
+          <td><b>{{ila.submission.applicant.contact.title}}</b></td>
+        </tr>
+        <tr>
+          <th>ID No.</th>
+          <td><b>{{ila.submission.applicant.contact.idNumber}}</b></td>
+        </tr>
+        <tr>
+          <th>Passport No.</th>
+          <td><b>{{ila.submission.applicant.contact.passport}}</b></td>
+        </tr>
+        <tr>
+          <th>Nationality</th>
+          <td><b>{{ila.submission.applicant.contact.nationality}}</b></td>
+        </tr>
+        <tr>
+          <th>Corporate Registration No.</th>
+          <td><b>{{ila.submission.applicant.contact.registrationNo}}</b></td>
+        </tr>
+        <tr>
+          <th>Type of Business (as registered at CAIPO)</th>
+          <td>
+            <span ng-if="ila.submission.applicant.typeBusiness!='proprietor'">[&nbsp;&nbsp;] </span>
+            <span ng-if="ila.submission.applicant.typeBusiness=='proprietor'">[<b>X</b>] </span>
+            Sole Proprietor<br>
+            <span ng-if="ila.submission.applicant.typeBusiness!='partnership'">[&nbsp;&nbsp;] </span>
+            <span ng-if="ila.submission.applicant.typeBusiness=='partnership'">[<b>X</b>] </span>
+            Partnership<br>
+            <span ng-if="ila.submission.applicant.typeBusiness!='ltd'">[&nbsp;&nbsp;] </span>
+            <span ng-if="ila.submission.applicant.typeBusiness=='ltd'">[<b>X</b>] </span>
+            Pte Ltd or Ltd
+          </td>
+        </tr>
+        <tr>
+          <th>Correspondence Address</th>
+          <td><b>{{ila.submission.applicant.contact.address}}</b></td>
+        </tr>
+        <tr>
+          <th>Business Location Address</th>
+          <td><b>{{ila.submission.applicant.address}}</b></td>
+        </tr>
+        <tr>
+          <th>Telephone No.</th>
+          <td><b>{{ila.submission.applicant.contact.work_phone}}</b></td>
+        </tr>
+        <tr>
+          <th>Fax No.</th>
+          <td><b>{{ila.submission.applicant.contact.fax}}</b></td>
+        </tr>
+        <tr>
+          <th>Pager/Cell Number</th>
+          <td><b>{{ila.submission.applicant.contact.mobile_phone}}</b></td>
+        </tr>
+        <tr>
+          <th>Is Application Submitted with Cheque</th>
+          <td>
+            <span ng-if="!ila.submission.applicant.withPayment">[&nbsp;&nbsp;] </span>
+            <span ng-if="ila.submission.applicant.withPayment">[<b>X</b>] </span>
+            Yes<br>
+            <span ng-if="ila.submission.applicant.withPayment">[&nbsp;&nbsp;] </span>
+            <span ng-if="!ila.submission.applicant.withPayment">[<b>X</b>] </span>
+            No
+          </td>
+        </tr>
+        <tr>
+          <th>Vat Registration Number</th>
+          <td><b>{{ila.submission.applicant.vat}}</b></td>
+        </tr>
+      </table>
+
+      <table class="table black-border">
+        <tr>
+          <th class="active" colspan="2">
+            Company Information (continue)
+          </th>
+        </tr>
+        <tr>
+          <th>Type of Premises</th>
+          <td>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('office') == -1">[&nbsp;&nbsp;] </span>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('office') > -1">[<b>X</b>] </span>
+            Office<br>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('retail_outlet') == -1">[&nbsp;&nbsp;] </span>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('retail_outlet') > -1">[<b>X</b>] </span>
+            Retail Outlet<br>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('showroom') == -1">[&nbsp;&nbsp;] </span>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('showroom') > -1">[<b>X</b>] </span>
+            Showroom<br>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('warehouse') == -1">[&nbsp;&nbsp;] </span>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('warehouse') > -1">[<b>X</b>] </span>
+            Warehouse
+          </td>
+        </tr>
+        <tr>
+          <th>Supplier's Name</th>
+          <td><b>{{ila.submission.supplier.name}}</b></td>
+        </tr>
+        <tr>
+          <th>Supplier's Address</th>
+          <td><b>{{ila.submission.supplier.address}}</b></td>
+        </tr>
+      </table>
+
+      <table class="table black-border">
+        <tr>
+          <td class="active" colspan="4">
+            <b>
+              Details of Specified Telecommunication Equipment
+            </b><br>
+            (Please use attachments if space provided is insufficient)
+          </td>
+        </tr>
+        <tr>
+          <th colspan="4">
+            Radio-communication Equipment
+          </th>
+        </tr>
+        <tr>
+          <th class="center-align" width="25%">
+            Type
+          </th>
+          <th class="center-align" width="25%">
+            Trade Name/Make
+          </th>
+          <th class="center-align" width="25%">
+            Model
+          </th>
+          <td width="25%"></td>
+        </tr>
+        <tr ng-repeat="item in ila.submission.communicationEquipments">
+          <td ng-bind="item.type"></td>
+          <td ng-bind="item.make"></td>
+          <td ng-bind="item.model"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th colspan="4">
+            Line Terminal Equipment
+          </th>
+        </tr>
+        <tr>
+          <th class="center-align" width="25%">
+            Type
+          </th>
+          <th class="center-align" width="25%">
+            Trade Name/Make
+          </th>
+          <th class="center-align" width="25%">
+            Model
+          </th>
+          <td width="25%"></td>
+        </tr>
+        <tr ng-repeat="item in ila.submission.terminalEquipments">
+          <td ng-bind="item.type"></td>
+          <td ng-bind="item.make"></td>
+          <td ng-bind="item.model"></td>
+          <td></td>
+        </tr>
+      </table>
+
+      <p>
+        <b>Dealer’s Class Licence Conditions:</b> Please refer to Section 56 and 57 of the Telecommunications Act 2001-36.
+      </p>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h5 align="center">
+        Schedule 1
+        <br><br>
+        Prescribed Radiocommunications and Telecommunications Apparatus
+      </h5>
+    </div><!--col-sm-12-->
+
+    <div class="col-sm-1" align="right">
+      <p>
+        1.<br>
+        2.<br>
+        3.<br>
+        4.<br>
+        5.<br>
+        6.<br>
+        7.<br>
+        8.<br>
+        9.<br>
+        10.<br>
+        11.<br>
+        12.<br>
+        13.<br>
+        14.<br>
+        15.<br>
+        16.<br>
+        17.
+      </p>
+    </div><!--col-sm-1-->
+    <div class="col-sm-11">
+      <p>
+        Telephone (Standard/Multi-Feature/Image/Data/Switching)<br>
+        Telephone Line Interface<br>
+        Telephone Ancillary<br>
+        Autodialler<br>
+        Auto Answering/Recording Set<br>
+        Caller Identification Equipment<br>
+        Security Alarm System<br>
+        Facsimile Transceiver<br>
+        Modem (Discrete or Integrated)<br>
+        Telex Equipment<br>
+        Digital Leased Circuit Equipment<br>
+        Family Radio Service (FRS) Radios<br>
+        Short Range Devices (SRDs) as approved by the Ministry<br>
+        Amateur Radio Equipment<br>
+        Bluetooth and Wireless Fidelity Equipment<br>
+        Any Radiocommunications or Telecommunications equipment currently in use by Cable & Wireless (Barbados) Limited<br>
+        Any other Radiocommunications or Telecommunications equipment as approved by the Ministry
+      </p>
+    </div><!--col-sm-11-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p>
+        I declare that all the information in this registration form is true and correct.  I understand that approval from the Ministry for this application is based on information as declared in this application.  Should this information be subsequently found to be inaccurate or incorrect, the Ministry reserves the right to suspend or revoke the Licence.
+      </p>
+    </div><!--col-sm-12-->
+
+    <div class="col-sm-6">
+      <br><br><br><br>
+      <p>Name</p> <b>{{ila.submission.submitter}}</b>
+    </div>
+    <div class="col-sm-4 col-sm-offset-2">
+      <br><br><br><br>
+      <p>Date/Company Stamp</p>
+      <b>{{ila.submission.issuedDate  | date: 'MMMM d, yyyy'}}</b>
+    </div>
+  </div><!--row-->
+</div><!--container-->

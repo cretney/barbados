@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 4c8bedb29fd9b4f27d8ee73fabc7830c78ce8059",
+  "description": "Generated from b with shasum 5f0231d32a874407459da0d970f9f39b4b5ff384",
   "type": "object",
   "required": [
     "blockId",
@@ -232,7 +232,8 @@
                 "work_phone",
                 "mobile_phone",
                 "fax",
-                "email"
+                "email",
+                "relationship"
               ],
               "properties": {
                 "name": {
@@ -254,6 +255,9 @@
                   "type": "string"
                 },
                 "email": {
+                  "type": "string"
+                },
+                "relationship": {
                   "type": "string"
                 }
               }
@@ -345,7 +349,7 @@
                 "captain",
                 "fisherman",
                 "aquaculturist",
-                "peocessor",
+                "processor",
                 "boner",
                 "skinner",
                 "vendor",
@@ -436,7 +440,7 @@
                     }
                   }
                 },
-                "peocessor": {
+                "processor": {
                   "type": "object",
                   "required": [
                     "value",

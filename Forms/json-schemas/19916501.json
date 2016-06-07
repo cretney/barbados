@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Generated from b with shasum eac7591ac40256c5d8ae86b8fb125a9820d6cf30",
+  "type": "object",
+  "required": [
+    "blockId",
+    "workflowId",
+    "formId",
+    "title",
+    "status",
+    "submission"
+  ],
+  "properties": {
+    "blockId": {
+      "type": "integer"
+    },
+    "workflowId": {
+      "type": "integer"
+    },
+    "formId": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "submission": {
+      "type": "object",
+      "required": [
+        "issuedDate",
+        "submitter",
+        "officer",
+        "permitLength",
+        "applicant"
+      ],
+      "properties": {
+        "issuedDate": {
+          "type": "string"
+        },
+        "submitter": {
+          "type": "string"
+        },
+        "officer": {
+          "type": "object",
+          "required": [
+            "name",
+            "title"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            }
+          }
+        },
+        "permitLength": {
+          "type": "integer"
+        },
+        "applicant": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

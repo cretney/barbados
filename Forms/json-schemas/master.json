@@ -793,6 +793,11 @@
               "type": "string",
               "title": "Fax",
               "description": ""
+            },
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
             }
           }
         },
@@ -845,6 +850,36 @@
             "email": {
               "type": "string",
               "title": "Email",
+              "description": ""
+            },
+            "relationship": {
+              "type": "string",
+              "title": "Relationship",
+              "description": ""
+            },
+            "title": {
+              "type": "string",
+              "title": "Title",
+              "description": ""
+            },
+            "idNumber": {
+              "type": "string",
+              "title": "Idnumber",
+              "description": ""
+            },
+            "passport": {
+              "type": "string",
+              "title": "Passport",
+              "description": ""
+            },
+            "nationality": {
+              "type": "string",
+              "title": "Nationality",
+              "description": ""
+            },
+            "registrationNo": {
+              "type": "string",
+              "title": "Registrationno",
               "description": ""
             }
           }
@@ -1023,6 +1058,31 @@
           "type": "string",
           "title": "Directors",
           "description": ""
+        },
+        "typeBusiness": {
+          "type": "string",
+          "title": "Typebusiness",
+          "description": ""
+        },
+        "vat": {
+          "type": "string",
+          "title": "Vat",
+          "description": ""
+        },
+        "withPayment": {
+          "type": "boolean",
+          "title": "Withpayment",
+          "description": ""
+        },
+        "typePremises": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
         }
       }
     },
@@ -1369,7 +1429,12 @@
           "type": "string",
           "title": "Email",
           "description": ""
-        }
+        },
+        "type": {
+          "type": "string"
+        },
+        "title": "Properties",
+        "description": ""
       }
     },
     "transporter": {
@@ -3008,6 +3073,24 @@
                   "description": ""
                 }
               }
+            },
+            "processor": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "value": {
+                  "type": "boolean",
+                  "title": "Value",
+                  "description": ""
+                },
+                "years": {
+                  "type": "integer",
+                  "title": "Years",
+                  "description": ""
+                }
+              }
             }
           }
         },
@@ -3060,6 +3143,66 @@
             "title": "Items",
             "description": ""
           }
+        },
+        "speciesOther": {
+          "type": "string",
+          "title": "Speciesother",
+          "description": ""
+        },
+        "offshore": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
+        },
+        "coastal": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
+        },
+        "demersal": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
+        },
+        "nonfish": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
+        },
+        "gear": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
+        },
+        "gearOther": {
+          "type": "string",
+          "title": "Gearother",
+          "description": ""
         }
       }
     },
@@ -3577,6 +3720,62 @@
       "type": "integer",
       "title": "Permitlength",
       "description": ""
+    },
+    "communicationEquipments": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+
+        ],
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "title": "Properties",
+          "description": "",
+          "make": {
+            "type": "string",
+            "title": "Make",
+            "description": ""
+          },
+          "model": {
+            "type": "string",
+            "title": "Model",
+            "description": ""
+          }
+        }
+      }
+    },
+    "terminalEquipments": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+
+        ],
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "title": "Properties",
+          "description": "",
+          "make": {
+            "type": "string",
+            "title": "Make",
+            "description": ""
+          },
+          "model": {
+            "type": "string",
+            "title": "Model",
+            "description": ""
+          }
+        }
+      }
     }
   }
 }

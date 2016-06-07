@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 4b560e9f83024343b9b8f63a2d3d54ffcc71bf79",
+  "description": "Generated from b with shasum a01f1226e0edb0390a2c4b5aff43bf744a50c769",
   "type": "object",
   "required": [
     "blockId",
@@ -30,13 +30,9 @@
       "type": "object",
       "required": [
         "commodities",
-        "referenceNumber",
-        "serialNumberCertificate",
-        "entryDate",
         "issuedDate",
-        "officer",
-        "swordfishAtlantic",
-        "origin",
+        "submitter",
+        "permitLength",
         "applicant",
         "supplier"
       ],
@@ -50,10 +46,7 @@
             "required": [
               "hsCode",
               "description",
-              "descriptionDetail",
-              "grossWeight",
-              "grossWeightUnits",
-              "units"
+              "quantity"
             ],
             "properties": {
               "hsCode": {
@@ -62,70 +55,20 @@
               "description": {
                 "type": "string"
               },
-              "descriptionDetail": {
-                "type": "string"
-              },
-              "grossWeight": {
+              "quantity": {
                 "type": "integer"
-              },
-              "grossWeightUnits": {
-                "type": "string"
-              },
-              "units": {
-                "type": "array",
-                "minItems": 1,
-                "uniqueItems": true,
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "unitType",
-                    "quantity"
-                  ],
-                  "properties": {
-                    "unitType": {
-                      "type": "string"
-                    },
-                    "quantity": {
-                      "type": "integer"
-                    }
-                  }
-                }
               }
             }
           }
         },
-        "referenceNumber": {
-          "type": "string"
-        },
-        "serialNumberCertificate": {
-          "type": "string"
-        },
-        "entryDate": {
-          "type": "string"
-        },
         "issuedDate": {
           "type": "string"
         },
-        "officer": {
-          "type": "object",
-          "required": [
-            "name",
-            "title"
-          ],
-          "properties": {
-            "name": {
-              "type": "string"
-            },
-            "title": {
-              "type": "string"
-            }
-          }
-        },
-        "swordfishAtlantic": {
+        "submitter": {
           "type": "string"
         },
-        "origin": {
-          "type": "string"
+        "permitLength": {
+          "type": "integer"
         },
         "applicant": {
           "type": "object",
