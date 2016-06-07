@@ -48,7 +48,7 @@
       </u></b></h5>
       <p>Name of Person/Company: <b><span ng-if="ila.submission.applicant.contactPerson.name != ''">{{ila.submission.applicant.contactPerson.name}}, </span>{{ila.submission.applicant.name}}</b></p>
       <p>Title: <b><span ng-if="ila.submission.applicant.contactPerson.title != ''">{{ila.submission.applicant.contactPerson.title}}</span></b></p>
-      <p>Total Cost: <b>Bds. ${{ila.submission.totalValue | number}}</b></p>
+      <p>Total Cost: <b>Bds. {{ila.submission.commodities | totalCif | currency}}</b></p>
     </div><!--col-sm-12-->
   </div><!--row-->
   <br><br>

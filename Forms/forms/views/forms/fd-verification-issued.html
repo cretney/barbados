@@ -1,0 +1,176 @@
+<div>
+  <div class="row">
+    <div class="col-sm-2">
+      (LOGO)
+    </div>
+    <div class="col-sm-8">
+      <h4 align="center"><b>
+        MINISTRY OF AGRICULTURE, FOOD, FISHERIES<br>
+        AND WATER RESOURCE MANAGEMENT
+      </b></h4>
+      <h6 align="center">
+        PO. BOX 505, GRAEME HALL, CHRIST CHURCH, BARBADOS, WEST INDIES
+      </h6>
+    </div>
+    <div class="col-sm-2" align="right">
+      (LOGO)
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-4">
+      <br>
+      <h6><i>
+        Our Ref: <b>{{ila.submission.referenceNumber}}</b>
+      </i></h6>
+    </div>
+    <div class="col-sm-4">
+      <br>
+      <h6><i>
+        Your Ref:
+      </i></h6>
+    </div>
+    <div class="col-sm-4" align="right">
+      <h6><i>
+        Tel: (246) 434-5000<br>
+        Minister Fax No.: (246) 428-7777<br>
+        Permanent Secretary Fax No.: (246) 420-8444
+      </i></h6>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h4 align="center"><b><u>
+        Verification of Agricultural Enterprise
+      </u></b></h4>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <p>I, <b>{{ila.submission.submitter}}</b> have visited the agricultural enterprise of
+          <b>{{ila.submission.applicant.name}}</b> at <b>{{ila.submission.applicant.address}}</b></p>
+        </div>
+
+        <div class="col-sm-12">
+          <p>
+            Tele# <b>{{ila.submission.applicant.phone}}</b> and certify that the agricultural enterprise and activities observed are the same as purported on the application for registration with the Ministry of Agriculture.
+          </p>
+        </div>
+      </div><!--row-->
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-3 col-sm-offset-1">
+      <h5><b><u>
+        CROPS
+      </u></b></h5>
+      <p ng-if="ila.submission.agTypes.crops.indexOf('vegetables') > -1">Vegetables [ <b>X</b> ]</p>
+      <p ng-if="ila.submission.agTypes.crops.indexOf('vegetables') == -1">Vegetables [ &nbsp; ]</p>
+      <br>
+      <p ng-if="ila.submission.agTypes.crops.indexOf('rootCrops') > -1">Root Crops [ <b>X</b> ]</p>
+      <p ng-if="ila.submission.agTypes.crops.indexOf('rootCrops') == -1">Root Crops [ &nbsp; ]</p>
+      <br>
+      <p ng-if="ila.submission.agTypes.crops.indexOf('legumes') > -1">Legumes [ <b>X</b> ]</p>
+      <p ng-if="ila.submission.agTypes.crops.indexOf('legumes') == -1">Legumes [ &nbsp; ]</p>
+      <br>
+      <p ng-if="ila.submission.agTypes.crops.indexOf('cereals') > -1">Cereals [ <b>X</b> ]</p>
+      <p ng-if="ila.submission.agTypes.crops.indexOf('cereals') == -1">Cereals [ &nbsp; ]</p>
+      <br>
+      <p ng-if="ila.submission.agTypes.crops.indexOf('fruitTrees') > -1">Fruit Trees [ <b>X</b> ]</p>
+      <p ng-if="ila.submission.agTypes.crops.indexOf('fruitTrees') == -1">Fruit Trees [ &nbsp; ]</p>
+      <br>
+      <p ng-if="ila.submission.agTypes.crops.indexOf('cotton') > -1">Cotton [ <b>X</b> ]</p>
+      <p ng-if="ila.submission.agTypes.crops.indexOf('cotton') == -1">Cotton [ &nbsp; ]</p>
+      <br>
+      <p ng-if="ila.submission.agTypes.crops.indexOf('sugarCane') > -1">Sugar Cane [ <b>X</b> ]</p>
+      <p ng-if="ila.submission.agTypes.crops.indexOf('sugarCane') == -1">Sugar Cane [ &nbsp; ]</p>
+      <br>
+      <p ng-if="ila.submission.agTypes.crops.indexOf('bananaPlantain') > -1">Banana/Plantain [ <b>X</b> ]</p>
+      <p ng-if="ila.submission.agTypes.crops.indexOf('bananaPlantain') == -1">Banana/Plantain [ &nbsp; ]</p>
+      <br>
+      <p ng-if="ila.submission.agTypes.crops.indexOf('herbsSpices') > -1">Herbs/Spices [ <b>X</b> ]</p>
+      <p ng-if="ila.submission.agTypes.crops.indexOf('herbsSpices') == -1">Herbs/Spices [ &nbsp; ]</p>
+      <br>
+      <p ng-if="ila.submission.agTypes.crops.indexOf('onions') > -1">Onions [ <b>X</b> ]</p>
+      <p ng-if="ila.submission.agTypes.crops.indexOf('onions') == -1">Onions [ &nbsp; ]</p>
+    </div>
+    <div class="col-sm-3 col-sm-offset-1">
+      <h5><b><u>
+        LIVESTOCK
+      </u></b></h5>
+      <p ng-if="ila.submission.agTypes.livestock.indexOf('cattle') > -1">Cattle [ <b>X</b> ]</p>
+      <p ng-if="ila.submission.agTypes.livestock.indexOf('cattle') == -1">Cattle [ &nbsp; ]</p>
+      <br>
+      <p ng-if="ila.submission.agTypes.livestock.indexOf('poultry') > -1">Poultry [ <b>X</b> ]</p>
+      <p ng-if="ila.submission.agTypes.livestock.indexOf('poultry') == -1">Poultry [ &nbsp; ]</p>
+      <br>
+      <p ng-if="ila.submission.agTypes.livestock.indexOf('rabbits') > -1">Rabbits [ <b>X</b> ]</p>
+      <p ng-if="ila.submission.agTypes.livestock.indexOf('rabbits') == -1">Rabbits [ &nbsp; ]</p>
+      <br>
+      <p ng-if="ila.submission.agTypes.livestock.indexOf('pigs') > -1">Pigs [ <b>X</b> ]</p>
+      <p ng-if="ila.submission.agTypes.livestock.indexOf('pigs') == -1">Pigs [ &nbsp; ]</p>
+      <br>
+      <p ng-if="ila.submission.agTypes.livestock.indexOf('sheep') > -1">Sheep [ <b>X</b> ]</p>
+      <p ng-if="ila.submission.agTypes.livestock.indexOf('sheep') == -1">Sheep [ &nbsp; ]</p>
+      <br>
+      <p ng-if="ila.submission.agTypes.livestock.indexOf('goats') > -1">Goats [ <b>X</b> ]</p>
+      <p ng-if="ila.submission.agTypes.livestock.indexOf('goats') == -1">Goats [ &nbsp; ]</p>
+      <br>
+      <p ng-if="ila.submission.agTypes.livestock.indexOf('pasture') > -1">Pasture [ <b>X</b> ]</p>
+      <p ng-if="ila.submission.agTypes.livestock.indexOf('pasture') == -1">Pasture [ &nbsp; ]</p>
+    </div>
+    <div class="col-sm-3 col-sm-offset-1">
+      <h5><b><u>
+        OTHER
+      </u></b></h5>
+      <p ng-if="ila.submission.agTypes.other.indexOf('api') > -1">Apiculture [ <b>X</b> ]</p>
+      <p ng-if="ila.submission.agTypes.other.indexOf('api') == -1">Apiculture [ &nbsp; ]</p>
+      <br>
+      <p ng-if="ila.submission.agTypes.other.indexOf('aqua') > -1">Aquaculture [ <b>X</b> ]</p>
+      <p ng-if="ila.submission.agTypes.other.indexOf('aqua') == -1">Aquaculture [ &nbsp; ]</p>
+      <br>
+      <p ng-if="ila.submission.agTypes.other.indexOf('horti') > -1">Horticulture [ <b>X</b> ]</p>
+      <p ng-if="ila.submission.agTypes.other.indexOf('horti') == -1">Horticulture [ &nbsp; ]</p>
+    </div>
+  </div><!--row-->
+
+  <br><br>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Any Comment: <b>{{ila.submission.remarks}}</b></p>
+      <br>
+    </div>
+
+    <div class="col-sm-8">
+      <p>Signature of Officer: <b>{{ila.submission.submitter}}</b></p><br>
+      <p>Signature of Farmer: <b>{{ila.submission.applicant.name}}</b></p>
+    </div>
+    <div class="col-sm-4">
+      <p>Date: <b>{{ila.submission.approvalDate | date:'d MMMM yyyy'}}</b></p><br>
+      <p>Date: <b>{{ila.submission.issuedDate | date:'d MMMM yyyy'}}</b></p>
+    </div>
+  </div><!--row-->
+
+  <hr class="thick">
+
+  <div class="row">
+    <div class="col-sm-4">
+      <h6>
+        Minister: Hon David Estwick<br>
+        <a href="mailto:Minister@minagriculture.gov.bb">Minister@minagriculture.gov.bb</a>
+      </h6>
+    </div>
+    <div class="col-sm-4" align="center">
+      <br>
+      <h6>Website: <i><a href="www.agriculture.gov.bb">www.agriculture.gov.bb</a></i></h6>
+    </div>
+    <div class="col-sm-4" align="right">
+      <h6>
+        Permanent Secretary: Mr. Esworth Reid<br>
+        <a href='mailto:ps@minagriculture.gov.bb'>ps@minagriculture.gov.bb</a>
+      </h6>
+    </div>
+  </div><!--row-->
+</div><!--container-->

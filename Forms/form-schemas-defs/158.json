@@ -1,0 +1,155 @@
+[
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "submitter",
+            "title": "Officer Name",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "applicant.name",
+            "title": "Farmer Name",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-8",
+        "items": [
+          {
+            "key": "applicant.address",
+            "title": "Farmer Address",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-4",
+        "items": [
+          {
+            "key": "applicant.phone",
+            "title": "Farmer Phone #",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "type": "help",
+            "helpvalue": "<h4><u>CROPS</u></h4>"
+          },
+          {
+            "key": "agTypes.crops",
+            "type": "checkboxes",
+            "title": "",
+            "titleMap": {
+              "vegetables": "Vegetables",
+              "rootCrops": "Root Crops",
+              "legumes": "Legumes",
+              "cereals": "Cereals",
+              "fruitTrees": "Fruit Trees",
+              "cotton": "Cotton",
+              "sugarCane": "Sugar Cane",
+              "bananaPlantain": "Banana/Plantain",
+              "herbsSpices": "Herbs/Spices",
+              "onions": "Onions"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "type": "help",
+            "helpvalue": "<h4><u>LIVESTOCK</u></h4>"
+          },
+          {
+            "key": "agTypes.livestock",
+            "type": "checkboxes",
+            "title": "",
+            "titleMap": {
+              "cattle": "Cattle",
+              "poultry": "Poultry",
+              "rabbits": "Rabbits",
+              "pigs": "Pigs",
+              "sheep": "Sheep",
+              "goats": "Goats",
+              "pasture": "Pasture"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "type": "help",
+            "helpvalue": "<h4><u>OTHER</u></h4>"
+          },
+          {
+            "key": "agTypes.other",
+            "type": "checkboxes",
+            "title": "",
+            "titleMap": {
+              "api": "Apiculture",
+              "aqua": "Aquaculture",
+              "horti": "Horticulture"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "remarks",
+            "type": "textarea",
+            "title": "Any Comment:",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  }
+]

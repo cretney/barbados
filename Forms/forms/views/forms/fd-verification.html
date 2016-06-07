@@ -18,107 +18,27 @@
   </div><!--row-->
 
   <div class="row">
-    <div class="col-sm-4">
-      <br>
-      <h6><i>
-        Our Ref:
-      </i></h6>
-    </div>
-    <div class="col-sm-4">
-      <br>
-      <h6><i>
-        Your Ref:
-      </i></h6>
-    </div>
-    <div class="col-sm-4" align="right">
-      <h6><i>
-        Tel: (246) 434-5000<br>
-        Minister Fax No.: (246) 428-7777<br>
-        Permanent Secretary Fax No.: (246) 420-8444
-      </i></h6>
-    </div>
-  </div><!--row-->
-
-  <div class="row">
     <div class="col-sm-12">
       <h4 align="center"><b><u>
         Verification of Agricultural Enterprise
       </u></b></h4>
-
-      <div class="row">
-        <div class="col-sm-6">
-          <p>I ...</p>
-          <p>...</p>
-        </div>
-        <div class="col-sm-6">
-          <p>have visited the agricultural enterprise of</p>
-          <p>at ...</p>
-        </div>
-
-        <div class="col-sm-12">
-          <p>
-            Tele# ... and certify that the agricultural enterprise and activities observed are the same as purported on the application for registration with the Ministry of Agriculture.
-          </p>
-        </div>
-      </div><!--row-->
     </div><!--col-sm-12-->
   </div><!--row-->
 
   <div class="row">
-    <div class="col-sm-2 col-sm-offset-1">
-      <h5 align="center"><b><u>
-        CROPS
-      </u></b></h5>
-      <p>
-        Vegetables [ ]<br><br>
-        Root Crops [ ]<br><br>
-        Legumes [ ]<br><br>
-        Cereals [ ]<br><br>
-        Fruit Trees [ ]<br><br>
-        Cotton [ ]<br><br>
-        Sugar Cane [ ]<br><br>
-        Banana/Plantain [ ]<br><br>
-        Herbs/Spices [ ]<br><br>
-        Onions [ ]
-      </p>
+    <div class="col-sm-12">
+      <div sf-schema="schema" sf-form="formdef" sf-model="form.data"></div>
     </div>
-    <div class="col-sm-2 col-sm-offset-2">
-      <h5 align="center"><b><u>
-        LIVESTOCK
-      </u></b></h5>
-      Cattle [ ]<br><br>
-      Poultry [ ]<br><br>
-      Rabbits [ ]<br><br>
-      Pigs [ ]<br><br>
-      Sheep [ ]<br><br>
-      Goats [ ]<br><br>
-      Pasture [ ]
-    </div>
-    <div class="col-sm-2 col-sm-offset-2">
-      <h5 align="center"><b><u>
-        OTHER
-      </u></b></h5>
-      Apiculture [ ]<br><br>
-      Aquaculture [ ]<br><br>
-      Horticulture [ ]
-    </div>
-  </div><!--row-->
+  </div>
 
   <div class="row">
-    <div class="col-sm-12">
-      <p>Any Comment: ...</p>
-      <p>...</p>
-      <p>...</p>
-      <br>
-    </div>
-
     <div class="col-sm-8">
-      <p>Signature of Officer: ...</p><br>
-      <p>Signature of Farmer: ...</p>
+      <p>Signature of Officer: <b>{{ila.submission.submitter}}</b></p><br>
+      <p>Signature of Farmer: <b>{{ila.submission.applicant.name}}</b></p>
     </div>
     <div class="col-sm-4">
-      <p>Date: ...</p><br>
-      <p>Date: ...</p>
+      <p>Date: <b>{{ila.submission.approvalDate | date:'d MMMM yyyy'}}</b></p><br>
+      <p>Date: <b>{{ila.submission.issuedDate | date:'d MMMM yyyy'}}</b></p>
     </div>
   </div><!--row-->
 
@@ -128,17 +48,17 @@
     <div class="col-sm-4">
       <h6>
         Minister: Hon David Estwick<br>
-        <u>Minister@minagriculture.gov.bb</u>
+        <a href="mailto:Minister@minagriculture.gov.bb">Minister@minagriculture.gov.bb</a>
       </h6>
     </div>
     <div class="col-sm-4" align="center">
       <br>
-      <h6>Website: <i><u>www.agriculture.gov.bb</u></i></h6>
+      <h6>Website: <i><a href="www.agriculture.gov.bb">www.agriculture.gov.bb</a></i></h6>
     </div>
     <div class="col-sm-4" align="right">
       <h6>
         Permanent Secretary: Mr. Esworth Reid<br>
-        ps@minagriculture.gov.bb
+        <a href='mailto:ps@minagriculture.gov.bb'>ps@minagriculture.gov.bb</a>
       </h6>
     </div>
   </div><!--row-->

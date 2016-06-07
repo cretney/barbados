@@ -116,8 +116,8 @@
   <div class="row">
     <div class="col-sm-12">
       <p>
-        Total Customs Value: <b>Bds. ${{ila.submission.totalValue | number}}
-      </b></p>
+        Total Customs Value: <b>Bds. {{ila.submission.commodities | totalCif | currency}}</b>
+      </p>
     </div><br><br>
     <div class="col-sm-4">
       <p>

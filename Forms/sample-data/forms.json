@@ -7664,7 +7664,6 @@
         ]
       }
     ],
-    "totalValue": 1234567,
     "consignments":"this is a description of the stuff",
     "carrier": {"name":"S.S. Esses", "idNumber":"ABC12345", "idNumber2":"F151515"},
     "modeTransport":"",
@@ -7754,7 +7753,6 @@
         ]
       }
     ],
-    "totalValue": 1234567,
     "consignments":"this is a description of the stuff",
     "carrier": {"name":"S.S. Esses", "idNumber":"ABC12345", "idNumber2":"F151515"},
     "modeTransport":"air",
@@ -7983,7 +7981,6 @@
         ]
       }
     ],
-    "totalValue": 1234567,
     "invoiceNumber":"IN-5646546",
     "entryDate":"2016-05-01",
     "submitter": "Barbara Greenridge",
@@ -8017,21 +8014,31 @@
   "blockId": 19915801,
   "workflowId": 99,
   "formId": 158,
-  "title": "Verification",
+  "title": "New Verification of Agricultural Enterprise",
   "status": "Draft",
   "submission": {
-    "commodities": [
-      {
-        "hsCode": "123",
-        "description": "Dog",
-        "quantity": 1
-      }
-    ],
+    "agTypes": {"crops":["rootCrops","cotton"], "livestock": ["rabbits"], "other": ["aqua"]},
+    "remarks": "The applicant is one wascally wabbit.",
     "issuedDate":"2016-05-01",
-    "submitter": "Joe Blow",
-    "permitLength": 6,
-    "applicant": {"id":4, "name":"Barbara Greenridge", "countryId":"BB", "country":"Barbados", "address":"#9 Freshwater Bay, Spring Garden, St. Michael"},
-    "supplier": {"id": 1, "name": "Joseph Smith", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+    "approvalDate": "2016-05-01",
+    "submitter": "Elmer Fudd",
+    "applicant": {"id":4, "name":"Bugs Bunny", "countryId":"BB", "country":"Barbados", "address":"#9 Freshwater Bay, Spring Garden, St. Michael", "phone":"555-5555"}
+  }
+},
+{
+  "blockId": 19915901,
+  "workflowId": 99,
+  "formId": 159,
+  "title": "Verification of Agricultural Enterprise",
+  "status": "Issued",
+  "submission": {
+    "referenceNumber": "RN-7657657",
+    "agTypes": {"crops":["rootCrops","cotton"], "livestock": ["rabbits"], "other": ["aqua"]},
+    "remarks": "The applicant is one wascally wabbit.",
+    "issuedDate":"2016-05-01",
+    "approvalDate": "2016-05-01",
+    "submitter": "Elmer Fudd",
+    "applicant": {"id":4, "name":"Bugs Bunny", "countryId":"BB", "country":"Barbados", "address":"#9 Freshwater Bay, Spring Garden, St. Michael", "phone":"555-5555"}
   }
 },
 {

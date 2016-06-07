@@ -1030,6 +1030,16 @@
      };
  	})
 
+	.filter('totalCif', function() {
+		 return function(c) {
+				 var total = 0;
+				 for (i=0; i<c.length; i++) {
+						 total = total + c[i].units[0].cifValue;
+					};
+				 return total;
+		 };
+	})
+
 	.filter('propsFilter', [function() {
   		return function(items, props) {
     		var out = [];
