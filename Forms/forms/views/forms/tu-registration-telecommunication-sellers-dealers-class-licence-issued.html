@@ -31,23 +31,43 @@
         IMPORTANT INFORMATION
       </b></h5>
     </div><!--col-sm-12-->
+  </div>
 
+  <div class="row">
     <div class="col-sm-1" align="center">
       <p>1.</p>
-      <p>2.</p>
-      <p>3.</p>
-      <p>4.</p>
     </div><!--col-sm-1-->
     <div class="col-sm-11">
       <p>
         This is a registration form for Sellers and Dealers who deal and sell telecommunication and radiocommunication equipment.
       </p>
+    </div><!--col-sm-11-->
+  </div><!--row-->
+  <div class="row">
+    <div class="col-sm-1" align="center">
+      <p>2.</p>
+    </div><!--col-sm-1-->
+    <div class="col-sm-11">
       <p>
         Registration fee is $100.00 for 5 years.
       </p>
+    </div><!--col-sm-11-->
+  </div><!--row-->
+  <div class="row">
+    <div class="col-sm-1" align="center">
+      <p>3.</p>
+    </div><!--col-sm-1-->
+    <div class="col-sm-11">
       <p>
         Sellers and Dealer’s Class Licence conditions.
       </p>
+    </div><!--col-sm-11-->
+  </div><!--row-->
+  <div class="row">
+    <div class="col-sm-1" align="center">
+      <p>4.</p>
+    </div><!--col-sm-1-->
+    <div class="col-sm-11">
       <p>
         The application must be made by an authorised officer of the company.
       </p>
@@ -66,70 +86,80 @@
           <td width="30%">
             <b>Name</b> (Company)
           </td>
-          <td></td>
+          <td><b>{{ila.submission.applicant.name}}</b></td>
         </tr>
         <tr>
           <td><b>Contact Person Name</b> (as in Passport)</td>
-          <td></td>
+          <td><b>{{ila.submission.applicant.contact.name}}</b></td>
         </tr>
         <tr>
           <th>Contact Person Designation</th>
-          <td></td>
+          <td><b>{{ila.submission.applicant.contact.title}}</b></td>
         </tr>
         <tr>
           <th>ID No.</th>
-          <td></td>
+          <td><b>{{ila.submission.applicant.contact.idNumber}}</b></td>
         </tr>
         <tr>
           <th>Passport No.</th>
-          <td></td>
+          <td><b>{{ila.submission.applicant.contact.passport}}</b></td>
         </tr>
         <tr>
           <th>Nationality</th>
-          <td></td>
+          <td><b>{{ila.submission.applicant.contact.nationality}}</b></td>
         </tr>
         <tr>
           <th>Corporate Registration No.</th>
-          <td></td>
+          <td><b>{{ila.submission.applicant.contact.registrationNo}}</b></td>
         </tr>
         <tr>
           <th>Type of Business (as registered at CAIPO)</th>
           <td>
-            [ ] Sole Proprietor<br>
-            [ ] Partnership<br>
-            [ ] Pte Ltd or Ltd
+            <span ng-if="ila.submission.applicant.typeBusiness!='proprietor'">[&nbsp;&nbsp;] </span>
+            <span ng-if="ila.submission.applicant.typeBusiness=='proprietor'">[<b>X</b>] </span>
+            Sole Proprietor<br>
+            <span ng-if="ila.submission.applicant.typeBusiness!='partnership'">[&nbsp;&nbsp;] </span>
+            <span ng-if="ila.submission.applicant.typeBusiness=='partnership'">[<b>X</b>] </span>
+            Partnership<br>
+            <span ng-if="ila.submission.applicant.typeBusiness!='ltd'">[&nbsp;&nbsp;] </span>
+            <span ng-if="ila.submission.applicant.typeBusiness=='ltd'">[<b>X</b>] </span>
+            Pte Ltd or Ltd
           </td>
         </tr>
         <tr>
           <th>Correspondence Address</th>
-          <td></td>
+          <td><b>{{ila.submission.applicant.contact.address}}</b></td>
         </tr>
         <tr>
           <th>Business Location Address</th>
-          <td></td>
+          <td><b>{{ila.submission.applicant.address}}</b></td>
         </tr>
         <tr>
           <th>Telephone No.</th>
-          <td></td>
+          <td><b>{{ila.submission.applicant.contact.work_phone}}</b></td>
         </tr>
         <tr>
           <th>Fax No.</th>
-          <td></td>
+          <td><b>{{ila.submission.applicant.contact.fax}}</b></td>
         </tr>
         <tr>
           <th>Pager/Cell Number</th>
-          <td></td>
+          <td><b>{{ila.submission.applicant.contact.mobile_phone}}</b></td>
         </tr>
         <tr>
           <th>Is Application Submitted with Cheque</th>
           <td>
-            O Yes<br>
-            O No
+            <span ng-if="!ila.submission.applicant.withPayment">[&nbsp;&nbsp;] </span>
+            <span ng-if="ila.submission.applicant.withPayment">[<b>X</b>] </span>
+            Yes<br>
+            <span ng-if="ila.submission.applicant.withPayment">[&nbsp;&nbsp;] </span>
+            <span ng-if="!ila.submission.applicant.withPayment">[<b>X</b>] </span>
+            No
           </td>
         </tr>
         <tr>
           <th>Vat Registration Number</th>
-          <td></td>
+          <td><b>{{ila.submission.applicant.vat}}</b></td>
         </tr>
       </table>
 
@@ -142,19 +172,27 @@
         <tr>
           <th>Type of Premises</th>
           <td>
-            [ ] Office<br>
-            [ ] Retail Outlet<br>
-            [ ] Showroom<br>
-            [ ] Warehouse
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('office') == -1">[&nbsp;&nbsp;] </span>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('office') > -1">[<b>X</b>] </span>
+            Office<br>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('retail_outlet') == -1">[&nbsp;&nbsp;] </span>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('retail_outlet') > -1">[<b>X</b>] </span>
+            Retail Outlet<br>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('showroom') == -1">[&nbsp;&nbsp;] </span>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('showroom') > -1">[<b>X</b>] </span>
+            Showroom<br>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('warehouse') == -1">[&nbsp;&nbsp;] </span>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('warehouse') > -1">[<b>X</b>] </span>
+            Warehouse
           </td>
         </tr>
         <tr>
           <th>Supplier's Name</th>
-          <td></td>
+          <td><b>{{ila.submission.supplier.name}}</b></td>
         </tr>
         <tr>
           <th>Supplier's Address</th>
-          <td></td>
+          <td><b>{{ila.submission.supplier.address}}</b></td>
         </tr>
       </table>
 
@@ -184,34 +222,10 @@
           </th>
           <td width="25%"></td>
         </tr>
-        <tr>
-          <td><br></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><br></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><br></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><br></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><br></td>
-          <td></td>
-          <td></td>
+        <tr ng-repeat="item in ila.submission.communicationEquipments">
+          <td ng-bind="item.type"></td>
+          <td ng-bind="item.make"></td>
+          <td ng-bind="item.model"></td>
           <td></td>
         </tr>
         <tr>
@@ -231,34 +245,10 @@
           </th>
           <td width="25%"></td>
         </tr>
-        <tr>
-          <td><br></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><br></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><br></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><br></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td><br></td>
-          <td></td>
-          <td></td>
+        <tr ng-repeat="item in ila.submission.terminalEquipments">
+          <td ng-bind="item.type"></td>
+          <td ng-bind="item.make"></td>
+          <td ng-bind="item.model"></td>
           <td></td>
         </tr>
       </table>
@@ -331,11 +321,12 @@
 
     <div class="col-sm-6">
       <br><br><br><br>
-      <p>Name</p>
+      <p>Name</p> <b>{{ila.submission.submitter}}</b>
     </div>
     <div class="col-sm-4 col-sm-offset-2">
       <br><br><br><br>
       <p>Date/Company Stamp</p>
+      <b>{{ila.submission.issuedDate  | date: 'MMMM d, yyyy'}}</b>
     </div>
   </div><!--row-->
 </div><!--container-->

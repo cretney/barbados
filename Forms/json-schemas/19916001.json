@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum c70114b3f06f83eda6bc90894166f804146278a9",
+  "description": "Generated from b with shasum 46da44e89a69e7f8a56677c42e965ea02fd78c9e",
   "type": "object",
   "required": [
     "blockId",
@@ -29,38 +29,15 @@
     "submission": {
       "type": "object",
       "required": [
-        "commodities",
         "issuedDate",
         "submitter",
         "permitLength",
         "applicant",
-        "supplier"
+        "supplier",
+        "communicationEquipments",
+        "terminalEquipments"
       ],
       "properties": {
-        "commodities": {
-          "type": "array",
-          "minItems": 1,
-          "uniqueItems": true,
-          "items": {
-            "type": "object",
-            "required": [
-              "hsCode",
-              "description",
-              "quantity"
-            ],
-            "properties": {
-              "hsCode": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "quantity": {
-                "type": "integer"
-              }
-            }
-          }
-        },
         "issuedDate": {
           "type": "string"
         },
@@ -77,7 +54,12 @@
             "name",
             "countryId",
             "country",
-            "address"
+            "address",
+            "typeBusiness",
+            "vat",
+            "withPayment",
+            "typePremises",
+            "contact"
           ],
           "properties": {
             "id": {
@@ -94,6 +76,78 @@
             },
             "address": {
               "type": "string"
+            },
+            "typeBusiness": {
+              "type": "string"
+            },
+            "vat": {
+              "type": "string"
+            },
+            "withPayment": {
+              "type": "boolean"
+            },
+            "typePremises": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            },
+            "contact": {
+              "type": "object",
+              "required": [
+                "name",
+                "title",
+                "idNumber",
+                "passport",
+                "nationality",
+                "registrationNo",
+                "address",
+                "home_phone",
+                "work_phone",
+                "mobile_phone",
+                "fax",
+                "email"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "idNumber": {
+                  "type": "string"
+                },
+                "passport": {
+                  "type": "string"
+                },
+                "nationality": {
+                  "type": "string"
+                },
+                "registrationNo": {
+                  "type": "string"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "home_phone": {
+                  "type": "string"
+                },
+                "work_phone": {
+                  "type": "string"
+                },
+                "mobile_phone": {
+                  "type": "string"
+                },
+                "fax": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                }
+              }
             }
           }
         },
@@ -121,6 +175,54 @@
             },
             "address": {
               "type": "string"
+            }
+          }
+        },
+        "communicationEquipments": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+              "type",
+              "make",
+              "model"
+            ],
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "make": {
+                "type": "string"
+              },
+              "model": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "terminalEquipments": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+              "type",
+              "make",
+              "model"
+            ],
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "make": {
+                "type": "string"
+              },
+              "model": {
+                "type": "string"
+              }
             }
           }
         }

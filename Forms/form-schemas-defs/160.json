@@ -55,7 +55,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key":"applicant.contact.name",
+            "key":"applicant.contact.idNumber",
             "title":"ID No."
           }
         ]
@@ -65,7 +65,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key":"applicant.contact.title",
+            "key":"applicant.contact.passport",
             "title":"Passport No."
           }
         ]
@@ -75,7 +75,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key":"applicant.contact.name",
+            "key":"applicant.contact.nationality",
             "title":"Nationality"
           }
         ]
@@ -85,7 +85,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key":"applicant.contact.title",
+            "key":"applicant.contact.registrationNo",
             "title":"Corporate Registration No."
           }
         ]
@@ -108,7 +108,7 @@
             "titleMap": {
                 "proprietor":"Sole Proprietor",
                 "partnership":"Partnership",
-                "ltd":"Pte Ltd or Ltd"                
+                "ltd":"Pte Ltd or Ltd"
             }
           }
         ]
@@ -122,6 +122,228 @@
   {
     "key":"applicant.address",
     "title":"Business Location Address"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"applicant.contact.work_phone",
+            "title":"Telephone No."
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"applicant.contact.fax",
+            "title":"Fax No."
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"applicant.contact.mobile_phone",
+            "title":"Pager/Cell Number"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"applicant.vat",
+            "title":"Vat Registration Number"
+          }
+        ]
+      }
+
+    ]
+  },
+  {
+    "type": "radiobuttons",
+    "key": "applicant.withPayment",
+    "title": "Is Application Submitted with Cheque?",
+    "titleMap": [
+      {
+        "value": true,
+        "name": "Y"
+      },
+      {
+        "value": false,
+        "name": "N"
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr><h5><b>COMPANY INFORMATION (CONTINUE)</b></h5>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "type": "checkboxes",
+            "key": "applicant.typePremises",
+            "title": "Type of Premises",
+            "htmlClass":"inline",
+            "titleMap": {
+                "office":"Office",
+                "retail_outlet":"Retail Outlet",
+                "showroom":"Showroom",
+                "warehouse":"Warehouse"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-5",
+        "items": [
+          {
+            "key":"supplier.name",
+            "title":"Supplier's Name"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-7",
+        "items": [
+          {
+            "key":"supplier.address",
+            "title":"Supplier's Address"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr><h5><b>DETAILS OF SPECIFIED TELECOMMUNICATION EQUIPMENT</b></h5>"
+  },
+  {
+    "type": "help",
+    "helpvalue": "<h6>(Please use attachments if space provided is insufficient)</h6>"
+  },
+  {
+    "key": "communicationEquipments",
+    "add": "Add Radio-communication Equipment",
+    "title":"Radio-communication Equipment",
+    "style": {
+      "add": "btn-success"
+    },
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "communicationEquipments[].type",
+                "title": "Type",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-4",
+            "items": [
+              {
+                "key": "communicationEquipments[].make",
+                "title": "Trade Name/Make",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-4",
+            "items": [
+              {
+                "key": "communicationEquipments[].model",
+                "title": "Model",
+                "description":""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "terminalEquipments",
+    "add": "Add Line Terminal Equipment",
+    "title":"Line Terminal Equipment",
+    "style": {
+      "add": "btn-success"
+    },
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "terminalEquipments[].type",
+                "title": "Type",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-4",
+            "items": [
+              {
+                "key": "terminalEquipments[].make",
+                "title": "Trade Name/Make",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-4",
+            "items": [
+              {
+                "key": "terminalEquipments[].model",
+                "title": "Model",
+                "description":""
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "submit",

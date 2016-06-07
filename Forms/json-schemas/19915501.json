@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 4b560e9f83024343b9b8f63a2d3d54ffcc71bf79",
+  "description": "Generated from b with shasum 4147628ee0fbfec8811ec5746cbedf9b0212cd67",
   "type": "object",
   "required": [
     "blockId",
@@ -30,14 +30,12 @@
       "type": "object",
       "required": [
         "commodities",
-        "referenceNumber",
-        "serialNumberCertificate",
+        "totalValue",
+        "invoiceNumber",
         "entryDate",
-        "issuedDate",
-        "officer",
-        "swordfishAtlantic",
-        "origin",
+        "submitter",
         "applicant",
+        "importer",
         "supplier"
       ],
       "properties": {
@@ -49,26 +47,18 @@
             "type": "object",
             "required": [
               "hsCode",
+              "name",
               "description",
-              "descriptionDetail",
-              "grossWeight",
-              "grossWeightUnits",
               "units"
             ],
             "properties": {
               "hsCode": {
                 "type": "string"
               },
+              "name": {
+                "type": "string"
+              },
               "description": {
-                "type": "string"
-              },
-              "descriptionDetail": {
-                "type": "string"
-              },
-              "grossWeight": {
-                "type": "integer"
-              },
-              "grossWeightUnits": {
                 "type": "string"
               },
               "units": {
@@ -79,13 +69,17 @@
                   "type": "object",
                   "required": [
                     "unitType",
-                    "quantity"
+                    "quantity",
+                    "cifValue"
                   ],
                   "properties": {
                     "unitType": {
                       "type": "string"
                     },
                     "quantity": {
+                      "type": "integer"
+                    },
+                    "cifValue": {
                       "type": "integer"
                     }
                   }
@@ -94,37 +88,16 @@
             }
           }
         },
-        "referenceNumber": {
-          "type": "string"
+        "totalValue": {
+          "type": "integer"
         },
-        "serialNumberCertificate": {
+        "invoiceNumber": {
           "type": "string"
         },
         "entryDate": {
           "type": "string"
         },
-        "issuedDate": {
-          "type": "string"
-        },
-        "officer": {
-          "type": "object",
-          "required": [
-            "name",
-            "title"
-          ],
-          "properties": {
-            "name": {
-              "type": "string"
-            },
-            "title": {
-              "type": "string"
-            }
-          }
-        },
-        "swordfishAtlantic": {
-          "type": "string"
-        },
-        "origin": {
+        "submitter": {
           "type": "string"
         },
         "applicant": {
@@ -134,7 +107,8 @@
             "name",
             "countryId",
             "country",
-            "address"
+            "address",
+            "contactPerson"
           ],
           "properties": {
             "id": {
@@ -150,6 +124,64 @@
               "type": "string"
             },
             "address": {
+              "type": "string"
+            },
+            "contactPerson": {
+              "type": "object",
+              "required": [
+                "name",
+                "title"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "importer": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address",
+            "docid",
+            "fax",
+            "phone",
+            "type"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "docid": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "phone": {
+              "type": "string"
+            },
+            "type": {
               "type": "string"
             }
           }
