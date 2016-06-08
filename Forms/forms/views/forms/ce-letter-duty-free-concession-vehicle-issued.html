@@ -1,0 +1,176 @@
+<div>
+  <div class="row">
+    <div class="col-sm-2">
+      (LOGO)
+    </div>
+    <div class="col-sm-8">
+      <h5 align="center">
+        <b>
+          MINISTRY OF AGRICULTURE, FOOD, FISHERIES<br>
+          AND WATER RESOURCE MANAGEMENT
+        </b>
+      </h5>
+      <h6 align="center">
+        P.O. BOX 505, GRAEME HALL, CHRIST CHURCH, BARBADOS, WEST INDIES
+      </h6>
+    </div>
+    <div class="col-sm-2" align="right">
+      (LOGO)
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-4">
+      <br>
+      <h5><i>
+        Our Ref: <b>{{ila.submission.referenceNumber}}</b>
+      </i></h5>
+    </div><!--col-sm-4-->
+    <div class="col-sm-4">
+      <br>
+      <h6 align="center"><i>
+        Your Ref: <b>{{ila.submission.referenceNumber}}</b>
+      </i></h6>
+    </div><!--col-sm-4-->
+    <div class="col-sm-4">
+      <h6 align="right"><i>
+        Tel: (246) 434-5000<br>
+        Minister Fax No.: (246) 428-7777<br>
+        Permanent Secretary Fax No.: (246) 420-8444
+      </i></h6>
+      <br><br>
+      <h5 align="center">
+        <b>{{ila.submission.issuedDate  | date: 'MMMM d, yyyy'}}</b>
+      </h5>
+    </div><!--col-sm-4-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h5>
+        <b>{{ila.submission.submitter}}</b>
+        <br><br><br>
+        Dear Sir
+      </h5>
+      <h5 align="center"><b><u>
+        Duty-Free Vehicle Concession on One (1) Agricultural Vehicle
+      </u></b></h5>
+      <p align="justify">
+        I have been directed to inform you that the Ministry of Agriculture, Food, Fisheries and Water Resource Management has granted approval for the
+        exemption of the following on the under mentioned vehicle being purchased by Mr. <b>{{ila.submission.applicant.name}}</b> to be used exclusively for agricultural purposes.
+      </p>
+    </div><!--col-sm-12-->
+
+    <div class="col-sm-1" align="right">
+      <p><b>
+        •<br>
+        •<br>
+        •
+      </b></p>
+    </div><!--col-sm-1-->
+    <div class="col-sm-11">
+      <p>
+        Import Duty as per item 37E of Part II Section B of the Customs Tariff (Amendment) Order 2009<br>
+        Environmental Levy as per S.I. 1997 No. 120 Part II Section B Item 3<br>
+        Excise Tax as per Second Schedule of the Excise Tax Act, 1996-29 Item C
+      </p>
+    </div><!--col-sm-11-->
+
+    <div class="col-sm-12">
+      <h5><u>Details</u></h5>
+    </div>
+
+    <div class="col-sm-11 col-sm-offset-1">
+      <p>
+        Make: <b>{{ila.submission.commodities[0].entries[0].vehicleBrand}}</b><br>
+        Model: <b>{{ila.submission.commodities[0].entries[0].vehicleModel}}</b><br>
+        Year: <b>{{ila.submission.commodities[0].entries[0].vehicleYear}}</b><br>
+        Engine #: <b>{{ila.submission.commodities[0].entries[0].vehicleEngine}}</b><br>
+        Serial #: <b>{{ila.submission.commodities[0].entries[0].serialNumber}}</b><br>
+        Arrival: <b>{{ila.submission.commodities[0].entries[0].dateArrival}}</b><br>
+        C.I.F. Value: <b>{{ila.submission.commodities[0].entries[0].cifValue}}</b><br>
+      </p>
+    </div><!--col-sm-11 col-sm-offset-1-->
+
+    <div class="col-sm-12">
+      <h5><u>
+        Conditions
+      </u></h5>
+    </div>
+
+    <div class="col-sm-1" align="right">
+      <p>1.</p>
+    </div>
+    <div class="col-sm-11">
+      <p>
+        The special <b>{{ila.submission.commodities[0].entries[0].identificationNumber}}</b> identification number must be affixed to both front doors of the vehicle (specimen attached).
+      </p>
+    </div>
+
+    <div class="col-sm-2 col-sm-offset-10" align="center">
+      <p>.../2.</p>
+    </div>
+  </div><!--row-->
+  <br><br>
+
+  <hr class="thick">
+
+  <div class="row">
+    <div class="col-sm-4">
+      <h6>
+        Minister: Hon David Estwick<br>
+        <u>Minister@minagriculture.gov.bb</u>
+      </h6>
+    </div>
+    <div class="col-sm-4">
+      <h6 align="center">
+        <br>
+        Website: <u>www.agriculture.gov.bb</u>
+      </h6>
+    </div>
+    <div class="col-sm-4">
+      <h6 align="right">
+        Permanent Secretary Mr. Esworth Reid<br>
+        <u>ps@minagriculture.gov.bb</u>
+      </h6>
+    </div>
+  </div><!--row-->
+
+  <!--NEXT PAGE-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h5><i>
+        Our Ref: 024/5 T708
+      </i></h5>
+      <br><br><br>
+    </div><!--col-sm-12-->
+
+    <div class="col-sm-1" align="right">
+      <p>2.</p>
+    </div>
+    <div class="col-sm-11">
+      <p align="justify">
+        The Ministry of Agriculture, Food, Fisheries and Water Resource Management, will conduct an inspection of the vehicle within five (5) working days of clearance from the port.
+      </p>
+      <br>
+      <p align="center">Yours faithfully,</p>
+      <br><br><br><br>
+      <p align="center"><b>{{ila.submission.issuedBy}}</b></p>
+      <p align="center">Chief Agricultural Officer (Ag.)</p>
+      <br><br>
+    </div><!--col-sm-11-->
+
+    <div class="col-sm-1" align="right">
+      <p>c.c.</p>
+    </div>
+    <div class="col-sm-11">
+      <p>
+        Permanent Secretary, Ministry of Finance and Economics<br>
+        Comptroller of Customs, Customs and Excise Department<br>
+        Auditor General, Auditor General’s Department<br>
+        Chief Licensing Officer, Licensing Authority
+      </p>
+    </div>
+  </div><!--row-->
+</div><!--container-->

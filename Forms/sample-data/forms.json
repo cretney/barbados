@@ -8123,21 +8123,65 @@
   "blockId": 19916201,
   "workflowId": 99,
   "formId": 162,
-  "title": "Letter - Duty-free Concession - Vehicle",
+  "title": "New Letter - Duty-free Concession - Vehicle",
   "status": "Draft",
   "submission": {
     "commodities": [
       {
         "hsCode": "123",
-        "description": "Dog",
-        "quantity": 1
+        "description": "Vehicle",
+        "quantity": 1,
+        "entries": [
+          {
+            "vehicleBrand": "Toyota",
+            "vehicleModel": "RAV4",
+            "vehicleYear": "2013",
+            "vehicleEngine": "2.5 L 4-cylinder",
+            "serialNumber":"7675757-987979",
+            "dateArrival":"2016-04-20",
+            "cifValue":22000
+          }
+        ]
       }
     ],
+    "referenceNumber":"024/5 T 708",
     "issuedDate":"2016-05-01",
     "submitter": "Joe Blow",
-    "permitLength": 6,
-    "applicant": {"id":4, "name":"Barbara Greenridge", "countryId":"BB", "country":"Barbados", "address":"#9 Freshwater Bay, Spring Garden, St. Michael"},
-    "supplier": {"id": 1, "name": "Joseph Smith", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+    "applicant": {"id":4, "name":"Joseph Smith", "countryId":"BB", "country":"Barbados", "address":"#9 Freshwater Bay, Spring Garden, St. Michael"}
+  }
+},
+{
+  "blockId": 19916301,
+  "workflowId": 99,
+  "formId": 163,
+  "title": "Letter - Duty-free Concession - Vehicle",
+  "status": "Issued",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "Vehicle",
+        "quantity": 1,
+        "entries": [
+          {
+            "vehicleBrand": "Toyota",
+            "vehicleModel": "RAV4",
+            "vehicleYear": "2013",
+            "vehicleEngine": "2.5 L 4-cylinder",
+            "serialNumber":"7675757-987979",
+            "dateArrival":"2016-04-20",
+            "cifValue":22000,
+            "identificationNumber":"FR 0000"
+          }
+        ]
+      }
+    ],
+    "submitter": "Joe Blow",
+    "issuedBy":"Ronald Simons",
+    "referenceNumber":"024/5 T 708",
+    "issuedDate":"2016-05-01",
+    "submitter": "Joe Blow",
+    "applicant": {"id":4, "name":"Joseph Smith", "countryId":"BB", "country":"Barbados", "address":"#9 Freshwater Bay, Spring Garden, St. Michael"}
   }
 },
 {

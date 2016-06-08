@@ -766,6 +766,11 @@
 				"document":"Letter - Duty-free Concession - Vehicle - Bruce Bayley, Clifton Plantation Feb.10, 2016.pdf"
 			},
 			{
+				"id": 163,
+				"template": "ce-letter-duty-free-concession-vehicle-issued.html",
+				"document":"Letter - Duty-free Concession - Vehicle - Bruce Bayley, Clifton Plantation Feb.10, 2016.pdf"
+			},
+			{
 				"id": 165,
 				"template": "su-memorandum-understanding-issued.html",
 				"document":"Memorandum of Understanding between.pdf"

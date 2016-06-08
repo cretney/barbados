@@ -1,0 +1,115 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"applicant.name",
+            "title":"Granted to",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr><h5><b>VEHICLE</b></h5>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"commodities[0].entries[0].vehicleBrand",
+            "title":"Make"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"commodities[0].entries[0].vehicleModel",
+            "title":"Model"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"commodities[0].entries[0].vehicleYear",
+            "title":"Year"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"commodities[0].entries[0].vehicleEngine",
+            "title":"Engine"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"commodities[0].entries[0].serialNumber",
+            "title":"Serial #"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"commodities[0].entries[0].dateArrival",
+            "title":"Engine"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-offset-3 col-sm-3",
+        "items": [
+          {
+            "key":"commodities[0].entries[0].cifValue",
+            "title":"CIF Value"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "submit",
+    "title": "Save"
+  }
+]
