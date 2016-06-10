@@ -1,0 +1,493 @@
+[
+  {
+    "type": "help",
+    "helpvalue": "<hr><h4><b>APPLICANT INFORMATION</b></h4>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"applicant.name",
+            "title":"Name (if individual)"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"applicant.nationality",
+            "title":"Nationality"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key":"applicant.address",
+    "title":"Address of Applicant (registered office or principal place of business"
+  },
+  {
+    "key":"applicant.mailingAddress",
+    "title":"Mailing Address (if different from registered office address)"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "type": "radios-inline",
+            "key": "applicant.typeBusiness",
+            "title": "Applicant is a (n)",
+            "titleMap": {
+              "individual":"Individual",
+              "corporation":"Corporation",
+              "unincorporated":"Unincorporated Association",
+              "partnership":"Partnership"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "type": "radios-inline",
+            "key": "typeApplication",
+            "title": "Please indicate whether this is",
+            "titleMap": {
+              "new":"a new application",
+              "modify":"an application to modify an existing licence",
+              "renew":"an application to renew a licence"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"applicant.work_phone",
+            "title":"Telephone No."
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"applicant.fax",
+            "title":"Fax No."
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"applicant.email",
+            "title":"Email"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-5",
+        "items": [
+          {
+            "key":"applicant.manager",
+            "title":"Name of Manager of entity"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<h5><b>Person in Barbados to be contacted in absence of Manager</b></h5>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-5",
+        "items": [
+          {
+            "key":"applicant.contact.name",
+            "title":"Name"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-7",
+        "items": [
+          {
+            "key":"applicant.contact.address",
+            "title":"Address"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"applicant.contact.work_phone",
+            "title":"Telephone No."
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"applicant.contact.fax",
+            "title":"Fax No."
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"applicant.contact.mobile_phone",
+            "title":"Mobile No."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"applicant.contact.email",
+            "title":"Email"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"applicant.employees",
+            "title":"Number of persons currently or to be employed by applicant",
+            "description":"Indicate the approximate number"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key":"applicant.address",
+    "title":"Business Location Address"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"applicant.contact.work_phone",
+            "title":"Telephone No."
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"applicant.contact.fax",
+            "title":"Fax No."
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"applicant.contact.mobile_phone",
+            "title":"Pager/Cell Number"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"applicant.vat",
+            "title":"Vat Registration Number"
+          }
+        ]
+      }
+
+    ]
+  },
+  {
+    "type": "radiobuttons",
+    "key": "applicant.withPayment",
+    "title": "Is Application Submitted with Cheque?",
+    "titleMap": [
+      {
+        "value": true,
+        "name": "Y"
+      },
+      {
+        "value": false,
+        "name": "N"
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "type": "checkboxes",
+            "key": "applicant.typePremises",
+            "title": "Type of Premises",
+            "htmlClass":"inline",
+            "titleMap": {
+                "office":"Office",
+                "retail_outlet":"Retail Outlet",
+                "showroom":"Showroom",
+                "warehouse":"Warehouse"
+            }
+          }
+        ]
+      }
+    ]
+  },
+
+
+
+
+
+
+
+  {
+  "type": "section",
+  "htmlClass": "row",
+  "items": [
+    {
+      "type": "section",
+      "htmlClass": "col-sm-5",
+      "items": [
+        {
+          "key":"supplier.name",
+          "title":"Supplier's Name"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "htmlClass": "col-sm-7",
+      "items": [
+        {
+          "key":"supplier.address",
+          "title":"Supplier's Address"
+        }
+      ]
+    }
+  ]
+},
+  {
+  "type": "section",
+  "htmlClass": "row",
+  "items": [
+    {
+      "type": "section",
+      "htmlClass": "col-sm-3",
+      "items": [
+        {
+          "key":"applicant.vat",
+          "title":"Vat Registration Number"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "htmlClass": "col-sm-3",
+      "items": [
+        {
+          "key":"applicant.coorporateRegistrationNo",
+          "title":"Coorporate Registration No"
+        }
+      ]
+    }
+  ]
+},
+{
+  "type": "help",
+  "helpvalue": "<hr><h4>PART B: TECHNICAL INFORMATION</h4>"
+},
+{
+  "type": "help",
+  "helpvalue": "<h5><b>DETAILS OF SPECIFIED TELECOMMUNICATION EQUIPMENT</b></h5>"
+},
+{
+  "type": "help",
+  "helpvalue": "<h6>(Please use attachments if space provided is insufficient)</h6>"
+},
+{
+  "key": "communicationEquipments",
+  "add": "Add Radio-communication Equipment",
+  "title":"Radio-communication Equipment",
+  "style": {
+    "add": "btn-success"
+  },
+  "items": [
+    {
+      "type": "section",
+      "htmlClass": "row",
+      "items": [
+        {
+          "type": "section",
+          "htmlClass": "col-sm-3",
+          "items": [
+            {
+              "key": "communicationEquipments[].type",
+              "title": "Type",
+              "description":""
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "htmlClass": "col-sm-4",
+          "items": [
+            {
+              "key": "communicationEquipments[].make",
+              "title": "Trade Name/Make",
+              "description":""
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "htmlClass": "col-sm-4",
+          "items": [
+            {
+              "key": "communicationEquipments[].model",
+              "title": "Model",
+              "description":""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
+{
+  "key": "terminalEquipments",
+  "add": "Add Line Terminal Equipment",
+  "title":"Line Terminal Equipment",
+  "style": {
+    "add": "btn-success"
+  },
+  "items": [
+    {
+      "type": "section",
+      "htmlClass": "row",
+      "items": [
+        {
+          "type": "section",
+          "htmlClass": "col-sm-3",
+          "items": [
+            {
+              "key": "terminalEquipments[].type",
+              "title": "Type",
+              "description":""
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "htmlClass": "col-sm-4",
+          "items": [
+            {
+              "key": "terminalEquipments[].make",
+              "title": "Trade Name/Make",
+              "description":""
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "htmlClass": "col-sm-4",
+          "items": [
+            {
+              "key": "terminalEquipments[].model",
+              "title": "Model",
+              "description":""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+},
+{
+  "type": "submit",
+  "title": "Save"
+}
+]

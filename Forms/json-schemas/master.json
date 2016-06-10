@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum c84bdf5eea36b61852f116e64aaf0c6874db05aa",
+  "description": "Generated from b with shasum 6f9be46fce81f2ed059c3161e1e1506d512804d2",
   "type": "object",
   "required": [
 
@@ -240,6 +240,26 @@
                 "costCIF": {
                   "type": "number",
                   "title": "Costcif",
+                  "description": ""
+                },
+                "serialNumber": {
+                  "type": "string",
+                  "title": "Serialnumber",
+                  "description": ""
+                },
+                "dateArrival": {
+                  "type": "date-time",
+                  "title": "Datearrival",
+                  "description": ""
+                },
+                "cifValue": {
+                  "type": "integer",
+                  "title": "Customs Value",
+                  "description": "In Barbados Dollars"
+                },
+                "identificationNumber": {
+                  "type": "string",
+                  "title": "Identificationnumber",
                   "description": ""
                 }
               }
@@ -1083,6 +1103,11 @@
             "title": "Items",
             "description": ""
           }
+        },
+        "mailingAddress": {
+          "type": "string",
+          "title": "Mailingaddress",
+          "description": ""
         }
       }
     },
@@ -3688,11 +3713,6 @@
       "title": "Comments",
       "description": ""
     },
-    "totalValue": {
-      "type": "integer",
-      "title": "Totalvalue",
-      "description": ""
-    },
     "consignments": {
       "type": "string",
       "title": "Consignments",
@@ -3720,6 +3740,49 @@
       "type": "integer",
       "title": "Permitlength",
       "description": ""
+    },
+    "totalValue": {
+      "type": "integer",
+      "title": "Totalvalue",
+      "description": ""
+    },
+    "agTypes": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "crops": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
+        },
+        "livestock": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
+        },
+        "other": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
+        }
+      }
     },
     "communicationEquipments": {
       "type": "array",

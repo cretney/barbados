@@ -112,7 +112,7 @@
       "priority": "high",
       "type": "pga",
       "website": "http://drugservice.health.gov.bb",
-      "logo_url": "http://drugservice.health.gov.bb/public/images/Ministry_of_Health_%20Logo.png",
+      "logo_url": "/images/pga-bds-logo.png",
       "address": "6th Floor, Warrens Tower II, Warrens St. Michael",
       "parent_ministry": "Ministry of Health",
       "latitude": "13.145202",
@@ -968,20 +968,8 @@
       "purpose": "W"
     },
     {
-      "id": 32,
-      "name": "Request for Plant Inspection Letter.pdf",
-      "processType": "I",
-      "purpose": "W"
-    },
-    {
       "id": 45,
       "name": "Permit to import Dairy Products.pdf",
-      "processType": "I",
-      "purpose": "B"
-    },
-    {
-      "id": 46,
-      "name": "Permit to Import Animals and Birds into Barbados.pdf",
       "processType": "I",
       "purpose": "B"
     },
@@ -1301,13 +1289,33 @@
       ]
     },
     {
+      "id": 52,
+      "readonly": false,
+      "name": "DF Certificate for Postman",
+      "description": "DF Certificate for Postman",
+      "fileName": "ce-certificate-postman.html",
+      "document_ids": [
+
+      ]
+    },
+    {
+      "id": 56,
+      "readonly": false,
+      "name": "Duty Free Application Letter Taxi",
+      "description": "Duty Free Letter Taxi",
+      "fileName": "ce-application-letter-taxi.html",
+      "document_ids": [
+
+      ]
+    },
+    {
       "id": 46,
       "readonly": false,
       "name": "New Landing Certificate for Animals",
       "description": "Landing Certificate",
       "fileName": "dcca-import-static.html",
       "document_ids": [
-        46
+
       ]
     },
     {
@@ -1317,37 +1325,7 @@
       "description": "Landing Certificate",
       "fileName": "dcca-import-static.html",
       "document_ids": [
-        46
-      ]
-    },
-    {
-      "id": 32,
-      "readonly": true,
-      "name": "Phitosanitary Inspection Certificate for Import Release",
-      "description": "Phitosanitary Inspection Certificate",
-      "fileName": "bidc-coo-static.html",
-      "document_ids": [
-        27
-      ]
-    },
-    {
-      "id": 48,
-      "readonly": false,
-      "name": "New Request for Plant Inspection Letter",
-      "description": "Plant Inspection Letter",
-      "fileName": "plant-request-inspection-letter.html",
-      "document_ids": [
-        32
-      ]
-    },
-    {
-      "id": 49,
-      "readonly": false,
-      "name": "Request for Plant Inspection Letter",
-      "description": null,
-      "fileName": "plant-request-inspection-letter-issued.html",
-      "document_ids": [
-        32
+
       ]
     }
   ],
@@ -1518,19 +1496,7 @@
       "id": 26,
       "name": "VetAnimDomestic",
       "owner": "Vet Services",
-      "pga_owner_id": 6,
-      "document_id": 46,
-      "processType": "I",
-      "purpose": "B"
-    },
-    {
-      "id": 28,
-      "name": "PlantPostArrival",
-      "owner": "Plant Quarantine",
-      "pga_owner_id": 7,
-      "document_id": 27,
-      "processType": "I",
-      "purpose": "W"
+      "pga_owner_id": 6
     },
     {
       "id": 29,
@@ -1558,6 +1524,12 @@
       "document_id": 68,
       "processType": "I",
       "purpose": "B"
+    },
+    {
+      "id": 32,
+      "name": "ConExemp",
+      "owner": "Concessions & Exemptions",
+      "pga_owner_id": 5
     }
   ],
   "workflow_interactions": [
@@ -2129,29 +2101,6 @@
       "description": null
     },
     {
-      "workflow_id": 28,
-      "step": 15,
-      "form_id": 48,
-      "title": "New Request for Plant Inspection Letter",
-      "description": "Plant Inspection Letter"
-    },
-    {
-      "workflow_id": 28,
-      "step": 16,
-      "form_id": 49,
-      "pga_id": 7,
-      "title": "Request for Plant Inspection Letter",
-      "description": "Plant Inspection Letter"
-    },
-    {
-      "workflow_id": 28,
-      "step": 20,
-      "form_id": 32,
-      "pga_id": 7,
-      "title": "Phitosanitary Inspection Certificate for Import Release",
-      "description": "Phitosanitary Inspection Certificate"
-    },
-    {
       "workflow_id": 29,
       "step": 9,
       "form_id": 35,
@@ -2194,6 +2143,22 @@
       "pga_id": 5,
       "title": "Unwholesome Food Certificate",
       "description": "Food is unfit for human consumption"
+    },
+    {
+      "workflow_id": 32,
+      "step": 1,
+      "form_id": 52,
+      "pga_id": 18,
+      "title": "DF Certificate for Postman",
+      "description": ""
+    },
+    {
+      "workflow_id": 32,
+      "step": 1,
+      "form_id": 56,
+      "pga_id": 18,
+      "title": "Duty Free Application Letter Taxi",
+      "description": ""
     }
   ],
   "hscodes_workflows": [
@@ -4391,481 +4356,6 @@
       "hscode": "22.09 ",
       "id": 25,
       "notes": "Vinegar and substitutes for vinegar obtained from acetic acid"
-    },
-    {
-      "hscode": "060110 00 000 ",
-      "id": 28,
-      "notes": "Bulbs, tubers, tuberous roots, corms, crowns and rhizomes, dormant"
-    },
-    {
-      "hscode": "060120 10 000 ",
-      "id": 28,
-      "notes": "Bulbs, tubers, tuberous roots, corms, crowns and rhizomes. in growth or in flower"
-    },
-    {
-      "hscode": "060120 20 000 ",
-      "id": 28,
-      "notes": "Chicory plants"
-    },
-    {
-      "hscode": "060120 90 000 ",
-      "id": 28,
-      "notes": "Other, Bulbs, tubers, tuberous roots, corms. crowns and rhizomes, dormant in growth or in flower"
-    },
-    {
-      "hscode": "060210 00 000 ",
-      "id": 28,
-      "notes": "Unrooted cuttings and slips"
-    },
-    {
-      "hscode": "060220 00 000 ",
-      "id": 28,
-      "notes": "Trees, shrubs and bushes, grafted or not, of kinds which bear edible fruit or nuts"
-    },
-    {
-      "hscode": "060230 00 000 ",
-      "id": 28,
-      "notes": "Rhododendrons and azaleas, grafted or not"
-    },
-    {
-      "hscode": "060240 00 000 ",
-      "id": 28,
-      "notes": "Roses, grafted or not"
-    },
-    {
-      "hscode": "060290 10 000 ",
-      "id": 28,
-      "notes": "Banana plants"
-    },
-    {
-      "hscode": "060290 20 000 ",
-      "id": 28,
-      "notes": "Coconut plants"
-    },
-    {
-      "hscode": "060290 30 000 ",
-      "id": 28,
-      "notes": "Cocoa plants"
-    },
-    {
-      "hscode": "060290 40 000 ",
-      "id": 28,
-      "notes": "Citrus plants"
-    },
-    {
-      "hscode": "060290 90 000 ",
-      "id": 28,
-      "notes": "Other plants"
-    },
-    {
-      "hscode": "060310 10 000 ",
-      "id": 28,
-      "notes": "Anthuriums"
-    },
-    {
-      "hscode": "060310 20 000 ",
-      "id": 28,
-      "notes": "Roses"
-    },
-    {
-      "hscode": "060310 30 000 ",
-      "id": 28,
-      "notes": "Chrysanthemums"
-    },
-    {
-      "hscode": "060310 40 000 ",
-      "id": 28,
-      "notes": "Ginger lilies"
-    },
-    {
-      "hscode": "060310 50 000 ",
-      "id": 28,
-      "notes": "Gerberas"
-    },
-    {
-      "hscode": "060310 60 000 ",
-      "id": 28,
-      "notes": "Heliconias (Heliconia spp.)"
-    },
-    {
-      "hscode": "060310 70 000 ",
-      "id": 28,
-      "notes": "Orchids"
-    },
-    {
-      "hscode": "060310 90 000 ",
-      "id": 28,
-      "notes": "Other, live trees and other plants, bulbs, roots, and the like"
-    },
-    {
-      "hscode": "060390 00 000 ",
-      "id": 28,
-      "notes": "Other, cut flowers and flower buds of a kind suitable for bouquets or for ornamental purposes, fresh, dried, dyed, bleached, impregnated or otherwise prepared"
-    },
-    {
-      "hscode": "060410 00 000 ",
-      "id": 28,
-      "notes": "Mosses and lichens"
-    },
-    {
-      "hscode": "060491 00 000 ",
-      "id": 28,
-      "notes": "Fresh"
-    },
-    {
-      "hscode": "060499 00 000 ",
-      "id": 28,
-      "notes": "Other, foliage, branches and other parts of plants, without flowers or flower buds, and grasses, mosses and lichens. being goods of a kind suitable for bouquets or for ornamental purposes, fresh, dried, dyed, bleached, impregnated or otherwise"
-    },
-    {
-      "hscode": "070110 00 000 ",
-      "id": 28,
-      "notes": "Potatoes, seed fresh or chilled"
-    },
-    {
-      "hscode": "070190 00 000 ",
-      "id": 28,
-      "notes": "Other potatoes, fresh or chilled"
-    },
-    {
-      "hscode": "070200 00 000 ",
-      "id": 28,
-      "notes": "Tomatoes, fresh or chilled."
-    },
-    {
-      "hscode": "070310 10 000 ",
-      "id": 28,
-      "notes": "Onions"
-    },
-    {
-      "hscode": "070310 20 000 ",
-      "id": 28,
-      "notes": "Shallots (eschallots)"
-    },
-    {
-      "hscode": "070320 00 000 ",
-      "id": 28,
-      "notes": "Garlic"
-    },
-    {
-      "hscode": "070390 00 000 ",
-      "id": 28,
-      "notes": "Leeks and other alliaceous vegetables"
-    },
-    {
-      "hscode": "070410 10 000 ",
-      "id": 28,
-      "notes": "Cauliflowers"
-    },
-    {
-      "hscode": "070410 90 000 ",
-      "id": 28,
-      "notes": "Other, headed broccoli"
-    },
-    {
-      "hscode": "070420 00 000 ",
-      "id": 28,
-      "notes": "Brussels sprouts"
-    },
-    {
-      "hscode": "070490 10 000 ",
-      "id": 28,
-      "notes": "Cabbages"
-    },
-    {
-      "hscode": "070490 90 000 ",
-      "id": 28,
-      "notes": "Other, kohlrabi, kale"
-    },
-    {
-      "hscode": "070511 00 000 ",
-      "id": 28,
-      "notes": "Cabbage lettuce (head lettuce)"
-    },
-    {
-      "hscode": "070519 00 000 ",
-      "id": 28,
-      "notes": "Other, similar edible brassicas, fresh or chilled"
-    },
-    {
-      "hscode": "070521 00 000 ",
-      "id": 28,
-      "notes": "Witloof chicory (Chichorium intybus var. foliosum)"
-    },
-    {
-      "hscode": "070529 00 000 ",
-      "id": 28,
-      "notes": "Other fresh or chilled"
-    },
-    {
-      "hscode": "070610 10 000 ",
-      "id": 28,
-      "notes": "Carrots"
-    },
-    {
-      "hscode": "070610 90 000 ",
-      "id": 28,
-      "notes": "Other, salad beetroot, salsify, celeriac, radishes and similar edible roots, fresh or chilled"
-    },
-    {
-      "hscode": "070690 10 000 ",
-      "id": 28,
-      "notes": "Beets"
-    },
-    {
-      "hscode": "070690 90 000 ",
-      "id": 28,
-      "notes": "Other, edible roots, fresh or chilled"
-    },
-    {
-      "hscode": "070700 10 000 ",
-      "id": 28,
-      "notes": "Cucumbers"
-    },
-    {
-      "hscode": "070700 20 000 ",
-      "id": 28,
-      "notes": "Gherkins"
-    },
-    {
-      "hscode": "070810 10 000 ",
-      "id": 28,
-      "notes": "Pigeon peas"
-    },
-    {
-      "hscode": "070810 20 000 ",
-      "id": 28,
-      "notes": "Blackeye peas"
-    },
-    {
-      "hscode": "070810 90 000 ",
-      "id": 28,
-      "notes": "Other peas"
-    },
-    {
-      "hscode": "070820 10 000 ",
-      "id": 28,
-      "notes": "String beans"
-    },
-    {
-      "hscode": "070820 20 000 ",
-      "id": 28,
-      "notes": "Bora (bodi) beans (Vigna spp.)"
-    },
-    {
-      "hscode": "070820 90 000 ",
-      "id": 28,
-      "notes": "Other leguminous vegetables"
-    },
-    {
-      "hscode": "070890 00 000 ",
-      "id": 28,
-      "notes": "Other leguminous vegetables, shelled or unshelled, fresh or chilled 070910 00 000 Globe artichokes"
-    },
-    {
-      "hscode": "070920 00 000 ",
-      "id": 28,
-      "notes": "Asparagus"
-    },
-    {
-      "hscode": "070930 00 000 ",
-      "id": 28,
-      "notes": "Aubergines (egg-plants)"
-    },
-    {
-      "hscode": "070940 00 000 ",
-      "id": 28,
-      "notes": "Celery and other celeriac"
-    },
-    {
-      "hscode": "07095100000 ",
-      "id": 28,
-      "notes": "Mushrooms of the genus Agaricus"
-    },
-    {
-      "hscode": "070952 00 000 ",
-      "id": 28,
-      "notes": "Trumes"
-    },
-    {
-      "hscode": "070959 00 000 ",
-      "id": 28,
-      "notes": "Other, vegetables, fresh or chilled"
-    },
-    {
-      "hscode": "070960 10 000 ",
-      "id": 28,
-      "notes": "Sweet peppers"
-    },
-    {
-      "hscode": "070960 90 000 ",
-      "id": 28,
-      "notes": "Other peppers, fresh or chilled"
-    },
-    {
-      "hscode": "070970 00 000 ",
-      "id": 28,
-      "notes": "Spinach, New Zealand spinach and orache spinach (garden spinach) 070990 10 000 Zucchini"
-    },
-    {
-      "hscode": "070990 20 000 ",
-      "id": 28,
-      "notes": "Ochroes"
-    },
-    {
-      "hscode": "070990 30 000 ",
-      "id": 28,
-      "notes": "Pumpkins"
-    },
-    {
-      "hscode": "070990 40 000 ",
-      "id": 28,
-      "notes": "Sweet corn (corn on the cob)"
-    },
-    {
-      "hscode": "070990 90 000 ",
-      "id": 28,
-      "notes": "Other, vegetables, fresh or chilled"
-    },
-    {
-      "hscode": "071010 00 000 ",
-      "id": 28,
-      "notes": "Potatoes, uncooked or cooked by steaming or boiling in water), frozen 071021 10 000 Garden peas for use in industry"
-    },
-    {
-      "hscode": "071021 20 000 ",
-      "id": 28,
-      "notes": "Other peas for use in industry"
-    },
-    {
-      "hscode": "07102190000 ",
-      "id": 28,
-      "notes": "Other, leguminous vegetables, shelled or unshelled"
-    },
-    {
-      "hscode": "071022 10 000 ",
-      "id": 28,
-      "notes": "String beans, for use in industry"
-    },
-    {
-      "hscode": "071022 20 000 ",
-      "id": 28,
-      "notes": "Other beans for use in industry"
-    },
-    {
-      "hscode": "071022 90 000 ",
-      "id": 28,
-      "notes": "Other"
-    },
-    {
-      "hscode": "071029 10 000 ",
-      "id": 28,
-      "notes": "For use in industry"
-    },
-    {
-      "hscode": "071029 90 000 ",
-      "id": 28,
-      "notes": "Other"
-    },
-    {
-      "hscode": "071030 10 000 ",
-      "id": 28,
-      "notes": "For use in industry"
-    },
-    {
-      "hscode": "071030 90 000 ",
-      "id": 28,
-      "notes": "Other"
-    },
-    {
-      "hscode": "071040 10 000 ",
-      "id": 28,
-      "notes": "For use in industry"
-    },
-    {
-      "hscode": "071040 90 000 ",
-      "id": 28,
-      "notes": "Other"
-    },
-    {
-      "hscode": "071080 ",
-      "id": 28,
-      "notes": "I 0 000 Beets, for use in industry"
-    },
-    {
-      "hscode": "071080 20 000 ",
-      "id": 28,
-      "notes": "Beets, other"
-    },
-    {
-      "hscode": "071080 30 000 ",
-      "id": 28,
-      "notes": "Carrots, for use in industry"
-    },
-    {
-      "hscode": "071080 40 000 ",
-      "id": 28,
-      "notes": "Carrots, other"
-    },
-    {
-      "hscode": "071080 80 000 ",
-      "id": 28,
-      "notes": "Other, for use in industry"
-    },
-    {
-      "hscode": "071080 90 000 ",
-      "id": 28,
-      "notes": "Other"
-    },
-    {
-      "hscode": "071090 90 000 ",
-      "id": 28,
-      "notes": "Other, for use in industry"
-    },
-    {
-      "hscode": "071120 00 000 ",
-      "id": 28,
-      "notes": "Olives"
-    },
-    {
-      "hscode": "071130 00 000 ",
-      "id": 28,
-      "notes": "Capers"
-    },
-    {
-      "hscode": "071140 00 000 ",
-      "id": 28,
-      "notes": "Cucumbers and gherkins"
-    },
-    {
-      "hscode": "071151 00 000 ",
-      "id": 28,
-      "notes": "Mushrooms of the genus Agaricus"
-    },
-    {
-      "hscode": "071159 00 000 ",
-      "id": 28,
-      "notes": "Other vegetables; mixtures ofvegetables"
-    },
-    {
-      "hscode": "071190 00 000 ",
-      "id": 28,
-      "notes": "Other vegetables"
-    },
-    {
-      "hscode": "071220 00 000 ",
-      "id": 28,
-      "notes": "Onions"
-    },
-    {
-      "hscode": "07123100000 ",
-      "id": 28,
-      "notes": "Mushrooms of the genus Agaricus"
-    },
-    {
-      "hscode": "071232 00 000 ",
-      "id": 28,
-      "notes": "Wood ears (Auricularia spp.)"
     },
     {
       "hscode": "01.05 ",

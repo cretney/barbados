@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum cbdc150f6382f701887139ffc866e29ebefed24e",
+  "description": "Generated from b with shasum 71be0eb441fed409aacc64c360aaa424b8549dea",
   "type": "object",
   "required": [
     "blockId",
@@ -30,7 +30,6 @@
       "type": "object",
       "required": [
         "commodities",
-        "totalValue",
         "consignments",
         "carrier",
         "modeTransport",
@@ -89,9 +88,6 @@
               }
             }
           }
-        },
-        "totalValue": {
-          "type": "integer"
         },
         "consignments": {
           "type": "string"

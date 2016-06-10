@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 4147628ee0fbfec8811ec5746cbedf9b0212cd67",
+  "description": "Generated from b with shasum 1912088a9d50ab234ed0edf1d76b177a120274df",
   "type": "object",
   "required": [
     "blockId",
@@ -30,7 +30,6 @@
       "type": "object",
       "required": [
         "commodities",
-        "totalValue",
         "invoiceNumber",
         "entryDate",
         "submitter",
@@ -87,9 +86,6 @@
               }
             }
           }
-        },
-        "totalValue": {
-          "type": "integer"
         },
         "invoiceNumber": {
           "type": "string"

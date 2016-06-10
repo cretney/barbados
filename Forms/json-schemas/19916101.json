@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 53a7525e8f110ebb9323b93581756d498d4af953",
+  "description": "Generated from b with shasum f9b620465bff7e93c652fd3497a372f42798d418",
   "type": "object",
   "required": [
     "blockId",
@@ -55,8 +55,6 @@
             "countryId",
             "country",
             "address",
-            "mailingAddress",
-            "nationality",
             "typeBusiness",
             "vat",
             "withPayment",
@@ -77,12 +75,6 @@
               "type": "string"
             },
             "address": {
-              "type": "string"
-            },
-            "mailingAddress": {
-              "type": "string"
-            },
-            "nationality": {
               "type": "string"
             },
             "typeBusiness": {

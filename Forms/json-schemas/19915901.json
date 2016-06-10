@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum e1e1c028a93a32836c3e548e0ad9e68396b072ea",
+  "description": "Generated from b with shasum 4801d80e1dc3a972afd8af4f82c3f1ab055ed113",
   "type": "object",
   "required": [
     "blockId",
@@ -29,6 +29,7 @@
     "submission": {
       "type": "object",
       "required": [
+        "referenceNumber",
         "agTypes",
         "remarks",
         "issuedDate",
@@ -37,6 +38,9 @@
         "applicant"
       ],
       "properties": {
+        "referenceNumber": {
+          "type": "string"
+        },
         "agTypes": {
           "type": "object",
           "required": [

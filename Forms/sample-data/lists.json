@@ -779,6 +779,11 @@
 				"id": 166,
 				"template": "tu-application-telecommunications-sellers-dealers-individual-licence.html",
 				"document":"Application for Telecommunications  Sellers and  Dealer’s (Individual) Licence.pdf"
+			},
+			{
+				"id": 167,
+				"template": "tu-application-telecommunications-sellers-dealers-individual-licence-issued.html",
+				"document":"Application for Telecommunications  Sellers and  Dealer’s (Individual) Licence.pdf"
 			}
 		]
 	},

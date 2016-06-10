@@ -17,19 +17,350 @@
       <h5 align="right"><b>
         TU012
       </b></h5>
-    </div><!--col-sm-12-->
-  </div><!--row-->
 
+      <!--PART A-->
+      <table class="table black-border">
+        <tr>
+          <th colspan="2">
+            <h3 align="center"><b>
+              APPLICATION FOR TELECOMMUNICATIONS SELLERS<br>
+              AND DEALER’S (INDIVIDUAL) LICENCE
+            </b></h3>
+            <h4><b>
+              <br>
+              PART A:  APPLICANT INFORMATION
+            </b></h4>
+            <h5 align="center"><b><i>
+              <br>
+              (Please read the Notes provided at the back of this Form before completion)
+            </i></b></h5>
+          </th>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="row">
+              <div class="col-sm-1" align="center">
+                1.
+              </div>
+              <div class="col-sm-11">
+                Name <i>(if individual):</i> <b>{{ila.submission.applicant.name}}</b>
+              </div>
+            </div><!--row-->
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="row">
+              <div class="col-sm-1" align="center">
+                2.
+              </div>
+              <div class="col-sm-11">
+                Nationality <i>(if individual):</i> <b>{{ila.submission.applicant.nationality}}</b>
+              </div>
+            </div><!--row-->
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="row">
+              <div class="col-sm-1" align="center">
+                3.
+              </div>
+              <div class="col-sm-11">
+                Address of Applicant <i>(registered office or principal place of business:</i> <br>
+                <b>{{ila.submission.applicant.address}}</b>
+                <br><br>
+              </div>
+            </div><!--row-->
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="row">
+              <div class="col-sm-1" align="center">
+                4.
+              </div>
+              <div class="col-sm-11">
+                Mailing Address <i>(if different from registered office address):</i> <br>
+                <b>{{ila.submission.applicant.mailingAddress}}</b>
+                <br><br>
+              </div>
+            </div><!--row-->
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="row">
+              <div class="col-sm-1" align="center">
+                5.
+              </div>
+              <div class="col-sm-11">
+                Applicant is a (<b>n</b>):
 
-  <div class="row">
-    <div class="col-sm-12">
-      <div sf-schema="schema" sf-form="formdef" sf-model="form.data"></div>
-    </div>
-  </div>
-  <br><br>
+                <div class="row">
+                  <div class="col-sm-3">
+                    <span ng-if="ila.submission.applicant.typeBusiness != 'individual'">[&nbsp;&nbsp;] </span>
+                    <span ng-if="ila.submission.applicant.typeBusiness == 'individual'">[<b>X</b>] </span>
+                    Individual
+                  </div>
+                  <div class="col-sm-3">
+                    <span ng-if="ila.submission.applicant.typeBusiness != 'corporation'">[&nbsp;&nbsp;] </span>
+                    <span ng-if="ila.submission.applicant.typeBusiness == 'corporation'">[<b>X</b>] </span>
+                    Corporation
+                  </div>
+                  <div class="col-sm-3">
+                    <span ng-if="ila.submission.applicant.typeBusiness != 'unincorporated'">[&nbsp;&nbsp;] </span>
+                    <span ng-if="ila.submission.applicant.typeBusiness == 'unincorporated'">[<b>X</b>] </span>
+                    Unincorporated Association
+                  </div>
+                  <div class="col-sm-3">
+                    <span ng-if="ila.submission.applicant.typeBusiness != 'partnership'">[&nbsp;&nbsp;] </span>
+                    <span ng-if="ila.submission.applicant.typeBusiness == 'partnership'">[<b>X</b>] </span>
+                    Partnership
+                  </div>
+                </div><!--row-->
 
-  <div class="row">
-    <div class="col-sm-12">
+                <div class="row">
+                  <div class="col-sm-3">
+                    Please indicate whether this is:
+                  </div>
+                  <div class="col-sm-2">
+                    <span ng-if="ila.submission.typeApplication != 'new'">[&nbsp;&nbsp;] </span>
+                    <span ng-if="ila.submission.typeApplication == 'new'">[<b>X</b>] </span>
+                    a new application
+                  </div>
+                  <div class="col-sm-4">
+                    <span ng-if="ila.submission.typeApplication != 'modify'">[&nbsp;&nbsp;] </span>
+                    <span ng-if="ila.submission.typeApplication == 'modify'">[<b>X</b>] </span>
+                    an application to modify an existing licence
+                  </div>
+                  <div class="col-sm-3">
+                    <span ng-if="ila.submission.typeApplication != 'renew'">[&nbsp;&nbsp;] </span>
+                    <span ng-if="ila.submission.typeApplication == 'renew'">[<b>X</b>] </span>
+                    an application to renew a licence
+                  </div>
+                </div><!--row-->
+              </div><!--col-sm-11-->
+            </div><!--row-->
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="row">
+              <div class="col-sm-1" align="center">
+                6.
+              </div>
+              <div class="col-sm-5">
+                Telephone No.: <b>{{ila.submission.applicant.work_phone}}</b>
+              </div>
+              <div class="col-sm-1" align="center">
+                7.
+              </div>
+              <div class="col-sm-5">
+                Facsimile No.: <b>{{ila.submission.applicant.fax}}</b>
+              </div>
+            </div><!--row-->
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" colspan="2">
+            <div class="row">
+              <div class="col-sm-1" align="center">
+                8.
+              </div>
+              <div class="col-sm-11">
+                "E-mail" address: <b>{{ila.submission.applicant.email}}</b>
+              </div>
+            </div><!--row-->
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="row">
+              <div class="col-sm-1" align="center">
+                9.
+              </div>
+              <div class="col-sm-11">
+                Name of Manager of entity: <b>{{ila.submission.applicant.manager}}</b>
+              </div>
+            </div><!--row-->
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="row">
+              <div class="col-sm-1" align="center">
+                10.
+              </div>
+              <div class="col-sm-11">
+                Person in Barbados to be contacted in absence of Manager:<br>
+                Name: <b>{{ila.submission.applicant.contact.name}}</b><br>
+                Address: <br>
+                <b>{{ila.submission.applicant.contact.address}}</b><br><br>
+                <div class="row">
+                  <div class="col-sm-6">
+                    Telephone No.: <b>{{ila.submission.applicant.contact.work_phone}}</b>
+                  </div>
+                  <div class="col-sm-6">
+                    Email Address: <b>{{ila.submission.applicant.contact.email}}</b>
+                  </div>
+                </div><!--row-->
+              </div>
+            </div><!--row-->
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="row">
+              <div class="col-sm-1" align="center">
+                11.
+              </div>
+              <div class="col-sm-11">
+                Facsimile No: <b>{{ila.submission.applicant.contact.fax}}</b>
+              </div>
+            </div><!--row-->
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="row">
+              <div class="col-sm-1" align="center">
+                12.
+              </div>
+              <div class="col-sm-11">
+                Mobile No.: <b>{{ila.submission.applicant.contact.mobile_phone}}</b>
+              </div>
+            </div><!--row-->
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="row">
+              <div class="col-sm-1" align="center">
+                13.
+              </div>
+              <div class="col-sm-11">
+                Indicate the approximate number of persons currently or to be employed by applicant: <b>{{ila.submission.applicant.employees}}</b>
+              </div>
+            </div><!--row-->
+          </td>
+        </tr>
+        <tr>
+          <td width="30%">
+            Business Location Address<br><br>
+          </td>
+          <td><b>{{ila.submission.applicant.address}}</b></td>
+        </tr>
+        <tr>
+          <td>Telephone No.</td>
+          <td><b>{{ila.submission.applicant.work_phone}}</b></td>
+        </tr>
+        <tr>
+          <td>Fax No.</td>
+          <td><b>{{ila.submission.applicant.fax}}</b></td>
+        </tr>
+        <tr>
+          <td>Pager or Cell Number</td>
+          <td><b>{{ila.submission.applicant.mobile_phone}}</b></td>
+        </tr>
+        <tr>
+          <td>Is Application Submitted with Cheque</td>
+          <td>
+            <span ng-if="!ila.submission.applicant.withPayment">[&nbsp;&nbsp;] </span>
+            <span ng-if="ila.submission.applicant.withPayment">[<b>X</b>] </span>
+            Yes<br>
+            <span ng-if="ila.submission.applicant.withPayment">[&nbsp;&nbsp;] </span>
+            <span ng-if="!ila.submission.applicant.withPayment">[<b>X</b>] </span>
+            No
+          </td>
+        </tr>
+        <tr>
+          <td>Vat Registration Number</td>
+          <td><b>{{ila.submission.applicant.vat}}</b></td>
+        </tr>
+        <tr>
+          <td>Type of Premises</td>
+          <td>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('office') == -1">[&nbsp;&nbsp;] </span>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('office') > -1">[<b>X</b>] </span>
+            Office<br>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('retail_outlet') == -1">[&nbsp;&nbsp;] </span>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('retail_outlet') > -1">[<b>X</b>] </span>
+            Retail Outlet<br>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('showroom') == -1">[&nbsp;&nbsp;] </span>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('showroom') > -1">[<b>X</b>] </span>
+            Showroom<br>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('warehouse') == -1">[&nbsp;&nbsp;] </span>
+            <span ng-if="ila.submission.applicant.typePremises.indexOf('warehouse') > -1">[<b>X</b>] </span>
+            Warehouse
+          </td>
+        </tr>
+        <tr>
+          <td>Supplier’s Name</td>
+          <td><b>{{ila.submission.supplier.name}}</b></td>
+        </tr>
+        <tr>
+          <td>Supplier’s Address</td>
+          <td><b>{{ila.submission.supplier.address}}</b></td>
+        </tr>
+        <tr>
+          <td>Vat Registration Number</td>
+          <td><b>{{ila.submission.applicant.vat}}</b></td>
+        </tr>
+        <tr>
+          <td>Corporate Registration Number</td>
+          <td><b>{{ila.submission.applicant.coorporateRegistrationNo}}</b></td>
+        </tr>
+      </table>
+
+      <!--PART B-->
+      <table class="table black-border">
+        <tr>
+          <th colspan="3">
+            <h4><b>
+              PART B: TECHNICAL INFORMATION
+            </b></h4>
+          </th>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <h5>
+              <b>Details of Prescribed Telecommunication Equipment</b>
+              <br><br>
+              (<b>Please</b> use attachments if space provided is insufficient)<br>
+              *If you sell prescribed equipment, you would be deemed to have a Sellers and Dealer’s Class Licence under the Act.
+            </h5>
+          </td>
+        </tr>
+        <tr>
+          <th colspan="3">
+            Radio-communication Equipment
+          </th>
+        </tr>
+        <tr>
+          <th class="center-align">Type</th>
+          <th class="center-align">Trade Name/Make</th>
+          <th class="center-align">Model</th>
+        </tr>
+        <tr ng-repeat="item in ila.submission.communicationEquipments">
+          <td ng-bind="item.type"></td>
+          <td ng-bind="item.make"></td>
+          <td ng-bind="item.model"></td>
+        </tr>
+        <tr>
+          <th colspan="3">Line Terminal Equipment</th>
+        </tr>
+        <tr>
+          <th class="center-align">Type</th>
+          <th class="center-align">Trade Name/Make</th>
+          <th class="center-align">Model</th>
+        </tr>
+        <tr ng-repeat="item in ila.submission.terminalEquipments">
+          <td ng-bind="item.type"></td>
+          <td ng-bind="item.make"></td>
+          <td ng-bind="item.model"></td>
+        </tr>
+      </table>
       <p>
         <b>
           Purpose of Individual Licence<br>

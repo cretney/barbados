@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum f0d32f47006752505a354fd59b4037878e7d2687",
+  "description": "Generated from b with shasum ada75b8451dbc941b187004e47c2cbb89dc7708d",
   "type": "object",
   "required": [
     "blockId",
@@ -30,9 +30,10 @@
       "type": "object",
       "required": [
         "commodities",
+        "submitter",
+        "issuedBy",
         "referenceNumber",
         "issuedDate",
-        "submitter",
         "applicant"
       ],
       "properties": {
@@ -71,7 +72,8 @@
                     "vehicleEngine",
                     "serialNumber",
                     "dateArrival",
-                    "cifValue"
+                    "cifValue",
+                    "identificationNumber"
                   ],
                   "properties": {
                     "vehicleBrand": {
@@ -94,6 +96,9 @@
                     },
                     "cifValue": {
                       "type": "integer"
+                    },
+                    "identificationNumber": {
+                      "type": "string"
                     }
                   }
                 }
@@ -101,13 +106,16 @@
             }
           }
         },
+        "submitter": {
+          "type": "string"
+        },
+        "issuedBy": {
+          "type": "string"
+        },
         "referenceNumber": {
           "type": "string"
         },
         "issuedDate": {
-          "type": "string"
-        },
-        "submitter": {
           "type": "string"
         },
         "applicant": {
