@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 95e6e8301b89a594c65df31e4f571f8e51bec438",
+  "description": "Generated from b with shasum 4bd333a94afe8c43ed46b04db6e35dd5b16314fa",
   "type": "object",
   "required": [
     "blockId",
@@ -62,6 +62,7 @@
             "mailingAddress",
             "nationality",
             "work_phone",
+            "mobile_phone",
             "fax",
             "email",
             "manager",
@@ -96,6 +97,9 @@
               "type": "string"
             },
             "work_phone": {
+              "type": "string"
+            },
+            "mobile_phone": {
               "type": "string"
             },
             "fax": {

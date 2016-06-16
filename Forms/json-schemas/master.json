@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 6f9be46fce81f2ed059c3161e1e1506d512804d2",
+  "description": "Generated from b with shasum 8c9b17a82fd7f550c3862a72da0142aa5e5c068d",
   "type": "object",
   "required": [
 
@@ -1108,6 +1108,21 @@
           "type": "string",
           "title": "Mailingaddress",
           "description": ""
+        },
+        "manager": {
+          "type": "string",
+          "title": "Manager",
+          "description": ""
+        },
+        "employees": {
+          "type": "integer",
+          "title": "Employees",
+          "description": ""
+        },
+        "coorporateRegistrationNo": {
+          "type": "string",
+          "title": "Coorporateregistrationno",
+          "description": ""
         }
       }
     },
@@ -1213,6 +1228,11 @@
         "registrationNo": {
           "type": "string",
           "title": "Registrationno",
+          "description": ""
+        },
+        "work_phone": {
+          "type": "string",
+          "title": "Work_phone",
           "description": ""
         }
       }
@@ -3835,6 +3855,57 @@
           "model": {
             "type": "string",
             "title": "Model",
+            "description": ""
+          }
+        }
+      }
+    },
+    "typeApplication": {
+      "type": "string",
+      "title": "Typeapplication",
+      "description": ""
+    },
+    "directManufacturing": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+
+        ],
+        "properties": {
+          "item": {
+            "type": "string",
+            "title": "Item",
+            "description": ""
+          },
+          "cost": {
+            "type": "integer",
+            "title": "Cost",
+            "description": ""
+          }
+        }
+      }
+    },
+    "indirectManufacturing": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+
+        ],
+        "properties": {
+          "item": {
+            "type": "string",
+            "title": "Item",
+            "description": ""
+          },
+          "cost": {
+            "type": "integer",
+            "title": "Cost",
             "description": ""
           }
         }

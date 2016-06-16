@@ -8296,5 +8296,139 @@
       {"type":"**type**", "make":"**make**", "model":"**model**"}
     ]
   }
+},
+{
+  "blockId": 12016801,
+  "workflowId": 20,
+  "formId": 168,
+  "status": "Draft",
+  "title": "New Application for Certificate of Origin Registration as Exporter",
+  "description": "Please complete the Registration Application",
+  "submission": {
+    "materials": [
+      {
+        "hsCode": "123",
+        "description": "Material 1",
+        "origin":"United States",
+        "supplier":"Supplier1",
+        "fobValue":1000,
+        "quantity":1
+      },
+      {
+        "hsCode": "543",
+        "description": "Material 2",
+        "origin":"Canada",
+        "supplier":"Supplier2",
+        "fobValue":2000,
+        "quantity":2
+      }
+    ],
+    "directManufacturing": [
+      {
+        "item": "123",
+        "cost": 100
+      },
+      {
+        "item": "456",
+        "cost": 200
+      }
+    ],
+    "indirectManufacturing": [
+      {
+        "item": "789",
+        "cost": 300
+      },
+      {
+        "item": "012",
+        "cost": 400
+      }
+    ],
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test",
+        "fobValue":1000,
+        "quantity":1
+      },
+      {
+        "hsCode": "234",
+        "description": "test",
+        "fobValue":2000,
+        "quantity":2
+      }
+    ],
+    "manufacturing":"** manufacturing **",
+    "submitter": "Joe Blow",
+    "origin": "United States",
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "email":"info@example.com", "work_phone":"555-5555"},
+    "applicant": {"id":4, "name":"Exporter Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"}
+  }
+},
+{
+  "blockId": 12016901,
+  "workflowId": 20,
+  "formId": 169,
+  "status": "Issued",
+  "title": "New Application for Certificate of Origin Registration as Exporter",
+  "description": "Please complete the Registration Application",
+  "submission": {
+    "materials": [
+      {
+        "hsCode": "123",
+        "description": "Material 1",
+        "origin":"United States",
+        "supplier":"Supplier1",
+        "fobValue":1000,
+        "quantity":1
+      },
+      {
+        "hsCode": "543",
+        "description": "Material 2",
+        "origin":"Canada",
+        "supplier":"Supplier2",
+        "fobValue":2000,
+        "quantity":2
+      }
+    ],
+    "directManufacturing": [
+      {
+        "item": "123",
+        "cost": 100
+      },
+      {
+        "item": "456",
+        "cost": 200
+      }
+    ],
+    "indirectManufacturing": [
+      {
+        "item": "789",
+        "cost": 300
+      },
+      {
+        "item": "012",
+        "cost": 400
+      }
+    ],
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test",
+        "fobValue":1000,
+        "quantity":1
+      },
+      {
+        "hsCode": "234",
+        "description": "test",
+        "fobValue":2000,
+        "quantity":2
+      }
+    ],
+    "manufacturing":"** manufacturing **",
+    "submitter": "Joe Blow",
+    "origin": "United States",
+    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "email":"info@example.com", "work_phone":"555-5555"},
+    "applicant": {"id":4, "name":"Exporter Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"}
+  }
 }
 ]
