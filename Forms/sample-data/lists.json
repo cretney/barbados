@@ -656,6 +656,11 @@
 				"document":"Application for Registration of a Local Fishing Vessel.pdf"
 			},
 			{
+				"id": 137,
+				"template": "fd-application-registration-local-fishing-vessel-issued.html",
+				"document":"Application for Registration of a Local Fishing Vessel.pdf"
+			},
+			{
 				"id": 138,
 				"template": "fd-application-registration-processor.html",
 				"document":"Application for Registration of a Processor.pdf"
