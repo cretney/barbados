@@ -746,6 +746,11 @@
 				"document":"Farmers' Registration Form.pdf"
 			},
 			{
+				"id": 157,
+				"template": "fd-farmers-registration-form-issued.html",
+				"document":"Farmers' Registration Form.pdf"
+			},
+			{
 				"id": 158,
 				"template": "fd-verification.html",
 				"document":"Verification.pdf"
@@ -789,6 +794,16 @@
 				"id": 167,
 				"template": "tu-application-telecommunications-sellers-dealers-individual-licence-issued.html",
 				"document":"Application for Telecommunications  Sellers and  Dealer’s (Individual) Licence.pdf"
+			},
+			{
+				"id": 168,
+				"template": "bidc-new-application-certification-form.html",
+				"document":"New Application for Certification Form.docx"
+			},
+			{
+				"id": 169,
+				"template": "bidc-new-application-certification-form-issued.html",
+				"document":"New Application for Certification Form.docx"
 			}
 		]
 	},

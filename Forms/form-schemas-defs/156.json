@@ -1,0 +1,931 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"applicant.name",
+            "title":"Full Name of Farmer",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key":"applicant.address",
+            "title":"Address of Farmer",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+            "key":"applicant.nationalRegistrationNumber",
+				  	"title":"Barbados ID #"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"applicant.nationalInsuranceNumber",
+				  	"title":"National Insurance #"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"applicant.age",
+				  	"title":"Age of Farmer"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "applicant.gender",
+            "title": "Sex",
+            "type": "radios-inline",
+            "titleMap": {
+              "male":"Male",
+              "female":"Female"
+            }
+          }
+        ]
+      }
+    ]
+	},
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+            "key":"applicant.work_phone",
+				  	"title":"Telephone work"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+            "key":"applicant.mobile_phone",
+				  	"title":"Telephone Mobile"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+				  {
+				  	"key":"applicant.email",
+				  	"title":"Email"
+				  }
+        ]
+      }
+    ]
+	},
+  {
+    "type":"help",
+    "helpvalue":"<br><h5>No. of Dependents</h5>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+            "key":"applicant.spouse",
+				  	"title":"Spouse"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+            "key":"applicant.children",
+				  	"title":"Children"
+				  }
+        ]
+      }
+    ]
+	},
+  {
+    "type":"help",
+    "helpvalue":"<br><h4>DETAILS OF FARM</h4>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key":"farm.address",
+            "title":"Farm Address"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+				  {
+            "key":"farm.size",
+				  	"title":"Size of Farm",
+            "description":"Acre/Hectare"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+            "key":"farm.taxNo",
+				  	"title":"Land Tax #"
+				  }
+        ]
+      }
+    ]
+	},
+  {
+    "type":"help",
+    "helpvalue":"<br><h5>Employees</h5>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+            "key":"farm.employees_fulltime",
+				  	"title":"Full-time",
+            "description":"No of Employees"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+            "key":"farm.employees_parttime",
+				  	"title":"Part-time",
+            "description":"No of Employees"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+            "key":"farm.employees_seasonal",
+				  	"title":"Seasonal",
+            "description":"No of Employees"
+				  }
+        ]
+      }
+    ]
+	},
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "farm.status_farmer",
+            "title": "Status of Farmer",
+            "type": "radios-inline",
+            "titleMap": {
+              "full-time":"Full-time",
+              "part-time":"Part-time"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "farm.tenure",
+            "title": "Tenure",
+            "type": "radios-inline",
+            "titleMap": {
+              "owned":"Owned",
+              "rented":"Rented",
+              "leased":"Leased",
+              "other":"Other"
+            }
+          }
+        ]
+      }
+    ]
+	},
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+				  {
+            "key":"farm.name",
+				  	"title":"Name of Farm (where relevant):"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+				  {
+            "key":"farm.partnership",
+				  	"title":"Name of Farmers’ Co-operation/Association or Partnership in Business"
+				  }
+        ]
+      }
+    ]
+	},
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "farm.irrigation_facilities",
+            "title": "Does farm have Irrigation facilities?",
+            "type": "radios-inline",
+            "titleMap": {
+              "yes":"Yes",
+              "no":"No"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"farm.irrigation_area",
+				  	"title":"Area Irrigated"
+				  }
+        ]
+      }
+    ]
+	},
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "farm.irrigation_type",
+            "title": "Type of Irrigation",
+            "type": "checkboxes",
+            "htmlClass":"inline",
+            "titleMap": {
+              "sprinkler":"Sprinkler",
+              "drip":"Drip"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"farm.sprinkler_area",
+				  	"title":"Sprinkler area"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"farm.drip_area",
+				  	"title":"Drip area"
+				  }
+        ]
+      }
+    ]
+	},
+  {
+    "key": "farm.farming_type",
+    "title": "Type of Farming",
+    "type": "radios-inline",
+    "titleMap": {
+      "crop":"Crop",
+      "livestock":"Livestock",
+      "flower":"Flower",
+      "mixed":"Mixed"
+    }
+  },
+  {
+    "type":"help",
+    "helpvalue":"<br><h5>Farm Enterprises: (Select Farm Activity)</h5>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {"type": "section", "htmlClass": "col-sm-3", "items": [{"key":"farm.activity_vegetables", "title":"Vegetables", "description":"Acres"}]},
+      {"type": "section", "htmlClass": "col-sm-3", "items": [{"key":"farm.activity_root_crops", "title":"Root Crops", "description":"Acres"}]},
+      {"type": "section", "htmlClass": "col-sm-3", "items": [{"key":"farm.activity_legumes", "title":"Legumes", "description":"Acres"}]},
+      {"type": "section", "htmlClass": "col-sm-3", "items": [{"key":"farm.activity_cereals", "title":"Cereals", "description":"Acres"}]},
+      {"type": "section", "htmlClass": "col-sm-3", "items": [{"key":"farm.activity_fruit_trees", "title":"Fruit Trees", "description":"Acres"}]},
+      {"type": "section", "htmlClass": "col-sm-3", "items": [{"key":"farm.activity_cotton", "title":"Cotton", "description":"Acres"}]},
+      {"type": "section", "htmlClass": "col-sm-3", "items": [{"key":"farm.activity_cattle", "title":"Cattle", "description":"No."}]},
+      {"type": "section", "htmlClass": "col-sm-3", "items": [{"key":"farm.activity_poultry", "title":"Poultry", "description":"No."}]},
+      {"type": "section", "htmlClass": "col-sm-3", "items": [{"key":"farm.activity_rabbits", "title":"Rabbits", "description":"No."}]},
+      {"type": "section", "htmlClass": "col-sm-3", "items": [{"key":"farm.activity_apiculture", "title":"Apiculture", "description":"No."}]},
+      {"type": "section", "htmlClass": "col-sm-3", "items": [{"key":"farm.activity_sugar_cane", "title":"Sugar Cane", "description":"Acres"}]},
+      {"type": "section", "htmlClass": "col-sm-3", "items": [{"key":"farm.activity_banana_plantain", "title":"Banana/Plantain", "description":"Acres"}]},
+      {"type": "section", "htmlClass": "col-sm-3", "items": [{"key":"farm.activity_herbs_spices", "title":"Herbs/Spices", "description":"Acres"}]},
+      {"type": "section", "htmlClass": "col-sm-3", "items": [{"key":"farm.activity_horticulture", "title":"Horticulture", "description":"Acres"}]},
+      {"type": "section", "htmlClass": "col-sm-3", "items": [{"key":"farm.activity_onions", "title":"Onions", "description":"Acres"}]},
+      {"type": "section", "htmlClass": "col-sm-3", "items": [{"key":"farm.activity_pasture", "title":"Pasture", "description":"Acres"}]},
+      {"type": "section", "htmlClass": "col-sm-3", "items": [{"key":"farm.activity_pigs", "title":"Pigs", "description":"No."}]},
+      {"type": "section", "htmlClass": "col-sm-3", "items": [{"key":"farm.activity_sheep", "title":"Sheep", "description":"No."}]},
+      {"type": "section", "htmlClass": "col-sm-3", "items": [{"key":"farm.activity_goats", "title":"Goats", "description":"No."}]},
+      {"type": "section", "htmlClass": "col-sm-3", "items": [{"key":"farm.activity_aquaculture", "title":"Aquaculture", "description":"No."}]}
+    ]
+	},
+  {
+    "type":"help",
+    "helpvalue":"<br><h5>Crops for Export Market</h5>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "farm.vegetables",
+            "add": "Add Vegetables",
+            "title":"Vegetables",
+            "style": {
+              "add": "btn-success"
+            },
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "row",
+                "items": [
+                  {
+                    "type": "section",
+                    "htmlClass": "col-sm-11",
+                    "items": [
+                      {
+                        "key": "farm.vegetables[]",
+                        "title": "",
+                        "description":""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "farm.root_crops",
+            "add": "Add Root Crops",
+            "title":"Root Crops",
+            "style": {
+              "add": "btn-success"
+            },
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "row",
+                "items": [
+                  {
+                    "type": "section",
+                    "htmlClass": "col-sm-11",
+                    "items": [
+                      {
+                        "key": "farm.root_crops[]",
+                        "title": "",
+                        "description":""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "farm.fruits",
+            "add": "Add Fruits",
+            "title":"Fruits",
+            "style": {
+              "add": "btn-success"
+            },
+            "items": [
+              {
+                "type": "section",
+                "htmlClass": "row",
+                "items": [
+                  {
+                    "type": "section",
+                    "htmlClass": "col-sm-11",
+                    "items": [
+                      {
+                        "key": "farm.fruits[]",
+                        "title": "",
+                        "description":""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+	},
+  {
+    "type":"help",
+    "helpvalue":"<br><hr><h4>Details of Livestock on Farm</h4>"
+  },
+  {"type":"help", "helpvalue":"<br><h5>Cattle</h5>"},
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+            "key":"farm.cattle_adult_male",
+				  	"title":"Male Adults"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.cattle_young_male",
+				  	"title":"Male Youngs",
+            "description":"< 15 mths"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.cattle_adult_female",
+				  	"title":"Female Adults"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.cattle_young_female",
+				  	"title":"Female Youngs",
+            "description":"< 15 mths"
+				  }
+        ]
+      }
+    ]
+	},
+  {"type":"help", "helpvalue":"<hr><h5>Sheep</h5>"},
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+            "key":"farm.sheep_adult_male",
+				  	"title":"Male Adults"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.sheep_young_male",
+				  	"title":"Male Youngs",
+            "description":"< 6 mths"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.sheep_adult_female",
+				  	"title":"Female Adults"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.sheep_young_female",
+				  	"title":"Female Youngs",
+            "description":"< 6 mths"
+				  }
+        ]
+      }
+    ]
+	},
+  {"type":"help", "helpvalue":"<hr><h5>Goats</h5>"},
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+            "key":"farm.goats_adult_male",
+				  	"title":"Male Adults"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.goats_young_male",
+				  	"title":"Male Youngs",
+            "description":"< 6 mths"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.goats_adult_female",
+				  	"title":"Female Adults"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.goats_young_female",
+				  	"title":"Female Youngs",
+            "description":"< 6 mths"
+				  }
+        ]
+      }
+    ]
+	},
+  {"type":"help", "helpvalue":"<hr><h5>Pigs</h5>"},
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+            "key":"farm.pigs_adult_male",
+				  	"title":"Male Adults"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.pigs_young_male",
+				  	"title":"Male Youngs",
+            "description":"< 6 mths"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.pigs_adult_female",
+				  	"title":"Female Adults"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.pigs_young_female",
+				  	"title":"Female Youngs",
+            "description":"< 6 mths"
+				  }
+        ]
+      }
+    ]
+	},
+  {"type":"help", "helpvalue":"<hr><h5>Poultry (layers)</h5>"},
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+            "key":"farm.poultry_layers_adult_male",
+				  	"title":"Male Adults"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.poultry_layers_young_male",
+				  	"title":"Male Youngs",
+            "description":"< 6 mths"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.poultry_layers_adult_female",
+				  	"title":"Female Adults"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.poultry_layers_young_female",
+				  	"title":"Female Youngs",
+            "description":"< 6 mths"
+				  }
+        ]
+      }
+    ]
+	},
+  {"type":"help", "helpvalue":"<hr><h5>Poultry (broilers)</h5>"},
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+            "key":"farm.poultry_broilers_adult_male",
+				  	"title":"Male Adults"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.poultry_broilers_young_male",
+				  	"title":"Male Youngs",
+            "description":"< 6 mths"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.poultry_broilers_adult_female",
+				  	"title":"Female Adults"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.poultry_broilers_young_female",
+				  	"title":"Female Youngs",
+            "description":"< 6 mths"
+				  }
+        ]
+      }
+    ]
+	},
+  {"type":"help", "helpvalue":"<hr><h5>Rabbits</h5>"},
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+            "key":"farm.rabbits_adult_male",
+				  	"title":"Male Adults"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.rabbits_young_male",
+				  	"title":"Male Youngs",
+            "description":"< 6 mths"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.rabbits_adult_female",
+				  	"title":"Female Adults"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.rabbits_young_female",
+				  	"title":"Female Youngs",
+            "description":"< 6 mths"
+				  }
+        ]
+      }
+    ]
+	},
+  {"type":"help", "helpvalue":"<hr><h5>Other</h5>"},
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+            "key":"farm.other_adult_male",
+				  	"title":"Male Adults"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.other_young_male",
+				  	"title":"Male Youngs",
+            "description":"< 6 mths"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.other_adult_female",
+				  	"title":"Female Adults"
+				  }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+				  {
+				  	"key":"farm.other_young_female",
+				  	"title":"Female Youngs",
+            "description":"< 6 mths"
+				  }
+        ]
+      }
+    ]
+	},
+
+  {
+    "type": "submit",
+    "title": "Save"
+  }
+]

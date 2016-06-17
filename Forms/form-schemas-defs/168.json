@@ -1,0 +1,344 @@
+[
+  {
+    "type":"help",
+    "helpvalue":"<br><h4>PART A</h4>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key":"supplier.name",
+            "title":"Name of Manufacturer",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key":"supplier.address",
+            "title":"Address",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"supplier.work_phone",
+            "title":"Telephone Number"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key":"supplier.email",
+            "title":"Email"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-5",
+        "items": [
+          {
+            "key":"origin",
+            "title":"Trade Agreement/Target Country (ies)",
+            "description":""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"<br><h5>Product Information</h5>"
+  },
+  {
+    "key": "commodities",
+    "add": "Add Material",
+    "title":"",
+    "style": {
+      "add": "hidden"
+    },
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "commodities[].hsCode",
+                "title": "Final product HS Code",
+                "description":"",
+                "readonly":true
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-7",
+            "items": [
+              {
+                "key": "commodities[].description",
+                "title": "Product Applying for",
+                "description":"",
+                "readonly":true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "commodities[].fobValue",
+                "title": "F.O.B Export Price",
+                "description":"in Barbados Dollars Only"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "commodities[].quantity",
+                "title": "Unit of Measure Used",
+                "description":" (e.g.) per case, per box"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"<br><h4>PART B</h4>"
+  },
+  {
+    "key": "manufacturing",
+    "type": "textarea",
+    "title": "The production process carried out in producing the product(s) listed in part A was"
+  },
+  {
+    "type":"help",
+    "helpvalue":"<br><h5>Materials and components used in the manufacture/production of the product(s)</h5>"
+  },
+  {
+    "key": "materials",
+    "add": "Add Material",
+    "title":"",
+    "style": {
+      "add": "btn-success"
+    },
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "materials[].hsCode",
+                "title": "HS Number",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-8",
+            "items": [
+              {
+                "key": "materials[].description",
+                "title": "Materials/Components in Manufactured Product"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "materials[].fobValue",
+                "title": "F.O.B Export Price",
+                "description":"in Barbados Dollars Only"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "materials[].quantity",
+                "title": "Unit of Measure Used",
+                "description":" (e.g.) per case, per box"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-5",
+            "items": [
+              {
+                "key": "materials[].origin",
+                "title": "Country origin"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-offset-6 col-sm-5",
+            "items": [
+              {
+                "key": "materials[].supplier",
+                "title": "Supplier/Manufacturer"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"<br><h5>Breakdown of direct and indirect manufacturing costs, other than materials, associated with manufacture/production of the product(s) listed in part A:</h5>"
+  },
+  {
+    "type":"help",
+    "helpvalue":"<br><h5>Direct Manufacturing Costs</h5>"
+  },
+  {
+    "key": "directManufacturing",
+    "add": "Add Direct Manufacturing Cost",
+    "title":"",
+    "style": {
+      "add": "btn-success"
+    },
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-8",
+            "items": [
+              {
+                "key": "directManufacturing[].item",
+                "title": "Item",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "directManufacturing[].cost",
+                "title": "BDS$"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"<br><h5>Indirect Manufacturing Costs</h5>"
+  },
+  {
+    "key": "indirectManufacturing",
+    "add": "Add Indirect Manufacturing Cost",
+    "title":"",
+    "style": {
+      "add": "btn-success"
+    },
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-8",
+            "items": [
+              {
+                "key": "indirectManufacturing[].item",
+                "title": "Item",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "indirectManufacturing[].cost",
+                "title": "BDS$"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "submit",
+    "style": "btn-info",
+    "title": "Save"
+  }
+]
