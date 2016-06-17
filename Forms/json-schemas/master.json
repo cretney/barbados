@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 8c9b17a82fd7f550c3862a72da0142aa5e5c068d",
+  "description": "Generated from b with shasum 998f2e3eb8caa7810cd147632d7929b05cabed57",
   "type": "object",
   "required": [
 
@@ -1079,6 +1079,21 @@
           "title": "Directors",
           "description": ""
         },
+        "age": {
+          "type": "integer",
+          "title": "Age",
+          "description": ""
+        },
+        "spouse": {
+          "type": "integer",
+          "title": "Spouse",
+          "description": ""
+        },
+        "children": {
+          "type": "integer",
+          "title": "Children",
+          "description": ""
+        },
         "typeBusiness": {
           "type": "string",
           "title": "Typebusiness",
@@ -2066,6 +2081,21 @@
             "type": "string",
             "title": "Country of Origin",
             "description": "The country from where the goods originated."
+          },
+          "supplier": {
+            "type": "string",
+            "title": "Supplier",
+            "description": "The name of the Supplier of the goods."
+          },
+          "fobValue": {
+            "type": "integer",
+            "title": "FOB Value (US$)",
+            "description": "In US Dollars"
+          },
+          "quantity": {
+            "type": "integer",
+            "title": "Quantity",
+            "description": "The quantity in units of sale."
           }
         }
       }
@@ -3765,6 +3795,229 @@
       "type": "integer",
       "title": "Totalvalue",
       "description": ""
+    },
+    "farm": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "address": {
+          "type": "string",
+          "title": "Address",
+          "description": ""
+        },
+        "size": {
+          "type": "string",
+          "title": "Size",
+          "description": ""
+        },
+        "taxNo": {
+          "type": "string",
+          "title": "Taxno",
+          "description": ""
+        },
+        "employees_fulltime": {
+          "type": "integer",
+          "title": "Employees_fulltime",
+          "description": ""
+        },
+        "employees_parttime": {
+          "type": "integer",
+          "title": "Employees_parttime",
+          "description": ""
+        },
+        "employees_seasonal": {
+          "type": "integer",
+          "title": "Employees_seasonal",
+          "description": ""
+        },
+        "status_farmer": {
+          "type": "string",
+          "title": "Status_farmer",
+          "description": ""
+        },
+        "tenure": {
+          "type": "string",
+          "title": "Tenure",
+          "description": ""
+        },
+        "partnership": {
+          "type": "string",
+          "title": "Partnership",
+          "description": ""
+        },
+        "irrigation_facilities": {
+          "type": "string",
+          "title": "Irrigation_facilities",
+          "description": ""
+        },
+        "irrigation_area": {
+          "type": "string",
+          "title": "Irrigation_area",
+          "description": ""
+        },
+        "sprinkler_area": {
+          "type": "string",
+          "title": "Sprinkler_area",
+          "description": ""
+        },
+        "drip_area": {
+          "type": "string",
+          "title": "Drip_area",
+          "description": ""
+        },
+        "farming_type": {
+          "type": "string",
+          "title": "Farming_type",
+          "description": ""
+        },
+        "irrigation_type": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
+        },
+        "activity_vegetables": {
+          "type": "integer",
+          "title": "Activity_vegetables",
+          "description": ""
+        },
+        "activity_root_crops": {
+          "type": "integer",
+          "title": "Activity_root_crops",
+          "description": ""
+        },
+        "activity_legumes": {
+          "type": "integer",
+          "title": "Activity_legumes",
+          "description": ""
+        },
+        "activity_cereals": {
+          "type": "integer",
+          "title": "Activity_cereals",
+          "description": ""
+        },
+        "activity_fruit_trees": {
+          "type": "integer",
+          "title": "Activity_fruit_trees",
+          "description": ""
+        },
+        "activity_cotton": {
+          "type": "integer",
+          "title": "Activity_cotton",
+          "description": ""
+        },
+        "activity_cattle": {
+          "type": "integer",
+          "title": "Activity_cattle",
+          "description": ""
+        },
+        "activity_poultry": {
+          "type": "integer",
+          "title": "Activity_poultry",
+          "description": ""
+        },
+        "activity_rabbits": {
+          "type": "integer",
+          "title": "Activity_rabbits",
+          "description": ""
+        },
+        "activity_apiculture": {
+          "type": "integer",
+          "title": "Activity_apiculture",
+          "description": ""
+        },
+        "activity_sugar_cane": {
+          "type": "integer",
+          "title": "Activity_sugar_cane",
+          "description": ""
+        },
+        "activity_banana_plantain": {
+          "type": "integer",
+          "title": "Activity_banana_plantain",
+          "description": ""
+        },
+        "activity_herbs_spices": {
+          "type": "integer",
+          "title": "Activity_herbs_spices",
+          "description": ""
+        },
+        "activity_horticulture": {
+          "type": "integer",
+          "title": "Activity_horticulture",
+          "description": ""
+        },
+        "activity_onions": {
+          "type": "integer",
+          "title": "Activity_onions",
+          "description": ""
+        },
+        "activity_pasture": {
+          "type": "integer",
+          "title": "Activity_pasture",
+          "description": ""
+        },
+        "activity_pigs": {
+          "type": "integer",
+          "title": "Activity_pigs",
+          "description": ""
+        },
+        "activity_sheep": {
+          "type": "integer",
+          "title": "Activity_sheep",
+          "description": ""
+        },
+        "activity_goats": {
+          "type": "integer",
+          "title": "Activity_goats",
+          "description": ""
+        },
+        "activity_aquaculture": {
+          "type": "integer",
+          "title": "Activity_aquaculture",
+          "description": ""
+        },
+        "vegetables": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
+        },
+        "root_crops": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
+        },
+        "fruits": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
+        }
+      }
     },
     "agTypes": {
       "type": "object",

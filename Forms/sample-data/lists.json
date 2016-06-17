@@ -741,6 +741,11 @@
 				"document":"Farmers' Registration Form.pdf"
 			},
 			{
+				"id": 157,
+				"template": "fd-farmers-registration-form-issued.html",
+				"document":"Farmers' Registration Form.pdf"
+			},
+			{
 				"id": 158,
 				"template": "fd-verification.html",
 				"document":"Verification.pdf"

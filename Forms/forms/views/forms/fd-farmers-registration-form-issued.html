@@ -1,0 +1,454 @@
+<div>
+  <div class="row">
+    <div class="col-sm-12">
+      <h5 align="center"><b><u>
+        MINISTRY OF AGRICULTURE, FOOD, FISHERIES<br>
+        AND WATER RESOURCE MANAGEMENT<br>
+        FARMERS REGISTRATION FORM
+      </u></b></h5>
+      <h5 align="center"><b>
+        Farmers Registration #.: ___
+      </b></h5>
+    </div><!--col-sm-12-->
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Full Name of Farmer: <b>{{ila.submission.applicant.name}}</b></p>
+      <p>Address of Farmer: <b>{{ila.submission.applicant.address}}</b></p>
+    </div><!--col-sm-12-->
+
+    <div class="col-sm-6">
+      <p>B’dos. ID #.: <b>{{ila.submission.applicant.nationalRegistrationNumber}}</b></p>
+    </div>
+    <div class="col-sm-6">
+      <p>National Insurance # <b>{{ila.submission.applicant.nationalInsuranceNumber}}</b></p>
+    </div>
+
+    <div class="col-sm-6">
+      <p>Age of Farmer: <b>{{ila.submission.applicant.age}}</b></p>
+    </div>
+    <div class="col-sm-3">
+      <p>
+        Sex: Male
+        <span ng-if="ila.submission.applicant.gender != 'male'">[ ]</span>
+        <span ng-if="ila.submission.applicant.gender == 'male'">[<b>X</b>]</span>
+      </p>
+    </div>
+    <div class="col-sm-3">
+      <p>
+        Female
+        <span ng-if="ila.submission.applicant.gender != 'female'">[ ]</span>
+        <span ng-if="ila.submission.applicant.gender == 'female'">[<b>X</b>]</span>
+      </p>
+    </div>
+  </div><!--row-->
+  <div class="row">
+    <div class="col-sm-6">
+      <p>Telephone Numbers: <b>{{ila.submission.applicant.work_phone}}</b></p>
+      <p>No. of Dependents: Spouse: <b>{{ila.submission.applicant.spouse}}</b></p>
+    </div>
+    <div class="col-sm-6">
+      <p>Email Address: <b>{{ila.submission.applicant.email}}</b></p>
+      <p>Children: <b>{{ila.submission.applicant.children}}</b></p>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h5><b><u>
+        DETAILS OF FARM
+      </u></b></h5>
+      <p>Farm Address: <b>{{ila.submission.farm.address}}</b></p>
+    </div><!--col-sm-12-->
+
+    <div class="col-sm-6">
+      <p>Size of Farm Acre/Hectare: <b>{{ila.submission.farm.size}}</b></p>
+    </div>
+    <div class="col-sm-6">
+      <p>Land Tax #: <b>{{ila.submission.farm.taxNo}}</b></p>
+    </div>
+
+    <div class="col-sm-3">
+      <p>No of Employees:</p>
+    </div>
+    <div class="col-sm-3">
+      <p>Full-time: <b>{{ila.submission.farm.employees_fulltime}}</b></p>
+    </div>
+    <div class="col-sm-3">
+      <p>Part-time: <b>{{ila.submission.farm.employees_parttime}}</b></p>
+    </div>
+    <div class="col-sm-3">
+      <p>Seasonal: <b>{{ila.submission.farm.employees_seasonal}}</b></p>
+    </div>
+
+    <div class="col-sm-4">
+      <p>Status of Farmer:</p>
+    </div>
+    <div class="col-sm-4">
+      <p>
+        Full-time
+        <span ng-if="ila.submission.farm.status_farmer != 'full-time'">[ ]</span>
+        <span ng-if="ila.submission.farm.status_farmer == 'full-time'">[<b>X</b>]</span>
+      </p>
+    </div>
+    <div class="col-sm-4">
+      <p>
+        Part-time
+        <span ng-if="ila.submission.farm.status_farmer != 'part-time'">[ ]</span>
+        <span ng-if="ila.submission.farm.status_farmer == 'part-time'">[<b>X</b>]</span>
+      </p>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-3">
+      <p>
+        Tenure: Owned
+        <span ng-if="ila.submission.farm.tenure != 'owned'">[ ]</span>
+        <span ng-if="ila.submission.farm.tenure == 'owned'">[<b>X</b>]</span>
+      </p>
+    </div>
+    <div class="col-sm-3">
+      <p>
+        Rented
+        <span ng-if="ila.submission.farm.tenure != 'rented'">[ ]</span>
+        <span ng-if="ila.submission.farm.tenure == 'rented'">[<b>X</b>]</span>
+      </p>
+    </div>
+    <div class="col-sm-3">
+      <p>
+        Leased
+        <span ng-if="ila.submission.farm.tenure != 'leased'">[ ]</span>
+        <span ng-if="ila.submission.farm.tenure == 'leased'">[<b>X</b>]</span>
+      </p>
+    </div>
+    <div class="col-sm-3">
+      <p>
+        Other
+        <span ng-if="ila.submission.farm.tenure != 'other'">[ ]</span>
+        <span ng-if="ila.submission.farm.tenure == 'other'">[<b>X</b>]</span>
+      </p>
+    </div>
+  </div><!--row-->
+
+  <div class="row">
+    <div class="col-sm-12">
+      <br>
+      <p>Name of Farm (where relevant): <b>{{ila.submission.farm.name}}</b></p>
+      <p>Name of Farmers’ Co-operation/Association or Partnership in Business: <b>{{ila.submission.farm.partnership}}</b></p>
+      <br><br>
+    </div>
+
+    <div class="col-sm-6">
+      <p>Does farm have Irrigation facilities?</p>
+    </div>
+    <div class="col-sm-3">
+      <p>
+        Yes
+        <span ng-if="ila.submission.farm.irrigation_facilities != 'yes'">[ ]</span>
+        <span ng-if="ila.submission.farm.irrigation_facilities == 'yes'">[<b>X</b>]</span>
+      </p>
+    </div>
+    <div class="col-sm-3">
+      <p>
+        No
+        <span ng-if="ila.submission.farm.irrigation_facilities != 'no'">[ ]</span>
+        <span ng-if="ila.submission.farm.irrigation_facilities == 'no'">[<b>X</b>]</span>
+      </p>
+    </div>
+
+    <div class="col-sm-12">
+      <p>Area Irrigated: ___(Acreage)___</p>
+    </div>
+  </div><!--row-->
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Type of Irrigation:</p>
+    </div>
+    <div class="col-sm-4">
+      <p>Sprinkler</p>
+      Yes
+      <span ng-if="ila.submission.farm.irrigation_type.indexOf('sprinkler') == -1">[ ]</span>
+      <span ng-if="ila.submission.farm.irrigation_type.indexOf('sprinkler') > -1">[<b>X</b>]</span>
+      &nbsp;[ ] Acres
+    </div>
+    <div class="col-sm-4">
+      <p>Drip</p>
+      <!--NEXT PAGE-->
+      Yes
+      <span ng-if="ila.submission.farm.irrigation_type.indexOf('drip') == -1">[ ]</span>
+      <span ng-if="ila.submission.farm.irrigation_type.indexOf('drip') > -1">[<b>X</b>]</span>
+      &nbsp;[ ] Acres
+    </div>
+  </div><!--row-->
+  <br>
+  <br>
+
+  <div class="row">
+
+    <div class="col-sm-4">
+      <p>Type of Farming:</p>
+    </div>
+    <div class="col-sm-2">
+      <p>Crop</p>
+      <span ng-if="ila.submission.farm.farming_type != 'crop'">[ ]</span>
+      <span ng-if="ila.submission.farm.farming_type == 'crop'">[<b>X</b>]</span>
+    </div>
+    <div class="col-sm-2">
+      <p>Livestock</p>
+      <span ng-if="ila.submission.farm.farming_type != 'livestock'">[ ]</span>
+      <span ng-if="ila.submission.farm.farming_type == 'livestock'">[<b>X</b>]</span>
+    </div>
+    <div class="col-sm-2">
+      <p>Flower</p>
+      <span ng-if="ila.submission.farm.farming_type != 'flower'">[ ]</span>
+      <span ng-if="ila.submission.farm.farming_type == 'flower'">[<b>X</b>]</span>
+    </div>
+    <div class="col-sm-2">
+      <p>Mixed</p>
+      <span ng-if="ila.submission.farm.farming_type != 'mixed'">[ ]</span>
+      <span ng-if="ila.submission.farm.farming_type == 'mixed'">[<b>X</b>]</span>
+    </div>
+  </div><!--row-->
+
+  <br><br>
+  <div class="row">
+    <div class="col-sm-12">
+      <h5><b><u>
+        Farm Enterprises: (Select Farm Activity)
+      </u></b></h5>
+
+      <div class="row">
+        <div class="col-sm-3 col-sm-offset-1">
+          <p>Vegetables</p>
+          <p>Root Crops</p>
+          <p>Legumes</p>
+          <p>Cereals</p>
+          <p>Fruit Trees</p>
+          <p>Cotton</p>
+          <p>Cattle</p>
+          <p>Poultry</p>
+          <p>Rabbits</p>
+          <p>Apiculture</p>
+        </div>
+        <div class="col-sm-2">
+          <p>( <b>{{ila.submission.farm.activity_vegetables}}</b> ) Acres</p>
+          <p>( <b>{{ila.submission.farm.activity_root_crops}}</b> ) Acres</p>
+          <p>( <b>{{ila.submission.farm.activity_legumes}}</b> ) Acres</p>
+          <p>( <b>{{ila.submission.farm.activity_cereals}}</b> ) Acres</p>
+          <p>( <b>{{ila.submission.farm.activity_fruit_trees}}</b> ) Acres</p>
+          <p>( <b>{{ila.submission.farm.activity_cotton}}</b> ) Acres</p>
+          <p>( <b>{{ila.submission.farm.activity_cattle}}</b> ) No.</p>
+          <p>( <b>{{ila.submission.farm.activity_poultry}}</b> ) No.</p>
+          <p>( <b>{{ila.submission.farm.activity_rabbits}}</b> ) No.</p>
+          <p>( <b>{{ila.submission.farm.activity_apiculture}}</b> ) No.</p>
+        </div>
+
+        <div class="col-sm-3 col-sm-offset-1">
+          <p>Sugar Cane</p>
+          <p>Banana/Plantain</p>
+          <p>Herbs/Spices</p>
+          <p>Horticulture</p>
+          <p>Onions</p>
+          <p>Pasture</p>
+          <p>Pigs</p>
+          <p>Sheep</p>
+          <p>Goats</p>
+          <p>Aquaculture</p>
+        </div>
+        <div class="col-sm-2">
+          <p>( <b>{{ila.submission.farm.activity_sugar_cane}}</b> ) Acres</p>
+          <p>( <b>{{ila.submission.farm.activity_banana_plantain}}</b> ) Acres</p>
+          <p>( <b>{{ila.submission.farm.activity_herbs_spices}}</b> ) Acres</p>
+          <p>( <b>{{ila.submission.farm.activity_horticulture}}</b> ) Acres</p>
+          <p>( <b>{{ila.submission.farm.activity_onions}}</b> ) Acres</p>
+          <p>( <b>{{ila.submission.farm.activity_pasture}}</b> ) Acres</p>
+          <p>( <b>{{ila.submission.farm.activity_pigs}}</b> ) No.</p>
+          <p>( <b>{{ila.submission.farm.activity_sheep}}</b> ) No.</p>
+          <p>( <b>{{ila.submission.farm.activity_goats}}</b> ) No.</p>
+          <p>( <b>{{ila.submission.farm.activity_aquaculture}}</b> ) No.</p>
+        </div>
+      </div><!--row-->
+    </div><!--col-sm-11 col-sm-offset-1-->
+  </div><!--row-->
+  <br><br>
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h5><b><u>
+        Crops for Export Market
+      </u></b></h5>
+    </div><!--col-sm-11 col-sm-offset-1-->
+  </div><!--row-->
+  <div class="row">
+    <div class="col-sm-4">
+      <table class="table black-border">
+        <tr>
+          <th class="center-align">Vegetables</th>
+        </tr>
+        <tr ng-repeat="item in ila.submission.farm.vegetables">
+          <td ng-bind="item"></td>
+        </tr>
+      </table>
+    </div><!--col-sm-11 col-sm-offset-1-->
+    <div class="col-sm-4">
+      <table class="table black-border">
+        <tr>
+          <th class="center-align">Root Crops</th>
+        </tr>
+        <tr ng-repeat="item in ila.submission.farm.root_crops">
+          <td ng-bind="item"></td>
+        </tr>
+      </table>
+    </div><!--col-sm-11 col-sm-offset-1-->
+    <div class="col-sm-4">
+      <table class="table black-border">
+        <tr>
+          <th class="center-align">Fruits</th>
+        </tr>
+        <tr ng-repeat="item in ila.submission.farm.fruits">
+          <td ng-bind="item"></td>
+        </tr>
+      </table>
+    </div><!--col-sm-11 col-sm-offset-1-->
+  </div><!--row-->
+
+  <br><br>
+  <div class="row">
+    <div class="col-sm-12">
+      <h5><b><u>
+        Details of Livestock on Farm:
+      </u></b></h5>
+      <table class="table black-border no-top-td no-bottom-td">
+        <tr>
+          <th class="center-align no-bottom-cell">
+            Species
+          </th>
+          <th class="center-align" colspan="3">
+            Male
+          </th>
+          <th class="center-align" colspan="3">
+            Female
+          </th>
+        </tr>
+        <tr>
+          <td class="no-top-cell"></td>
+          <td class="center-align">Adult</td>
+          <td class="center-align" colspan="2">
+            Young
+          </td>
+          <td class="center-align">Adult</td>
+          <td class="center-align" colspan="2">
+            Young
+          </td>
+        </tr>
+        <tr>
+          <td>Cattle</td>
+          <td class="center-align" width="13%"><b>{{ila.submission.farm.cattle_adult_male}}</b></td>
+          <td class="center-align" width="11%">< 15 mths</td>
+          <td class="center-align" width="13%"><b>{{ila.submission.farm.cattle_young_male}}</b></td>
+          <td class="center-align" width="13%"><b>{{ila.submission.farm.cattle_adult_female}}</b></td>
+          <td class="center-align" width="11%">< 15 mths</td>
+          <td class="center-align" width="13%"><b>{{ila.submission.farm.cattle_young_female}}</b></td>
+        </tr>
+        <tr>
+          <td>Sheep</td>
+          <td class="center-align"><b>{{ila.submission.farm.sheep_adult_male}}</b></td>
+          <td class="center-align">< 6 mths</td>
+          <td class="center-align"><b>{{ila.submission.farm.sheep_young_male}}</b></td>
+          <td class="center-align"><b>{{ila.submission.farm.sheep_adult_female}}</b></td>
+          <td class="center-align">< 6 mths</td>
+          <td class="center-align"><b>{{ila.submission.farm.sheep_young_female}}</b></td>
+        </tr>
+        <tr>
+          <td>Goats</td>
+          <td class="center-align"><b>{{ila.submission.farm.goats_adult_male}}</b></td>
+          <td class="center-align">< 6 mths</td>
+          <td class="center-align"><b>{{ila.submission.farm.goats_young_male}}</b></td>
+          <td class="center-align"><b>{{ila.submission.farm.goats_adult_female}}</b></td>
+          <td class="center-align">< 6 mths</td>
+          <td class="center-align"><b>{{ila.submission.farm.goats_young_female}}</b></td>
+        </tr>
+        <tr>
+          <td>Pigs</td>
+          <td class="center-align"><b>{{ila.submission.farm.pigs_adult_male}}</b></td>
+          <td class="center-align">< 6 mths</td>
+          <td class="center-align"><b>{{ila.submission.farm.goats_young_male}}</b></td>
+          <td class="center-align"><b>{{ila.submission.farm.goats_adult_female}}</b></td>
+          <td class="center-align">< 6 mths</td>
+          <td class="center-align"><b>{{ila.submission.farm.goats_young_female}}</b></td>
+        </tr>
+        <tr>
+          <td>Poultry (broilers)</td>
+          <td class="center-align"><b>{{ila.submission.farm.poultry_broilers_adult_male}}</b></td>
+          <td class="center-align">< 6 mths</td>
+          <td class="center-align"><b>{{ila.submission.farm.poultry_broilers_young_male}}</b></td>
+          <td class="center-align"><b>{{ila.submission.farm.poultry_broilers_adult_female}}</b></td>
+          <td class="center-align">< 6 mths</td>
+          <td class="center-align"><b>{{ila.submission.farm.poultry_broilers_young_female}}</b></td>
+        </tr>
+        <tr>
+          <td>Poultry (layers)</td>
+          <td class="center-align"><b>{{ila.submission.farm.poultry_layers_adult_male}}</b></td>
+          <td class="center-align">< 6 mths</td>
+          <td class="center-align"><b>{{ila.submission.farm.poultry_layers_young_male}}</b></td>
+          <td class="center-align"><b>{{ila.submission.farm.poultry_layers_adult_female}}</b></td>
+          <td class="center-align">< 6 mths</td>
+          <td class="center-align"><b>{{ila.submission.farm.poultry_layers_young_female}}</b></td>
+        </tr>
+        <tr>
+          <td>Rabits</td>
+          <td class="center-align"><b>{{ila.submission.farm.rabbits_adult_male}}</b></td>
+          <td class="center-align">< 6 mths</td>
+          <td class="center-align"><b>{{ila.submission.farm.rabbits_young_male}}</b></td>
+          <td class="center-align"><b>{{ila.submission.farm.rabbits_adult_female}}</b></td>
+          <td class="center-align">< 6 mths</td>
+          <td class="center-align"><b>{{ila.submission.farm.rabbits_young_female}}</b></td>
+        </tr>
+        <tr>
+          <td>Other</td>
+          <td class="center-align"><b>{{ila.submission.farm.other_adult_male}}</b></td>
+          <td class="center-align">< 6 mths</td>
+          <td class="center-align"><b>{{ila.submission.farm.other_young_male}}</b></td>
+          <td class="center-align"><b>{{ila.submission.farm.other_adult_female}}</b></td>
+          <td class="center-align">< 6 mths</td>
+          <td class="center-align"><b>{{ila.submission.farm.other_young_female}}</b></td>
+        </tr>
+      </table>
+
+      <h5 align="center">Signature: ___</h5>
+      <!--NEXT PAGE-->
+      <h5 align="center">Date: ___</h5>
+    </div><!--col-sm-11 col-sm-offset-1-->
+  </div><!--row-->
+
+  <br><br>
+  <div class="row">
+    <div class="col-sm-1 col-sm-offset-1">
+      <p><b>N. B.</b></p>
+    </div><!--col-sm-1 col-sm-offset-1-->
+    <div class="col-sm-10">
+      <p><b>
+        Horses and other companion animals (cats and dogs) do not qualify for farm incentives.
+      </b></p>
+    </div><!--col-sm-10-->
+
+    <div class="col-sm-12">
+      <h5><b><u>
+        For Official Use Only
+      </u></b></h5>
+    </div>
+
+    <div class="col-sm-4">
+      Person’s Id # ___
+    </div>
+    <div class="col-sm-4">
+      Farm Id # ___
+    </div>
+    <div class="col-sm-4">
+      Address Id # ___
+    </div>
+  </div><!--row-->
+</div><!--container-->
