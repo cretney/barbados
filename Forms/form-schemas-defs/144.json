@@ -1,0 +1,163 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "typeApplication",
+            "title": "",
+            "type": "radios-inline",
+            "titleMap": {
+              "export":"EXPORT&nbsp;&nbsp;",
+              "re-export":"RE-EXPORT&nbsp;&nbsp;",
+              "import":"IMPORT&nbsp;&nbsp;",
+              "other":"OTHER&nbsp;&nbsp;"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-offset-3 col-sm-3",
+        "items": [
+          {
+            "key":"validUntilDate",
+            "title":"Valid until"
+          }
+        ]
+      }
+    ]
+	},
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-5",
+        "items": [
+          {
+            "key":"importer.name",
+            "title":"Importer name",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-7",
+        "items": [
+          {
+            "key":"importer.address",
+            "title":"Importer address",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-5",
+        "items": [
+          {
+            "key":"importer.country",
+            "title":"Country of import",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-5",
+        "items": [
+          {
+            "key":"exporter.name",
+            "title":"Exporter name",
+            "readonly":true
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-7",
+        "items": [
+          {
+            "key":"exporter.address",
+            "title":"Exporter address",
+            "readonly":true
+          }
+        ]
+      }
+    ]
+  }
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key":"conditions",
+            "title":"Special conditions",
+            "type":"textarea"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key":"purpose",
+            "title":"Purpose of the transaction"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-offset-2 col-sm-3",
+        "items": [
+          {
+            "key":"securityNo",
+            "title":"Security Stamp No."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type":"help",
+    "helpvalue":"<hr><h4>Species</h4>"
+  },
+  {
+    "type": "submit",
+    "title": "Save"
+  }
+]
