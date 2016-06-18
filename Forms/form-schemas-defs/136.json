@@ -1,0 +1,703 @@
+[
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "help",
+    "helpvalue": "<h3 align='center'>OWNER(S) AND AGENT INFORMATION:</h3>"
+  },
+  {
+    "key": "owners",
+    "title": "",
+    "add": "Add Owner or Agent",
+    "remove": null,
+    "style": {
+      "add": "hidden"
+    },
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-12",
+            "items": [
+              {
+                "key": "owners[].type",
+                "type": "radios",
+                "title": "",
+                "description": "",
+                "titleMap": {
+                  "owner": "Owner",
+                  "agent": "Agent"
+                }
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-12 col-md-6",
+            "items": [
+              {
+                "key": "owners[].name",
+                "title": "Name:",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-12 col-md-6",
+            "items": [
+              {
+                "key": "owners[].address",
+                "title": "Address:",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-12 col-md-6",
+            "items": [
+              {
+                "key": "owners[].fisherNo",
+                "title": "Fisher No.:",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-12 col-md-6",
+            "items": [
+              {
+                "key": "owners[].idNo",
+                "title": "ID No.:",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-12 col-md-6",
+            "items": [
+              {
+                "key": "owners[].phone1",
+                "title": "Phone (Home):",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-12 col-md-6",
+            "items": [
+              {
+                "key": "owners[].phone2",
+                "title": "Phone (Work/Cell):",
+                "description": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr class='thick'>"
+  },
+  {
+    "type": "help",
+    "helpvalue": "<h3 align='center'>VESSEL DETAILS:</h3>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-8",
+        "items": [
+          {
+            "key": "vesselDetails.builder",
+            "title": "Builder:",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "vesselDetails.yearBuilt",
+            "title": "Year Built(age):",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "vesselDetails.name",
+            "title": "Vessel Name:",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "vesselDetails.vesselType",
+            "type": "radios",
+            "title": "Vessel Type:",
+            "description": "",
+            "titleMap": {
+              "longLiner": "LongLiner",
+              "iceboat": "Iceboat",
+              "dayBoat": "Day Boat",
+              "openBoat": "Open Boat"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "vesselDetails.hullMaterial",
+            "type": "radios",
+            "title": "Hull Material:",
+            "description": "",
+            "titleMap": {
+              "wood": "Wood",
+              "grp": "GRP",
+              "steel": "Steel",
+              "other": "Other"
+            }
+          },
+          {
+            "key": "vesselDetails.hullMaterialOther",
+            "condition": "model.vesselDetails.hullMaterial == 'other'",
+            "title": "Other Detail:",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "type": "help",
+            "helpvalue": "<h5>Dimensions of Vessel:</h5>"
+          },
+          {
+            "key": "vesselDetails.dimensions.unitType",
+            "type": "radiobuttons",
+            "title": "Units:",
+            "description": "",
+            "titleMap": {
+              "metres": "metres",
+              "feet": "feet"
+            }
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-12 col-lg-6 col-no-padding",
+            "items": [
+              {
+                "key": "vesselDetails.dimensions.length",
+                "type": "number",
+                "title": "Length:",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-12 col-lg-6 col-no-padding",
+            "items": [
+              {
+                "key": "vesselDetails.dimensions.beam",
+                "type": "number",
+                "title": "Beam:",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-12 col-lg-6 col-no-padding",
+            "items": [
+              {
+                "key": "vesselDetails.dimensions.depth",
+                "type": "number",
+                "title": "Depth:",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-12 col-lg-6 col-no-padding",
+            "items": [
+              {
+                "key": "vesselDetails.dimensions.draught",
+                "type": "number",
+                "title": "Draught:",
+                "description": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "vesselDetails.engines",
+    "title": "Engine(s)",
+    "add": "Add Engine",
+    "remove": null,
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-6",
+            "items": [
+              {
+                "key": "vesselDetails.engines[].location",
+                "htmlClass": "inline",
+                "type": "checkboxes",
+                "title": "Engine Location(s):",
+                "description": "",
+                "titleMap": {
+                  "inboard": "Inboard",
+                  "outboard": "Outboard"
+                }
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-6",
+            "items": [
+              {
+                "key": "vesselDetails.engines[].fuel",
+                "htmlClass": "inline",
+                "type": "checkboxes",
+                "title": "Fuel Type:",
+                "description": "",
+                "titleMap": {
+                  "diesel": "Diesel",
+                  "gas": "Gas",
+                  "kerosene": "Kerosene"
+                }
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-6 col-md-3",
+            "items": [
+              {
+                "key": "vesselDetails.engines[].hp",
+                "title": "Horsepower:",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-6 col-md-3",
+            "items": [
+              {
+                "key": "vesselDetails.engines[].make",
+                "title": "Make:",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-6 col-md-3",
+            "items": [
+              {
+                "key": "vesselDetails.engines[].model",
+                "title": "Model:",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-6 col-md-3",
+            "items": [
+              {
+                "key": "vesselDetails.engines[].serialNo",
+                "title": "Serial No:",
+                "description": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6 col-sm-offset-3",
+        "items": [
+          {
+            "key": "vesselDetails.crewSize",
+            "type": "number",
+            "title": "Proposed Num of Crew:",
+            "description": ""
+          },
+          {
+            "type": "help",
+            "helpvalue": "<h4 align='center'>Emergency Plans:</h4>"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "vesselDetails.emergencyPlan.haulPoint",
+            "title": "Haul Up at:",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "vesselDetails.emergencyPlan.takeToPort",
+            "title": "Take to Port:",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr class='thick'>"
+  },
+  {
+    "type": "help",
+    "helpvalue": "<h3 align='center'>FISHING INFORMATION:</h3>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-7 col-sm-offset-1",
+        "items": [
+          {
+            "key": "fishingDetails.distanceFromShore",
+            "title": "Fishing Distance from Shore",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "fishingDetails.distanceUnits",
+            "type": "radiobuttons",
+            "title": "Miles or Kilometers?",
+            "description": "",
+            "titleMap": {
+              "miles": "Miles",
+              "kilometers": "Kilometers"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-md-6 col-md-offset-3",
+        "items": [
+          {
+            "key": "fishingDetails.lengthofTrip",
+            "title": "Length of Fishing Trip",
+            "description": "day(s)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<h4 align='center'>Fish Storage</h4>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-10 col-sm-offset-2 col-lg-9 col-lg-offset-3",
+        "items": [
+          {
+            "key": "fishingDetails.fishStorage.type",
+            "type": "checkboxes",
+            "htmlClass": "inline",
+            "title": "",
+            "description": "",
+            "titleMap": {
+              "onDeck": "On Deck",
+              "insulatedBox": "Insulated Box",
+              "hold": "Fish/Ice Hold"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "type": "help",
+            "helpvalue": "<hr>"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "type": "help",
+            "helpvalue": "<h5 align='center'>Dimensons</h5>"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-8 col-sm-offset-4",
+        "items": [
+          {
+            "key": "fishingDetails.fishStorage.dimensionUnitType",
+            "type": "radiobuttons",
+            "title": "Metres or Feet?",
+            "description": "",
+            "titleMap": {
+              "metres": "Metres",
+              "feet": "Feet"
+            }
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "fishingDetails.fishStorage.length",
+            "type": "number",
+            "title": "Length",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "fishingDetails.fishStorage.width",
+            "type": "number",
+            "title": "Width",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "fishingDetails.fishStorage.height",
+            "type": "number",
+            "title": "Height",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6 col-md-4",
+        "items": [
+          {
+            "key": "fishingDetails.fishStorage.thickness",
+            "type": "number",
+            "title": "Thickness",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6 col-md-4",
+        "items": [
+          {
+            "key": "fishingDetails.fishStorage.capacity",
+            "title": "Capacity",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 col-md-4",
+        "items": [
+          {
+            "key": "fishingDetails.fishStorage.material",
+            "title": "Material",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "fishingDetails.operatingSites[0]",
+            "title": "Proposed Operating Site 1",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "fishingDetails.operatingSites[1]",
+            "title": "Proposed Operating Site 2",
+            "description": "if applicable"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "fishingDetails.homePort",
+            "title": "Mooring Site or Home Port",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "fishingDetails.targetSpecies",
+            "type": "checkboxes",
+            "title": "Target Species",
+            "description": "check all that apply",
+            "titleMap": {
+              "dolphin": "Dolphin",
+              "flyingFish": "Flying Fish",
+              "tuna": "Tuna",
+              "reefFish": "Reef Fish",
+              "other": "Other"
+            }
+          },
+          {
+            "key": "fishingDetails.targetSpeciesOther",
+            "condition": "model.fishingDetails.targetSpecies.indexOf('other') > -1",
+            "title": "Other Detail",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "fishingDetails.fishingGear",
+            "type": "checkboxes",
+            "title": "Fishing Gear",
+            "description": "check all that apply",
+            "titleMap": {
+              "longLine": "Long Line",
+              "gillNet": "Gill Net",
+              "pots": "Pots",
+              "handLines": "Hand Lines",
+              "other": "Other"
+            }
+          },
+          {
+            "key": "fishingDetails.fishingGearOther",
+            "condition": "model.fishingDetails.fishingGear.indexOf('other') > -1",
+            "title": "Other Detail",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "fishingDetails.purpose",
+            "type": "checkboxes",
+            "title": "Main Purpose of Fishing",
+            "description": "check all that apply",
+            "titleMap": {
+              "sellFish": "To Sell the Fish Caught",
+              "recreation": "Recreation",
+              "consumption": "Personal Consumption"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

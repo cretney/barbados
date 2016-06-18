@@ -6707,34 +6707,166 @@
   "title": "New Application for Registration of a Local Fishing Vessel",
   "status": "Draft",
   "submission": {
-    "commodities": [
-      {
-        "hsCode": "123",
-        "description": "test",
-        "units": [
-          {
-            "unitType": "Units",
-            "quantity": 3
-          }
-        ]
-      },
-      {
-        "hsCode": "234",
-        "description": "test",
-        "units": [
-          {
-            "unitType": "Units",
-            "quantity": 5
-          }
-        ]
-      }
+    "owners": [
+      {"type": "owner", "name": "Joe Blow", "address": "1234 Bay Street, St. Michael", "fisherNo": "F6484", "idNo": "34567", "phone1": "(246) 555-5555", "phone2": "(246) 888-8888", "dateSigned": "2016-07-04"},
+      {"type": "owner", "name": "Joe Schmoe", "address": "1235 Bay Street, St. Michael", "fisherNo": "F0222", "idNo": "45678", "phone1": "(246) 123-4567", "phone2": "(246) 987-6543", "dateSigned": "2016-07-05"},
+      {"type": "owner", "name": "Average Joe", "address": "4321 Not Bay Street, St. Andrew", "fisherNo": "F7711", "idNo": "56789", "phone1": "(246) 867-5309", "phone2": "", "dateSigned": "2016-07-04"},
+      {"type": "agent", "name": "Joe Camel", "address": "33 Lois Lane, St. George", "fisherNo": "F6309", "idNo": "67890", "phone1": "(246) 848-4848", "phone2": "", "dateSigned": "2016-07-08"}
     ],
-    "referenceNumber":"RN-7657657",
+    "vesselDetails": {
+      "builder": "Bob the Builder",
+      "yearBuilt": "1984",
+      "name": "S.S. Esses",
+      "vesselType": "iceboat",
+      "hullMaterial": "steel",
+      "hullMaterialOther": "",
+      "dimensions": {
+        "unitType": "feet",
+        "length": 25,
+        "beam": 20,
+        "depth": 8.6,
+        "draught": 10
+      },
+      "engines": [
+        {
+          "location": "inboard",
+          "fuel": "diesel",
+          "hp": "666",
+          "make": "Suzuki",
+          "model": "Vroom-Vroomer",
+          "serialNo": "N38p567E9"
+        },
+        {
+          "location": "inboard",
+          "fuel": "kerosene",
+          "hp": "1500",
+          "make": "Honda",
+          "model": "Marine",
+          "serialNo": "1234567890"
+        }
+      ],
+      "crewSize": 5,
+      "emergencyPlan": {
+        "haulPoint": "Port St. Charles",
+        "takeToPort": "Bridgetown"
+      }
+    },
+    "fishingDetails": {
+      "distanceFromShore": 40,
+      "distanceUnits": "miles",
+      "lengthofTrip": 6,
+      "fishStorage": {
+        "type": "insulatedBox",
+        "dimensionUnitType": "feet",
+        "length": 8,
+        "width": 6,
+        "height": 4,
+        "thickness": 1.5,
+        "capacity": "250 kg",
+        "material": "aluminum & wood"
+      },
+      "operatingSites": ["Site 1", "Site 2"],
+      "homePort": "Bridgetown",
+      "targetSpecies": ["tuna", "reefFish", "other"],
+      "targetSpeciesOther": "manatee",
+      "fishingGear": ["longLine", "pots"],
+      "fishingGearOther": "",
+      "purpose": ["sellFish"]
+    }
+  }
+},
+{
+  "blockId": 19913701,
+  "workflowId": 99,
+  "formId": 137,
+  "title": "Application for Registration of a Local Fishing Vessel",
+  "status": "Issued",
+  "submission": {
+    "owners": [
+      {"type": "owner", "name": "Joe Blow", "address": "1234 Bay Street, St. Michael", "fisherNo": "F6484", "idNo": "34567", "phone1": "(246) 555-5555", "phone2": "(246) 888-8888", "dateSigned": "2016-07-04"},
+      {"type": "owner", "name": "Joe Schmoe", "address": "1235 Bay Street, St. Michael", "fisherNo": "F0222", "idNo": "45678", "phone1": "(246) 123-4567", "phone2": "(246) 987-6543", "dateSigned": "2016-07-05"},
+      {"type": "owner", "name": "Average Joe", "address": "4321 Not Bay Street, St. Andrew", "fisherNo": "F7711", "idNo": "56789", "phone1": "(246) 867-5309", "phone2": "", "dateSigned": "2016-07-04"},
+      {"type": "agent", "name": "Joe Camel", "address": "33 Lois Lane, St. George", "fisherNo": "F6309", "idNo": "67890", "phone1": "(246) 848-4848", "phone2": "", "dateSigned": "2016-07-08"}
+    ],
+    "vesselDetails": {
+      "builder": "Bob the Builder",
+      "yearBuilt": "1984",
+      "name": "S.S. Esses",
+      "vesselType": "iceboat",
+      "hullMaterial": "steel",
+      "hullMaterialOther": "",
+      "dimensions": {
+        "unitType": "feet",
+        "length": 25,
+        "vesselClass": 2,
+        "beam": 20,
+        "depth": 8.6,
+        "draught": 10
+      },
+      "engines": [
+        {
+          "location": "inboard",
+          "fuel": "diesel",
+          "hp": "666",
+          "make": "Suzuki",
+          "model": "Vroom-Vroomer",
+          "serialNo": "N38p567E9"
+        },
+        {
+          "location": "inboard",
+          "fuel": "kerosene",
+          "hp": "1500",
+          "make": "Honda",
+          "model": "Marine",
+          "serialNo": "1234567890"
+        }
+      ],
+      "crewSize": 5,
+      "emergencyPlan": {
+        "haulPoint": "Port St. Charles",
+        "takeToPort": "Bridgetown"
+      }
+    },
+    "fishingDetails": {
+      "distanceFromShore": 40,
+      "distanceUnits": "miles",
+      "lengthofTrip": 6,
+      "fishStorage": {
+        "type": "insulatedBox",
+        "dimensionUnitType": "feet",
+        "length": 8,
+        "width": 6,
+        "height": 4,
+        "thickness": 1.5,
+        "capacity": "250 kg",
+        "material": "aluminum & wood"
+      },
+      "operatingSites": ["Site 1", "Site 2"],
+      "homePort": "Bridgetown",
+      "targetSpecies": ["tuna", "reefFish", "other"],
+      "targetSpeciesOther": "Manatee",
+      "fishingGear": ["longLine", "pots"],
+      "fishingGearOther": "",
+      "purpose": ["sellFish"]
+    },
     "serialNumberCertificate":"CN-68686",
-    "issuedDate":"2016-05-01",
-    "submitter": "Joe Blow",
-    "applicant": {"id":4, "name":"COLLINS LTD", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
-    "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+    "referenceNumber":"RN-7657657",
+    "hullNo": "123450",
+    "approvals": {
+      "ownership": true,
+      "citizenship": true,
+      "registered": false,
+      "localFishingAllowed": true,
+      "passInspection": true,
+      "recommended": true
+    },
+    "comments": "Registration is pending the proper payment to the registration official.",
+    "remarks": "Catch all the fish in the sea!",
+    "inspector": "Michael Jordan",
+    "inspectionDate": "2016-06-25",
+    "approvedBy": "Charles Barkley",
+    "approvalDate": "2016-07-20",
+    "approved": true
   }
 },
 {

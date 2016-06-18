@@ -380,4 +380,8 @@ table.table td.commodity-subtable.subtable-animal {
 	float: right;
 }
 
+.col-no-padding {
+	padding-left: 0;
+	padding-right: 10px;
+}
 /* End */

@@ -34,3 +34,37 @@
       }
     ]
   }
+
+  {
+    "type": "section",
+    "htmlClass": "col-sm-12",
+    "items": [
+      {
+        "key": "vesselDetails.name",
+        "title": "Vessel Name:",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "col-sm-12",
+    "items": [
+      {
+        "key": "vesselDetails.name",
+        "title": "Vessel Name:",
+        "description": ""
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "col-sm-12",
+    "items": [
+      {
+        "key": "vesselDetails.name",
+        "title": "Vessel Name:",
+        "description": ""
+      }
+    ]
+  }
