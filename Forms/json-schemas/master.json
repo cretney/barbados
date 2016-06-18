@@ -2507,7 +2507,9 @@
       "description": ""
     },
     "conditions": {
-      "type": "object",
+      "type": "string",
+      "title": "Conditions",
+      "description": "",
       "required": [
 
       ],
@@ -3735,6 +3737,104 @@
         }
       }
     },
+    "species": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name",
+            "description": ""
+          },
+          "description": {
+            "type": "string",
+            "title": "Description",
+            "description": "Description of the item."
+          },
+          "apendixNo": {
+            "type": "string",
+            "title": "Apendixno",
+            "description": ""
+          },
+          "quantity": {
+            "type": "integer",
+            "title": "Quantity",
+            "description": "The quantity in units of sale."
+          },
+          "quantityOfQuota": {
+            "type": "integer",
+            "title": "Quantityofquota",
+            "description": ""
+          },
+          "quota": {
+            "type": "integer",
+            "title": "Quota",
+            "description": ""
+          },
+          "origin": {
+            "type": "string",
+            "title": "Country of Origin",
+            "description": "The country from where the goods originated."
+          },
+          "permitNo": {
+            "type": "string",
+            "title": "Permitno",
+            "description": ""
+          },
+          "permitDate": {
+            "type": "date-time",
+            "title": "Permitdate",
+            "description": ""
+          },
+          "lastCountry": {
+            "type": "string",
+            "title": "Lastcountry",
+            "description": ""
+          },
+          "certificate": {
+            "type": "string",
+            "title": "Certificate",
+            "description": ""
+          },
+          "certificateDate": {
+            "type": "date-time",
+            "title": "Certificatedate",
+            "description": ""
+          },
+          "operationNo": {
+            "type": "string",
+            "title": "Operationno",
+            "description": ""
+          }
+        }
+      }
+    },
+    "validUntilDate": {
+      "type": "date-time",
+      "title": "Validuntildate",
+      "description": ""
+    },
+    "typeApplication": {
+      "type": "string",
+      "title": "Typeapplication",
+      "description": ""
+    },
+    "purpose": {
+      "type": "string",
+      "title": "Purpose",
+      "description": ""
+    },
+    "securityNo": {
+      "type": "string",
+      "title": "Securityno",
+      "description": ""
+    },
     "quarantinePeriod": {
       "type": "integer",
       "title": "Quarantineperiod",
@@ -4016,6 +4116,166 @@
             "title": "Items",
             "description": ""
           }
+        },
+        "cattle_adult_male": {
+          "type": "integer",
+          "title": "Cattle_adult_male",
+          "description": ""
+        },
+        "sheep_adult_male": {
+          "type": "integer",
+          "title": "Sheep_adult_male",
+          "description": ""
+        },
+        "goats_adult_male": {
+          "type": "integer",
+          "title": "Goats_adult_male",
+          "description": ""
+        },
+        "pigs_adult_male": {
+          "type": "integer",
+          "title": "Pigs_adult_male",
+          "description": ""
+        },
+        "poultry_broilers_adult_male": {
+          "type": "integer",
+          "title": "Poultry_broilers_adult_male",
+          "description": ""
+        },
+        "poultry_layers_adult_male": {
+          "type": "integer",
+          "title": "Poultry_layers_adult_male",
+          "description": ""
+        },
+        "rabbits_adult_male": {
+          "type": "integer",
+          "title": "Rabbits_adult_male",
+          "description": ""
+        },
+        "other_adult_male": {
+          "type": "integer",
+          "title": "Other_adult_male",
+          "description": ""
+        },
+        "cattle_adult_female": {
+          "type": "integer",
+          "title": "Cattle_adult_female",
+          "description": ""
+        },
+        "sheep_adult_female": {
+          "type": "integer",
+          "title": "Sheep_adult_female",
+          "description": ""
+        },
+        "goats_adult_female": {
+          "type": "integer",
+          "title": "Goats_adult_female",
+          "description": ""
+        },
+        "pigs_adult_female": {
+          "type": "integer",
+          "title": "Pigs_adult_female",
+          "description": ""
+        },
+        "poultry_broilers_adult_female": {
+          "type": "integer",
+          "title": "Poultry_broilers_adult_female",
+          "description": ""
+        },
+        "poultry_layers_adult_female": {
+          "type": "integer",
+          "title": "Poultry_layers_adult_female",
+          "description": ""
+        },
+        "rabbits_adult_female": {
+          "type": "integer",
+          "title": "Rabbits_adult_female",
+          "description": ""
+        },
+        "other_adult_female": {
+          "type": "integer",
+          "title": "Other_adult_female",
+          "description": ""
+        },
+        "cattle_young_male": {
+          "type": "integer",
+          "title": "Cattle_young_male",
+          "description": ""
+        },
+        "sheep_young_male": {
+          "type": "integer",
+          "title": "Sheep_young_male",
+          "description": ""
+        },
+        "goats_young_male": {
+          "type": "integer",
+          "title": "Goats_young_male",
+          "description": ""
+        },
+        "pigs_young_male": {
+          "type": "integer",
+          "title": "Pigs_young_male",
+          "description": ""
+        },
+        "poultry_broilers_young_male": {
+          "type": "integer",
+          "title": "Poultry_broilers_young_male",
+          "description": ""
+        },
+        "poultry_layers_young_male": {
+          "type": "integer",
+          "title": "Poultry_layers_young_male",
+          "description": ""
+        },
+        "rabbits_young_male": {
+          "type": "integer",
+          "title": "Rabbits_young_male",
+          "description": ""
+        },
+        "other_young_male": {
+          "type": "integer",
+          "title": "Other_young_male",
+          "description": ""
+        },
+        "cattle_young_female": {
+          "type": "integer",
+          "title": "Cattle_young_female",
+          "description": ""
+        },
+        "sheep_young_female": {
+          "type": "integer",
+          "title": "Sheep_young_female",
+          "description": ""
+        },
+        "goats_young_female": {
+          "type": "integer",
+          "title": "Goats_young_female",
+          "description": ""
+        },
+        "pigs_young_female": {
+          "type": "integer",
+          "title": "Pigs_young_female",
+          "description": ""
+        },
+        "poultry_broilers_young_female": {
+          "type": "integer",
+          "title": "Poultry_broilers_young_female",
+          "description": ""
+        },
+        "poultry_layers_young_female": {
+          "type": "integer",
+          "title": "Poultry_layers_young_female",
+          "description": ""
+        },
+        "rabbits_young_female": {
+          "type": "integer",
+          "title": "Rabbits_young_female",
+          "description": ""
+        },
+        "other_young_female": {
+          "type": "integer",
+          "title": "Other_young_female",
+          "description": ""
         }
       }
     },
@@ -4112,11 +4372,6 @@
           }
         }
       }
-    },
-    "typeApplication": {
-      "type": "string",
-      "title": "Typeapplication",
-      "description": ""
     },
     "directManufacturing": {
       "type": "array",

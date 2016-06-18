@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 19f73e906addf7c0263cd4c27350b890029286f2",
+  "description": "Generated from b with shasum c87ba1f9be93670db9a9733516c569c6c6124580",
   "type": "object",
   "required": [
     "blockId",
@@ -175,7 +175,39 @@
             "activity_aquaculture",
             "vegetables",
             "root_crops",
-            "fruits"
+            "fruits",
+            "cattle_adult_male",
+            "sheep_adult_male",
+            "goats_adult_male",
+            "pigs_adult_male",
+            "poultry_broilers_adult_male",
+            "poultry_layers_adult_male",
+            "rabbits_adult_male",
+            "other_adult_male",
+            "cattle_adult_female",
+            "sheep_adult_female",
+            "goats_adult_female",
+            "pigs_adult_female",
+            "poultry_broilers_adult_female",
+            "poultry_layers_adult_female",
+            "rabbits_adult_female",
+            "other_adult_female",
+            "cattle_young_male",
+            "sheep_young_male",
+            "goats_young_male",
+            "pigs_young_male",
+            "poultry_broilers_young_male",
+            "poultry_layers_young_male",
+            "rabbits_young_male",
+            "other_young_male",
+            "cattle_young_female",
+            "sheep_young_female",
+            "goats_young_female",
+            "pigs_young_female",
+            "poultry_broilers_young_female",
+            "poultry_layers_young_female",
+            "rabbits_young_female",
+            "other_young_female"
           ],
           "properties": {
             "name": {
@@ -314,6 +346,102 @@
               "items": {
                 "type": "string"
               }
+            },
+            "cattle_adult_male": {
+              "type": "integer"
+            },
+            "sheep_adult_male": {
+              "type": "integer"
+            },
+            "goats_adult_male": {
+              "type": "integer"
+            },
+            "pigs_adult_male": {
+              "type": "integer"
+            },
+            "poultry_broilers_adult_male": {
+              "type": "integer"
+            },
+            "poultry_layers_adult_male": {
+              "type": "integer"
+            },
+            "rabbits_adult_male": {
+              "type": "integer"
+            },
+            "other_adult_male": {
+              "type": "integer"
+            },
+            "cattle_adult_female": {
+              "type": "integer"
+            },
+            "sheep_adult_female": {
+              "type": "integer"
+            },
+            "goats_adult_female": {
+              "type": "integer"
+            },
+            "pigs_adult_female": {
+              "type": "integer"
+            },
+            "poultry_broilers_adult_female": {
+              "type": "integer"
+            },
+            "poultry_layers_adult_female": {
+              "type": "integer"
+            },
+            "rabbits_adult_female": {
+              "type": "integer"
+            },
+            "other_adult_female": {
+              "type": "integer"
+            },
+            "cattle_young_male": {
+              "type": "integer"
+            },
+            "sheep_young_male": {
+              "type": "integer"
+            },
+            "goats_young_male": {
+              "type": "integer"
+            },
+            "pigs_young_male": {
+              "type": "integer"
+            },
+            "poultry_broilers_young_male": {
+              "type": "integer"
+            },
+            "poultry_layers_young_male": {
+              "type": "integer"
+            },
+            "rabbits_young_male": {
+              "type": "integer"
+            },
+            "other_young_male": {
+              "type": "integer"
+            },
+            "cattle_young_female": {
+              "type": "integer"
+            },
+            "sheep_young_female": {
+              "type": "integer"
+            },
+            "goats_young_female": {
+              "type": "integer"
+            },
+            "pigs_young_female": {
+              "type": "integer"
+            },
+            "poultry_broilers_young_female": {
+              "type": "integer"
+            },
+            "poultry_layers_young_female": {
+              "type": "integer"
+            },
+            "rabbits_young_female": {
+              "type": "integer"
+            },
+            "other_young_female": {
+              "type": "integer"
             }
           }
         },

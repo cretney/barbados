@@ -686,6 +686,11 @@
 				"document":"CITES Permit - sample data.pdf"
 			},
 			{
+				"id": 145,
+				"template": "vs-cites-permit-issued.html",
+				"document":"CITES Permit - sample data.pdf"
+			},
+			{
 				"id": 146,
 				"template": "fs-notification-detention-food-further-examination.html",
 				"document":"Notification of Detention of food for further Examination.pdf"
