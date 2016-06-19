@@ -108,7 +108,7 @@
         ]
       }
     ]
-  }
+  },
   {
     "type": "section",
     "htmlClass": "row",
@@ -155,6 +155,200 @@
   {
     "type":"help",
     "helpvalue":"<hr><h4>Species</h4>"
+  },
+  {
+    "key": "species",
+    "add": "Add Species",
+    "title":"",
+    "style": {
+      "add": "btn-success"
+    },
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-5",
+            "items": [
+              {
+                "key": "species[].name",
+                "title": "Scientific name and common name of Animal or Plant",
+                "description":"genus, species and name"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-6",
+            "items": [
+              {
+                "key": "species[].description",
+                "title": "Description of specimens, including identifying marks or numbers",
+                "description":"age/sex if alive"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "species[].apendixNo",
+                "title": "Appendix No. and source",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key": "species[].quantity",
+                "title": "Quantity",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key": "species[].quantityOfQuota",
+                "title": "Total Exported",
+                "description":"from quota"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key": "species[].quota",
+                "title": "Quota",
+                "description":""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-5",
+            "items": [
+              {
+                "key": "species[].origin",
+                "title": "Country of origin",
+                "description":"Country to which the specimens were taken from the wild, bred in captivity or artifically propagated (only in case of re-export)"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "species[].permitNo",
+                "title": "Permit No.",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "species[].permitDate",
+                "title": "Date",
+                "description":""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-5",
+            "items": [
+              {
+                "key": "species[].lastCountry",
+                "title": "Country of last re-export",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "species[].certificate",
+                "title": "Certificate No.",
+                "description":""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "species[].certificateDate",
+                "title": "Date",
+                "description":""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-5",
+            "items": [
+              {
+                "key": "species[].operationNo",
+                "title": "No. of operation",
+                "description":"Only for specimens of Appendix | species bred in captivity for commercial purposes"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "species[].dateAcquisition",
+                "title": "Date of acquisition",
+                "description":"for pre-Convention specimens"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "type": "submit",

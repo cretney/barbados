@@ -25,11 +25,14 @@
     <div class="col-sm-6" align="right">
       <h5><b>
         PERMIT/CERTIFICATE NO.
-        <span class="bigger">03662</span>
+        <span class="bigger">{{ila.submission.serialNumberCertificate}}</span>
       </b></h5>
     </div>
   </div><!--row-->
 
+  <span ng-repeat="item in ila.submission.species">
+    {{item.name}}<br>
+  </span>
 
   <div class="row">
     <div class="col-sm-12">
@@ -37,16 +40,32 @@
         <tr>
           <td class="no-top-cell no-bottom-cell no-left-cell" colspan="3"></td>
           <td class="no-top-cell no-right-cell no-bottom-cell" colspan="2">
-            <p>[ ] EXPORT</p>
-            <p>[ ] RE-EXPORT</p>
+            <p>
+              <span ng-if="ila.submission.typeApplication != 'export'">[&nbsp;&nbsp;]</span>
+              <span ng-if="ila.submission.typeApplication == 'export'">[<b>X</b>]</span>
+              EXPORT
+            </p>
+            <p>
+              <span ng-if="ila.submission.typeApplication != 're-export'">[&nbsp;&nbsp;]</span>
+              <span ng-if="ila.submission.typeApplication == 're-export'">[<b>X</b>]</span>
+              RE-EXPORT
+            </p>
           </td>
           <td class="no-top-cell no-right-cell no-left-cell"></td>
         </tr>
         <tr>
           <td class="no-top-cell no-left-cell" colspan="3"></td>
           <td class="no-top-cell">
-            <p>[ ] IMPORT</p>
-            <p>[ ] OTHER</p>
+            <p>
+              <span ng-if="ila.submission.typeApplication != 'import'">[&nbsp;&nbsp;]</span>
+              <span ng-if="ila.submission.typeApplication == 'import'">[<b>X</b>]</span>
+              IMPORT
+            </p>
+            <p>
+              <span ng-if="ila.submission.typeApplication != 'other'">[&nbsp;&nbsp;]</span>
+              <span ng-if="ila.submission.typeApplication == 'other'">[<b>X</b>]</span>
+              OTHER
+            </p>
           </td>
           <td colspan="2">
             <h6>2. Valid until</h6>
@@ -64,9 +83,8 @@
 
               <div class="col-sm-10 col-sm-offset-1">
                 <p><b>
-                  Sam Pascucci<br>
-                  Florida Iguana and Tortoise Breeders<br>
-                  14591 Sunset Lane, Sw Ranches, FL 3330
+                  {{ila.submission.importer.name}}<br>
+                  {{ila.submission.importer.address}}
                 </b></p>
               </div><!--col-sm-10 col-sm-offset-1-->
             </div><!--row-->
@@ -79,9 +97,8 @@
 
               <div class="col-sm-12">
                 <p><b>
-                  Mr. Geddes Corrie<br>
-                  Exotic Tropicals, #13 Highgate Gardens,<br>
-                  Wildey, St. Michael, BARBADOS BB14005
+                  {{ila.submission.exporter.name}}<br>
+                  {{ila.submission.exporter.address}}
                 </b></p>
               </div>
             </div><!--row-->
@@ -91,7 +108,7 @@
           <td colspan="3">
             <h6>3a. Country of import</h6>
             <p align="center" style="margin-top: -20px">
-              <b>US</b>
+              <b>{{ila.submission.importer.country}}</b>
             </p>
           </td>
           <td colspan="3">
@@ -105,7 +122,7 @@
             <h6>5. Special conditions</h6>
             <br><br>
             <h6>
-              For live animals. This permit or certificate is only valid if transport conditions conform to the Guidance for Transport of Live Animals or, in the case of air transport, to the IATA Live Animals Regulations.
+              {{ila.submission.conditions}}
             </h6>
           </td>
           <td class="no-bottom-cell" colspan="3">
@@ -140,13 +157,14 @@
                 </h6>
               </div>
               <div class="col-sm-3">
-                <h5><b>T</b></h5>
+                <h5><b>{{ila.submission.purpose}}</b></h5>
               </div>
             </div><!--row-->
           </td>
           <td>
             <h6>
-              5b. Security Stamp No.
+              5b. Security Stamp No. <br>
+              {{ila.submission.securityNo}}
             </h6>
           </td>
           <td class="no-top-cell" colspan="3"></td>
@@ -178,401 +196,148 @@
             </h6>
           </td>
         </tr>
-        <tr><!--A-->
-          <td class="no-bottom-cell"></td>
-          <td class="no-right-cell">
-            <div class="row">
-              <div class="col-sm-2">
-                <h6>7./8</h6>
-              </div>
-              <div class="col-sm-10">
-                <h5><b>
-                  Iguana iguana (Green Iguana)
-                </b></h5>
-              </div>
-            </div><!--row-->
-          </td>
-          <td class="no-left-cell">
-            <div class="row">
-              <div class="col-sm-2">
-                <h6>9.</h6>
-              </div>
-              <div class="col-sm-10">
-                <h5><b>
-                  LIV (Juveniles)
-                </b></h5>
-              </div>
-            </div><!--row-->
-          </td>
-          <td>
-            <div class="row">
-              <div class="col-sm-2">
-                <h6>10.</h6>
-              </div>
-              <div class="col-sm-10">
-                <h5><b>
-                  11 C
-                </b></h5>
-              </div>
-            </div><!--row-->
-          </td>
-          <td>
-            <div class="row">
-              <div class="col-sm-2">
-                <h6>11.</h6>
-              </div>
-              <div class="col-sm-9">
-                <h5><b>
-                  10
-                </b></h5>
-              </div>
-            </div><!--row-->
-          </td>
-          <td>
-            <h6>11a.</h6>
-          </td>
-        </tr>
-        <tr>
-          <td class="no-top-cell">
-            <h6>A</h6>
-          </td>
-          <td>
-            <div class="row">
-              <div class="col-sm-5">
-                <h6>12. Country of origin*</h6>
-              </div>
-              <div class="col-sm-4">
-                <h6>Permit No.</h6>
-              </div>
-              <div class="col-sm-3">
-                <h6>Date</h6>
-              </div>
+          <tbody ng-repeat="item in ila.submission.species">
+            <tr><!--A-->
+              <td class="no-bottom-cell"></td>
+              <td class="no-right-cell">
+                <div class="row">
+                  <div class="col-sm-2">
+                    <h6>7./8</h6>
+                  </div>
+                  <div class="col-sm-10">
+                    <h5><b>
+                      {{item.name}}
+                    </b></h5>
+                  </div>
+                </div><!--row-->
+              </td>
+              <td class="no-left-cell">
+                <div class="row">
+                  <div class="col-sm-2">
+                    <h6>9.</h6>
+                  </div>
+                  <div class="col-sm-10">
+                    <h5><b>
+                      {{item.description}}
+                    </b></h5>
+                  </div>
+                </div><!--row-->
+              </td>
+              <td>
+                <div class="row">
+                  <div class="col-sm-2">
+                    <h6>10.</h6>
+                  </div>
+                  <div class="col-sm-10">
+                    <h5><b>
+                      {{item.apendixNo}}
+                    </b></h5>
+                  </div>
+                </div><!--row-->
+              </td>
+              <td>
+                <div class="row">
+                  <div class="col-sm-2">
+                    <h6>11.</h6>
+                  </div>
+                  <div class="col-sm-9">
+                    <h5><b>
+                      {{item.quantity}}
+                    </b></h5>
+                  </div>
+                </div><!--row-->
+              </td>
+              <td>
+                <div class="row">
+                  <div class="col-sm-2">
+                    <h6>11a.</h6>
+                  </div>
+                  <div class="col-sm-9">
+                    <h5><b>
+                      {{item.quantityOfQuota}} / {{item.quota}}
+                    </b></h5>
+                  </div>
+                </div><!--row-->
+              </td>
+            </tr>
+            <tr>
+              <td class="no-top-cell">
+                <h6>{{$index+1}}</h6>
+              </td>
+              <td>
+                <div class="row">
+                  <div class="col-sm-5">
+                    <h6>12. Country of origin*</h6>
+                  </div>
+                  <div class="col-sm-4">
+                    <h6>Permit No.</h6>
+                  </div>
+                  <div class="col-sm-3">
+                    <h6>Date</h6>
+                  </div>
+                </div><!--row-->
+                <div class="row">
+                  <div class="col-sm-5">
+                    <h5>{{item.origin}}</h5>
+                  </div>
+                  <div class="col-sm-7">
+                    <h5>
+                      {{item.permitNo}}<br>
+                      {{item.permitDate}}
+                    </h5>
+                  </div>
+                </div><!--row-->
+              </td>
+              <td colspan="2">
+                <div class="row">
+                  <div class="col-sm-5">
+                    <h6>
+                      12a. Country of last re-export
+                    </h6>
+                  </div>
+                  <div class="col-sm-4">
+                    <h6>
+                      Certificate No.
+                    </h6>
+                  </div>
+                  <div class="col-sm-3">
+                    <h6>
+                      Date
+                    </h6>
+                  </div>
+                </div><!--row-->
+                <div class="row">
+                  <div class="col-sm-5">
+                    <h5>{{item.lastCountry}}</h5>
+                  </div>
+                  <div class="col-sm-7">
+                    <h5>
+                      {{item.certificate}}<br>
+                      {{item.certificateDate}}
+                    </h5>
+                  </div>
+                </div><!--row-->
+              </td>
+              <td colspan="2">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h6>
+                      12b. No. of operation ** or date of acquisition ***
+                    </h6>
+                  </div>
+                </div><!--row-->
+                <div class="row">
+                  <div class="col-sm-12">
+                    <h5>
+                      {{item.operationNo}}<br>
+                      {{item.dateAcquisition}}
+                    </h5>
+                  </div>
+                </div><!--row-->
 
-              <div class="col-sm-5 with-right">
-                <h6>&nbsp;</h6>
-              </div>
-              <div class="col-sm-4 with-right">
-                <h6>&nbsp;</h6>
-              </div>
-              <div class="col-sm-3">
-                <h6>&nbsp;</h6>
-              </div>
-            </div><!--row-->
-          </td>
-          <td colspan="2">
-            <div class="row">
-              <div class="col-sm-5">
-                <h6>
-                  12a. Country of last re-export
-                </h6>
-              </div>
-              <div class="col-sm-4">
-                <h6>
-                  Certificate No.
-                </h6>
-              </div>
-              <div class="col-sm-3">
-                <h6>
-                  Date
-                </h6>
-              </div>
-
-              <div class="col-sm-5 with-right">
-                <h6>
-                  &nbsp;
-                </h6>
-              </div>
-              <div class="col-sm-4 with-right">
-                <h6>
-                  &nbsp;
-                </h6>
-              </div>
-              <div class="col-sm-3">
-                <h6>
-                  &nbsp;
-                </h6>
-              </div>
-            </div><!--row-->
-          </td>
-          <td colspan="2">
-            <h6>
-              12b. No. of operation ** or date of acquisition ***<br><br><br>
-            </h6>
-          </td>
-        </tr>
-        <tr><!--B-->
-          <td class="no-bottom-cell"></td>
-          <td class="no-right-cell">
-            <h6>7./8</h6>
-            <br>
-          </td>
-          <td class="no-right-cell no-left-cell">
-            <h6>9.</h6>
-            <br>
-          </td>
-          <td class="no-left-cell">
-            <h6>10.</h6>
-            <br>
-          </td>
-          <td>
-            <h6>11.</h6>
-            <br>
-          </td>
-          <td>
-            <h6>11a.</h6>
-            <br>
-          </td>
-        </tr>
-        <tr>
-          <td class="no-top-cell">
-            <h6>B</h6>
-          </td>
-          <td>
-            <div class="row">
-              <div class="col-sm-5">
-                <h6>12. Country of origin*</h6>
-              </div>
-              <div class="col-sm-4">
-                <h6>Permit No.</h6>
-              </div>
-              <div class="col-sm-3">
-                <h6>Date</h6>
-              </div>
-
-              <div class="col-sm-5 with-right">
-                <h6>&nbsp;</h6>
-              </div>
-              <div class="col-sm-4 with-right">
-                <h6>&nbsp;</h6>
-              </div>
-              <div class="col-sm-3">
-                <h6>&nbsp;</h6>
-              </div>
-            </div><!--row-->
-          </td>
-          <td colspan="2">
-            <div class="row">
-              <div class="col-sm-5">
-                <h6>
-                  12a. Country of last re-export
-                </h6>
-              </div>
-              <div class="col-sm-4">
-                <h6>
-                  Certificate No.
-                </h6>
-              </div>
-              <div class="col-sm-3">
-                <h6>
-                  Date
-                </h6>
-              </div>
-
-              <div class="col-sm-5 with-right">
-                <h6>
-                  &nbsp;
-                </h6>
-              </div>
-              <div class="col-sm-4 with-right">
-                <h6>
-                  &nbsp;
-                </h6>
-              </div>
-              <div class="col-sm-3">
-                <h6>
-                  &nbsp;
-                </h6>
-              </div>
-            </div><!--row-->
-          </td>
-          <td colspan="2">
-            <h6>
-              12b. No. of operation ** or date of acquisition ***<br><br><br>
-            </h6>
-          </td>
-        </tr>
-        <tr><!--C-->
-          <td class="no-bottom-cell"></td>
-          <td class="no-right-cell">
-            <h6>7./8</h6>
-            <br>
-          </td>
-          <td class="no-right-cell no-left-cell">
-            <h6>9.</h6>
-            <br>
-          </td>
-          <td class="no-left-cell">
-            <h6>10.</h6>
-            <br>
-          </td>
-          <td>
-            <h6>11.</h6>
-            <br>
-          </td>
-          <td>
-            <h6>11a.</h6>
-            <br>
-          </td>
-        </tr>
-        <tr>
-          <td class="no-top-cell">
-            <h6>C</h6>
-          </td>
-          <td>
-            <div class="row">
-              <div class="col-sm-5">
-                <h6>12. Country of origin*</h6>
-              </div>
-              <div class="col-sm-4">
-                <h6>Permit No.</h6>
-              </div>
-              <div class="col-sm-3">
-                <h6>Date</h6>
-              </div>
-
-              <div class="col-sm-5 with-right">
-                <h6>&nbsp;</h6>
-              </div>
-              <div class="col-sm-4 with-right">
-                <h6>&nbsp;</h6>
-              </div>
-              <div class="col-sm-3">
-                <h6>&nbsp;</h6>
-              </div>
-            </div><!--row-->
-          </td>
-          <td colspan="2">
-            <div class="row">
-              <div class="col-sm-5">
-                <h6>
-                  12a. Country of last re-export
-                </h6>
-              </div>
-              <div class="col-sm-4">
-                <h6>
-                  Certificate No.
-                </h6>
-              </div>
-              <div class="col-sm-3">
-                <h6>
-                  Date
-                </h6>
-              </div>
-
-              <div class="col-sm-5 with-right">
-                <h6>
-                  &nbsp;
-                </h6>
-              </div>
-              <div class="col-sm-4 with-right">
-                <h6>
-                  &nbsp;
-                </h6>
-              </div>
-              <div class="col-sm-3">
-                <h6>
-                  &nbsp;
-                </h6>
-              </div>
-            </div><!--row-->
-          </td>
-          <td colspan="2">
-            <h6>
-              12b. No. of operation ** or date of acquisition ***<br><br><br>
-            </h6>
-          </td>
-        </tr>
-        <tr><!--D-->
-          <td class="no-bottom-cell"></td>
-          <td class="no-right-cell">
-            <h6>7./8</h6>
-            <br>
-          </td>
-          <td class="no-right-cell no-left-cell">
-            <h6>9.</h6>
-            <br>
-          </td>
-          <td class="no-left-cell">
-            <h6>10.</h6>
-            <br>
-          </td>
-          <td>
-            <h6>11.</h6>
-            <br>
-          </td>
-          <td>
-            <h6>11a.</h6>
-            <br>
-          </td>
-        </tr>
-        <tr>
-          <td class="no-top-cell">
-            <h6>D</h6>
-          </td>
-          <td>
-            <div class="row">
-              <div class="col-sm-5">
-                <h6>12. Country of origin*</h6>
-              </div>
-              <div class="col-sm-4">
-                <h6>Permit No.</h6>
-              </div>
-              <div class="col-sm-3">
-                <h6>Date</h6>
-              </div>
-
-              <div class="col-sm-5 with-right">
-                <h6>&nbsp;</h6>
-              </div>
-              <div class="col-sm-4 with-right">
-                <h6>&nbsp;</h6>
-              </div>
-              <div class="col-sm-3">
-                <h6>&nbsp;</h6>
-              </div>
-            </div><!--row-->
-          </td>
-          <td colspan="2">
-            <div class="row">
-              <div class="col-sm-5">
-                <h6>
-                  12a. Country of last re-export
-                </h6>
-              </div>
-              <div class="col-sm-4">
-                <h6>
-                  Certificate No.
-                </h6>
-              </div>
-              <div class="col-sm-3">
-                <h6>
-                  Date
-                </h6>
-              </div>
-
-              <div class="col-sm-5 with-right">
-                <h6>
-                  &nbsp;
-                </h6>
-              </div>
-              <div class="col-sm-4 with-right">
-                <h6>
-                  &nbsp;
-                </h6>
-              </div>
-              <div class="col-sm-3">
-                <h6>
-                  &nbsp;
-                </h6>
-              </div>
-            </div><!--row-->
-          </td>
-          <td colspan="2">
-            <h6>
-              12b. No. of operation ** or date of acquisition ***<br><br><br>
-            </h6>
-          </td>
-        </tr>
+              </td>
+            </tr>
+          </tbody>
         <tr>
           <td colspan="4">
             <h6>
