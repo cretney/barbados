@@ -3344,6 +3344,380 @@
       "title": "Swordfishatlantic",
       "description": ""
     },
+    "owners": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+
+        ],
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "title": "Properties",
+          "description": "",
+          "name": {
+            "type": "string",
+            "title": "Name",
+            "description": ""
+          },
+          "address": {
+            "type": "string",
+            "title": "Address",
+            "description": ""
+          },
+          "fisherNo": {
+            "type": "string",
+            "title": "Fisherno",
+            "description": ""
+          },
+          "idNo": {
+            "type": "string",
+            "title": "Idno",
+            "description": ""
+          },
+          "phone1": {
+            "type": "string",
+            "title": "Phone1",
+            "description": ""
+          },
+          "phone2": {
+            "type": "string",
+            "title": "Phone2",
+            "description": ""
+          },
+          "dateSigned": {
+            "type": "date-time",
+            "title": "Datesigned",
+            "description": ""
+          }
+        }
+      }
+    },
+    "vesselDetails": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "builder": {
+          "type": "string",
+          "title": "Builder",
+          "description": ""
+        },
+        "yearBuilt": {
+          "type": "string",
+          "title": "Yearbuilt",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "vesselType": {
+          "type": "string",
+          "title": "Vesseltype",
+          "description": ""
+        },
+        "hullMaterial": {
+          "type": "string",
+          "title": "Hullmaterial",
+          "description": ""
+        },
+        "hullMaterialOther": {
+          "type": "string",
+          "title": "Hullmaterialother",
+          "description": ""
+        },
+        "dimensions": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "unitType": {
+              "type": "string",
+              "title": "Unit of Sale",
+              "description": "The unit of sale."
+            },
+            "length": {
+              "type": "integer",
+              "title": "Length",
+              "description": ""
+            },
+            "beam": {
+              "type": "integer",
+              "title": "Beam",
+              "description": ""
+            },
+            "depth": {
+              "type": "number",
+              "title": "Depth",
+              "description": ""
+            },
+            "draught": {
+              "type": "integer",
+              "title": "Draught",
+              "description": ""
+            },
+            "vesselClass": {
+              "type": "integer",
+              "title": "Vesselclass",
+              "description": ""
+            }
+          }
+        },
+        "engines": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+
+            ],
+            "properties": {
+              "location": {
+                "type": "string",
+                "title": "Location",
+                "description": ""
+              },
+              "fuel": {
+                "type": "string",
+                "title": "Fuel",
+                "description": ""
+              },
+              "hp": {
+                "type": "string",
+                "title": "Hp",
+                "description": ""
+              },
+              "make": {
+                "type": "string",
+                "title": "Make",
+                "description": ""
+              },
+              "model": {
+                "type": "string",
+                "title": "Model",
+                "description": ""
+              },
+              "serialNo": {
+                "type": "string",
+                "title": "Serialno",
+                "description": ""
+              }
+            }
+          }
+        },
+        "crewSize": {
+          "type": "integer",
+          "title": "Crewsize",
+          "description": ""
+        },
+        "emergencyPlan": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "haulPoint": {
+              "type": "string",
+              "title": "Haulpoint",
+              "description": ""
+            },
+            "takeToPort": {
+              "type": "string",
+              "title": "Taketoport",
+              "description": ""
+            }
+          }
+        }
+      }
+    },
+    "fishingDetails": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "distanceFromShore": {
+          "type": "integer",
+          "title": "Distancefromshore",
+          "description": ""
+        },
+        "distanceUnits": {
+          "type": "string",
+          "title": "Distanceunits",
+          "description": ""
+        },
+        "lengthofTrip": {
+          "type": "integer",
+          "title": "Lengthoftrip",
+          "description": ""
+        },
+        "fishStorage": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "type": {
+              "type": "string"
+            },
+            "title": "Properties",
+            "description": "",
+            "dimensionUnitType": {
+              "type": "string",
+              "title": "Dimensionunittype",
+              "description": ""
+            },
+            "length": {
+              "type": "integer",
+              "title": "Length",
+              "description": ""
+            },
+            "width": {
+              "type": "integer",
+              "title": "Width",
+              "description": ""
+            },
+            "height": {
+              "type": "integer",
+              "title": "Height",
+              "description": ""
+            },
+            "thickness": {
+              "type": "number",
+              "title": "Thickness",
+              "description": ""
+            },
+            "capacity": {
+              "type": "string",
+              "title": "Capacity",
+              "description": ""
+            },
+            "material": {
+              "type": "string",
+              "title": "Material",
+              "description": ""
+            }
+          }
+        },
+        "operatingSites": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
+        },
+        "homePort": {
+          "type": "string",
+          "title": "Homeport",
+          "description": ""
+        },
+        "targetSpecies": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
+        },
+        "targetSpeciesOther": {
+          "type": "string",
+          "title": "Targetspeciesother",
+          "description": ""
+        },
+        "fishingGear": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
+        },
+        "fishingGearOther": {
+          "type": "string",
+          "title": "Fishinggearother",
+          "description": ""
+        },
+        "purpose": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
+        }
+      }
+    },
+    "hullNo": {
+      "type": "string",
+      "title": "Hullno",
+      "description": ""
+    },
+    "approvals": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "ownership": {
+          "type": "boolean",
+          "title": "Ownership",
+          "description": ""
+        },
+        "citizenship": {
+          "type": "boolean",
+          "title": "Citizenship",
+          "description": ""
+        },
+        "registered": {
+          "type": "boolean",
+          "title": "Registered",
+          "description": ""
+        },
+        "localFishingAllowed": {
+          "type": "boolean",
+          "title": "Localfishingallowed",
+          "description": ""
+        },
+        "passInspection": {
+          "type": "boolean",
+          "title": "Passinspection",
+          "description": ""
+        },
+        "recommended": {
+          "type": "boolean",
+          "title": "Recommended",
+          "description": ""
+        }
+      }
+    },
+    "comments": {
+      "type": "string",
+      "title": "Comments",
+      "description": ""
+    },
+    "approved": {
+      "type": "boolean",
+      "title": "Approved",
+      "description": ""
+    },
     "staff": {
       "type": "array",
       "minItems": 1,
@@ -3811,6 +4185,11 @@
             "type": "string",
             "title": "Operationno",
             "description": ""
+          },
+          "dateAcquisition": {
+            "type": "date-time",
+            "title": "Dateacquisition",
+            "description": ""
           }
         }
       }
@@ -3857,11 +4236,6 @@
           "description": ""
         }
       }
-    },
-    "comments": {
-      "type": "string",
-      "title": "Comments",
-      "description": ""
     },
     "consignments": {
       "type": "string",

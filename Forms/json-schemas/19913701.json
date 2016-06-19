@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 75734340eb1bb22854fd4fa1581939622639dea8",
+  "description": "Generated from b with shasum c18fc138a00bcb926d827d3bb804e95224445e72",
   "type": "object",
   "required": [
     "blockId",
@@ -31,7 +31,18 @@
       "required": [
         "owners",
         "vesselDetails",
-        "fishingDetails"
+        "fishingDetails",
+        "serialNumberCertificate",
+        "referenceNumber",
+        "hullNo",
+        "approvals",
+        "comments",
+        "remarks",
+        "inspector",
+        "inspectionDate",
+        "approvedBy",
+        "approvalDate",
+        "approved"
       ],
       "properties": {
         "owners": {
@@ -116,6 +127,7 @@
               "required": [
                 "unitType",
                 "length",
+                "vesselClass",
                 "beam",
                 "depth",
                 "draught"
@@ -125,6 +137,9 @@
                   "type": "string"
                 },
                 "length": {
+                  "type": "integer"
+                },
+                "vesselClass": {
                   "type": "integer"
                 },
                 "beam": {
@@ -300,6 +315,67 @@
               }
             }
           }
+        },
+        "serialNumberCertificate": {
+          "type": "string"
+        },
+        "referenceNumber": {
+          "type": "string"
+        },
+        "hullNo": {
+          "type": "string"
+        },
+        "approvals": {
+          "type": "object",
+          "required": [
+            "ownership",
+            "citizenship",
+            "registered",
+            "localFishingAllowed",
+            "passInspection",
+            "recommended"
+          ],
+          "properties": {
+            "ownership": {
+              "type": "boolean"
+            },
+            "citizenship": {
+              "type": "boolean"
+            },
+            "registered": {
+              "type": "boolean"
+            },
+            "localFishingAllowed": {
+              "type": "boolean"
+            },
+            "passInspection": {
+              "type": "boolean"
+            },
+            "recommended": {
+              "type": "boolean"
+            }
+          }
+        },
+        "comments": {
+          "type": "string"
+        },
+        "remarks": {
+          "type": "string"
+        },
+        "inspector": {
+          "type": "string"
+        },
+        "inspectionDate": {
+          "type": "string"
+        },
+        "approvedBy": {
+          "type": "string"
+        },
+        "approvalDate": {
+          "type": "string"
+        },
+        "approved": {
+          "type": "boolean"
         }
       }
     }
