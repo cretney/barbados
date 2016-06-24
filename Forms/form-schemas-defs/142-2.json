@@ -1,0 +1,282 @@
+[
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "help",
+    "helpvalue": "<h4 align='center'>Horse Features</h4>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "horseFeatures.colour",
+            "title": "Colour",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "horseFeatures.sex",
+            "title": "Sex",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "horseFeatures.yearBirth",
+            "type": "number",
+            "title": "Year of Birth",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "horseFeatures.breed",
+            "title": "Breed",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "horseFeatures.name",
+            "title": "Name",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<h4 align='center'>Markings</h4><h5 align='center'><i>(If no markings - This fact to be stated)</i></h5>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "horseFeatures.markings.head",
+            "title": "Head",
+            "description": ""
+          },
+          {
+            "key": "horseFeatures.markings.limbs.lf",
+            "title": "Left Front Limb",
+            "description": ""
+          },
+          {
+            "key": "horseFeatures.markings.limbs.rf",
+            "title": "Right Front Limb",
+            "description": ""
+          },
+          {
+            "key": "horseFeatures.markings.limbs.lh",
+            "title": "Left Hind Limb",
+            "description": ""
+          },
+          {
+            "key": "horseFeatures.markings.limbs.rh",
+            "title": "Right Hind Limb",
+            "description": ""
+          },
+          {
+            "key": "horseFeatures.markings.body",
+            "title": "Body",
+            "description": ""
+          },
+          {
+            "key": "horseFeatures.markings.acquired",
+            "title": "Acquired",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "help",
+    "helpvalue": "<h4 align='center'>Vaccine Date(s)</h4>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "type": "help",
+            "helpvalue": "<br><h5><b>Equine Influenza:</b></h5>"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "horseVaccinationDates.influenza[0]",
+            "type": "date-time",
+            "title": "Date #1"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "horseVaccinationDates.influenza[1]",
+            "type": "date-time",
+            "title": "Date #2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "type": "help",
+            "helpvalue": "<br><h5><b>Equine Rhinopneumonitis:</b></h5>"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "horseVaccinationDates.rhinopneumonitis[0]",
+            "type": "date-time",
+            "title": "Date #1"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "horseVaccinationDates.rhinopneumonitis[1]",
+            "type": "date-time",
+            "title": "Date #2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-2",
+        "items": [
+          {
+            "type": "help",
+            "helpvalue": "<br><h5><b>Other Vaccine:</b></h5>"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4",
+        "items": [
+          {
+            "key": "horseVaccinationDates.other.type",
+            "title": "Vaccine Type:"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "horseVaccinationDates.other.dates[0]",
+            "type": "date-time",
+            "title": "Date #1"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "horseVaccinationDates.other.dates[1]",
+            "type": "date-time",
+            "title": "Date #2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12",
+        "items": [
+          {
+            "key": "dateBorn",
+            "type": "date-time",
+            "title": "The animal was born in Barbados and/or resident since:"
+          },
+          {
+            "key": "remarks",
+            "type": "textarea",
+            "title": "Additional certification:",
+            "description": ""
+          }
+        ]
+      }
+    ]
+  }
+]
