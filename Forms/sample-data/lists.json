@@ -686,6 +686,11 @@
 				"document":"Veterinary Export Health Certificate Equine.pdf"
 			},
 			{
+				"id": 143,
+				"template": "vs-veterinary-export-health-certificate-equine-issued.html",
+				"document":"Veterinary Export Health Certificate Equine.pdf"
+			},
+			{
 				"id": 144,
 				"template": "vs-cites-permit.html",
 				"document":"CITES Permit - sample data.pdf"

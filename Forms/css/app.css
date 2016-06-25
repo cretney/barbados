@@ -384,4 +384,54 @@ table.table td.commodity-subtable.subtable-animal {
 	padding-left: 0;
 	padding-right: 10px;
 }
+
+/*Horse drawing canvases*/
+
+.horse-draw-container {
+	height: 400px;
+		padding: 10px;
+	position: relative;
+}
+
+.horse-draw {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	border: 1px solid black;
+}
+
+#horse-right-side {
+	background-image: url(../img/horse/right-side.jpg);
+	/*width: 100%;*/
+	/*height: 396px;*/
+
+
+}
+
+#horse-left-side {
+	background-image: url(../img/horse/left-side.jpg);
+	/*height: 396px;*/
+}
+
+#horse-hind {
+	background-image: url(../img/horse/hind-rear-view.jpg);
+	/*height: 296px;*/
+}
+
+#horse-fore {
+	background-image: url(../img/horse/fore-rear-view.jpg);
+	/*height: 253px;*/
+}
+
+#horse-neck {
+	background-image: url(../img/horse/neck-lower-view.jpg);
+}
+
+#horse-upper {
+	background-image: url(../img/horse/upper-eye-level.jpg);
+}
+
+
 /* End */
