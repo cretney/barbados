@@ -7477,6 +7477,47 @@
   }
 },
 {
+  "blockId": 19914301,
+  "workflowId": 99,
+  "formId": 143,
+  "title": "Veterinary Export Health Certificate Equine",
+  "status": "Issued",
+  "submission": {
+    "horseFeatures": {
+      "colour": "Chestnut",
+      "sex": "Gelding",
+      "yearBirth": 2011,
+      "breed": "Arabian",
+      "name": "Rendezvous Giddyup",
+      "markings": {
+        "head": "a head",
+        "limbs": {
+          "lf": "limb 1",
+          "rf": "limb 2",
+          "lh": "limb 3",
+          "rh": "limb 4"
+        },
+        "body": "body 1",
+        "acquired": "a horse"
+      }
+    },
+    "horseVaccinationDates": {
+      "influenza": ["2013-01-10", "2014-09-08"],
+      "rhinopneumonitis": ["2013-01-10", "2014-09-08"],
+      "other": {
+        "type": "",
+        "dates": []
+      }
+    },
+    "dateBorn": "2011-02-22",
+    "entryDate":"2016-05-01",
+    "approvedBy": "Joe Schmoe",
+    "remarks": "N/A",
+    "applicant": {"id":4, "name":"Clark Kent", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael"},
+    "supplier": {"id": 1, "name": "Joseph Blough", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
+  }
+},
+{
   "blockId": 19914401,
   "workflowId": 99,
   "formId": 144,

@@ -24,14 +24,14 @@
         <span class="big"><b>A</b></span>
         <span class="bigger">0854</span>
       </h4>
-      <p>Consignee:</p>
-      <p>Exporter</p>
+      <p>Consignee: <b>{{ila.submission.applicant.name}}</b></p>
+      <p>Exporter: <b>{{ila.submission.supplier.name}}</b></p>
       <p><b>Description of Animal:</b></p>
     </div><!--col-sm-6-->
     <div class="col-sm-6">
-      <h5 align="right">... 20 ...</h5>
-      <p>Address:</p>
-      <p>Address:</p>
+      <h5 align="right"><b>{{ila.submission.entryDate | date: 'd MMMM, yyyy'}}</b></h5>
+      <p>Address: <b>{{ila.submission.applicant.address}}</b></p>
+      <p>Address: <b>{{ila.submission.supplier.address}}</b></p>
     </div><!--col-sm-6-->
   </div><!--row-->
   <br>
@@ -143,11 +143,11 @@
           <td>Name</td>
         </tr>
         <tr>
-          <td><br></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td><b>{{ila.submission.horseFeatures.colour}}</b></td>
+          <td><b>{{ila.submission.horseFeatures.sex}}</b></td>
+          <td><b>{{ila.submission.horseFeatures.yearBirth}}</b></td>
+          <td><b>{{ila.submission.horseFeatures.breed}}</b></td>
+          <td><b>{{ila.submission.horseFeatures.name}}</b></td>
         </tr>
       </table>
 
@@ -175,10 +175,23 @@
             </p>
           </td>
           <td class="no-top-cell no-right-cell">
+            <h5></h5>
+            <p>{{ila.submission.horseFeatures.markings.head}}</p>
+            <p>{{ila.submission.horseFeatures.markings.limbs.lf}}</p>
+            <br>
+            <p>{{ila.submission.horseFeatures.markings.limbs.rf}}</p>
+            <br>
+            <p>{{ila.submission.horseFeatures.markings.limbs.lh}}</p>
+            <p>{{ila.submission.horseFeatures.markings.limbs.rh}}</p>
+            <p>{{ila.submission.horseFeatures.markings.body}}</p>
+            <br>
+            <p>{{ila.submission.horseFeatures.markings.acquired}}</p>
+
+
+            <br><br>
+
             <h6 align="right"><i>
-              <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
               (If no markings - This fact to be stated)
-              <!--revisar a ver si está bien escrito-->
             </i></h6>
           </td>
         </tr>
@@ -206,12 +219,12 @@
         <div class="col-sm-3">
           <p>Equine Influenza</p>
           <p>Equine Rhinopneumonitis</p>
-          <p>Other ...</p>
+          <p>Other: <b>{{ila.submission.horseVaccinationDates.other.type}}</b></p>
         </div><!--col-sm-3-->
         <div class="col-sm-6">
-          <p>date(s) ...</p>
-          <p>date(s) ...</p>
-          <p>date(s) ...</p>
+          <p>date(s): <span ng-repeat="shot in ila.submission.horseVaccinationDates.influenza"><b>{{shot | date: 'M/d/yyyy'}}</b><span ng-show="!$last">, </span></span></p>
+          <p>date(s): <span ng-repeat="shot in ila.submission.horseVaccinationDates.rhinopneumonitis"><b>{{shot | date: 'M/d/yyyy'}}</b><span ng-show="!$last">, </span></span></p>
+          <p>date(s) <span ng-repeat="date in ila.submission.horseVaccinationDates.other.dates"><b>{{date | date: 'M/d/yyyy'}}</b><span ng-show="!$last">, </span></span></p>
         </div><!--col-sm-6-->
 
         <div class="col-sm-12">
@@ -228,13 +241,14 @@
             Within forty-eight hours of export, the animal was treated for external parasites with an approved chemical.
           </p>
           <p><!--6-->
-            The animal was born in Barbados and/or resident since ...
+            The animal was born in Barbados and/or resident since <b>{{ila.submission.dateBorn | date: 'M/d/yyyy'}}</b>
           </p>
           <p><!--7-->
-            Additional certification ...
-            <br><br><br><br><br><br><br><br><br>
+            Additional certification <b>{{ila.submission.remarks}}</b>
+            <br><br><br>
           </p>
           <p align="right"><i>
+            <span class="bottom-border"><b>{{ila.submission.approvedBy}}</b></span><br>
             Chief Veterinary Officer
           </i></p>
         </div><!--col-sm-12-->
