@@ -1536,8 +1536,8 @@
     {
       "id": 38,
       "readonly": false,
-      "name": null,
-      "description": null,
+      "name": "Application for Certificate of Origin Registration as Exporter",
+      "description": "Application for Certificate of Origin Registration as Exporter",
       "fileName": "bidc-registration-exporter-issued.html",
       "document_ids": [
         22
