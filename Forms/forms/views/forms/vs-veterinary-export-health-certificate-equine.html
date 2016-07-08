@@ -17,11 +17,11 @@
     </div><!--col-sm-2-->
   </div><!--row-->
 
-  <div class="row">
+  <!-- <div class="row">
     <div class="col-sm-12">
       <div sf-schema="schema" sf-form="formdef1" sf-model="form.data"></div>
     </div>
-  </div>
+  </div> -->
 
   <br>
 
@@ -61,65 +61,111 @@
   </div><!--row-->
 
   <div class="row">
-    <div class="col-sm-12 col-lg-6 horse-draw-container">
-          <!-- <div drawHorse=""></div> -->
-      <div>
-        <canvas id="horse-right-side" class="horse-draw">
+    <div class="col-sm-12">
+      <div align="center" class="horse-draw-container">
+        <div pw-canvas options="{width: 500, height: 396, lineWidth: selectedLineWidth1, color: model1.myColor, undo: true, imageSrc: '../../Forms/img/horse/right-side.jpg', customCanvasId: 'horse-right-side'}" version="model1.version"></div>
+        <div pw-color-selector="['#000', '#f00']" color="model1.myColor"></div>
+        <input type="range" min="1" max="10" ng-model="selectedLineWidth1" class="lineWidthSelector">
+        <div>Line Width: {{selectedLineWidth1 ? selectedLineWidth1 : 1}}px</div>
+        <div class="undo">
+          <button class="btn btn-warning" ng-click="model1.version = model1.version - 1" ng-disabled="model1.version < 1">Undo (Version {{model1.version}})</button>
+        </div>
       </div>
     </div>
 
-    <div class="col-sm-12 col-lg-6 horse-draw-container">
-          <!-- <div drawHorse=""></div> -->
-      <div>
-        <canvas id="horse-left-side" class="horse-draw">
-      </div>
-    </div>
 
-    <div class="col-sm-12 col-lg-6 horse-draw-container">
-          <!-- <div drawHorse=""></div> -->
-      <div>
-        <canvas id="horse-hind" class="horse-draw">
+    <div class="row">
+      <div class="col-sm-12">
+        <div align="center" class="horse-draw-container">
+          <div pw-canvas options="{width: 502, height: 390, lineWidth: selectedLineWidth2, color: model2.myColor, undo: true, imageSrc: '../../Forms/img/horse/left-side.jpg', customCanvasId: 'horse-left-side'}" version="model2.version"></div>
+          <div pw-color-selector="['#000', '#f00']" color="model2.myColor"></div>
+          <input type="range" min="1" max="10" ng-model="selectedLineWidth2" class="lineWidthSelector">
+          <div>Line Width: {{selectedLineWidth2 ? selectedLineWidth2 : 1}}px</div>
+          <div class="undo">
+            <button class="btn btn-warning" ng-click="model2.version = model2.version - 1" ng-disabled="model2.version < 1">Undo (Version {{model2.version}})</button>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="col-sm-12 col-lg-6 horse-draw-container">
-          <!-- <div drawHorse=""></div> -->
-      <div>
-        <canvas id="horse-fore" class="horse-draw">
-      </div>
-    </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div align="center" class="horse-draw-container">
+            <div pw-canvas options="{width: 462, height: 296, lineWidth: selectedLineWidth3, color: model3.myColor, undo: true, imageSrc: '../../Forms/img/horse/hind-rear-view.jpg', customCanvasId: 'horse-hind'}" version="model3.version"></div>
+            <div pw-color-selector="['#000', '#f00']" color="model3.myColor"></div>
+            <input type="range" min="1" max="10" ng-model="selectedLineWidth3" class="lineWidthSelector">
+            <div>Line Width: {{selectedLineWidth3 ? selectedLineWidth3 : 1}}px</div>
+            <div class="undo">
+              <button class="btn btn-warning" ng-click="model3.version = model3.version - 1" ng-disabled="model3.version < 1">Undo (Version {{model3.version}})</button>
+            </div>
+          </div>
+        </div>
 
-    <div class="col-sm-12 col-md-6 col-lg-4 horse-draw-container">
-          <!-- <div drawHorse=""></div> -->
-      <div>
-        <canvas id="horse-neck" class="horse-draw">
-      </div>
-    </div>
+        <div class="col-sm-12">
+          <div align="center" class="horse-draw-container">
+            <div pw-canvas options="{width: 382, height: 253, lineWidth: selectedLineWidth4, color: model4.myColor, undo: true, imageSrc: '../../Forms/img/horse/fore-rear-view.jpg', customCanvasId: 'horse-fore'}" version="model4.version"></div>
+            <div pw-color-selector="['#000', '#f00']" color="model4.myColor"></div>
+            <input type="range" min="1" max="10" ng-model="selectedLineWidth4" class="lineWidthSelector">
+            <div>Line Width: {{selectedLineWidth4 ? selectedLineWidth4 : 1}}px</div>
+            <div class="undo">
+              <button class="btn btn-warning" ng-click="model4.version = model4.version - 1" ng-disabled="model4.version < 1">Undo (Version {{model4.version}})</button>
+            </div>
+          </div>
+        </div>
 
-    <div class="col-sm-12 col-md-6 col-lg-4 horse-draw-container">
-          <!-- <div drawHorse=""></div> -->
-      <div pw-canvas options="{width: auto, height: 400, lineWidth: 1, undo: true, imageSrc: '../../Forms/img/horse/upper-eye-level.jpg'}">
-      </div>
-    </div>
+        <div class="col-sm-12">
+          <div align="center" class="horse-draw-container">
+            <div pw-canvas options="{width: 180, height: 481, lineWidth: selectedLineWidth5, color: model5.myColor, undo: true, imageSrc: '../../Forms/img/horse/neck-lower-view.jpg', customCanvasId: 'horse-neck'}" version="model5.version"></div>
+            <div pw-color-selector="['#000', '#f00']" color="model5.myColor"></div>
+            <input type="range" min="1" max="10" ng-model="selectedLineWidth5" class="lineWidthSelector">
+            <div>Line Width: {{selectedLineWidth5 ? selectedLineWidth5 : 1}}px</div>
+            <div class="undo">
+              <button class="btn btn-warning" ng-click="model5.version = model5.version - 1" ng-disabled="model5.version < 1">Undo (Version {{model5.version}})</button>
+            </div>
+          </div>
+        </div>
 
-    <div class="col-sm-12 col-md-6 col-lg-4 horse-draw-container">
+        <div class="col-sm-12">
+          <div align="center" class="horse-draw-container">
+            <div pw-canvas options="{width: 264, height: 322, lineWidth: selectedLineWidth6, color: model6.myColor, undo: true, imageSrc: '../../Forms/img/horse/upper-eye-level.jpg', customCanvasId: 'horse-upper'}" version="model6.version"></div>
+            <div pw-color-selector="['#000', '#f00']" color="model6.myColor"></div>
+            <input type="range" min="1" max="10" ng-model="selectedLineWidth6" class="lineWidthSelector">
+            <div>Line Width: {{selectedLineWidth6 ? selectedLineWidth6 : 1}}px</div>
+            <div class="undo">
+              <button class="btn btn-warning" ng-click="model6.version = model6.version - 1" ng-disabled="model6.version < 1">Undo (Version {{model6.version}})</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12">
+          <div align="center" class="horse-draw-container">
+            <div pw-canvas options="{width: 190, height: 215, lineWidth: selectedLineWidth7, color: model7.myColor, undo: true, imageSrc: '../../Forms/img/horse/muzzle.jpg', customCanvasId: 'horse-muzzle'}" version="model7.version"></div>
+            <div pw-color-selector="['#000', '#f00']" color="model7.myColor"></div>
+            <input type="range" min="1" max="10" ng-model="selectedLineWidth7" class="lineWidthSelector">
+            <div>Line Width: {{selectedLineWidth7 ? selectedLineWidth7 : 1}}px</div>
+            <div class="undo">
+              <button class="btn btn-warning" ng-click="model7.version = model7.version - 1" ng-disabled="model7.version < 1">Undo (Version {{model7.version}})</button>
+            </div>
+          </div>
+        </div>
+
+
+    <div class="col-sm-12">
           <!-- <div drawHorse=""></div> -->
       <!-- <div pw-canvas id="horse-muzzle" class="horse-draw"></div> -->
-      <div pw-canvas options="{width: auto, height: 400, lineWidth: 1, undo: true, imageSrc: '../../Forms/img/horse/muzzle.jpg'}">
-      </div>
+      <!-- <div pw-canvas options="{width: auto, height: 400, lineWidth: 1, undo: true, imageSrc: '../../Forms/img/horse/muzzle.jpg'}">
+      </div> -->
     </div>
   </div>
 
 <br><br>
 
-  <div class="row">
+  <!-- <div class="row">
     <div class="col-sm-12">
       <div sf-schema="schema" sf-form="formdef2" sf-model="form.data"></div>
     </div>
-  </div>
+  </div> -->
 
   <div class="row">
-
     <div class="col-sm-11">
       <div class="row">
         <div class="col-sm-12">

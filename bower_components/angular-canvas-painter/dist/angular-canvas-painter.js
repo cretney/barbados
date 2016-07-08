@@ -102,8 +102,7 @@ angular.module('pw.canvas-painter')
         canvasTmp.id = options.tmpCanvasId;
         angular.element(canvasTmp).css({
           position: 'absolute',
-          top: 0,
-          left: 0
+          top: 0
         });
         elm.find('div').append(canvas);
         elm.find('div').append(canvasTmp);
@@ -126,7 +125,7 @@ angular.module('pw.canvas-painter')
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         ctxTmp.globalAlpha = options.opacity;
         ctxTmp.lineJoin = ctxTmp.lineCap = 'round';
-        ctxTmp.lineWidth = 10;
+        ctxTmp.lineWidth = 1;
         ctxTmp.strokeStyle = options.color;
 
 

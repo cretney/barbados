@@ -388,49 +388,62 @@ table.table td.commodity-subtable.subtable-animal {
 /*Horse drawing canvases*/
 
 .horse-draw-container {
-	height: 400px;
-		padding: 10px;
+	/*height: 400px;
+	width: 400px;*/
+	padding: 10px;
 	position: relative;
-}
-
-.horse-draw {
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	width: 100%;
-	height: 100%;
 	border: 1px solid black;
+	margin-bottom: 40px;
 }
 
-#horse-right-side {
-	background-image: url(../img/horse/right-side.jpg);
-	/*width: 100%;*/
-	/*height: 396px;*/
 
 
+#horse-right-sideTmp {
+	left: 50%;
+	margin-left: -250px;
 }
 
-#horse-left-side {
-	background-image: url(../img/horse/left-side.jpg);
-	/*height: 396px;*/
+#horse-left-sideTmp {
+	left: 50%;
+	margin-left: -251px;
 }
 
-#horse-hind {
-	background-image: url(../img/horse/hind-rear-view.jpg);
-	/*height: 296px;*/
+#horse-hindTmp {
+	left: 50%;
+	margin-left: -231px;
 }
 
-#horse-fore {
-	background-image: url(../img/horse/fore-rear-view.jpg);
-	/*height: 253px;*/
+#horse-foreTmp {
+	left: 50%;
+	margin-left: -191px;
 }
 
-#horse-neck {
-	background-image: url(../img/horse/neck-lower-view.jpg);
+#horse-neckTmp {
+	left: 50%;
+	margin-left: -90px
 }
 
-#horse-upper {
-	background-image: url(../img/horse/upper-eye-level.jpg);
+#horse-upperTmp {
+	left: 50%;
+	margin-left: -132px;
+}
+
+#horse-muzzleTmp {
+	left: 50%;
+	margin-left: -95px;
+}
+
+.pwColorSelector {
+	list-style: none;
+	padding-left: 0;
+}
+
+.pwColor {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	margin: 0 5px;
 }
 
 
