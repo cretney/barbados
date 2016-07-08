@@ -1541,6 +1541,38 @@
   }
 },
 {
+  "blockId": 10802512,
+  "workflowId": 8,
+  "formId": 25,
+  "title": "Notification for Taxes Payment",
+  "description": "Licencing Authority will proceed with Payment",
+  "status": "Submitted",
+  "submission": {
+    "commodities": [
+      {
+        "hsCode": "123",
+        "description": "test",
+        "quantity": 2,
+        "entries": [
+          {
+            "vehicleBrand": "Toyota",
+            "vehicleModel": "RAV4",
+            "vehicleYear": "2013",
+            "vehicleEngine": "2.5 L 4-cylinder",
+            "odometer": "34,234"
+          }
+        ]
+      }
+    ],
+    "submitter": "Joe Blow",
+    "applicant": {"id":4, "name":"Importer Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
+    "origin": "United States",
+    "countryConsigned": "Canada",
+    "expectedArrival": "2015-09-21T04:00:00.000Z"
+  }
+},
+{
   "blockId": 11101105,
   "workflowId": 11,
   "formId": 11,

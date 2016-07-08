@@ -4111,6 +4111,143 @@
         }
       }
     },
+    "horseFeatures": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "colour": {
+          "type": "string",
+          "title": "Colour",
+          "description": ""
+        },
+        "sex": {
+          "type": "string",
+          "title": "Sex",
+          "description": ""
+        },
+        "yearBirth": {
+          "type": "integer",
+          "title": "Yearbirth",
+          "description": ""
+        },
+        "breed": {
+          "type": "string",
+          "title": "Breed",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "markings": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "head": {
+              "type": "string",
+              "title": "Head",
+              "description": ""
+            },
+            "limbs": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "lf": {
+                  "type": "string",
+                  "title": "Lf",
+                  "description": ""
+                },
+                "rf": {
+                  "type": "string",
+                  "title": "Rf",
+                  "description": ""
+                },
+                "lh": {
+                  "type": "string",
+                  "title": "Lh",
+                  "description": ""
+                },
+                "rh": {
+                  "type": "string",
+                  "title": "Rh",
+                  "description": ""
+                }
+              }
+            },
+            "body": {
+              "type": "string",
+              "title": "Body",
+              "description": ""
+            },
+            "acquired": {
+              "type": "string",
+              "title": "Acquired",
+              "description": ""
+            }
+          }
+        }
+      }
+    },
+    "horseVaccinationDates": {
+      "type": "date-time",
+      "required": [
+
+      ],
+      "properties": {
+        "influenza": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
+        },
+        "rhinopneumonitis": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "title": "Items",
+            "description": ""
+          }
+        },
+        "other": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "type": {
+              "type": "string"
+            },
+            "title": "Properties",
+            "description": "",
+            "dates": {
+              "type": "date-time",
+              "minItems": 0,
+              "uniqueItems": true,
+              "items": {
+              }
+            }
+          }
+        }
+      }
+    },
+    "dateBorn": {
+      "type": "date-time",
+      "title": "Dateborn",
+      "description": ""
+    },
     "species": {
       "type": "array",
       "minItems": 1,
