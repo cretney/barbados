@@ -7391,7 +7391,7 @@
     "origin": "United States",
     "issuedDate":"15/03/16",
     "periodEnding":"20/04/18",
-    "dateInspection":"06/03/16",
+    "dateInspection":"",
     "otherDetails": "1234 Bay Street, St. Michael",
     "remarks": "Handle venus fly traps with care. They like to nibble on fingers.",
     "submitter": "Joe Blow",
@@ -7453,12 +7453,12 @@
     "phytosanitaryCertificate":"78686786",
     "serialNumberCertificate":"CN-68686",
     "inspectionLocation":"other",
-    "inspectionDate":"05/03/16",
+    "inspectionDate":"2016-03-05",
     "inspector":"John Smith",
     "origin": "United States",
-    "issuedDate":"15/03/16",
-    "periodEnding":"20/04/18",
-    "dateInspection":"06/03/16",
+    "issuedDate":"2016-03-15",
+    "periodEnding":"2018-04-20",
+    "dateInspection":"2016-03-06",
     "otherDetails": "1234 Bay Street, St. Michael",
     "remarks": "Handle venus fly traps with care. They like to nibble on fingers.",
     "submitter": "Joe Blow",
@@ -7492,12 +7492,12 @@
         "acquired": "a horse"
       }
     },
-    "horseVaccinationDates": {
+    "horseVaccinations": {
       "influenza": ["2013-01-10", "2014-09-08"],
       "rhinopneumonitis": ["2013-01-10", "2014-09-08"],
       "other": {
         "type": "",
-        "dates": []
+        "vaccinations": ["",""]
       }
     },
     "dateBorn": "2011-02-22",

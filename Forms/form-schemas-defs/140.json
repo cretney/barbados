@@ -27,7 +27,7 @@
         "items": [
           {
             "key": "inspectionDate",
-            "type": "date-time",
+            "format": "yyyy-mm-dd",
             "title": "Date of Inspection",
             "description": "(DD/MM/YY)"
           }
@@ -146,7 +146,7 @@
         "items": [
           {
             "key": "dateInspection",
-            "type": "date-time",
+            "format": "yyyy-mm-dd",
             "title": "Date of Issue",
             "description": "(DD/MM/YY)"
           }
@@ -169,7 +169,7 @@
         "items": [
           {
             "key": "periodEnding",
-            "type": "date-time",
+            "format": "yyyy-mm-dd",
             "title": "Expiry Date",
             "description": "(DD/MM/YY)"
           }
@@ -192,7 +192,7 @@
         "items": [
           {
             "key": "issuedDate",
-            "type": "date-time",
+            "format": "yyyy-mm-dd",
             "title": "Date of Issue",
             "description": "(DD/MM/YY)"
           }

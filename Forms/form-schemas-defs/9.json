@@ -844,7 +844,7 @@
             "items": [
               {
                 "key": "commodities[].radioactive[0].calibrationDate",
-                "type": "date-time",
+                "format": "yyyy-mm-dd",
                 "title": "Calibration Date",
                 "description": ""
               }
