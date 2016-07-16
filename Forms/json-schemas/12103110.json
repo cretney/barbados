@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 72da1d7462a7d05db9e5eae414fb08a3a016dc53",
+  "description": "Generated from b with shasum efdc0236d2429150f53773264fa5709fafd20874",
   "type": "object",
   "required": [
     "blockId",
@@ -30,23 +30,22 @@
       "type": "object",
       "required": [
         "commodities",
-        "referenceNumber",
-        "permitNumber",
-        "phytosanitaryCertificate",
-        "serialNumberCertificate",
-        "inspectionLocation",
-        "inspectionDate",
-        "inspector",
-        "origin",
-        "issuedDate",
-        "periodEnding",
-        "dateInspection",
-        "otherDetails",
-        "remarks",
+        "destinationCountry",
+        "modeTransport",
+        "portShipment",
+        "portDischarge",
+        "routeTransport",
+        "invoiceNumber",
+        "invoiceDate",
+        "inFreeTradeZone",
+        "tradedSpecial",
+        "observations",
         "submitter",
-        "consignee",
         "applicant",
-        "supplier"
+        "consignee",
+        "destination",
+        "supplier",
+        "expectedArrival"
       ],
       "properties": {
         "commodities": {
@@ -58,8 +57,14 @@
             "required": [
               "hsCode",
               "description",
+              "fobValue",
+              "preferenceCriterion",
+              "othersAnnex",
               "grossWeight",
-              "grossWeightUnits",
+              "quantity",
+              "rulesOrigin",
+              "invoiceNumber",
+              "invoiceDate",
               "units"
             ],
             "properties": {
@@ -69,10 +74,28 @@
               "description": {
                 "type": "string"
               },
-              "grossWeight": {
+              "fobValue": {
                 "type": "integer"
               },
-              "grossWeightUnits": {
+              "preferenceCriterion": {
+                "type": "string"
+              },
+              "othersAnnex": {
+                "type": "string"
+              },
+              "grossWeight": {
+                "type": "number"
+              },
+              "quantity": {
+                "type": "integer"
+              },
+              "rulesOrigin": {
+                "type": "string"
+              },
+              "invoiceNumber": {
+                "type": "string"
+              },
+              "invoiceDate": {
                 "type": "string"
               },
               "units": {
@@ -82,19 +105,11 @@
                 "items": {
                   "type": "object",
                   "required": [
-                    "unitType",
-                    "quantity",
-                    "numInspected"
+                    "unitType"
                   ],
                   "properties": {
                     "unitType": {
                       "type": "string"
-                    },
-                    "quantity": {
-                      "type": "integer"
-                    },
-                    "numInspected": {
-                      "type": "integer"
                     }
                   }
                 }
@@ -102,47 +117,77 @@
             }
           }
         },
-        "referenceNumber": {
+        "destinationCountry": {
           "type": "string"
         },
-        "permitNumber": {
+        "modeTransport": {
           "type": "string"
         },
-        "phytosanitaryCertificate": {
+        "portShipment": {
           "type": "string"
         },
-        "serialNumberCertificate": {
+        "portDischarge": {
           "type": "string"
         },
-        "inspectionLocation": {
+        "routeTransport": {
           "type": "string"
         },
-        "inspectionDate": {
+        "invoiceNumber": {
           "type": "string"
         },
-        "inspector": {
+        "invoiceDate": {
           "type": "string"
         },
-        "origin": {
+        "inFreeTradeZone": {
           "type": "string"
         },
-        "issuedDate": {
+        "tradedSpecial": {
           "type": "string"
         },
-        "periodEnding": {
-          "type": "string"
-        },
-        "dateInspection": {
-          "type": "string"
-        },
-        "otherDetails": {
-          "type": "string"
-        },
-        "remarks": {
+        "observations": {
           "type": "string"
         },
         "submitter": {
           "type": "string"
+        },
+        "applicant": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address",
+            "docid",
+            "fax",
+            "email"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "docid": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            }
+          }
         },
         "consignee": {
           "type": "object",
@@ -183,14 +228,17 @@
             }
           }
         },
-        "applicant": {
+        "destination": {
           "type": "object",
           "required": [
             "id",
             "name",
             "countryId",
             "country",
-            "address"
+            "address",
+            "docid",
+            "fax",
+            "email"
           ],
           "properties": {
             "id": {
@@ -206,6 +254,15 @@
               "type": "string"
             },
             "address": {
+              "type": "string"
+            },
+            "docid": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
               "type": "string"
             }
           }
@@ -217,7 +274,10 @@
             "name",
             "countryId",
             "country",
-            "address"
+            "address",
+            "docid",
+            "fax",
+            "email"
           ],
           "properties": {
             "id": {
@@ -234,8 +294,20 @@
             },
             "address": {
               "type": "string"
+            },
+            "docid": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
             }
           }
+        },
+        "expectedArrival": {
+          "type": "string"
         }
       }
     }

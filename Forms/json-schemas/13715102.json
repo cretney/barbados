@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 72da1d7462a7d05db9e5eae414fb08a3a016dc53",
+  "description": "Generated from b with shasum 44b96f6aa2669173ff09c7bd3bf223efa7abdb66",
   "type": "object",
   "required": [
     "blockId",
@@ -30,21 +30,16 @@
       "type": "object",
       "required": [
         "commodities",
-        "referenceNumber",
-        "permitNumber",
-        "phytosanitaryCertificate",
+        "consignments",
+        "carrier",
+        "modeTransport",
+        "consignmentNote",
+        "invoiceNumber",
+        "invoiceDate",
         "serialNumberCertificate",
-        "inspectionLocation",
-        "inspectionDate",
-        "inspector",
-        "origin",
-        "issuedDate",
-        "periodEnding",
-        "dateInspection",
-        "otherDetails",
-        "remarks",
+        "entryDate",
         "submitter",
-        "consignee",
+        "importer",
         "applicant",
         "supplier"
       ],
@@ -58,8 +53,6 @@
             "required": [
               "hsCode",
               "description",
-              "grossWeight",
-              "grossWeightUnits",
               "units"
             ],
             "properties": {
@@ -67,12 +60,6 @@
                 "type": "string"
               },
               "description": {
-                "type": "string"
-              },
-              "grossWeight": {
-                "type": "integer"
-              },
-              "grossWeightUnits": {
                 "type": "string"
               },
               "units": {
@@ -84,7 +71,7 @@
                   "required": [
                     "unitType",
                     "quantity",
-                    "numInspected"
+                    "cifValue"
                   ],
                   "properties": {
                     "unitType": {
@@ -93,7 +80,7 @@
                     "quantity": {
                       "type": "integer"
                     },
-                    "numInspected": {
+                    "cifValue": {
                       "type": "integer"
                     }
                   }
@@ -102,49 +89,62 @@
             }
           }
         },
-        "referenceNumber": {
+        "consignments": {
           "type": "string"
         },
-        "permitNumber": {
+        "carrier": {
+          "type": "object",
+          "required": [
+            "name",
+            "idNumber",
+            "idNumber2"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "idNumber": {
+              "type": "string"
+            },
+            "idNumber2": {
+              "type": "string"
+            }
+          }
+        },
+        "modeTransport": {
           "type": "string"
         },
-        "phytosanitaryCertificate": {
+        "consignmentNote": {
+          "type": "object",
+          "required": [
+            "number",
+            "date"
+          ],
+          "properties": {
+            "number": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            }
+          }
+        },
+        "invoiceNumber": {
+          "type": "string"
+        },
+        "invoiceDate": {
           "type": "string"
         },
         "serialNumberCertificate": {
           "type": "string"
         },
-        "inspectionLocation": {
-          "type": "string"
-        },
-        "inspectionDate": {
-          "type": "string"
-        },
-        "inspector": {
-          "type": "string"
-        },
-        "origin": {
-          "type": "string"
-        },
-        "issuedDate": {
-          "type": "string"
-        },
-        "periodEnding": {
-          "type": "string"
-        },
-        "dateInspection": {
-          "type": "string"
-        },
-        "otherDetails": {
-          "type": "string"
-        },
-        "remarks": {
+        "entryDate": {
           "type": "string"
         },
         "submitter": {
           "type": "string"
         },
-        "consignee": {
+        "importer": {
           "type": "object",
           "required": [
             "id",
@@ -154,6 +154,7 @@
             "address",
             "docid",
             "fax",
+            "phone",
             "email"
           ],
           "properties": {
@@ -176,6 +177,9 @@
               "type": "string"
             },
             "fax": {
+              "type": "string"
+            },
+            "phone": {
               "type": "string"
             },
             "email": {

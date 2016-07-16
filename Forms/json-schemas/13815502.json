@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 72da1d7462a7d05db9e5eae414fb08a3a016dc53",
+  "description": "Generated from b with shasum e2d0de34bbc24c9bdbd712e0331bc1de0cc7001a",
   "type": "object",
   "required": [
     "blockId",
@@ -30,22 +30,11 @@
       "type": "object",
       "required": [
         "commodities",
-        "referenceNumber",
-        "permitNumber",
-        "phytosanitaryCertificate",
-        "serialNumberCertificate",
-        "inspectionLocation",
-        "inspectionDate",
-        "inspector",
-        "origin",
-        "issuedDate",
-        "periodEnding",
-        "dateInspection",
-        "otherDetails",
-        "remarks",
+        "invoiceNumber",
+        "entryDate",
         "submitter",
-        "consignee",
         "applicant",
+        "importer",
         "supplier"
       ],
       "properties": {
@@ -57,22 +46,18 @@
             "type": "object",
             "required": [
               "hsCode",
+              "name",
               "description",
-              "grossWeight",
-              "grossWeightUnits",
               "units"
             ],
             "properties": {
               "hsCode": {
                 "type": "string"
               },
-              "description": {
+              "name": {
                 "type": "string"
               },
-              "grossWeight": {
-                "type": "integer"
-              },
-              "grossWeightUnits": {
+              "description": {
                 "type": "string"
               },
               "units": {
@@ -84,7 +69,7 @@
                   "required": [
                     "unitType",
                     "quantity",
-                    "numInspected"
+                    "cifValue"
                   ],
                   "properties": {
                     "unitType": {
@@ -93,7 +78,7 @@
                     "quantity": {
                       "type": "integer"
                     },
-                    "numInspected": {
+                    "cifValue": {
                       "type": "integer"
                     }
                   }
@@ -102,49 +87,59 @@
             }
           }
         },
-        "referenceNumber": {
+        "invoiceNumber": {
           "type": "string"
         },
-        "permitNumber": {
-          "type": "string"
-        },
-        "phytosanitaryCertificate": {
-          "type": "string"
-        },
-        "serialNumberCertificate": {
-          "type": "string"
-        },
-        "inspectionLocation": {
-          "type": "string"
-        },
-        "inspectionDate": {
-          "type": "string"
-        },
-        "inspector": {
-          "type": "string"
-        },
-        "origin": {
-          "type": "string"
-        },
-        "issuedDate": {
-          "type": "string"
-        },
-        "periodEnding": {
-          "type": "string"
-        },
-        "dateInspection": {
-          "type": "string"
-        },
-        "otherDetails": {
-          "type": "string"
-        },
-        "remarks": {
+        "entryDate": {
           "type": "string"
         },
         "submitter": {
           "type": "string"
         },
-        "consignee": {
+        "applicant": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address",
+            "contactPerson"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "contactPerson": {
+              "type": "object",
+              "required": [
+                "name",
+                "title"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "importer": {
           "type": "object",
           "required": [
             "id",
@@ -154,7 +149,8 @@
             "address",
             "docid",
             "fax",
-            "email"
+            "phone",
+            "type"
           ],
           "properties": {
             "id": {
@@ -178,34 +174,10 @@
             "fax": {
               "type": "string"
             },
-            "email": {
-              "type": "string"
-            }
-          }
-        },
-        "applicant": {
-          "type": "object",
-          "required": [
-            "id",
-            "name",
-            "countryId",
-            "country",
-            "address"
-          ],
-          "properties": {
-            "id": {
-              "type": "integer"
-            },
-            "name": {
+            "phone": {
               "type": "string"
             },
-            "countryId": {
-              "type": "string"
-            },
-            "country": {
-              "type": "string"
-            },
-            "address": {
+            "type": {
               "type": "string"
             }
           }

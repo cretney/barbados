@@ -1,0 +1,268 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Generated from b with shasum 033e9be2f5e97aeddef9cc6f76b921f9602b7ba3",
+  "type": "object",
+  "required": [
+    "blockId",
+    "workflowId",
+    "formId",
+    "title",
+    "status",
+    "submission"
+  ],
+  "properties": {
+    "blockId": {
+      "type": "integer"
+    },
+    "workflowId": {
+      "type": "integer"
+    },
+    "formId": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "submission": {
+      "type": "object",
+      "required": [
+        "issuedDate",
+        "submitter",
+        "permitLength",
+        "typeApplication",
+        "applicant",
+        "supplier",
+        "communicationEquipments",
+        "terminalEquipments"
+      ],
+      "properties": {
+        "issuedDate": {
+          "type": "string"
+        },
+        "submitter": {
+          "type": "string"
+        },
+        "permitLength": {
+          "type": "integer"
+        },
+        "typeApplication": {
+          "type": "string"
+        },
+        "applicant": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address",
+            "mailingAddress",
+            "nationality",
+            "work_phone",
+            "fax",
+            "email",
+            "manager",
+            "typeBusiness",
+            "employees",
+            "vat",
+            "coorporateRegistrationNo",
+            "withPayment",
+            "typePremises",
+            "contact"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "mailingAddress": {
+              "type": "string"
+            },
+            "nationality": {
+              "type": "string"
+            },
+            "work_phone": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "manager": {
+              "type": "string"
+            },
+            "typeBusiness": {
+              "type": "string"
+            },
+            "employees": {
+              "type": "integer"
+            },
+            "vat": {
+              "type": "string"
+            },
+            "coorporateRegistrationNo": {
+              "type": "string"
+            },
+            "withPayment": {
+              "type": "boolean"
+            },
+            "typePremises": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string"
+              }
+            },
+            "contact": {
+              "type": "object",
+              "required": [
+                "name",
+                "title",
+                "idNumber",
+                "passport",
+                "nationality",
+                "registrationNo",
+                "address",
+                "home_phone",
+                "work_phone",
+                "mobile_phone",
+                "fax",
+                "email"
+              ],
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "idNumber": {
+                  "type": "string"
+                },
+                "passport": {
+                  "type": "string"
+                },
+                "nationality": {
+                  "type": "string"
+                },
+                "registrationNo": {
+                  "type": "string"
+                },
+                "address": {
+                  "type": "string"
+                },
+                "home_phone": {
+                  "type": "string"
+                },
+                "work_phone": {
+                  "type": "string"
+                },
+                "mobile_phone": {
+                  "type": "string"
+                },
+                "fax": {
+                  "type": "string"
+                },
+                "email": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "supplier": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            }
+          }
+        },
+        "communicationEquipments": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+              "type",
+              "make",
+              "model"
+            ],
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "make": {
+                "type": "string"
+              },
+              "model": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "terminalEquipments": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+              "type",
+              "make",
+              "model"
+            ],
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "make": {
+                "type": "string"
+              },
+              "model": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 72da1d7462a7d05db9e5eae414fb08a3a016dc53",
+  "description": "Generated from b with shasum 529682233eea01d61b4e1199907a2049709058d4",
   "type": "object",
   "required": [
     "blockId",
@@ -31,20 +31,11 @@
       "required": [
         "commodities",
         "referenceNumber",
-        "permitNumber",
-        "phytosanitaryCertificate",
         "serialNumberCertificate",
-        "inspectionLocation",
-        "inspectionDate",
-        "inspector",
-        "origin",
         "issuedDate",
-        "periodEnding",
-        "dateInspection",
-        "otherDetails",
-        "remarks",
-        "submitter",
-        "consignee",
+        "officer",
+        "swordfishAtlantic",
+        "origin",
         "applicant",
         "supplier"
       ],
@@ -58,6 +49,7 @@
             "required": [
               "hsCode",
               "description",
+              "descriptionDetail",
               "grossWeight",
               "grossWeightUnits",
               "units"
@@ -67,6 +59,9 @@
                 "type": "string"
               },
               "description": {
+                "type": "string"
+              },
+              "descriptionDetail": {
                 "type": "string"
               },
               "grossWeight": {
@@ -83,17 +78,13 @@
                   "type": "object",
                   "required": [
                     "unitType",
-                    "quantity",
-                    "numInspected"
+                    "quantity"
                   ],
                   "properties": {
                     "unitType": {
                       "type": "string"
                     },
                     "quantity": {
-                      "type": "integer"
-                    },
-                    "numInspected": {
                       "type": "integer"
                     }
                   }
@@ -105,83 +96,32 @@
         "referenceNumber": {
           "type": "string"
         },
-        "permitNumber": {
-          "type": "string"
-        },
-        "phytosanitaryCertificate": {
-          "type": "string"
-        },
         "serialNumberCertificate": {
-          "type": "string"
-        },
-        "inspectionLocation": {
-          "type": "string"
-        },
-        "inspectionDate": {
-          "type": "string"
-        },
-        "inspector": {
-          "type": "string"
-        },
-        "origin": {
           "type": "string"
         },
         "issuedDate": {
           "type": "string"
         },
-        "periodEnding": {
-          "type": "string"
-        },
-        "dateInspection": {
-          "type": "string"
-        },
-        "otherDetails": {
-          "type": "string"
-        },
-        "remarks": {
-          "type": "string"
-        },
-        "submitter": {
-          "type": "string"
-        },
-        "consignee": {
+        "officer": {
           "type": "object",
           "required": [
-            "id",
             "name",
-            "countryId",
-            "country",
-            "address",
-            "docid",
-            "fax",
-            "email"
+            "title"
           ],
           "properties": {
-            "id": {
-              "type": "integer"
-            },
             "name": {
               "type": "string"
             },
-            "countryId": {
-              "type": "string"
-            },
-            "country": {
-              "type": "string"
-            },
-            "address": {
-              "type": "string"
-            },
-            "docid": {
-              "type": "string"
-            },
-            "fax": {
-              "type": "string"
-            },
-            "email": {
+            "title": {
               "type": "string"
             }
           }
+        },
+        "swordfishAtlantic": {
+          "type": "string"
+        },
+        "origin": {
+          "type": "string"
         },
         "applicant": {
           "type": "object",

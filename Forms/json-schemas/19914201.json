@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 4005cbc858909ea51874f97f051278699a1e93c1",
+  "description": "Generated from b with shasum 414c27e25c3f6a231b9d5130eb1849f7a1ceaa3e",
   "type": "object",
   "required": [
     "blockId",
@@ -30,7 +30,7 @@
       "type": "object",
       "required": [
         "horseFeatures",
-        "horseVaccinationDates",
+        "horseVaccinations",
         "dateBorn",
         "entryDate",
         "approvedBy",
@@ -110,7 +110,7 @@
             }
           }
         },
-        "horseVaccinationDates": {
+        "horseVaccinations": {
           "type": "object",
           "required": [
             "influenza",
@@ -123,8 +123,7 @@
               "minItems": 1,
               "uniqueItems": true,
               "items": {
-                "type": "string",
-                "format": "date"
+                "type": "string"
               }
             },
             "rhinopneumonitis": {
@@ -132,27 +131,25 @@
               "minItems": 1,
               "uniqueItems": true,
               "items": {
-                "type": "string",
-                "format": "date"
+                "type": "string"
               }
             },
             "other": {
               "type": "object",
               "required": [
                 "type",
-                "dates"
+                "vaccinations"
               ],
               "properties": {
                 "type": {
                   "type": "string"
                 },
-                "dates": {
+                "vaccinations": {
                   "type": "array",
-                  "minItems": 0,
+                  "minItems": 1,
                   "uniqueItems": true,
                   "items": {
-                    "type": "string",
-                    "format": "date"
+                    "type": "string"
                   }
                 }
               }

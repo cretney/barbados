@@ -814,6 +814,16 @@
 				"id": 169,
 				"template": "bidc-new-application-certification-form-issued.html",
 				"document":"New Application for Certification Form.docx"
+			},
+			{
+				"id": 2,
+				"template": "bidc-coo-edit-cr.html",
+				"document":"New Application for Certificate of Origin (COO)"
+			},
+			{
+				"id": 3,
+				"template": "bidc-coo-static-cr.html",
+				"document":"Application for Certificate of Origin (COO)"
 			}
 		]
 	},
