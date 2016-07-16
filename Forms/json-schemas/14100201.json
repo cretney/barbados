@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 227a18facfd92312f69f03473ee831096b2ad22a",
+  "description": "Generated from b with shasum ca44cefd21507300d274e7aa886bae421053c55a",
   "type": "object",
   "required": [
     "blockId",
@@ -34,11 +34,22 @@
       "type": "object",
       "required": [
         "commodities",
+        "destinationCountry",
+        "modeTransport",
+        "portShipment",
+        "portDischarge",
+        "routeTransport",
+        "invoiceNumber",
+        "invoiceDate",
+        "inFreeTradeZone",
+        "tradedSpecial",
+        "observations",
         "submitter",
         "applicant",
         "consignee",
         "destination",
-        "supplier"
+        "supplier",
+        "expectedArrival"
       ],
       "properties": {
         "commodities": {
@@ -50,6 +61,14 @@
             "required": [
               "hsCode",
               "description",
+              "fobValue",
+              "preferenceCriterion",
+              "othersAnnex",
+              "grossWeight",
+              "quantity",
+              "rulesOrigin",
+              "invoiceNumber",
+              "invoiceDate",
               "units"
             ],
             "properties": {
@@ -57,6 +76,30 @@
                 "type": "string"
               },
               "description": {
+                "type": "string"
+              },
+              "fobValue": {
+                "type": "integer"
+              },
+              "preferenceCriterion": {
+                "type": "string"
+              },
+              "othersAnnex": {
+                "type": "string"
+              },
+              "grossWeight": {
+                "type": "number"
+              },
+              "quantity": {
+                "type": "integer"
+              },
+              "rulesOrigin": {
+                "type": "string"
+              },
+              "invoiceNumber": {
+                "type": "string"
+              },
+              "invoiceDate": {
                 "type": "string"
               },
               "units": {
@@ -77,6 +120,36 @@
               }
             }
           }
+        },
+        "destinationCountry": {
+          "type": "string"
+        },
+        "modeTransport": {
+          "type": "string"
+        },
+        "portShipment": {
+          "type": "string"
+        },
+        "portDischarge": {
+          "type": "string"
+        },
+        "routeTransport": {
+          "type": "string"
+        },
+        "invoiceNumber": {
+          "type": "string"
+        },
+        "invoiceDate": {
+          "type": "string"
+        },
+        "inFreeTradeZone": {
+          "type": "string"
+        },
+        "tradedSpecial": {
+          "type": "string"
+        },
+        "observations": {
+          "type": "string"
         },
         "submitter": {
           "type": "string"
@@ -236,6 +309,9 @@
               "type": "string"
             }
           }
+        },
+        "expectedArrival": {
+          "type": "string"
         }
       }
     }

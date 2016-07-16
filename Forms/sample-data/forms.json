@@ -8955,45 +8955,69 @@
   "blockId": 14100201,
   "workflowId": 41,
   "formId": 2,
-  "title": "New Application for Certificate of Origin (COO)",
+  "title": "New Application for Certificate of Origin (COO) - Costa Rica",
   "description": "Please complete the Export Application",
   "status": "Draft",
   "submission": {
-    "commodities": [
+    "commodities":[
       {
-        "hsCode": "123",
-        "description": "test",
-        "units": [
+        "hsCode":"123",
+        "description":"test",
+        "fobValue":1000,
+        "preferenceCriterion":"A",
+        "othersAnnex":"ACC",
+        "grossWeight":10.0,
+        "quantity":1,
+        "rulesOrigin":"A",
+        "invoiceNumber":"123456",
+        "invoiceDate":"2016-03-07",
+        "units":[
           {
-            "unitType": "Units"
-          },
-          {
-            "unitType": "Kilograms"
+            "unitType":"Units"
           }
         ]
       },
       {
-        "hsCode": "234",
-        "description": "test",
-        "units": [
+        "hsCode":"234",
+        "description":"test",
+        "fobValue":2000,
+        "preferenceCriterion":"B",
+        "othersAnnex":"DMI",
+        "grossWeight":20.0,
+        "quantity":2,
+        "rulesOrigin":"B",
+        "invoiceNumber":"7890123",
+        "invoiceDate":"2016-04-07",
+        "units":[
           {
-            "unitType": "Units"
+            "unitType":"Units"
           }
         ]
       }
     ],
+    "destinationCountry":"Costa Rica",
+    "modeTransport":"Air",
+    "portShipment":"Balboa",
+    "portDischarge":"La Guaira",
+    "routeTransport":"Panama",
+    "invoiceNumber":"123456",
+    "invoiceDate":"2016-03-07T05:00:00.000Z",
+    "inFreeTradeZone":"Yes",
+    "tradedSpecial":"No",
+    "observations":"some observations",
     "submitter": "Joe Blow",
     "applicant": {"id":4, "name":"Exporter Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
     "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"},
     "destination": {"id": 1, "name": "Importer Maple Inc.", "countryId": "CA", "country":"Canada", "address": "1000 Main Av, Toronto, BC, 902", "docid":"3-234-567", "fax":"777-5555", "email":"ghi@example.com"},
-    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"}
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
+    "expectedArrival": "2015-09-21T04:00:00.000Z"
   }
 },
 {
   "blockId": 14100302,
   "workflowId": 41,
   "formId": 3,
-  "title": "Export Certificate of Origin (COO)",
+  "title": "Export Certificate of Origin (COO) - Costa Rica",
   "status": "Issued",
   "submission": {
     "commodities":[
