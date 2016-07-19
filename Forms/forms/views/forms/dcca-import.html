@@ -1,7 +1,10 @@
 <div>
   <div class="row">
     <div class="col-sm-6">
-      <div class="form-group">
+      <span field-name="4" form='form' datatype="'Dropdown'" options="form.options.countries"></span>
+      <span field-name="5" form='form' datatype="'Dropdown'" options="form.options.countries"></span>
+
+      <!-- <div class="form-group">
         <label class="col-sm-4 control-label">
           <span field-name="4" form-fields="form.options.formFields"></span>
         </label>
@@ -14,7 +17,7 @@
         </label>
         <div class="col-sm-8 control-value" ng-bind="ila.submission.countryConsigned">
         </div>
-      </div>
+      </div> -->
       <div class="form-group">
         <label class="col-sm-4 control-label">
           <span field-name="6" form-fields="form.options.formFields" field-tooltip="true"></span>
@@ -39,15 +42,19 @@
         <div class="col-sm-8 control-value" ng-bind="ila.submission.applicant.name">
         </div>
       </div>
-      <div class="form-group">
+
+      <span field-name="8" form='form' datatype="'Dropdown'" options="form.options.suppliers"></span>
+
+      <!-- <div class="form-group">
         <label class="col-sm-4 control-label">
           <span field-name="8" form-fields="form.options.formFields"></span>
         </label>
         <div class="col-sm-8 control-value" ng-bind="ila.submission.supplier.name">
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
+
   <div class="row">
     <div edit-commodities=""></div>
   </div>

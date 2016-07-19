@@ -1,0 +1,16 @@
+<div class="form-group">
+  <label class="col-sm-4 control-label">
+		<span class="field-name">
+			<span ng-bind="field.display"></span>
+			<span ng-if="field.tooltip" class="field-tooltip glyphicon glyphicon-info-sign" tooltip="{{field.definition}}"></span>
+		</span>
+  </label>
+  <div class="col-sm-8">
+    <ui-select ng-model="form.data[field.field]" theme="bootstrap" ng-required="true">
+      <ui-select-match placeholder="Select ...">{{$select.selected.name}}</ui-select-match>
+        <ui-select-choices repeat="option in field.options">
+          <div ng-bind="option.name"></div>
+        </ui-select-choices>
+    </ui-select>
+  </div>
+</div>
