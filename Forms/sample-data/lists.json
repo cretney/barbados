@@ -818,12 +818,22 @@
 			{
 				"id": 2,
 				"template": "bidc-coo-edit-cr.html",
-				"document":"New Application for Certificate of Origin (COO)"
+				"document":"New Application for Certificate of Origin (COO) - Costa Rica"
 			},
 			{
 				"id": 3,
 				"template": "bidc-coo-static-cr.html",
-				"document":"Application for Certificate of Origin (COO)"
+				"document":"Application for Certificate of Origin (COO) - Costa Rica"
+			},
+			{
+				"id": 6,
+				"template": "bidc-coo-edit-cu.html",
+				"document":"New Application for Certificate of Origin (COO) - Cuba"
+			},
+			{
+				"id": 7,
+				"template": "bidc-coo-static-cu.html",
+				"document":"Application for Certificate of Origin (COO) - Cuba"
 			}
 		]
 	},

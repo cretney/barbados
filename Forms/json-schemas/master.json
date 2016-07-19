@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 19416d9c58c84d15452d7f7df5eea3b95c86eae5",
+  "description": "Generated from b with shasum c768515bf377d6baabe5e448ba80b093113d2853",
   "type": "object",
   "required": [
 
@@ -21,6 +21,11 @@
       "title": "Formid",
       "description": ""
     },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "description": ""
+    },
     "title": {
       "type": "string",
       "title": "Title",
@@ -31,17 +36,101 @@
       "title": "Description",
       "description": "Description of the item."
     },
-    "status": {
-      "type": "string",
-      "title": "Status",
-      "description": ""
-    },
     "submission": {
       "type": "object",
       "required": [
 
       ],
       "properties": {
+        "materials": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+
+            ],
+            "properties": {
+              "hsCode": {
+                "type": "string",
+                "title": "HS Code",
+                "description": "The unique code for the commodity."
+              },
+              "description": {
+                "type": "string",
+                "title": "Description",
+                "description": "Description of the item."
+              },
+              "origin": {
+                "type": "string",
+                "title": "Country of Origin",
+                "description": "The country from where the goods originated."
+              },
+              "supplier": {
+                "type": "string",
+                "title": "Supplier",
+                "description": "The name of the Supplier of the goods."
+              },
+              "fobValue": {
+                "type": "integer",
+                "title": "FOB Value (US$)",
+                "description": "In US Dollars"
+              },
+              "quantity": {
+                "type": "integer",
+                "title": "Quantity",
+                "description": "The quantity in units of sale."
+              }
+            }
+          }
+        },
+        "directManufacturing": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+
+            ],
+            "properties": {
+              "item": {
+                "type": "string",
+                "title": "Item",
+                "description": ""
+              },
+              "cost": {
+                "type": "integer",
+                "title": "Cost",
+                "description": ""
+              }
+            }
+          }
+        },
+        "indirectManufacturing": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+
+            ],
+            "properties": {
+              "item": {
+                "type": "string",
+                "title": "Item",
+                "description": ""
+              },
+              "cost": {
+                "type": "integer",
+                "title": "Cost",
+                "description": ""
+              }
+            }
+          }
+        },
         "commodities": {
           "type": "array",
           "minItems": 1,
@@ -67,6 +156,11 @@
                 "title": "FOB Value (US$)",
                 "description": "In US Dollars"
               },
+              "quantity": {
+                "type": "integer",
+                "title": "Quantity",
+                "description": "The quantity in units of sale."
+              },
               "preferenceCriterion": {
                 "type": "string",
                 "title": "Preference Criterion",
@@ -81,11 +175,6 @@
                 "type": "number",
                 "title": "Gross Weight",
                 "description": "Indicate the Gross Weight of the Goods."
-              },
-              "quantity": {
-                "type": "integer",
-                "title": "Quantity",
-                "description": "The quantity in units of sale."
               },
               "rulesOrigin": {
                 "type": "string",
@@ -120,6 +209,122 @@
                   }
                 }
               }
+            }
+          }
+        },
+        "manufacturing": {
+          "type": "string",
+          "title": "Manufacturing",
+          "description": ""
+        },
+        "submitter": {
+          "type": "string",
+          "title": "Submitter",
+          "description": "The person who submitted the application."
+        },
+        "origin": {
+          "type": "string",
+          "title": "Country of Origin",
+          "description": "The country from where the goods originated."
+        },
+        "supplier": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "id": {
+              "type": "integer",
+              "title": "Id",
+              "description": ""
+            },
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "countryId": {
+              "type": "string",
+              "title": "Countryid",
+              "description": ""
+            },
+            "country": {
+              "type": "string",
+              "title": "Country",
+              "description": ""
+            },
+            "address": {
+              "type": "string",
+              "title": "Address",
+              "description": ""
+            },
+            "email": {
+              "type": "string",
+              "title": "Email",
+              "description": ""
+            },
+            "work_phone": {
+              "type": "string",
+              "title": "Work_phone",
+              "description": ""
+            },
+            "docid": {
+              "type": "string",
+              "title": "Docid",
+              "description": ""
+            },
+            "fax": {
+              "type": "string",
+              "title": "Fax",
+              "description": ""
+            }
+          }
+        },
+        "applicant": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "id": {
+              "type": "integer",
+              "title": "Id",
+              "description": ""
+            },
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "countryId": {
+              "type": "string",
+              "title": "Countryid",
+              "description": ""
+            },
+            "country": {
+              "type": "string",
+              "title": "Country",
+              "description": ""
+            },
+            "address": {
+              "type": "string",
+              "title": "Address",
+              "description": ""
+            },
+            "docid": {
+              "type": "string",
+              "title": "Docid",
+              "description": ""
+            },
+            "fax": {
+              "type": "string",
+              "title": "Fax",
+              "description": ""
+            },
+            "email": {
+              "type": "string",
+              "title": "Email",
+              "description": ""
             }
           }
         },
@@ -173,59 +378,6 @@
           "title": "Observations",
           "description": ""
         },
-        "submitter": {
-          "type": "string",
-          "title": "Submitter",
-          "description": "The person who submitted the application."
-        },
-        "applicant": {
-          "type": "object",
-          "required": [
-
-          ],
-          "properties": {
-            "id": {
-              "type": "integer",
-              "title": "Id",
-              "description": ""
-            },
-            "name": {
-              "type": "string",
-              "title": "Name",
-              "description": ""
-            },
-            "countryId": {
-              "type": "string",
-              "title": "Countryid",
-              "description": ""
-            },
-            "country": {
-              "type": "string",
-              "title": "Country",
-              "description": ""
-            },
-            "address": {
-              "type": "string",
-              "title": "Address",
-              "description": ""
-            },
-            "docid": {
-              "type": "string",
-              "title": "Docid",
-              "description": ""
-            },
-            "fax": {
-              "type": "string",
-              "title": "Fax",
-              "description": ""
-            },
-            "email": {
-              "type": "string",
-              "title": "Email",
-              "description": ""
-            }
-          }
-        },
         "consignee": {
           "type": "object",
           "required": [
@@ -275,54 +427,6 @@
           }
         },
         "destination": {
-          "type": "object",
-          "required": [
-
-          ],
-          "properties": {
-            "id": {
-              "type": "integer",
-              "title": "Id",
-              "description": ""
-            },
-            "name": {
-              "type": "string",
-              "title": "Name",
-              "description": ""
-            },
-            "countryId": {
-              "type": "string",
-              "title": "Countryid",
-              "description": ""
-            },
-            "country": {
-              "type": "string",
-              "title": "Country",
-              "description": ""
-            },
-            "address": {
-              "type": "string",
-              "title": "Address",
-              "description": ""
-            },
-            "docid": {
-              "type": "string",
-              "title": "Docid",
-              "description": ""
-            },
-            "fax": {
-              "type": "string",
-              "title": "Fax",
-              "description": ""
-            },
-            "email": {
-              "type": "string",
-              "title": "Email",
-              "description": ""
-            }
-          }
-        },
-        "supplier": {
           "type": "object",
           "required": [
 

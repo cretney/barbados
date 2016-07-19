@@ -1402,22 +1402,91 @@
       "document_ids": [
 
       ]
+    },
+    {
+      "id": 6,
+      "readonly": false,
+      "name": "Application for Certificate of Origin (COO) - Cuba",
+      "description": "New Application for Certificate of Origin",
+      "fileName": "bidc-coo-edit-cu.html",
+      "document_ids": [
+
+      ]
+    },
+    {
+      "id": 7,
+      "readonly": true,
+      "name": "Export Certificate of Origin (COO) - Cuba",
+      "description": "Export Certificate of Origin",
+      "fileName": "bidc-coo-static-cu.html",
+      "document_ids": [
+
+      ]
+    },
+    {
+      "id": 168,
+      "readonly": false,
+      "name": "New Application for Certification Form",
+      "description": "New Application for Certification Form",
+      "fileName": "bidc-new-application-certification-form.html",
+      "document_ids": [
+        101
+      ]
+    },
+    {
+      "id": 169,
+      "readonly": true,
+      "name": "Application for Certification Form",
+      "description": "Application for Certification Form",
+      "fileName": "bidc-new-application-certification-form-issued.html",
+      "document_ids": [
+        101
+      ]
     }
   ],
   "workflows": [
     {
+      "id": 20,
+      "name": "BIDCreg",
+      "owner": "BIDC",
+      "pga_owner_id": 2,
+      "document_id": 101,
+      "processType": "E",
+      "purpose": "B"
+    },
+    {
       "id": 41,
       "name": "BIDCcooCR",
+      "owner": "BIDC",
+      "pga_owner_id": 2
+    },
+    {
+      "id": 42,
+      "name": "BIDCcooCU",
       "owner": "BIDC",
       "pga_owner_id": 2
     }
   ],
   "workflow_interactions": [
     {
+      "workflow_id": 20,
+      "step": 1,
+      "form_id": 168,
+      "title": "New Application for Certification Form",
+      "description": "Please complete this form"
+    },
+    {
+      "workflow_id": 20,
+      "step": 2,
+      "form_id": 169,
+      "title": "Application for Certification Form",
+      "description": "Please complete this form"
+    },
+    {
       "workflow_id": 41,
       "step": 1,
       "form_id": 2,
-      "title": "New Application for Certificate of Origin (COO)",
+      "title": "New Application for Certificate of Origin (COO) - Costa Rica",
       "description": "Please complete the Application for Certificate of Origin"
     },
     {
@@ -1425,7 +1494,22 @@
       "step": 2,
       "form_id": 3,
       "pga_id": 2,
-      "title": "Export Certificate of Origin (COO)",
+      "title": "Export Certificate of Origin (COO) - Costa Rica",
+      "description": null
+    },
+    {
+      "workflow_id": 42,
+      "step": 1,
+      "form_id": 6,
+      "title": "New Application for Certificate of Origin (COO) - Cuba",
+      "description": "Please complete the Application for Certificate of Origin"
+    },
+    {
+      "workflow_id": 42,
+      "step": 2,
+      "form_id": 7,
+      "pga_id": 2,
+      "title": "Export Certificate of Origin (COO) - Cuba",
       "description": null
     }
   ],
