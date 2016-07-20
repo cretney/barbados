@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 299dfd9d734295abd85e1ab25acbe76e1fcd65c1",
+  "description": "Generated from b with shasum f332571120bcab7d7acf7bfa2b400bba8e833722",
   "type": "object",
   "required": [
     "blockId",
@@ -129,8 +129,7 @@
             "required": [
               "hsCode",
               "description",
-              "fobValue",
-              "quantity"
+              "units"
             ],
             "properties": {
               "hsCode": {
@@ -139,11 +138,29 @@
               "description": {
                 "type": "string"
               },
-              "fobValue": {
-                "type": "integer"
-              },
-              "quantity": {
-                "type": "integer"
+              "units": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "unitType",
+                    "quantity",
+                    "fobValue"
+                  ],
+                  "properties": {
+                    "unitType": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "fobValue": {
+                      "type": "integer"
+                    }
+                  }
+                }
               }
             }
           }

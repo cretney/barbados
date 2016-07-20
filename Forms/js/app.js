@@ -209,13 +209,13 @@
 					  scope.formdef = formdef.data;
 					  // console.log(scope.formdef);
 					});
-					// dataService.getFormDef(scope.ila.formId, '1').then(function(formdef){
-					//   scope.formdef1 = formdef.data;
-					//   // console.log(scope.formdef);
-					// });
-					// dataService.getFormDef(scope.ila.formId, '2').then(function(formdef){
-					//   scope.formdef2 = formdef.data;
-					//   // console.log(scope.formdef);
+					dataService.getFormDef(scope.ila.formId, '1').then(function(formdef){
+					  scope.formdef1 = formdef.data;
+					  // console.log(scope.formdef);
+					});
+					dataService.getFormDef(scope.ila.formId, '2').then(function(formdef){
+					  scope.formdef2 = formdef.data;
+					  // console.log(scope.formdef);
 					});
 					angular.extend(scope.form, {
 						template: '/Forms/forms/views/forms/'+form.template,

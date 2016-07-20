@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 19416d9c58c84d15452d7f7df5eea3b95c86eae5",
+  "description": "Generated from b with shasum e2e34cc3a4af0bf8f5ff8080a7a617f143c38b4a",
   "type": "object",
   "required": [
     "blockId",
@@ -57,14 +57,6 @@
             "required": [
               "hsCode",
               "description",
-              "fobValue",
-              "preferenceCriterion",
-              "othersAnnex",
-              "grossWeight",
-              "quantity",
-              "rulesOrigin",
-              "invoiceNumber",
-              "invoiceDate",
               "units"
             ],
             "properties": {
@@ -74,30 +66,6 @@
               "description": {
                 "type": "string"
               },
-              "fobValue": {
-                "type": "integer"
-              },
-              "preferenceCriterion": {
-                "type": "string"
-              },
-              "othersAnnex": {
-                "type": "string"
-              },
-              "grossWeight": {
-                "type": "number"
-              },
-              "quantity": {
-                "type": "integer"
-              },
-              "rulesOrigin": {
-                "type": "string"
-              },
-              "invoiceNumber": {
-                "type": "string"
-              },
-              "invoiceDate": {
-                "type": "string"
-              },
               "units": {
                 "type": "array",
                 "minItems": 1,
@@ -105,11 +73,31 @@
                 "items": {
                   "type": "object",
                   "required": [
-                    "unitType"
+                    "unitType",
+                    "quantity",
+                    "fobValue",
+                    "preferenceCriterion",
+                    "othersAnnex",
+                    "grossWeight"
                   ],
                   "properties": {
                     "unitType": {
                       "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    },
+                    "fobValue": {
+                      "type": "integer"
+                    },
+                    "preferenceCriterion": {
+                      "type": "string"
+                    },
+                    "othersAnnex": {
+                      "type": "string"
+                    },
+                    "grossWeight": {
+                      "type": "number"
                     }
                   }
                 }
