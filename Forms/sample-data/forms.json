@@ -8903,12 +8903,11 @@
       {
         "hsCode": "123",
         "description": "test",
+        "fobValue":1000,
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3,
-            "fobValue":1000,
-            "quantity":1
+            "quantity": 3
           }
         ]
       }
@@ -8970,12 +8969,11 @@
       {
         "hsCode": "123",
         "description": "test",
+        "fobValue":1000,
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3,
-            "fobValue":1000,
-            "quantity":1
+            "quantity": 3
           }
         ]
       }
@@ -8999,14 +8997,14 @@
       {
         "hsCode":"123",
         "description":"test",
+        "fobValue":1000,
+        "preferenceCriterion":"A",
+        "othersAnnex":"ACC",
+        "grossWeight":10.0,
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3,
-            "fobValue":1000,
-            "preferenceCriterion":"A",
-            "othersAnnex":"ACC",
-            "grossWeight":10.0
+            "quantity": 3
           }
         ]
       }
@@ -9040,14 +9038,14 @@
       {
         "hsCode":"123",
         "description":"test",
+        "fobValue":1000,
+        "preferenceCriterion":"A",
+        "othersAnnex":"ACC",
+        "grossWeight":10.0,
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3,
-            "fobValue":1000,
-            "preferenceCriterion":"A",
-            "othersAnnex":"ACC",
-            "grossWeight":10.0
+            "quantity": 3
           }
         ]
       }
@@ -9082,14 +9080,14 @@
       {
         "hsCode":"123",
         "description":"test",
+        "fobValue":1000,
+        "preferenceCriterion":"A",
+        "othersAnnex":"ACC",
+        "grossWeight":10.0,
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3,
-            "fobValue":1000,
-            "preferenceCriterion":"A",
-            "othersAnnex":"ACC",
-            "grossWeight":10.0
+            "quantity": 3
           }
         ]
       }
@@ -9123,14 +9121,14 @@
       {
         "hsCode":"123",
         "description":"test",
+        "fobValue":1000,
+        "preferenceCriterion":"A",
+        "othersAnnex":"ACC",
+        "grossWeight":10.0,
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3,
-            "fobValue":1000,
-            "preferenceCriterion":"A",
-            "othersAnnex":"ACC",
-            "grossWeight":10.0
+            "quantity": 3
           }
         ]
       }
