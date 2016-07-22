@@ -1481,7 +1481,8 @@
       "pga_owner_id": 2,
       "document_id": 101,
       "processType": "E",
-      "purpose": "B"
+      "purpose": "B",
+      "signature": "1"
     },
     {
       "id": 41,
@@ -1598,6 +1599,11 @@
   ],
   "hscodes_workflows": [
     {
+      "hscode": "9403.201 ",
+      "id": 1,
+      "notes": "Other metal furniture: Of a kind used in schools, churches and laboratories"
+    },
+    {
       "hscode": "61.09 ",
       "id": 1,
       "notes": "T-shirts"
@@ -1608,209 +1614,56 @@
       "notes": "Yachts and other vessels for pleasure or sports; rowing boats and canoes"
     },
     {
-      "hscode": "9403.201 ",
-      "id": 1,
-      "notes": "Other metal furniture: Of a kind used in schools, churches and laboratories"
-    },
-    {
       "hscode": "95.04 ",
       "id": 1,
       "notes": "Coin operated amusement machines equipment and accessories for gambling or parlour games (excluding gaming machines), such as black-jack tables, table counters, hand counters, roulette wheels, dice, dice boxes, croupier's rake, etc."
     },
     {
-      "hscode": "01202",
+      "hscode": "*",
+      "hscode2": "01",
       "id": 41,
-      "notes": "Ground nuts, not roasted or other wise cooked, whether or not shelled or broken"
+      "notes": ""
     },
     {
-      "hscode": "0403",
-      "id": 41,
-      "notes": "Buttermilk, curdled milk and cream, yogurt, kephir and other fermented or acidified milk and cream whether or not concentrated or containing added sugar or other sweetening matter or flavoured or containing added fruit, nuts or cocoa"
+      "hscode": "*",
+      "hscode2": "02",
+      "id": 42,
+      "notes": ""
     },
     {
-      "hscode": "07.08",
-      "id": 41,
-      "notes": "Leguminous vegetables, shelled or unshelled, fresh or chilled"
+      "hscode": "*",
+      "hscode2": "01",
+      "id": 20,
+      "notes": ""
     },
     {
-      "hscode": "070190",
-      "id": 41,
-      "notes": "Other potatoes fresh or chilled"
-    },
+      "hscode": "*",
+      "hscode2": "02",
+      "id": 20,
+      "notes": ""
+    }
+  ],
+  "secondary_hscodes": [
     {
-      "hscode": "0702",
-      "id": 41,
-      "notes": "Tomatoes, fresh or chilled"
-    },
-    {
-      "hscode": "0703101",
-      "id": 41,
-      "notes": "Onions"
-    },
-    {
-      "hscode": "0703102",
-      "id": 41,
-      "notes": "Shallots fresh or chilled"
-    },
-    {
-      "hscode": "0704101",
-      "id": 41,
-      "notes": "Cauliflower"
-    },
-    {
-      "hscode": "0704901",
-      "id": 41,
-      "notes": "Cabbage"
-    },
-    {
-      "hscode": "070511",
-      "id": 41,
-      "notes": "Cabbage lettuce (head lettuce)"
-    },
-    {
-      "hscode": "070519",
-      "id": 41,
-      "notes": "Other lettuce"
-    },
-    {
-      "hscode": "070610",
-      "id": 41,
-      "notes": "Carrots and turnips, fresh or chilled"
-    },
-    {
-      "hscode": "070690 ",
-      "id": 41,
-      "notes": "Radishes, fresh or chilled"
-    },
-    {
-      "hscode": "0707001",
-      "id": 41,
-      "notes": "Cucumber"
-    },
-    {
-      "hscode": "0707002",
-      "id": 41,
-      "notes": "Gherkins"
-    },
-    {
-      "hscode": "070960",
-      "id": 41,
-      "notes": "Sweet pepper"
-    },
-    {
-      "hscode": "070960",
-      "id": 41,
-      "notes": "Hot pepper"
-    },
-    {
-      "hscode": "070970",
-      "id": 41,
-      "notes": "Spinach, New Zealand spinach and orache spinach (garden spinach)"
-    },
-    {
-      "hscode": "0709902 ",
-      "id": 41,
-      "notes": "Ochra"
-    },
-    {
-      "hscode": "0709903",
-      "id": 41,
-      "notes": "Pumpkins"
-    },
-    {
-      "hscode": "0709904 ",
-      "id": 41,
-      "notes": "Sweet corn"
-    },
-    {
-      "hscode": "0709909 ",
-      "id": 41,
-      "notes": "Christophine (choyote)"
-    },
-    {
-      "hscode": "071010",
-      "id": 41,
-      "notes": "Potatoes"
-    },
-    {
-      "hscode": "0713101",
-      "id": 41,
-      "notes": "Pigeon peas"
-    },
-    {
-      "hscode": "071410",
-      "id": 41,
-      "notes": "Manioc (cassava)"
-    },
-    {
-      "hscode": "071420",
-      "id": 41,
-      "notes": "Sweet Potato"
-    },
-    {
-      "hscode": "0714905",
-      "id": 41,
-      "notes": "Yam"
-    },
-    {
-      "hscode": "080440",
-      "id": 41,
-      "notes": "Avocado"
-    },
-    {
-      "hscode": "080450 ",
-      "id": 41,
-      "notes": "Mango and guava"
-    },
-    {
-      "hscode": "080711",
-      "id": 41,
-      "notes": "Watermelons"
-    },
-    {
-      "hscode": "080719",
-      "id": 41,
-      "notes": "Melons"
-    },
-    {
-      "hscode": "080720",
-      "id": 41,
-      "notes": "Papaya"
-    },
-    {
-      "hscode": "0810901",
-      "id": 41,
-      "notes": "Sapodillas"
-    },
-    {
-      "hscode": "0810902",
-      "id": 41,
-      "notes": "Golden Apples"
-    },
-    {
-      "hscode": "0810904",
-      "id": 41,
-      "notes": "Soursop"
-    },
-    {
-      "hscode": "0810906",
-      "id": 41,
-      "notes": "Carambola"
-    },
-    {
-      "hscode": "0810907",
-      "id": 41,
-      "notes": "Akee (ackee) (Blighia sapida Koenig)"
-    },
-    {
-      "hscode": "0904",
-      "id": 41,
-      "notes": "Pepper of genus Piper; dried or crushed or ground fruits of genus Capsicum or of genus Pimenta"
-    },
-    {
-      "hscode": "091010",
-      "id": 41,
-      "notes": "Ginger"
+      "id": 3,
+      "name": "Country",
+      "description": "Select the destination country",
+      "type": "E",
+      "hscodes": [
+        "*"
+      ],
+      "values": [
+        {
+          "value": "01",
+          "name": "Costa Rica",
+          "description": "Costa Rica"
+        },
+        {
+          "value": "02",
+          "name": "Cuba",
+          "description": "Republic of Cuba"
+        }
+      ]
     }
   ]
 }
