@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "angular-canvas-painter": "^0.5.3",
-    "angular-schema-form-datepicker": "^0.4.0"
+    "angular-schema-form-datepicker": "^0.4.0",
+    "angular-schema-form-external-options": "^1.0.0-beta.2"
   }
 }

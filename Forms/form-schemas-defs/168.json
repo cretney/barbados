@@ -13,8 +13,7 @@
         "items": [
           {
             "key":"supplier.name",
-            "title":"Name of Manufacturer",
-            "readonly":true
+            "title":"Name of Manufacturer"
           }
         ]
       }
@@ -30,8 +29,7 @@
         "items": [
           {
             "key":"supplier.address",
-            "title":"Address",
-            "readonly":true
+            "title":"Address"
           }
         ]
       }
@@ -136,7 +134,7 @@
             "htmlClass": "col-sm-3",
             "items": [
               {
-                "key": "commodities[].quantity",
+                "key": "commodities[].units[0].unitType",
                 "title": "Unit of Measure Used",
                 "description":" (e.g.) per case, per box"
               }
@@ -214,7 +212,7 @@
             "htmlClass": "col-sm-3",
             "items": [
               {
-                "key": "materials[].quantity",
+                "key": "materials[].unitType",
                 "title": "Unit of Measure Used",
                 "description":" (e.g.) per case, per box"
               }
@@ -226,7 +224,9 @@
             "items": [
               {
                 "key": "materials[].origin",
-                "title": "Country origin"
+                "type": "select-external",
+                "title": "Country of Origin",
+                "optionData": "form.options.countries"
               }
             ]
           }
