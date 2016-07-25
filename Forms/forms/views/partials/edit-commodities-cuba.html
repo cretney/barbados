@@ -24,7 +24,7 @@
       <td ng-bind="item.hsCode"></td>
       <td ng-bind="item.description"></td>
       <td><input name="{{'quantity_'+item.hsCode+'_'+$index}}" type="number" class="form-control" ng-model="item.units[0].quantity" min="{{form.config.quantity.min}}" required></td>
-      <td class="currency"><span ng-bind="form.config.currency.symbol.short"></span><input name="{{'fobValue_'+item.hsCode+'_'+$index}}" type="number" class="form-control" ng-model="item.units[0].fobValue" min="{{form.config.currency.min}}" ng-pattern="form.config.currency.pattern" required></td>
+      <td class="currency"><span ng-bind="form.config.currency.symbol.short"></span><input name="{{'fobValue_'+item.hsCode+'_'+$index}}" type="number" class="form-control" ng-model="item.fobValue" min="{{form.config.currency.min}}" ng-pattern="form.config.currency.pattern" required></td>
 
     </tr>
   </tbody>

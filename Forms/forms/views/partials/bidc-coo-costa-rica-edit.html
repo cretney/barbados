@@ -6,7 +6,6 @@
     </div>
   </div>
   <br>
-
   <div class="row">
     <div class="col-sm-6">
     	<strong>1. Exporter’s </strong>
@@ -18,30 +17,116 @@
     </div>
     <div class="col-sm-6">
 			<strong>2. Producer's: </strong>
-		  <label-value label="'Name'" value ="ila.submission.supplier.name"/></label-value>
-		  <label-value label="'Address'" value ="ila.submission.supplier.address + ', '+ ila.submission.supplier.country"></label-value>
-		  <label-value label="'Registration Number'" value ="ila.submission.supplier.docid"></label-value>
-		  <label-value label="'Facsimile Number'" value ="ila.submission.supplier.fax"></label-value>
-		  <label-value label="'Email Address'" value ="ila.submission.supplier.email"></label-value>
+      <div class="form-group">
+        <label class="col-sm-4 control-label"><span class="field-name">Name</span></label>
+        <div class="col-sm-8 control-value">
+          <input name="{{supplier.name}}" type="text" class="form-control" ng-model="form.data.supplier.name">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-4 control-label"><span class="field-name">Address</span></label>
+        <div class="col-sm-8 control-value">
+          <input name="{{supplier.address}}" type="text" class="form-control" ng-model="form.data.supplier.address">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-4 control-label"><span class="field-name">Registration Number</span></label>
+        <div class="col-sm-8 control-value">
+          <input name="{{supplier.docid}}" type="text" class="form-control" ng-model="form.data.supplier.docid">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 control-label"><span class="field-name">Facsimile Number</span></label>
+        <div class="col-sm-8 control-value">
+          <input name="{{supplier.fax}}" type="text" class="form-control" ng-model="form.data.supplier.fax">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 control-label"><span class="field-name">Email Address</span></label>
+        <div class="col-sm-8 control-value">
+          <input name="{{supplier.email}}" type="text" class="form-control" ng-model="form.data.supplier.email">
+        </div>
+      </div>
+
     </div>
   </div>
   <hr>
   <div class="row">
     <div class="col-sm-6">
 			<strong>3. Importer's: </strong>
-		  <label-value label="'Name'" value ="ila.submission.destination.name"/></label-value>
-		  <label-value label="'Address'" value ="ila.submission.destination.address + ', '+ ila.submission.destination.country"></label-value>
-		  <label-value label="'Registration Number'" value ="ila.submission.destination.docid"></label-value>
-		  <label-value label="'Facsimile Number'" value ="ila.submission.destination.fax"></label-value>
-		  <label-value label="'Email Address'" value ="ila.submission.destination.email"></label-value>
+
+      <div class="form-group">
+        <label class="col-sm-4 control-label"><span class="field-name">Name</span></label>
+        <div class="col-sm-8 control-value">
+          <input name="{{destination.name}}" type="text" class="form-control" ng-model="form.data.destination.name">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-4 control-label"><span class="field-name">Address</span></label>
+        <div class="col-sm-8 control-value">
+          <input name="{{destination.address}}" type="text" class="form-control" ng-model="form.data.destination.address">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-4 control-label"><span class="field-name">Registration Number</span></label>
+        <div class="col-sm-8 control-value">
+          <input name="{{destination.docid}}" type="text" class="form-control" ng-model="form.data.destination.docid">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 control-label"><span class="field-name">Facsimile Number</span></label>
+        <div class="col-sm-8 control-value">
+          <input name="{{destination.fax}}" type="text" class="form-control" ng-model="form.data.destination.fax">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 control-label"><span class="field-name">Email Address</span></label>
+        <div class="col-sm-8 control-value">
+          <input name="{{destination.email}}" type="text" class="form-control" ng-model="form.data.destination.email">
+        </div>
+      </div>
+
     </div>
     <div class="col-sm-6">
 			<strong>4. Consignee's: </strong>
-		  <label-value label="'Name'" value ="ila.submission.consignee.name"/></label-value>
-		  <label-value label="'Address'" value ="ila.submission.consignee.address + ', '+ ila.submission.consignee.country"></label-value>
-		  <label-value label="'Registration Number'" value ="ila.submission.consignee.docid"></label-value>
-		  <label-value label="'Facsimile Number'" value ="ila.submission.consignee.fax"></label-value>
-		  <label-value label="'Email Address'" value ="ila.submission.consignee.email"></label-value>
+
+      <div class="form-group">
+        <label class="col-sm-4 control-label"><span class="field-name">Name</span></label>
+        <div class="col-sm-8 control-value">
+          <input name="{{consignee.name}}" type="text" class="form-control" ng-model="form.data.consignee.name">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-4 control-label"><span class="field-name">Address</span></label>
+        <div class="col-sm-8 control-value">
+          <input name="{{consignee.address}}" type="text" class="form-control" ng-model="form.data.consignee.address">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-4 control-label"><span class="field-name">Registration Number</span></label>
+        <div class="col-sm-8 control-value">
+          <input name="{{consignee.docid}}" type="text" class="form-control" ng-model="form.data.consignee.docid">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 control-label"><span class="field-name">Facsimile Number</span></label>
+        <div class="col-sm-8 control-value">
+          <input name="{{consignee.fax}}" type="text" class="form-control" ng-model="form.data.consignee.fax">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 control-label"><span class="field-name">Email Address</span></label>
+        <div class="col-sm-8 control-value">
+          <input name="{{consignee.email}}" type="text" class="form-control" ng-model="form.data.consignee.email">
+        </div>
+      </div>
+
     </div>
   </div>
   <hr>
