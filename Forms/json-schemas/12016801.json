@@ -56,7 +56,7 @@
               "origin",
               "supplier",
               "fobValue",
-              "quantity"
+              "unitType"
             ],
             "properties": {
               "hsCode": {
@@ -74,8 +74,8 @@
               "fobValue": {
                 "type": "integer"
               },
-              "quantity": {
-                "type": "integer"
+              "unitType": {
+                "type": "string"
               }
             }
           }

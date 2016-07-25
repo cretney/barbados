@@ -1,0 +1,45 @@
+{
+  "name": "angular-schema-form-external-options",
+  "main": [
+    "bootstrap-external-options.min.js"
+  ],
+  "version": "1.0.0-beta.2",
+  "authors": [
+    "Anthropic",
+    "Marcel Bennett <iamanthropic@gmail.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "angular-schema-form",
+    "schema-form",
+    "form",
+    "json",
+    "json-schema",
+    "schema"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "coverage"
+  ],
+  "devDependencies": {
+    "angular-schema-form": ">= 0.8",
+    "angular-mocks": ">= 1.2"
+  },
+  "homepage": "https://github.com/Anthropic/angular-schema-form-external-options",
+  "_release": "1.0.0-beta.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.0.0-beta.2",
+    "commit": "31baa5dffa332f36e78482cdbc62005dc4aee74e"
+  },
+  "_source": "https://github.com/Anthropic/angular-schema-form-external-options.git",
+  "_target": "^1.0.0-beta.2",
+  "_originalSource": "angular-schema-form-external-options",
+  "_direct": true
+}

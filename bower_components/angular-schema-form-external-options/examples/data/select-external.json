@@ -1,0 +1,58 @@
+{
+  "schema": {
+    "type": "object",
+    "title": "Pick A Film",
+    "properties": {
+      "movies":{
+        "type": "object",
+        "title": "Pick A Film",
+        "properties": {
+          "genre":  {
+            "title": "Genre",
+            "type": "string",
+            "enum":["horror","family"]
+          },
+          "studio":  {
+            "title": "Studio",
+            "type": "string",
+            "links":[
+              { "rel":"options", "href": "./data/schema/{movies.genre}.studios.json" }
+            ]
+          },
+          "film": {
+            "title": "Favourite?",
+            "type": "string",
+            "links":[
+              { "rel":"options", "href": "./data/schema/{movies.genre}.{movies.studio}.films.json" }
+            ]
+          }
+        }
+      },
+      "weapon":  {
+        "title": "Weapon of choice",
+        "type": "string"
+      }
+    },
+    "required": ["genre","studio","film"]
+  },
+  "form": [
+    "movies.genre",
+    "movies.studio",
+    "movies.film",
+    {
+      "key": "language",
+      "type": "select-external",
+      "optionData": "weapons"
+    },
+    {
+      "type": "button",
+      "title": "Switch Weapon Set",
+      "onClick": "switchWeapons()"
+    },
+    {
+      "type": "submit",
+      "style": "btn-info",
+      "title": "OK"
+    }
+  ]
+}

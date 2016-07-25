@@ -274,9 +274,9 @@
                 "title": "FOB Value (US$)",
                 "description": "In US Dollars"
               },
-              "quantity": {
-                "type": "integer",
-                "title": "Quantity",
+              "unitType": {
+                "type": "string",
+                "title": "Unit Type",
                 "description": "The quantity in units of sale."
               }
             }

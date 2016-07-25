@@ -8868,7 +8868,7 @@
         "origin":"United States",
         "supplier":"Supplier1",
         "fobValue":1000,
-        "quantity":1
+        "unitType": "boxes"
       },
       {
         "hsCode": "543",
@@ -8876,7 +8876,7 @@
         "origin":"Canada",
         "supplier":"Supplier2",
         "fobValue":2000,
-        "quantity":2
+        "unitType": "crates"
       }
     ],
     "directManufacturing": [
