@@ -196,7 +196,9 @@
 				  // ];
 				  scope.model = {};
 
-					dataService.getSchema(scope.itemId).then(function(schema){
+					dataService.getSchema(
+						// scope.itemId
+					).then(function(schema){
 					  scope.schema = schema.data;
 					});
 
@@ -205,12 +207,15 @@
 					var form = $filter('filter')(formsMap,{id: scope.ila.formId}, true)[0]; //select current form mapping
 					dataService.getFormDef(scope.ila.formId).then(function(formdef){
 					  scope.formdef = formdef.data;
+					  // console.log(scope.formdef);
 					});
 					dataService.getFormDef(scope.ila.formId, '1').then(function(formdef){
 					  scope.formdef1 = formdef.data;
+					  // console.log(scope.formdef);
 					});
 					dataService.getFormDef(scope.ila.formId, '2').then(function(formdef){
 					  scope.formdef2 = formdef.data;
+					  // console.log(scope.formdef);
 					});
 					angular.extend(scope.form, {
 						template: '/Forms/forms/views/forms/'+form.template,
@@ -756,7 +761,7 @@
 								}
 							]
 						}
-				    });
+			    });
 				});
 			}
 		}
@@ -855,13 +860,13 @@
 			templateUrl: '/Forms/forms/views/partials/view-commodities-cuba.html'
 		}
 	}])
-	.directive('viewCommoditiesBds', [function(){
-		return{
-			restrict: 'A',
-			replace: true,
-			templateUrl: '/Forms/forms/views/partials/view-commodities-bds.html'
-		}
-	}])
+	// .directive('viewCommoditiesBds', [function(){
+	// 	return{
+	// 		restrict: 'A',
+	// 		replace: true,
+	// 		templateUrl: '/Forms/forms/views/partials/view-commodities-bds.html'
+	// 	}
+	// }])
 	.directive('viewCommoditiesVenezuela', [function(){
 		return{
 			restrict: 'A',
@@ -960,76 +965,6 @@
 		}
 	}])
 
-	// .directive('drawHorse', [function(){
-	//   return {
-	//     restrict: "A",
-	//     link: function(scope, element){
-	//       var ctx = element[0].getContext('2d');
-	//
-	//       // variable that decides if something should be drawn on mousemove
-	//       var drawing = false;
-	//
-	//       // the last coordinates before the current move
-	//       var lastX;
-	//       var lastY;
-	//
-	//       element.bind('mousedown', function(event){
-	//         if(event.offsetX!==undefined){
-	//           lastX = event.offsetX;
-	//           lastY = event.offsetY;
-	//         } else {
-	//           lastX = event.layerX - event.currentTarget.offsetLeft;
-	//           lastY = event.layerY - event.currentTarget.offsetTop;
-	//         }
-	//
-	//         // begins new line
-	//         ctx.beginPath();
-	//
-	//         drawing = true;
-	//       });
-	//       element.bind('mousemove', function(event){
-	//         if(drawing){
-	//           // get current mouse position
-	//           if(event.offsetX!==undefined){
-	//             currentX = event.offsetX;
-	//             currentY = event.offsetY;
-	//           } else {
-	//             currentX = event.layerX - event.currentTarget.offsetLeft;
-	//             currentY = event.layerY - event.currentTarget.offsetTop;
-	//           }
-	//
-	//           draw(lastX, lastY, currentX, currentY);
-	//
-	//           // set current coordinates to last one
-	//           lastX = currentX;
-	//           lastY = currentY;
-	//         }
-	//
-	//       });
-	//       element.bind('mouseup', function(event){
-	//         // stop drawing
-	//         drawing = false;
-	//       });
-	//
-	//       // canvas reset
-	//       function reset(){
-	//        element[0].width = element[0].width;
-	//       }
-	//
-	//       function draw(lX, lY, cX, cY){
-	//         // line from
-	//         ctx.moveTo(lX,lY);
-	//         // to
-	//         ctx.lineTo(cX,cY);
-	//         // color
-	//         ctx.strokeStyle = "#000";
-	//         // draw it
-	//         ctx.stroke();
-	//       }
-	//     }
-	//   };
-	// }])
-
 	.directive('labelValue', [function() {
 	    return {
 	        restrict: 'E',
@@ -1071,7 +1006,7 @@
 					else if (scope.field.readonly || scope.readonly)
 						return '/Forms/forms/views/partials/field-name-readonly.html';
 					else if ((scope.field.fieldtype == "Dropdown" || scope.fieldtype == "Dropdown") && (scope.field.id == 8))
-											    return '/Forms/forms/views/partials/field-name-select-supplier.html';
+							return '/Forms/forms/views/partials/field-name-select-supplier.html';
 					else if (scope.field.fieldtype == "Dropdown" || scope.fieldtype == "Dropdown")
 						return '/Forms/forms/views/partials/field-name-select.html';
 					else if (scope.field.options)
@@ -1091,25 +1026,25 @@
 		}
 	}])
 
-	.filter('sum', function() {
-     return function(groups, index) {
-         var total = 0;
-         for (i=0; i<groups.length; i++) {
-             total = total + groups[i].units[index].quantity;
-          };
-         return total;
-     };
- 	})
-
-	.filter('totalCif', function() {
-		 return function(c) {
-				 var total = 0;
-				 for (i=0; i<c.length; i++) {
-						 total = total + c[i].units[0].cifValue;
-					};
-				 return total;
-		 };
-	})
+	// .filter('sum', function() {
+  //    return function(groups, index) {
+  //        var total = 0;
+  //        for (i=0; i<groups.length; i++) {
+  //            total = total + groups[i].units[index].quantity;
+  //         };
+  //        return total;
+  //    };
+ // 	})
+	//
+	// .filter('totalCif', function() {
+	// 	 return function(c) {
+	// 			 var total = 0;
+	// 			 for (i=0; i<c.length; i++) {
+	// 					 total = total + c[i].units[0].cifValue;
+	// 				};
+	// 			 return total;
+	// 	 };
+	// })
 
 	.filter('propsFilter', [function() {
   		return function(items, props) {

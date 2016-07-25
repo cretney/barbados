@@ -1333,6 +1333,12 @@
 				"field": "entryDate",
 				"display": "Entry Date",
 				"definition": ""
+			},
+			{
+				"id": 111,
+				"field": "invoiceNumber",
+				"display": "Invoice Number",
+				"definition": "Enter the Number of the Commercial Invoice."
 			}
 
 		]

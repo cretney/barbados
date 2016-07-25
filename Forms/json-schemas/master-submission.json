@@ -1,0 +1,447 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Generated from b with shasum 6a0634f1f9e936039ca8f912a4f0a76f6675c668",
+  "type": "object",
+  "required": [
+
+  ],
+  "properties": {
+    "commodities": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+
+        ],
+        "properties": {
+          "hsCode": {
+            "type": "string",
+            "title": "HS Code",
+            "description": "The unique code for the commodity."
+          },
+          "description": {
+            "type": "string",
+            "title": "Description",
+            "description": "Description of the item."
+          },
+          "units": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "unitType": {
+                  "type": "string",
+                  "title": "Unit of Sale",
+                  "description": "The unit of sale."
+                },
+                "quantity": {
+                  "type": "integer",
+                  "title": "Quantity",
+                  "description": "The quantity in units of sale."
+                },
+                "pricePerUnit": {
+                  "type": "number",
+                  "title": "Price Per Unit",
+                  "description": "In Barbados Dollars"
+                },
+                "cifValue": {
+                  "type": "integer",
+                  "title": "Customs Value",
+                  "description": "In Barbados Dollars"
+                }
+              }
+            }
+          },
+          "fobValue": {
+            "type": "integer",
+            "title": "FOB Value (US$)",
+            "description": "In US Dollars"
+          },
+          "preferenceCriterion": {
+            "type": "string",
+            "title": "Preference Criterion",
+            "description": ""
+          },
+          "othersAnnex": {
+            "type": "string",
+            "title": "Others Annex",
+            "description": "Others: if in determining the origin of the good one of the procedures set forth in Articles 1V.06 or IV.05 of the Agreement, was used, indicate:"
+          },
+          "grossWeight": {
+            "type": "number",
+            "title": "Gross Weight",
+            "description": "Indicate the Gross Weight of the Goods."
+          }
+        }
+      }
+    },
+    "submitter": {
+      "type": "string",
+      "title": "Submitter",
+      "description": "The person who submitted the application."
+    },
+    "applicant": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "title": "Id",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "countryId": {
+          "type": "string",
+          "title": "Countryid",
+          "description": ""
+        },
+        "country": {
+          "type": "string",
+          "title": "Country",
+          "description": ""
+        },
+        "address": {
+          "type": "string",
+          "title": "Address",
+          "description": ""
+        },
+        "docid": {
+          "type": "string",
+          "title": "Docid",
+          "description": ""
+        },
+        "fax": {
+          "type": "string",
+          "title": "Fax",
+          "description": ""
+        },
+        "email": {
+          "type": "string",
+          "title": "Email",
+          "description": ""
+        }
+      }
+    },
+    "supplier": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "title": "Id",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "countryId": {
+          "type": "string",
+          "title": "Countryid",
+          "description": ""
+        },
+        "country": {
+          "type": "string",
+          "title": "Country",
+          "description": ""
+        },
+        "address": {
+          "type": "string",
+          "title": "Address",
+          "description": ""
+        },
+        "docid": {
+          "type": "string",
+          "title": "Docid",
+          "description": ""
+        },
+        "fax": {
+          "type": "string",
+          "title": "Fax",
+          "description": ""
+        },
+        "email": {
+          "type": "string",
+          "title": "Email",
+          "description": ""
+        },
+        "work_phone": {
+          "type": "string",
+          "title": "Work_phone",
+          "description": ""
+        }
+      }
+    },
+    "origin": {
+      "type": "string",
+      "title": "Country of Origin",
+      "description": "The country from where the goods originated."
+    },
+    "countryConsigned": {
+      "type": "string",
+      "title": "Country whence Consigned",
+      "description": "The country where the goods were consigned."
+    },
+    "expectedArrival": {
+      "type": "date-time",
+      "title": "Expected Time of Arrival",
+      "description": "The date that the goods will arrive in Barbados."
+    },
+    "materials": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+
+        ],
+        "properties": {
+          "hsCode": {
+            "type": "string",
+            "title": "HS Code",
+            "description": "The unique code for the commodity."
+          },
+          "description": {
+            "type": "string",
+            "title": "Description",
+            "description": "Description of the item."
+          },
+          "origin": {
+            "type": "string",
+            "title": "Country of Origin",
+            "description": "The country from where the goods originated."
+          },
+          "supplier": {
+            "type": "string",
+            "title": "Supplier",
+            "description": "The name of the Supplier of the goods."
+          },
+          "fobValue": {
+            "type": "integer",
+            "title": "FOB Value (US$)",
+            "description": "In US Dollars"
+          },
+          "quantity": {
+            "type": "integer",
+            "title": "Quantity",
+            "description": "The quantity in units of sale."
+          }
+        }
+      }
+    },
+    "directManufacturing": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+
+        ],
+        "properties": {
+          "item": {
+            "type": "string",
+            "title": "Item",
+            "description": ""
+          },
+          "cost": {
+            "type": "integer",
+            "title": "Cost",
+            "description": ""
+          }
+        }
+      }
+    },
+    "indirectManufacturing": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+
+        ],
+        "properties": {
+          "item": {
+            "type": "string",
+            "title": "Item",
+            "description": ""
+          },
+          "cost": {
+            "type": "integer",
+            "title": "Cost",
+            "description": ""
+          }
+        }
+      }
+    },
+    "manufacturing": {
+      "type": "string",
+      "title": "Manufacturing",
+      "description": ""
+    },
+    "destinationCountry": {
+      "type": "string",
+      "title": "Destination Country",
+      "description": "Destination Country to Export to"
+    },
+    "modeTransport": {
+      "type": "string",
+      "title": "Mode of Transportation",
+      "description": "Mode of Transportation"
+    },
+    "portShipment": {
+      "type": "string",
+      "title": "Port of Shipment",
+      "description": "Indicate Port of Shipment."
+    },
+    "portDischarge": {
+      "type": "string",
+      "title": "Port of Discharge",
+      "description": "Indicate Port of Discharge."
+    },
+    "routeTransport": {
+      "type": "string",
+      "title": "Route",
+      "description": "Route of Transportation"
+    },
+    "invoiceNumber": {
+      "type": "string",
+      "title": "Invoice Number",
+      "description": "Enter the Number of the Commercial Invoice."
+    },
+    "invoiceDate": {
+      "type": "date-time",
+      "title": "Invoice Date",
+      "description": "Enter the Date of the Commercial Invoice."
+    },
+    "inFreeTradeZone": {
+      "type": "string",
+      "title": "Manufacturer premises located in Free Trade Zone",
+      "description": "whether Producer is located in the Free Zone"
+    },
+    "tradedSpecial": {
+      "type": "string",
+      "title": "Traded under Special Arrangements",
+      "description": "Whether the good is on the list in Annex III.04.06 to be traded under Special Arrangements"
+    },
+    "observations": {
+      "type": "string",
+      "title": "Observations",
+      "description": ""
+    },
+    "consignee": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "title": "Id",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "countryId": {
+          "type": "string",
+          "title": "Countryid",
+          "description": ""
+        },
+        "country": {
+          "type": "string",
+          "title": "Country",
+          "description": ""
+        },
+        "address": {
+          "type": "string",
+          "title": "Address",
+          "description": ""
+        },
+        "docid": {
+          "type": "string",
+          "title": "Docid",
+          "description": ""
+        },
+        "fax": {
+          "type": "string",
+          "title": "Fax",
+          "description": ""
+        },
+        "email": {
+          "type": "string",
+          "title": "Email",
+          "description": ""
+        }
+      }
+    },
+    "destination": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "title": "Id",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "countryId": {
+          "type": "string",
+          "title": "Countryid",
+          "description": ""
+        },
+        "country": {
+          "type": "string",
+          "title": "Country",
+          "description": ""
+        },
+        "address": {
+          "type": "string",
+          "title": "Address",
+          "description": ""
+        },
+        "docid": {
+          "type": "string",
+          "title": "Docid",
+          "description": ""
+        },
+        "fax": {
+          "type": "string",
+          "title": "Fax",
+          "description": ""
+        },
+        "email": {
+          "type": "string",
+          "title": "Email",
+          "description": ""
+        }
+      }
+    }
+  }
+}
