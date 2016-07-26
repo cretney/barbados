@@ -9084,6 +9084,7 @@
         "preferenceCriterion":"A",
         "othersAnnex":"ACC",
         "grossWeight":10.0,
+        "rulesOrigin":"A",
         "units": [
           {
             "unitType": "Units",
@@ -9125,6 +9126,7 @@
         "preferenceCriterion":"A",
         "othersAnnex":"ACC",
         "grossWeight":10.0,
+        "rulesOrigin":"A",
         "units": [
           {
             "unitType": "Units",

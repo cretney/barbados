@@ -11,7 +11,7 @@
   <tbody>
     <tr ng-repeat="item in form.data.commodities" ng-class-odd="'odd'" ng-class-even="'even'">
       <td>{{$index+1}}</td>
-      <td><input name="{{'rulesOrigin_'+item.hsCode+'_'+$index}}" class="form-control" ng-model="item.units[0].rulesOrigin" required></td>
+      <td><input name="{{'rulesOrigin_'+item.hsCode+'_'+$index}}" class="form-control" ng-model="item.rulesOrigin" required></td>
     </tr>
   </tbody>
 </table>

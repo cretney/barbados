@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum e3d6abd674c78aeca0eb8fbe27e170984854deec",
+  "description": "Generated from b with shasum fd1df71d901906a366fa77a2e7b39d13cb1be6f4",
   "type": "object",
   "required": [
 
@@ -114,6 +114,11 @@
                 "type": "number",
                 "title": "Gross Weight",
                 "description": "Indicate the Gross Weight of the Goods."
+              },
+              "rulesOrigin": {
+                "type": "string",
+                "title": "Rules of Origin",
+                "description": "Enter the criteria of origin applicable to each of the goods included."
               }
             }
           }
@@ -276,7 +281,12 @@
               },
               "unitType": {
                 "type": "string",
-                "title": "Unit Type",
+                "title": "Unit of Sale",
+                "description": "The unit of sale."
+              },
+              "quantity": {
+                "type": "integer",
+                "title": "Quantity",
                 "description": "The quantity in units of sale."
               }
             }
