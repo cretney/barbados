@@ -7,8 +7,8 @@
   </label>
   <div class="col-sm-8">
     <ui-select ng-model="form.data[field.field]" theme="bootstrap" ng-required="true">
-      <ui-select-match placeholder="Select ...">{{$select.selected}}</ui-select-match>
-        <ui-select-choices repeat="option in field.options | filter: $select.search">
+      <ui-select-match class="ui-select-match" placeholder="Select ...">{{$select.selected}}</ui-select-match>
+        <ui-select-choices class="ui-select-choices" repeat="option in field.options | filter: $select.search">
           <div ng-bind="option"></div>
         </ui-select-choices>
     </ui-select>
