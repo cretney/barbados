@@ -7,28 +7,64 @@
   </div>
   <br>
   <div class="row">
-    <div class="col-sm-4">
-    	<strong>1. Exporter’s </strong>		 
+    <div class="col-sm-6">
+    	<strong>1. Exporter’s </strong>
 		  <label-value label="'Name'" value ="ila.submission.applicant.name"/></label-value>
 		  <label-value label="'Address'" value ="ila.submission.applicant.address + ', '+ ila.submission.applicant.country"></label-value>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-6">
 			<strong>2. Producer's: </strong>
-		  <label-value label="'Name'" value ="ila.submission.supplier.name"/></label-value>
-		  <label-value label="'Address'" value ="ila.submission.supplier.address + ', '+ ila.submission.supplier.country"></label-value>
-    </div>
-    <div class="col-sm-4">
-			<strong>3. Importer's: </strong>
-		  <label-value label="'Name'" value ="ila.submission.destination.name"/></label-value>
-		  <label-value label="'Address'" value ="ila.submission.destination.address + ', '+ ila.submission.destination.country"></label-value>
+      <div class="form-group">
+        <label class="col-sm-4 control-label"><span class="field-name">Name</span></label>
+        <div class="col-sm-8 control-value">
+          <input name="{{supplier.name}}" type="text" class="form-control" ng-model="form.data.supplier.name">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-4 control-label"><span class="field-name">Address</span></label>
+        <div class="col-sm-8 control-value">
+          <input name="{{supplier.address}}" type="text" class="form-control" ng-model="form.data.supplier.address">
+        </div>
+      </div>
     </div>
   </div>
-  <hr>  
+  <hr>
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-6">
+      <strong>3. Importer's: </strong>
+
+      <div class="form-group">
+        <label class="col-sm-4 control-label"><span class="field-name">Name</span></label>
+        <div class="col-sm-8 control-value">
+          <input name="{{destination.name}}" type="text" class="form-control" ng-model="form.data.destination.name">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-4 control-label"><span class="field-name">Address</span></label>
+        <div class="col-sm-8 control-value">
+          <input name="{{destination.address}}" type="text" class="form-control" ng-model="form.data.destination.address">
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
       <strong>4. Consignee: </strong>
-      <label-value label="'Name'" value ="ila.submission.consignee.name"/></label-value>
-      <label-value label="'Address'" value ="ila.submission.consignee.address + ', '+ ila.submission.consignee.country"></label-value>
+
+      <div class="form-group">
+        <label class="col-sm-4 control-label"><span class="field-name">Name</span></label>
+        <div class="col-sm-8 control-value">
+          <input name="{{consignee.name}}" type="text" class="form-control" ng-model="form.data.consignee.name">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-4 control-label"><span class="field-name">Address</span></label>
+        <div class="col-sm-8 control-value">
+          <input name="{{consignee.address}}" type="text" class="form-control" ng-model="form.data.consignee.address">
+        </div>
+      </div>
     </div>
     <div class="col-sm-4">
       <strong>5.</strong> <br>
@@ -39,7 +75,7 @@
       <strong>6.</strong>
       <span field-name="84" form='form' datatype="'String'"></span>
     </div>
-  </div>  
+  </div>
   <hr>
   <div class="row">
     <div class="col-sm-6">
@@ -50,7 +86,7 @@
       <strong></strong> <br>
       <span field-name="88" form='form' datatype="'Date'"></span>
     </div>
-  </div>  
+  </div>
   <hr>
   <div class="row">
     <div class="col-sm-12">
@@ -69,7 +105,7 @@
       <strong>16.</strong>
       <span field-name="76" form='form' datatype="'Text'"></span>
     </div>
-  </div>  
+  </div>
   <hr>
   <div class="row">
     <div class="col-sm-6">
@@ -80,7 +116,7 @@
 			THE EXPORTER / PRODUCER <br>
 
 			PLACE AND DATE <br>
-		</div>	
+		</div>
 
     <div class="col-sm-6">
 			<strong>18. Certification of Authorised Body </strong><br>
@@ -91,7 +127,7 @@
 
 			PLACE AND DATE OF ISSUE: <br>
     </div>
-  </div>  
+  </div>
   <hr>
   <div class="row">
     <div class="col-sm-12">
@@ -104,7 +140,7 @@
 			NOTE (3): <br>
 			<p>THIS FORM WILL NOT BE CONSIDERED VALID IF IT HAS ERASURES, CORRECTIONS OR AMENDMENTS.</p>
     </div>
-  </div>  
+  </div>
 
   <br>
   <br>
@@ -135,7 +171,7 @@
 
       Box No . 4: <br>
       <p>Enter Consignee*s Name and Address. <br>
-      Where the importer and the consignee are the same, the word "SAME" may be printed in Box 
+      Where the importer and the consignee are the same, the word "SAME" may be printed in Box
 
       Box No . 5: <br>
       <p>Enter Mode of Transportation and Route.</p>
