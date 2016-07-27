@@ -834,6 +834,16 @@
 				"id": 7,
 				"template": "bidc-coo-static-cu.html",
 				"document":"Application for Certificate of Origin (COO) - Cuba"
+			},
+			{
+				"id": 200,
+				"template": "bidc-coo-edit-co.html",
+				"document":"New Application for Certificate of Origin (COO) - Colombia"
+			},
+			{
+				"id": 201,
+				"template": "bidc-coo-static-co.html",
+				"document":"Application for Certificate of Origin (COO) - Colombia"
 			}
 		]
 	},

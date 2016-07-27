@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum a6fda26b9b0f6739d1f65a6a8a7c7bcd0590ca85",
+  "description": "Generated from b with shasum 5d87c62c68502b18041f1dc442c4d4e9d4335c21",
   "type": "object",
   "required": [
 
@@ -83,6 +83,16 @@
             "type": "string",
             "title": "Rules of Origin",
             "description": "Enter the criteria of origin applicable to each of the goods included."
+          },
+          "invoiceNumber": {
+            "type": "string",
+            "title": "Invoice Number",
+            "description": "Enter the Number of the Commercial Invoice."
+          },
+          "invoiceDate": {
+            "type": "date-time",
+            "title": "Invoice Date",
+            "description": "Enter the Date of the Commercial Invoice."
           }
         }
       }
@@ -207,6 +217,21 @@
       "type": "date-time",
       "title": "Expected Time of Arrival",
       "description": "The date that the goods will arrive in Barbados."
+    },
+    "consigments": {
+      "type": "string",
+      "title": "Number of Consignments",
+      "description": ""
+    },
+    "intendedUse": {
+      "type": "string",
+      "title": "Intended use",
+      "description": ""
+    },
+    "meansConveyance": {
+      "type": "string",
+      "title": "Means of Conveyance",
+      "description": ""
     },
     "materials": {
       "type": "array",

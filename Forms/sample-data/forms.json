@@ -9069,10 +9069,10 @@
   }
 },
 {
-  "blockId": 14200601,
-  "workflowId": 42,
-  "formId": 6,
-  "title": "New Application for Certificate of Origin (COO) - Cuba",
+  "blockId": 14320001,
+  "workflowId": 43,
+  "formId": 200,
+  "title": "New Application for Certificate of Origin (COO) - Colombia",
   "description": "Please complete the Export Application",
   "status": "Draft",
   "submission": {
@@ -9085,6 +9085,8 @@
         "othersAnnex":"ACC",
         "grossWeight":10.0,
         "rulesOrigin":"A",
+        "invoiceNumber":"7890123",
+        "invoiceDate":"2016-04-07",
         "units": [
           {
             "unitType": "Units",
@@ -9112,10 +9114,10 @@
   }
 },
 {
-  "blockId": 14200702,
-  "workflowId": 42,
-  "formId": 7,
-  "title": "Export Certificate of Origin (COO) - Cuba",
+  "blockId": 14320102,
+  "workflowId": 43,
+  "formId": 201,
+  "title": "Export Certificate of Origin (COO) - Colombia",
   "status": "Issued",
   "submission": {
     "commodities":[
@@ -9127,6 +9129,8 @@
         "othersAnnex":"ACC",
         "grossWeight":10.0,
         "rulesOrigin":"A",
+        "invoiceNumber":"7890123",
+        "invoiceDate":"2016-04-07",
         "units": [
           {
             "unitType": "Units",
