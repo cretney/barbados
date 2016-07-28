@@ -40,10 +40,10 @@
               <div ng-bind="option"></div>
             </ui-select-choices>
         </ui-select>
-      </td>    
-      <td><input name="{{'grossWeight'+item.hsCode+'_'+$index}}" type="number" class="form-control" ng-model="item.units[0].grossWeight" min="{{form.config.grossWeight.min}}" required></td>
-      <td><input name="{{'invoiceNumber_'+item.hsCode+'_'+$index}}" class="form-control" ng-model="item.units[0].invoiceNumber" required></td>
-      <td><input name="{{'invoiceDate_'+item.hsCode+'_'+$index}}" type="date" class="form-control" ng-model="item.units[0].invoiceDate" datepicker-popup ng-click="picker.open = !picker.open" is-open="picker.open" close-text="Close" required></td>
+      </td>
+      <td><input name="{{'grossWeight'+item.hsCode+'_'+$index}}" type="number" class="form-control" ng-model="item.grossWeight" min="{{form.config.grossWeight.min}}" required></td>
+      <td><input name="{{'invoiceNumber_'+item.hsCode+'_'+$index}}" class="form-control" ng-model="item.invoiceNumber" required></td>
+      <td><input name="{{'invoiceDate_'+item.hsCode+'_'+$index}}" type="date" class="form-control" ng-model="item.invoiceDate" datepicker-popup ng-click="picker.open = !picker.open" is-open="picker.open" close-text="Close" required></td>
 
     </tr>
   </tbody>

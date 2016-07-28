@@ -19,14 +19,31 @@
     </div>
     <div class="col-sm-6">
 			<strong>2. Consignee</strong>
-		  <label-value label="'Name'" value ="ila.submission.consignee.name"/></label-value>
-		  <label-value label="'Address'" value ="ila.submission.consignee.address"></label-value>
-		  <label-value label="'Country'" value ="ila.submission.consignee.country"></label-value>
+        <div class="form-group">
+          <label class="col-sm-4 control-label"><span class="field-name">Name</span></label>
+          <div class="col-sm-8 control-value">
+            <input name="{{consignee.name}}" type="text" class="form-control" ng-model="form.data.consignee.name">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-sm-4 control-label"><span class="field-name">Address</span></label>
+          <div class="col-sm-8 control-value">
+            <input name="{{consignee.address}}" type="text" class="form-control" ng-model="form.data.consignee.address">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-sm-4 control-label"><span class="field-name">Country</span></label>
+          <div class="col-sm-8 control-value">
+            <input name="{{consignee.country}}" type="text" class="form-control" ng-model="form.data.consignee.country">
+          </div>
+        </div>
     </div>
   </div>
   <hr>
   <div class="row">
-    <div class="col-sm-4">			
+    <div class="col-sm-4">
       <strong>3. Transport information</strong> <br>
       vessel / aircraft. place of loading. etc. <br>
       <span field-name="85" form='form' options='["Air","Land","Water"]'></span>
@@ -55,7 +72,7 @@
 			<p>It is hereby certified, on the basis of control carried out, that the declaration by the exporter is correct</p>
 
 			Place and date. signature and stamp of certifying authority <br>
-    </div>    
+    </div>
     <div class="col-sm-6">
 			<strong>12. Declaration by the exporter</strong> <br>
 
@@ -82,7 +99,7 @@
       <p>The criterion on the basis of which Common Market origin is claimed must be stated in the column headed “Origin Criterion" against each item in the manner indicated below:</p>
 
       If each article comprised in the item has been <br><br>
-      
+
       (a)wholly produced within the Common Market: <br> <br>
 
       <p>The letters "CM" must be inserted:</p> <br>
@@ -102,7 +119,7 @@
 
 
 
-      C <br>  
+      C <br>
       <p>(a) The forms may be completed by any process. provided that the entries are indelible and legible.</p>
       <p>(b) Neither erasures nor superimpositions should be allowed on the certificates (or applications). Any alterations should be made by striking out the erroneous material and making any additions required. Such alterations should be approved by the person who made them and certified by the appropriate authority or body.</p>
       <p>(c) Any unused spaces should be crossed out to prevent any subsequent additions.</p>

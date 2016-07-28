@@ -1503,6 +1503,56 @@
         8,
         92
       ]
+    },
+    {
+      "id": 32,
+      "readonly": true,
+      "name": "Phitosanitary Inspection Certificate for Import Release",
+      "description": "Phitosanitary Inspection Certificate",
+      "fileName": "bidc-coo-static.html",
+      "document_ids": [
+        27
+      ]
+    },
+    {
+      "id": 48,
+      "readonly": false,
+      "name": "New Request for Plant Inspection Letter",
+      "description": "Plant Inspection Letter",
+      "fileName": "plant-request-inspection-letter.html",
+      "document_ids": [
+        32
+      ]
+    },
+    {
+      "id": 49,
+      "readonly": true,
+      "name": "Request for Plant Inspection Letter",
+      "description": null,
+      "fileName": "plant-request-inspection-letter-issued.html",
+      "document_ids": [
+        32
+      ]
+    },
+    {
+      "id": 51,
+      "readonly": false,
+      "name": "Unwholesome Food Certificate Request",
+      "description": "Food is unfit for human consumption",
+      "fileName": "fs-unwholesome-food-certificate.html",
+      "document_ids": [
+        68
+      ]
+    },
+    {
+      "id": 45,
+      "readonly": true,
+      "name": "Unwholesome Food Certificate",
+      "description": "Food is unfit for human consumption",
+      "fileName": "dcca-import-static.html",
+      "document_ids": [
+        68
+      ]
     }
   ],
   "workflows": [
@@ -1533,6 +1583,24 @@
       "processType": "E",
       "purpose": "B",
       "signature": "1"
+    },
+    {
+      "id": 28,
+      "name": "PlantPostArrival",
+      "owner": "Plant Quarantine",
+      "pga_owner_id": 7,
+      "document_id": 27,
+      "processType": "I",
+      "purpose": "W"
+    },
+    {
+      "id": 31,
+      "name": "FoodUnwholePostArrival2",
+      "owner": "Food Safety",
+      "pga_owner_id": 5,
+      "document_id": 68,
+      "processType": "I",
+      "purpose": "A"
     },
     {
       "id": 41,
@@ -1639,6 +1707,45 @@
       "pga_id": 2,
       "title": "Review Application Registration COO",
       "description": "Application for Certificate of Origin (COO) Registration"
+    },
+    {
+      "workflow_id": 28,
+      "step": 15,
+      "form_id": 48,
+      "title": "New Request for Plant Inspection Letter",
+      "description": "Plant Inspection Letter"
+    },
+    {
+      "workflow_id": 28,
+      "step": 16,
+      "form_id": 49,
+      "pga_id": 7,
+      "title": "Request for Plant Inspection Letter",
+      "description": "Plant Inspection Letter"
+    },
+    {
+      "workflow_id": 28,
+      "step": 20,
+      "form_id": 32,
+      "pga_id": 7,
+      "title": "Phitosanitary Inspection Certificate for Import Release",
+      "description": "Phitosanitary Inspection Certificate"
+    },
+    {
+      "workflow_id": 31,
+      "step": 1,
+      "form_id": 51,
+      "pga_id": 5,
+      "title": "Unwholesome Food Certificate Request",
+      "description": "Food is unfit for human consumption"
+    },
+    {
+      "workflow_id": 31,
+      "step": 2,
+      "form_id": 45,
+      "pga_id": 5,
+      "title": "Unwholesome Food Certificate",
+      "description": "Food is unfit for human consumption"
     },
     {
       "workflow_id": 41,
@@ -2231,6 +2338,1161 @@
       "hscode": "071232 00 000 ",
       "id": 15,
       "notes": "Wood ears (Auricularia spp.)"
+    },
+    {
+      "hscode": "060110 00 000 ",
+      "id": 28,
+      "notes": "Bulbs, tubers, tuberous roots, corms, crowns and rhizomes, dormant"
+    },
+    {
+      "hscode": "060120 10 000 ",
+      "id": 28,
+      "notes": "Bulbs, tubers, tuberous roots, corms, crowns and rhizomes. in growth or in flower"
+    },
+    {
+      "hscode": "060120 20 000 ",
+      "id": 28,
+      "notes": "Chicory plants"
+    },
+    {
+      "hscode": "060120 90 000 ",
+      "id": 28,
+      "notes": "Other, Bulbs, tubers, tuberous roots, corms. crowns and rhizomes, dormant in growth or in flower"
+    },
+    {
+      "hscode": "060210 00 000 ",
+      "id": 28,
+      "notes": "Unrooted cuttings and slips"
+    },
+    {
+      "hscode": "060220 00 000 ",
+      "id": 28,
+      "notes": "Trees, shrubs and bushes, grafted or not, of kinds which bear edible fruit or nuts"
+    },
+    {
+      "hscode": "060230 00 000 ",
+      "id": 28,
+      "notes": "Rhododendrons and azaleas, grafted or not"
+    },
+    {
+      "hscode": "060240 00 000 ",
+      "id": 28,
+      "notes": "Roses, grafted or not"
+    },
+    {
+      "hscode": "060290 10 000 ",
+      "id": 28,
+      "notes": "Banana plants"
+    },
+    {
+      "hscode": "060290 20 000 ",
+      "id": 28,
+      "notes": "Coconut plants"
+    },
+    {
+      "hscode": "060290 30 000 ",
+      "id": 28,
+      "notes": "Cocoa plants"
+    },
+    {
+      "hscode": "060290 40 000 ",
+      "id": 28,
+      "notes": "Citrus plants"
+    },
+    {
+      "hscode": "060290 90 000 ",
+      "id": 28,
+      "notes": "Other plants"
+    },
+    {
+      "hscode": "060310 10 000 ",
+      "id": 28,
+      "notes": "Anthuriums"
+    },
+    {
+      "hscode": "060310 20 000 ",
+      "id": 28,
+      "notes": "Roses"
+    },
+    {
+      "hscode": "060310 30 000 ",
+      "id": 28,
+      "notes": "Chrysanthemums"
+    },
+    {
+      "hscode": "060310 40 000 ",
+      "id": 28,
+      "notes": "Ginger lilies"
+    },
+    {
+      "hscode": "060310 50 000 ",
+      "id": 28,
+      "notes": "Gerberas"
+    },
+    {
+      "hscode": "060310 60 000 ",
+      "id": 28,
+      "notes": "Heliconias (Heliconia spp.)"
+    },
+    {
+      "hscode": "060310 70 000 ",
+      "id": 28,
+      "notes": "Orchids"
+    },
+    {
+      "hscode": "060310 90 000 ",
+      "id": 28,
+      "notes": "Other, live trees and other plants, bulbs, roots, and the like"
+    },
+    {
+      "hscode": "060390 00 000 ",
+      "id": 28,
+      "notes": "Other, cut flowers and flower buds of a kind suitable for bouquets or for ornamental purposes, fresh, dried, dyed, bleached, impregnated or otherwise prepared"
+    },
+    {
+      "hscode": "060410 00 000 ",
+      "id": 28,
+      "notes": "Mosses and lichens"
+    },
+    {
+      "hscode": "060491 00 000 ",
+      "id": 28,
+      "notes": "Fresh"
+    },
+    {
+      "hscode": "060499 00 000 ",
+      "id": 28,
+      "notes": "Other, foliage, branches and other parts of plants, without flowers or flower buds, and grasses, mosses and lichens. being goods of a kind suitable for bouquets or for ornamental purposes, fresh, dried, dyed, bleached, impregnated or otherwise"
+    },
+    {
+      "hscode": "070110 00 000 ",
+      "id": 28,
+      "notes": "Potatoes, seed fresh or chilled"
+    },
+    {
+      "hscode": "070190 00 000 ",
+      "id": 28,
+      "notes": "Other potatoes, fresh or chilled"
+    },
+    {
+      "hscode": "070200 00 000 ",
+      "id": 28,
+      "notes": "Tomatoes, fresh or chilled."
+    },
+    {
+      "hscode": "070310 10 000 ",
+      "id": 28,
+      "notes": "Onions"
+    },
+    {
+      "hscode": "070310 20 000 ",
+      "id": 28,
+      "notes": "Shallots (eschallots)"
+    },
+    {
+      "hscode": "070320 00 000 ",
+      "id": 28,
+      "notes": "Garlic"
+    },
+    {
+      "hscode": "070390 00 000 ",
+      "id": 28,
+      "notes": "Leeks and other alliaceous vegetables"
+    },
+    {
+      "hscode": "070410 10 000 ",
+      "id": 28,
+      "notes": "Cauliflowers"
+    },
+    {
+      "hscode": "070410 90 000 ",
+      "id": 28,
+      "notes": "Other, headed broccoli"
+    },
+    {
+      "hscode": "070420 00 000 ",
+      "id": 28,
+      "notes": "Brussels sprouts"
+    },
+    {
+      "hscode": "070490 10 000 ",
+      "id": 28,
+      "notes": "Cabbages"
+    },
+    {
+      "hscode": "070490 90 000 ",
+      "id": 28,
+      "notes": "Other, kohlrabi, kale"
+    },
+    {
+      "hscode": "070511 00 000 ",
+      "id": 28,
+      "notes": "Cabbage lettuce (head lettuce)"
+    },
+    {
+      "hscode": "070519 00 000 ",
+      "id": 28,
+      "notes": "Other, similar edible brassicas, fresh or chilled"
+    },
+    {
+      "hscode": "070521 00 000 ",
+      "id": 28,
+      "notes": "Witloof chicory (Chichorium intybus var. foliosum)"
+    },
+    {
+      "hscode": "070529 00 000 ",
+      "id": 28,
+      "notes": "Other fresh or chilled"
+    },
+    {
+      "hscode": "070610 10 000 ",
+      "id": 28,
+      "notes": "Carrots"
+    },
+    {
+      "hscode": "070610 90 000 ",
+      "id": 28,
+      "notes": "Other, salad beetroot, salsify, celeriac, radishes and similar edible roots, fresh or chilled"
+    },
+    {
+      "hscode": "070690 10 000 ",
+      "id": 28,
+      "notes": "Beets"
+    },
+    {
+      "hscode": "070690 90 000 ",
+      "id": 28,
+      "notes": "Other, edible roots, fresh or chilled"
+    },
+    {
+      "hscode": "070700 10 000 ",
+      "id": 28,
+      "notes": "Cucumbers"
+    },
+    {
+      "hscode": "070700 20 000 ",
+      "id": 28,
+      "notes": "Gherkins"
+    },
+    {
+      "hscode": "070810 10 000 ",
+      "id": 28,
+      "notes": "Pigeon peas"
+    },
+    {
+      "hscode": "070810 20 000 ",
+      "id": 28,
+      "notes": "Blackeye peas"
+    },
+    {
+      "hscode": "070810 90 000 ",
+      "id": 28,
+      "notes": "Other peas"
+    },
+    {
+      "hscode": "070820 10 000 ",
+      "id": 28,
+      "notes": "String beans"
+    },
+    {
+      "hscode": "070820 20 000 ",
+      "id": 28,
+      "notes": "Bora (bodi) beans (Vigna spp.)"
+    },
+    {
+      "hscode": "070820 90 000 ",
+      "id": 28,
+      "notes": "Other leguminous vegetables"
+    },
+    {
+      "hscode": "070890 00 000 ",
+      "id": 28,
+      "notes": "Other leguminous vegetables, shelled or unshelled, fresh or chilled 070910 00 000 Globe artichokes"
+    },
+    {
+      "hscode": "070920 00 000 ",
+      "id": 28,
+      "notes": "Asparagus"
+    },
+    {
+      "hscode": "070930 00 000 ",
+      "id": 28,
+      "notes": "Aubergines (egg-plants)"
+    },
+    {
+      "hscode": "070940 00 000 ",
+      "id": 28,
+      "notes": "Celery and other celeriac"
+    },
+    {
+      "hscode": "07095100000 ",
+      "id": 28,
+      "notes": "Mushrooms of the genus Agaricus"
+    },
+    {
+      "hscode": "070952 00 000 ",
+      "id": 28,
+      "notes": "Trumes"
+    },
+    {
+      "hscode": "070959 00 000 ",
+      "id": 28,
+      "notes": "Other, vegetables, fresh or chilled"
+    },
+    {
+      "hscode": "070960 10 000 ",
+      "id": 28,
+      "notes": "Sweet peppers"
+    },
+    {
+      "hscode": "070960 90 000 ",
+      "id": 28,
+      "notes": "Other peppers, fresh or chilled"
+    },
+    {
+      "hscode": "070970 00 000 ",
+      "id": 28,
+      "notes": "Spinach, New Zealand spinach and orache spinach (garden spinach) 070990 10 000 Zucchini"
+    },
+    {
+      "hscode": "070990 20 000 ",
+      "id": 28,
+      "notes": "Ochroes"
+    },
+    {
+      "hscode": "070990 30 000 ",
+      "id": 28,
+      "notes": "Pumpkins"
+    },
+    {
+      "hscode": "070990 40 000 ",
+      "id": 28,
+      "notes": "Sweet corn (corn on the cob)"
+    },
+    {
+      "hscode": "070990 90 000 ",
+      "id": 28,
+      "notes": "Other, vegetables, fresh or chilled"
+    },
+    {
+      "hscode": "071010 00 000 ",
+      "id": 28,
+      "notes": "Potatoes, uncooked or cooked by steaming or boiling in water), frozen 071021 10 000 Garden peas for use in industry"
+    },
+    {
+      "hscode": "071021 20 000 ",
+      "id": 28,
+      "notes": "Other peas for use in industry"
+    },
+    {
+      "hscode": "07102190000 ",
+      "id": 28,
+      "notes": "Other, leguminous vegetables, shelled or unshelled"
+    },
+    {
+      "hscode": "071022 10 000 ",
+      "id": 28,
+      "notes": "String beans, for use in industry"
+    },
+    {
+      "hscode": "071022 20 000 ",
+      "id": 28,
+      "notes": "Other beans for use in industry"
+    },
+    {
+      "hscode": "071022 90 000 ",
+      "id": 28,
+      "notes": "Other"
+    },
+    {
+      "hscode": "071029 10 000 ",
+      "id": 28,
+      "notes": "For use in industry"
+    },
+    {
+      "hscode": "071029 90 000 ",
+      "id": 28,
+      "notes": "Other"
+    },
+    {
+      "hscode": "071030 10 000 ",
+      "id": 28,
+      "notes": "For use in industry"
+    },
+    {
+      "hscode": "071030 90 000 ",
+      "id": 28,
+      "notes": "Other"
+    },
+    {
+      "hscode": "071040 10 000 ",
+      "id": 28,
+      "notes": "For use in industry"
+    },
+    {
+      "hscode": "071040 90 000 ",
+      "id": 28,
+      "notes": "Other"
+    },
+    {
+      "hscode": "071080 ",
+      "id": 28,
+      "notes": "I 0 000 Beets, for use in industry"
+    },
+    {
+      "hscode": "071080 20 000 ",
+      "id": 28,
+      "notes": "Beets, other"
+    },
+    {
+      "hscode": "071080 30 000 ",
+      "id": 28,
+      "notes": "Carrots, for use in industry"
+    },
+    {
+      "hscode": "071080 40 000 ",
+      "id": 28,
+      "notes": "Carrots, other"
+    },
+    {
+      "hscode": "071080 80 000 ",
+      "id": 28,
+      "notes": "Other, for use in industry"
+    },
+    {
+      "hscode": "071080 90 000 ",
+      "id": 28,
+      "notes": "Other"
+    },
+    {
+      "hscode": "071090 90 000 ",
+      "id": 28,
+      "notes": "Other, for use in industry"
+    },
+    {
+      "hscode": "071120 00 000 ",
+      "id": 28,
+      "notes": "Olives"
+    },
+    {
+      "hscode": "071130 00 000 ",
+      "id": 28,
+      "notes": "Capers"
+    },
+    {
+      "hscode": "071140 00 000 ",
+      "id": 28,
+      "notes": "Cucumbers and gherkins"
+    },
+    {
+      "hscode": "071151 00 000 ",
+      "id": 28,
+      "notes": "Mushrooms of the genus Agaricus"
+    },
+    {
+      "hscode": "071159 00 000 ",
+      "id": 28,
+      "notes": "Other vegetables; mixtures ofvegetables"
+    },
+    {
+      "hscode": "071190 00 000 ",
+      "id": 28,
+      "notes": "Other vegetables"
+    },
+    {
+      "hscode": "071220 00 000 ",
+      "id": 28,
+      "notes": "Onions"
+    },
+    {
+      "hscode": "07123100000 ",
+      "id": 28,
+      "notes": "Mushrooms of the genus Agaricus"
+    },
+    {
+      "hscode": "071232 00 000 ",
+      "id": 28,
+      "notes": "Wood ears (Auricularia spp.)"
+    },
+    {
+      "hscode": "02.01 ",
+      "id": 31,
+      "notes": "Meat of bovine animals, fresh or chilled"
+    },
+    {
+      "hscode": "02.02 ",
+      "id": 31,
+      "notes": "Meat of bovine animals, frozen"
+    },
+    {
+      "hscode": "02.03 ",
+      "id": 31,
+      "notes": "Meat of swine, fresh, chilled or frozen"
+    },
+    {
+      "hscode": "02.04 ",
+      "id": 31,
+      "notes": "Meat of sheep or goats, fresh, chilled or frozen"
+    },
+    {
+      "hscode": "02.05 ",
+      "id": 31,
+      "notes": "Meat of horses, asses, mules or hinnies, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.06 ",
+      "id": 31,
+      "notes": "Edible offal of bovine animals, swine, sheep, goats, horses, asses, mules or hinnies, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.07 ",
+      "id": 31,
+      "notes": "Meat and edible offal, of the poultry of heading 01.05, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.08 ",
+      "id": 31,
+      "notes": "Other meat and edible meat offal, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.09 ",
+      "id": 31,
+      "notes": "Pig fat, free of lean meat, and poultry fat, not rendered or otherwise extracted, fresh, chilled, frozen, salted, in brine, dried or smoked"
+    },
+    {
+      "hscode": "02.10 ",
+      "id": 31,
+      "notes": "Meat and edible meat offal, salted, in brine, dried or smoked; edible flours and meals of meat or meat offal."
+    },
+    {
+      "hscode": "03.02 ",
+      "id": 31,
+      "notes": "Fish, fresh or chilled, excluding fish fillets and other fish meat of heading 03.04."
+    },
+    {
+      "hscode": "03.03 ",
+      "id": 31,
+      "notes": "Fish, frozen, excluding fish fillets and other fish meat of heading 03.04"
+    },
+    {
+      "hscode": "03.04 ",
+      "id": 31,
+      "notes": "Fish fillets and other fish meat (whether or not minced), fresh, chilled or frozen"
+    },
+    {
+      "hscode": "03.05 ",
+      "id": 31,
+      "notes": "Fish, dried, salted or in brine; smoked fish, whether or not cooked before or during the smoking process; flours, meals and pellets of fish, fit for human consumption."
+    },
+    {
+      "hscode": "03.06 ",
+      "id": 31,
+      "notes": "Crustaceans, whether in shell or not, live, fresh, chilled, frozen, dried, salted or in brine; crustaceans, in shell, cooked by steaming or by boiling in water, whether or not chilled, frozen, dried, salted or in brine; flours, meals and pellets of crustaceans, fit for human consumption."
+    },
+    {
+      "hscode": "03.07 ",
+      "id": 31,
+      "notes": "Molluscs, whether in shell or not, live, fresh, chilled, frozen, dried, salted or in brine; aquatic invertebrates other than crustaceans and molluscs, live, fresh, chilled, frozen, dried, salted or in brine; flours, meals and pellets of aquatic invertebrates other than crustaceans, fit for human consumption"
+    },
+    {
+      "hscode": "04.01 ",
+      "id": 31,
+      "notes": "Milk and cream, not concentrated nor containing added sugar or other sweetening matter"
+    },
+    {
+      "hscode": "04.02 ",
+      "id": 31,
+      "notes": "Milk and cream, concentrated or containing added sugar or other sweetening matter."
+    },
+    {
+      "hscode": "04.03 ",
+      "id": 31,
+      "notes": "Buttermilk, curdled milk and cream, yogurt, kephir and other fermented or acidified milk and cream, whether or not concentrated or containing added sugar or other sweetening matter or flavoured or containing added fruit, nuts or cocoa."
+    },
+    {
+      "hscode": "04.04 ",
+      "id": 31,
+      "notes": "Whey, whether or not concentrated or containing added sugar or other sweetening matter; products consisting of natural milk constituents, whether or not containing added sugar or other sweetening matter, not elsewhere specified or included."
+    },
+    {
+      "hscode": "04.05 ",
+      "id": 31,
+      "notes": "Butter and other fats and oils derived from milk; dairy spreads"
+    },
+    {
+      "hscode": "04.06 ",
+      "id": 31,
+      "notes": "Cheese and curd."
+    },
+    {
+      "hscode": "04.07 ",
+      "id": 31,
+      "notes": "Birds' eggs, in shell, fresh, preserved or cooked."
+    },
+    {
+      "hscode": "04.08 ",
+      "id": 31,
+      "notes": "Birds' eggs, not in shell, and egg yolks, fresh, dried, cooked by steaming or by boiling in water, moulded, frozen or otherwise preserved, whether or not containing added sugar or other sweetening matter"
+    },
+    {
+      "hscode": "04.09 ",
+      "id": 31,
+      "notes": "Natural honey"
+    },
+    {
+      "hscode": "04.10 ",
+      "id": 31,
+      "notes": "Edible products of animal origin, not elsewhere specified or included."
+    },
+    {
+      "hscode": "05.04 ",
+      "id": 31,
+      "notes": "Guts, bladders and stomachs of animals (other than fish), whole and pieces thereof, fresh, chilled, frozen, salted, in brine, dried or smoked."
+    },
+    {
+      "hscode": "07.01 ",
+      "id": 31,
+      "notes": "Potatoes, fresh or chilled."
+    },
+    {
+      "hscode": "07.02 ",
+      "id": 31,
+      "notes": "Tomatoes, fresh or chilled"
+    },
+    {
+      "hscode": "07.03 ",
+      "id": 31,
+      "notes": "Onions, shallots, garlic, leeks and other alliaceous vegetables, fresh or chilled."
+    },
+    {
+      "hscode": "07.04 ",
+      "id": 31,
+      "notes": "Cabbages, cauliflowers, kohlrabi, kale and similar edible brassicas, fresh or chilled."
+    },
+    {
+      "hscode": "07.05 ",
+      "id": 31,
+      "notes": "Lettuce (Lactuca sativa) and chicory (Cichorium spp.), fresh or chilled."
+    },
+    {
+      "hscode": "07.06 ",
+      "id": 31,
+      "notes": "Carrots, turnips, salad beetroot, salsify, celeriac, radishes and similar edible roots, fresh or chilled."
+    },
+    {
+      "hscode": "07.07 ",
+      "id": 31,
+      "notes": "Cucumbers and gherkins, fresh or chilled."
+    },
+    {
+      "hscode": "07.08 ",
+      "id": 31,
+      "notes": "Leguminous vegetables, shelled or unshelled, fresh or chilled."
+    },
+    {
+      "hscode": "07.09 ",
+      "id": 31,
+      "notes": "Other vegetables, fresh or chilled."
+    },
+    {
+      "hscode": "07.10 ",
+      "id": 31,
+      "notes": "Vegetables (uncooked or cooked by steaming or boiling in water), frozen"
+    },
+    {
+      "hscode": "07.11 ",
+      "id": 31,
+      "notes": "Vegetables provisionally preserved (for example, by sulphur dioxide gas, in brine, in sulphur water or in other preservative solutions), but unsuitable in that state for immediate consumption."
+    },
+    {
+      "hscode": "07.12 ",
+      "id": 31,
+      "notes": "Dried vegetables, whole, cut, sliced, broken or in powder, but not further prepared."
+    },
+    {
+      "hscode": "07.13 ",
+      "id": 31,
+      "notes": "Dried leguminous vegetables, shelled, whether or not skinned or split."
+    },
+    {
+      "hscode": "07.14 ",
+      "id": 31,
+      "notes": "Manioc, arrowroot, salep, Jerusalem artichokes, sweet potatoes and similar roots and tubers with high starch or inulin content, fresh, chilled, frozen or dried, whether or not sliced or in the form of pellets; sago pith."
+    },
+    {
+      "hscode": "08.01 ",
+      "id": 31,
+      "notes": "Coconuts, Brazil nuts and cashew nuts, fresh or dried, whether or not shelled or peeled."
+    },
+    {
+      "hscode": "08.02 ",
+      "id": 31,
+      "notes": "Other nuts, fresh or dried, whether or not shelled or peeled."
+    },
+    {
+      "hscode": "08.03 ",
+      "id": 31,
+      "notes": "Bananas, including plantains, fresh or dried."
+    },
+    {
+      "hscode": "08.04 ",
+      "id": 31,
+      "notes": "Dates, figs, pineapples, avocados, guavas, mangoes and mangosteens, fresh or dried."
+    },
+    {
+      "hscode": "08.05 ",
+      "id": 31,
+      "notes": "Citrus fruit, fresh or dried"
+    },
+    {
+      "hscode": "08.06 ",
+      "id": 31,
+      "notes": "Grapes, fresh or dried."
+    },
+    {
+      "hscode": "08.07 ",
+      "id": 31,
+      "notes": "Melons (including watermelons) and papaws (papayas), fresh"
+    },
+    {
+      "hscode": "08.08 ",
+      "id": 31,
+      "notes": "Apples, pears and quinces, fresh"
+    },
+    {
+      "hscode": "08.09 ",
+      "id": 31,
+      "notes": "Apricots, cherries, peaches (including nectarines), plums and sloes, fresh."
+    },
+    {
+      "hscode": "08.10 ",
+      "id": 31,
+      "notes": "Other fruit, fresh"
+    },
+    {
+      "hscode": "08.11 ",
+      "id": 31,
+      "notes": "Fruit and nuts, uncooked or cooked by steaming or boiling in water, frozen, whether or not containing added sugar or other sweetening matter."
+    },
+    {
+      "hscode": "08.12 ",
+      "id": 31,
+      "notes": "Fruit and nuts, provisionally preserved (for example, by sulphur dioxide gas, in brine, in sulphur water or in other preservative solutions), but unsuitable in that state for immediate consumption."
+    },
+    {
+      "hscode": "08.13 ",
+      "id": 31,
+      "notes": "Fruit, dried, other than that of headings 08.01 to 08.06; mixtures of nuts or dried fruits of this Chapter."
+    },
+    {
+      "hscode": "08.14 ",
+      "id": 31,
+      "notes": "Peel of citrus fruit or melons (including watermelons), fresh, frozen, dried or provisionally preserved in brine, in sulphur water or in other preservative solutions."
+    },
+    {
+      "hscode": "09.01 ",
+      "id": 31,
+      "notes": "Coffee, whether or not roasted or decaffeinated; coffee husks and skins; coffee substitutes containing coffee in any proportion."
+    },
+    {
+      "hscode": "09.02 ",
+      "id": 31,
+      "notes": "Tea, whether or not flavoured."
+    },
+    {
+      "hscode": "09.03 ",
+      "id": 31,
+      "notes": "Maté."
+    },
+    {
+      "hscode": "09.04 ",
+      "id": 31,
+      "notes": "Pepper of the genus Piper; dried or crushed or ground fruits of the genus Capsicumor of the genus Pimenta."
+    },
+    {
+      "hscode": "09.05 ",
+      "id": 31,
+      "notes": "Vanilla."
+    },
+    {
+      "hscode": "09.06 ",
+      "id": 31,
+      "notes": "Cinnamon and cinnamon-tree flowers"
+    },
+    {
+      "hscode": "09.07 ",
+      "id": 31,
+      "notes": "Cloves (whole fruit, cloves and stems)"
+    },
+    {
+      "hscode": "09.08 ",
+      "id": 31,
+      "notes": "Nutmeg, mace and cardamoms."
+    },
+    {
+      "hscode": "09.09 ",
+      "id": 31,
+      "notes": "Seeds of anise, badian, fennel, coriander, cumin or caraway; juniper berries."
+    },
+    {
+      "hscode": "09.10 ",
+      "id": 31,
+      "notes": "Ginger, saffron, turmeric (curcuma), thyme, bay leaves, curry and other spices"
+    },
+    {
+      "hscode": "10.01 ",
+      "id": 31,
+      "notes": "Wheat and meslin"
+    },
+    {
+      "hscode": "10.02 ",
+      "id": 31,
+      "notes": "Rye."
+    },
+    {
+      "hscode": "10.03 ",
+      "id": 31,
+      "notes": "Barley"
+    },
+    {
+      "hscode": "10.04 ",
+      "id": 31,
+      "notes": "Oats"
+    },
+    {
+      "hscode": "10.05 ",
+      "id": 31,
+      "notes": "Maize (corn)."
+    },
+    {
+      "hscode": "10.06 ",
+      "id": 31,
+      "notes": "Rice."
+    },
+    {
+      "hscode": "10.07 ",
+      "id": 31,
+      "notes": "Grain sorghum"
+    },
+    {
+      "hscode": "10.08 ",
+      "id": 31,
+      "notes": "Buckwheat, millet and canary seed; other cereals."
+    },
+    {
+      "hscode": "11.01 ",
+      "id": 31,
+      "notes": "Wheat or meslin flour."
+    },
+    {
+      "hscode": "11.02 ",
+      "id": 31,
+      "notes": "Cereal flours other than of wheat or meslin."
+    },
+    {
+      "hscode": "11.03 ",
+      "id": 31,
+      "notes": "Cereal groats, meal and pellets."
+    },
+    {
+      "hscode": "11.04 ",
+      "id": 31,
+      "notes": "Cereal grains otherwise worked (for example, hulled, rolled, flaked, pearled, sliced or kibbled), except rice of heading 10.06; germ of cereals, whole, rolled, flaked or ground"
+    },
+    {
+      "hscode": "12.01 ",
+      "id": 31,
+      "notes": "Soya beans, whether or not broken."
+    },
+    {
+      "hscode": "12.02 ",
+      "id": 31,
+      "notes": "Ground-nuts, not roasted or otherwise cooked, whether or not shelled or broken."
+    },
+    {
+      "hscode": "12.03 ",
+      "id": 31,
+      "notes": "Copra."
+    },
+    {
+      "hscode": "12.04 ",
+      "id": 31,
+      "notes": "Linseed, whether or not broken."
+    },
+    {
+      "hscode": "12.05 ",
+      "id": 31,
+      "notes": "Rape or colza seeds, whether or not broken"
+    },
+    {
+      "hscode": "12.06 ",
+      "id": 31,
+      "notes": "Sunflower seeds, whether or not broken"
+    },
+    {
+      "hscode": "12.07 ",
+      "id": 31,
+      "notes": "Other oil seeds and oleaginous fruits, whether or not broken"
+    },
+    {
+      "hscode": "12.09 ",
+      "id": 31,
+      "notes": "Seeds, fruit and spores, of a kind used for sowing"
+    },
+    {
+      "hscode": "12.10 ",
+      "id": 31,
+      "notes": "Hop cones, fresh or dried, whether or not ground, powdered or in the form of pellets; lupulin"
+    },
+    {
+      "hscode": "12.11 ",
+      "id": 31,
+      "notes": "Plants and parts of plants (including seeds and fruits), of a kind used primarily in perfumery, in pharmacy or for insecticidal, fungicidal or similar purposes, fresh or dried, whether or not cut, crushed or powdered."
+    },
+    {
+      "hscode": "12.12 ",
+      "id": 31,
+      "notes": "Locust beans, seaweeds and other algae, sugar beet and sugar cane, fresh, chilled, frozen or dried, whether or not ground; fruit stones and kernels and other vegetable products (including unroasted chicory roots of the variety Cichorium intybus sativum) of a kind used primarily for human consumption, not elsewhere specified or included."
+    },
+    {
+      "hscode": "13.01 ",
+      "id": 31,
+      "notes": "Lac; natural gums, resins, gum-resins and oleoresins (for example, balsams)."
+    },
+    {
+      "hscode": "13.02 ",
+      "id": 31,
+      "notes": "Vegetable saps and extracts; pectic substances, pectinates and pectates; agar-agar and other mucilages and thickeners, whether or not modified, derived from vegetable products."
+    },
+    {
+      "hscode": "15.01 ",
+      "id": 31,
+      "notes": "Pig fat (including lard) and poultry fat, other than that of heading 02.09 or 15.03."
+    },
+    {
+      "hscode": "15.02 ",
+      "id": 31,
+      "notes": "Fats of bovine animals, sheep or goats, other than those of heading 15.03."
+    },
+    {
+      "hscode": "15.03 ",
+      "id": 31,
+      "notes": "Lard stearin, lard oil, oleostearin, oleo-oil and tallow oil, not emulsified or mixed or otherwise prepared."
+    },
+    {
+      "hscode": "15.04 ",
+      "id": 31,
+      "notes": "Fats and oils and their fractions, of fish or marine mammals, whether or not refined, but not chemically modified."
+    },
+    {
+      "hscode": "15.05 ",
+      "id": 31,
+      "notes": "Wool grease and fatty substances derived therefrom (including lanolin)"
+    },
+    {
+      "hscode": "15.06 ",
+      "id": 31,
+      "notes": "Other animal fats and oils and their fractions, whether or not refined, but not chemically modified."
+    },
+    {
+      "hscode": "15.16 ",
+      "id": 31,
+      "notes": "Animal or vegetable fats and oils and their fractions, partly or wholly hydrogenated, inter-esterified, re-esterified or elaidinised, whether or not refined, but not further prepared."
+    },
+    {
+      "hscode": "15.17 ",
+      "id": 31,
+      "notes": "Margarine; edible mixtures or preparations of animal or vegetable fats or oils or of fractions of different fats or oils of this Chapter, other than edible fats or oils or their fractions of heading 15.16."
+    },
+    {
+      "hscode": "15.18 ",
+      "id": 31,
+      "notes": "Animal or vegetable fats and oils and their fractions, boiled, oxidised, dehydrated, sulphurised, blown, polymerised by heat in vacuum or in inert gas or otherwise chemically modified, excluding those of heading"
+    },
+    {
+      "hscode": "16.01 ",
+      "id": 31,
+      "notes": "Sausages and similar products, of meat, meat offal or blood; food preparations based on these products."
+    },
+    {
+      "hscode": "16.02 ",
+      "id": 31,
+      "notes": "Other prepared or preserved meat, meat offal or blood"
+    },
+    {
+      "hscode": "16.03 ",
+      "id": 31,
+      "notes": "Extracts and juices of meat, fish or crustaceans, molluscs or other aquatic invertebrates."
+    },
+    {
+      "hscode": "16.04 ",
+      "id": 31,
+      "notes": "Prepared or preserved fish; caviar and caviar substitutes prepared from fish eggs."
+    },
+    {
+      "hscode": "16.05 ",
+      "id": 31,
+      "notes": "Crustaceans, molluscs and other aquatic invertebrates, prepared or preserved."
+    },
+    {
+      "hscode": "17.01 ",
+      "id": 31,
+      "notes": "Cane or beet sugar and chemically pure sucrose, in solid form"
+    },
+    {
+      "hscode": "17.02 ",
+      "id": 31,
+      "notes": "Other sugars, including chemically pure lactose, maltose, glucose and fructose, in solid form; sugar syrups not containing added flavouring or colouring matter; artificial honey, whether or not mixed with natural honey; caramel."
+    },
+    {
+      "hscode": "17.03 ",
+      "id": 31,
+      "notes": "Molasses resulting from the extraction or refining of sugar"
+    },
+    {
+      "hscode": "17.04 ",
+      "id": 31,
+      "notes": "Sugar confectionery (including white chocolate), not containing cocoa."
+    },
+    {
+      "hscode": "18.01 ",
+      "id": 31,
+      "notes": "Cocoa beans, whole or broken, raw or roasted"
+    },
+    {
+      "hscode": "18.02 ",
+      "id": 31,
+      "notes": "Cocoa shells, husks, skins and other cocoa waste"
+    },
+    {
+      "hscode": "18.03 ",
+      "id": 31,
+      "notes": "Cocoa paste, whether or not defatted"
+    },
+    {
+      "hscode": "18.05 ",
+      "id": 31,
+      "notes": "Cocoa powder, not containing added sugar or other sweetening matter"
+    },
+    {
+      "hscode": "18.06 ",
+      "id": 31,
+      "notes": "Chocolate and other food preparations containing cocoa"
+    },
+    {
+      "hscode": "19.01 ",
+      "id": 31,
+      "notes": "Malt extract; food preparations of flour, groats, meal, starch or malt extract, not containing cocoa or containing less than 40 % by weight of cocoa calculated on a totally defatted basis, not elsewhere specified or included; food preparations of goods of headings 04.01 to 04.04, not containing cocoa or containing less than 5 % by weight of cocoa calculated on a totally de fatted basis, not elsewhere specified or included."
+    },
+    {
+      "hscode": "19.02 ",
+      "id": 31,
+      "notes": "Pasta, whether or not cooked or stuffed (with meat or other substances) or otherwise prepared, such as spaghetti, macaroni, noodles, lasagne, gnocchi, ravioli, cannelloni; couscous, whether or not prepared."
+    },
+    {
+      "hscode": "19.03 ",
+      "id": 31,
+      "notes": "Tapioca and substitutes therefor prepared from starch, in the form of flakes, grains, pearls, siftings or in similar forms."
+    },
+    {
+      "hscode": "19.04 ",
+      "id": 31,
+      "notes": "Prepared foods obtained by the swelling or roasting of cereals or cereal products (for example, corn flakes); cereals (other than maize (corn)) in grain form or in the form of flakes or other worked grains (except flour, groats and meal), precooked, or otherwise prepared, not elsewhere specified or included."
+    },
+    {
+      "hscode": "19.05 ",
+      "id": 31,
+      "notes": "Bread, pastry, cakes, biscuits and other bakers' wares, whether or not containing cocoa; communion wafers, empty cachets of a kind suitable for pharmaceutical use, sealing wafers, rice paper and similar products"
+    },
+    {
+      "hscode": "20.01 ",
+      "id": 31,
+      "notes": "Vegetables, fruit, nuts and other edible parts of plants, prepared or preserved by vinegar or acetic acid."
+    },
+    {
+      "hscode": "20.02 ",
+      "id": 31,
+      "notes": "Tomatoes prepared or preserved otherwise than by vinegar or acetic acid."
+    },
+    {
+      "hscode": "20.03 ",
+      "id": 31,
+      "notes": "Mushrooms and truffles, prepared or preserved otherwise than by vinegar or acetic acid."
+    },
+    {
+      "hscode": "20.04 ",
+      "id": 31,
+      "notes": "Other vegetables prepared or preserved otherwise than by vinegar or acetic acid, frozen, other than products of heading 20.06."
+    },
+    {
+      "hscode": "20.05 ",
+      "id": 31,
+      "notes": "Other vegetables prepared or preserved otherwise than by vinegar or acetic acid, not frozen, other than products of heading 20.06."
+    },
+    {
+      "hscode": "20.06 ",
+      "id": 31,
+      "notes": "Vegetables, fruit, nuts, fruit-peel and other parts of plants, preserved by sugar (drained, glacé or crystallised)."
+    },
+    {
+      "hscode": "20.07 ",
+      "id": 31,
+      "notes": "Jams, fruit jellies, marmalades, fruit or nut purée and fruit or nut pastes, obtained by cooking, whether or not containing added sugar or other sweetening matter."
+    },
+    {
+      "hscode": "20.08 ",
+      "id": 31,
+      "notes": "Fruit, nuts and other edible parts of plants, otherwise prepared or preserved, whether or not containing added sugar or other sweetening matter or spirit, not elsewhere specified or included"
+    },
+    {
+      "hscode": "20.09 ",
+      "id": 31,
+      "notes": "Fruit juices (including grape must) and vegetable juices, unfermented and not containing added spirit, whether or not containing added sugar or other sweetening matter."
+    },
+    {
+      "hscode": "21.01 ",
+      "id": 31,
+      "notes": "Extracts, essences and concentrates, of coffee, tea or maté and preparations with a basis of these products or with a basis of coffee, tea or maté; roasted chicory and other roasted coffee substitutes, and extracts, essences and concentrates thereof."
+    },
+    {
+      "hscode": "21.02 ",
+      "id": 31,
+      "notes": "Yeasts (active or inactive); other single -cell micro-organisms, dead (but not including vaccines of heading 30.02); prepared baking powders."
+    },
+    {
+      "hscode": "21.03 ",
+      "id": 31,
+      "notes": "Sauces and preparations therefor; mixed condiments and mixed seasonings; mustard flour and meal and prepared mustard."
+    },
+    {
+      "hscode": "21.04 ",
+      "id": 31,
+      "notes": "Soups and broths and preparations therefor; homogenised composite food preparations."
+    },
+    {
+      "hscode": "21.05 ",
+      "id": 31,
+      "notes": "Ice cream and other edible ice, whether or not containing cocoa"
+    },
+    {
+      "hscode": "21.06 ",
+      "id": 31,
+      "notes": "Food preparations not elsewhere specified or included."
+    },
+    {
+      "hscode": "22.01 ",
+      "id": 31,
+      "notes": "Waters, including natural or artificial mineral waters and aerated waters, not containing added sugar or other sweetening matter nor flavoured; ice and snow."
+    },
+    {
+      "hscode": "22.02 ",
+      "id": 31,
+      "notes": "Waters, including mineral waters and aerated waters, containing added sugar or other sweetening matter or flavoured, and other non-alcoholic beverages, not including fruit or vegetable juices of heading 20.09"
+    },
+    {
+      "hscode": "22.09 ",
+      "id": 31,
+      "notes": "Vinegar and substitutes for vinegar obtained from acetic acid"
     }
   ],
   "secondary_hscodes": [

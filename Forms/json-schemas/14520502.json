@@ -1,13 +1,12 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 5b4d1218a43611cf0bfb455210a60855a913fb5a",
+  "description": "Generated from b with shasum d67d979e4b4410849dbf9ea5d7ebb3dbf044f31d",
   "type": "object",
   "required": [
     "blockId",
     "workflowId",
     "formId",
     "title",
-    "description",
     "status",
     "submission"
   ],
@@ -22,9 +21,6 @@
       "type": "integer"
     },
     "title": {
-      "type": "string"
-    },
-    "description": {
       "type": "string"
     },
     "status": {
