@@ -1464,6 +1464,66 @@
       ]
     },
     {
+      "id": 202,
+      "readonly": false,
+      "name": "Application for Certificate of Origin (COO) - Caribbean Common",
+      "description": "New Application for Certificate of Origin",
+      "fileName": "bidc-coo-edit-cc.html",
+      "document_ids": [
+        24
+      ]
+    },
+    {
+      "id": 203,
+      "readonly": true,
+      "name": "Export Certificate of Origin (COO) - Caribbean Common",
+      "description": "Export Certificate of Origin",
+      "fileName": "bidc-coo-static-cc.html",
+      "document_ids": [
+        24
+      ]
+    },
+    {
+      "id": 204,
+      "readonly": false,
+      "name": "Application for Certificate of Origin (COO) - Dominican Republic",
+      "description": "New Application for Certificate of Origin",
+      "fileName": "bidc-coo-edit-cc.html",
+      "document_ids": [
+        25
+      ]
+    },
+    {
+      "id": 205,
+      "readonly": true,
+      "name": "Export Certificate of Origin (COO) - Dominican Republic",
+      "description": "Export Certificate of Origin",
+      "fileName": "bidc-coo-static-cc.html",
+      "document_ids": [
+        25
+      ]
+    },
+    {
+      "id": 206,
+      "readonly": false,
+      "name": "Application for Certificate of Origin (COO) - Venezuela",
+      "description": "New Application for Certificate of Origin",
+      "fileName": "bidc-coo-edit-ve.html",
+      "document_ids": [
+        20
+      ]
+    },
+    {
+      "id": 207,
+      "readonly": true,
+      "name": "Export Certificate of Origin (COO) - Venezuela",
+      "description": "Export Certificate of Origin",
+      "fileName": "bidc-coo-static-ve.html",
+      "document_ids": [
+        20
+      ]
+    },
+    {
       "id": 168,
       "readonly": false,
       "name": "New Application for Certification Form",
@@ -1626,6 +1686,33 @@
       "owner": "BIDC",
       "pga_owner_id": 2,
       "document_id": 19,
+      "processType": "E",
+      "purpose": "B"
+    },
+    {
+      "id": 44,
+      "name": "BIDCcooCC",
+      "owner": "BIDC",
+      "pga_owner_id": 2,
+      "document_id": 24,
+      "processType": "E",
+      "purpose": "B"
+    },
+    {
+      "id": 45,
+      "name": "BIDCcooDR",
+      "owner": "BIDC",
+      "pga_owner_id": 2,
+      "document_id": 25,
+      "processType": "E",
+      "purpose": "B"
+    },
+    {
+      "id": 46,
+      "name": "BIDCcooVE",
+      "owner": "BIDC",
+      "pga_owner_id": 2,
+      "document_id": 20,
       "processType": "E",
       "purpose": "B"
     }
@@ -1811,6 +1898,72 @@
       "pga_id": 2,
       "title": "Review Application COO",
       "description": "Application for Certificate of Origin (COO) - Colombia"
+    },
+    {
+      "workflow_id": 44,
+      "step": 1,
+      "form_id": 202,
+      "title": "New Application for Certificate of Origin (COO) - Caribbean Common",
+      "description": "Please complete the Application for Certificate of Origin"
+    },
+    {
+      "workflow_id": 44,
+      "step": 2,
+      "form_id": 203,
+      "pga_id": 2,
+      "title": "Export Certificate of Origin (COO) - Caribbean Common",
+      "description": null
+    },
+    {
+      "workflow_id": 44,
+      "step": 4,
+      "pga_id": 2,
+      "title": "Review Application COO",
+      "description": "Application for Certificate of Origin (COO) - Caribbean Common"
+    },
+    {
+      "workflow_id": 45,
+      "step": 1,
+      "form_id": 204,
+      "title": "New Application for Certificate of Origin (COO) - Dominican Republic",
+      "description": "Please complete the Application for Certificate of Origin"
+    },
+    {
+      "workflow_id": 45,
+      "step": 2,
+      "form_id": 205,
+      "pga_id": 2,
+      "title": "Export Certificate of Origin (COO) - Dominican Republic",
+      "description": null
+    },
+    {
+      "workflow_id": 45,
+      "step": 4,
+      "pga_id": 2,
+      "title": "Review Application COO",
+      "description": "Application for Certificate of Origin (COO) - Dominican Republic"
+    },
+    {
+      "workflow_id": 46,
+      "step": 1,
+      "form_id": 206,
+      "title": "New Application for Certificate of Origin (COO) - Venezuela",
+      "description": "Please complete the Application for Certificate of Origin"
+    },
+    {
+      "workflow_id": 46,
+      "step": 2,
+      "form_id": 207,
+      "pga_id": 2,
+      "title": "Export Certificate of Origin (COO) - Venezuela",
+      "description": null
+    },
+    {
+      "workflow_id": 46,
+      "step": 4,
+      "pga_id": 2,
+      "title": "Review Application COO",
+      "description": "Application for Certificate of Origin (COO) - Venezuela"
     }
   ],
   "hscodes_workflows": [
@@ -1850,6 +2003,24 @@
       "hscode": "*",
       "hscode2": "03",
       "id": 43,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "04",
+      "id": 44,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "05",
+      "id": 45,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "06",
+      "id": 46,
       "notes": ""
     },
     {
@@ -3519,6 +3690,21 @@
           "value": "03",
           "name": "Colombia",
           "description": "Colombia"
+        },
+        {
+          "value": "04",
+          "name": "Caribbean Common",
+          "description": "Caribbean Common"
+        },
+        {
+          "value": "05",
+          "name": "Dominican Republic",
+          "description": "Dominican Republic"
+        },
+        {
+          "value": "06",
+          "name": "Venezuela",
+          "description": "Venezuela"
         }
       ]
     }
