@@ -1569,7 +1569,7 @@
       "readonly": true,
       "name": "Phitosanitary Inspection Certificate for Import Release",
       "description": "Phitosanitary Inspection Certificate",
-      "fileName": "bidc-coo-static.html",
+      "fileName": "plant-phitosanitary-inspection-issued.html",
       "document_ids": [
         27
       ]
@@ -2032,6 +2032,30 @@
     {
       "hscode": "*",
       "hscode2": "02",
+      "id": 20,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "03",
+      "id": 20,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "04",
+      "id": 20,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "05",
+      "id": 20,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "06",
       "id": 20,
       "notes": ""
     },
