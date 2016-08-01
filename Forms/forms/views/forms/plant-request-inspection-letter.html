@@ -58,9 +58,24 @@
   <br> <br>
   <div class="row">
     <div class="col-sm-11">
-        <b>Consignee/Broker:</b> {{ila.submission.consignee.name}}<br>
-        <b>Address:</b> {{ila.submission.consignee.address}}<br>
-        <b>Telephone No:</b> {{ila.submission.consignee.phone}}<br>
+      <div class="form-group">
+        <label class="col-sm-4 col-md-2 control-label"><span class="field-name">Consignee/Broker Name:</span></label>
+        <div class="col-sm-8 col-md-10 control-value">
+          <input name="{{consignee.name}}" type="text" class="form-control" ng-model="form.data.consignee.name">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 col-md-2 control-label"><span class="field-name">Consignee/Broker Address:</span></label>
+        <div class="col-sm-8 col-md-10 control-value">
+          <input name="{{consignee.address}}" type="text" class="form-control" ng-model="form.data.consignee.address">
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="col-sm-4 col-md-2 control-label"><span class="field-name">Consignee/Broker Telephone No.:</span></label>
+        <div class="col-sm-8 col-md-10 control-value">
+          <input name="{{consignee.phone}}" type="text" class="form-control" ng-model="form.data.consignee.phone">
+        </div>
+      </div>
         <b>Date:</b> {{current_date  | date:'dd/MM/yyyy'}}<br><br>
 
       <h5>
