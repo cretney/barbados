@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum acc13d730ce5c4500288e5f6f01f7394f88efc9c",
+  "description": "Generated from b with shasum 7dc684022d3d0e7f216b7f026aed440e2aaf1e26",
   "type": "object",
   "required": [
 
@@ -269,6 +269,205 @@
           "title": "Means of Conveyance",
           "description": ""
         },
+        "serialNumberCertificate": {
+          "type": "string",
+          "title": "Serialnumbercertificate",
+          "description": ""
+        },
+        "carrier": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "idNumber": {
+              "type": "string",
+              "title": "Idnumber",
+              "description": ""
+            },
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            }
+          }
+        },
+        "typeFoodCategory": {
+          "type": "string",
+          "title": "Food Category",
+          "description": ""
+        },
+        "typeFoodDetail": {
+          "type": "string",
+          "title": "Food Type",
+          "description": ""
+        },
+        "inspectionLocation": {
+          "type": "string",
+          "title": "Inspection Location",
+          "description": ""
+        },
+        "supportingDocumentation": {
+          "type": "string",
+          "title": "Supportingdocumentation",
+          "description": ""
+        },
+        "reason": {
+          "type": "string",
+          "title": "Reason",
+          "description": ""
+        },
+        "inspectionDate": {
+          "type": "date-time",
+          "title": "Date Inspection",
+          "description": ""
+        },
+        "approvedBy": {
+          "type": "string",
+          "title": "Approved By",
+          "description": ""
+        },
+        "consignee": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "id": {
+              "type": "integer",
+              "title": "Id",
+              "description": ""
+            },
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "countryId": {
+              "type": "string",
+              "title": "Countryid",
+              "description": ""
+            },
+            "country": {
+              "type": "string",
+              "title": "Country",
+              "description": ""
+            },
+            "address": {
+              "type": "string",
+              "title": "Address",
+              "description": ""
+            },
+            "docid": {
+              "type": "string",
+              "title": "Docid",
+              "description": ""
+            },
+            "fax": {
+              "type": "string",
+              "title": "Fax",
+              "description": ""
+            },
+            "email": {
+              "type": "string",
+              "title": "Email",
+              "description": ""
+            }
+          }
+        },
+        "destination": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "id": {
+              "type": "integer",
+              "title": "Id",
+              "description": ""
+            },
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "countryId": {
+              "type": "string",
+              "title": "Countryid",
+              "description": ""
+            },
+            "country": {
+              "type": "string",
+              "title": "Country",
+              "description": ""
+            },
+            "address": {
+              "type": "string",
+              "title": "Address",
+              "description": ""
+            },
+            "docid": {
+              "type": "string",
+              "title": "Docid",
+              "description": ""
+            },
+            "fax": {
+              "type": "string",
+              "title": "Fax",
+              "description": ""
+            },
+            "email": {
+              "type": "string",
+              "title": "Email",
+              "description": ""
+            }
+          }
+        },
+        "dateInspection": {
+          "type": "date-time",
+          "title": "Date of Inspection",
+          "description": ""
+        },
+        "rotationNumber": {
+          "type": "string",
+          "title": "Rotation Number",
+          "description": ""
+        },
+        "containerNumber": {
+          "type": "string",
+          "title": "Container Number",
+          "description": ""
+        },
+        "vesselOrCraft": {
+          "type": "string",
+          "title": "Vesselorcraft",
+          "description": ""
+        },
+        "dateArrival": {
+          "type": "date-time",
+          "title": "Datearrival",
+          "description": ""
+        },
+        "timeInspection": {
+          "type": "string",
+          "title": "Time of Inspection",
+          "description": ""
+        },
+        "entryDate": {
+          "type": "date-time",
+          "title": "Entry Date",
+          "description": ""
+        },
+        "phytosanitaryCertificate": {
+          "type": "string",
+          "title": "Phytosanitarycertificate",
+          "description": ""
+        },
+        "approvalNumber": {
+          "type": "string",
+          "title": "Approval Number",
+          "description": "Number of Approval Document"
+        },
         "materials": {
           "type": "array",
           "minItems": 1,
@@ -417,102 +616,6 @@
           "type": "string",
           "title": "Observations",
           "description": ""
-        },
-        "consignee": {
-          "type": "object",
-          "required": [
-
-          ],
-          "properties": {
-            "id": {
-              "type": "integer",
-              "title": "Id",
-              "description": ""
-            },
-            "name": {
-              "type": "string",
-              "title": "Name",
-              "description": ""
-            },
-            "countryId": {
-              "type": "string",
-              "title": "Countryid",
-              "description": ""
-            },
-            "country": {
-              "type": "string",
-              "title": "Country",
-              "description": ""
-            },
-            "address": {
-              "type": "string",
-              "title": "Address",
-              "description": ""
-            },
-            "docid": {
-              "type": "string",
-              "title": "Docid",
-              "description": ""
-            },
-            "fax": {
-              "type": "string",
-              "title": "Fax",
-              "description": ""
-            },
-            "email": {
-              "type": "string",
-              "title": "Email",
-              "description": ""
-            }
-          }
-        },
-        "destination": {
-          "type": "object",
-          "required": [
-
-          ],
-          "properties": {
-            "id": {
-              "type": "integer",
-              "title": "Id",
-              "description": ""
-            },
-            "name": {
-              "type": "string",
-              "title": "Name",
-              "description": ""
-            },
-            "countryId": {
-              "type": "string",
-              "title": "Countryid",
-              "description": ""
-            },
-            "country": {
-              "type": "string",
-              "title": "Country",
-              "description": ""
-            },
-            "address": {
-              "type": "string",
-              "title": "Address",
-              "description": ""
-            },
-            "docid": {
-              "type": "string",
-              "title": "Docid",
-              "description": ""
-            },
-            "fax": {
-              "type": "string",
-              "title": "Fax",
-              "description": ""
-            },
-            "email": {
-              "type": "string",
-              "title": "Email",
-              "description": ""
-            }
-          }
         }
       }
     }

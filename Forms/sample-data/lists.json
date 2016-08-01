@@ -844,6 +844,36 @@
 				"id": 201,
 				"template": "bidc-coo-static-co.html",
 				"document":"Application for Certificate of Origin (COO) - Colombia"
+			},
+			{
+				"id": 202,
+				"template": "bidc-coo-edit-cc.html",
+				"document":"New Application for Certificate of Origin (COO) - Caribbean Common"
+			},
+			{
+				"id": 203,
+				"template": "bidc-coo-static-cc.html",
+				"document":"Application for Certificate of Origin (COO) - Caribbean Common"
+			},
+			{
+				"id": 204,
+				"template": "bidc-coo-edit-dr.html",
+				"document":"New Application for Certificate of Origin (COO) - Dominican Republic"
+			},
+			{
+				"id": 205,
+				"template": "bidc-coo-static-dr.html",
+				"document":"Application for Certificate of Origin (COO) - Dominican Republic"
+			},
+			{
+				"id": 206,
+				"template": "bidc-coo-edit-ve.html",
+				"document":"New Application for Certificate of Origin (COO) - Venezuela"
+			},
+			{
+				"id": 207,
+				"template": "bidc-coo-static-ve.html",
+				"document":"Application for Certificate of Origin (COO) - Venezuela"
 			}
 		]
 	},
