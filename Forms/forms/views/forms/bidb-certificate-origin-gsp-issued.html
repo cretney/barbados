@@ -7,15 +7,17 @@
             <p><b>
               1. Goods consigned from (Exporter's business name, address, country)
             </b></p>
-            <br><br><br>
+            Name: <b>{{ila.submission.supplier.name}}</b><br>
+            Address: <b>{{ila.submission.supplier.address}}</b><br>
+            Country: <b>{{ila.submission.supplier.country}}</b>
           </td>
           <td class="no-bottom-cell" colspan="3">
             <div class="row">
               <div align="center" class="col-sm-12">
-                <p align="left"><b>
-                  Reference No.
-                </b></p>
-                <br><br>
+                <p align="left">
+                  Reference No.: <b>{{ila.submission.referenceNumber}}</b>
+                </p>
+                <br>
                 <h5><b>
                   GENERALISED SYSTEM OF PREFERENCES<br>
                   CERTIFICATE OF ORIGIN<br>
@@ -30,6 +32,9 @@
             <p><b>
               2. Goods consigned to (Consignee's name, address, country)
             </b></p>
+            Name: <b>{{ila.submission.consignee.name}}</b><br>
+            Address: <b>{{ila.submission.consignee.address}}</b><br>
+            Country: <b>{{ila.submission.consignee.country}}</b>
           </td>
           <td class="no-top-cell" colspan="3">
             <div class="row">
@@ -37,14 +42,14 @@
                 <h5><b>
                   FORM A
                 </b></h5>
-                <br><br>
+                <br>
                 <p>
-                  Issued in ...
+                  <span class="col-sm-2 col-sm-offset-3" align="right">Issued in </span><span class="col-sm-4 bottom-border"><b>{{ila.submission.origin}}</b></span>
                 </p>
-                <h6>
+                <h6 class="col-sm-4 col-sm-offset-5">
                   (country)
                 </h6>
-                <h6 align="right">
+                <h6 class="col-sm-12" align="right">
                   See Notes overleaf
                 </h6>
               </div>
@@ -54,8 +59,11 @@
         <tr>
           <td colspan="3">
             <p><b>
-              3. Means of transport and route (as far as known)
-              <br><br><br><br><br><br><br>
+              3. Means of transport and route (as far as known)</b><br><br>
+              Means of transport: <b>{{ila.submission.modeTransport}}</b>
+              <br>
+              <br>
+              Route: <b>{{ila.submission.routeTransport}}</b><br><br><br><br>
             </b></p>
           </td>
           <td colspan="3">
@@ -64,67 +72,101 @@
             </b></p>
           </td>
         </tr>
-        <tr>
-          <td>
-            <p><b>5. Item number</b></p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <tr class="no-bottom">
+          <td class="no-bottom">
+            <b>5. Item number</b>
           </td>
-          <td>
-            <p><b>6. Marks and numbers of packages</b></p>
+          <td class="no-bottom">
+            <b>6. Marks and numbers of packages</b>
           </td>
-          <td>
-            <p><b>
+          <td class="no-bottom">
+            <b>
               7. Number and kind of packages; description of goods
-            </b></p>
+            </b>
           </td>
-          <td>
-            <p><b>
+          <td class="no-bottom">
+            <b>
               8. Origin criterion (see Notes overleaf)
-            </b></p>
+            </b>
           </td>
-          <td>
-            <p><b>
+          <td class="no-bottom">
+            <b>
               9. Gross weight or other quantity
-            </b></p>
+            </b>
+          </td>
+          <td class="no-bottom">
+            <b>
+              10. Number and date of invoices
+            </b>
+          </td>
+        </tr>
+        <tr class="no-border-top" ng-repeat="c in ila.submission.commodities">
+          <td>
+            {{c.hsCode}}
           </td>
           <td>
-            <p><b>
-              10. Number and date of invoices
-            </b></p>
+            {{c.descriptionDetail}}
+          </td>
+          <td>
+            <p>{{c.units[0].quantity}} {{c.units[0].unitType}}; {{c.description}}</p>
+          </td>
+          <td>
+            {{c.rulesOrigin}}
+          </td>
+          <td>
+              {{c.grossWeight}} {{c.grossWeightUnits}}
+          </td>
+          <td>
+            Number: {{c.invoiceNumber}}<br>
+            Date: {{c.invoiceDate | date: 'd MMMM yyyy'}}
           </td>
         </tr>
         <tr>
           <td colspan="3">
-            <p><b>
-              11. Certification
-            </b></p>
-            <p>
-              It is hereby certified, on the basis of control carried out, that the declaration by the exporter is correct.
-            </p>
-            <br><br><br><br><br><br><br><br>
-            ...
-            <h6>
-              Place and date, signature and stamp of certifying authority
-            </h6>
+            <div class="col-sm-12">
+              <p><b>
+                11. Certification
+              </b></p>
+              <p>
+                It is hereby certified, on the basis of control carried out, that the declaration by the exporter is correct.
+              </p>
+              <br><br><br><br><br><br><br><br><br>
+              <div class="col-sm-12 bottom-border" align="center">
+                <div class="col-sm-5">{{ila.submission.approvalLocation}}</div>
+                <div class="col-sm-3">{{ila.submission.approvalDate | date: 'MM/dd/yyyy'}}</div>
+                <div class="col-sm-4">{{ila.submission.approvedBy}}</div>
+              </div>
+              <h6 class="col-sm-12" align="center">
+                Place and date, signature and stamp of certifying authority
+              </h6>
+            </div>
           </td>
           <td colspan="3">
-            <p><b>
-              12. Declaration by the exporter
-            </b></p>
-            <p>
-              The under signed hereby declares that the above details and statements are correct; that all the goods were produced in
-            </p>
-            ...
-            <h6 align="center">(country)</h6>
-            <p>
-              and that they comply with the origin requirements specified for those goods in the Generalised System of Preferences for goods exported to
-            </p>
-            ...
-            <h6 align="center">(importing country)</h6>
-            ...
-            <h6>
-              Place and date, signature of authorised signatory
-            </h6>
+            <div class="col-sm-12">
+              <p><b>
+                12. Declaration by the exporter
+              </b></p>
+              <p class="col-sm-12">
+                The under signed hereby declares that the above details and statements are correct; that all the goods were produced in
+              </p>
+              <div class="col-sm-6 col-sm-offset-3 bottom-border" align="center">{{ila.submission.origin}}</div>
+              <h6 class="col-sm-6 col-sm-offset-3" align="center">(country)</h6>
+              <p class="col-sm-12">
+                and that they comply with the origin requirements specified for those goods in the Generalised System of Preferences for goods exported to
+              </p>
+              <div class="col-sm-6 col-sm-offset-3 bottom-border" align="center">{{ila.submission.consignee.country}}</div>
+              <h6 class="col-sm-6 col-sm-offset-3" align="center">(importing country)
+                <br><br><br>
+              </h6>
+              <div class="col-sm-10 col-sm-offset-1 bottom-border" align="center">
+                <div class="col-sm-5">{{ila.submission.applicant.address}}</div>
+                <div class="col-sm-3">{{ila.submission.entryDate | date: 'MM/dd/yyyy'}}</div>
+                <div class="col-sm-4">{{ila.submission.submitter}}</div>
+              </div>
+              <h6 class="col-sm-10 col-sm-offset-1" align="center">
+                Place and date, signature of authorised signatory
+              </h6>
+            </div>
           </td>
         </tr>
       </table>
@@ -143,26 +185,24 @@
       </b></h5>
       <p align="justify">
         The undersigned, being the exporter of the goods described overleaf, DECLARES that these goods were produced in ... (country)<br>
-        SPECIFIES as follows the grounds on which the goods are claimed to comply with GSP origin requirements¹)<br>
-        ...<br>
-        ...<br>
-        ...<br>
-        SUBMITS the following supporting documents²)<br>
-        ...<br>
-        ...<br>
-        ...<br>
-        UNDERTAKES to submit, at the request of the appropriate authorities of the exporting country, any additional supporting evidence which these authorities may require for the purpose of issuing a certificate of origin, and undertakes, if required, to agree to any inspection of his accounts and any check on the processes of manufacture of the above goods, carried out by the said authorities.
+        SPECIFIES as follows the grounds on which the goods are claimed to comply with GSP origin requirements¹)</p>
+        <p align="justify"><b>{{ila.submission.observations}}</b></p>
+        <br>
+        <p align="justify">SUBMITS the following supporting documents²)</p>
+        <p align="justify"><b>{{ila.submission.remarks}}</b></p>
+        <br>
+        <p align="justify">UNDERTAKES to submit, at the request of the appropriate authorities of the exporting country, any additional supporting evidence which these authorities may require for the purpose of issuing a certificate of origin, and undertakes, if required, to agree to any inspection of his accounts and any check on the processes of manufacture of the above goods, carried out by the said authorities.
       </p>
       <p>
         REQUESTS the issue of a certificate of origin for these goods.
       </p>
       <br><br>
       <p align="right">
-        Place an date ...
+        Place and date: <b>{{ila.submission.applicant.address}}</b>, <b>{{ila.submission.applicant.country}}</b>; <b>{{ila.submission.entryDate | date: 'MM/dd/yyyy'}}</b>
       </p>
       <br><br><br>
       <p align="right">
-        ...<br>
+        <b>{{ila.submission.submitter}}</b><br>
         (signature of authorized signatory)
       </p>
     </div>

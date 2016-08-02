@@ -1,0 +1,255 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-4 col-sm-offset-4",
+        "items": [
+          {
+            "key": "origin",
+            "type": "select-external",
+            "title": "Certificate of Origin Issued in:",
+            "optionData": "form.options.countries"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6 right-border",
+        "items": [
+          {
+            "key": "supplier.name",
+            "title": "Exporter Name",
+            "description": ""
+          },
+          {
+            "key": "supplier.address",
+            "title": "Exporter Address:",
+            "description": ""
+          },
+          {
+            "key": "supplier.country",
+            "type": "select-external",
+            "title": "Exporter Country",
+            "optionData": "form.options.countries"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-6",
+        "items": [
+          {
+            "key": "consignee.name",
+            "title": "Consignee Name",
+            "description": ""
+          },
+          {
+            "key": "consignee.address",
+            "title": "Consignee Address:",
+            "description": ""
+          },
+          {
+            "key": "consignee.country",
+            "type": "select-external",
+            "title": "Consignee Country",
+            "optionData": "form.options.countries"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-sm-3",
+        "items": [
+          {
+            "key": "modeTransport",
+            "type": "radios-inline",
+            "description": "(choose one)",
+            "titleMap": [
+              {
+                "value": "Air",
+                "name": "Air"
+              },
+              {
+                "value": "Sea",
+                "name": "Sea"
+              },
+              {
+                "value": "Other",
+                "name": "Other"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-9",
+        "items": [
+          {
+            "key": "routeTransport",
+            "type": "textarea",
+            "title": "Route of Transport",
+            "description": "(as far as known)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
+    "key": "commodities",
+    "title": "Items",
+    "add": "New Item",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key": "commodities[].hsCode",
+                "title": "Item Number",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-4",
+            "items": [
+              {
+                "key": "commodities[].descriptionDetail",
+                "title": "Marks and Numbers of Packages",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key": "commodities[].units[0].quantity",
+                "type": "number",
+                "title": "Number of Packages",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "commodities[].units[0].unitType",
+                "title": "Kind of Packages",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-12",
+            "items": [
+              {
+                "key": "commodities[].description",
+                "title": "Description of Goods",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "commodities[].rulesOrigin",
+                "title": "Origin Criterion",
+                "description": "(see Notes overleaf)"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-3",
+            "items": [
+              {
+                "key": "commodities[].grossWeight",
+                "type": "number",
+                "title": "Gross Weight",
+                "description": "(or other quantity)"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key": "commodities[].grossWeightUnits",
+                "title": "Weight Unit",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key": "commodities[].invoiceNumber",
+                "title": "Invoice Number",
+                "description": ""
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-2",
+            "items": [
+              {
+                "key": "commodities[].invoiceDate",
+                "type": "date-time",
+                "title": "Invoice Date",
+                "description": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<hr>"
+  }
+]
