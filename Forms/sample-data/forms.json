@@ -3767,7 +3767,7 @@
       "typeBusiness":"",
       "vat":"V8886868",
       "withPayment":true,
-      "typePremises":[""],
+      "typePremises":[{"name":""}],
       "contact":{
         "name":"Mary Lyndon",
         "title":"** title **",
@@ -3785,10 +3785,10 @@
     },
     "supplier": {"id": 1, "name": "Joseph Smith", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"},
     "communicationEquipments":[
-      {"type":"**type**", "make":"**make**", "model":"**model**"}
+      {"equipmentType":"**type**", "make":"**make**", "model":"**model**"}
     ],
     "terminalEquipments":[
-      {"type":"**type**", "make":"**make**", "model":"**model**"}
+      {"equipmentType":"**type**", "make":"**make**", "model":"**model**"}
     ]
   }
 },
@@ -3806,7 +3806,7 @@
       "typeBusiness":"ltd",
       "vat":"V8886868",
       "withPayment":true,
-      "typePremises":["office", "retail_outlet", "warehouse"],
+      "typePremises":[{"name":"office"}, {"name":"retail_outlet"}, {"name":"warehouse"}],
       "contact":{
         "name":"Mary Lyndon",
         "title":"** title **",
@@ -3824,10 +3824,10 @@
     },
     "supplier": {"id": 1, "name": "Joseph Smith", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"},
     "communicationEquipments":[
-      {"type":"**type**", "make":"**make**", "model":"**model**"}
+      {"equipmentType":"**type**", "make":"**make**", "model":"**model**"}
     ],
     "terminalEquipments":[
-      {"type":"**type**", "make":"**make**", "model":"**model**"}
+      {"equipmentType":"**type**", "make":"**make**", "model":"**model**"}
     ]
   }
 },
@@ -5592,7 +5592,7 @@
       {
         "hsCode": "123",
         "description": "test",
-        "type":"broiler",
+        "comodityType":"broiler",
         "age":"days 20",
         "sex":"male",
         "condition":["fed","watered"],
@@ -5635,7 +5635,7 @@
       {
         "hsCode": "123",
         "description": "test",
-        "type":"broiler",
+        "comodityType":"broiler",
         "age":"days 20",
         "sex":"male",
         "condition":["fed","watered"],
@@ -5650,7 +5650,7 @@
       {
         "hsCode": "234",
         "description": "test",
-        "type":"other",
+        "comodityType":"other",
         "age":"days 15",
         "sex":"female",
         "condition":["watered"],
@@ -6336,7 +6336,7 @@
     "commodities": [
       {
         "hsCode": "123",
-        "type": "Herbicide",
+        "comodityType": "Herbicide",
         "description": "Roundup Weed Killer",
         "quantity": "500 tons",
         "ingredients": [
@@ -6475,7 +6475,7 @@
     "commodities": [
       {
         "hsCode": "123",
-        "type": "Herbicide",
+        "comodityType": "Herbicide",
         "description": "Roundup Weed Killer",
         "quantity": "500 tons",
         "ingredients": [
@@ -6854,10 +6854,10 @@
   "status": "Draft",
   "submission": {
     "owners": [
-      {"type": "owner", "name": "Joe Blow", "address": "1234 Bay Street, St. Michael", "fisherNo": "F6484", "idNo": "34567", "phone1": "(246) 555-5555", "phone2": "(246) 888-8888", "dateSigned": "2016-07-04"},
-      {"type": "owner", "name": "Joe Schmoe", "address": "1235 Bay Street, St. Michael", "fisherNo": "F0222", "idNo": "45678", "phone1": "(246) 123-4567", "phone2": "(246) 987-6543", "dateSigned": "2016-07-05"},
-      {"type": "owner", "name": "Average Joe", "address": "4321 Not Bay Street, St. Andrew", "fisherNo": "F7711", "idNo": "56789", "phone1": "(246) 867-5309", "phone2": "", "dateSigned": "2016-07-04"},
-      {"type": "agent", "name": "Joe Camel", "address": "33 Lois Lane, St. George", "fisherNo": "F6309", "idNo": "67890", "phone1": "(246) 848-4848", "phone2": "", "dateSigned": "2016-07-08"}
+      {"ownerType": "owner", "name": "Joe Blow", "address": "1234 Bay Street, St. Michael", "fisherNo": "F6484", "idNo": "34567", "phone1": "(246) 555-5555", "phone2": "(246) 888-8888", "dateSigned": "2016-07-04"},
+      {"ownerType": "owner", "name": "Joe Schmoe", "address": "1235 Bay Street, St. Michael", "fisherNo": "F0222", "idNo": "45678", "phone1": "(246) 123-4567", "phone2": "(246) 987-6543", "dateSigned": "2016-07-05"},
+      {"ownerType": "owner", "name": "Average Joe", "address": "4321 Not Bay Street, St. Andrew", "fisherNo": "F7711", "idNo": "56789", "phone1": "(246) 867-5309", "phone2": "", "dateSigned": "2016-07-04"},
+      {"ownerType": "agent", "name": "Joe Camel", "address": "33 Lois Lane, St. George", "fisherNo": "F6309", "idNo": "67890", "phone1": "(246) 848-4848", "phone2": "", "dateSigned": "2016-07-08"}
     ],
     "vesselDetails": {
       "builder": "Bob the Builder",
@@ -6902,7 +6902,7 @@
       "distanceUnits": "miles",
       "lengthofTrip": 6,
       "fishStorage": {
-        "type": "insulatedBox",
+        "storageType": "insulatedBox",
         "dimensionUnitType": "feet",
         "length": 8,
         "width": 6,
@@ -6929,10 +6929,10 @@
   "status": "Issued",
   "submission": {
     "owners": [
-      {"type": "owner", "name": "Joe Blow", "address": "1234 Bay Street, St. Michael", "fisherNo": "F6484", "idNo": "34567", "phone1": "(246) 555-5555", "phone2": "(246) 888-8888", "dateSigned": "2016-07-04"},
-      {"type": "owner", "name": "Joe Schmoe", "address": "1235 Bay Street, St. Michael", "fisherNo": "F0222", "idNo": "45678", "phone1": "(246) 123-4567", "phone2": "(246) 987-6543", "dateSigned": "2016-07-05"},
-      {"type": "owner", "name": "Average Joe", "address": "4321 Not Bay Street, St. Andrew", "fisherNo": "F7711", "idNo": "56789", "phone1": "(246) 867-5309", "phone2": "", "dateSigned": "2016-07-04"},
-      {"type": "agent", "name": "Joe Camel", "address": "33 Lois Lane, St. George", "fisherNo": "F6309", "idNo": "67890", "phone1": "(246) 848-4848", "phone2": "", "dateSigned": "2016-07-08"}
+      {"ownerType": "owner", "name": "Joe Blow", "address": "1234 Bay Street, St. Michael", "fisherNo": "F6484", "idNo": "34567", "phone1": "(246) 555-5555", "phone2": "(246) 888-8888", "dateSigned": "2016-07-04"},
+      {"ownerType": "owner", "name": "Joe Schmoe", "address": "1235 Bay Street, St. Michael", "fisherNo": "F0222", "idNo": "45678", "phone1": "(246) 123-4567", "phone2": "(246) 987-6543", "dateSigned": "2016-07-05"},
+      {"ownerType": "owner", "name": "Average Joe", "address": "4321 Not Bay Street, St. Andrew", "fisherNo": "F7711", "idNo": "56789", "phone1": "(246) 867-5309", "phone2": "", "dateSigned": "2016-07-04"},
+      {"ownerType": "agent", "name": "Joe Camel", "address": "33 Lois Lane, St. George", "fisherNo": "F6309", "idNo": "67890", "phone1": "(246) 848-4848", "phone2": "", "dateSigned": "2016-07-08"}
     ],
     "vesselDetails": {
       "builder": "Bob the Builder",
@@ -6978,7 +6978,7 @@
       "distanceUnits": "miles",
       "lengthofTrip": 6,
       "fishStorage": {
-        "type": "insulatedBox",
+        "storageType": "insulatedBox",
         "dimensionUnitType": "feet",
         "length": 8,
         "width": 6,
@@ -7610,7 +7610,7 @@
       "influenza": ["2013-01-10", "2014-09-08"],
       "rhinopneumonitis": ["2013-01-10", "2014-09-08"],
       "other": {
-        "type": "",
+        "otherType": "",
         "vaccinations": ["",""]
       }
     },
@@ -7651,7 +7651,7 @@
       "influenza": ["2013-01-10", "2014-09-08"],
       "rhinopneumonitis": ["2013-01-10", "2014-09-08"],
       "other": {
-        "type": "",
+        "otherType": "",
         "dates": []
       }
     },
@@ -8019,8 +8019,8 @@
   }
 },
 {
-  "blockId": 19915001,
-  "workflowId": 99,
+  "blockId": 13715001,
+  "workflowId": 37,
   "formId": 150,
   "title": "New Duty Free Concession Certificate",
   "status": "Draft",
@@ -8108,8 +8108,8 @@
   }
 },
 {
-  "blockId": 19915101,
-  "workflowId": 99,
+  "blockId": 13715102,
+  "workflowId": 37,
   "formId": 151,
   "title": "Duty Free Concession Certificate",
   "status": "Issued",
@@ -8241,8 +8241,8 @@
   }
 },
 {
-  "blockId": 19915401,
-  "workflowId": 99,
+  "blockId": 13815401,
+  "workflowId": 38,
   "formId": 154,
   "title": "New Dutyfree Concessions form Application",
   "status": "Draft",
@@ -8325,13 +8325,13 @@
     "invoiceNumber":"IN-5646546",
     "submitter": "Barbara Greenridge",
     "applicant": {"id":4, "name":"ACME Corporation", "countryId":"BB", "country":"Barbados", "address":"#9 Freshwater Bay, Spring Garden, St. Michael", "contactPerson": {"name": "Barbara Greenridge", "title": "Head Carroteer"}},
-    "importer": {"id":8, "name":"Bugs Bunny", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "phone":"555-5555", "type": "Baby carrot producer"},
+    "importer": {"id":8, "name":"Bugs Bunny", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "phone":"555-5555", "importerType": "Baby carrot producer"},
     "supplier": {"id": 1, "name": "Joseph Blough", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
 },
 {
-  "blockId": 19915501,
-  "workflowId": 99,
+  "blockId": 13815502,
+  "workflowId": 38,
   "formId": 155,
   "title": "Dutyfree Concessions Form Application",
   "status": "Issued",
@@ -8414,7 +8414,7 @@
     "entryDate":"2016-05-01",
     "submitter": "Barbara Greenridge",
     "applicant": {"id":4, "name":"ACME Corporation", "countryId":"BB", "country":"Barbados", "address":"#9 Freshwater Bay, Spring Garden, St. Michael", "contactPerson": {"name": "Barbara Greenridge", "title": "Head Carroteer"}},
-    "importer": {"id":8, "name":"Bugs Bunny", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "phone":"555-5555", "type": "Baby carrot producer"},
+    "importer": {"id":8, "name":"Bugs Bunny", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "phone":"555-5555", "importerType": "Baby carrot producer"},
     "supplier": {"id": 1, "name": "Joseph Blough", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
 },
@@ -8676,8 +8676,8 @@
   }
 },
 {
-  "blockId": 19916201,
-  "workflowId": 99,
+  "blockId": 14016201,
+  "workflowId": 40,
   "formId": 162,
   "title": "New Letter - Duty-free Concession - Vehicle",
   "status": "Draft",
@@ -8707,8 +8707,8 @@
   }
 },
 {
-  "blockId": 19916301,
-  "workflowId": 99,
+  "blockId": 14016302,
+  "workflowId": 40,
   "formId": 163,
   "title": "Letter - Duty-free Concession - Vehicle",
   "status": "Issued",
@@ -8796,10 +8796,10 @@
     },
     "supplier": {"id": 1, "name": "Joseph Smith", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"},
     "communicationEquipments":[
-      {"type":"**type**", "make":"**make**", "model":"**model**"}
+      {"equipmentType":"**type**", "make":"**make**", "model":"**model**"}
     ],
     "terminalEquipments":[
-      {"type":"**type**", "make":"**make**", "model":"**model**"}
+      {"equipmentType":"**type**", "make":"**make**", "model":"**model**"}
     ]
   }
 },
@@ -8846,10 +8846,10 @@
     },
     "supplier": {"id": 1, "name": "Joseph Smith", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"},
     "communicationEquipments":[
-      {"type":"**type**", "make":"**make**", "model":"**model**"}
+      {"equipmentType":"**type**", "make":"**make**", "model":"**model**"}
     ],
     "terminalEquipments":[
-      {"type":"**type**", "make":"**make**", "model":"**model**"}
+      {"equipmentType":"**type**", "make":"**make**", "model":"**model**"}
     ]
   }
 },

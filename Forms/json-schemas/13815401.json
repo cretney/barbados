@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum dc3299c17656938024a8d1ce418f01b857eac691",
+  "description": "Generated from b with shasum d3d2dcc835382306765a84dc992bc0aecf6d2578",
   "type": "object",
   "required": [
     "blockId",
@@ -150,7 +150,7 @@
             "docid",
             "fax",
             "phone",
-            "type"
+            "importerType"
           ],
           "properties": {
             "id": {
@@ -177,7 +177,7 @@
             "phone": {
               "type": "string"
             },
-            "type": {
+            "importerType": {
               "type": "string"
             }
           }

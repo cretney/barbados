@@ -110,6 +110,69 @@
                 "title": "Grossweightunits",
                 "description": ""
               },
+              "name": {
+                "type": "string",
+                "title": "Name",
+                "description": ""
+              },
+              "quantity": {
+                "type": "integer",
+                "title": "Quantity",
+                "description": "The quantity in units of sale."
+              },
+              "entries": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "object",
+                  "required": [
+
+                  ],
+                  "properties": {
+                    "vehicleBrand": {
+                      "type": "string",
+                      "title": "Brand of Vehicle",
+                      "description": "Make or Brand of vehicle"
+                    },
+                    "vehicleModel": {
+                      "type": "string",
+                      "title": "Model of Vehicle",
+                      "description": ""
+                    },
+                    "vehicleYear": {
+                      "type": "string",
+                      "title": "Year of Vehicle",
+                      "description": ""
+                    },
+                    "vehicleEngine": {
+                      "type": "string",
+                      "title": "Engine capacity",
+                      "description": "Engine capacity of vehicle"
+                    },
+                    "serialNumber": {
+                      "type": "string",
+                      "title": "Serialnumber",
+                      "description": ""
+                    },
+                    "dateArrival": {
+                      "type": "date-time",
+                      "title": "Datearrival",
+                      "description": ""
+                    },
+                    "cifValue": {
+                      "type": "integer",
+                      "title": "Customs Value",
+                      "description": "In Barbados Dollars"
+                    },
+                    "identificationNumber": {
+                      "type": "string",
+                      "title": "Identificationnumber",
+                      "description": ""
+                    }
+                  }
+                }
+              },
               "fobValue": {
                 "type": "integer",
                 "title": "FOB Value (US$)",
@@ -193,6 +256,175 @@
               "type": "string",
               "title": "Email",
               "description": ""
+            },
+            "typeBusiness": {
+              "type": "string",
+              "title": "Typebusiness",
+              "description": ""
+            },
+            "vat": {
+              "type": "string",
+              "title": "Vat",
+              "description": ""
+            },
+            "withPayment": {
+              "type": "boolean",
+              "title": "Withpayment",
+              "description": ""
+            },
+            "typePremises": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "object",
+                "required": [
+
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "title": "Name",
+                    "description": ""
+                  }
+                }
+              }
+            },
+            "contact": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "title": "Name",
+                  "description": ""
+                },
+                "title": {
+                  "type": "string",
+                  "title": "Title",
+                  "description": ""
+                },
+                "idNumber": {
+                  "type": "string",
+                  "title": "Idnumber",
+                  "description": ""
+                },
+                "passport": {
+                  "type": "string",
+                  "title": "Passport",
+                  "description": ""
+                },
+                "nationality": {
+                  "type": "string",
+                  "title": "Nationality",
+                  "description": ""
+                },
+                "registrationNo": {
+                  "type": "string",
+                  "title": "Registrationno",
+                  "description": ""
+                },
+                "address": {
+                  "type": "string",
+                  "title": "Address",
+                  "description": ""
+                },
+                "home_phone": {
+                  "type": "string",
+                  "title": "Home_phone",
+                  "description": ""
+                },
+                "work_phone": {
+                  "type": "string",
+                  "title": "Work_phone",
+                  "description": ""
+                },
+                "mobile_phone": {
+                  "type": "string",
+                  "title": "Mobile_phone",
+                  "description": ""
+                },
+                "fax": {
+                  "type": "string",
+                  "title": "Fax",
+                  "description": ""
+                },
+                "email": {
+                  "type": "string",
+                  "title": "Email",
+                  "description": ""
+                }
+              }
+            },
+            "businessNature": {
+              "type": "string",
+              "title": "Businessnature",
+              "description": ""
+            },
+            "customsRegistrationNo": {
+              "type": "string",
+              "title": "Customsregistrationno",
+              "description": ""
+            },
+            "registrationNo": {
+              "type": "string",
+              "title": "Registrationno",
+              "description": ""
+            },
+            "companyNo": {
+              "type": "string",
+              "title": "Companyno",
+              "description": ""
+            },
+            "processingPlantLicensingNo": {
+              "type": "string",
+              "title": "Processingplantlicensingno",
+              "description": ""
+            },
+            "brandName:": {
+              "type": "string",
+              "title": "Brandname:",
+              "description": ""
+            },
+            "phone": {
+              "type": "string",
+              "title": "Phone",
+              "description": ""
+            },
+            "directors:": {
+              "type": "string",
+              "title": "Directors:",
+              "description": ""
+            },
+            "brandName": {
+              "type": "string",
+              "title": "Brandname",
+              "description": ""
+            },
+            "directors": {
+              "type": "string",
+              "title": "Directors",
+              "description": ""
+            },
+            "contactPerson": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "title": "Name",
+                  "description": ""
+                },
+                "title": {
+                  "type": "string",
+                  "title": "Title",
+                  "description": ""
+                }
+              }
             }
           }
         },
@@ -298,6 +530,11 @@
             "name": {
               "type": "string",
               "title": "Name",
+              "description": ""
+            },
+            "idNumber2": {
+              "type": "string",
+              "title": "Idnumber2",
               "description": ""
             }
           }
@@ -478,14 +715,75 @@
           "title": "Approval Number",
           "description": "Number of Approval Document"
         },
-        "referenceNumber": {
-          "type": "string",
-          "title": "Referencenumber",
-          "description": ""
-        },
         "issuedDate": {
           "type": "date-time",
           "title": "Date Issued",
+          "description": ""
+        },
+        "permitLength": {
+          "type": "integer",
+          "title": "Permitlength",
+          "description": ""
+        },
+        "communicationEquipments": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+
+            ],
+            "properties": {
+              "equipmentType": {
+                "type": "string",
+                "title": "Equipmenttype",
+                "description": ""
+              },
+              "make": {
+                "type": "string",
+                "title": "Make",
+                "description": ""
+              },
+              "model": {
+                "type": "string",
+                "title": "Model",
+                "description": ""
+              }
+            }
+          }
+        },
+        "terminalEquipments": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+
+            ],
+            "properties": {
+              "equipmentType": {
+                "type": "string",
+                "title": "Equipmenttype",
+                "description": ""
+              },
+              "make": {
+                "type": "string",
+                "title": "Make",
+                "description": ""
+              },
+              "model": {
+                "type": "string",
+                "title": "Model",
+                "description": ""
+              }
+            }
+          }
+        },
+        "referenceNumber": {
+          "type": "string",
+          "title": "Referencenumber",
           "description": ""
         },
         "officer": {
@@ -509,6 +807,505 @@
         "swordfishAtlantic": {
           "type": "string",
           "title": "Swordfishatlantic",
+          "description": ""
+        },
+        "staff": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+
+            ],
+            "properties": {
+              "title": {
+                "type": "string",
+                "title": "Title",
+                "description": ""
+              },
+              "male": {
+                "type": "integer",
+                "title": "Male",
+                "description": ""
+              },
+              "female": {
+                "type": "integer",
+                "title": "Female",
+                "description": ""
+              }
+            }
+          }
+        },
+        "fishSource": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+
+            ],
+            "properties": {
+              "boatRegistrationNo": {
+                "type": "string",
+                "title": "Boatregistrationno",
+                "description": ""
+              },
+              "boatType": {
+                "type": "string",
+                "title": "Boattype",
+                "description": ""
+              },
+              "landingSites": {
+                "type": "string",
+                "title": "Landingsites",
+                "description": ""
+              },
+              "locally": {
+                "type": "object",
+                "required": [
+
+                ],
+                "properties": {
+                  "total": {
+                    "type": "integer",
+                    "title": "Total",
+                    "description": ""
+                  }
+                }
+              },
+              "imported": {
+                "type": "object",
+                "required": [
+
+                ],
+                "properties": {
+                  "total": {
+                    "type": "integer",
+                    "title": "Total",
+                    "description": ""
+                  }
+                }
+              }
+            }
+          }
+        },
+        "fishPurchasedLocally": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+
+            ],
+            "properties": {
+              "species": {
+                "type": "string",
+                "title": "Species",
+                "description": ""
+              },
+              "lbs": {
+                "type": "integer",
+                "title": "Lbs",
+                "description": ""
+              },
+              "tons": {
+                "type": "integer",
+                "title": "Tons",
+                "description": ""
+              }
+            }
+          }
+        },
+        "fishPurchasedImported": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+
+            ],
+            "properties": {
+              "species": {
+                "type": "string",
+                "title": "Species",
+                "description": ""
+              },
+              "lbs": {
+                "type": "integer",
+                "title": "Lbs",
+                "description": ""
+              },
+              "tons": {
+                "type": "integer",
+                "title": "Tons",
+                "description": ""
+              }
+            }
+          }
+        },
+        "fishSold": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "locally": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "total": {
+                  "type": "integer",
+                  "title": "Total",
+                  "description": ""
+                },
+                "superMarkets": {
+                  "type": "integer",
+                  "title": "Supermarkets",
+                  "description": ""
+                },
+                "miniMarts": {
+                  "type": "integer",
+                  "title": "Minimarts",
+                  "description": ""
+                },
+                "hotels": {
+                  "type": "integer",
+                  "title": "Hotels",
+                  "description": ""
+                },
+                "restaurants": {
+                  "type": "integer",
+                  "title": "Restaurants",
+                  "description": ""
+                },
+                "vendors": {
+                  "type": "integer",
+                  "title": "Vendors",
+                  "description": ""
+                },
+                "hawkers": {
+                  "type": "integer",
+                  "title": "Hawkers",
+                  "description": ""
+                },
+                "generalPublic": {
+                  "type": "integer",
+                  "title": "Generalpublic",
+                  "description": ""
+                },
+                "publicInstitutions": {
+                  "type": "integer",
+                  "title": "Publicinstitutions",
+                  "description": ""
+                },
+                "hospitals": {
+                  "type": "integer",
+                  "title": "Hospitals",
+                  "description": ""
+                },
+                "schools": {
+                  "type": "integer",
+                  "title": "Schools",
+                  "description": ""
+                },
+                "other": {
+                  "type": "integer",
+                  "title": "Other",
+                  "description": ""
+                }
+              }
+            },
+            "exported": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "total": {
+                  "type": "integer",
+                  "title": "Total",
+                  "description": ""
+                },
+                "inRegion": {
+                  "type": "integer",
+                  "title": "Inregion",
+                  "description": ""
+                },
+                "outRegion": {
+                  "type": "integer",
+                  "title": "Outregion",
+                  "description": ""
+                }
+              }
+            },
+            "spoilage": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "total": {
+                  "type": "integer",
+                  "title": "Total",
+                  "description": ""
+                }
+              }
+            }
+          }
+        },
+        "equipment": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "capacityChiller": {
+              "type": "integer",
+              "title": "Capacitychiller",
+              "description": ""
+            },
+            "coldStorage": {
+              "type": "integer",
+              "title": "Coldstorage",
+              "description": ""
+            },
+            "freezerType": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "blast": {
+                  "type": "boolean",
+                  "title": "Blast",
+                  "description": ""
+                },
+                "contact": {
+                  "type": "boolean",
+                  "title": "Contact",
+                  "description": ""
+                },
+                "capacityUnitFreeze": {
+                  "type": "boolean",
+                  "title": "Capacityunitfreeze",
+                  "description": ""
+                }
+              }
+            },
+            "coldStore": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "owned": {
+                  "type": "boolean",
+                  "title": "Owned",
+                  "description": ""
+                },
+                "rented": {
+                  "type": "boolean",
+                  "title": "Rented",
+                  "description": ""
+                }
+              }
+            },
+            "otherEquipment": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "filletingMachine": {
+                  "type": "boolean",
+                  "title": "Filletingmachine",
+                  "description": ""
+                },
+                "fishWasher": {
+                  "type": "boolean",
+                  "title": "Fishwasher",
+                  "description": ""
+                },
+                "pattyFormer": {
+                  "type": "boolean",
+                  "title": "Pattyformer",
+                  "description": ""
+                },
+                "iceMachine": {
+                  "type": "boolean",
+                  "title": "Icemachine",
+                  "description": ""
+                },
+                "other": {
+                  "type": "boolean",
+                  "title": "Other",
+                  "description": ""
+                }
+              }
+            },
+            "methodFishTransport": {
+              "type": "object",
+              "required": [
+
+              ],
+              "properties": {
+                "van": {
+                  "type": "boolean",
+                  "title": "Van",
+                  "description": ""
+                },
+                "refrigerateTruck": {
+                  "type": "boolean",
+                  "title": "Refrigeratetruck",
+                  "description": ""
+                },
+                "flatBadTruck": {
+                  "type": "boolean",
+                  "title": "Flatbadtruck",
+                  "description": ""
+                },
+                "other": {
+                  "type": "boolean",
+                  "title": "Other",
+                  "description": ""
+                }
+              }
+            }
+          }
+        },
+        "methodDisposal": {
+          "type": "string",
+          "title": "Methoddisposal",
+          "description": ""
+        },
+        "fish": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "locally": {
+              "type": "integer",
+              "title": "Locally",
+              "description": ""
+            },
+            "imported": {
+              "type": "integer",
+              "title": "Imported",
+              "description": ""
+            }
+          }
+        },
+        "consignments": {
+          "type": "string",
+          "title": "Consignments",
+          "description": ""
+        },
+        "modeTransport": {
+          "type": "string",
+          "title": "Mode of Transportation",
+          "description": "Mode of Transportation"
+        },
+        "consignmentNote": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "number": {
+              "type": "string",
+              "title": "Number",
+              "description": ""
+            },
+            "date": {
+              "type": "date-time",
+              "title": "Date",
+              "description": ""
+            }
+          }
+        },
+        "invoiceNumber": {
+          "type": "string",
+          "title": "Invoice Number",
+          "description": "Enter the Number of the Commercial Invoice."
+        },
+        "invoiceDate": {
+          "type": "date-time",
+          "title": "Invoice Date",
+          "description": "Enter the Date of the Commercial Invoice."
+        },
+        "importer": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "id": {
+              "type": "integer",
+              "title": "Id",
+              "description": ""
+            },
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "countryId": {
+              "type": "string",
+              "title": "Countryid",
+              "description": ""
+            },
+            "country": {
+              "type": "string",
+              "title": "Country",
+              "description": ""
+            },
+            "address": {
+              "type": "string",
+              "title": "Address",
+              "description": ""
+            },
+            "docid": {
+              "type": "string",
+              "title": "Docid",
+              "description": ""
+            },
+            "fax": {
+              "type": "string",
+              "title": "Fax",
+              "description": ""
+            },
+            "phone": {
+              "type": "string",
+              "title": "Phone",
+              "description": ""
+            },
+            "email": {
+              "type": "string",
+              "title": "Email",
+              "description": ""
+            },
+            "importerType": {
+              "type": "string",
+              "title": "Importertype",
+              "description": ""
+            }
+          }
+        },
+        "totalValue": {
+          "type": "integer",
+          "title": "Totalvalue",
+          "description": ""
+        },
+        "issuedBy": {
+          "type": "string",
+          "title": "Issuedby",
           "description": ""
         },
         "materials": {
@@ -615,11 +1412,6 @@
           "title": "Destination Country",
           "description": "Destination Country to Export to"
         },
-        "modeTransport": {
-          "type": "string",
-          "title": "Mode of Transportation",
-          "description": "Mode of Transportation"
-        },
         "portShipment": {
           "type": "string",
           "title": "Port of Shipment",
@@ -634,16 +1426,6 @@
           "type": "string",
           "title": "Route",
           "description": "Route of Transportation"
-        },
-        "invoiceNumber": {
-          "type": "string",
-          "title": "Invoice Number",
-          "description": "Enter the Number of the Commercial Invoice."
-        },
-        "invoiceDate": {
-          "type": "date-time",
-          "title": "Invoice Date",
-          "description": "Enter the Date of the Commercial Invoice."
         },
         "inFreeTradeZone": {
           "type": "string",
