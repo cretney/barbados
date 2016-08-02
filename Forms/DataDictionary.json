@@ -1613,6 +1613,26 @@
       "document_ids": [
         68
       ]
+    },
+    {
+      "id": 134,
+      "readonly": false,
+      "name": "Atlantic Swordfish Certificate of Eligibility (COE).pdf",
+      "description": "Atlantic Swordfish Certificate of Eligibility (COE).pdf",
+      "fileName": "fd-atlantic-swordfish-certificate-elegibility.html",
+      "document_ids": [
+        87
+      ]
+    },
+    {
+      "id": 135,
+      "readonly": true,
+      "name": "Atlantic Swordfish Certificate of Eligibility (COE).pdf",
+      "description": "Atlantic Swordfish Certificate of Eligibility (COE).pdf",
+      "fileName": "fd-atlantic-swordfish-certificate-elegibility-issued.html",
+      "document_ids": [
+        87
+      ]
     }
   ],
   "workflows": [
@@ -1661,6 +1681,15 @@
       "document_id": 68,
       "processType": "I",
       "purpose": "A"
+    },
+    {
+      "id": 35,
+      "name": "FishCOE",
+      "owner": "FD",
+      "pga_owner_id": 8,
+      "document_id": 87,
+      "processType": "I",
+      "purpose": "B"
     },
     {
       "id": 41,
@@ -1835,6 +1864,27 @@
       "description": "Food is unfit for human consumption"
     },
     {
+      "workflow_id": 35,
+      "step": 1,
+      "form_id": 134,
+      "title": "Atlantic Swordfish Certificate of Eligibility (COE)",
+      "description": ""
+    },
+    {
+      "workflow_id": 35,
+      "step": 2,
+      "form_id": 135,
+      "title": "Atlantic Swordfish Certificate of Eligibility (COE)",
+      "description": ""
+    },
+    {
+      "workflow_id": 35,
+      "step": 4,
+      "pga_id": 8,
+      "title": "Review Application",
+      "description": "Application for Atlantic Swordfish Certificate of Eligibility (COE)"
+    },
+    {
       "workflow_id": 41,
       "step": 1,
       "form_id": 2,
@@ -1866,7 +1916,6 @@
       "workflow_id": 42,
       "step": 2,
       "form_id": 7,
-      "pga_id": 2,
       "title": "Export Certificate of Origin (COO) - Cuba",
       "description": null
     },
@@ -1888,7 +1937,6 @@
       "workflow_id": 43,
       "step": 2,
       "form_id": 201,
-      "pga_id": 2,
       "title": "Export Certificate of Origin (COO) - Colombia",
       "description": null
     },
@@ -1910,7 +1958,6 @@
       "workflow_id": 44,
       "step": 2,
       "form_id": 203,
-      "pga_id": 2,
       "title": "Export Certificate of Origin (COO) - Caribbean Common",
       "description": null
     },
@@ -1932,7 +1979,6 @@
       "workflow_id": 45,
       "step": 2,
       "form_id": 205,
-      "pga_id": 2,
       "title": "Export Certificate of Origin (COO) - Dominican Republic",
       "description": null
     },
@@ -1954,7 +2000,6 @@
       "workflow_id": 46,
       "step": 2,
       "form_id": 207,
-      "pga_id": 2,
       "title": "Export Certificate of Origin (COO) - Venezuela",
       "description": null
     },
@@ -3688,6 +3733,11 @@
       "hscode": "22.09 ",
       "id": 31,
       "notes": "Vinegar and substitutes for vinegar obtained from acetic acid"
+    },
+    {
+      "hscode": "070190",
+      "id": 35,
+      "notes": "Other potatoes fresh or chilled"
     }
   ],
   "secondary_hscodes": [

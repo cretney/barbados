@@ -95,6 +95,21 @@
                   }
                 }
               },
+              "descriptionDetail": {
+                "type": "string",
+                "title": "Descriptiondetail",
+                "description": ""
+              },
+              "grossWeight": {
+                "type": "number",
+                "title": "Gross Weight",
+                "description": "Indicate the Gross Weight of the Goods."
+              },
+              "grossWeightUnits": {
+                "type": "string",
+                "title": "Grossweightunits",
+                "description": ""
+              },
               "fobValue": {
                 "type": "integer",
                 "title": "FOB Value (US$)",
@@ -109,11 +124,6 @@
                 "type": "string",
                 "title": "Others Annex",
                 "description": "Others: if in determining the origin of the good one of the procedures set forth in Articles 1V.06 or IV.05 of the Agreement, was used, indicate:"
-              },
-              "grossWeight": {
-                "type": "number",
-                "title": "Gross Weight",
-                "description": "Indicate the Gross Weight of the Goods."
               },
               "rulesOrigin": {
                 "type": "string",
@@ -467,6 +477,39 @@
           "type": "string",
           "title": "Approval Number",
           "description": "Number of Approval Document"
+        },
+        "referenceNumber": {
+          "type": "string",
+          "title": "Referencenumber",
+          "description": ""
+        },
+        "issuedDate": {
+          "type": "date-time",
+          "title": "Date Issued",
+          "description": ""
+        },
+        "officer": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "title": {
+              "type": "string",
+              "title": "Title",
+              "description": ""
+            }
+          }
+        },
+        "swordfishAtlantic": {
+          "type": "string",
+          "title": "Swordfishatlantic",
+          "description": ""
         },
         "materials": {
           "type": "array",

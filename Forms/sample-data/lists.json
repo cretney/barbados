@@ -817,8 +817,43 @@
 			},
 			{
 				"id": 170,
-				"template": "certificate-origin-gsp.html",
+				"template": "bidb-certificate-origin-gsp.html",
 				"document":"Certificate of Origin GSP"
+			},
+			{
+				"id": 171,
+				"template": "bidb-certificate-origin-gsp-issued.html",
+				"document":"Certificate of Origin GSP"
+			},
+			{
+				"id": 172,
+				"template": "bidb-certificate-origin-gsp-caribcan.html",
+				"document":"Certificate of Origin GSP CARIBCAN"
+			},
+			{
+				"id": 173,
+				"template": "bidb-certificate-origin-gsp-caribcan-issued.html",
+				"document":"Certificate of Origin GSP CARIBCAN"
+			},
+			{
+				"id": 174,
+				"template": "bidb-certificate-origin-gsp-cbi.html",
+				"document":"Certificate of Origin GSP CBI"
+			},
+			{
+				"id": 175,
+				"template": "bidb-certificate-origin-gsp-cbi-issued.html",
+				"document":"Certificate of Origin GSP CBI"
+			},
+			{
+				"id": 176,
+				"template": "bidb-certificate-origin-gsp-other.html",
+				"document":"Certificate of Origin GSP Other"
+			},
+			{
+				"id": 177,
+				"template": "bidb-certificate-origin-gsp-other-issued.html",
+				"document":"Certificate of Origin GSP Other"
 			},
 			{
 				"id": 2,
