@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum baee6c3eae81d142c7f4bbb83a76096344579f68",
+  "description": "Generated from b with shasum 725cb432de82d184f0696bfbfac41f03e3fa4611",
   "type": "object",
   "required": [
     "blockId",
@@ -91,7 +91,15 @@
               "minItems": 1,
               "uniqueItems": true,
               "items": {
-                "type": "string"
+                "type": "object",
+                "required": [
+                  "name"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  }
+                }
               }
             },
             "contact": {
@@ -185,12 +193,12 @@
           "items": {
             "type": "object",
             "required": [
-              "type",
+              "equipmentType",
               "make",
               "model"
             ],
             "properties": {
-              "type": {
+              "equipmentType": {
                 "type": "string"
               },
               "make": {
@@ -209,12 +217,12 @@
           "items": {
             "type": "object",
             "required": [
-              "type",
+              "equipmentType",
               "make",
               "model"
             ],
             "properties": {
-              "type": {
+              "equipmentType": {
                 "type": "string"
               },
               "make": {
