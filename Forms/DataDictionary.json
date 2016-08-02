@@ -1380,6 +1380,12 @@
       "name": "New Application for Certification Form.docx",
       "processType": "E",
       "purpose": "B"
+    },
+    {
+      "id": 102,
+      "name": "Certificate of Origin - GSP.pdf",
+      "processType": "E",
+      "purpose": "B"
     }
   ],
   "forms": [
@@ -1521,6 +1527,26 @@
       "fileName": "bidc-coo-static-ve.html",
       "document_ids": [
         20
+      ]
+    },
+    {
+      "id": 170,
+      "readonly": false,
+      "name": "New Application for Certificate of Origin GSP",
+      "description": "New Application for Certificate of Origin GSP",
+      "fileName": "bidb-certificate-origin-gsp.html",
+      "document_ids": [
+        102
+      ]
+    },
+    {
+      "id": 171,
+      "readonly": true,
+      "name": "Application for Certificate of Origin GSP",
+      "description": "Application for Certificate of Origin GSP",
+      "fileName": "bidb-certificate-origin-gsp-issued.html",
+      "document_ids": [
+        102
       ]
     },
     {
@@ -1908,6 +1934,15 @@
       "document_id": 20,
       "processType": "E",
       "purpose": "B"
+    },
+    {
+      "id": 47,
+      "name": "BIDCgspGene",
+      "owner": "BIDC",
+      "pga_owner_id": 2,
+      "document_id": 102,
+      "processType": "E",
+      "purpose": "B"
     }
   ],
   "workflow_interactions": [
@@ -2251,6 +2286,27 @@
     },
     {
       "workflow_id": 46,
+      "step": 4,
+      "pga_id": 2,
+      "title": "Review Application COO",
+      "description": "Application for Certificate of Origin (COO) - Venezuela"
+    },
+    {
+      "workflow_id": 47,
+      "step": 1,
+      "form_id": 170,
+      "title": "New Application for Certificate of Origin GSP",
+      "description": "Please complete the Application for Certificate of Origin"
+    },
+    {
+      "workflow_id": 47,
+      "step": 2,
+      "form_id": 171,
+      "title": "Export Certificate of Origin GSP",
+      "description": null
+    },
+    {
+      "workflow_id": 47,
       "step": 4,
       "pga_id": 2,
       "title": "Review Application COO",

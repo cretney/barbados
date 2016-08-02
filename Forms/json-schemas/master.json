@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 7dc684022d3d0e7f216b7f026aed440e2aaf1e26",
+  "description": "Generated from b with shasum 6377ffbe55dfe79075b4683f8815eb126c8c4de3",
   "type": "object",
   "required": [
 
@@ -1440,6 +1440,21 @@
         "observations": {
           "type": "string",
           "title": "Observations",
+          "description": ""
+        },
+        "approvalDate": {
+          "type": "date-time",
+          "title": "Approvaldate",
+          "description": ""
+        },
+        "approvalLocation": {
+          "type": "string",
+          "title": "Approvallocation",
+          "description": ""
+        },
+        "remarks": {
+          "type": "string",
+          "title": "Remarks",
           "description": ""
         }
       }
