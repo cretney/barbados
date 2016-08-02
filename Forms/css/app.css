@@ -178,7 +178,7 @@ table.table td.commodity-subtable.subtable-animal {
   text-align: right;
 }
 
-.no-top-td td, .no-top {
+.no-top-td td, .no-top, .black-border.no-top-td .no-border-top td {
   border-top: none !important;
 }
 
@@ -280,7 +280,7 @@ table.table td.commodity-subtable.subtable-animal {
 /* End */
 
 /* Plant Quarantine Waiver Application */
-.no-bottom-th th, .no-bottom {
+.no-bottom-th th, .no-bottom, .black-border .no-bottom {
   border-bottom: none !important;
 }
 

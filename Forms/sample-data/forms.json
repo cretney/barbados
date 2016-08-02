@@ -9436,10 +9436,10 @@
       {
         "hsCode":"123",
         "description":"test",
-        "fobValue":1000,
+        "descriptionDetail": "big wooden crate with red markings",
         "preferenceCriterion":"A",
-        "othersAnnex":"ACC",
         "grossWeight":10.0,
+        "grossWeightUnits": "kg",
         "rulesOrigin":"A",
         "invoiceNumber":"7890123",
         "invoiceDate":"2016-04-07",
@@ -9451,22 +9451,20 @@
         ]
       }
     ],
-    "destinationCountry":"Cuba",
     "modeTransport":"Air",
-    "portShipment":"Balboa",
-    "portDischarge":"La Guaira",
     "routeTransport":"Panama",
-    "invoiceNumber":"123456",
-    "invoiceDate":"2016-03-07T05:00:00.000Z",
-    "inFreeTradeZone":"Yes",
-    "tradedSpecial":"No",
-    "observations":"some observations",
+    "origin": "United States",
     "submitter": "Joe Blow",
+    "entryDate": "2015-09-10",
+    "approvedBy": "Joe Schmoe",
+    "approvalDate": "2015-09-21",
+    "approvalLocation": "1000 Main Av, Toronto, BC, 902",
+    "observations": "this is the grounds on which the goods are claimed to comply with GSP origin requirements",
+    "remarks": "documents here",
     "applicant": {"id":4, "name":"Exporter Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
-    "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"},
+    "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "BB", "country":"Barbados", "address": "1000 E Street, St. Charles", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"},
     "destination": {"id": 1, "name": "Importer Maple Inc.", "countryId": "CA", "country":"Canada", "address": "1000 Main Av, Toronto, BC, 902", "docid":"3-234-567", "fax":"777-5555", "email":"ghi@example.com"},
-    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
-    "expectedArrival": "2015-09-21T04:00:00.000Z"
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "8765 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"}
   }
 },
 {
@@ -9480,10 +9478,10 @@
       {
         "hsCode":"123",
         "description":"test",
-        "fobValue":1000,
+        "descriptionDetail": "big wooden crate with red markings",
         "preferenceCriterion":"A",
-        "othersAnnex":"ACC",
         "grossWeight":10.0,
+        "grossWeightUnits": "kg",
         "rulesOrigin":"A",
         "invoiceNumber":"7890123",
         "invoiceDate":"2016-04-07",
@@ -9495,22 +9493,21 @@
         ]
       }
     ],
-    "destinationCountry":"Cuba",
+    "referenceNumber":"RN-7657657",
     "modeTransport":"Air",
-    "portShipment":"Balboa",
-    "portDischarge":"La Guaira",
     "routeTransport":"Panama",
-    "invoiceNumber":"123456",
-    "invoiceDate":"2016-03-07T05:00:00.000Z",
-    "inFreeTradeZone":"Yes",
-    "tradedSpecial":"No",
-    "observations":"some observations",
+    "origin": "United States",
     "submitter": "Joe Blow",
+    "entryDate": "2015-09-10",
+    "approvedBy": "Joe Schmoe",
+    "approvalDate": "2015-09-21",
+    "approvalLocation": "1000 Main Av, Toronto, BC, 902",
+    "observations": "this is the grounds on which the goods are claimed to comply with GSP origin requirements",
+    "remarks": "documents here",
     "applicant": {"id":4, "name":"Exporter Delta", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "docid":"1-234-567", "fax":"555-5555", "email":"abc@example.com"},
-    "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"},
+    "consignee": {"id": 1, "name": "Consignee Inc.", "countryId": "BB", "country":"Barbados", "address": "1000 E Street, St. Charles", "docid":"2-234-567", "fax":"666-5555", "email":"def@example.com"},
     "destination": {"id": 1, "name": "Importer Maple Inc.", "countryId": "CA", "country":"Canada", "address": "1000 Main Av, Toronto, BC, 902", "docid":"3-234-567", "fax":"777-5555", "email":"ghi@example.com"},
-    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"},
-    "expectedArrival": "2015-09-21T04:00:00.000Z"
+    "supplier": {"id": 1, "name": "ACME Inc.", "countryId": "US", "country":"United States", "address": "8765 Main Street, Hollywood, FL, 12902", "docid":"4-234-567", "fax":"888-5555", "email":"klm@example.com"}
   }
 },
 {
