@@ -19,8 +19,6 @@
 
 	}])
 
-
-
 	.directive('a', [function() {
 		return {
 			restrict: 'E',
@@ -43,6 +41,7 @@
 			link: function(scope, elem, attrs){
 				scope.ila = {};
 				scope.current_date = new Date();
+
 
 				elem.on('click', function(){
 					scope.currentStep = 1;

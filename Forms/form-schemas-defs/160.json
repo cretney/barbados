@@ -202,12 +202,24 @@
             "key": "applicant.typePremises",
             "title": "Type of Premises",
             "htmlClass":"inline",
-            "titleMap": {
-                "office":"Office",
-                "retail_outlet":"Retail Outlet",
-                "showroom":"Showroom",
-                "warehouse":"Warehouse"
-            }
+            "titleMap": [
+              {
+                "value": {"name":"office"},
+                "name": "Office"
+              },
+              {
+                "value": {"name":"retail_outlet"},
+                "name": "Retail Outlet"
+              },
+              {
+                "value": {"name":"showroom"},
+                "name": "Showroom"
+              },
+              {
+                "value": {"name":"warehouse"},
+                "name": "Warehouse"
+              }
+            ]
           }
         ]
       }
@@ -264,7 +276,7 @@
             "htmlClass": "col-sm-3",
             "items": [
               {
-                "key": "communicationEquipments[].type",
+                "key": "communicationEquipments[].equipmentType",
                 "title": "Type",
                 "description":""
               }
@@ -313,7 +325,7 @@
             "htmlClass": "col-sm-3",
             "items": [
               {
-                "key": "terminalEquipments[].type",
+                "key": "terminalEquipments[].equipmentType",
                 "title": "Type",
                 "description":""
               }

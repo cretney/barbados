@@ -15,6 +15,7 @@
 			};
 
 			$scope.current_date = new Date();
+
 		});
 
 	}])

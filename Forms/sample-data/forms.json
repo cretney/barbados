@@ -3767,7 +3767,7 @@
       "typeBusiness":"",
       "vat":"V8886868",
       "withPayment":true,
-      "typePremises":[{"name":""}],
+      "typePremises":[{"name":"showroom"},{"name":"warehouse"}],
       "contact":{
         "name":"Mary Lyndon",
         "title":"** title **",
