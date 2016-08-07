@@ -202,24 +202,12 @@
             "key": "applicant.typePremises",
             "title": "Type of Premises",
             "htmlClass":"inline",
-            "titleMap": [
-              {
-                "value": {"name":"office"},
-                "name": "Office"
-              },
-              {
-                "value": {"name":"retail_outlet"},
-                "name": "Retail Outlet"
-              },
-              {
-                "value": {"name":"showroom"},
-                "name": "Showroom"
-              },
-              {
-                "value": {"name":"warehouse"},
-                "name": "Warehouse"
-              }
-            ]
+            "titleMap": {
+              "office":"Office",
+              "retail_outlet": "Retail Outlet",
+              "showroom": "Showroom",
+              "warehouse": "Warehouse"
+            }
           }
         ]
       }

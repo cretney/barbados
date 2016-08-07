@@ -1386,6 +1386,24 @@
       "name": "Certificate of Origin - GSP.pdf",
       "processType": "E",
       "purpose": "B"
+    },
+    {
+      "id": 103,
+      "name": "Certificate of Origin - GSP - CARIBCAN.docx",
+      "processType": "E",
+      "purpose": "B"
+    },
+    {
+      "id": 104,
+      "name": "Certificate of Origin - GSP - CBI.docx",
+      "processType": "E",
+      "purpose": "B"
+    },
+    {
+      "id": 105,
+      "name": "Certificate of Origin - GSP.pdf",
+      "processType": "E",
+      "purpose": "B"
     }
   ],
   "forms": [
@@ -1550,6 +1568,66 @@
       ]
     },
     {
+      "id": 172,
+      "readonly": false,
+      "name": "New Application for Certificate of Origin GSP CARIBCAN",
+      "description": "New Application for Certificate of Origin GSP CARIBCAN",
+      "fileName": "bidb-certificate-origin-gsp-caribcan.html",
+      "document_ids": [
+        103
+      ]
+    },
+    {
+      "id": 173,
+      "readonly": true,
+      "name": "Application for Certificate of Origin GSP CARIBCAN",
+      "description": "Application for Certificate of Origin GSP CARIBCAN",
+      "fileName": "bidb-certificate-origin-gsp-caribcan-issued.html",
+      "document_ids": [
+        103
+      ]
+    },
+    {
+      "id": 174,
+      "readonly": false,
+      "name": "New Application for Certificate of Origin GSP CBI",
+      "description": "New Application for Certificate of Origin GSP CBI",
+      "fileName": "bidb-certificate-origin-gsp-cbi.html",
+      "document_ids": [
+        104
+      ]
+    },
+    {
+      "id": 175,
+      "readonly": true,
+      "name": "Application for Certificate of Origin GSP CBI",
+      "description": "Application for Certificate of Origin GSP CBI",
+      "fileName": "bidb-certificate-origin-gsp-cbi-issued.html",
+      "document_ids": [
+        104
+      ]
+    },
+    {
+      "id": 176,
+      "readonly": false,
+      "name": "New Application for Certificate of Origin GSP Other",
+      "description": "New Application for Certificate of Origin GSP Other",
+      "fileName": "bidb-certificate-origin-gsp-other.html",
+      "document_ids": [
+        105
+      ]
+    },
+    {
+      "id": 177,
+      "readonly": true,
+      "name": "Application for Certificate of Origin GSP Other",
+      "description": "Application for Certificate of Origin GSP Other",
+      "fileName": "bidb-certificate-origin-gsp-other-issued.html",
+      "document_ids": [
+        105
+      ]
+    },
+    {
       "id": 168,
       "readonly": false,
       "name": "New Application for Certification Form",
@@ -1614,7 +1692,7 @@
       "id": 49,
       "readonly": true,
       "name": "Request for Plant Inspection Letter",
-      "description": null,
+      "description": "Plant Inspection Letter",
       "fileName": "plant-request-inspection-letter-issued.html",
       "document_ids": [
         32
@@ -1941,6 +2019,33 @@
       "owner": "BIDC",
       "pga_owner_id": 2,
       "document_id": 102,
+      "processType": "E",
+      "purpose": "B"
+    },
+    {
+      "id": 48,
+      "name": "BIDCgspCanada",
+      "owner": "BIDC",
+      "pga_owner_id": 2,
+      "document_id": 103,
+      "processType": "E",
+      "purpose": "B"
+    },
+    {
+      "id": 49,
+      "name": "BIDCgspCBI",
+      "owner": "BIDC",
+      "pga_owner_id": 2,
+      "document_id": 104,
+      "processType": "E",
+      "purpose": "B"
+    },
+    {
+      "id": 50,
+      "name": "BIDCgspUSA",
+      "owner": "BIDC",
+      "pga_owner_id": 2,
+      "document_id": 105,
       "processType": "E",
       "purpose": "B"
     }
@@ -2310,7 +2415,70 @@
       "step": 4,
       "pga_id": 2,
       "title": "Review Application COO",
-      "description": "Application for Certificate of Origin (COO) - Venezuela"
+      "description": "Application for Certificate of Origin GSP CARIBCAN"
+    },
+    {
+      "workflow_id": 48,
+      "step": 1,
+      "form_id": 172,
+      "title": "New Application for Certificate of Origin GSP CARIBCAN",
+      "description": "Please complete the Application for Certificate of Origin"
+    },
+    {
+      "workflow_id": 48,
+      "step": 2,
+      "form_id": 173,
+      "title": "Export Certificate of Origin GSP CARIBCAN",
+      "description": null
+    },
+    {
+      "workflow_id": 48,
+      "step": 4,
+      "pga_id": 2,
+      "title": "Review Application COO",
+      "description": "Application for Certificate of Origin GSP CARIBCAN"
+    },
+    {
+      "workflow_id": 49,
+      "step": 1,
+      "form_id": 174,
+      "title": "New Application for Certificate of Origin GSP CBI",
+      "description": "Please complete the Application for Certificate of Origin"
+    },
+    {
+      "workflow_id": 49,
+      "step": 2,
+      "form_id": 175,
+      "title": "Export Certificate of Origin GSP CBI",
+      "description": null
+    },
+    {
+      "workflow_id": 49,
+      "step": 4,
+      "pga_id": 2,
+      "title": "Review Application COO",
+      "description": "Application for Certificate of Origin GSP CBI"
+    },
+    {
+      "workflow_id": 50,
+      "step": 1,
+      "form_id": 176,
+      "title": "New Application for Certificate of Origin GSP Other",
+      "description": "Please complete the Application for Certificate of Origin"
+    },
+    {
+      "workflow_id": 50,
+      "step": 2,
+      "form_id": 177,
+      "title": "Export Certificate of Origin GSP Other",
+      "description": null
+    },
+    {
+      "workflow_id": 50,
+      "step": 4,
+      "pga_id": 2,
+      "title": "Review Application COO",
+      "description": "Application for Export Certificate of Origin GSP Other"
     }
   ],
   "hscodes_workflows": [
