@@ -195,45 +195,53 @@
     "items": [
       {
         "type": "section",
-        "htmlClass": "col-sm-12",
+        "htmlClass": "col-md-4",
         "items": [
           {
-            "type": "checkboxes",
-            "key": "applicant.typePremises",
-            "title": "Type of Premises",
-            "htmlClass":"inline",
-            "titleMap": {
-              "office":"Office",
-              "retail_outlet": "Retail Outlet",
-              "showroom": "Showroom",
-              "warehouse": "Warehouse"
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "type": "section",
-    "htmlClass": "row",
-    "items": [
-      {
-        "type": "section",
-        "htmlClass": "col-sm-5",
-        "items": [
+            "type":"help",
+            "helpvalue":"<h5>Type of Premises:</h5>"
+          },
           {
-            "key":"supplier.name",
-            "title":"Supplier's Name"
+            "key": "applicant.typePremises.office",
+            "title": "Office"
+          },
+          {
+            "key": "applicant.typePremises.retail_outlet",
+            "title": "Retail Outlet"
+          },
+          {
+            "key": "applicant.typePremises.showroom",
+            "title": "Showroom"
+          },
+          {
+            "key": "applicant.typePremises.warehouse",
+            "title": "Warehouse"
           }
         ]
       },
       {
         "type": "section",
-        "htmlClass": "col-sm-7",
+        "htmlClass": "col-md-8",
         "items": [
           {
-            "key":"supplier.address",
-            "title":"Supplier's Address"
+            "type": "section",
+            "htmlClass": "col-sm-5 col-md-12",
+            "items": [
+              {
+                "key":"supplier.name",
+                "title":"Supplier's Name"
+              }
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-7 col-md-12",
+            "items": [
+              {
+                "key":"supplier.address",
+                "title":"Supplier's Address"
+              }
+            ]
           }
         ]
       }
