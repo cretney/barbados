@@ -59,26 +59,6 @@
               }
             }
           },
-          "descriptionDetail": {
-            "type": "string",
-            "title": "Descriptiondetail",
-            "description": ""
-          },
-          "grossWeight": {
-            "type": "number",
-            "title": "Gross Weight",
-            "description": "Indicate the Gross Weight of the Goods."
-          },
-          "grossWeightUnits": {
-            "type": "string",
-            "title": "Grossweightunits",
-            "description": ""
-          },
-          "name": {
-            "type": "string",
-            "title": "Name",
-            "description": ""
-          },
           "quantity": {
             "type": "integer",
             "title": "Quantity",
@@ -114,6 +94,16 @@
                   "title": "Engine capacity",
                   "description": "Engine capacity of vehicle"
                 },
+                "chassisNumber": {
+                  "type": "string",
+                  "title": "Chassisnumber",
+                  "description": ""
+                },
+                "costCIF": {
+                  "type": "number",
+                  "title": "Costcif",
+                  "description": ""
+                },
                 "serialNumber": {
                   "type": "string",
                   "title": "Serialnumber",
@@ -136,6 +126,26 @@
                 }
               }
             }
+          },
+          "descriptionDetail": {
+            "type": "string",
+            "title": "Descriptiondetail",
+            "description": ""
+          },
+          "grossWeight": {
+            "type": "number",
+            "title": "Gross Weight",
+            "description": "Indicate the Gross Weight of the Goods."
+          },
+          "grossWeightUnits": {
+            "type": "string",
+            "title": "Grossweightunits",
+            "description": ""
+          },
+          "name": {
+            "type": "string",
+            "title": "Name",
+            "description": ""
           },
           "fobValue": {
             "type": "integer",
@@ -713,6 +723,26 @@
       "type": "string",
       "title": "Approval Number",
       "description": "Number of Approval Document"
+    },
+    "oldVehicleBrand": {
+      "type": "string",
+      "title": "Oldvehiclebrand",
+      "description": ""
+    },
+    "oldVehicleModel": {
+      "type": "string",
+      "title": "Oldvehiclemodel",
+      "description": ""
+    },
+    "oldVehicleYear": {
+      "type": "string",
+      "title": "Oldvehicleyear",
+      "description": ""
+    },
+    "oldVehicleRegistrationNumber": {
+      "type": "string",
+      "title": "Oldvehicleregistrationnumber",
+      "description": ""
     },
     "issuedDate": {
       "type": "date-time",
