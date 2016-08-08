@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 725cb432de82d184f0696bfbfac41f03e3fa4611",
+  "description": "Generated from b with shasum efaa7b9f1b68877cdfa711024678dc45332092ff",
   "type": "object",
   "required": [
     "blockId",
@@ -87,18 +87,25 @@
               "type": "boolean"
             },
             "typePremises": {
-              "type": "array",
-              "minItems": 1,
-              "uniqueItems": true,
-              "items": {
-                "type": "object",
-                "required": [
-                  "name"
-                ],
-                "properties": {
-                  "name": {
-                    "type": "string"
-                  }
+              "type": "object",
+              "required": [
+                "office",
+                "retail_outlet",
+                "showroom",
+                "warehouse"
+              ],
+              "properties": {
+                "office": {
+                  "type": "boolean"
+                },
+                "retail_outlet": {
+                  "type": "boolean"
+                },
+                "showroom": {
+                  "type": "boolean"
+                },
+                "warehouse": {
+                  "type": "boolean"
                 }
               }
             },

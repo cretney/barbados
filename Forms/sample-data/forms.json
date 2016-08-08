@@ -3806,7 +3806,7 @@
       "typeBusiness":"ltd",
       "vat":"V8886868",
       "withPayment":true,
-      "typePremises":[{"name":"office"}, {"name":"retail_outlet"}, {"name":"warehouse"}],
+      "typePremises":{ "office":false, "retail_outlet": false, "showroom": true, "warehouse": true },
       "contact":{
         "name":"Mary Lyndon",
         "title":"** title **",
@@ -8778,7 +8778,7 @@
       "vat":"V8886868",
       "coorporateRegistrationNo":"RN6546468",
       "withPayment":true,
-      "typePremises":[{"name":"showroom"},{"name":"warehouse"}],
+      "typePremises":{ "office":false, "retail_outlet": false, "showroom": true, "warehouse": true },
       "contact":{
         "name":"Mary Lyndon",
         "title":"** title **",
@@ -8828,7 +8828,7 @@
       "vat":"V8886868",
       "coorporateRegistrationNo":"RN6546468",
       "withPayment":true,
-      "typePremises":[{"name":"showroom"},{"name":"warehouse"}],
+      "typePremises":{ "office":false, "retail_outlet": false, "showroom": true, "warehouse": true },
       "contact":{
         "name":"Mary Lyndon",
         "title":"** title **",

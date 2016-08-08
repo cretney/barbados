@@ -285,23 +285,28 @@
             "typePremises": {
               "type": "object",
               "required": [
-                "office",
-                "retail_outlet",
-                "showroom",
-                "warehouse"
+
               ],
               "properties": {
                 "office": {
-                  "type": "boolean"
+                  "type": "boolean",
+                  "title": "Office",
+                  "description": ""
                 },
                 "retail_outlet": {
-                  "type": "boolean"
+                  "type": "boolean",
+                  "title": "Retail_outlet",
+                  "description": ""
                 },
                 "showroom": {
-                  "type": "boolean"
+                  "type": "boolean",
+                  "title": "Showroom",
+                  "description": ""
                 },
                 "warehouse": {
-                  "type": "boolean"
+                  "type": "boolean",
+                  "title": "Warehouse",
+                  "description": ""
                 }
               }
             },
