@@ -87,18 +87,25 @@
               "type": "boolean"
             },
             "typePremises": {
-              "type": "array",
-              "minItems": 1,
-              "uniqueItems": true,
-              "items": {
-                "type": "object",
-                "required": [
-                  "name"
-                ],
-                "properties": {
-                  "name": {
-                    "type": "string"
-                  }
+              "type": "object",
+              "required": [
+                "office",
+                "retail_outlet",
+                "showroom",
+                "warehouse"
+              ],
+              "properties": {
+                "office": {
+                  "type": "boolean"
+                },
+                "retail_outlet": {
+                  "type": "boolean"
+                },
+                "showroom": {
+                  "type": "boolean"
+                },
+                "warehouse": {
+                  "type": "boolean"
                 }
               }
             },
