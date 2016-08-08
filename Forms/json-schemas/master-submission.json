@@ -389,6 +389,41 @@
               "description": ""
             }
           }
+        },
+        "mailingAddress": {
+          "type": "string",
+          "title": "Mailingaddress",
+          "description": ""
+        },
+        "nationality": {
+          "type": "string",
+          "title": "Nationality",
+          "description": ""
+        },
+        "work_phone": {
+          "type": "string",
+          "title": "Work_phone",
+          "description": ""
+        },
+        "manager": {
+          "type": "string",
+          "title": "Manager",
+          "description": ""
+        },
+        "employees": {
+          "type": "integer",
+          "title": "Employees",
+          "description": ""
+        },
+        "coorporateRegistrationNo": {
+          "type": "string",
+          "title": "Coorporateregistrationno",
+          "description": ""
+        },
+        "mobile_phone": {
+          "type": "string",
+          "title": "Mobile_phone",
+          "description": ""
         }
       }
     },
@@ -1270,6 +1305,11 @@
     "issuedBy": {
       "type": "string",
       "title": "Issuedby",
+      "description": ""
+    },
+    "typeApplication": {
+      "type": "string",
+      "title": "Typeapplication",
       "description": ""
     },
     "materials": {

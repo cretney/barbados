@@ -8755,8 +8755,8 @@
   }
 },
 {
-  "blockId": 19916601,
-  "workflowId": 99,
+  "blockId": 13416601,
+  "workflowId": 34,
   "formId": 166,
   "title": "New Application for Telecommunications  Sellers and  Dealer’s (Individual) Licence",
   "status": "Draft",
@@ -8778,7 +8778,7 @@
       "vat":"V8886868",
       "coorporateRegistrationNo":"RN6546468",
       "withPayment":true,
-      "typePremises":[""],
+      "typePremises":[{"name":"showroom"},{"name":"warehouse"}],
       "contact":{
         "name":"Mary Lyndon",
         "title":"** title **",
@@ -8804,8 +8804,8 @@
   }
 },
 {
-  "blockId": 19916701,
-  "workflowId": 99,
+  "blockId": 13416702,
+  "workflowId": 34,
   "formId": 167,
   "title": "Application for Telecommunications  Sellers and  Dealer’s (Individual) Licence",
   "status": "Issued",
@@ -8828,7 +8828,7 @@
       "vat":"V8886868",
       "coorporateRegistrationNo":"RN6546468",
       "withPayment":true,
-      "typePremises":["office", "retail_outlet", "warehouse"],
+      "typePremises":[{"name":"showroom"},{"name":"warehouse"}],
       "contact":{
         "name":"Mary Lyndon",
         "title":"** title **",
