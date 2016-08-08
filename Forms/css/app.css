@@ -352,7 +352,7 @@ table.table td.commodity-subtable.subtable-animal {
 	width: 100%;
 }
 
-.schema-form-checkboxes.inline .checkbox {
+.schema-form-checkboxes.inline .checkbox, .schema-form-section.inline .checkbox {
 	float: left;
 	padding-right: 25px;
 }

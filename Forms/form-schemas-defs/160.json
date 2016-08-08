@@ -195,7 +195,7 @@
     "items": [
       {
         "type": "section",
-        "htmlClass": "col-md-4",
+        "htmlClass": "col-sm-12 inline",
         "items": [
           {
             "type":"help",
@@ -221,11 +221,11 @@
       },
       {
         "type": "section",
-        "htmlClass": "col-md-8",
+        "htmlClass": "col-sm-12",
         "items": [
           {
             "type": "section",
-            "htmlClass": "col-sm-5 col-md-12",
+            "htmlClass": "col-sm-5",
             "items": [
               {
                 "key":"supplier.name",
@@ -235,7 +235,7 @@
           },
           {
             "type": "section",
-            "htmlClass": "col-sm-7 col-md-12",
+            "htmlClass": "col-sm-7",
             "items": [
               {
                 "key":"supplier.address",
