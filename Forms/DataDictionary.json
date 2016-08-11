@@ -2082,7 +2082,7 @@
     },
     {
       "id": 47,
-      "name": "BIDCgspGene",
+      "name": "BIDCgsp",
       "owner": "BIDC",
       "pga_owner_id": 2,
       "document_id": 102,
@@ -2092,7 +2092,7 @@
     },
     {
       "id": 48,
-      "name": "BIDCgspCanada",
+      "name": "BIDCgspCARIBCAN",
       "owner": "BIDC",
       "pga_owner_id": 2,
       "document_id": 103,
@@ -2112,7 +2112,7 @@
     },
     {
       "id": 50,
-      "name": "BIDCgspUSA",
+      "name": "BIDCgspOther",
       "owner": "BIDC",
       "pga_owner_id": 2,
       "document_id": 105,
@@ -2220,7 +2220,6 @@
       "workflow_id": 28,
       "step": 16,
       "form_id": 49,
-      "pga_id": 7,
       "title": "Request for Plant Inspection Letter",
       "description": "Plant Inspection Letter"
     },
@@ -2228,7 +2227,6 @@
       "workflow_id": 28,
       "step": 20,
       "form_id": 32,
-      "pga_id": 7,
       "title": "Phitosanitary Inspection Certificate for Import Release",
       "description": "Phitosanitary Inspection Certificate"
     },
@@ -2244,7 +2242,6 @@
       "workflow_id": 31,
       "step": 2,
       "form_id": 45,
-      "pga_id": 5,
       "title": "Unwholesome Food Certificate",
       "description": "Food is unfit for human consumption"
     },
@@ -2337,7 +2334,6 @@
       "workflow_id": 37,
       "step": 2,
       "form_id": 151,
-      "pga_id": 8,
       "title": "Duty Free Concession Certificate",
       "description": ""
     },
@@ -2359,7 +2355,6 @@
       "workflow_id": 39,
       "step": 1,
       "form_id": 165,
-      "pga_id": 21,
       "title": "Memorandum of Understanding between",
       "description": ""
     },
@@ -2375,7 +2370,6 @@
       "workflow_id": 40,
       "step": 2,
       "form_id": 163,
-      "pga_id": 21,
       "title": "Letter - Duty-free Concession - Vehicle",
       "description": ""
     },
@@ -2666,6 +2660,156 @@
       "hscode": "*",
       "hscode2": "06",
       "id": 46,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "07",
+      "id": 47,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "08",
+      "id": 47,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "09",
+      "id": 47,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "10",
+      "id": 47,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "11",
+      "id": 47,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "12",
+      "id": 47,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "13",
+      "id": 47,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "14",
+      "id": 47,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "15",
+      "id": 47,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "16",
+      "id": 47,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "17",
+      "id": 47,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "18",
+      "id": 47,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "18",
+      "id": 47,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "20",
+      "id": 47,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "21",
+      "id": 47,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "22",
+      "id": 47,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "23",
+      "id": 47,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "24",
+      "id": 47,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "25",
+      "id": 47,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "26",
+      "id": 47,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "27",
+      "id": 47,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "28",
+      "id": 48,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "29",
+      "id": 49,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "30",
+      "id": 49,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "99",
+      "id": 50,
       "notes": ""
     },
     {
@@ -4335,9 +4479,469 @@
       "notes": "Vinegar and substitutes for vinegar obtained from acetic acid"
     },
     {
-      "hscode": "070190",
+      "hscode": "8517.11.00",
+      "id": 33,
+      "notes": "Line telephone sets with cordless handsets"
+    },
+    {
+      "hscode": "8517.12.10",
+      "id": 33,
+      "notes": "Portable radio-telephones\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "8517.12.90",
+      "id": 33,
+      "notes": "Other\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "8517.18.00",
+      "id": 33,
+      "notes": "Other\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "8517.19.00",
+      "id": 33,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8517.21.00",
+      "id": 33,
+      "notes": "Facsimile machines"
+    },
+    {
+      "hscode": "8517.22.00",
+      "id": 33,
+      "notes": "Teleprinters"
+    },
+    {
+      "hscode": "8517.30.00",
+      "id": 33,
+      "notes": "Telephonic or telegraphic switching apparatus"
+    },
+    {
+      "hscode": "8517.50.00",
+      "id": 33,
+      "notes": "Other apparatus, for carrier-current line systems or for digital line systems"
+    },
+    {
+      "hscode": "8517.50.00.200851750 00 20001",
+      "id": 33,
+      "notes": "-DEC-10\tOther apparatus, for carrier-current line system or for digital line system (old)"
+    },
+    {
+      "hscode": "8517.61.00",
+      "id": 33,
+      "notes": "Base stations\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "8517.62.00",
+      "id": 33,
+      "notes": "Machines for the reception, conversion and transmission or regeneration of voice, images or other data, including switching and routing apparatus\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "8517.69.00",
+      "id": 33,
+      "notes": "Other\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "8517.70.00",
+      "id": 33,
+      "notes": "Parts\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "8517.80.00851780 00 00001",
+      "id": 33,
+      "notes": "-DEC-10\tOther apparatus"
+    },
+    {
+      "hscode": "8517.90.00851790 00 00001",
+      "id": 33,
+      "notes": "-DEC-10\tParts"
+    },
+    {
+      "hscode": "8525.10.00852510 00 00001",
+      "id": 33,
+      "notes": "-DEC-10\tTransmission apparatus"
+    },
+    {
+      "hscode": "8525.10.00.200",
+      "id": 33,
+      "notes": "Transmission apparatus (old)"
+    },
+    {
+      "hscode": "8525.20.10    ",
+      "id": 33,
+      "notes": "Portable radio-telephones"
+    },
+    {
+      "hscode": "8525.20.10.200",
+      "id": 33,
+      "notes": "Portable radio-telephones (old)"
+    },
+    {
+      "hscode": "8525.20.10.300",
+      "id": 33,
+      "notes": "Portable radio-telephones (old)"
+    },
+    {
+      "hscode": "8525.20.90    ",
+      "id": 33,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8525.20.90.200",
+      "id": 33,
+      "notes": "Other (old)"
+    },
+    {
+      "hscode": "8526.10.00",
+      "id": 33,
+      "notes": "Radar apparatus"
+    },
+    {
+      "hscode": "8526.91.00",
+      "id": 33,
+      "notes": "Radio navigational aid apparatus\t\t8526.91.00\t852691 00 000\t01-DEC-10\tRadio navigational aid apparatus"
+    },
+    {
+      "hscode": "8527.12.00",
+      "id": 33,
+      "notes": "Pocket-size radio cassette-players\t\t8527.12.00\t852712 00 000\t01-DEC-10\tPocket-size radio cassette-players"
+    },
+    {
+      "hscode": "8527.13.00",
+      "id": 33,
+      "notes": "Other apparatus combined with sound recording or reproducing apparatus"
+    },
+    {
+      "hscode": "8527.19.00",
+      "id": 33,
+      "notes": "Other\t\t8527.19.00\t852719 00 000\t01-DEC-10\tOther"
+    },
+    {
+      "hscode": "8527.21.00",
+      "id": 33,
+      "notes": "Combined with sound recording or reproducing apparatus"
+    },
+    {
+      "hscode": "8527.29.00",
+      "id": 33,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8527.31.00",
+      "id": 33,
+      "notes": "Combined with sound recording or reproducing apparatus"
+    },
+    {
+      "hscode": "8527.32.00",
+      "id": 33,
+      "notes": "Not combined with sound recording or reproducing apparatus but combined with a clock"
+    },
+    {
+      "hscode": "8527.39.00",
+      "id": 33,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8527.90.00",
+      "id": 33,
+      "notes": "Other apparatus"
+    },
+    {
+      "hscode": "8527.91.00",
+      "id": 33,
+      "notes": "Combined with sound recording or reproducing Apparatus\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "8527.92.00",
+      "id": 33,
+      "notes": "Not combined with sound recording or reproducing apparatus but combined with a clock\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "8527.99.00",
+      "id": 33,
+      "notes": "Other\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "8529.10.00",
+      "id": 33,
+      "notes": "Aerials and aerial reflectors of all kinds; parts suitable for use therewith"
+    },
+    {
+      "hscode": "8517.11.00",
+      "id": 34,
+      "notes": "Line telephone sets with cordless handsets"
+    },
+    {
+      "hscode": "8517.12.10",
+      "id": 34,
+      "notes": "Portable radio-telephones\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "8517.12.90",
+      "id": 34,
+      "notes": "Other\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "8517.18.00",
+      "id": 34,
+      "notes": "Other\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "8517.19.00",
+      "id": 34,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8517.21.00",
+      "id": 34,
+      "notes": "Facsimile machines"
+    },
+    {
+      "hscode": "8517.22.00",
+      "id": 34,
+      "notes": "Teleprinters"
+    },
+    {
+      "hscode": "8517.30.00",
+      "id": 34,
+      "notes": "Telephonic or telegraphic switching apparatus"
+    },
+    {
+      "hscode": "8517.50.00",
+      "id": 34,
+      "notes": "Other apparatus, for carrier-current line systems or for digital line systems"
+    },
+    {
+      "hscode": "8517.50.00.200851750 00 20001",
+      "id": 34,
+      "notes": "-DEC-10\tOther apparatus, for carrier-current line system or for digital line system (old)"
+    },
+    {
+      "hscode": "8517.61.00",
+      "id": 34,
+      "notes": "Base stations\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "8517.62.00",
+      "id": 34,
+      "notes": "Machines for the reception, conversion and transmission or regeneration of voice, images or other data, including switching and routing apparatus\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "8517.69.00",
+      "id": 34,
+      "notes": "Other\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "8517.70.00",
+      "id": 34,
+      "notes": "Parts\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "8517.80.00851780 00 00001",
+      "id": 34,
+      "notes": "-DEC-10\tOther apparatus"
+    },
+    {
+      "hscode": "8517.90.00851790 00 00001",
+      "id": 34,
+      "notes": "-DEC-10\tParts"
+    },
+    {
+      "hscode": "8525.10.00852510 00 00001",
+      "id": 34,
+      "notes": "-DEC-10\tTransmission apparatus"
+    },
+    {
+      "hscode": "8525.10.00.200",
+      "id": 34,
+      "notes": "Transmission apparatus (old)"
+    },
+    {
+      "hscode": "8525.20.10    ",
+      "id": 34,
+      "notes": "Portable radio-telephones"
+    },
+    {
+      "hscode": "8525.20.10.200",
+      "id": 34,
+      "notes": "Portable radio-telephones (old)"
+    },
+    {
+      "hscode": "8525.20.10.300",
+      "id": 34,
+      "notes": "Portable radio-telephones (old)"
+    },
+    {
+      "hscode": "8525.20.90    ",
+      "id": 34,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8525.20.90.200",
+      "id": 34,
+      "notes": "Other (old)"
+    },
+    {
+      "hscode": "8526.10.00",
+      "id": 34,
+      "notes": "Radar apparatus"
+    },
+    {
+      "hscode": "8526.91.00",
+      "id": 34,
+      "notes": "Radio navigational aid apparatus\t\t8526.91.00\t852691 00 000\t01-DEC-10\tRadio navigational aid apparatus"
+    },
+    {
+      "hscode": "8527.12.00",
+      "id": 34,
+      "notes": "Pocket-size radio cassette-players\t\t8527.12.00\t852712 00 000\t01-DEC-10\tPocket-size radio cassette-players"
+    },
+    {
+      "hscode": "8527.13.00",
+      "id": 34,
+      "notes": "Other apparatus combined with sound recording or reproducing apparatus"
+    },
+    {
+      "hscode": "8527.19.00",
+      "id": 34,
+      "notes": "Other\t\t8527.19.00\t852719 00 000\t01-DEC-10\tOther"
+    },
+    {
+      "hscode": "8527.21.00",
+      "id": 34,
+      "notes": "Combined with sound recording or reproducing apparatus"
+    },
+    {
+      "hscode": "8527.29.00",
+      "id": 34,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8527.31.00",
+      "id": 34,
+      "notes": "Combined with sound recording or reproducing apparatus"
+    },
+    {
+      "hscode": "8527.32.00",
+      "id": 34,
+      "notes": "Not combined with sound recording or reproducing apparatus but combined with a clock"
+    },
+    {
+      "hscode": "8527.39.00",
+      "id": 34,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8527.90.00",
+      "id": 34,
+      "notes": "Other apparatus"
+    },
+    {
+      "hscode": "8527.91.00",
+      "id": 34,
+      "notes": "Combined with sound recording or reproducing Apparatus\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "8527.92.00",
+      "id": 34,
+      "notes": "Not combined with sound recording or reproducing apparatus but combined with a clock\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "8527.99.00",
+      "id": 34,
+      "notes": "Other\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "8529.10.00",
+      "id": 34,
+      "notes": "Aerials and aerial reflectors of all kinds; parts suitable for use therewith"
+    },
+    {
+      "hscode": "0302.67.00.00",
       "id": 35,
-      "notes": "Other potatoes fresh or chilled"
+      "notes": "Swordfish (Xiphias gladius):"
+    },
+    {
+      "hscode": "0302.67.00.100",
+      "id": 35,
+      "notes": "Swordfish (Xiphias gladius)\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "0302.67.00.900",
+      "id": 35,
+      "notes": "Swordfish (Xiphias gladius)\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "0302.69.90.120",
+      "id": 35,
+      "notes": "Kingfish, swordfish fresh or chilled for processing"
+    },
+    {
+      "hscode": "0302.69.90.200",
+      "id": 35,
+      "notes": "Swordfish (Marlin,sailfish,spearfish)fresh or chilled"
+    },
+    {
+      "hscode": "0302.69.90.300",
+      "id": 35,
+      "notes": "Swordfish fresh or chilled"
+    },
+    {
+      "hscode": "0303.61.10",
+      "id": 35,
+      "notes": "For processing\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "0303.61.90",
+      "id": 35,
+      "notes": "Other\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "0303.79.90.12",
+      "id": 35,
+      "notes": "Swordfish Frozen for processing"
+    },
+    {
+      "hscode": "0303.79.90.100",
+      "id": 35,
+      "notes": "Kingfish (Acanathocybium solandri), Blue marlin (Makaira nigricans),White marlin (Tetrapturus albidus), Atlantic sailfish (Isotiophorus Albicans), Longbill spearfish (Tetrapturus pfluegeri)\t\t0303.79.90.100\t030379 90 100\t01-DEC-10\tKingfish (Acanathocybium solandri), Swordfish (Xiphias gladius), Blue marlin (Makiaira n"
+    },
+    {
+      "hscode": "0303.79.90.300",
+      "id": 35,
+      "notes": "Swordfish frozen"
+    },
+    {
+      "hscode": "0304.10.90.200",
+      "id": 35,
+      "notes": "Fillets of Kingfish (Acanathocybium solandri), Swordfish (Xiphias gladius), Blue marlin"
+    },
+    {
+      "hscode": "0304.11.00",
+      "id": 35,
+      "notes": "Swordfish (Xiphias gladius)\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "0304.19.90.400",
+      "id": 35,
+      "notes": "Fillets of Swordfish (Xiphias gladius)\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "0304.20.90.200",
+      "id": 35,
+      "notes": "Kingfish(Acanathocybium solandri), Swordfish (Xiphias gladius), Blue marlin (Makiaira ni"
+    },
+    {
+      "hscode": "0304.21.00",
+      "id": 35,
+      "notes": "Swordfish (Xiphias gladius)\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "0304.91.00",
+      "id": 35,
+      "notes": "Swordfish (Xiphias gladius)\tOfficial Tariff code missing from ASYCUDA"
     }
   ],
   "secondary_hscodes": [
@@ -4379,6 +4983,131 @@
           "value": "06",
           "name": "Venezuela",
           "description": "Venezuela"
+        },
+        {
+          "value": "07",
+          "name": "Australia",
+          "description": "Australia"
+        },
+        {
+          "value": "08",
+          "name": "Austria",
+          "description": "Austria"
+        },
+        {
+          "value": "09",
+          "name": "Belgium",
+          "description": "Belgium"
+        },
+        {
+          "value": "10",
+          "name": "Denmark",
+          "description": "Denmark"
+        },
+        {
+          "value": "11",
+          "name": "Finland",
+          "description": "Finland"
+        },
+        {
+          "value": "12",
+          "name": "France",
+          "description": "France"
+        },
+        {
+          "value": "13",
+          "name": "Germany",
+          "description": "Germany"
+        },
+        {
+          "value": "14",
+          "name": "Greece",
+          "description": "Greece"
+        },
+        {
+          "value": "15",
+          "name": "Ireland",
+          "description": "Ireland"
+        },
+        {
+          "value": "16",
+          "name": "Italy",
+          "description": "Italy"
+        },
+        {
+          "value": "17",
+          "name": "Japan",
+          "description": "Japan"
+        },
+        {
+          "value": "18",
+          "name": "Luxembourg",
+          "description": "Luxembourg"
+        },
+        {
+          "value": "18",
+          "name": "Netherlands",
+          "description": "Netherlands"
+        },
+        {
+          "value": "20",
+          "name": "New Zealand",
+          "description": "New Zealand"
+        },
+        {
+          "value": "21",
+          "name": "Norway",
+          "description": "Norway"
+        },
+        {
+          "value": "22",
+          "name": "Portugal",
+          "description": "Portugal"
+        },
+        {
+          "value": "23",
+          "name": "Spain",
+          "description": "Spain"
+        },
+        {
+          "value": "24",
+          "name": "Sweden",
+          "description": "Sweden"
+        },
+        {
+          "value": "25",
+          "name": "Switzerland",
+          "description": "Switzerland"
+        },
+        {
+          "value": "26",
+          "name": "United Kingdom",
+          "description": "United Kingdom"
+        },
+        {
+          "value": "27",
+          "name": "Virgin Islands (British)",
+          "description": "Virgin Islands (British)"
+        },
+        {
+          "value": "28",
+          "name": "Canada",
+          "description": "Canada"
+        },
+        {
+          "value": "29",
+          "name": "Puerto Rico",
+          "description": "Puerto Rico"
+        },
+        {
+          "value": "30",
+          "name": "United States",
+          "description": "United States"
+        },
+        {
+          "value": "99",
+          "name": "Other",
+          "description": "Other"
         }
       ]
     }
