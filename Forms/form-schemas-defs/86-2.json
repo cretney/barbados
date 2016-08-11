@@ -9,20 +9,31 @@
     "items": [
       {
         "type": "section",
-        "htmlClass": "col-sm-12",
+        "htmlClass": "col-sm-12 inline",
         "items": [
           {
-            "key":"animalUse",
-            "title": "INTENDED USE:",
-            "type": "checkboxes",
-            "htmlClass": "inline",
-            "titleMap": {
-              "pet":"PET",
-              "breeding":"BREEDING",
-              "working":"WORKING",
-              "service":"SERVICE",
-              "other":"OTHER"
-            }
+            "type": "help",
+            "helpvalue": "<h5>INTENDED USE:</h5>"
+          },
+          {
+            "key": "animalUse.pet",
+            "title": "PET"
+          },
+          {
+            "key": "animalUse.breeding",
+            "title": "BREEDING"
+          },
+          {
+            "key": "animalUse.working",
+            "title": "WORKING"
+          },
+          {
+            "key": "animalUse.service",
+            "title": "SERVICE"
+          },
+          {
+            "key": "animalUse.other",
+            "title": "OTHER"
           }
         ]
       }

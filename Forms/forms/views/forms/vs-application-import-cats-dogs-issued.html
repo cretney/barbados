@@ -125,28 +125,28 @@
               </div>
               <div class="col-sm-4 col-md-3 col-md-offset-1">
                 PET
-                <span ng-if="ila.submission.animalUse.indexOf('pet') == -1">[&nbsp;&nbsp;]</span>
-                <span ng-if="ila.submission.animalUse.indexOf('pet') > -1">[<b>X</b>]</span>
+                <span ng-if="ila.submission.animalUse.pet == false">[&nbsp;&nbsp;]</span>
+                <span ng-if="ila.submission.animalUse.pet == true">[<b>X</b>]</span>
               </div>
               <div class="col-sm-4">
                 BREEDING
-                <span ng-if="ila.submission.animalUse.indexOf('breeding') == -1">[&nbsp;&nbsp;]</span>
-                <span ng-if="ila.submission.animalUse.indexOf('breeding') > -1">[<b>X</b>]</span>
+                <span ng-if="ila.submission.animalUse.breeding == false">[&nbsp;&nbsp;]</span>
+                <span ng-if="ila.submission.animalUse.breeding == true">[<b>X</b>]</span>
               </div>
               <div class="col-sm-4">
                 WORKING
-                <span ng-if="ila.submission.animalUse.indexOf('working') == -1">[&nbsp;&nbsp;]</span>
-                <span ng-if="ila.submission.animalUse.indexOf('working') > -1">[<b>X</b>]</span>
+                <span ng-if="ila.submission.animalUse.working == false">[&nbsp;&nbsp;]</span>
+                <span ng-if="ila.submission.animalUse.working == true">[<b>X</b>]</span>
               </div>
               <div class="col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-3">
                 SERVICE
-                <span ng-if="ila.submission.animalUse.indexOf('service') == -1">[&nbsp;&nbsp;]</span>
-                <span ng-if="ila.submission.animalUse.indexOf('service') > -1">[<b>X</b>]</span>
+                <span ng-if="ila.submission.animalUse.service == false">[&nbsp;&nbsp;]</span>
+                <span ng-if="ila.submission.animalUse.service == true">[<b>X</b>]</span>
               </div>
               <div class="col-sm-4 col-md-3">
                 OTHER
-                <span ng-if="ila.submission.animalUse.indexOf('other') == -1">[&nbsp;&nbsp;]</span>
-                <span ng-if="ila.submission.animalUse.indexOf('other') > -1">[<b>X</b>]</span>
+                <span ng-if="ila.submission.animalUse.other == false">[&nbsp;&nbsp;]</span>
+                <span ng-if="ila.submission.animalUse.other == true">[<b>X</b>]</span>
               </div>
             </div><!--row-->
           </td>

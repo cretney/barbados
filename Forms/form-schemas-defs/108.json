@@ -41,7 +41,7 @@
   {
     "type":"help",
     "helpvalue":"<br>"
-  },  
+  },
   {
     "key": "commodities",
     "title":"",
@@ -90,7 +90,7 @@
             "htmlClass": "col-sm-7",
             "items": [
               {
-                "key": "commodities[].type",
+                "key": "commodities[].commodityType",
                 "title": "Avian Type",
                 "type": "radios-inline",
                 "titleMap": {
@@ -149,21 +149,22 @@
           },
           {
             "type": "section",
-            "htmlClass": "col-sm-4",
+            "htmlClass": "col-sm-4 inline",
             "items": [
               {
-                "key": "commodities[].condition",
-                "title": "Condition",
-                "type": "checkboxes",
-                "htmlClass": "inline",
-                "titleMap": {
-                  "fed":"Fed",
-                  "watered":"Watered"
-                }
+                "type": "help",
+                "helpvalue": "<h5>Condition</h5>"
+              },
+              {
+                "key": "commodities[].condition.fed",
+                "title": "Fed"
+              },
+              {
+                "key": "commodities[].condition.watered",
+                "title": "Watered"
               }
             ]
           }
-
         ]
       },
       {
@@ -172,25 +173,38 @@
         "items": [
           {
             "type": "section",
-            "htmlClass": "col-sm-12",
+            "htmlClass": "col-sm-12 inline",
             "items": [
               {
-                "key": "commodities[].vaccinations",
-                "title": "Vaccinations",
-                "type": "checkboxes",
-                "htmlClass": "inline",
-                "titleMap": {
-                  "mareks":"MAREKS",
-                  "fowlpox":"FOWLPOX",
-                  "newcastle":"NEWCASTLE",
-                  "aib":"AIB",
-                  "gumboro":"GUMBORO",
-                  "other":"OTHER"
-                }
+                "type": "help",
+                "helpvalue": "<h5>Vaccinations</h5>"
+              },
+              {
+                "key": "commodities[].vaccinations.mareks",
+                "title": "MAREKS"
+              },
+              {
+                "key": "commodities[].vaccinations.fowlpox",
+                "title": "FOWLPOX"
+              },
+              {
+                "key": "commodities[].vaccinations.newcastle",
+                "title": "NEWCASTLE"
+              },
+              {
+                "key": "commodities[].vaccinations.aib",
+                "title": "AIB"
+              },
+              {
+                "key": "commodities[].vaccinations.gumboro",
+                "title": "GUMBORO"
+              },
+              {
+                "key": "commodities[].vaccinations.other",
+                "title": "OTHER"
               }
             ]
           }
-
         ]
       }
     ]
@@ -204,18 +218,17 @@
         "htmlClass": "col-sm-12",
         "items": [
           {
-            "key":"safety",
-            "title": "",
-            "type": "checkboxes",
-            "titleMap": {
-              "safe_hatcheries":"1. The birds originate from Hatcheries participating in the Hatchery Sanitation Scheme of the Ministry of Agriculture.",
-              "healthy":"2. In my opinion the bird(s) is/are in good health and free from clinical symptoms of communicable disease and insofar as can be determined has/have not been exposed to Fowl Cholera, Fowl Typhoid, New Castle Disease and Avian Influenza (Fowl Plague)."
-            }
+            "key":"safety.safe_hatcheries",
+            "title": "1. The birds originate from Hatcheries participating in the Hatchery Sanitation Scheme of the Ministry of Agriculture."
+          },
+          {
+            "key": "safety.healthy",
+            "title": "2. In my opinion the bird(s) is/are in good health and free from clinical symptoms of communicable disease and insofar as can be determined has/have not been exposed to Fowl Cholera, Fowl Typhoid, New Castle Disease and Avian Influenza (Fowl Plague)."
           }
         ]
       }
     ]
-  },  
+  },
   {
     "type": "submit",
     "style": "btn-info",

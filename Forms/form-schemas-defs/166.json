@@ -299,31 +299,32 @@
     "items": [
       {
         "type": "section",
-        "htmlClass": "col-sm-12",
+        "htmlClass": "col-sm-12 inline",
         "items": [
           {
-            "type": "checkboxes",
-            "key": "applicant.typePremises",
-            "title": "Type of Premises",
-            "htmlClass":"inline",
-            "titleMap": {
-                "office":"Office",
-                "retail_outlet":"Retail Outlet",
-                "showroom":"Showroom",
-                "warehouse":"Warehouse"
-            }
+            "type":"help",
+            "helpvalue":"<h5>Type of Premises:</h5>"
+          },
+          {
+            "key": "applicant.typePremises.office",
+            "title": "Office"
+          },
+          {
+            "key": "applicant.typePremises.retail_outlet",
+            "title": "Retail Outlet"
+          },
+          {
+            "key": "applicant.typePremises.showroom",
+            "title": "Showroom"
+          },
+          {
+            "key": "applicant.typePremises.warehouse",
+            "title": "Warehouse"
           }
         ]
       }
     ]
   },
-
-
-
-
-
-
-
   {
   "type": "section",
   "htmlClass": "row",

@@ -54,7 +54,11 @@
     <div class="col-sm-12">
       <p>
         To the Licensing Authority,<br><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Application is hereby made for a licence to <b>{{ila.submission.license_to.join(' and ')}}</b><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Application is hereby made for a licence to
+        <span ng-if="!(ila.submission.license_to.import == false || ila.submission.license_to.store == false)"><b>IMPORT and STORE</b></span>
+        <span ng-if="!(ila.submission.license_to.import == true || ila.submission.license_to.store == false)"><b>STORE</b></span>
+        <span ng-if="!(ila.submission.license_to.import == false || ila.submission.license_to.store == true)"><b>IMPORT</b></span>
+        <br>
       </p>
     </div><!--col-sm-12-->
   </div><!--row-->

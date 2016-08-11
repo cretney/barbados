@@ -24,18 +24,26 @@
             "readonly":true
           }
         ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-sm-12 inline",
+        "items": [
+          {
+            "type":"help",
+            "helpvalue":"<h5>License to:</h5>"
+          },
+          {
+            "key": "license_to.import",
+            "title": "Import"
+          },
+          {
+            "key": "license_to.store",
+            "title": "Store"
+          }
+        ]
       }
     ]
-  },
-  {
-    "key": "license_to",
-    "title": "License to",
-    "type": "checkboxes",
-    "htmlClass": "inline",
-    "titleMap": {
-      "import":"Import",
-      "store":"Store"
-    }
   },
   {
     "type": "help",

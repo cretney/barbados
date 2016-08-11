@@ -5,27 +5,34 @@
     "items": [
       {
         "type": "section",
-        "htmlClass": "col-sm-12",
+        "htmlClass": "col-sm-12 inline",
         "items": [
 				  {
-				  	"key":"commodities",
-            "title": "",
-            "type": "checkboxes",
-            "htmlClass": "inline",
-				  	"titleMap": {
-              "hatcheggs":"Hatching Eggs",
-              "semen":"Semen",
-              "gplasm":"Germ Plasm",
-              "vetbio":"Veterinary Biologicals",
-              "other":"Other"
-            }
-				  }
+				  	"key":"commodities.hatcheggs",
+            "title": "Hatching Eggs"
+          },
+          {
+            "key":"commodities.semen",
+            "title": "Semen"
+          },
+          {
+            "key":"commodities.gplasm",
+            "title": "Germ Plasm"
+          },
+          {
+            "key":"commodities.vetbio",
+            "title": "Veterinary Biologicals"
+          },
+          {
+            "key":"commodities.other",
+            "title": "Other"
+          }
         ]
       },
       {
         "type": "section",
         "htmlClass": "col-sm-6 col-sm-offset-6",
-        "condition":"model.commodities.indexOf('other') > -1",
+        "condition":"model.commodities.other == true",
         "items": [
           {
             "key":"otherDetails",

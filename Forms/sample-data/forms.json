@@ -4452,7 +4452,7 @@
       }
     ],
 
-    "license_to":[],
+    "license_to": {"import": true, "store": false},
     "licenseNumber":"L-68686",
     "approvalDate":"2016-04-30",
     "issuedDate":"2016-05-01",
@@ -4496,7 +4496,7 @@
       }
     ],
 
-    "license_to":["import", "store"],
+    "license_to": {"import": true, "store": false},
     "licenseNumber":"L-68686",
     "approvalDate":"2016-04-30",
     "issuedDate":"2016-05-01",
@@ -4790,7 +4790,7 @@
     ],
     "permitNumber":"IM-7657657",
     "containerNumber":"OBJ3324",
-    "animalUse": ["pet","working"],
+    "animalUse": {"pet": true, "breeding": false, "working": true, "service": false, "other": false},
     "carrier": {"idNumber":282828, "name":"Caribbean Airlines"},
     "applicant": {"id":4, "name":"Luis Soto", "countryId":"BB", "country":"Barbados", "address":"1234 Bay Street, St. Michael", "phone":"555-555-5555", "fax":"555-666-6666", "email":"email_address@example.com"},
     "expectedArrival": "2015-09-21T04:00:00.000Z",
@@ -4850,7 +4850,7 @@
     "entryDate":"2016-04-27",
     "approvalDate":"2016-04-30",
     "containerNumber":"OBJ3324",
-    "animalUse": ["pet","working"],
+    "animalUse": {"pet": true, "breeding": false, "working": true, "service": false, "other": false},
     "submitter": "Luis Soto",
     "agencyApprovals": [{"name":"Animal Health Administration","approved":true}],
     "approvedBy": "Joe Schmoe",
@@ -5357,7 +5357,7 @@
   "title": "New Permit to Import into Barbados Semen Eggs Germ Plasm",
   "status": "Draft",
   "submission": {
-    "commodities": ["semen", "gplasm", "other"],
+    "commodities": {"hatcheggs": false, "semen": true, "gplasm": true, "vetbio": false, "other": true},
     "otherDetails":"animal viagra",
     "periodEnding":"2019-04-30",
     "issuedDate":"2016-04-30",
@@ -5373,7 +5373,7 @@
   "title": "Permit to Import into Barbados Semen Eggs Germ Plasm",
   "status": "Issued",
   "submission": {
-    "commodities": ["semen", "gplasm", "other"],
+    "commodities": {"hatcheggs": false, "semen": true, "gplasm": true, "vetbio": false, "other": true},
     "otherDetails":"animal viagra",
     "periodEnding":"2019-04-30",
     "approvalDate":"2016-04-30",
@@ -5592,11 +5592,11 @@
       {
         "hsCode": "123",
         "description": "test",
-        "comodityType":"broiler",
+        "commodityType":"broiler",
         "age":"days 20",
         "sex":"male",
-        "condition":["fed","watered"],
-        "vaccinations":["mareks","fowlpox"],
+        "condition":{"fed": true,"watered": true},
+        "vaccinations":{"mareks": true,"fowlpox": true, "newcastle": false, "aib": false, "gumboro": false, "other": false},
         "units": [
           {
             "unitType": "Units",
@@ -5615,7 +5615,7 @@
         ]
       }
     ],
-    "safety":["safe_hatcheries","healthy"],
+    "safety":{"safe_hatcheries": true, "healthy": true},
     "serialNumberCertificate":"CN-68686",
     "approvalDate":"2016-04-30",
     "issuedDate":"2016-05-01",
@@ -5635,11 +5635,11 @@
       {
         "hsCode": "123",
         "description": "test",
-        "comodityType":"broiler",
+        "commodityType":"broiler",
         "age":"days 20",
         "sex":"male",
-        "condition":["fed","watered"],
-        "vaccinations":["mareks","fowlpox"],
+        "condition":{"fed": true,"watered": true},
+        "vaccinations":{"mareks": true,"fowlpox": true, "newcastle": false, "aib": false, "gumboro": false, "other": false},
         "units": [
           {
             "unitType": "Units",
@@ -5653,8 +5653,8 @@
         "comodityType":"other",
         "age":"days 15",
         "sex":"female",
-        "condition":["watered"],
-        "vaccinations":["newcastle","aib","gumboro","other"],
+        "condition":{"fed": false,"watered": true},
+        "vaccinations":{"mareks": false,"fowlpox": false, "newcastle": true, "aib": true, "gumboro": true, "other": true},
         "units": [
           {
             "unitType": "Units",
@@ -5663,7 +5663,7 @@
         ]
       }
     ],
-    "safety":["safe_hatcheries","healthy"],
+    "safety":{"safe_hatcheries": true, "healthy": true},
     "serialNumberCertificate":"CN-68686",
     "approvalDate":"2016-04-30",
     "issuedDate":"2016-05-01",
@@ -6382,7 +6382,7 @@
         },
         "regInCountry": true,
         "regCountryDetail": "",
-        "countriesRegistered": ["Antigua", "Bahamas", "St. Maartens", "Jamaica", "Aruba"],
+        "countriesRegistered": "Antigua, Bahamas, St. Maartens, Jamaica, Aruba",
         "ld50Active": [
           {
             "animal": "lab rats",
@@ -6521,7 +6521,7 @@
         },
         "regInCountry": true,
         "regCountryDetail": "this is a test of the conditional",
-        "countriesRegistered": ["Antigua", "Bahamas", "St. Maartens", "Jamaica", "Aruba"],
+        "countriesRegistered": "Antigua, Bahamas, St. Maartens, Jamaica, Aruba",
         "ld50Active": [
           {
             "animal": "lab rats",
@@ -6642,8 +6642,8 @@
       "nationality":"Barbados",
       "gender":"",
       "maritalStatus":"",
-      "trainingInstitutions":[""],
-      "qualifications":[""],
+      "trainingInstitutions":{"elementary": false, "secondary": false, "polytechnic": false, "college": false, "university": false},
+      "qualifications":{"o_level": false, "a_level": false, "gce": false, "city_guilds": false, "diploma": false, "associate_degree": false, "none": true},
       "numberDependents":0,
       "passport":"P68768768",
       "passportOrigin":"Venezuela",
@@ -6660,8 +6660,6 @@
         "email":"mary@example.com"
       }
     },
-    "trainingInstitutions":[""],
-    "qualifications":[""],
     "fishery_activities":{
       "organisation":"Fishery organization",
       "memberNo":"M7686876",
@@ -6695,19 +6693,19 @@
         "surveyor":{"value":false, "years":0}
       },
       "companyName":"** Company Name **",
-      "operatingSites":["none"],
+      "operatingSites":{"home": false, "market": false},
       "operatingSites1":"Site1",
       "operatingSites2":"Site2",
-      "relatedCourses":"** Related courses **",
+      "relatedCourses":{"basic": false, "fish": false, "navigation": false, "business": true, "other": false},
       "otherCourses":"** Other courses **",
       "localOversea":"Local Oversea",
-      "species":[""],
+      "species":{"none": false, "caught": false, "farmed": false, "processed": false, "retailed": false},
       "speciesOther":"other",
-      "offshore":[""],
-      "coastal":[""],
-      "demersal":[""],
-      "nonfish":[""],
-      "gear":[""],
+      "offshore": {"swordfish": false, "kingfish": false, "billfish": false, "tuna": false, "shark": false, "dolphin": false, "flying_fish": false},
+      "coastal":{"bait_fish": false, "cavally": false, "jacks": false, "blowgoat": false, "barracuda": false, "bonita": false},
+      "demersal": {"snapper": false, "pot_fish": false, "ningnings": false, "tilapia": false, "ornamental": false},
+      "nonfish": {"conch": false, "sea_eggs": false, "lobster": false, "sea_cat": false, "sea_moss": false},
+      "gear": {"gill-nets": false, "seine_nets": false, "cast_nets": false, "dip_nets": false, "traps": false, "pots": false, "spear_gun": false, "hand_lines": false, "trolling_lines": false, "long-lines": false, "brim_lines": false, "pillar-stick": false, "rod_reel": false},
       "gearOther":""
     },
     "workVessels":[
@@ -6765,8 +6763,8 @@
       "nationality":"Barbados",
       "gender":"male",
       "maritalStatus":"single",
-      "trainingInstitutions":["elementary", "secondary", "polytechnic", "college"],
-      "qualifications":["o_level", "a_level", "gce", "city_guilds", "diploma", "associate_degree"],
+      "trainingInstitutions":{"elementary": false, "secondary": false, "polytechnic": false, "college": false, "university": false},
+      "qualifications":{"o_level": false, "a_level": false, "gce": false, "city_guilds": false, "diploma": false, "associate_degree": false, "none": true},
       "numberDependents":0,
       "passport":"P68768768",
       "passportOrigin":"Venezuela",
@@ -6784,8 +6782,6 @@
         "relationship":"Wife"
       }
     },
-    "trainingInstitutions":[""],
-    "qualifications":[""],
     "fishery_activities":{
       "organisation":"Fishery organization",
       "memberNo":"M7686876",
@@ -6819,19 +6815,19 @@
         "surveyor":{"value":true, "years":0}
       },
       "companyName":"** Company Name **",
-      "operatingSites":["home","market"],
+      "operatingSites":{"home": false, "market": false},
       "operatingSites1":"Site1",
       "operatingSites2":"Site2",
-      "relatedCourses":"** Related courses **",
+      "relatedCourses":{"basic": false, "fish": false, "navigation": false, "business": true, "other": false},
       "otherCourses":"** Other courses **",
       "localOversea":"Local Oversea",
-      "species":["none", "caught", "farmed", "processed", "retailed"],
-      "speciesOther":"other species",
-      "offshore":["swordfish", "kingfish", "billfish", "tuna", "shark", "dolphin", "flying_fish"],
-      "coastal":["bait_fish", "cavally", "jacks", "blowgoat", "barracuda", "bonita"],
-      "demersal":["snapper", "pot_fish", "ningnings", "tilapia", "ornamental"],
-      "nonfish":["conch", "sea_eggs", "lobster", "sea_cat", "sea_moss"],
-      "gear":["gill-nets", "seine_nets", "cast_nets", "dip_nets", "traps", "pots", "spear_gun", "hand_lines", "trolling_lines", "long-lines", "brim_lines", "pillar-stick", "rod_reel"],
+      "species":{"none": false, "caught": false, "farmed": false, "processed": false, "retailed": false},
+      "speciesOther":"other",
+      "offshore": {"swordfish": false, "kingfish": false, "billfish": false, "tuna": false, "shark": false, "dolphin": false, "flying_fish": false},
+      "coastal":{"bait_fish": false, "cavally": false, "jacks": false, "blowgoat": false, "barracuda": false, "bonita": false},
+      "demersal": {"snapper": false, "pot_fish": false, "ningnings": false, "tilapia": false, "ornamental": false},
+      "nonfish": {"conch": false, "sea_eggs": false, "lobster": false, "sea_cat": false, "sea_moss": false},
+      "gear": {"gill-nets": false, "seine_nets": false, "cast_nets": false, "dip_nets": false, "traps": false, "pots": false, "spear_gun": false, "hand_lines": false, "trolling_lines": false, "long-lines": false, "brim_lines": false, "pillar-stick": false, "rod_reel": false},
       "gearOther":"other gear"
     },
     "workVessels":[

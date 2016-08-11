@@ -46,33 +46,33 @@
 
     <div class="col-sm-4">
       <p>
-        <span ng-if="ila.submission.commodities.indexOf('hatcheggs') == -1">[&nbsp;&nbsp;]</span>
-        <span ng-if="ila.submission.commodities.indexOf('hatcheggs') > -1">[X]</span>
+        <span ng-if="ila.submission.commodities.hatcheggs == false">[&nbsp;&nbsp;]</span>
+        <span ng-if="ila.submission.commodities.hatcheggs == true">[<b>X</b>]</span>
         Hatching Eggs
       </p>
       <p>
-        <span ng-if="ila.submission.commodities.indexOf('gplasm') == -1">[&nbsp;&nbsp;]</span>
-        <span ng-if="ila.submission.commodities.indexOf('gplasm') > -1">[X]</span>
+        <span ng-if="ila.submission.commodities.gplasm == false">[&nbsp;&nbsp;]</span>
+        <span ng-if="ila.submission.commodities.gplasm == true">[<b>X</b>]</span>
         Germ Plasm
       </p>
     </div>
     <div class="col-sm-4">
       <p>
-        <span ng-if="ila.submission.commodities.indexOf('semen') == -1">[&nbsp;&nbsp;]</span>
-        <span ng-if="ila.submission.commodities.indexOf('semen') > -1">[X]</span>
+        <span ng-if="ila.submission.commodities.semen == false">[&nbsp;&nbsp;]</span>
+        <span ng-if="ila.submission.commodities.semen == true">[<b>X</b>]</span>
         Semen
       </p>
       <p>
-        <span ng-if="ila.submission.commodities.indexOf('vetbio') == -1">[&nbsp;&nbsp;]</span>
-        <span ng-if="ila.submission.commodities.indexOf('vetbio') > -1">[X]</span>
+        <span ng-if="ila.submission.commodities.vetbio == false">[&nbsp;&nbsp;]</span>
+        <span ng-if="ila.submission.commodities.vetbio == true">[<b>X</b>]</span>
         Veterinary Biologicals
       </p>
     </div>
     <div class="col-sm-4">
       <p>
-        <span ng-if="ila.submission.commodities.indexOf('other') == -1">[&nbsp;&nbsp;]</span>
-        <span ng-if="ila.submission.commodities.indexOf('other') > -1">[X]</span>
-        Other<span ng-if="ila.submission.commodities.indexOf('other') > -1">: {{ila.submission.otherDetails}}</span>
+        <span ng-if="ila.submission.commodities.other == false">[&nbsp;&nbsp;]</span>
+        <span ng-if="ila.submission.commodities.other == true">[<b>X</b>]</span>
+        Other<span ng-if="ila.submission.commodities.other == true">: {{ila.submission.otherDetails}}</span>
       </p>
 
     </div>
