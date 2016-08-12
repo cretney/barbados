@@ -4955,36 +4955,6 @@
       ],
       "values": [
         {
-          "value": "01",
-          "name": "Costa Rica",
-          "description": "Costa Rica"
-        },
-        {
-          "value": "02",
-          "name": "Cuba",
-          "description": "Republic of Cuba"
-        },
-        {
-          "value": "03",
-          "name": "Colombia",
-          "description": "Colombia"
-        },
-        {
-          "value": "04",
-          "name": "Caribbean Common",
-          "description": "Caribbean Common"
-        },
-        {
-          "value": "05",
-          "name": "Dominican Republic",
-          "description": "Dominican Republic"
-        },
-        {
-          "value": "06",
-          "name": "Venezuela",
-          "description": "Venezuela"
-        },
-        {
           "value": "07",
           "name": "Australia",
           "description": "Australia"
@@ -5000,9 +4970,39 @@
           "description": "Belgium"
         },
         {
+          "value": "28",
+          "name": "Canada",
+          "description": "Canada"
+        },
+        {
+          "value": "04",
+          "name": "Caribbean Common",
+          "description": "Caribbean Common"
+        },
+        {
+          "value": "03",
+          "name": "Colombia",
+          "description": "Colombia"
+        },
+        {
+          "value": "01",
+          "name": "Costa Rica",
+          "description": "Costa Rica"
+        },
+        {
+          "value": "02",
+          "name": "Cuba",
+          "description": "Republic of Cuba"
+        },
+        {
           "value": "10",
           "name": "Denmark",
           "description": "Denmark"
+        },
+        {
+          "value": "05",
+          "name": "Dominican Republic",
+          "description": "Dominican Republic"
         },
         {
           "value": "11",
@@ -5065,6 +5065,11 @@
           "description": "Portugal"
         },
         {
+          "value": "29",
+          "name": "Puerto Rico",
+          "description": "Puerto Rico"
+        },
+        {
           "value": "23",
           "name": "Spain",
           "description": "Spain"
@@ -5085,29 +5090,24 @@
           "description": "United Kingdom"
         },
         {
-          "value": "27",
-          "name": "Virgin Islands (British)",
-          "description": "Virgin Islands (British)"
-        },
-        {
-          "value": "28",
-          "name": "Canada",
-          "description": "Canada"
-        },
-        {
-          "value": "29",
-          "name": "Puerto Rico",
-          "description": "Puerto Rico"
-        },
-        {
           "value": "30",
           "name": "United States",
           "description": "United States"
         },
         {
+          "value": "06",
+          "name": "Venezuela",
+          "description": "Venezuela"
+        },
+        {
+          "value": "27",
+          "name": "Virgin Islands (British)",
+          "description": "Virgin Islands (British)"
+        },
+        {
           "value": "99",
-          "name": "Other",
-          "description": "Other"
+          "name": "Country Not Listed",
+          "description": "Country Not Listed"
         }
       ]
     }
