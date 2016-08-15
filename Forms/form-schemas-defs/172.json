@@ -11,7 +11,7 @@
             "key": "origin",
             "type": "select-external",
             "title": "Certificate of Origin Issued in:",
-            "optionData": "form.options.countries"
+            "optionData": "form.options.gsp_countries_caribcan"
           }
         ]
       }
