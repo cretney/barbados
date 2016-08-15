@@ -1887,6 +1887,86 @@
       "document_ids": [
         75
       ]
+    },
+    {
+      "id": 33,
+      "readonly": false,
+      "name": "New Permit to import Dairy Products",
+      "description": "Permit to import Dairy Products",
+      "fileName": "vetdairy-import-dairy-products.html",
+      "document_ids": [
+        56
+      ]
+    },
+    {
+      "id": 34,
+      "readonly": true,
+      "name": "Permit to import Dairy Products",
+      "description": "Permit to import Dairy Products",
+      "fileName": "vetdairy-import-dairy-products-issued.html",
+      "document_ids": [
+        45
+      ]
+    },
+    {
+      "id": 35,
+      "readonly": false,
+      "name": "Application to Individual Permit to Import Meat Dairy Poulty",
+      "description": "Individual Permit to Import Meat Dairy Poulty",
+      "fileName": "vs-permit-import.html",
+      "document_ids": [
+        61
+      ]
+    },
+    {
+      "id": 36,
+      "readonly": true,
+      "name": "Individual Permit to Import Meat Dairy Poulty",
+      "description": "Individual Permit to Import Meat Dairy Poulty",
+      "fileName": "vs-permit-import-issued.html",
+      "document_ids": [
+        61
+      ]
+    },
+    {
+      "id": 40,
+      "readonly": false,
+      "name": "Sampling of Goods",
+      "description": "Examination of Sampling of Goods",
+      "fileName": "foodwhole-sampling-goods.html",
+      "document_ids": [
+        93
+      ]
+    },
+    {
+      "id": 41,
+      "readonly": true,
+      "name": "Sampling of Goods",
+      "description": "Examination of Sampling of Goods",
+      "fileName": "foodwhole-sampling-goods-issued.html",
+      "document_ids": [
+        93
+      ]
+    },
+    {
+      "id": 42,
+      "readonly": false,
+      "name": "New Inspection Request",
+      "description": "Application to Request Inspection Request",
+      "fileName": "fs-inspection-request.html",
+      "document_ids": [
+        66
+      ]
+    },
+    {
+      "id": 43,
+      "readonly": true,
+      "name": "Inspection Request",
+      "description": "Inspection Request is issued to:",
+      "fileName": "fs-inspection-request-issued.html",
+      "document_ids": [
+        66
+      ]
     }
   ],
   "workflows": [
@@ -1921,6 +2001,36 @@
       "signature": "1"
     },
     {
+      "id": 22,
+      "name": "VetDairyAnnual",
+      "owner": "Vet Services",
+      "pga_owner_id": 6,
+      "document_id": 56,
+      "processType": "I",
+      "purpose": "B",
+      "signature": "1"
+    },
+    {
+      "id": 23,
+      "name": "VetMeatPoultryAnnual",
+      "owner": "Vet Services",
+      "pga_owner_id": 6,
+      "document_id": 56,
+      "processType": "I",
+      "purpose": "B",
+      "signature": "1"
+    },
+    {
+      "id": 24,
+      "name": "FoodWholePostArrival",
+      "owner": "Food Safety",
+      "pga_owner_id": 5,
+      "document_id": 93,
+      "processType": "I",
+      "purpose": "A",
+      "signature": "1"
+    },
+    {
       "id": 28,
       "name": "PlantPostArrival",
       "owner": "Plant Quarantine",
@@ -1928,6 +2038,26 @@
       "document_id": 27,
       "processType": "I",
       "purpose": "W",
+      "signature": "1"
+    },
+    {
+      "id": 29,
+      "name": "VetDairyShip",
+      "owner": "Vet Services",
+      "pga_owner_id": 6,
+      "document_id": 61,
+      "processType": "I",
+      "purpose": "B",
+      "signature": "1"
+    },
+    {
+      "id": 30,
+      "name": "VetMeatPoultryShip",
+      "owner": "Vet Services",
+      "pga_owner_id": 6,
+      "document_id": 61,
+      "processType": "I",
+      "purpose": "B",
       "signature": "1"
     },
     {
@@ -2210,6 +2340,62 @@
       "description": "Application for Certificate of Origin (COO) Registration"
     },
     {
+      "workflow_id": 22,
+      "step": 1,
+      "form_id": 33,
+      "title": "New Application for permit to import Dairy Products",
+      "description": "Please complete the Import Permit Application"
+    },
+    {
+      "workflow_id": 22,
+      "step": 4,
+      "form_id": 34,
+      "title": "Permit to import Dairy Products",
+      "description": "Import Permit"
+    },
+    {
+      "workflow_id": 23,
+      "step": 1,
+      "form_id": 33,
+      "title": "New Application for permit to import Meat Dairy Poulty Products",
+      "description": "Please complete the Import Permit Application"
+    },
+    {
+      "workflow_id": 23,
+      "step": 4,
+      "form_id": 34,
+      "title": "Permit to import Poultry Products",
+      "description": "Import Permit"
+    },
+    {
+      "workflow_id": 24,
+      "step": 15,
+      "form_id": 42,
+      "title": "New Inspection Request",
+      "description": "Please complete the Inspection Request"
+    },
+    {
+      "workflow_id": 24,
+      "step": 16,
+      "form_id": 43,
+      "title": "Inspection Request",
+      "description": null
+    },
+    {
+      "workflow_id": 24,
+      "step": 18,
+      "form_id": 40,
+      "title": "New Examination of Sampling of Goods",
+      "description": "Please complete the Form for Sampling of Goods' Examination"
+    },
+    {
+      "workflow_id": 24,
+      "step": 19,
+      "form_id": 41,
+      "title": "Sampling of Goods",
+      "description": null
+    },
+    {
       "workflow_id": 28,
       "step": 15,
       "form_id": 48,
@@ -2229,6 +2415,34 @@
       "form_id": 32,
       "title": "Phitosanitary Inspection Certificate for Import Release",
       "description": "Phitosanitary Inspection Certificate"
+    },
+    {
+      "workflow_id": 29,
+      "step": 9,
+      "form_id": 35,
+      "title": "New Application to Individual Permit to Import Meat Dairy Poulty",
+      "description": "Please complete the Import Permit Application"
+    },
+    {
+      "workflow_id": 29,
+      "step": 13,
+      "form_id": 36,
+      "title": "Individual Permit to Import Meat Dairy Poulty",
+      "description": "Import Permit"
+    },
+    {
+      "workflow_id": 30,
+      "step": 9,
+      "form_id": 35,
+      "title": "New Application to Individual Permit to Import Meat Dairy Poulty",
+      "description": "Please complete the Import Permit Application"
+    },
+    {
+      "workflow_id": 30,
+      "step": 13,
+      "form_id": 36,
+      "title": "Individual Permit to Import Meat Dairy Poulty",
+      "description": "Import Permit"
     },
     {
       "workflow_id": 31,
@@ -4942,6 +5156,2856 @@
       "hscode": "0304.91.00",
       "id": 35,
       "notes": "Swordfish (Xiphias gladius)\tOfficial Tariff code missing from ASYCUDA"
+    },
+    {
+      "hscode": "0302.11.00",
+      "id": 36,
+      "notes": "Trout (Salmo trutta, Oncorhynchus mykiss, Oncorhynchus clarki, Oncorhynchus aguabonita, Oncorhynchus gilae, Oncorhynchus apache and Oncorhynchus chrysogaster)"
+    },
+    {
+      "hscode": "0302.12.00",
+      "id": 36,
+      "notes": "Pacific salmon (Oncorhynchus nerka, Oncorhynchus gorbuscha, Oncorhynchus keta, Oncorhynchus tschawytscha, Oncorhynchus kisutch, Oncorhynchus masou and Oncorhynchus rhodurus), Atlantic salmon (Salmo salar) and Danube salmon (Hucho hucho)"
+    },
+    {
+      "hscode": "0302.19.00",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0302.21.00",
+      "id": 36,
+      "notes": "Halibut (Reinhardtius hippoglossoides, Hippoglossus hippoglossus, Hippoglossus stenolepis)"
+    },
+    {
+      "hscode": "0302.22.00",
+      "id": 36,
+      "notes": "Plaice (Pleuronectes platessa)"
+    },
+    {
+      "hscode": "0302.23.00",
+      "id": 36,
+      "notes": "Sole (Solea spp.)"
+    },
+    {
+      "hscode": "0302.29.00",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0302.31.10",
+      "id": 36,
+      "notes": "For processing"
+    },
+    {
+      "hscode": "0302.31.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0302.32.10",
+      "id": 36,
+      "notes": "For processing"
+    },
+    {
+      "hscode": "0302.32.90.100",
+      "id": 36,
+      "notes": "Yellowfin tunas fresh or chilled"
+    },
+    {
+      "hscode": "0302.32.90.900",
+      "id": 36,
+      "notes": "Other Yellowfin tunas fresh or chilled"
+    },
+    {
+      "hscode": "0302.33.00",
+      "id": 36,
+      "notes": "Skipjack or stripe-bellied bonito"
+    },
+    {
+      "hscode": "0302.34.00",
+      "id": 36,
+      "notes": "Bigeye tunas (Thunnus obesus)"
+    },
+    {
+      "hscode": "0302.35.00",
+      "id": 36,
+      "notes": "Bluefin tunas (Thunnus thynnus)"
+    },
+    {
+      "hscode": "0302.36.00",
+      "id": 36,
+      "notes": "Southern bluefin tunas (Thunnus maccoyii)"
+    },
+    {
+      "hscode": "0302.39.00",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0302.40.10",
+      "id": 36,
+      "notes": "For processing"
+    },
+    {
+      "hscode": "0302.50.10",
+      "id": 36,
+      "notes": "For processing"
+    },
+    {
+      "hscode": "0302.61.10",
+      "id": 36,
+      "notes": "For processing"
+    },
+    {
+      "hscode": "0302.62.10",
+      "id": 36,
+      "notes": "For processing"
+    },
+    {
+      "hscode": "0302.63.00",
+      "id": 36,
+      "notes": "Coalfish (Pollachius virens)"
+    },
+    {
+      "hscode": "0302.64.10",
+      "id": 36,
+      "notes": "For processing"
+    },
+    {
+      "hscode": "0302.65.00",
+      "id": 36,
+      "notes": "Dogfish and other sharks"
+    },
+    {
+      "hscode": "0302.66.00",
+      "id": 36,
+      "notes": "Eels (Anguilla spp.)"
+    },
+    {
+      "hscode": "0302.67.00.100",
+      "id": 36,
+      "notes": "Swordfish (Xiphias gladius)"
+    },
+    {
+      "hscode": "0302.67.00.900",
+      "id": 36,
+      "notes": "Swordfish (Xiphias gladius)"
+    },
+    {
+      "hscode": "0302.68.00",
+      "id": 36,
+      "notes": "Toothfish (Dissostichus spp.)"
+    },
+    {
+      "hscode": "0302.69.10",
+      "id": 36,
+      "notes": "Alewives, saithe, pollock, and hake, for"
+    },
+    {
+      "hscode": "0302.69.20.100",
+      "id": 36,
+      "notes": "Dolphin (Coryphaena hippurus)"
+    },
+    {
+      "hscode": "0302.69.20.200",
+      "id": 36,
+      "notes": "Dolphin, fresh or chilled"
+    },
+    {
+      "hscode": "0302.69.20.900",
+      "id": 36,
+      "notes": "Snapper, croaker, grouper, banga-mary and sea trout"
+    },
+    {
+      "hscode": "0302.69.30",
+      "id": 36,
+      "notes": "Flying fish"
+    },
+    {
+      "hscode": "0302.69.90.900",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0302.70.00",
+      "id": 36,
+      "notes": "Livers and roes"
+    },
+    {
+      "hscode": "0303.11.00",
+      "id": 36,
+      "notes": "Sockeye salmon (red salmon) (Oncorhynchus nerka)"
+    },
+    {
+      "hscode": "0303.19.00",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0303.21.00",
+      "id": 36,
+      "notes": "Trout (Salmo trutta, Oncorhynchus mykiss,"
+    },
+    {
+      "hscode": "0303.22.00",
+      "id": 36,
+      "notes": "Atlantic salmon (Salmo Salar) and Danube"
+    },
+    {
+      "hscode": "0303.29.00",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0303.31.00",
+      "id": 36,
+      "notes": "Halibut (Reinhardtius hippoglossoides,"
+    },
+    {
+      "hscode": "0303.32.00",
+      "id": 36,
+      "notes": "Plaice (Pleuronectes platessa)"
+    },
+    {
+      "hscode": "0303.33.00",
+      "id": 36,
+      "notes": "Sole (Solea spp)"
+    },
+    {
+      "hscode": "0303.39.00",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0303.41.10",
+      "id": 36,
+      "notes": "For processing"
+    },
+    {
+      "hscode": "0303.42.10",
+      "id": 36,
+      "notes": "For processing"
+    },
+    {
+      "hscode": "0303.42.90.100",
+      "id": 36,
+      "notes": "Yellowfin tunas frozen"
+    },
+    {
+      "hscode": "0303.42.90.900",
+      "id": 36,
+      "notes": "Other Yellowfin tunas frozen"
+    },
+    {
+      "hscode": "0303.43.00",
+      "id": 36,
+      "notes": "Skipjack or stripe-bellied bonito"
+    },
+    {
+      "hscode": "0303.44.00",
+      "id": 36,
+      "notes": "Bigeye tunas (Thunnus obesus)"
+    },
+    {
+      "hscode": "0303.45.00",
+      "id": 36,
+      "notes": "Bluefin tunas (Thunnus thynnus)"
+    },
+    {
+      "hscode": "0303.46.00",
+      "id": 36,
+      "notes": "Southern bluefin tunas (Thunnus maccoyii)"
+    },
+    {
+      "hscode": "0303.49.00",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0303.51.10",
+      "id": 36,
+      "notes": "For processing"
+    },
+    {
+      "hscode": "0303.52.10",
+      "id": 36,
+      "notes": "For processing"
+    },
+    {
+      "hscode": "0303.61.10",
+      "id": 36,
+      "notes": "For processing"
+    },
+    {
+      "hscode": "0303.62.10",
+      "id": 36,
+      "notes": "For processing"
+    },
+    {
+      "hscode": "0303.71.10",
+      "id": 36,
+      "notes": "For processing"
+    },
+    {
+      "hscode": "0303.72.10",
+      "id": 36,
+      "notes": "For processing"
+    },
+    {
+      "hscode": "0303.73.00",
+      "id": 36,
+      "notes": "Coalfish (Pollachius virens)"
+    },
+    {
+      "hscode": "0303.74.10",
+      "id": 36,
+      "notes": "For processing"
+    },
+    {
+      "hscode": "0303.75.00",
+      "id": 36,
+      "notes": "Dogfish and other sharks"
+    },
+    {
+      "hscode": "0303.76.00",
+      "id": 36,
+      "notes": "Eels (Anguilla spp.)"
+    },
+    {
+      "hscode": "0303.77.00",
+      "id": 36,
+      "notes": "Sea bass (Dicentrarchus labrax, Dicentrarchus punctatus)"
+    },
+    {
+      "hscode": "0303.78.10",
+      "id": 36,
+      "notes": "For processing"
+    },
+    {
+      "hscode": "0303.79.10",
+      "id": 36,
+      "notes": "Alewives, saithe, pollock, and hake, for processing"
+    },
+    {
+      "hscode": "0303.79.20",
+      "id": 36,
+      "notes": "Snapper, croaker, grouper, dolphin, banga-niary and sea trout:"
+    },
+    {
+      "hscode": "0303.79.20.100",
+      "id": 36,
+      "notes": "Dolphin (Coryphaena hippuras)"
+    },
+    {
+      "hscode": "0303.79.20.900",
+      "id": 36,
+      "notes": "Snapper, croaker, grouper, banga-inary and sea trout"
+    },
+    {
+      "hscode": "0303.79.30",
+      "id": 36,
+      "notes": "Flying fish"
+    },
+    {
+      "hscode": "0303.79.90.100",
+      "id": 36,
+      "notes": "Kingfish (Acanathocybium solandri), Blue marlin (Makaira nigricans),White marlin (Tetrapturus albidus), Atlantic sailfish (Isotiophorus Albicans), Longbill spearfish (Tetrapturus pfluegeri)"
+    },
+    {
+      "hscode": "0303.79.90.900",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0303.80.10",
+      "id": 36,
+      "notes": "Livers"
+    },
+    {
+      "hscode": "0303.80.20",
+      "id": 36,
+      "notes": "Roes"
+    },
+    {
+      "hscode": "0305.10.00",
+      "id": 36,
+      "notes": "Flours, meals and pellets of fish, fit for human consumption"
+    },
+    {
+      "hscode": "0305.20.00",
+      "id": 36,
+      "notes": "Livers and roes of fish, dried, smoked, salted or in brine"
+    },
+    {
+      "hscode": "0305.30.00",
+      "id": 36,
+      "notes": "Fish fillets, dried, salted or in brine, but not smoked"
+    },
+    {
+      "hscode": "0305.41.00",
+      "id": 36,
+      "notes": "Pacific salmon (Oncorhynchus nerka, oncorhynchus gorbuscha, Oncorhynchus keta, Oncorhynchus tschawytscha, Oncorhynchus kisutch, Oncorhynchus masou and Oncorhynchus rhodurus), Atlantic salmon (Salmo salar) and Danube salmon (Hucho hucho)"
+    },
+    {
+      "hscode": "0305.42.00",
+      "id": 36,
+      "notes": "Herrings (Clupea harengus, Clupea pailasii)"
+    },
+    {
+      "hscode": "0305.49.10",
+      "id": 36,
+      "notes": "Cod, mackerel and alewives"
+    },
+    {
+      "hscode": "0305.49.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0305.51.00",
+      "id": 36,
+      "notes": "Cod (Gadus morhua, Gadus ogac, Gadus macrocephalus)"
+    },
+    {
+      "hscode": "0305.59.10",
+      "id": 36,
+      "notes": "Mackerel"
+    },
+    {
+      "hscode": "0305.59.20",
+      "id": 36,
+      "notes": "Herring, alewives, saithe, pollock, haddock and hake"
+    },
+    {
+      "hscode": "0305.59.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0305.61.00",
+      "id": 36,
+      "notes": "Herrings (Clupea harengus, Clupea pailasii)"
+    },
+    {
+      "hscode": "0305.62.00",
+      "id": 36,
+      "notes": "Cod (Gadus morhua, Gadus ogac, Gadus macrocephalus)"
+    },
+    {
+      "hscode": "0305.63.00",
+      "id": 36,
+      "notes": "Anchovies (Engraulis spp.)"
+    },
+    {
+      "hscode": "0305.69.10",
+      "id": 36,
+      "notes": "Mackerel"
+    },
+    {
+      "hscode": "0305.69.20",
+      "id": 36,
+      "notes": "Alewives, saithe, pollock, haddock and"
+    },
+    {
+      "hscode": "0305.69.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0306.11.00",
+      "id": 36,
+      "notes": "Rock lobster and other sea crawfish"
+    },
+    {
+      "hscode": "0306.12.00",
+      "id": 36,
+      "notes": "Lobsters (Homarus spp.)"
+    },
+    {
+      "hscode": "0306.13.00",
+      "id": 36,
+      "notes": "Shrimps and prawns"
+    },
+    {
+      "hscode": "0306.14.00",
+      "id": 36,
+      "notes": "Crabs"
+    },
+    {
+      "hscode": "0306.19.10",
+      "id": 36,
+      "notes": "Conch"
+    },
+    {
+      "hscode": "0306.19.20",
+      "id": 36,
+      "notes": "Other Crustaceans"
+    },
+    {
+      "hscode": "0306.19.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0306.22.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0306.23.20",
+      "id": 36,
+      "notes": "Cultured"
+    },
+    {
+      "hscode": "0306.23.30",
+      "id": 36,
+      "notes": "Wild"
+    },
+    {
+      "hscode": "0306.24.00",
+      "id": 36,
+      "notes": "Crabs"
+    },
+    {
+      "hscode": "0306.29.20",
+      "id": 36,
+      "notes": "Conch"
+    },
+    {
+      "hscode": "0306.29.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0307.10.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0307.21.00",
+      "id": 36,
+      "notes": "Live, fresh or chilled"
+    },
+    {
+      "hscode": "0307.29.00",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0307.31.00",
+      "id": 36,
+      "notes": "Live, fresh or chilled"
+    },
+    {
+      "hscode": "0307.39.00",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0307.41.00",
+      "id": 36,
+      "notes": "Live, fresh or chilled"
+    },
+    {
+      "hscode": "0307.49.00",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0307.51.00",
+      "id": 36,
+      "notes": "Live, fresh or chilled"
+    },
+    {
+      "hscode": "0307.59.00",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0307.60.00",
+      "id": 36,
+      "notes": "Snails, other than sea snails"
+    },
+    {
+      "hscode": "0307.91.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0307.99.10",
+      "id": 36,
+      "notes": "Sea-eggs"
+    },
+    {
+      "hscode": "0307.99.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "3919.10.00",
+      "id": 36,
+      "notes": "In rolls of a width not exceeding 20 cm"
+    },
+    {
+      "hscode": "3919.90.10",
+      "id": 36,
+      "notes": "Having the characteristics of articles ready for use, or marked for cutting into such articles"
+    },
+    {
+      "hscode": "3923.10.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "3923.21.00.100",
+      "id": 36,
+      "notes": "Plastic bags (Non-degradable) of polymers of ethylene"
+    },
+    {
+      "hscode": "3923.21.00.900",
+      "id": 36,
+      "notes": "Sacks and bags of polymers of ethylene"
+    },
+    {
+      "hscode": "3923.29.00.100",
+      "id": 36,
+      "notes": "Plastic bags (Non-degradable) other plastics"
+    },
+    {
+      "hscode": "3923.29.00.900",
+      "id": 36,
+      "notes": "Sacks and Bags of other plastics"
+    },
+    {
+      "hscode": "3923.30.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "3923.50.10",
+      "id": 36,
+      "notes": "Lids and caps"
+    },
+    {
+      "hscode": "3923.50.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "3923.90.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "3924.10.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "3924.90.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "4811.60.00",
+      "id": 36,
+      "notes": "Paper and paperboard, coated, impregnated or covered with wax, paraffin wax, stearin, oil or glycerol."
+    },
+    {
+      "hscode": "4811.90.00.900",
+      "id": 36,
+      "notes": "Other paper, paperboard, cellulose wadding and webs or cellulose fibres"
+    },
+    {
+      "hscode": "4819.10.00",
+      "id": 36,
+      "notes": "Cartons, boxes and cases, of corrugated paper or paperboard"
+    },
+    {
+      "hscode": "4819.20.00",
+      "id": 36,
+      "notes": "Folding cartons, boxes and cases, of non-corrugated paper or paperboard"
+    },
+    {
+      "hscode": "4819.30.10.100",
+      "id": 36,
+      "notes": "Unprinted paper bags having a base of a width => 40cm"
+    },
+    {
+      "hscode": "4819.30.10.900",
+      "id": 36,
+      "notes": "Unprinted sacks having a base of a width => 40cm"
+    },
+    {
+      "hscode": "4819.30.90.100",
+      "id": 36,
+      "notes": "Paper bags, nes, having a base of a width => 40cm"
+    },
+    {
+      "hscode": "4819.30.90.900",
+      "id": 36,
+      "notes": "Sacks, nes, having a base of a width => 40cm"
+    },
+    {
+      "hscode": "4819.40.10.100",
+      "id": 36,
+      "notes": "Unprinted paper bags"
+    },
+    {
+      "hscode": "4819.40.10.900",
+      "id": 36,
+      "notes": "Unprinted sacks including cones, of paper or paperboard"
+    },
+    {
+      "hscode": "4819.40.90.100",
+      "id": 36,
+      "notes": "Paper bags, nes"
+    },
+    {
+      "hscode": "4819.50.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8206.00.10",
+      "id": 36,
+      "notes": "Household tools"
+    },
+    {
+      "hscode": "8206.00.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8208.30.10",
+      "id": 36,
+      "notes": "For kitchen appliances"
+    },
+    {
+      "hscode": "8208.30.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8211.92.10",
+      "id": 36,
+      "notes": "Household"
+    },
+    {
+      "hscode": "8211.92.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8211.94.10",
+      "id": 36,
+      "notes": "For table and other household knives"
+    },
+    {
+      "hscode": "8211.94.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8211.95.10",
+      "id": 36,
+      "notes": "For table and other household knives"
+    },
+    {
+      "hscode": "8211.95.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8418.10.10",
+      "id": 36,
+      "notes": "Frost free, electrical"
+    },
+    {
+      "hscode": "8418.10.20",
+      "id": 36,
+      "notes": "Other, electrical"
+    },
+    {
+      "hscode": "8418.10.30",
+      "id": 36,
+      "notes": "Non-electrical"
+    },
+    {
+      "hscode": "8418.21.10",
+      "id": 36,
+      "notes": "Frost free, electrical"
+    },
+    {
+      "hscode": "8418.21.20",
+      "id": 36,
+      "notes": "Other, electrical"
+    },
+    {
+      "hscode": "8418.21.30",
+      "id": 36,
+      "notes": "Non-electrical"
+    },
+    {
+      "hscode": "8418.29.10",
+      "id": 36,
+      "notes": "Electrical"
+    },
+    {
+      "hscode": "8418.29.20",
+      "id": 36,
+      "notes": "Non-electrical"
+    },
+    {
+      "hscode": "8418.30.00",
+      "id": 36,
+      "notes": "Freezers of the chest type, not exceeding 800 litre capacity"
+    },
+    {
+      "hscode": "8418.40.00",
+      "id": 36,
+      "notes": "Freezers of the upright type, not exceeding 900 litre capacity"
+    },
+    {
+      "hscode": "8418.50.00",
+      "id": 36,
+      "notes": "Other furniture (chests, cabinets, display counters, show-cases and the like) for storage and display, incorporating refrigerating or freezing equipment"
+    },
+    {
+      "hscode": "8418.61.00",
+      "id": 36,
+      "notes": "Heat pumps other than air conditioning machines of heading 84.15"
+    },
+    {
+      "hscode": "8418.69.00",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8418.91.00",
+      "id": 36,
+      "notes": "Furniture designed to receive refrigerating or freezing equipment"
+    },
+    {
+      "hscode": "8418.99.00",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8422.30.00",
+      "id": 36,
+      "notes": "Machinery for filling, closing, sealing or labelling bottles, cans, boxes, bags or other containers; machinery for capsuling bottles, jars, tubes and similar containers; machinery for aerating beverages"
+    },
+    {
+      "hscode": "8422.40.00",
+      "id": 36,
+      "notes": "Other packing or wrapping machinery (including heat-shrink wrapping machinery)"
+    },
+    {
+      "hscode": "8422.90.00",
+      "id": 36,
+      "notes": "Parts"
+    },
+    {
+      "hscode": "8423.81.00",
+      "id": 36,
+      "notes": "Having a maximum weighing capacity not exceeding 30 kg"
+    },
+    {
+      "hscode": "8423.82.00",
+      "id": 36,
+      "notes": "Having a maximum weighing capacity exceeding 30 kg but not exceeding 5,000 kg"
+    },
+    {
+      "hscode": "8423.89.00",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8423.90.00",
+      "id": 36,
+      "notes": "Weighing machine weights of all kinds; parts of weighing machinery"
+    },
+    {
+      "hscode": "8438.80.00",
+      "id": 36,
+      "notes": "Other machinery"
+    },
+    {
+      "hscode": "8438.90.10",
+      "id": 36,
+      "notes": "Of the machines of subheading 8438.30.10."
+    },
+    {
+      "hscode": "8438.90.90",
+      "id": 36,
+      "notes": "Other"
+    },
+    {
+      "hscode": "0302.69.90.11",
+      "id": 36,
+      "notes": "Marlin, Sailfish, Spearfish Fresh or Chilled for Processing"
+    },
+    {
+      "hscode": "0302.69.90.12",
+      "id": 36,
+      "notes": "Kingfish, Swordfish Fresh or Chilled for processing"
+    },
+    {
+      "hscode": "0302.69.90.110",
+      "id": 36,
+      "notes": "Marlin, sailfish, spearfish fresh or chilled for processing"
+    },
+    {
+      "hscode": "0302.69.90.120",
+      "id": 36,
+      "notes": "Kingfish, swordfish fresh or chilled for processing"
+    },
+    {
+      "hscode": "0302.69.90.200",
+      "id": 36,
+      "notes": "Swordfish (Marlin,sailfish,spearfish)fresh or chilled"
+    },
+    {
+      "hscode": "0302.69.90.300",
+      "id": 36,
+      "notes": "Swordfish fresh or chilled"
+    },
+    {
+      "hscode": "0303.50.10",
+      "id": 36,
+      "notes": "processing"
+    },
+    {
+      "hscode": "0303.60.10",
+      "id": 36,
+      "notes": "processing"
+    },
+    {
+      "hscode": "0303.79.90.11",
+      "id": 36,
+      "notes": "Marlin, Sailfish, Spearfish frozen for processing"
+    },
+    {
+      "hscode": "0303.79.90.12",
+      "id": 36,
+      "notes": "Kingfish, Swordfish Frozen for processing"
+    },
+    {
+      "hscode": "0303.79.90.110",
+      "id": 36,
+      "notes": "Marlin, sailfish, spearfish frozen for processing"
+    },
+    {
+      "hscode": "0303.79.90.120",
+      "id": 36,
+      "notes": "Kingfish, swordfish frozen for processing"
+    },
+    {
+      "hscode": "0303.79.90.200",
+      "id": 36,
+      "notes": "Billfish (Marlin, sailfish, spearfish)frozen"
+    },
+    {
+      "hscode": "0303.79.90.300",
+      "id": 36,
+      "notes": "Swordfish frozen"
+    },
+    {
+      "hscode": "8418.22.00",
+      "id": 36,
+      "notes": "Absorption-type, electrical"
+    },
+    {
+      "hscode": "5607.29.10",
+      "id": 37,
+      "notes": "Other twine and ropes"
+    },
+    {
+      "hscode": "5607.49.10",
+      "id": 37,
+      "notes": "Twine and ropes"
+    },
+    {
+      "hscode": "5607.50.10",
+      "id": 37,
+      "notes": "Twine and ropes"
+    },
+    {
+      "hscode": "5607.90.10",
+      "id": 37,
+      "notes": "Twine and ropes"
+    },
+    {
+      "hscode": "5608.11.00",
+      "id": 37,
+      "notes": "Made up fishing nets"
+    },
+    {
+      "hscode": "5608.90.10",
+      "id": 37,
+      "notes": "Made up fishing nets"
+    },
+    {
+      "hscode": "8525.10.00",
+      "id": 37,
+      "notes": "Transmission apparatus"
+    },
+    {
+      "hscode": "8525.10.00.200",
+      "id": 37,
+      "notes": "Transmission apparatus (old)"
+    },
+    {
+      "hscode": "8526.91.00",
+      "id": 37,
+      "notes": "Radio navigational aid apparatus"
+    },
+    {
+      "hscode": "8529.10.00",
+      "id": 37,
+      "notes": "Aerials and aerial reflectors of all kinds; parts suitable for use therewith"
+    },
+    {
+      "hscode": "8902.00.10",
+      "id": 37,
+      "notes": "Vessels exceeding 708 cubic metres"
+    },
+    {
+      "hscode": "8902.00.20",
+      "id": 37,
+      "notes": "Trawlers"
+    },
+    {
+      "hscode": "8902.00.30",
+      "id": 37,
+      "notes": "Other fishing vessels"
+    },
+    {
+      "hscode": "8902.00.90",
+      "id": 37,
+      "notes": "Other"
+    },
+    {
+      "hscode": "9014.10.00",
+      "id": 37,
+      "notes": "Direction finding compasses"
+    },
+    {
+      "hscode": "9014.80.00",
+      "id": 37,
+      "notes": "Other instruments and appliances"
+    },
+    {
+      "hscode": "9014.90.00",
+      "id": 37,
+      "notes": "Parts and accessories"
+    },
+    {
+      "hscode": "0102.90.10",
+      "id": 38,
+      "notes": "Bulls, for breeding"
+    },
+    {
+      "hscode": "0102.90.40",
+      "id": 38,
+      "notes": "Cows, for breeding"
+    },
+    {
+      "hscode": "0103.10.00",
+      "id": 38,
+      "notes": "Pure-bred breeding animals"
+    },
+    {
+      "hscode": "0103.91.10",
+      "id": 38,
+      "notes": "For breeding"
+    },
+    {
+      "hscode": "0103.92.10",
+      "id": 38,
+      "notes": "For breeding"
+    },
+    {
+      "hscode": "0104.10.10",
+      "id": 38,
+      "notes": "For breeding"
+    },
+    {
+      "hscode": "0104.10.20",
+      "id": 38,
+      "notes": "For rearing"
+    },
+    {
+      "hscode": "0104.20.10",
+      "id": 38,
+      "notes": "For breeding"
+    },
+    {
+      "hscode": "0104.20.20",
+      "id": 38,
+      "notes": "For rearing"
+    },
+    {
+      "hscode": "0105.11.10",
+      "id": 38,
+      "notes": "For breeding"
+    },
+    {
+      "hscode": "0105.11.20",
+      "id": 38,
+      "notes": "For rearing"
+    },
+    {
+      "hscode": "0105.12.10",
+      "id": 38,
+      "notes": "For breeding"
+    },
+    {
+      "hscode": "0105.12.20",
+      "id": 38,
+      "notes": "For rearing"
+    },
+    {
+      "hscode": "0105.19.10",
+      "id": 38,
+      "notes": "For breeding"
+    },
+    {
+      "hscode": "0105.19.20",
+      "id": 38,
+      "notes": "For rearing"
+    },
+    {
+      "hscode": "0105.94.10",
+      "id": 38,
+      "notes": "Cocks for breeding"
+    },
+    {
+      "hscode": "0105.94.20",
+      "id": 38,
+      "notes": "Cocks for rearing"
+    },
+    {
+      "hscode": "0105.94.30",
+      "id": 38,
+      "notes": "Hens for breeding"
+    },
+    {
+      "hscode": "0105.94.40",
+      "id": 38,
+      "notes": "Hens for rearing"
+    },
+    {
+      "hscode": "0105.99.10",
+      "id": 38,
+      "notes": "For breeding"
+    },
+    {
+      "hscode": "0105.99.20",
+      "id": 38,
+      "notes": "For rearing"
+    },
+    {
+      "hscode": "0106.90.10",
+      "id": 38,
+      "notes": "Bees for breeding"
+    },
+    {
+      "hscode": "1209.10.00",
+      "id": 38,
+      "notes": "Sugar beet seed"
+    },
+    {
+      "hscode": "1209.21.00",
+      "id": 38,
+      "notes": "Lucerne (alfalfa) seed"
+    },
+    {
+      "hscode": "1209.22.00",
+      "id": 38,
+      "notes": "Clover (Trifoiium spp.) seed"
+    },
+    {
+      "hscode": "1209.23.00",
+      "id": 38,
+      "notes": "Fescue seed"
+    },
+    {
+      "hscode": "1209.24.00",
+      "id": 38,
+      "notes": "Kentucky blue grass (Poa pratensis L.) seed"
+    },
+    {
+      "hscode": "1209.25.00",
+      "id": 38,
+      "notes": "Rye grass (Lolium multiflorum Lam., Lolium perenne L.) seed"
+    },
+    {
+      "hscode": "1209.29.00",
+      "id": 38,
+      "notes": "Other"
+    },
+    {
+      "hscode": "1209.30.00",
+      "id": 38,
+      "notes": "Seeds of herbaceous plants cultivated principally for their flowers"
+    },
+    {
+      "hscode": "1209.91.00",
+      "id": 38,
+      "notes": "Vegetable seeds"
+    },
+    {
+      "hscode": "1209.99.00",
+      "id": 38,
+      "notes": "Other"
+    },
+    {
+      "hscode": "3917.21.00",
+      "id": 38,
+      "notes": "Of polymers of ethylene"
+    },
+    {
+      "hscode": "3917.22.00",
+      "id": 38,
+      "notes": "Of polymers of propylene"
+    },
+    {
+      "hscode": "3917.23.00",
+      "id": 38,
+      "notes": "Of polymers of vinyl chloride"
+    },
+    {
+      "hscode": "3917.29.00",
+      "id": 38,
+      "notes": "Of other plastics"
+    },
+    {
+      "hscode": "3917.31.00",
+      "id": 38,
+      "notes": "Flexible tubes, pipes and hoses, having a minimum hurst pressure of 27.6 MPa"
+    },
+    {
+      "hscode": "3917.32.10",
+      "id": 38,
+      "notes": "Electrical conduits and other piping, of PVC"
+    },
+    {
+      "hscode": "3917.32.20",
+      "id": 38,
+      "notes": "Garden hose"
+    },
+    {
+      "hscode": "3917.32.90",
+      "id": 38,
+      "notes": "Other"
+    },
+    {
+      "hscode": "3917.33.10",
+      "id": 38,
+      "notes": "Garden hose"
+    },
+    {
+      "hscode": "3917.33.90",
+      "id": 38,
+      "notes": "Other"
+    },
+    {
+      "hscode": "3917.39.00",
+      "id": 38,
+      "notes": "Other"
+    },
+    {
+      "hscode": "3917.40.00",
+      "id": 38,
+      "notes": "Fittings"
+    },
+    {
+      "hscode": "3923.10.10",
+      "id": 38,
+      "notes": "Egg boxes"
+    },
+    {
+      "hscode": "3923.10.90",
+      "id": 38,
+      "notes": "Other"
+    },
+    {
+      "hscode": "3924.90.20",
+      "id": 38,
+      "notes": "Flower pots"
+    },
+    {
+      "hscode": "8413.81.00",
+      "id": 38,
+      "notes": "Pumps"
+    },
+    {
+      "hscode": "8413.82.00",
+      "id": 38,
+      "notes": "Liquid elevators"
+    },
+    {
+      "hscode": "8413.91.10",
+      "id": 38,
+      "notes": "For the pumps of subheading 8413.30.00"
+    },
+    {
+      "hscode": "8413.91.90",
+      "id": 38,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8413.92.00",
+      "id": 38,
+      "notes": "Of liquid elevators"
+    },
+    {
+      "hscode": "8424.81.00",
+      "id": 38,
+      "notes": "Agricultural or horticultural"
+    },
+    {
+      "hscode": "8424.90.10",
+      "id": 38,
+      "notes": "Of agricultural sprayers"
+    },
+    {
+      "hscode": "8432.10.00",
+      "id": 38,
+      "notes": "Ploughs"
+    },
+    {
+      "hscode": "8432.21.00",
+      "id": 38,
+      "notes": "Disc harrows"
+    },
+    {
+      "hscode": "8432.29.00",
+      "id": 38,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8432.30.00",
+      "id": 38,
+      "notes": "Seeders, planters and transplanters"
+    },
+    {
+      "hscode": "8432.40.00",
+      "id": 38,
+      "notes": "Manure spreaders and fertilizer distributors"
+    },
+    {
+      "hscode": "8433.30.00",
+      "id": 38,
+      "notes": "Other haymaking machinery"
+    },
+    {
+      "hscode": "8433.40.00",
+      "id": 38,
+      "notes": "Straw or fodder balers, including pick-up balers"
+    },
+    {
+      "hscode": "8433.51.00",
+      "id": 38,
+      "notes": "Combine harvester-threshers"
+    },
+    {
+      "hscode": "8433.52.00",
+      "id": 38,
+      "notes": "Other threshing machinery"
+    },
+    {
+      "hscode": "8433.53.00",
+      "id": 38,
+      "notes": "Root or tuber harvesting machines"
+    },
+    {
+      "hscode": "8433.59.10",
+      "id": 38,
+      "notes": "Sugarcane harvesters"
+    },
+    {
+      "hscode": "8433.59.90",
+      "id": 38,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8433.60.00",
+      "id": 38,
+      "notes": "Machines for cleaning, sorting or grading eggs, fruit or other agricultural produce"
+    },
+    {
+      "hscode": "8434.10.00",
+      "id": 38,
+      "notes": "Milking machines"
+    },
+    {
+      "hscode": "8434.20.00",
+      "id": 38,
+      "notes": "Dairy machinery"
+    },
+    {
+      "hscode": "8434.90.00",
+      "id": 38,
+      "notes": "Parts"
+    },
+    {
+      "hscode": "8435.10.00",
+      "id": 38,
+      "notes": "Machinery"
+    },
+    {
+      "hscode": "8435.90.00",
+      "id": 38,
+      "notes": "Parts"
+    },
+    {
+      "hscode": "8436.10.00",
+      "id": 38,
+      "notes": "Machinery for preparing animal feeding stuffs"
+    },
+    {
+      "hscode": "8436.21.00",
+      "id": 38,
+      "notes": "Poultry incubators and brooders"
+    },
+    {
+      "hscode": "8436.29.00",
+      "id": 38,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8436.80.10",
+      "id": 38,
+      "notes": "Bee-keeping machinery"
+    },
+    {
+      "hscode": "8436.80.90",
+      "id": 38,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8436.91.00",
+      "id": 38,
+      "notes": "Of poultry-keeping machinery or poultry incubators and brooders"
+    },
+    {
+      "hscode": "8436.99.00",
+      "id": 38,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8481.10.00",
+      "id": 38,
+      "notes": "Pressure-reducing valves"
+    },
+    {
+      "hscode": "8481.30.00",
+      "id": 38,
+      "notes": "Check (nonreturn) valves"
+    },
+    {
+      "hscode": "8481.40.00",
+      "id": 38,
+      "notes": "Safety or relief valves"
+    },
+    {
+      "hscode": "8481.80.00",
+      "id": 38,
+      "notes": "Other appliances"
+    },
+    {
+      "hscode": "8481.90.00",
+      "id": 38,
+      "notes": "Parts"
+    },
+    {
+      "hscode": "0105.92.10",
+      "id": 38,
+      "notes": "Cocks for breeding"
+    },
+    {
+      "hscode": "0105.92.20",
+      "id": 38,
+      "notes": "Cocks for rearing"
+    },
+    {
+      "hscode": "0105.92.30",
+      "id": 38,
+      "notes": "Hens for breeding"
+    },
+    {
+      "hscode": "0105.92.40",
+      "id": 38,
+      "notes": "Hens for rearing"
+    },
+    {
+      "hscode": "0105.93.10",
+      "id": 38,
+      "notes": "Cocks for breeding"
+    },
+    {
+      "hscode": "0105.93.20",
+      "id": 38,
+      "notes": "Cocks for rearing"
+    },
+    {
+      "hscode": "0105.93.30",
+      "id": 38,
+      "notes": "Hens for breeding"
+    },
+    {
+      "hscode": "0105.93.40",
+      "id": 38,
+      "notes": "Hens for rearing"
+    },
+    {
+      "hscode": "1209.26.00",
+      "id": 38,
+      "notes": "Timothy grass seed"
+    },
+    {
+      "hscode": "8432.10.00",
+      "id": 39,
+      "notes": "Ploughs"
+    },
+    {
+      "hscode": "8432.21.00",
+      "id": 39,
+      "notes": "Disc harrows"
+    },
+    {
+      "hscode": "8432.29.00",
+      "id": 39,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8432.30.00",
+      "id": 39,
+      "notes": "Seeders, planters and transplanters"
+    },
+    {
+      "hscode": "8432.40.00",
+      "id": 39,
+      "notes": "Manure spreaders and fertilizer distributors"
+    },
+    {
+      "hscode": "8701.10.10",
+      "id": 39,
+      "notes": "For use in agriculture"
+    },
+    {
+      "hscode": "8704.31.90.100",
+      "id": 39,
+      "notes": "Other, g.v.w not exceeding 5 tons, where the chargeable value =< $45000.00"
+    },
+    {
+      "hscode": "8704.31.90.900",
+      "id": 39,
+      "notes": "Other, g.v.w not exceeding 5 tons, where the chargeable value > $45000.00"
+    },
+    {
+      "hscode": "8704.32.90",
+      "id": 39,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8704.90.00",
+      "id": 39,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.21.00",
+      "id": 39,
+      "notes": "Safety seat belts"
+    },
+    {
+      "hscode": "8708.29.00",
+      "id": 39,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.30.10",
+      "id": 39,
+      "notes": "Mounted brake linings for tractors"
+    },
+    {
+      "hscode": "8708.30.20",
+      "id": 39,
+      "notes": "Other mounted brake linings"
+    },
+    {
+      "hscode": "8708.30.30",
+      "id": 39,
+      "notes": "Brakes, servo-brakes and parts thereof for tractors"
+    },
+    {
+      "hscode": "8708.30.90",
+      "id": 39,
+      "notes": "Other brakes, servo-brakes and parts thereof"
+    },
+    {
+      "hscode": "8708.40.10",
+      "id": 39,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.40.90",
+      "id": 39,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.50.00",
+      "id": 39,
+      "notes": "Drive-axles with differential, whether or not provided with other transmission components, and non-driving axles; parts thereof:"
+    },
+    {
+      "hscode": "8708.50.10",
+      "id": 39,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.50.90",
+      "id": 39,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.70.10",
+      "id": 39,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.70.90",
+      "id": 39,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.80.00",
+      "id": 39,
+      "notes": "Suspension systems and parts thereof (including shock-absorbers):"
+    },
+    {
+      "hscode": "8708.80.10",
+      "id": 39,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.80.90",
+      "id": 39,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.91.10",
+      "id": 39,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.91.90",
+      "id": 39,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.92.10",
+      "id": 39,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.92.90",
+      "id": 39,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.93.10",
+      "id": 39,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.93.90",
+      "id": 39,
+      "notes": "Other'"
+    },
+    {
+      "hscode": "8708.94.10",
+      "id": 39,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.94.90",
+      "id": 39,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.95.00",
+      "id": 39,
+      "notes": "Safety airbags with inflator system; parts thereof"
+    },
+    {
+      "hscode": "8708.99.10",
+      "id": 39,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.99.90",
+      "id": 39,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.31.10",
+      "id": 39,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.31.90",
+      "id": 39,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.39.10",
+      "id": 39,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.39.90",
+      "id": 39,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.60.10",
+      "id": 39,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.60.90",
+      "id": 39,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8432.10.00",
+      "id": 40,
+      "notes": "Ploughs"
+    },
+    {
+      "hscode": "8432.21.00",
+      "id": 40,
+      "notes": "Disc harrows"
+    },
+    {
+      "hscode": "8432.29.00",
+      "id": 40,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8432.30.00",
+      "id": 40,
+      "notes": "Seeders, planters and transplanters"
+    },
+    {
+      "hscode": "8432.40.00",
+      "id": 40,
+      "notes": "Manure spreaders and fertilizer distributors"
+    },
+    {
+      "hscode": "8701.10.10",
+      "id": 40,
+      "notes": "For use in agriculture"
+    },
+    {
+      "hscode": "8704.31.90.100",
+      "id": 40,
+      "notes": "Other, g.v.w not exceeding 5 tons, where the chargeable value =< $45000.00"
+    },
+    {
+      "hscode": "8704.31.90.900",
+      "id": 40,
+      "notes": "Other, g.v.w not exceeding 5 tons, where the chargeable value > $45000.00"
+    },
+    {
+      "hscode": "8704.32.90",
+      "id": 40,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8704.90.00",
+      "id": 40,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.21.00",
+      "id": 40,
+      "notes": "Safety seat belts"
+    },
+    {
+      "hscode": "8708.29.00",
+      "id": 40,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.30.10",
+      "id": 40,
+      "notes": "Mounted brake linings for tractors"
+    },
+    {
+      "hscode": "8708.30.20",
+      "id": 40,
+      "notes": "Other mounted brake linings"
+    },
+    {
+      "hscode": "8708.30.30",
+      "id": 40,
+      "notes": "Brakes, servo-brakes and parts thereof for tractors"
+    },
+    {
+      "hscode": "8708.30.90",
+      "id": 40,
+      "notes": "Other brakes, servo-brakes and parts thereof"
+    },
+    {
+      "hscode": "8708.40.10",
+      "id": 40,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.40.90",
+      "id": 40,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.50.00",
+      "id": 40,
+      "notes": "Drive-axles with differential, whether or not provided with other transmission components, and non-driving axles; parts thereof:"
+    },
+    {
+      "hscode": "8708.50.10",
+      "id": 40,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.50.90",
+      "id": 40,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.70.10",
+      "id": 40,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.70.90",
+      "id": 40,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.80.00",
+      "id": 40,
+      "notes": "Suspension systems and parts thereof (including shock-absorbers):"
+    },
+    {
+      "hscode": "8708.80.10",
+      "id": 40,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.80.90",
+      "id": 40,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.91.10",
+      "id": 40,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.91.90",
+      "id": 40,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.92.10",
+      "id": 40,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.92.90",
+      "id": 40,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.93.10",
+      "id": 40,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.93.90",
+      "id": 40,
+      "notes": "Other'"
+    },
+    {
+      "hscode": "8708.94.10",
+      "id": 40,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.94.90",
+      "id": 40,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.95.00",
+      "id": 40,
+      "notes": "Safety airbags with inflator system; parts thereof"
+    },
+    {
+      "hscode": "8708.99.10",
+      "id": 40,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.99.90",
+      "id": 40,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.31.10",
+      "id": 40,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.31.90",
+      "id": 40,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.39.10",
+      "id": 40,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.39.90",
+      "id": 40,
+      "notes": "Other"
+    },
+    {
+      "hscode": "8708.60.10",
+      "id": 40,
+      "notes": "For tractors"
+    },
+    {
+      "hscode": "8708.60.90",
+      "id": 40,
+      "notes": "Other"
+    },
+    {
+      "hscode": "01.05 ",
+      "id": 22,
+      "notes": "Live poultry"
+    },
+    {
+      "hscode": "02.01 ",
+      "id": 22,
+      "notes": "Meat of bovine animals, fresh or chilled"
+    },
+    {
+      "hscode": "02.02 ",
+      "id": 22,
+      "notes": "Meat of bovine animals, frozen"
+    },
+    {
+      "hscode": "02.03 ",
+      "id": 22,
+      "notes": "Meat of swine, fresh chilled or frozen"
+    },
+    {
+      "hscode": "02.04 ",
+      "id": 22,
+      "notes": "Meat of sheep or goats, fresh, chilled or frozen"
+    },
+    {
+      "hscode": "0210.101 ",
+      "id": 22,
+      "notes": "Ham 0210.102 Bacon"
+    },
+    {
+      "hscode": "04.01 ",
+      "id": 22,
+      "notes": "Milk and cream, not concentrated nor containing added sugar or other sweetening matter"
+    },
+    {
+      "hscode": "04.02 ",
+      "id": 22,
+      "notes": "Milk and cream, concentrated or containing added sugar or other sweetening matter"
+    },
+    {
+      "hscode": "16.01 ",
+      "id": 22,
+      "notes": "Sausages and similar products, of meat, meat offal or blood; food preparations based on these products"
+    },
+    {
+      "hscode": "16.02 ",
+      "id": 22,
+      "notes": "Other prepared or preserved meat, meat offal or blood"
+    },
+    {
+      "hscode": "1602.32 ",
+      "id": 22,
+      "notes": "Other than Corned Beef"
+    },
+    {
+      "hscode": "2105.001 ",
+      "id": 22,
+      "notes": "Ice cream"
+    },
+    {
+      "hscode": "02.07",
+      "id": 22,
+      "notes": "Meatofpoultryofheading01.05,fresh,chilledorfrozen. Meatofpoultryofheading01.05,fresh,chilledorfroze"
+    },
+    {
+      "hscode": "01.05 ",
+      "id": 29,
+      "notes": "Live poultry"
+    },
+    {
+      "hscode": "02.01 ",
+      "id": 29,
+      "notes": "Meat of bovine animals, fresh or chilled"
+    },
+    {
+      "hscode": "02.02 ",
+      "id": 29,
+      "notes": "Meat of bovine animals, frozen"
+    },
+    {
+      "hscode": "02.03 ",
+      "id": 29,
+      "notes": "Meat of swine, fresh chilled or frozen"
+    },
+    {
+      "hscode": "02.04 ",
+      "id": 29,
+      "notes": "Meat of sheep or goats, fresh, chilled or frozen"
+    },
+    {
+      "hscode": "0210.101 ",
+      "id": 29,
+      "notes": "Ham 0210.102 Bacon"
+    },
+    {
+      "hscode": "04.01 ",
+      "id": 29,
+      "notes": "Milk and cream, not concentrated nor containing added sugar or other sweetening matter"
+    },
+    {
+      "hscode": "04.02 ",
+      "id": 29,
+      "notes": "Milk and cream, concentrated or containing added sugar or other sweetening matter"
+    },
+    {
+      "hscode": "16.01 ",
+      "id": 29,
+      "notes": "Sausages and similar products, of meat, meat offal or blood; food preparations based on these products"
+    },
+    {
+      "hscode": "16.02 ",
+      "id": 29,
+      "notes": "Other prepared or preserved meat, meat offal or blood"
+    },
+    {
+      "hscode": "1602.32 ",
+      "id": 29,
+      "notes": "Other than Corned Beef"
+    },
+    {
+      "hscode": "2105.001 ",
+      "id": 29,
+      "notes": "Ice cream"
+    },
+    {
+      "hscode": "02.07",
+      "id": 29,
+      "notes": "Meatofpoultryofheading01.05,fresh,chilledorfrozen. Meatofpoultryofheading01.05,fresh,chilledorfroze"
+    },
+    {
+      "hscode": "02.01 ",
+      "id": 23,
+      "notes": "Meat of bovine animals, fresh or chilled"
+    },
+    {
+      "hscode": "02.02 ",
+      "id": 23,
+      "notes": "Meat of bovine animals, frozen"
+    },
+    {
+      "hscode": "02.03 ",
+      "id": 23,
+      "notes": "Meat of swine, fresh, chilled or frozen"
+    },
+    {
+      "hscode": "02.04 ",
+      "id": 23,
+      "notes": "Meat of sheep or goats, fresh, chilled or frozen"
+    },
+    {
+      "hscode": "02.05 ",
+      "id": 23,
+      "notes": "Meat of horses, asses, mules or hinnies, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.06 ",
+      "id": 23,
+      "notes": "Edible offal of bovine animals, swine, sheep, goats, horses, asses, mules or hinnies, fresh, chilled or frozen. 02.07 Meat and edible offal, of the poultry of heading 01.05, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.08 ",
+      "id": 23,
+      "notes": "Other meat and edible meat offal, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.09 ",
+      "id": 23,
+      "notes": "Pig fat, free of lean meat, and poultry fat, not rendered or otherwise extracted, fresh, chilled, frozen, salted, in brine, dried or smoked 02.10 Meat and edible meat offal, salted, in brine, dried or smoked; edible flours and meals of meat or meat offal."
+    },
+    {
+      "hscode": "16.01 ",
+      "id": 23,
+      "notes": "Sausages and similar products, of meat, meat offal or blood; food preparations based on these products."
+    },
+    {
+      "hscode": "16.02 ",
+      "id": 23,
+      "notes": "Other prepared or preserved meat, meat offal or blood"
+    },
+    {
+      "hscode": "02.01 ",
+      "id": 30,
+      "notes": "Meat of bovine animals, fresh or chilled"
+    },
+    {
+      "hscode": "02.02 ",
+      "id": 30,
+      "notes": "Meat of bovine animals, frozen"
+    },
+    {
+      "hscode": "02.03 ",
+      "id": 30,
+      "notes": "Meat of swine, fresh, chilled or frozen"
+    },
+    {
+      "hscode": "02.04 ",
+      "id": 30,
+      "notes": "Meat of sheep or goats, fresh, chilled or frozen"
+    },
+    {
+      "hscode": "02.05 ",
+      "id": 30,
+      "notes": "Meat of horses, asses, mules or hinnies, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.06 ",
+      "id": 30,
+      "notes": "Edible offal of bovine animals, swine, sheep, goats, horses, asses, mules or hinnies, fresh, chilled or frozen. 02.07 Meat and edible offal, of the poultry of heading 01.05, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.08 ",
+      "id": 30,
+      "notes": "Other meat and edible meat offal, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.09 ",
+      "id": 30,
+      "notes": "Pig fat, free of lean meat, and poultry fat, not rendered or otherwise extracted, fresh, chilled, frozen, salted, in brine, dried or smoked 02.10 Meat and edible meat offal, salted, in brine, dried or smoked; edible flours and meals of meat or meat offal."
+    },
+    {
+      "hscode": "16.01 ",
+      "id": 30,
+      "notes": "Sausages and similar products, of meat, meat offal or blood; food preparations based on these products."
+    },
+    {
+      "hscode": "16.02 ",
+      "id": 30,
+      "notes": "Other prepared or preserved meat, meat offal or blood"
+    },
+    {
+      "hscode": "02.01 ",
+      "id": 24,
+      "notes": "Meat of bovine animals, fresh or chilled"
+    },
+    {
+      "hscode": "02.02 ",
+      "id": 24,
+      "notes": "Meat of bovine animals, frozen"
+    },
+    {
+      "hscode": "02.03 ",
+      "id": 24,
+      "notes": "Meat of swine, fresh, chilled or frozen"
+    },
+    {
+      "hscode": "02.04 ",
+      "id": 24,
+      "notes": "Meat of sheep or goats, fresh, chilled or frozen"
+    },
+    {
+      "hscode": "02.05 ",
+      "id": 24,
+      "notes": "Meat of horses, asses, mules or hinnies, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.06 ",
+      "id": 24,
+      "notes": "Edible offal of bovine animals, swine, sheep, goats, horses, asses, mules or hinnies, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.07 ",
+      "id": 24,
+      "notes": "Meat and edible offal, of the poultry of heading 01.05, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.08 ",
+      "id": 24,
+      "notes": "Other meat and edible meat offal, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.09 ",
+      "id": 24,
+      "notes": "Pig fat, free of lean meat, and poultry fat, not rendered or otherwise extracted, fresh, chilled, frozen, salted, in brine, dried or smoked"
+    },
+    {
+      "hscode": "02.10 ",
+      "id": 24,
+      "notes": "Meat and edible meat offal, salted, in brine, dried or smoked; edible flours and meals of meat or meat offal."
+    },
+    {
+      "hscode": "03.02 ",
+      "id": 24,
+      "notes": "Fish, fresh or chilled, excluding fish fillets and other fish meat of heading 03.04."
+    },
+    {
+      "hscode": "03.03 ",
+      "id": 24,
+      "notes": "Fish, frozen, excluding fish fillets and other fish meat of heading 03.04"
+    },
+    {
+      "hscode": "03.04 ",
+      "id": 24,
+      "notes": "Fish fillets and other fish meat (whether or not minced), fresh, chilled or frozen"
+    },
+    {
+      "hscode": "03.05 ",
+      "id": 24,
+      "notes": "Fish, dried, salted or in brine; smoked fish, whether or not cooked before or during the smoking process; flours, meals and pellets of fish, fit for human consumption."
+    },
+    {
+      "hscode": "03.06 ",
+      "id": 24,
+      "notes": "Crustaceans, whether in shell or not, live, fresh, chilled, frozen, dried, salted or in brine; crustaceans, in shell, cooked by steaming or by boiling in water, whether or not chilled, frozen, dried, salted or in brine; flours, meals and pellets of crustaceans, fit for human consumption."
+    },
+    {
+      "hscode": "03.07 ",
+      "id": 24,
+      "notes": "Molluscs, whether in shell or not, live, fresh, chilled, frozen, dried, salted or in brine; aquatic invertebrates other than crustaceans and molluscs, live, fresh, chilled, frozen, dried, salted or in brine; flours, meals and pellets of aquatic invertebrates other than crustaceans, fit for human consumption"
+    },
+    {
+      "hscode": "04.01 ",
+      "id": 24,
+      "notes": "Milk and cream, not concentrated nor containing added sugar or other sweetening matter"
+    },
+    {
+      "hscode": "04.02 ",
+      "id": 24,
+      "notes": "Milk and cream, concentrated or containing added sugar or other sweetening matter."
+    },
+    {
+      "hscode": "04.03 ",
+      "id": 24,
+      "notes": "Buttermilk, curdled milk and cream, yogurt, kephir and other fermented or acidified milk and cream, whether or not concentrated or containing added sugar or other sweetening matter or flavoured or containing added fruit, nuts or cocoa."
+    },
+    {
+      "hscode": "04.04 ",
+      "id": 24,
+      "notes": "Whey, whether or not concentrated or containing added sugar or other sweetening matter; products consisting of natural milk constituents, whether or not containing added sugar or other sweetening matter, not elsewhere specified or included."
+    },
+    {
+      "hscode": "04.05 ",
+      "id": 24,
+      "notes": "Butter and other fats and oils derived from milk; dairy spreads"
+    },
+    {
+      "hscode": "04.06 ",
+      "id": 24,
+      "notes": "Cheese and curd."
+    },
+    {
+      "hscode": "04.07 ",
+      "id": 24,
+      "notes": "Birds' eggs, in shell, fresh, preserved or cooked."
+    },
+    {
+      "hscode": "04.08 ",
+      "id": 24,
+      "notes": "Birds' eggs, not in shell, and egg yolks, fresh, dried, cooked by steaming or by boiling in water, moulded, frozen or otherwise preserved, whether or not containing added sugar or other sweetening matter"
+    },
+    {
+      "hscode": "04.09 ",
+      "id": 24,
+      "notes": "Natural honey"
+    },
+    {
+      "hscode": "04.10 ",
+      "id": 24,
+      "notes": "Edible products of animal origin, not elsewhere specified or included."
+    },
+    {
+      "hscode": "05.04 ",
+      "id": 24,
+      "notes": "Guts, bladders and stomachs of animals (other than fish), whole and pieces thereof, fresh, chilled, frozen, salted, in brine, dried or smoked."
+    },
+    {
+      "hscode": "07.01 ",
+      "id": 24,
+      "notes": "Potatoes, fresh or chilled."
+    },
+    {
+      "hscode": "07.02 ",
+      "id": 24,
+      "notes": "Tomatoes, fresh or chilled"
+    },
+    {
+      "hscode": "07.03 ",
+      "id": 24,
+      "notes": "Onions, shallots, garlic, leeks and other alliaceous vegetables, fresh or chilled."
+    },
+    {
+      "hscode": "07.04 ",
+      "id": 24,
+      "notes": "Cabbages, cauliflowers, kohlrabi, kale and similar edible brassicas, fresh or chilled."
+    },
+    {
+      "hscode": "07.05 ",
+      "id": 24,
+      "notes": "Lettuce (Lactuca sativa) and chicory (Cichorium spp.), fresh or chilled."
+    },
+    {
+      "hscode": "07.06 ",
+      "id": 24,
+      "notes": "Carrots, turnips, salad beetroot, salsify, celeriac, radishes and similar edible roots, fresh or chilled."
+    },
+    {
+      "hscode": "07.07 ",
+      "id": 24,
+      "notes": "Cucumbers and gherkins, fresh or chilled."
+    },
+    {
+      "hscode": "07.08 ",
+      "id": 24,
+      "notes": "Leguminous vegetables, shelled or unshelled, fresh or chilled."
+    },
+    {
+      "hscode": "07.09 ",
+      "id": 24,
+      "notes": "Other vegetables, fresh or chilled."
+    },
+    {
+      "hscode": "07.10 ",
+      "id": 24,
+      "notes": "Vegetables (uncooked or cooked by steaming or boiling in water), frozen"
+    },
+    {
+      "hscode": "07.11 ",
+      "id": 24,
+      "notes": "Vegetables provisionally preserved (for example, by sulphur dioxide gas, in brine, in sulphur water or in other preservative solutions), but unsuitable in that state for immediate consumption."
+    },
+    {
+      "hscode": "07.12 ",
+      "id": 24,
+      "notes": "Dried vegetables, whole, cut, sliced, broken or in powder, but not further prepared."
+    },
+    {
+      "hscode": "07.13 ",
+      "id": 24,
+      "notes": "Dried leguminous vegetables, shelled, whether or not skinned or split."
+    },
+    {
+      "hscode": "07.14 ",
+      "id": 24,
+      "notes": "Manioc, arrowroot, salep, Jerusalem artichokes, sweet potatoes and similar roots and tubers with high starch or inulin content, fresh, chilled, frozen or dried, whether or not sliced or in the form of pellets; sago pith."
+    },
+    {
+      "hscode": "08.01 ",
+      "id": 24,
+      "notes": "Coconuts, Brazil nuts and cashew nuts, fresh or dried, whether or not shelled or peeled."
+    },
+    {
+      "hscode": "08.02 ",
+      "id": 24,
+      "notes": "Other nuts, fresh or dried, whether or not shelled or peeled."
+    },
+    {
+      "hscode": "08.03 ",
+      "id": 24,
+      "notes": "Bananas, including plantains, fresh or dried."
+    },
+    {
+      "hscode": "08.04 ",
+      "id": 24,
+      "notes": "Dates, figs, pineapples, avocados, guavas, mangoes and mangosteens, fresh or dried."
+    },
+    {
+      "hscode": "08.05 ",
+      "id": 24,
+      "notes": "Citrus fruit, fresh or dried"
+    },
+    {
+      "hscode": "08.06 ",
+      "id": 24,
+      "notes": "Grapes, fresh or dried."
+    },
+    {
+      "hscode": "08.07 ",
+      "id": 24,
+      "notes": "Melons (including watermelons) and papaws (papayas), fresh"
+    },
+    {
+      "hscode": "08.08 ",
+      "id": 24,
+      "notes": "Apples, pears and quinces, fresh"
+    },
+    {
+      "hscode": "08.09 ",
+      "id": 24,
+      "notes": "Apricots, cherries, peaches (including nectarines), plums and sloes, fresh."
+    },
+    {
+      "hscode": "08.10 ",
+      "id": 24,
+      "notes": "Other fruit, fresh"
+    },
+    {
+      "hscode": "08.11 ",
+      "id": 24,
+      "notes": "Fruit and nuts, uncooked or cooked by steaming or boiling in water, frozen, whether or not containing added sugar or other sweetening matter."
+    },
+    {
+      "hscode": "08.12 ",
+      "id": 24,
+      "notes": "Fruit and nuts, provisionally preserved (for example, by sulphur dioxide gas, in brine, in sulphur water or in other preservative solutions), but unsuitable in that state for immediate consumption."
+    },
+    {
+      "hscode": "08.13 ",
+      "id": 24,
+      "notes": "Fruit, dried, other than that of headings 08.01 to 08.06; mixtures of nuts or dried fruits of this Chapter."
+    },
+    {
+      "hscode": "08.14 ",
+      "id": 24,
+      "notes": "Peel of citrus fruit or melons (including watermelons), fresh, frozen, dried or provisionally preserved in brine, in sulphur water or in other preservative solutions."
+    },
+    {
+      "hscode": "09.01 ",
+      "id": 24,
+      "notes": "Coffee, whether or not roasted or decaffeinated; coffee husks and skins; coffee substitutes containing coffee in any proportion."
+    },
+    {
+      "hscode": "09.02 ",
+      "id": 24,
+      "notes": "Tea, whether or not flavoured."
+    },
+    {
+      "hscode": "09.03 ",
+      "id": 24,
+      "notes": "Maté."
+    },
+    {
+      "hscode": "09.04 ",
+      "id": 24,
+      "notes": "Pepper of the genus Piper; dried or crushed or ground fruits of the genus Capsicumor of the genus Pimenta."
+    },
+    {
+      "hscode": "09.05 ",
+      "id": 24,
+      "notes": "Vanilla."
+    },
+    {
+      "hscode": "09.06 ",
+      "id": 24,
+      "notes": "Cinnamon and cinnamon-tree flowers"
+    },
+    {
+      "hscode": "09.07 ",
+      "id": 24,
+      "notes": "Cloves (whole fruit, cloves and stems)"
+    },
+    {
+      "hscode": "09.08 ",
+      "id": 24,
+      "notes": "Nutmeg, mace and cardamoms."
+    },
+    {
+      "hscode": "09.09 ",
+      "id": 24,
+      "notes": "Seeds of anise, badian, fennel, coriander, cumin or caraway; juniper berries."
+    },
+    {
+      "hscode": "09.10 ",
+      "id": 24,
+      "notes": "Ginger, saffron, turmeric (curcuma), thyme, bay leaves, curry and other spices"
+    },
+    {
+      "hscode": "10.01 ",
+      "id": 24,
+      "notes": "Wheat and meslin"
+    },
+    {
+      "hscode": "10.02 ",
+      "id": 24,
+      "notes": "Rye."
+    },
+    {
+      "hscode": "10.03 ",
+      "id": 24,
+      "notes": "Barley"
+    },
+    {
+      "hscode": "10.04 ",
+      "id": 24,
+      "notes": "Oats"
+    },
+    {
+      "hscode": "10.05 ",
+      "id": 24,
+      "notes": "Maize (corn)."
+    },
+    {
+      "hscode": "10.06 ",
+      "id": 24,
+      "notes": "Rice."
+    },
+    {
+      "hscode": "10.07 ",
+      "id": 24,
+      "notes": "Grain sorghum"
+    },
+    {
+      "hscode": "10.08 ",
+      "id": 24,
+      "notes": "Buckwheat, millet and canary seed; other cereals."
+    },
+    {
+      "hscode": "11.01 ",
+      "id": 24,
+      "notes": "Wheat or meslin flour."
+    },
+    {
+      "hscode": "11.02 ",
+      "id": 24,
+      "notes": "Cereal flours other than of wheat or meslin."
+    },
+    {
+      "hscode": "11.03 ",
+      "id": 24,
+      "notes": "Cereal groats, meal and pellets."
+    },
+    {
+      "hscode": "11.04 ",
+      "id": 24,
+      "notes": "Cereal grains otherwise worked (for example, hulled, rolled, flaked, pearled, sliced or kibbled), except rice of heading 10.06; germ of cereals, whole, rolled, flaked or ground"
+    },
+    {
+      "hscode": "12.01 ",
+      "id": 24,
+      "notes": "Soya beans, whether or not broken."
+    },
+    {
+      "hscode": "12.02 ",
+      "id": 24,
+      "notes": "Ground-nuts, not roasted or otherwise cooked, whether or not shelled or broken."
+    },
+    {
+      "hscode": "12.03 ",
+      "id": 24,
+      "notes": "Copra."
+    },
+    {
+      "hscode": "12.04 ",
+      "id": 24,
+      "notes": "Linseed, whether or not broken."
+    },
+    {
+      "hscode": "12.05 ",
+      "id": 24,
+      "notes": "Rape or colza seeds, whether or not broken"
+    },
+    {
+      "hscode": "12.06 ",
+      "id": 24,
+      "notes": "Sunflower seeds, whether or not broken"
+    },
+    {
+      "hscode": "12.07 ",
+      "id": 24,
+      "notes": "Other oil seeds and oleaginous fruits, whether or not broken"
+    },
+    {
+      "hscode": "12.09 ",
+      "id": 24,
+      "notes": "Seeds, fruit and spores, of a kind used for sowing"
+    },
+    {
+      "hscode": "12.10 ",
+      "id": 24,
+      "notes": "Hop cones, fresh or dried, whether or not ground, powdered or in the form of pellets; lupulin"
+    },
+    {
+      "hscode": "12.11 ",
+      "id": 24,
+      "notes": "Plants and parts of plants (including seeds and fruits), of a kind used primarily in perfumery, in pharmacy or for insecticidal, fungicidal or similar purposes, fresh or dried, whether or not cut, crushed or powdered."
+    },
+    {
+      "hscode": "12.12 ",
+      "id": 24,
+      "notes": "Locust beans, seaweeds and other algae, sugar beet and sugar cane, fresh, chilled, frozen or dried, whether or not ground; fruit stones and kernels and other vegetable products (including unroasted chicory roots of the variety Cichorium intybus sativum) of a kind used primarily for human consumption, not elsewhere specified or included."
+    },
+    {
+      "hscode": "13.01 ",
+      "id": 24,
+      "notes": "Lac; natural gums, resins, gum-resins and oleoresins (for example, balsams)."
+    },
+    {
+      "hscode": "13.02 ",
+      "id": 24,
+      "notes": "Vegetable saps and extracts; pectic substances, pectinates and pectates; agar-agar and other mucilages and thickeners, whether or not modified, derived from vegetable products."
+    },
+    {
+      "hscode": "15.01 ",
+      "id": 24,
+      "notes": "Pig fat (including lard) and poultry fat, other than that of heading 02.09 or 15.03."
+    },
+    {
+      "hscode": "15.02 ",
+      "id": 24,
+      "notes": "Fats of bovine animals, sheep or goats, other than those of heading 15.03."
+    },
+    {
+      "hscode": "15.03 ",
+      "id": 24,
+      "notes": "Lard stearin, lard oil, oleostearin, oleo-oil and tallow oil, not emulsified or mixed or otherwise prepared."
+    },
+    {
+      "hscode": "15.04 ",
+      "id": 24,
+      "notes": "Fats and oils and their fractions, of fish or marine mammals, whether or not refined, but not chemically modified."
+    },
+    {
+      "hscode": "15.05 ",
+      "id": 24,
+      "notes": "Wool grease and fatty substances derived therefrom (including lanolin)"
+    },
+    {
+      "hscode": "15.06 ",
+      "id": 24,
+      "notes": "Other animal fats and oils and their fractions, whether or not refined, but not chemically modified."
+    },
+    {
+      "hscode": "15.16 ",
+      "id": 24,
+      "notes": "Animal or vegetable fats and oils and their fractions, partly or wholly hydrogenated, inter-esterified, re-esterified or elaidinised, whether or not refined, but not further prepared."
+    },
+    {
+      "hscode": "15.17 ",
+      "id": 24,
+      "notes": "Margarine; edible mixtures or preparations of animal or vegetable fats or oils or of fractions of different fats or oils of this Chapter, other than edible fats or oils or their fractions of heading 15.16."
+    },
+    {
+      "hscode": "15.18 ",
+      "id": 24,
+      "notes": "Animal or vegetable fats and oils and their fractions, boiled, oxidised, dehydrated, sulphurised, blown, polymerised by heat in vacuum or in inert gas or otherwise chemically modified, excluding those of heading"
+    },
+    {
+      "hscode": "16.01 ",
+      "id": 24,
+      "notes": "Sausages and similar products, of meat, meat offal or blood; food preparations based on these products."
+    },
+    {
+      "hscode": "16.02 ",
+      "id": 24,
+      "notes": "Other prepared or preserved meat, meat offal or blood"
+    },
+    {
+      "hscode": "16.03 ",
+      "id": 24,
+      "notes": "Extracts and juices of meat, fish or crustaceans, molluscs or other aquatic invertebrates."
+    },
+    {
+      "hscode": "16.04 ",
+      "id": 24,
+      "notes": "Prepared or preserved fish; caviar and caviar substitutes prepared from fish eggs."
+    },
+    {
+      "hscode": "16.05 ",
+      "id": 24,
+      "notes": "Crustaceans, molluscs and other aquatic invertebrates, prepared or preserved."
+    },
+    {
+      "hscode": "17.01 ",
+      "id": 24,
+      "notes": "Cane or beet sugar and chemically pure sucrose, in solid form"
+    },
+    {
+      "hscode": "17.02 ",
+      "id": 24,
+      "notes": "Other sugars, including chemically pure lactose, maltose, glucose and fructose, in solid form; sugar syrups not containing added flavouring or colouring matter; artificial honey, whether or not mixed with natural honey; caramel."
+    },
+    {
+      "hscode": "17.03 ",
+      "id": 24,
+      "notes": "Molasses resulting from the extraction or refining of sugar"
+    },
+    {
+      "hscode": "17.04 ",
+      "id": 24,
+      "notes": "Sugar confectionery (including white chocolate), not containing cocoa."
+    },
+    {
+      "hscode": "18.01 ",
+      "id": 24,
+      "notes": "Cocoa beans, whole or broken, raw or roasted"
+    },
+    {
+      "hscode": "18.02 ",
+      "id": 24,
+      "notes": "Cocoa shells, husks, skins and other cocoa waste"
+    },
+    {
+      "hscode": "18.03 ",
+      "id": 24,
+      "notes": "Cocoa paste, whether or not defatted"
+    },
+    {
+      "hscode": "18.05 ",
+      "id": 24,
+      "notes": "Cocoa powder, not containing added sugar or other sweetening matter"
+    },
+    {
+      "hscode": "18.06 ",
+      "id": 24,
+      "notes": "Chocolate and other food preparations containing cocoa"
+    },
+    {
+      "hscode": "19.01 ",
+      "id": 24,
+      "notes": "Malt extract; food preparations of flour, groats, meal, starch or malt extract, not containing cocoa or containing less than 40 % by weight of cocoa calculated on a totally defatted basis, not elsewhere specified or included; food preparations of goods of headings 04.01 to 04.04, not containing cocoa or containing less than 5 % by weight of cocoa calculated on a totally de fatted basis, not elsewhere specified or included."
+    },
+    {
+      "hscode": "19.02 ",
+      "id": 24,
+      "notes": "Pasta, whether or not cooked or stuffed (with meat or other substances) or otherwise prepared, such as spaghetti, macaroni, noodles, lasagne, gnocchi, ravioli, cannelloni; couscous, whether or not prepared."
+    },
+    {
+      "hscode": "19.03 ",
+      "id": 24,
+      "notes": "Tapioca and substitutes therefor prepared from starch, in the form of flakes, grains, pearls, siftings or in similar forms."
+    },
+    {
+      "hscode": "19.04 ",
+      "id": 24,
+      "notes": "Prepared foods obtained by the swelling or roasting of cereals or cereal products (for example, corn flakes); cereals (other than maize (corn)) in grain form or in the form of flakes or other worked grains (except flour, groats and meal), precooked, or otherwise prepared, not elsewhere specified or included."
+    },
+    {
+      "hscode": "19.05 ",
+      "id": 24,
+      "notes": "Bread, pastry, cakes, biscuits and other bakers' wares, whether or not containing cocoa; communion wafers, empty cachets of a kind suitable for pharmaceutical use, sealing wafers, rice paper and similar products"
+    },
+    {
+      "hscode": "20.01 ",
+      "id": 24,
+      "notes": "Vegetables, fruit, nuts and other edible parts of plants, prepared or preserved by vinegar or acetic acid."
+    },
+    {
+      "hscode": "20.02 ",
+      "id": 24,
+      "notes": "Tomatoes prepared or preserved otherwise than by vinegar or acetic acid."
+    },
+    {
+      "hscode": "20.03 ",
+      "id": 24,
+      "notes": "Mushrooms and truffles, prepared or preserved otherwise than by vinegar or acetic acid."
+    },
+    {
+      "hscode": "20.04 ",
+      "id": 24,
+      "notes": "Other vegetables prepared or preserved otherwise than by vinegar or acetic acid, frozen, other than products of heading 20.06."
+    },
+    {
+      "hscode": "20.05 ",
+      "id": 24,
+      "notes": "Other vegetables prepared or preserved otherwise than by vinegar or acetic acid, not frozen, other than products of heading 20.06."
+    },
+    {
+      "hscode": "20.06 ",
+      "id": 24,
+      "notes": "Vegetables, fruit, nuts, fruit-peel and other parts of plants, preserved by sugar (drained, glacé or crystallised)."
+    },
+    {
+      "hscode": "20.07 ",
+      "id": 24,
+      "notes": "Jams, fruit jellies, marmalades, fruit or nut purée and fruit or nut pastes, obtained by cooking, whether or not containing added sugar or other sweetening matter."
+    },
+    {
+      "hscode": "20.08 ",
+      "id": 24,
+      "notes": "Fruit, nuts and other edible parts of plants, otherwise prepared or preserved, whether or not containing added sugar or other sweetening matter or spirit, not elsewhere specified or included"
+    },
+    {
+      "hscode": "20.09 ",
+      "id": 24,
+      "notes": "Fruit juices (including grape must) and vegetable juices, unfermented and not containing added spirit, whether or not containing added sugar or other sweetening matter."
+    },
+    {
+      "hscode": "21.01 ",
+      "id": 24,
+      "notes": "Extracts, essences and concentrates, of coffee, tea or maté and preparations with a basis of these products or with a basis of coffee, tea or maté; roasted chicory and other roasted coffee substitutes, and extracts, essences and concentrates thereof."
+    },
+    {
+      "hscode": "21.02 ",
+      "id": 24,
+      "notes": "Yeasts (active or inactive); other single -cell micro-organisms, dead (but not including vaccines of heading 30.02); prepared baking powders."
+    },
+    {
+      "hscode": "21.03 ",
+      "id": 24,
+      "notes": "Sauces and preparations therefor; mixed condiments and mixed seasonings; mustard flour and meal and prepared mustard."
+    },
+    {
+      "hscode": "21.04 ",
+      "id": 24,
+      "notes": "Soups and broths and preparations therefor; homogenised composite food preparations."
+    },
+    {
+      "hscode": "21.05 ",
+      "id": 24,
+      "notes": "Ice cream and other edible ice, whether or not containing cocoa"
+    },
+    {
+      "hscode": "21.06 ",
+      "id": 24,
+      "notes": "Food preparations not elsewhere specified or included."
+    },
+    {
+      "hscode": "22.01 ",
+      "id": 24,
+      "notes": "Waters, including natural or artificial mineral waters and aerated waters, not containing added sugar or other sweetening matter nor flavoured; ice and snow."
+    },
+    {
+      "hscode": "22.02 ",
+      "id": 24,
+      "notes": "Waters, including mineral waters and aerated waters, containing added sugar or other sweetening matter or flavoured, and other non-alcoholic beverages, not including fruit or vegetable juices of heading 20.09"
+    },
+    {
+      "hscode": "22.09 ",
+      "id": 24,
+      "notes": "Vinegar and substitutes for vinegar obtained from acetic acid"
     }
   ],
   "secondary_hscodes": [

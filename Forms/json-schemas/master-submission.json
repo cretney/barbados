@@ -59,6 +59,21 @@
               }
             }
           },
+          "typeFoodCategory": {
+            "type": "string",
+            "title": "Food Category",
+            "description": ""
+          },
+          "typeFoodDetail": {
+            "type": "string",
+            "title": "Food Type",
+            "description": ""
+          },
+          "grossWeight": {
+            "type": "number",
+            "title": "Gross Weight",
+            "description": "Indicate the Gross Weight of the Goods."
+          },
           "quantity": {
             "type": "integer",
             "title": "Quantity",
@@ -131,11 +146,6 @@
             "type": "string",
             "title": "Descriptiondetail",
             "description": ""
-          },
-          "grossWeight": {
-            "type": "number",
-            "title": "Gross Weight",
-            "description": "Indicate the Gross Weight of the Goods."
           },
           "grossWeightUnits": {
             "type": "string",
@@ -229,6 +239,11 @@
         "email": {
           "type": "string",
           "title": "Email",
+          "description": ""
+        },
+        "phone": {
+          "type": "string",
+          "title": "Phone",
           "description": ""
         },
         "typeBusiness": {
@@ -370,11 +385,6 @@
         "brandName:": {
           "type": "string",
           "title": "Brandname:",
-          "description": ""
-        },
-        "phone": {
-          "type": "string",
-          "title": "Phone",
           "description": ""
         },
         "directors:": {
@@ -530,20 +540,40 @@
       "title": "Means of Conveyance",
       "description": ""
     },
-    "serialNumberCertificate": {
+    "requestType": {
       "type": "string",
-      "title": "Serialnumbercertificate",
-      "description": ""
+      "title": "Type of Request",
+      "description": "Request Type (New Request/Renewal)"
     },
-    "carrier": {
+    "previousNumber": {
+      "type": "string",
+      "title": "Previous Number",
+      "description": "Previous Permit Number"
+    },
+    "previousExpiration": {
+      "type": "date-time",
+      "title": "Date Expired",
+      "description": "Expiration date of previous permit"
+    },
+    "periodRequestStart": {
+      "type": "date-time",
+      "title": "Period Starting",
+      "description": "Period Starting of Request"
+    },
+    "periodRequestEnding": {
+      "type": "date-time",
+      "title": "Period Ending",
+      "description": "Period Ending of Request"
+    },
+    "importer": {
       "type": "object",
       "required": [
 
       ],
       "properties": {
-        "idNumber": {
-          "type": "string",
-          "title": "Idnumber",
+        "id": {
+          "type": "integer",
+          "title": "Id",
           "description": ""
         },
         "name": {
@@ -551,46 +581,76 @@
           "title": "Name",
           "description": ""
         },
-        "idNumber2": {
+        "countryId": {
           "type": "string",
-          "title": "Idnumber2",
+          "title": "Countryid",
+          "description": ""
+        },
+        "country": {
+          "type": "string",
+          "title": "Country",
+          "description": ""
+        },
+        "address": {
+          "type": "string",
+          "title": "Address",
+          "description": ""
+        },
+        "docid": {
+          "type": "string",
+          "title": "Docid",
+          "description": ""
+        },
+        "fax": {
+          "type": "string",
+          "title": "Fax",
+          "description": ""
+        },
+        "phone": {
+          "type": "string",
+          "title": "Phone",
+          "description": ""
+        },
+        "email": {
+          "type": "string",
+          "title": "Email",
+          "description": ""
+        },
+        "importerType": {
+          "type": "string",
+          "title": "Importertype",
           "description": ""
         }
       }
     },
-    "typeFoodCategory": {
+    "approvalNumber": {
       "type": "string",
-      "title": "Food Category",
-      "description": ""
-    },
-    "typeFoodDetail": {
-      "type": "string",
-      "title": "Food Type",
-      "description": ""
-    },
-    "inspectionLocation": {
-      "type": "string",
-      "title": "Inspection Location",
-      "description": ""
-    },
-    "supportingDocumentation": {
-      "type": "string",
-      "title": "Supportingdocumentation",
-      "description": ""
-    },
-    "reason": {
-      "type": "string",
-      "title": "Reason",
-      "description": ""
-    },
-    "inspectionDate": {
-      "type": "date-time",
-      "title": "Date Inspection",
-      "description": ""
+      "title": "Approval Number",
+      "description": "Number of Approval Document"
     },
     "approvedBy": {
       "type": "string",
       "title": "Approved By",
+      "description": ""
+    },
+    "periodEnding": {
+      "type": "date-time",
+      "title": "Periodending",
+      "description": ""
+    },
+    "approvalDate": {
+      "type": "date-time",
+      "title": "Approvaldate",
+      "description": ""
+    },
+    "issuedDate": {
+      "type": "date-time",
+      "title": "Date Issued",
+      "description": ""
+    },
+    "receptionDate": {
+      "type": "date-time",
+      "title": "Date Received",
       "description": ""
     },
     "consignee": {
@@ -689,9 +749,44 @@
         }
       }
     },
-    "dateInspection": {
+    "transhipVia": {
+      "type": "string",
+      "title": "Transhipvia",
+      "description": ""
+    },
+    "inspectionLocation": {
+      "type": "string",
+      "title": "Inspection Location",
+      "description": ""
+    },
+    "inspectionDate": {
       "type": "date-time",
-      "title": "Date of Inspection",
+      "title": "Date Inspection",
+      "description": ""
+    },
+    "inspector": {
+      "type": "string",
+      "title": "Inspector",
+      "description": ""
+    },
+    "typeFoodCategory": {
+      "type": "string",
+      "title": "Food Category",
+      "description": ""
+    },
+    "typeFoodDetail": {
+      "type": "string",
+      "title": "Food Type",
+      "description": ""
+    },
+    "vesselOrCraft": {
+      "type": "string",
+      "title": "Vesselorcraft",
+      "description": ""
+    },
+    "vessel": {
+      "type": "string",
+      "title": "Vessel",
       "description": ""
     },
     "rotationNumber": {
@@ -704,14 +799,9 @@
       "title": "Container Number",
       "description": ""
     },
-    "vesselOrCraft": {
-      "type": "string",
-      "title": "Vesselorcraft",
-      "description": ""
-    },
-    "dateArrival": {
+    "dateInspection": {
       "type": "date-time",
-      "title": "Datearrival",
+      "title": "Date of Inspection",
       "description": ""
     },
     "timeInspection": {
@@ -724,15 +814,53 @@
       "title": "Entry Date",
       "description": ""
     },
+    "serialNumberCertificate": {
+      "type": "string",
+      "title": "Serialnumbercertificate",
+      "description": ""
+    },
+    "carrier": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "idNumber": {
+          "type": "string",
+          "title": "Idnumber",
+          "description": ""
+        },
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": ""
+        },
+        "idNumber2": {
+          "type": "string",
+          "title": "Idnumber2",
+          "description": ""
+        }
+      }
+    },
+    "supportingDocumentation": {
+      "type": "string",
+      "title": "Supportingdocumentation",
+      "description": ""
+    },
+    "reason": {
+      "type": "string",
+      "title": "Reason",
+      "description": ""
+    },
+    "dateArrival": {
+      "type": "date-time",
+      "title": "Datearrival",
+      "description": ""
+    },
     "phytosanitaryCertificate": {
       "type": "string",
       "title": "Phytosanitarycertificate",
       "description": ""
-    },
-    "approvalNumber": {
-      "type": "string",
-      "title": "Approval Number",
-      "description": "Number of Approval Document"
     },
     "oldVehicleBrand": {
       "type": "string",
@@ -752,11 +880,6 @@
     "oldVehicleRegistrationNumber": {
       "type": "string",
       "title": "Oldvehicleregistrationnumber",
-      "description": ""
-    },
-    "issuedDate": {
-      "type": "date-time",
-      "title": "Date Issued",
       "description": ""
     },
     "permitLength": {
@@ -1279,64 +1402,6 @@
       "title": "Invoice Date",
       "description": "Enter the Date of the Commercial Invoice."
     },
-    "importer": {
-      "type": "object",
-      "required": [
-
-      ],
-      "properties": {
-        "id": {
-          "type": "integer",
-          "title": "Id",
-          "description": ""
-        },
-        "name": {
-          "type": "string",
-          "title": "Name",
-          "description": ""
-        },
-        "countryId": {
-          "type": "string",
-          "title": "Countryid",
-          "description": ""
-        },
-        "country": {
-          "type": "string",
-          "title": "Country",
-          "description": ""
-        },
-        "address": {
-          "type": "string",
-          "title": "Address",
-          "description": ""
-        },
-        "docid": {
-          "type": "string",
-          "title": "Docid",
-          "description": ""
-        },
-        "fax": {
-          "type": "string",
-          "title": "Fax",
-          "description": ""
-        },
-        "phone": {
-          "type": "string",
-          "title": "Phone",
-          "description": ""
-        },
-        "email": {
-          "type": "string",
-          "title": "Email",
-          "description": ""
-        },
-        "importerType": {
-          "type": "string",
-          "title": "Importertype",
-          "description": ""
-        }
-      }
-    },
     "totalValue": {
       "type": "integer",
       "title": "Totalvalue",
@@ -1484,11 +1549,6 @@
     "observations": {
       "type": "string",
       "title": "Observations",
-      "description": ""
-    },
-    "approvalDate": {
-      "type": "date-time",
-      "title": "Approvaldate",
       "description": ""
     },
     "approvalLocation": {
