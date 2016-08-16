@@ -9428,6 +9428,7 @@
   "description": "Please complete the Export Application",
   "status": "Draft",
   "submission": {
+    "hscode2":"AT",
     "commodities":[
       {
         "hsCode":"123",

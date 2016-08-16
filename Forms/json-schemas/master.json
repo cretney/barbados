@@ -1587,6 +1587,11 @@
           "title": "Observations",
           "description": ""
         },
+        "hscode2": {
+          "type": "string",
+          "title": "Hscode2",
+          "description": ""
+        },
         "approvalLocation": {
           "type": "string",
           "title": "Approvallocation",

@@ -2842,223 +2842,367 @@
     },
     {
       "hscode": "*",
-      "hscode2": "01",
+      "hscode2": "CR",
       "id": 41,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "02",
+      "hscode2": "CU",
       "id": 42,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "03",
+      "hscode2": "CO",
       "id": 43,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "04",
+      "hscode2": "AI",
       "id": 44,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "05",
+      "hscode2": "AG",
+      "id": 44,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "BZ",
+      "id": 44,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "DM",
+      "id": 44,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "GD",
+      "id": 44,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "GY",
+      "id": 44,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "JM",
+      "id": 44,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "MS",
+      "id": 44,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "KN",
+      "id": 44,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "LC",
+      "id": 44,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "VC",
+      "id": 44,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "SR",
+      "id": 44,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "TT",
+      "id": 44,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "DO",
       "id": 45,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "06",
+      "hscode2": "VE",
       "id": 46,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "07",
+      "hscode2": "AU",
       "id": 47,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "08",
+      "hscode2": "AT",
       "id": 47,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "09",
+      "hscode2": "BE",
       "id": 47,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "10",
+      "hscode2": "DK",
       "id": 47,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "11",
+      "hscode2": "FI",
       "id": 47,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "12",
+      "hscode2": "FR",
       "id": 47,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "13",
+      "hscode2": "DE",
       "id": 47,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "14",
+      "hscode2": "GR",
       "id": 47,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "15",
+      "hscode2": "IE",
       "id": 47,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "16",
+      "hscode2": "IT",
       "id": 47,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "17",
+      "hscode2": "JP",
       "id": 47,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "18",
+      "hscode2": "LU",
       "id": 47,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "18",
+      "hscode2": "NL",
       "id": 47,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "20",
+      "hscode2": "NZ",
       "id": 47,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "21",
+      "hscode2": "NO",
       "id": 47,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "22",
+      "hscode2": "PT",
       "id": 47,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "23",
+      "hscode2": "ES",
       "id": 47,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "24",
+      "hscode2": "SE",
       "id": 47,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "25",
+      "hscode2": "CH",
       "id": 47,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "26",
+      "hscode2": "GB",
       "id": 47,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "27",
+      "hscode2": "VG",
       "id": 47,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "28",
+      "hscode2": "CA",
       "id": 48,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "29",
+      "hscode2": "PR",
       "id": 49,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "30",
+      "hscode2": "US",
       "id": 49,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "99",
+      "hscode2": "00",
       "id": 50,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "01",
+      "hscode2": "AI",
       "id": 20,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "02",
+      "hscode2": "AG",
       "id": 20,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "03",
+      "hscode2": "BZ",
       "id": 20,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "04",
+      "hscode2": "CR",
       "id": 20,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "05",
+      "hscode2": "CU",
       "id": 20,
       "notes": ""
     },
     {
       "hscode": "*",
-      "hscode2": "06",
+      "hscode2": "CO",
+      "id": 20,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "DM",
+      "id": 20,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "DO",
+      "id": 20,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "GD",
+      "id": 20,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "GY",
+      "id": 20,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "JM",
+      "id": 20,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "MS",
+      "id": 20,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "KN",
+      "id": 20,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "LC",
+      "id": 20,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "VC",
+      "id": 20,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "SR",
+      "id": 20,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "TT",
+      "id": 20,
+      "notes": ""
+    },
+    {
+      "hscode": "*",
+      "hscode2": "VE",
       "id": 20,
       "notes": ""
     },
@@ -8019,157 +8163,217 @@
       ],
       "values": [
         {
-          "value": "07",
+          "value": "AI",
+          "name": "Anguilla",
+          "description": "Anguilla"
+        },
+        {
+          "value": "AG",
+          "name": "Antigua and Barbuda",
+          "description": "Antigua and Barbuda"
+        },
+        {
+          "value": "AU",
           "name": "Australia",
           "description": "Australia"
         },
         {
-          "value": "08",
+          "value": "AT",
           "name": "Austria",
           "description": "Austria"
         },
         {
-          "value": "09",
+          "value": "BE",
           "name": "Belgium",
           "description": "Belgium"
         },
         {
-          "value": "28",
+          "value": "BZ",
+          "name": "Belize",
+          "description": "Belize"
+        },
+        {
+          "value": "CA",
           "name": "Canada",
           "description": "Canada"
         },
         {
-          "value": "04",
-          "name": "Caribbean Common",
-          "description": "Caribbean Common"
-        },
-        {
-          "value": "03",
+          "value": "CO",
           "name": "Colombia",
           "description": "Colombia"
         },
         {
-          "value": "01",
+          "value": "CR",
           "name": "Costa Rica",
           "description": "Costa Rica"
         },
         {
-          "value": "02",
+          "value": "CU",
           "name": "Cuba",
           "description": "Republic of Cuba"
         },
         {
-          "value": "10",
+          "value": "DK",
           "name": "Denmark",
           "description": "Denmark"
         },
         {
-          "value": "05",
+          "value": "DM",
+          "name": "Dominica",
+          "description": "Dominica"
+        },
+        {
+          "value": "DO",
           "name": "Dominican Republic",
           "description": "Dominican Republic"
         },
         {
-          "value": "11",
+          "value": "FI",
           "name": "Finland",
           "description": "Finland"
         },
         {
-          "value": "12",
+          "value": "FR",
           "name": "France",
           "description": "France"
         },
         {
-          "value": "13",
+          "value": "DE",
           "name": "Germany",
           "description": "Germany"
         },
         {
-          "value": "14",
+          "value": "GR",
           "name": "Greece",
           "description": "Greece"
         },
         {
-          "value": "15",
+          "value": "GD",
+          "name": "Grenada",
+          "description": "Grenada"
+        },
+        {
+          "value": "GY",
+          "name": "Guyana",
+          "description": "Guyana"
+        },
+        {
+          "value": "IE",
           "name": "Ireland",
           "description": "Ireland"
         },
         {
-          "value": "16",
+          "value": "IT",
           "name": "Italy",
           "description": "Italy"
         },
         {
-          "value": "17",
+          "value": "JM",
+          "name": "Jamaica",
+          "description": "Jamaica"
+        },
+        {
+          "value": "JP",
           "name": "Japan",
           "description": "Japan"
         },
         {
-          "value": "18",
+          "value": "LU",
           "name": "Luxembourg",
           "description": "Luxembourg"
         },
         {
-          "value": "18",
+          "value": "MS",
+          "name": "Montserrat",
+          "description": "Montserrat"
+        },
+        {
+          "value": "NL",
           "name": "Netherlands",
           "description": "Netherlands"
         },
         {
-          "value": "20",
+          "value": "NZ",
           "name": "New Zealand",
           "description": "New Zealand"
         },
         {
-          "value": "21",
+          "value": "NO",
           "name": "Norway",
           "description": "Norway"
         },
         {
-          "value": "22",
+          "value": "PT",
           "name": "Portugal",
           "description": "Portugal"
         },
         {
-          "value": "29",
+          "value": "PR",
           "name": "Puerto Rico",
           "description": "Puerto Rico"
         },
         {
-          "value": "23",
+          "value": "KN",
+          "name": "Saint Kitts and Nevis",
+          "description": "Saint Kitts and Nevis"
+        },
+        {
+          "value": "LC",
+          "name": "Saint Lucia",
+          "description": "Saint Lucia"
+        },
+        {
+          "value": "VC",
+          "name": "Saint Vincent and the Grenadines",
+          "description": "Saint Vincent and the Grenadines"
+        },
+        {
+          "value": "ES",
           "name": "Spain",
           "description": "Spain"
         },
         {
-          "value": "24",
+          "value": "SR",
+          "name": "Suriname",
+          "description": "Suriname"
+        },
+        {
+          "value": "SE",
           "name": "Sweden",
           "description": "Sweden"
         },
         {
-          "value": "25",
+          "value": "CH",
           "name": "Switzerland",
           "description": "Switzerland"
         },
         {
-          "value": "26",
+          "value": "TT",
+          "name": "Trinidad and Tobago",
+          "description": "Trinidad and Tobago"
+        },
+        {
+          "value": "GB",
           "name": "United Kingdom",
           "description": "United Kingdom"
         },
         {
-          "value": "30",
+          "value": "US",
           "name": "United States",
           "description": "United States"
         },
         {
-          "value": "06",
+          "value": "VE",
           "name": "Venezuela",
           "description": "Venezuela"
         },
         {
-          "value": "27",
-          "name": "Virgin Islands (British)",
-          "description": "Virgin Islands (British)"
+          "value": "VG",
+          "name": "Virgin Islands, British",
+          "description": "Virgin Islands, British"
         },
         {
-          "value": "99",
+          "value": "00",
           "name": "Country Not Listed",
           "description": "Country Not Listed"
         }
