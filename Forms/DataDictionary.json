@@ -1630,8 +1630,8 @@
     {
       "id": 168,
       "readonly": false,
-      "name": "New Application for Certification Form",
-      "description": "New Application for Certification Form",
+      "name": "New Application for Exporter Registration",
+      "description": "New Application for Exporter Registration",
       "fileName": "bidc-new-application-certification-form.html",
       "document_ids": [
         101
@@ -1640,8 +1640,8 @@
     {
       "id": 169,
       "readonly": true,
-      "name": "Application for Certification Form",
-      "description": "Application for Certification Form",
+      "name": "Application for Exporter Registration",
+      "description": "Application for Exporter Registration",
       "fileName": "bidc-new-application-certification-form-issued.html",
       "document_ids": [
         101
@@ -2322,14 +2322,14 @@
       "workflow_id": 20,
       "step": 1,
       "form_id": 168,
-      "title": "New Application for Certification Form",
+      "title": "New Application for Exporter Registration",
       "description": "Please complete this form"
     },
     {
       "workflow_id": 20,
       "step": 2,
       "form_id": 169,
-      "title": "Application for Certification Form",
+      "title": "Application for Exporter Registration",
       "description": "Please complete this form"
     },
     {
