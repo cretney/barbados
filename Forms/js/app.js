@@ -764,6 +764,12 @@
 									"field": "microchipNum",
 									"display": "Microchip Number",
 									"definition": ""
+								},
+								{
+									"id": 116,
+									"field": "currency",
+									"display": "Currency",
+									"definition": "Choose the applicable currency"
 								}
 							]
 						}

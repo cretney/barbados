@@ -14,6 +14,9 @@
         <span field-name="19" form-fields="form.options.formFields" field-tooltip="true"></span>
       </th>
       <th>
+        <span field-name="116" form-fields="form.options.formFields" field-tooltip="true"></span>
+      </th>
+      <th>
         <span field-name="77" form-fields="form.options.formFields" field-tooltip="true"></span>
       </th>
       <th>
@@ -27,6 +30,7 @@
       <td ng-bind="item.hsCode"></td>
       <td ng-bind="item.description"></td>
       <td><input name="{{'quantity_'+item.hsCode+'_'+$index}}" type="number" class="form-control" ng-model="item.units[0].quantity" min="{{form.config.quantity.min}}" required></td>
+      <td><input class="form-control"></td>
       <td class="currency"><span ng-bind="form.config.currency.symbol.short"></span><input name="{{'fobValue_'+item.hsCode+'_'+$index}}" type="number" class="form-control" ng-model="item.fobValue" min="{{form.config.currency.min}}" ng-pattern="form.config.currency.pattern" required></td>
       <td><input name="{{'grossWeight'+item.hsCode+'_'+$index}}" type="number" class="form-control" ng-model="item.grossWeight" min="{{form.config.grossWeight.min}}" required></td>
 
