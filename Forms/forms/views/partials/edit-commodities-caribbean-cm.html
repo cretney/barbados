@@ -35,8 +35,8 @@
       <td><input name="{{'quantity_'+item.hsCode+'_'+$index}}" type="number" class="form-control" ng-model="item.units[0].quantity" min="{{form.config.quantity.min}}" required></td>
       <td>
         <ui-select ng-model="item.units[0].rulesOrigin" theme="bootstrap" ng-required="true">
-          <ui-select-match placeholder="Select ...">{{$select.selected}}</ui-select-match>
-            <ui-select-choices repeat="option in ['CM','X','L']">
+          <ui-select-match class="ui-select-match" placeholder="Select ...">{{$select.selected}}</ui-select-match>
+            <ui-select-choices class="ui-select-choices" repeat="option in ['CM','X','L']">
               <div ng-bind="option"></div>
             </ui-select-choices>
         </ui-select>
