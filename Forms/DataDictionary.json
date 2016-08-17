@@ -1512,7 +1512,7 @@
       "readonly": false,
       "name": "Application for Certificate of Origin (COO) - Dominican Republic",
       "description": "New Application for Certificate of Origin",
-      "fileName": "bidc-coo-edit-cc.html",
+      "fileName": "bidc-coo-edit-dr.html",
       "document_ids": [
         25
       ]
@@ -1522,7 +1522,7 @@
       "readonly": true,
       "name": "Export Certificate of Origin (COO) - Dominican Republic",
       "description": "Export Certificate of Origin",
-      "fileName": "bidc-coo-static-cc.html",
+      "fileName": "bidc-coo-static-dr.html",
       "document_ids": [
         25
       ]
