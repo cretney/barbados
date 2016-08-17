@@ -534,7 +534,7 @@
 								{
 									"id": 77,
 									"field": "fobValue",
-									"display": "FOB Value (US$)",
+									"display": "FOB Value",
 									"definition": "In US Dollars"
 								},
 								{
@@ -767,7 +767,7 @@
 								},
 								{
 									"id": 116,
-									"field": "currency",
+									"field": "currencyType",
 									"display": "Currency",
 									"definition": "Choose the applicable currency"
 								}

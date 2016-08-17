@@ -9077,6 +9077,7 @@
         "hsCode":"123",
         "description":"test",
         "fobValue":1000,
+        "currencyType": "",
         "preferenceCriterion":"A",
         "othersAnnex":"ACC",
         "grossWeight":10.0,
