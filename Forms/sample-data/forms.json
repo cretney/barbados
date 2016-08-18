@@ -9067,7 +9067,7 @@
 {
   "blockId": 14200601,
   "workflowId": 42,
-  "formId": 2,
+  "formId": 6,
   "title": "Certificate of Origin - CARICOM - Cuba",
   "description": "Please complete the Export Application",
   "status": "Draft",
@@ -9109,7 +9109,7 @@
 {
   "blockId": 14200702,
   "workflowId": 42,
-  "formId": 3,
+  "formId": 7,
   "title": "Certificate of Origin - CARICOM - Cuba",
   "status": "Issued",
   "submission": {

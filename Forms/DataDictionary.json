@@ -2340,13 +2340,6 @@
       "description": "Application for Exporter Registration"
     },
     {
-      "workflow_id": 20,
-      "step": 5,
-      "pga_id": 2,
-      "title": "Approval Application COO",
-      "description": "Application for Exporter Registration"
-    },
-    {
       "workflow_id": 22,
       "step": 1,
       "form_id": 33,
