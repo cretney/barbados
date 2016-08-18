@@ -808,112 +808,112 @@
 			{
 				"id": 168,
 				"template": "bidc-new-application-certification-form.html",
-				"document":"New Application for Certification Form.docx"
+				"document":"Application for Exporter Registration"
 			},
 			{
 				"id": 169,
 				"template": "bidc-new-application-certification-form-issued.html",
-				"document":"New Application for Certification Form.docx"
+				"document":"Application for Exporter Registration"
 			},
 			{
 				"id": 170,
 				"template": "bidb-certificate-origin-gsp.html",
-				"document":"Certificate of Origin GSP"
+				"document":"Certificate of Origin - GSP"
 			},
 			{
 				"id": 171,
 				"template": "bidb-certificate-origin-gsp-issued.html",
-				"document":"Certificate of Origin GSP"
+				"document":"Certificate of Origin - GSP"
 			},
 			{
 				"id": 172,
 				"template": "bidb-certificate-origin-gsp-caribcan.html",
-				"document":"Certificate of Origin GSP CARIBCAN"
+				"document":"Certificate of Origin - GSP - Canada"
 			},
 			{
 				"id": 173,
 				"template": "bidb-certificate-origin-gsp-caribcan-issued.html",
-				"document":"Certificate of Origin GSP CARIBCAN"
+				"document":"Certificate of Origin - GSP - Canada"
 			},
 			{
 				"id": 174,
 				"template": "bidb-certificate-origin-gsp-cbi.html",
-				"document":"Certificate of Origin GSP CBI"
+				"document":"Certificate of Origin - GSP - CBI"
 			},
 			{
 				"id": 175,
 				"template": "bidb-certificate-origin-gsp-cbi-issued.html",
-				"document":"Certificate of Origin GSP CBI"
+				"document":"Certificate of Origin - GSP - CBI"
 			},
 			{
 				"id": 176,
 				"template": "bidb-certificate-origin-gsp-other.html",
-				"document":"Certificate of Origin GSP Other"
+				"document":"Certificate of Origin - GSP - Other"
 			},
 			{
 				"id": 177,
 				"template": "bidb-certificate-origin-gsp-other-issued.html",
-				"document":"Certificate of Origin GSP Other"
+				"document":"Certificate of Origin - GSP - Other"
 			},
 			{
 				"id": 2,
 				"template": "bidc-coo-edit-cr.html",
-				"document":"New Application for Certificate of Origin (COO) - Costa Rica"
+				"document":"Certificate of Origin - CARICOM - Costa Rica"
 			},
 			{
 				"id": 3,
 				"template": "bidc-coo-static-cr.html",
-				"document":"Application for Certificate of Origin (COO) - Costa Rica"
+				"document":"Certificate of Origin - CARICOM - Costa Rica"
 			},
 			{
 				"id": 6,
 				"template": "bidc-coo-edit-cu.html",
-				"document":"New Application for Certificate of Origin (COO) - Cuba"
+				"document":"Certificate of Origin - CARICOM - Cuba"
 			},
 			{
 				"id": 7,
 				"template": "bidc-coo-static-cu.html",
-				"document":"Application for Certificate of Origin (COO) - Cuba"
+				"document":"Certificate of Origin - CARICOM - Cuba"
 			},
 			{
 				"id": 200,
 				"template": "bidc-coo-edit-co.html",
-				"document":"New Application for Certificate of Origin (COO) - Colombia"
+				"document":"Certificate of Origin - CARICOM - Colombia"
 			},
 			{
 				"id": 201,
 				"template": "bidc-coo-static-co.html",
-				"document":"Application for Certificate of Origin (COO) - Colombia"
+				"document":"Certificate of Origin - CARICOM - Colombia"
 			},
 			{
 				"id": 202,
 				"template": "bidc-coo-edit-cc.html",
-				"document":"New Application for Certificate of Origin (COO) - Caribbean Common"
+				"document":"Certificate of Origin - CARICOM - Common Market"
 			},
 			{
 				"id": 203,
 				"template": "bidc-coo-static-cc.html",
-				"document":"Application for Certificate of Origin (COO) - Caribbean Common"
+				"document":"Certificate of Origin - CARICOM - Common Market"
 			},
 			{
 				"id": 204,
 				"template": "bidc-coo-edit-dr.html",
-				"document":"New Application for Certificate of Origin (COO) - Dominican Republic"
+				"document":"Certificate of Origin - CARICOM - Dominican Republic"
 			},
 			{
 				"id": 205,
 				"template": "bidc-coo-static-dr.html",
-				"document":"Application for Certificate of Origin (COO) - Dominican Republic"
+				"document":"Certificate of Origin - CARICOM - Dominican Republic"
 			},
 			{
 				"id": 206,
 				"template": "bidc-coo-edit-ve.html",
-				"document":"New Application for Certificate of Origin (COO) - Venezuela"
+				"document":"Certificate of Origin - CARICOM - Venezuela"
 			},
 			{
 				"id": 207,
 				"template": "bidc-coo-static-ve.html",
-				"document":"Application for Certificate of Origin (COO) - Venezuela"
+				"document":"Certificate of Origin - CARICOM - Venezuela"
 			}
 		]
 	},

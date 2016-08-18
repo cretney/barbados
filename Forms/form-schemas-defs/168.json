@@ -335,10 +335,5 @@
         ]
       }
     ]
-  },
-  {
-    "type": "submit",
-    "style": "btn-info",
-    "title": "Save"
   }
 ]

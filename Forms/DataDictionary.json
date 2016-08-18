@@ -939,25 +939,25 @@
     },
     {
       "id": 18,
-      "name": "Application Certificate of Origin - CARICOM -Cuba.pdf",
+      "name": "Certificate of Origin - CARICOM - Cuba",
       "processType": "E",
       "purpose": "B"
     },
     {
       "id": 19,
-      "name": "Certificate of Origin Colombia.pdf",
+      "name": "Certificate of Origin - CARICOM - Colombia",
       "processType": "E",
       "purpose": "B"
     },
     {
       "id": 20,
-      "name": "Application Certificate of Origin Venezuela.pdf",
+      "name": "Certificate of Origin - CARICOM - Venezuela",
       "processType": "E",
       "purpose": "B"
     },
     {
       "id": 21,
-      "name": "Application for Certificate of Origin Caricom - Costa Rica.pdf",
+      "name": "Certificate of Origin - CARICOM - Costa Rica",
       "processType": "E",
       "purpose": "B"
     },
@@ -969,13 +969,13 @@
     },
     {
       "id": 24,
-      "name": "Application for Certificate of Origin Caribbean Common Market.pdf",
+      "name": "Certificate of Origin - CARICOM - Common Market",
       "processType": "E",
       "purpose": "B"
     },
     {
       "id": 25,
-      "name": "Certificate of Origin CARICOM - Dominican Republic.pdf",
+      "name": "Certificate of Origin - CARICOM - Dominican Republic",
       "processType": "E",
       "purpose": "B"
     },
@@ -1377,31 +1377,31 @@
     },
     {
       "id": 101,
-      "name": "New Application for Certification Form.docx",
+      "name": "Application for Exporter Registration",
       "processType": "E",
       "purpose": "B"
     },
     {
       "id": 102,
-      "name": "Certificate of Origin - GSP.pdf",
+      "name": "Certificate of Origin - GSP",
       "processType": "E",
       "purpose": "B"
     },
     {
       "id": 103,
-      "name": "Certificate of Origin - GSP - CARIBCAN.docx",
+      "name": "Certificate of Origin - GSP - Canada",
       "processType": "E",
       "purpose": "B"
     },
     {
       "id": 104,
-      "name": "Certificate of Origin - GSP - CBI.docx",
+      "name": "Certificate of Origin - GSP - CBI",
       "processType": "E",
       "purpose": "B"
     },
     {
       "id": 105,
-      "name": "Certificate of Origin - GSP.pdf",
+      "name": "Certificate of Origin - GSP - Other",
       "processType": "E",
       "purpose": "B"
     }
@@ -1430,7 +1430,7 @@
     {
       "id": 2,
       "readonly": false,
-      "name": "Application for Certificate of Origin (COO) - CostaRica",
+      "name": "Certificate of Origin - CARICOM - Costa Rica",
       "description": "New Application for Certificate of Origin",
       "fileName": "bidc-coo-edit-cr.html",
       "document_ids": [
@@ -1440,7 +1440,7 @@
     {
       "id": 3,
       "readonly": true,
-      "name": "Export Certificate of Origin (COO) - CostaRica",
+      "name": "Certificate of Origin - CARICOM - Costa Rica",
       "description": "Export Certificate of Origin",
       "fileName": "bidc-coo-static-cr.html",
       "document_ids": [
@@ -1450,7 +1450,7 @@
     {
       "id": 6,
       "readonly": false,
-      "name": "Application for Certificate of Origin (COO) - Cuba",
+      "name": "Certificate of Origin - CARICOM - Cuba",
       "description": "New Application for Certificate of Origin",
       "fileName": "bidc-coo-edit-cu.html",
       "document_ids": [
@@ -1460,7 +1460,7 @@
     {
       "id": 7,
       "readonly": true,
-      "name": "Export Certificate of Origin (COO) - Cuba",
+      "name": "Certificate of Origin - CARICOM - Cuba",
       "description": "Export Certificate of Origin",
       "fileName": "bidc-coo-static-cu.html",
       "document_ids": [
@@ -1470,7 +1470,7 @@
     {
       "id": 200,
       "readonly": false,
-      "name": "Application for Certificate of Origin (COO) - Colombia",
+      "name": "Certificate of Origin - CARICOM - Colombia",
       "description": "New Application for Certificate of Origin",
       "fileName": "bidc-coo-edit-co.html",
       "document_ids": [
@@ -1480,7 +1480,7 @@
     {
       "id": 201,
       "readonly": true,
-      "name": "Export Certificate of Origin (COO) - Colombia",
+      "name": "Certificate of Origin - CARICOM - Colombia",
       "description": "Export Certificate of Origin",
       "fileName": "bidc-coo-static-co.html",
       "document_ids": [
@@ -1490,7 +1490,7 @@
     {
       "id": 202,
       "readonly": false,
-      "name": "Application for Certificate of Origin (COO) - Caribbean Common",
+      "name": "Certificate of Origin - CARICOM - Common Market",
       "description": "New Application for Certificate of Origin",
       "fileName": "bidc-coo-edit-cc.html",
       "document_ids": [
@@ -1500,7 +1500,7 @@
     {
       "id": 203,
       "readonly": true,
-      "name": "Export Certificate of Origin (COO) - Caribbean Common",
+      "name": "Certificate of Origin - CARICOM - Common Market",
       "description": "Export Certificate of Origin",
       "fileName": "bidc-coo-static-cc.html",
       "document_ids": [
@@ -1510,7 +1510,7 @@
     {
       "id": 204,
       "readonly": false,
-      "name": "Application for Certificate of Origin (COO) - Dominican Republic",
+      "name": "Certificate of Origin - CARICOM - Dominican Republic",
       "description": "New Application for Certificate of Origin",
       "fileName": "bidc-coo-edit-dr.html",
       "document_ids": [
@@ -1520,7 +1520,7 @@
     {
       "id": 205,
       "readonly": true,
-      "name": "Export Certificate of Origin (COO) - Dominican Republic",
+      "name": "Certificate of Origin - CARICOM - Dominican Republic",
       "description": "Export Certificate of Origin",
       "fileName": "bidc-coo-static-dr.html",
       "document_ids": [
@@ -1530,7 +1530,7 @@
     {
       "id": 206,
       "readonly": false,
-      "name": "Application for Certificate of Origin (COO) - Venezuela",
+      "name": "Certificate of Origin - CARICOM - Venezuela",
       "description": "New Application for Certificate of Origin",
       "fileName": "bidc-coo-edit-ve.html",
       "document_ids": [
@@ -1540,7 +1540,7 @@
     {
       "id": 207,
       "readonly": true,
-      "name": "Export Certificate of Origin (COO) - Venezuela",
+      "name": "Certificate of Origin - CARICOM - Venezuela",
       "description": "Export Certificate of Origin",
       "fileName": "bidc-coo-static-ve.html",
       "document_ids": [
@@ -1550,8 +1550,8 @@
     {
       "id": 170,
       "readonly": false,
-      "name": "New Application for Certificate of Origin GSP",
-      "description": "New Application for Certificate of Origin GSP",
+      "name": "Certificate of Origin - GSP",
+      "description": "New Application for Certificate of Origin",
       "fileName": "bidb-certificate-origin-gsp.html",
       "document_ids": [
         102
@@ -1560,8 +1560,8 @@
     {
       "id": 171,
       "readonly": true,
-      "name": "Application for Certificate of Origin GSP",
-      "description": "Application for Certificate of Origin GSP",
+      "name": "Certificate of Origin - GSP",
+      "description": "Export Certificate of Origin",
       "fileName": "bidb-certificate-origin-gsp-issued.html",
       "document_ids": [
         102
@@ -1570,8 +1570,8 @@
     {
       "id": 172,
       "readonly": false,
-      "name": "New Application for Certificate of Origin GSP CARIBCAN",
-      "description": "New Application for Certificate of Origin GSP CARIBCAN",
+      "name": "Certificate of Origin - GSP - Canada",
+      "description": "New Application for Certificate of Origin",
       "fileName": "bidb-certificate-origin-gsp-caribcan.html",
       "document_ids": [
         103
@@ -1580,8 +1580,8 @@
     {
       "id": 173,
       "readonly": true,
-      "name": "Application for Certificate of Origin GSP CARIBCAN",
-      "description": "Application for Certificate of Origin GSP CARIBCAN",
+      "name": "Certificate of Origin - GSP - Canada",
+      "description": "Export Certificate of Origin",
       "fileName": "bidb-certificate-origin-gsp-caribcan-issued.html",
       "document_ids": [
         103
@@ -1590,8 +1590,8 @@
     {
       "id": 174,
       "readonly": false,
-      "name": "New Application for Certificate of Origin GSP CBI",
-      "description": "New Application for Certificate of Origin GSP CBI",
+      "name": "Certificate of Origin - GSP - CBI",
+      "description": "New Application for Certificate of Origin",
       "fileName": "bidb-certificate-origin-gsp-cbi.html",
       "document_ids": [
         104
@@ -1600,8 +1600,8 @@
     {
       "id": 175,
       "readonly": true,
-      "name": "Application for Certificate of Origin GSP CBI",
-      "description": "Application for Certificate of Origin GSP CBI",
+      "name": "Certificate of Origin - GSP - CBI",
+      "description": "Export Certificate of Origin",
       "fileName": "bidb-certificate-origin-gsp-cbi-issued.html",
       "document_ids": [
         104
@@ -1610,8 +1610,8 @@
     {
       "id": 176,
       "readonly": false,
-      "name": "New Application for Certificate of Origin GSP Other",
-      "description": "New Application for Certificate of Origin GSP Other",
+      "name": "Certificate of Origin - GSP - CBI",
+      "description": "New Application for Certificate of Origin",
       "fileName": "bidb-certificate-origin-gsp-other.html",
       "document_ids": [
         105
@@ -1620,8 +1620,8 @@
     {
       "id": 177,
       "readonly": true,
-      "name": "Application for Certificate of Origin GSP Other",
-      "description": "Application for Certificate of Origin GSP Other",
+      "name": "Certificate of Origin - GSP - Other",
+      "description": "Application for Certificate of Origin",
       "fileName": "bidb-certificate-origin-gsp-other-issued.html",
       "document_ids": [
         105
@@ -1630,7 +1630,7 @@
     {
       "id": 168,
       "readonly": false,
-      "name": "New Application for Exporter Registration",
+      "name": "Application for Exporter Registration",
       "description": "New Application for Exporter Registration",
       "fileName": "bidc-new-application-certification-form.html",
       "document_ids": [
@@ -1641,7 +1641,7 @@
       "id": 169,
       "readonly": true,
       "name": "Application for Exporter Registration",
-      "description": "Application for Exporter Registration",
+      "description": "Exporter Registration",
       "fileName": "bidc-new-application-certification-form-issued.html",
       "document_ids": [
         101
@@ -2322,22 +2322,22 @@
       "workflow_id": 20,
       "step": 1,
       "form_id": 168,
-      "title": "New Application for Exporter Registration",
-      "description": "Please complete this form"
+      "title": "Application for Exporter Registration",
+      "description": "Please complete the Registration"
     },
     {
       "workflow_id": 20,
       "step": 2,
       "form_id": 169,
       "title": "Application for Exporter Registration",
-      "description": "Please complete this form"
+      "description": null
     },
     {
       "workflow_id": 20,
       "step": 4,
       "pga_id": 2,
-      "title": "Review Application Registration COO",
-      "description": "Application for Certificate of Origin (COO) Registration"
+      "title": "Review Exporter Registration",
+      "description": "Application for Exporter Registration"
     },
     {
       "workflow_id": 22,
@@ -2591,14 +2591,14 @@
       "workflow_id": 41,
       "step": 1,
       "form_id": 2,
-      "title": "New Application for Certificate of Origin (COO) - Costa Rica",
+      "title": "New Certificate of Origin - CARICOM - Costa Rica",
       "description": "Please complete the Application for Certificate of Origin"
     },
     {
       "workflow_id": 41,
       "step": 2,
       "form_id": 3,
-      "title": "Export Certificate of Origin (COO) - Costa Rica",
+      "title": "Certificate of Origin - CARICOM - Costa Rica",
       "description": null
     },
     {
@@ -2606,20 +2606,20 @@
       "step": 4,
       "pga_id": 2,
       "title": "Review Application COO",
-      "description": "Application for Certificate of Origin (COO) - Costa Rica"
+      "description": "Certificate of Origin - CARICOM - Costa Rica"
     },
     {
       "workflow_id": 42,
       "step": 1,
       "form_id": 6,
-      "title": "New Application for Certificate of Origin (COO) - Cuba",
+      "title": "New Certificate of Origin - CARICOM - Cuba",
       "description": "Please complete the Application for Certificate of Origin"
     },
     {
       "workflow_id": 42,
       "step": 2,
       "form_id": 7,
-      "title": "Export Certificate of Origin (COO) - Cuba",
+      "title": "Certificate of Origin - CARICOM - Cuba",
       "description": null
     },
     {
@@ -2627,20 +2627,20 @@
       "step": 4,
       "pga_id": 2,
       "title": "Review Application COO",
-      "description": "Application for Certificate of Origin (COO) - Cuba"
+      "description": "Certificate of Origin - CARICOM - Cuba"
     },
     {
       "workflow_id": 43,
       "step": 1,
       "form_id": 200,
-      "title": "New Application for Certificate of Origin (COO) - Colombia",
+      "title": "New Certificate of Origin - CARICOM - Colombia",
       "description": "Please complete the Application for Certificate of Origin"
     },
     {
       "workflow_id": 43,
       "step": 2,
       "form_id": 201,
-      "title": "Export Certificate of Origin (COO) - Colombia",
+      "title": "Certificate of Origin - CARICOM - Colombia",
       "description": null
     },
     {
@@ -2648,20 +2648,20 @@
       "step": 4,
       "pga_id": 2,
       "title": "Review Application COO",
-      "description": "Application for Certificate of Origin (COO) - Colombia"
+      "description": "Certificate of Origin - CARICOM - Colombia"
     },
     {
       "workflow_id": 44,
       "step": 1,
       "form_id": 202,
-      "title": "New Application for Certificate of Origin (COO) - Caribbean Common",
+      "title": "New Certificate of Origin - CARICOM - Common Market",
       "description": "Please complete the Application for Certificate of Origin"
     },
     {
       "workflow_id": 44,
       "step": 2,
       "form_id": 203,
-      "title": "Export Certificate of Origin (COO) - Caribbean Common",
+      "title": "Certificate of Origin - CARICOM - Common Market",
       "description": null
     },
     {
@@ -2669,20 +2669,20 @@
       "step": 4,
       "pga_id": 2,
       "title": "Review Application COO",
-      "description": "Application for Certificate of Origin (COO) - Caribbean Common"
+      "description": "Application for Certificate of Origin - CARICOM - Common Market"
     },
     {
       "workflow_id": 45,
       "step": 1,
       "form_id": 204,
-      "title": "New Application for Certificate of Origin (COO) - Dominican Republic",
+      "title": "New Certificate of Origin - CARICOM - Dominican Republic",
       "description": "Please complete the Application for Certificate of Origin"
     },
     {
       "workflow_id": 45,
       "step": 2,
       "form_id": 205,
-      "title": "Export Certificate of Origin (COO) - Dominican Republic",
+      "title": "Certificate of Origin - CARICOM - Dominican Republic",
       "description": null
     },
     {
@@ -2690,20 +2690,20 @@
       "step": 4,
       "pga_id": 2,
       "title": "Review Application COO",
-      "description": "Application for Certificate of Origin (COO) - Dominican Republic"
+      "description": "Certificate of Origin - CARICOM - Dominican Republic"
     },
     {
       "workflow_id": 46,
       "step": 1,
       "form_id": 206,
-      "title": "New Application for Certificate of Origin (COO) - Venezuela",
+      "title": "New Certificate of Origin - CARICOM - Venezuela",
       "description": "Please complete the Application for Certificate of Origin"
     },
     {
       "workflow_id": 46,
       "step": 2,
       "form_id": 207,
-      "title": "Export Certificate of Origin (COO) - Venezuela",
+      "title": "Certificate of Origin - CARICOM - Venezuela",
       "description": null
     },
     {
@@ -2711,20 +2711,20 @@
       "step": 4,
       "pga_id": 2,
       "title": "Review Application COO",
-      "description": "Application for Certificate of Origin (COO) - Venezuela"
+      "description": "Certificate of Origin - CARICOM - Venezuela"
     },
     {
       "workflow_id": 47,
       "step": 1,
       "form_id": 170,
-      "title": "New Application for Certificate of Origin GSP",
+      "title": "New Certificate of Origin - GSP",
       "description": "Please complete the Application for Certificate of Origin"
     },
     {
       "workflow_id": 47,
       "step": 2,
       "form_id": 171,
-      "title": "Export Certificate of Origin GSP",
+      "title": "Certificate of Origin - GSP",
       "description": null
     },
     {
@@ -2732,20 +2732,20 @@
       "step": 4,
       "pga_id": 2,
       "title": "Review Application COO",
-      "description": "Application for Certificate of Origin GSP CARIBCAN"
+      "description": "Certificate of Origin - GSP"
     },
     {
       "workflow_id": 48,
       "step": 1,
       "form_id": 172,
-      "title": "New Application for Certificate of Origin GSP CARIBCAN",
+      "title": "New Certificate of Origin - GSP - Canada",
       "description": "Please complete the Application for Certificate of Origin"
     },
     {
       "workflow_id": 48,
       "step": 2,
       "form_id": 173,
-      "title": "Export Certificate of Origin GSP CARIBCAN",
+      "title": "Certificate of Origin - GSP - Canada",
       "description": null
     },
     {
@@ -2753,20 +2753,20 @@
       "step": 4,
       "pga_id": 2,
       "title": "Review Application COO",
-      "description": "Application for Certificate of Origin GSP CARIBCAN"
+      "description": "Certificate of Origin - GSP - Canada"
     },
     {
       "workflow_id": 49,
       "step": 1,
       "form_id": 174,
-      "title": "New Application for Certificate of Origin GSP CBI",
+      "title": "Certificate of Origin - GSP - CBI",
       "description": "Please complete the Application for Certificate of Origin"
     },
     {
       "workflow_id": 49,
       "step": 2,
       "form_id": 175,
-      "title": "Export Certificate of Origin GSP CBI",
+      "title": "Certificate of Origin - GSP - CBI",
       "description": null
     },
     {
@@ -2774,20 +2774,20 @@
       "step": 4,
       "pga_id": 2,
       "title": "Review Application COO",
-      "description": "Application for Certificate of Origin GSP CBI"
+      "description": "Certificate of Origin - GSP - CBI"
     },
     {
       "workflow_id": 50,
       "step": 1,
       "form_id": 176,
-      "title": "New Application for Certificate of Origin GSP Other",
+      "title": "Certificate of Origin - GSP - Other",
       "description": "Please complete the Application for Certificate of Origin"
     },
     {
       "workflow_id": 50,
       "step": 2,
       "form_id": 177,
-      "title": "Export Certificate of Origin GSP Other",
+      "title": "Certificate of Origin - GSP - Other",
       "description": null
     },
     {
@@ -2795,7 +2795,7 @@
       "step": 4,
       "pga_id": 2,
       "title": "Review Application COO",
-      "description": "Application for Export Certificate of Origin GSP Other"
+      "description": "Certificate of Origin - GSP - Other"
     },
     {
       "workflow_id": 52,

@@ -17,6 +17,7 @@
 			getLists: function (id, types) {
 			    var t = types || ['country', 'unitsOfMeasure', 'suppliers', 'formsMap', 'formFields'];
 				return $http.get("/api/Forms/GetLists?blockId="+id+"&listTypes="+t.join(','), {cache: true});
+				// /api/Forms/GetLists?listType=”lpcos”&blockId=207&id=20
 			},
 			getSchema: function(id,types){
 				return $http.get("/Forms/json-schemas/master-submission.json");
