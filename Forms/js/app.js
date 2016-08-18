@@ -565,7 +565,7 @@
 									"id": 82,
 									"field": "grossWeight",
 									"display": "Gross Weight",
-									"definition": "Indicate the Gross Weight of the Goods."
+									"definition": "Indicate the Gross Weight of the Goods in Kilograms (kg)."
 								},
 								{
 									"id": 83,
