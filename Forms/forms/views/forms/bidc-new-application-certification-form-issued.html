@@ -70,7 +70,7 @@
           <td ng-bind="item.description"></td>
           <td ng-bind="item.hsCode"></td>
           <td ng-bind="item.fobValue"></td>
-          <td ng-bind="item.quantity"></td>
+          <td ng-bind="item.units[0].unitType"></td>
         </tr>
       </table>
     </div><!--col-sm-12-->
@@ -129,7 +129,7 @@
           <td ng-bind="item.hsCode"></td>
           <td ng-bind="item.supplier"></td>
           <td ng-bind="item.origin"></td>
-          <td ng-bind="item.quantity"></td>
+          <td ng-bind="item.unitType"></td>
           <td ng-bind="item.fobValue"></td>
         </tr>
       </table>
