@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 96a7308e58bb2b46f1e8552a3c99fc2d53f71501",
+  "description": "Generated from b with shasum 57bea8aa834246f948ccc36861b59e02128e9270",
   "type": "object",
   "required": [
     "blockId",
@@ -58,6 +58,7 @@
               "hsCode",
               "description",
               "fobValue",
+              "currencyType",
               "preferenceCriterion",
               "othersAnnex",
               "grossWeight",
@@ -75,6 +76,9 @@
               },
               "fobValue": {
                 "type": "integer"
+              },
+              "currencyType": {
+                "type": "string"
               },
               "preferenceCriterion": {
                 "type": "string"
