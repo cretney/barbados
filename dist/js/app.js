@@ -260,6 +260,9 @@
 							gsp_countries_gsp:[
 								{"id":"AU","name":"Australia"},{"id":"AT","name":"Austria"},{"id":"BE","name":"Belgium"},{"id":"DK","name":"Denmark"},{"id":"FI","name":"Finland"},{"id":"FR","name":"France"},{"id":"DE","name":"Germany"},{"id":"GR","name":"Greece"},{"id":"IE","name":"Ireland"},{"id":"IT","name":"Italy"},{"id":"JP","name":"Japan"},{"id":"LU","name":"Luxembourg"},{"id":"NL","name":"Netherlands"},{"id":"NZ","name":"New Zealand"},{"id":"NO","name":"Norway"},{"id":"PT","name":"Portugal"},{"id":"ES","name":"Spain"},{"id":"SE","name":"Sweden"},{"id":"CH","name":"Switzerland"},{"id":"GB","name":"United Kingdom"},{"id":"VG","name":"Virgin Islands, British"}
 							],
+							gsp_countries_caricom:[
+								{"id":"AI","name":"Anguilla"},{"id":"AG","name":"Antigua and Barbuda"},{"id":"BZ","name":"Belize"},{"id":"DM","name":"Dominica"},{"id":"GD","name":"Grenada"},{"id":"GY","name":"Guyana"},{"id":"JM","name":"Jamaica"},{"id":"MS","name":"Montserrat"},{"id":"KN","name":"Saint Kitts and Nevis"},{"id":"LC","name":"Saint Lucia"},{"id":"VC","name":"Saint Vincent and the Grenadines"},{"id":"SR","name":"Suriname"},{"id":"TT","name":"Trinidad and Tobago"}
+							],
 							formFields:
 							[
 								{
