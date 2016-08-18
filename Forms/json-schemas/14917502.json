@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 5959f1ca4a7755008efa89e34d1c88305a4eb1b6",
+  "description": "Generated from b with shasum 5673aea9154c97660d716880082a817575af9f92",
   "type": "object",
   "required": [
     "blockId",

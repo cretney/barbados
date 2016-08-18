@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 7bc75fd5a87a58b98571901a975505cc6c65021a",
+  "description": "Generated from b with shasum 258bef88c3359a54519735365d54851c53298372",
   "type": "object",
   "required": [
     "blockId",
@@ -56,7 +56,7 @@
               "origin",
               "supplier",
               "fobValue",
-              "quantity"
+              "unitType"
             ],
             "properties": {
               "hsCode": {
@@ -74,8 +74,8 @@
               "fobValue": {
                 "type": "integer"
               },
-              "quantity": {
-                "type": "integer"
+              "unitType": {
+                "type": "string"
               }
             }
           }

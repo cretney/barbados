@@ -208,6 +208,11 @@
                 "title": "Others Annex",
                 "description": "Others: if in determining the origin of the good one of the procedures set forth in Articles 1V.06 or IV.05 of the Agreement, was used, indicate:"
               },
+              "currencyType": {
+                "type": "string",
+                "title": "Currencytype",
+                "description": ""
+              },
               "rulesOrigin": {
                 "type": "string",
                 "title": "Rules of Origin",
@@ -1492,11 +1497,6 @@
                 "type": "string",
                 "title": "Unit of Sale",
                 "description": "The unit of sale."
-              },
-              "quantity": {
-                "type": "integer",
-                "title": "Quantity",
-                "description": "The quantity in units of sale."
               }
             }
           }

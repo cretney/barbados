@@ -2340,6 +2340,13 @@
       "description": "Application for Exporter Registration"
     },
     {
+      "workflow_id": 20,
+      "step": 5,
+      "pga_id": 2,
+      "title": "Approval Application COO",
+      "description": "Application for Exporter Registration"
+    },
+    {
       "workflow_id": 22,
       "step": 1,
       "form_id": 33,
@@ -2591,7 +2598,7 @@
       "workflow_id": 41,
       "step": 1,
       "form_id": 2,
-      "title": "New Certificate of Origin - CARICOM - Costa Rica",
+      "title": "Certificate of Origin - CARICOM - Costa Rica",
       "description": "Please complete the Application for Certificate of Origin"
     },
     {
@@ -2619,7 +2626,7 @@
       "workflow_id": 42,
       "step": 1,
       "form_id": 6,
-      "title": "New Certificate of Origin - CARICOM - Cuba",
+      "title": "Certificate of Origin - CARICOM - Cuba",
       "description": "Please complete the Application for Certificate of Origin"
     },
     {
@@ -2640,7 +2647,7 @@
       "workflow_id": 43,
       "step": 1,
       "form_id": 200,
-      "title": "New Certificate of Origin - CARICOM - Colombia",
+      "title": "Certificate of Origin - CARICOM - Colombia",
       "description": "Please complete the Application for Certificate of Origin"
     },
     {
@@ -2661,7 +2668,7 @@
       "workflow_id": 44,
       "step": 1,
       "form_id": 202,
-      "title": "New Certificate of Origin - CARICOM - Common Market",
+      "title": "Certificate of Origin - CARICOM - Common Market",
       "description": "Please complete the Application for Certificate of Origin"
     },
     {
@@ -2682,7 +2689,7 @@
       "workflow_id": 45,
       "step": 1,
       "form_id": 204,
-      "title": "New Certificate of Origin - CARICOM - Dominican Republic",
+      "title": "Certificate of Origin - CARICOM - Dominican Republic",
       "description": "Please complete the Application for Certificate of Origin"
     },
     {
@@ -2703,7 +2710,7 @@
       "workflow_id": 46,
       "step": 1,
       "form_id": 206,
-      "title": "New Certificate of Origin - CARICOM - Venezuela",
+      "title": "Certificate of Origin - CARICOM - Venezuela",
       "description": "Please complete the Application for Certificate of Origin"
     },
     {
@@ -2724,7 +2731,7 @@
       "workflow_id": 47,
       "step": 1,
       "form_id": 170,
-      "title": "New Certificate of Origin - GSP",
+      "title": "Certificate of Origin - GSP",
       "description": "Please complete the Application for Certificate of Origin"
     },
     {
@@ -2745,7 +2752,7 @@
       "workflow_id": 48,
       "step": 1,
       "form_id": 172,
-      "title": "New Certificate of Origin - GSP - Canada",
+      "title": "Certificate of Origin - GSP - Canada",
       "description": "Please complete the Application for Certificate of Origin"
     },
     {
