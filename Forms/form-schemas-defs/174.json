@@ -160,8 +160,8 @@
               {
                 "key": "commodities[].units[0].quantity",
                 "type": "number",
-                "title": "Number of Packages",
-                "description": ""
+                "title": "Packages",
+                "description": "quantity"
               }
             ]
           },
@@ -238,9 +238,11 @@
             "items": [
               {
                 "key": "commodities[].invoiceDate",
-                "type": "date-time",
                 "title": "Invoice Date",
-                "description": ""
+                "description": "",
+                "minDate": "1995-09-01",
+                "maxDate":"2050-12-31",
+                "format": "yyyy-mm-dd"
               }
             ]
           }

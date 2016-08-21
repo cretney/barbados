@@ -125,9 +125,10 @@
                   "description": ""
                 },
                 "dateArrival": {
-                  "type": "date-time",
+                  "type": "string",
                   "title": "Datearrival",
-                  "description": ""
+                  "description": "",
+                  "format": "date"
                 },
                 "cifValue": {
                   "type": "integer",
@@ -188,9 +189,10 @@
             "description": "Enter the Number of the Commercial Invoice."
           },
           "invoiceDate": {
-            "type": "date-time",
+            "type": "string",
             "title": "Invoice Date",
-            "description": "Enter the Date of the Commercial Invoice."
+            "description": "Enter the Date of the Commercial Invoice.",
+            "format": "date"
           }
         }
       }
@@ -526,9 +528,10 @@
       "description": "The country where the goods were consigned."
     },
     "expectedArrival": {
-      "type": "date-time",
+      "type": "string",
       "title": "Expected Time of Arrival",
-      "description": "The date that the goods will arrive in Barbados."
+      "description": "The date that the goods will arrive in Barbados.",
+      "format": "date"
     },
     "consigments": {
       "type": "string",
@@ -556,19 +559,22 @@
       "description": "Previous Permit Number"
     },
     "previousExpiration": {
-      "type": "date-time",
+      "type": "string",
       "title": "Date Expired",
-      "description": "Expiration date of previous permit"
+      "description": "Expiration date of previous permit",
+      "format": "date"
     },
     "periodRequestStart": {
-      "type": "date-time",
+      "type": "string",
       "title": "Period Starting",
-      "description": "Period Starting of Request"
+      "description": "Period Starting of Request",
+      "format": "date"
     },
     "periodRequestEnding": {
-      "type": "date-time",
+      "type": "string",
       "title": "Period Ending",
-      "description": "Period Ending of Request"
+      "description": "Period Ending of Request",
+      "format": "date"
     },
     "importer": {
       "type": "object",
@@ -639,24 +645,28 @@
       "description": ""
     },
     "periodEnding": {
-      "type": "date-time",
+      "type": "string",
       "title": "Periodending",
-      "description": ""
+      "description": "",
+      "format": "date"
     },
     "approvalDate": {
-      "type": "date-time",
+      "type": "string",
       "title": "Approvaldate",
-      "description": ""
+      "description": "",
+      "format": "date"
     },
     "issuedDate": {
-      "type": "date-time",
+      "type": "string",
       "title": "Date Issued",
-      "description": ""
+      "description": "",
+      "format": "date"
     },
     "receptionDate": {
-      "type": "date-time",
+      "type": "string",
       "title": "Date Received",
-      "description": ""
+      "description": "",
+      "format": "date"
     },
     "consignee": {
       "type": "object",
@@ -765,9 +775,10 @@
       "description": ""
     },
     "inspectionDate": {
-      "type": "date-time",
+      "type": "string",
       "title": "Date Inspection",
-      "description": ""
+      "description": "",
+      "format": "date"
     },
     "inspector": {
       "type": "string",
@@ -805,9 +816,10 @@
       "description": ""
     },
     "dateInspection": {
-      "type": "date-time",
+      "type": "string",
       "title": "Date of Inspection",
-      "description": ""
+      "description": "",
+      "format": "date"
     },
     "timeInspection": {
       "type": "string",
@@ -815,9 +827,10 @@
       "description": ""
     },
     "entryDate": {
-      "type": "date-time",
+      "type": "string",
       "title": "Entry Date",
-      "description": ""
+      "description": "",
+      "format": "date"
     },
     "serialNumberCertificate": {
       "type": "string",
@@ -858,9 +871,10 @@
       "description": ""
     },
     "dateArrival": {
-      "type": "date-time",
+      "type": "string",
       "title": "Datearrival",
-      "description": ""
+      "description": "",
+      "format": "date"
     },
     "phytosanitaryCertificate": {
       "type": "string",
@@ -1391,9 +1405,10 @@
           "description": ""
         },
         "date": {
-          "type": "date-time",
+          "type": "string",
           "title": "Date",
-          "description": ""
+          "description": "",
+          "format": "date"
         }
       }
     },
@@ -1403,9 +1418,10 @@
       "description": "Enter the Number of the Commercial Invoice."
     },
     "invoiceDate": {
-      "type": "date-time",
+      "type": "string",
       "title": "Invoice Date",
-      "description": "Enter the Date of the Commercial Invoice."
+      "description": "Enter the Date of the Commercial Invoice.",
+      "format": "date"
     },
     "totalValue": {
       "type": "integer",

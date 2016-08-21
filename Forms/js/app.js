@@ -7,7 +7,16 @@
 		$httpProvider.defaults.headers.post['X-Requested-With'] = 'XMLHttpRequest';
 		$httpProvider.defaults.headers.post['If-Match'] = "*";
 	}])
-
+	// .config(['schemaFormProvider', 'schemaFormDecoratorsProvider', 'sfPathProvider', function(schemaFormProvider, schemaFormDecoratorsProvider, sfPathProvider) {
+	// 	schemaFormProvider.postProcess(function(form) {
+	//     // _.remove(form, {title: 'id'});
+	//     angular.forEach(form, function(fld) {
+	//       if(!fld.feedback) fld.feedback = "{'fa': true, 'fa-check': hasSuccess(), 'fa-exclamation-circle': hasError() }";
+	//       if(!fld.ngModelOptions) fld.ngModelOptions = {updateOn: 'default blur click', debounce: {'default': 500, 'blur': 0, 'click': 0}};
+	//     });
+	//     return form;
+	//   });
+	// }])
 	.controller('appCtrl', ['$scope', 'dataService',function($scope, dataService){
 		dataService.getForms().then(function(forms){
 			$scope.home = {
