@@ -11,7 +11,15 @@
 			<label-value label="'EXPORTING COUNTRY:'" value ="ila.submission.applicant.country"></label-value>
    </div>
     <div class="col-sm-6">
-			<label-value label="'IMPORTING COUNTRY:'" value ="ila.submission.destination.country"></label-value>
+			<strong>IMPORTING COUNTRY:</strong> <br>
+      <td>
+        <ui-select ng-model="form.data.destinationCountry"  theme="bootstrap">
+            <ui-select-match class="ui-select-match" >{{$select.selected.name}}</ui-select-match>
+            <ui-select-choices class="ui-select-choices" group-by="groupFind" repeat="value.id as value in form.options.caricom_countries_venezuela | filter: $select.search">
+                <div ng-bind-html="value.name | highlight: $select.search"></div>
+            </ui-select-choices>
+        </ui-select>
+      </td>
 		</div>
   </div>
   <hr>

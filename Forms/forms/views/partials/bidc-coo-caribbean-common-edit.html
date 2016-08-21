@@ -56,7 +56,7 @@
     <div class="col-sm-4">
 			<strong>Country of Destination</strong> <br>
       <td>
-        <ui-select ng-model="ila.submission.destination.country"  theme="bootstrap">
+        <ui-select ng-model="form.data.destinationCountry"  theme="bootstrap">
             <ui-select-match class="ui-select-match" >{{$select.selected.name}}</ui-select-match>
             <ui-select-choices class="ui-select-choices" group-by="groupFind" repeat="value.id as value in form.options.gsp_countries_caricom | filter: $select.search">
                 <div ng-bind-html="value.name | highlight: $select.search"></div>

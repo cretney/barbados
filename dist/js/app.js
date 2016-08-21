@@ -263,6 +263,9 @@
 							gsp_countries_caricom:[
 								{"id":"AI","name":"Anguilla"},{"id":"AG","name":"Antigua and Barbuda"},{"id":"BZ","name":"Belize"},{"id":"DM","name":"Dominica"},{"id":"GD","name":"Grenada"},{"id":"GY","name":"Guyana"},{"id":"JM","name":"Jamaica"},{"id":"MS","name":"Montserrat"},{"id":"KN","name":"Saint Kitts and Nevis"},{"id":"LC","name":"Saint Lucia"},{"id":"VC","name":"Saint Vincent and the Grenadines"},{"id":"SR","name":"Suriname"},{"id":"TT","name":"Trinidad and Tobago"}
 							],
+							caricom_countries_venezuela:[
+								{"id":"VE", "name":'Venezuela'}
+							],
 							formFields:
 							[
 								{

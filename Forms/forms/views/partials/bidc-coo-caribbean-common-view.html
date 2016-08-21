@@ -38,7 +38,10 @@
     </div>
     <div class="col-sm-4">
 			<strong>Country of Destination</strong> <br>
-      {{ila.submission.destination.country}}
+
+      <div ng-repeat="data in form.options.gsp_countries_caricom" ng-show="data.id==ila.submission.destinationCountry">
+          {{data.name}} ({{ila.submission.destinationCountry}})
+      </div>
     </div>
   </div>
   <hr>

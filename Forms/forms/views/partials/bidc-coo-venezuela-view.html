@@ -7,14 +7,17 @@
   <br>
   <br>
   <div class="row">
-    <div class="col-sm-6">			 
+    <div class="col-sm-6">
 			<label-value label="'EXPORTING COUNTRY:'" value ="ila.submission.applicant.country"></label-value>
    </div>
     <div class="col-sm-6">
-			<label-value label="'IMPORTING COUNTRY::'" value ="ila.submission.destination.country"></label-value>
+      <strong>Country of Destination</strong> <br>
+      <div ng-repeat="data in form.options.caricom_countries_venezuela" ng-show="data.id==ila.submission.destinationCountry">
+          {{data.name}} ({{ila.submission.destinationCountry}})
+      </div>
 		</div>
   </div>
-  <hr>  
+  <hr>
   <div class="row">
     <div class="col-sm-12">
 	    <div view-commodities-venezuela=""></div>
@@ -38,22 +41,22 @@
 			8. DATE
    </div>
   </div>
-  <hr>  
+  <hr>
   <div class="row">
     <div class="col-sm-8">
-			9. STAMP AND SIGNATURE OF EXPORTER OR PRODUCER 
+			9. STAMP AND SIGNATURE OF EXPORTER OR PRODUCER
    </div>
     <div class="col-sm-4">
 			AUTHORISED SIGNATURE
 		</div>
   </div>
-  <hr>  
+  <hr>
   <div class="row">
     <div class="col-sm-12">
       <strong>10.</strong>
       <span field-name="76" form='form'  readonly="true" ila='ila'></span>
     </div>
-  </div>  
+  </div>
   <hr>
   <div class="row">
     <div class="col-sm-12">
@@ -62,7 +65,7 @@
 			ON THE <br>
    </div>
   </div>
-  <hr>  
+  <hr>
   <div class="row">
     <div class="col-sm-12">
 			<h4>NOTES: </h4>
