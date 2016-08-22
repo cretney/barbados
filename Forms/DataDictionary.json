@@ -849,43 +849,43 @@
   "documents": [
     {
       "id": 1,
-      "name": "Application for Import Licence.pdf",
+      "name": "Import Licence and Application (ILA)",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 2,
-      "name": "Import of Reconditioned Cars for Sale to Public.pdf",
+      "name": "Notification of the Import of Reconditioned Cars for Sale to Public",
       "processType": "I",
       "purpose": "A"
     },
     {
       "id": 3,
-      "name": "Letter Imports Payable on CIF - individual and Antique Vehicle Import.pdf",
+      "name": "Letter of CIF Payable Upon Importation of Vehicle",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 4,
-      "name": "Letter to Pay Taxes on CIF Value - Returning Nationals.pdf",
+      "name": "Letter of CIF Payable Upon Importation by Returning Nationals",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 5,
-      "name": "Importing vehicle personal use.pdf",
+      "name": "Letter for the Import of a Vehicle for Personal Use",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 6,
-      "name": "Application for Import and Display of Fireworks.pdf",
+      "name": "Letter of Approval to Export Fireworks",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 7,
-      "name": "Permit for Import and Display of Fireworks.pdf",
+      "name": "Application and Permit for the Import and Display of Fireworks",
       "processType": "I",
       "purpose": "B"
     },
@@ -897,43 +897,43 @@
     },
     {
       "id": 9,
-      "name": "Application for Import of Instrument of Defense.pdf",
+      "name": "Application for the Importation of Instruments of Defence - Submitter is Applicant",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 12,
-      "name": "Application for Import of Narcotics Letter.pdf",
+      "name": "Letter for the Import of Narcotics",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 13,
-      "name": "Duty Free Certificate.pdf",
+      "name": "Duty Free Certificate",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 14,
-      "name": "Import Authorization Narcotics.pdf",
+      "name": "Import Authorization for Narcotics",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 15,
-      "name": "Import Certificate Narcotics.pdf",
+      "name": "Import Certificate for Narcotics",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 16,
-      "name": "Export Authorization Narcotics.pdf",
+      "name": "Export Authorization for Narcotics",
       "processType": "E",
       "purpose": "B"
     },
     {
       "id": 17,
-      "name": "Licence to Import and Store.pdf",
+      "name": "Licence to Import and Store Therapeutic Substances",
       "processType": "I",
       "purpose": "B"
     },
@@ -963,7 +963,7 @@
     },
     {
       "id": 22,
-      "name": "Application for Certificate of Origin Registration as Exporter.pdf",
+      "name": "Application for Exporter Registration - old",
       "processType": "E",
       "purpose": "B"
     },
@@ -981,151 +981,151 @@
     },
     {
       "id": 26,
-      "name": "Certificate of Inspection Slip (from booklet).pdf",
+      "name": "Certificate of Inspection Slip",
       "processType": "I",
       "purpose": "W"
     },
     {
       "id": 27,
-      "name": "Phitosanitary Inspection Certificate for Import Release.pdf",
+      "name": "Phytosanitary Inspection Certificate for Import Release",
       "processType": "I",
       "purpose": "W"
     },
     {
       "id": 28,
-      "name": "Application to Import Planting Material.pdf",
+      "name": "Application to Import Planting Material",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 29,
-      "name": "Specimen Samples - Plant Pests - Prohibited Materials Inteceptions .pdf",
+      "name": "Specimen Samples - Plant Pests - Prohibited Materials Interceptions",
       "processType": "I",
       "purpose": "W"
     },
     {
       "id": 30,
-      "name": "Plant Quarantine Waiver Application.pdf",
+      "name": "Plant Quarantine Waiver Application",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 31,
-      "name": "Letter to Customs to Process Entry in Abscene of Phytosanitary Certificate.pdf",
+      "name": "Letter to Customs to Process Entry in Absence of Phytosanitary Certificate",
       "processType": "I",
       "purpose": "A"
     },
     {
       "id": 32,
-      "name": "Request for Plant Inspection Letter.pdf",
+      "name": "Request for Plant Inspection Letter",
       "processType": "I",
       "purpose": "W"
     },
     {
       "id": 33,
-      "name": "Phytosanitary Certificate.pdf",
+      "name": "Phytosanitary Certificate",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 34,
-      "name": "Certificate of Custody Slip (from booklet).pdf",
+      "name": "Certificate of Custody",
       "processType": "I",
       "purpose": "A"
     },
     {
       "id": 35,
-      "name": "Permit to Import Plant Material Class C.pdf",
+      "name": "Permit to Import Plant Material Class C",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 36,
-      "name": "Post Entry Inspection Report (Live Plants).pdf",
+      "name": "Post Entry Inspection Report (Live Plants)",
       "processType": "I",
       "purpose": "W"
     },
     {
       "id": 37,
-      "name": "Primary Inspection Report (Live Plants).pdf",
+      "name": "Primary Inspection Report (Live Plants)",
       "processType": "I",
       "purpose": "W"
     },
     {
       "id": 38,
-      "name": "Veterinary Export Health Certificate.pdf",
+      "name": "Veterinary Export Health Certificate - Other",
       "processType": "E",
       "purpose": "B"
     },
     {
       "id": 39,
-      "name": "Veterinary Export Health Certificate Equine.pdf",
+      "name": "Veterinary Export Health Certificate - Equine",
       "processType": "E",
       "purpose": "B"
     },
     {
       "id": 40,
-      "name": "Veterinary Export Health Certificate Avian.pdf",
+      "name": "Veterinary Export Health Certificate - Avian",
       "processType": "E",
       "purpose": "B"
     },
     {
       "id": 41,
-      "name": "Quarantine Release Certificate.pdf",
+      "name": "Quarantine Release Certificate",
       "processType": "I",
       "purpose": "W"
     },
     {
       "id": 42,
-      "name": "Permit to import Other than Meat Products .pdf",
+      "name": "Periodic Permit - Animal Products Other than Meat",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 43,
-      "name": "Permit to import Meat and Poultry Products.pdf",
+      "name": "Periodic Permit - Meat and Poultry Products",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 44,
-      "name": "Permit to Import into Barbados Semen Eggs Germ Plasm.pdf",
+      "name": "Periodic Permit - Semen Eggs Germ Plasm Vet Biologicals",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 45,
-      "name": "Permit to import Dairy Products.pdf",
+      "name": "Periodic Permit - Dairy Products",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 46,
-      "name": "Permit to Import Animals and Birds into Barbados.pdf",
+      "name": "Periodic Permit - Animals and Birds",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 47,
-      "name": "Official Veterinary Meat Inspection Certificate.pdf",
+      "name": "Meat Inspection Certificate",
       "processType": "I",
       "purpose": "W"
     },
     {
       "id": 48,
-      "name": "Landing Certificate for Animals.pdf",
+      "name": "Landing Certificate for Animals",
       "processType": "I",
       "purpose": "W"
     },
     {
       "id": 49,
-      "name": "Endorsement of Customs Entry with Approval Stamp.pdf",
+      "name": "Endorsement of Customs Entry with Approval Stamp",
       "processType": "I",
       "purpose": "A"
     },
     {
       "id": 51,
-      "name": "CITES Permit - sample data.pdf",
+      "name": "CITES Permit",
       "processType": "I",
       "purpose": "B"
     },
@@ -1137,121 +1137,121 @@
     },
     {
       "id": 54,
-      "name": "Application for permit to import Veterinary Biologicals.pdf",
+      "name": "Application - Shipment Permit - Veterinary Biologicals",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 55,
-      "name": "Application for permit to import Semen for Artificial Insemination.pdf",
+      "name": "Application - Shipment Permit - Semen",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 56,
-      "name": "Application for permit to import Dairy Products.pdf",
+      "name": "Application - Periodic Permit - Dairy Products",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 57,
-      "name": "Application for Import of Cats and dogs.pdf",
+      "name": "Application - Shipment Permit - Cats or Dogs",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 58,
-      "name": "Application for Traveller Passengers Import Meat.pdf",
+      "name": "Application - Shipment Permit - Meat by a Traveller or Passenger",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 59,
-      "name": "Application for Transit of Animals.pdf",
+      "name": "Application - Transit Permit - Animals",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 60,
-      "name": "Application to Import of Animals / Domestic.pdf",
+      "name": "Application - Shipment Permit - Domestic Animal",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 61,
-      "name": "Application to Individual Permit to Import Meat Dairy Poulty.pdf",
+      "name": "Application - Shipment Permit - Meat Dairy Poulty Animal Products",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 63,
-      "name": "Wholesome Food Certificate.pdf",
+      "name": "Wholesome Food Certificate",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 64,
-      "name": "Free Sale Certificate.pdf",
+      "name": "Free Sale Certificate",
       "processType": "I",
       "purpose": "A"
     },
     {
       "id": 66,
-      "name": "Inspection Request.pdf",
+      "name": "Inspection Request",
       "processType": "I",
       "purpose": "W"
     },
     {
       "id": 68,
-      "name": "Unwholesome Food Certificate.pdf",
+      "name": "Unwholesome Food Certificate",
       "processType": "I",
       "purpose": "A"
     },
     {
       "id": 69,
-      "name": "Notification of Detention of food for further Examination.pdf",
+      "name": "Notification of Detention of Food for Further Examination",
       "processType": "I",
       "purpose": "A"
     },
     {
       "id": 71,
-      "name": "Certificate of Condemnation of Food.pdf",
+      "name": "Certificate of Condemnation of Food",
       "processType": "I",
       "purpose": "W"
     },
     {
       "id": 73,
-      "name": "DF Certificate staff  from Caribbean Development Bank.pdf",
+      "name": "DF Certificate - Caribbean Development Bank",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 74,
-      "name": "DF Application Letter from Caribbean Development Bank.pdf",
+      "name": "DF Application Letter - Caribbean Development Bank",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 75,
-      "name": "DF Application Letter Taxi.pdf",
+      "name": "DF Application Letter - Taxi",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 76,
-      "name": "DF Certificate Vehicle.pdf",
+      "name": "DF Application Vehicle",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 77,
-      "name": "DF Certificate for Postman.pdf",
+      "name": "DF Certificate - Postal Motorcycle",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 78,
-      "name": "Application from Postman for duty free concession of Motorcicle.pdf",
+      "name": "DF Application Letter - Postal Motorcycle",
       "processType": "I",
       "purpose": "B"
     },
@@ -1263,115 +1263,115 @@
     },
     {
       "id": 80,
-      "name": "Letter from Postmaster Certifyin no DF Concession ever granted to applicant.pdf",
+      "name": "Postal Letter Supporting a DF Application",
       "processType": "I",
       "purpose": "A"
     },
     {
       "id": 81,
-      "name": "Application for a Licence to Import/manufacture a Pesticide.pdf",
+      "name": "Application for a Licence to Import or Manufacture a Pesticide",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 82,
-      "name": "Application for Approval of Pesticide.pdf",
+      "name": "Application for the Approval of a Pesticide",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 83,
-      "name": "Application for Permission to Use Firearms.pdf",
+      "name": "Application for the Permission to Use Firearms or Instruments of Defence",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 84,
-      "name": "Application for Registration of a Fishery Worker.pdf",
+      "name": "Application for the Registration of a Fishery Worker",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 85,
-      "name": "Application for Registration of a Local Fishing Vessel.pdf",
+      "name": "Application for the Registration of a Local Fishing Vessel",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 86,
-      "name": "Application for Registration of a Processor.pdf",
+      "name": "Application for the Registration of a Processor",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 87,
-      "name": "Atlantic Swordfish Certificate of Elegibility (COE).pdf",
+      "name": "Atlantic Swordfish Certificate of Eligibility (COE)",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 88,
-      "name": "Duty Free Concession Certificate.pdf",
+      "name": "Application for a Duty Free Concession",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 91,
-      "name": "Permit for Import of Instrument of Defense.pdf",
+      "name": "Application for the Importation of Instruments of Defence - Submitter is Third Party",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 92,
-      "name": "Application  for the Importation of Plants.pdf",
+      "name": "Application for the Importation of Plants",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 93,
-      "name": "Sampling of Goods.pdf",
+      "name": "Sampling of Goods",
       "processType": "I",
       "purpose": "A"
     },
     {
       "id": 94,
-      "name": "Verification.pdf",
+      "name": "Verification of an Agricultural Enterprise",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 95,
-      "name": "Farmers' Registration Form.pdf",
+      "name": "Farmers Registration Form",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 96,
-      "name": "Dutyfree Concessions form (1).pdf",
+      "name": "Application for a Duty Free Concession on Agricultural Inputs",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 97,
-      "name": "Letter - Duty-free Concession - Vehicle - Bruce Bayley, Clifton Plantation Feb.10, 2016.pdf",
+      "name": "Letter - Duty-free Concession - Vehicle",
       "processType": "I",
       "purpose": "A"
     },
     {
       "id": 98,
-      "name": "Memorandum of Understanding between.pdf",
+      "name": "Memorandum of Understanding for Duty and Tax Waiver",
       "processType": "I",
       "purpose": "A"
     },
     {
       "id": 99,
-      "name": "Registration for Telecommunication Sellers and Dealers Class Licence.pdf",
+      "name": "Registration for a Telecommunication Sellers and Dealers Class Licence",
       "processType": "I",
       "purpose": "B"
     },
     {
       "id": 100,
-      "name": "Application for Telecommunications  Sellers and  Dealer’s (Individual) Licence.pdf",
+      "name": "Application for a Telecommunications Sellers and Dealer’s (Individual) Licence",
       "processType": "I",
       "purpose": "B"
     },
@@ -2259,6 +2259,16 @@
       "processType": "I",
       "purpose": "B",
       "signature": "0"
+    },
+    {
+      "id": 53,
+      "name": "FoodWholePostArrivalInspection",
+      "owner": "Food Safety",
+      "pga_owner_id": 5,
+      "document_id": 66,
+      "processType": "I",
+      "purpose": "W",
+      "signature": "0"
     }
   ],
   "workflow_interactions": [
@@ -2366,20 +2376,6 @@
       "form_id": 34,
       "title": "Permit to import Poultry Products",
       "description": "Import Permit"
-    },
-    {
-      "workflow_id": 24,
-      "step": 15,
-      "form_id": 42,
-      "title": "New Inspection Request",
-      "description": "Please complete the Inspection Request"
-    },
-    {
-      "workflow_id": 24,
-      "step": 16,
-      "form_id": 43,
-      "title": "Inspection Request",
-      "description": null
     },
     {
       "workflow_id": 24,
@@ -2824,6 +2820,20 @@
       "pga_id": 18,
       "title": "Review Duty Free Application",
       "description": "Duty Free Application Letter Taxi"
+    },
+    {
+      "workflow_id": 53,
+      "step": 15,
+      "form_id": 42,
+      "title": "New Inspection Request",
+      "description": "Please complete the Inspection Request"
+    },
+    {
+      "workflow_id": 53,
+      "step": 16,
+      "form_id": 43,
+      "title": "Inspection Request",
+      "description": null
     }
   ],
   "hscodes_workflows": [
@@ -8156,6 +8166,686 @@
     {
       "hscode": "22.09 ",
       "id": 24,
+      "notes": "Vinegar and substitutes for vinegar obtained from acetic acid"
+    },
+    {
+      "hscode": "02.01 ",
+      "id": 53,
+      "notes": "Meat of bovine animals, fresh or chilled"
+    },
+    {
+      "hscode": "02.02 ",
+      "id": 53,
+      "notes": "Meat of bovine animals, frozen"
+    },
+    {
+      "hscode": "02.03 ",
+      "id": 53,
+      "notes": "Meat of swine, fresh, chilled or frozen"
+    },
+    {
+      "hscode": "02.04 ",
+      "id": 53,
+      "notes": "Meat of sheep or goats, fresh, chilled or frozen"
+    },
+    {
+      "hscode": "02.05 ",
+      "id": 53,
+      "notes": "Meat of horses, asses, mules or hinnies, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.06 ",
+      "id": 53,
+      "notes": "Edible offal of bovine animals, swine, sheep, goats, horses, asses, mules or hinnies, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.07 ",
+      "id": 53,
+      "notes": "Meat and edible offal, of the poultry of heading 01.05, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.08 ",
+      "id": 53,
+      "notes": "Other meat and edible meat offal, fresh, chilled or frozen."
+    },
+    {
+      "hscode": "02.09 ",
+      "id": 53,
+      "notes": "Pig fat, free of lean meat, and poultry fat, not rendered or otherwise extracted, fresh, chilled, frozen, salted, in brine, dried or smoked"
+    },
+    {
+      "hscode": "02.10 ",
+      "id": 53,
+      "notes": "Meat and edible meat offal, salted, in brine, dried or smoked; edible flours and meals of meat or meat offal."
+    },
+    {
+      "hscode": "03.02 ",
+      "id": 53,
+      "notes": "Fish, fresh or chilled, excluding fish fillets and other fish meat of heading 03.04."
+    },
+    {
+      "hscode": "03.03 ",
+      "id": 53,
+      "notes": "Fish, frozen, excluding fish fillets and other fish meat of heading 03.04"
+    },
+    {
+      "hscode": "03.04 ",
+      "id": 53,
+      "notes": "Fish fillets and other fish meat (whether or not minced), fresh, chilled or frozen"
+    },
+    {
+      "hscode": "03.05 ",
+      "id": 53,
+      "notes": "Fish, dried, salted or in brine; smoked fish, whether or not cooked before or during the smoking process; flours, meals and pellets of fish, fit for human consumption."
+    },
+    {
+      "hscode": "03.06 ",
+      "id": 53,
+      "notes": "Crustaceans, whether in shell or not, live, fresh, chilled, frozen, dried, salted or in brine; crustaceans, in shell, cooked by steaming or by boiling in water, whether or not chilled, frozen, dried, salted or in brine; flours, meals and pellets of crustaceans, fit for human consumption."
+    },
+    {
+      "hscode": "03.07 ",
+      "id": 53,
+      "notes": "Molluscs, whether in shell or not, live, fresh, chilled, frozen, dried, salted or in brine; aquatic invertebrates other than crustaceans and molluscs, live, fresh, chilled, frozen, dried, salted or in brine; flours, meals and pellets of aquatic invertebrates other than crustaceans, fit for human consumption"
+    },
+    {
+      "hscode": "04.01 ",
+      "id": 53,
+      "notes": "Milk and cream, not concentrated nor containing added sugar or other sweetening matter"
+    },
+    {
+      "hscode": "04.02 ",
+      "id": 53,
+      "notes": "Milk and cream, concentrated or containing added sugar or other sweetening matter."
+    },
+    {
+      "hscode": "04.03 ",
+      "id": 53,
+      "notes": "Buttermilk, curdled milk and cream, yogurt, kephir and other fermented or acidified milk and cream, whether or not concentrated or containing added sugar or other sweetening matter or flavoured or containing added fruit, nuts or cocoa."
+    },
+    {
+      "hscode": "04.04 ",
+      "id": 53,
+      "notes": "Whey, whether or not concentrated or containing added sugar or other sweetening matter; products consisting of natural milk constituents, whether or not containing added sugar or other sweetening matter, not elsewhere specified or included."
+    },
+    {
+      "hscode": "04.05 ",
+      "id": 53,
+      "notes": "Butter and other fats and oils derived from milk; dairy spreads"
+    },
+    {
+      "hscode": "04.06 ",
+      "id": 53,
+      "notes": "Cheese and curd."
+    },
+    {
+      "hscode": "04.07 ",
+      "id": 53,
+      "notes": "Birds' eggs, in shell, fresh, preserved or cooked."
+    },
+    {
+      "hscode": "04.08 ",
+      "id": 53,
+      "notes": "Birds' eggs, not in shell, and egg yolks, fresh, dried, cooked by steaming or by boiling in water, moulded, frozen or otherwise preserved, whether or not containing added sugar or other sweetening matter"
+    },
+    {
+      "hscode": "04.09 ",
+      "id": 53,
+      "notes": "Natural honey"
+    },
+    {
+      "hscode": "04.10 ",
+      "id": 53,
+      "notes": "Edible products of animal origin, not elsewhere specified or included."
+    },
+    {
+      "hscode": "05.04 ",
+      "id": 53,
+      "notes": "Guts, bladders and stomachs of animals (other than fish), whole and pieces thereof, fresh, chilled, frozen, salted, in brine, dried or smoked."
+    },
+    {
+      "hscode": "07.01 ",
+      "id": 53,
+      "notes": "Potatoes, fresh or chilled."
+    },
+    {
+      "hscode": "07.02 ",
+      "id": 53,
+      "notes": "Tomatoes, fresh or chilled"
+    },
+    {
+      "hscode": "07.03 ",
+      "id": 53,
+      "notes": "Onions, shallots, garlic, leeks and other alliaceous vegetables, fresh or chilled."
+    },
+    {
+      "hscode": "07.04 ",
+      "id": 53,
+      "notes": "Cabbages, cauliflowers, kohlrabi, kale and similar edible brassicas, fresh or chilled."
+    },
+    {
+      "hscode": "07.05 ",
+      "id": 53,
+      "notes": "Lettuce (Lactuca sativa) and chicory (Cichorium spp.), fresh or chilled."
+    },
+    {
+      "hscode": "07.06 ",
+      "id": 53,
+      "notes": "Carrots, turnips, salad beetroot, salsify, celeriac, radishes and similar edible roots, fresh or chilled."
+    },
+    {
+      "hscode": "07.07 ",
+      "id": 53,
+      "notes": "Cucumbers and gherkins, fresh or chilled."
+    },
+    {
+      "hscode": "07.08 ",
+      "id": 53,
+      "notes": "Leguminous vegetables, shelled or unshelled, fresh or chilled."
+    },
+    {
+      "hscode": "07.09 ",
+      "id": 53,
+      "notes": "Other vegetables, fresh or chilled."
+    },
+    {
+      "hscode": "07.10 ",
+      "id": 53,
+      "notes": "Vegetables (uncooked or cooked by steaming or boiling in water), frozen"
+    },
+    {
+      "hscode": "07.11 ",
+      "id": 53,
+      "notes": "Vegetables provisionally preserved (for example, by sulphur dioxide gas, in brine, in sulphur water or in other preservative solutions), but unsuitable in that state for immediate consumption."
+    },
+    {
+      "hscode": "07.12 ",
+      "id": 53,
+      "notes": "Dried vegetables, whole, cut, sliced, broken or in powder, but not further prepared."
+    },
+    {
+      "hscode": "07.13 ",
+      "id": 53,
+      "notes": "Dried leguminous vegetables, shelled, whether or not skinned or split."
+    },
+    {
+      "hscode": "07.14 ",
+      "id": 53,
+      "notes": "Manioc, arrowroot, salep, Jerusalem artichokes, sweet potatoes and similar roots and tubers with high starch or inulin content, fresh, chilled, frozen or dried, whether or not sliced or in the form of pellets; sago pith."
+    },
+    {
+      "hscode": "08.01 ",
+      "id": 53,
+      "notes": "Coconuts, Brazil nuts and cashew nuts, fresh or dried, whether or not shelled or peeled."
+    },
+    {
+      "hscode": "08.02 ",
+      "id": 53,
+      "notes": "Other nuts, fresh or dried, whether or not shelled or peeled."
+    },
+    {
+      "hscode": "08.03 ",
+      "id": 53,
+      "notes": "Bananas, including plantains, fresh or dried."
+    },
+    {
+      "hscode": "08.04 ",
+      "id": 53,
+      "notes": "Dates, figs, pineapples, avocados, guavas, mangoes and mangosteens, fresh or dried."
+    },
+    {
+      "hscode": "08.05 ",
+      "id": 53,
+      "notes": "Citrus fruit, fresh or dried"
+    },
+    {
+      "hscode": "08.06 ",
+      "id": 53,
+      "notes": "Grapes, fresh or dried."
+    },
+    {
+      "hscode": "08.07 ",
+      "id": 53,
+      "notes": "Melons (including watermelons) and papaws (papayas), fresh"
+    },
+    {
+      "hscode": "08.08 ",
+      "id": 53,
+      "notes": "Apples, pears and quinces, fresh"
+    },
+    {
+      "hscode": "08.09 ",
+      "id": 53,
+      "notes": "Apricots, cherries, peaches (including nectarines), plums and sloes, fresh."
+    },
+    {
+      "hscode": "08.10 ",
+      "id": 53,
+      "notes": "Other fruit, fresh"
+    },
+    {
+      "hscode": "08.11 ",
+      "id": 53,
+      "notes": "Fruit and nuts, uncooked or cooked by steaming or boiling in water, frozen, whether or not containing added sugar or other sweetening matter."
+    },
+    {
+      "hscode": "08.12 ",
+      "id": 53,
+      "notes": "Fruit and nuts, provisionally preserved (for example, by sulphur dioxide gas, in brine, in sulphur water or in other preservative solutions), but unsuitable in that state for immediate consumption."
+    },
+    {
+      "hscode": "08.13 ",
+      "id": 53,
+      "notes": "Fruit, dried, other than that of headings 08.01 to 08.06; mixtures of nuts or dried fruits of this Chapter."
+    },
+    {
+      "hscode": "08.14 ",
+      "id": 53,
+      "notes": "Peel of citrus fruit or melons (including watermelons), fresh, frozen, dried or provisionally preserved in brine, in sulphur water or in other preservative solutions."
+    },
+    {
+      "hscode": "09.01 ",
+      "id": 53,
+      "notes": "Coffee, whether or not roasted or decaffeinated; coffee husks and skins; coffee substitutes containing coffee in any proportion."
+    },
+    {
+      "hscode": "09.02 ",
+      "id": 53,
+      "notes": "Tea, whether or not flavoured."
+    },
+    {
+      "hscode": "09.03 ",
+      "id": 53,
+      "notes": "Maté."
+    },
+    {
+      "hscode": "09.04 ",
+      "id": 53,
+      "notes": "Pepper of the genus Piper; dried or crushed or ground fruits of the genus Capsicumor of the genus Pimenta."
+    },
+    {
+      "hscode": "09.05 ",
+      "id": 53,
+      "notes": "Vanilla."
+    },
+    {
+      "hscode": "09.06 ",
+      "id": 53,
+      "notes": "Cinnamon and cinnamon-tree flowers"
+    },
+    {
+      "hscode": "09.07 ",
+      "id": 53,
+      "notes": "Cloves (whole fruit, cloves and stems)"
+    },
+    {
+      "hscode": "09.08 ",
+      "id": 53,
+      "notes": "Nutmeg, mace and cardamoms."
+    },
+    {
+      "hscode": "09.09 ",
+      "id": 53,
+      "notes": "Seeds of anise, badian, fennel, coriander, cumin or caraway; juniper berries."
+    },
+    {
+      "hscode": "09.10 ",
+      "id": 53,
+      "notes": "Ginger, saffron, turmeric (curcuma), thyme, bay leaves, curry and other spices"
+    },
+    {
+      "hscode": "10.01 ",
+      "id": 53,
+      "notes": "Wheat and meslin"
+    },
+    {
+      "hscode": "10.02 ",
+      "id": 53,
+      "notes": "Rye."
+    },
+    {
+      "hscode": "10.03 ",
+      "id": 53,
+      "notes": "Barley"
+    },
+    {
+      "hscode": "10.04 ",
+      "id": 53,
+      "notes": "Oats"
+    },
+    {
+      "hscode": "10.05 ",
+      "id": 53,
+      "notes": "Maize (corn)."
+    },
+    {
+      "hscode": "10.06 ",
+      "id": 53,
+      "notes": "Rice."
+    },
+    {
+      "hscode": "10.07 ",
+      "id": 53,
+      "notes": "Grain sorghum"
+    },
+    {
+      "hscode": "10.08 ",
+      "id": 53,
+      "notes": "Buckwheat, millet and canary seed; other cereals."
+    },
+    {
+      "hscode": "11.01 ",
+      "id": 53,
+      "notes": "Wheat or meslin flour."
+    },
+    {
+      "hscode": "11.02 ",
+      "id": 53,
+      "notes": "Cereal flours other than of wheat or meslin."
+    },
+    {
+      "hscode": "11.03 ",
+      "id": 53,
+      "notes": "Cereal groats, meal and pellets."
+    },
+    {
+      "hscode": "11.04 ",
+      "id": 53,
+      "notes": "Cereal grains otherwise worked (for example, hulled, rolled, flaked, pearled, sliced or kibbled), except rice of heading 10.06; germ of cereals, whole, rolled, flaked or ground"
+    },
+    {
+      "hscode": "12.01 ",
+      "id": 53,
+      "notes": "Soya beans, whether or not broken."
+    },
+    {
+      "hscode": "12.02 ",
+      "id": 53,
+      "notes": "Ground-nuts, not roasted or otherwise cooked, whether or not shelled or broken."
+    },
+    {
+      "hscode": "12.03 ",
+      "id": 53,
+      "notes": "Copra."
+    },
+    {
+      "hscode": "12.04 ",
+      "id": 53,
+      "notes": "Linseed, whether or not broken."
+    },
+    {
+      "hscode": "12.05 ",
+      "id": 53,
+      "notes": "Rape or colza seeds, whether or not broken"
+    },
+    {
+      "hscode": "12.06 ",
+      "id": 53,
+      "notes": "Sunflower seeds, whether or not broken"
+    },
+    {
+      "hscode": "12.07 ",
+      "id": 53,
+      "notes": "Other oil seeds and oleaginous fruits, whether or not broken"
+    },
+    {
+      "hscode": "12.09 ",
+      "id": 53,
+      "notes": "Seeds, fruit and spores, of a kind used for sowing"
+    },
+    {
+      "hscode": "12.10 ",
+      "id": 53,
+      "notes": "Hop cones, fresh or dried, whether or not ground, powdered or in the form of pellets; lupulin"
+    },
+    {
+      "hscode": "12.11 ",
+      "id": 53,
+      "notes": "Plants and parts of plants (including seeds and fruits), of a kind used primarily in perfumery, in pharmacy or for insecticidal, fungicidal or similar purposes, fresh or dried, whether or not cut, crushed or powdered."
+    },
+    {
+      "hscode": "12.12 ",
+      "id": 53,
+      "notes": "Locust beans, seaweeds and other algae, sugar beet and sugar cane, fresh, chilled, frozen or dried, whether or not ground; fruit stones and kernels and other vegetable products (including unroasted chicory roots of the variety Cichorium intybus sativum) of a kind used primarily for human consumption, not elsewhere specified or included."
+    },
+    {
+      "hscode": "13.01 ",
+      "id": 53,
+      "notes": "Lac; natural gums, resins, gum-resins and oleoresins (for example, balsams)."
+    },
+    {
+      "hscode": "13.02 ",
+      "id": 53,
+      "notes": "Vegetable saps and extracts; pectic substances, pectinates and pectates; agar-agar and other mucilages and thickeners, whether or not modified, derived from vegetable products."
+    },
+    {
+      "hscode": "15.01 ",
+      "id": 53,
+      "notes": "Pig fat (including lard) and poultry fat, other than that of heading 02.09 or 15.03."
+    },
+    {
+      "hscode": "15.02 ",
+      "id": 53,
+      "notes": "Fats of bovine animals, sheep or goats, other than those of heading 15.03."
+    },
+    {
+      "hscode": "15.03 ",
+      "id": 53,
+      "notes": "Lard stearin, lard oil, oleostearin, oleo-oil and tallow oil, not emulsified or mixed or otherwise prepared."
+    },
+    {
+      "hscode": "15.04 ",
+      "id": 53,
+      "notes": "Fats and oils and their fractions, of fish or marine mammals, whether or not refined, but not chemically modified."
+    },
+    {
+      "hscode": "15.05 ",
+      "id": 53,
+      "notes": "Wool grease and fatty substances derived therefrom (including lanolin)"
+    },
+    {
+      "hscode": "15.06 ",
+      "id": 53,
+      "notes": "Other animal fats and oils and their fractions, whether or not refined, but not chemically modified."
+    },
+    {
+      "hscode": "15.16 ",
+      "id": 53,
+      "notes": "Animal or vegetable fats and oils and their fractions, partly or wholly hydrogenated, inter-esterified, re-esterified or elaidinised, whether or not refined, but not further prepared."
+    },
+    {
+      "hscode": "15.17 ",
+      "id": 53,
+      "notes": "Margarine; edible mixtures or preparations of animal or vegetable fats or oils or of fractions of different fats or oils of this Chapter, other than edible fats or oils or their fractions of heading 15.16."
+    },
+    {
+      "hscode": "15.18 ",
+      "id": 53,
+      "notes": "Animal or vegetable fats and oils and their fractions, boiled, oxidised, dehydrated, sulphurised, blown, polymerised by heat in vacuum or in inert gas or otherwise chemically modified, excluding those of heading"
+    },
+    {
+      "hscode": "16.01 ",
+      "id": 53,
+      "notes": "Sausages and similar products, of meat, meat offal or blood; food preparations based on these products."
+    },
+    {
+      "hscode": "16.02 ",
+      "id": 53,
+      "notes": "Other prepared or preserved meat, meat offal or blood"
+    },
+    {
+      "hscode": "16.03 ",
+      "id": 53,
+      "notes": "Extracts and juices of meat, fish or crustaceans, molluscs or other aquatic invertebrates."
+    },
+    {
+      "hscode": "16.04 ",
+      "id": 53,
+      "notes": "Prepared or preserved fish; caviar and caviar substitutes prepared from fish eggs."
+    },
+    {
+      "hscode": "16.05 ",
+      "id": 53,
+      "notes": "Crustaceans, molluscs and other aquatic invertebrates, prepared or preserved."
+    },
+    {
+      "hscode": "17.01 ",
+      "id": 53,
+      "notes": "Cane or beet sugar and chemically pure sucrose, in solid form"
+    },
+    {
+      "hscode": "17.02 ",
+      "id": 53,
+      "notes": "Other sugars, including chemically pure lactose, maltose, glucose and fructose, in solid form; sugar syrups not containing added flavouring or colouring matter; artificial honey, whether or not mixed with natural honey; caramel."
+    },
+    {
+      "hscode": "17.03 ",
+      "id": 53,
+      "notes": "Molasses resulting from the extraction or refining of sugar"
+    },
+    {
+      "hscode": "17.04 ",
+      "id": 53,
+      "notes": "Sugar confectionery (including white chocolate), not containing cocoa."
+    },
+    {
+      "hscode": "18.01 ",
+      "id": 53,
+      "notes": "Cocoa beans, whole or broken, raw or roasted"
+    },
+    {
+      "hscode": "18.02 ",
+      "id": 53,
+      "notes": "Cocoa shells, husks, skins and other cocoa waste"
+    },
+    {
+      "hscode": "18.03 ",
+      "id": 53,
+      "notes": "Cocoa paste, whether or not defatted"
+    },
+    {
+      "hscode": "18.05 ",
+      "id": 53,
+      "notes": "Cocoa powder, not containing added sugar or other sweetening matter"
+    },
+    {
+      "hscode": "18.06 ",
+      "id": 53,
+      "notes": "Chocolate and other food preparations containing cocoa"
+    },
+    {
+      "hscode": "19.01 ",
+      "id": 53,
+      "notes": "Malt extract; food preparations of flour, groats, meal, starch or malt extract, not containing cocoa or containing less than 40 % by weight of cocoa calculated on a totally defatted basis, not elsewhere specified or included; food preparations of goods of headings 04.01 to 04.04, not containing cocoa or containing less than 5 % by weight of cocoa calculated on a totally de fatted basis, not elsewhere specified or included."
+    },
+    {
+      "hscode": "19.02 ",
+      "id": 53,
+      "notes": "Pasta, whether or not cooked or stuffed (with meat or other substances) or otherwise prepared, such as spaghetti, macaroni, noodles, lasagne, gnocchi, ravioli, cannelloni; couscous, whether or not prepared."
+    },
+    {
+      "hscode": "19.03 ",
+      "id": 53,
+      "notes": "Tapioca and substitutes therefor prepared from starch, in the form of flakes, grains, pearls, siftings or in similar forms."
+    },
+    {
+      "hscode": "19.04 ",
+      "id": 53,
+      "notes": "Prepared foods obtained by the swelling or roasting of cereals or cereal products (for example, corn flakes); cereals (other than maize (corn)) in grain form or in the form of flakes or other worked grains (except flour, groats and meal), precooked, or otherwise prepared, not elsewhere specified or included."
+    },
+    {
+      "hscode": "19.05 ",
+      "id": 53,
+      "notes": "Bread, pastry, cakes, biscuits and other bakers' wares, whether or not containing cocoa; communion wafers, empty cachets of a kind suitable for pharmaceutical use, sealing wafers, rice paper and similar products"
+    },
+    {
+      "hscode": "20.01 ",
+      "id": 53,
+      "notes": "Vegetables, fruit, nuts and other edible parts of plants, prepared or preserved by vinegar or acetic acid."
+    },
+    {
+      "hscode": "20.02 ",
+      "id": 53,
+      "notes": "Tomatoes prepared or preserved otherwise than by vinegar or acetic acid."
+    },
+    {
+      "hscode": "20.03 ",
+      "id": 53,
+      "notes": "Mushrooms and truffles, prepared or preserved otherwise than by vinegar or acetic acid."
+    },
+    {
+      "hscode": "20.04 ",
+      "id": 53,
+      "notes": "Other vegetables prepared or preserved otherwise than by vinegar or acetic acid, frozen, other than products of heading 20.06."
+    },
+    {
+      "hscode": "20.05 ",
+      "id": 53,
+      "notes": "Other vegetables prepared or preserved otherwise than by vinegar or acetic acid, not frozen, other than products of heading 20.06."
+    },
+    {
+      "hscode": "20.06 ",
+      "id": 53,
+      "notes": "Vegetables, fruit, nuts, fruit-peel and other parts of plants, preserved by sugar (drained, glacé or crystallised)."
+    },
+    {
+      "hscode": "20.07 ",
+      "id": 53,
+      "notes": "Jams, fruit jellies, marmalades, fruit or nut purée and fruit or nut pastes, obtained by cooking, whether or not containing added sugar or other sweetening matter."
+    },
+    {
+      "hscode": "20.08 ",
+      "id": 53,
+      "notes": "Fruit, nuts and other edible parts of plants, otherwise prepared or preserved, whether or not containing added sugar or other sweetening matter or spirit, not elsewhere specified or included"
+    },
+    {
+      "hscode": "20.09 ",
+      "id": 53,
+      "notes": "Fruit juices (including grape must) and vegetable juices, unfermented and not containing added spirit, whether or not containing added sugar or other sweetening matter."
+    },
+    {
+      "hscode": "21.01 ",
+      "id": 53,
+      "notes": "Extracts, essences and concentrates, of coffee, tea or maté and preparations with a basis of these products or with a basis of coffee, tea or maté; roasted chicory and other roasted coffee substitutes, and extracts, essences and concentrates thereof."
+    },
+    {
+      "hscode": "21.02 ",
+      "id": 53,
+      "notes": "Yeasts (active or inactive); other single -cell micro-organisms, dead (but not including vaccines of heading 30.02); prepared baking powders."
+    },
+    {
+      "hscode": "21.03 ",
+      "id": 53,
+      "notes": "Sauces and preparations therefor; mixed condiments and mixed seasonings; mustard flour and meal and prepared mustard."
+    },
+    {
+      "hscode": "21.04 ",
+      "id": 53,
+      "notes": "Soups and broths and preparations therefor; homogenised composite food preparations."
+    },
+    {
+      "hscode": "21.05 ",
+      "id": 53,
+      "notes": "Ice cream and other edible ice, whether or not containing cocoa"
+    },
+    {
+      "hscode": "21.06 ",
+      "id": 53,
+      "notes": "Food preparations not elsewhere specified or included."
+    },
+    {
+      "hscode": "22.01 ",
+      "id": 53,
+      "notes": "Waters, including natural or artificial mineral waters and aerated waters, not containing added sugar or other sweetening matter nor flavoured; ice and snow."
+    },
+    {
+      "hscode": "22.02 ",
+      "id": 53,
+      "notes": "Waters, including mineral waters and aerated waters, containing added sugar or other sweetening matter or flavoured, and other non-alcoholic beverages, not including fruit or vegetable juices of heading 20.09"
+    },
+    {
+      "hscode": "22.09 ",
+      "id": 53,
       "notes": "Vinegar and substitutes for vinegar obtained from acetic acid"
     }
   ],
