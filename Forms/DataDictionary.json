@@ -1988,7 +1988,8 @@
       "document_id": 1,
       "processType": "I",
       "purpose": "B",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 15,
@@ -1998,7 +1999,8 @@
       "document_id": 92,
       "processType": "I",
       "purpose": "B",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 20,
@@ -2008,7 +2010,8 @@
       "document_id": 101,
       "processType": "E",
       "purpose": "B",
-      "signature": "1"
+      "signature": "0",
+      "verifiable": "1"
     },
     {
       "id": 22,
@@ -2018,7 +2021,8 @@
       "document_id": 56,
       "processType": "I",
       "purpose": "B",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 22,
@@ -2028,7 +2032,8 @@
       "document_id": 56,
       "processType": "I",
       "purpose": "B",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 23,
@@ -2038,7 +2043,8 @@
       "document_id": 56,
       "processType": "I",
       "purpose": "B",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 24,
@@ -2048,7 +2054,8 @@
       "document_id": 93,
       "processType": "I",
       "purpose": "A",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 25,
@@ -2058,7 +2065,8 @@
       "document_id": 93,
       "processType": "I",
       "purpose": "A",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 28,
@@ -2068,7 +2076,8 @@
       "document_id": 27,
       "processType": "I",
       "purpose": "A",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 29,
@@ -2078,7 +2087,8 @@
       "document_id": 61,
       "processType": "I",
       "purpose": "B",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 30,
@@ -2088,7 +2098,8 @@
       "document_id": 61,
       "processType": "I",
       "purpose": "B",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 31,
@@ -2098,7 +2109,8 @@
       "document_id": 68,
       "processType": "I",
       "purpose": "A",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 33,
@@ -2108,7 +2120,8 @@
       "document_id": 99,
       "processType": "I",
       "purpose": "B",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 34,
@@ -2118,7 +2131,8 @@
       "document_id": 100,
       "processType": "I",
       "purpose": "B",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 35,
@@ -2128,7 +2142,8 @@
       "document_id": 87,
       "processType": "I",
       "purpose": "B",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 36,
@@ -2138,7 +2153,8 @@
       "document_id": 86,
       "processType": "I",
       "purpose": "B",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 37,
@@ -2148,7 +2164,8 @@
       "document_id": 88,
       "processType": "I",
       "purpose": "B",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 38,
@@ -2158,7 +2175,8 @@
       "document_id": 96,
       "processType": "I",
       "purpose": "B",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 39,
@@ -2168,7 +2186,8 @@
       "document_id": 98,
       "processType": "I",
       "purpose": "B",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 40,
@@ -2178,7 +2197,8 @@
       "document_id": 97,
       "processType": "I",
       "purpose": "A",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 41,
@@ -2188,7 +2208,8 @@
       "document_id": 21,
       "processType": "E",
       "purpose": "B",
-      "signature": "0"
+      "signature": "1",
+      "verifiable": "1"
     },
     {
       "id": 42,
@@ -2198,7 +2219,8 @@
       "document_id": 18,
       "processType": "E",
       "purpose": "B",
-      "signature": "0"
+      "signature": "1",
+      "verifiable": "1"
     },
     {
       "id": 43,
@@ -2208,7 +2230,8 @@
       "document_id": 19,
       "processType": "E",
       "purpose": "B",
-      "signature": "0"
+      "signature": "1",
+      "verifiable": "1"
     },
     {
       "id": 44,
@@ -2218,7 +2241,8 @@
       "document_id": 24,
       "processType": "E",
       "purpose": "B",
-      "signature": "0"
+      "signature": "1",
+      "verifiable": "1"
     },
     {
       "id": 45,
@@ -2228,7 +2252,8 @@
       "document_id": 25,
       "processType": "E",
       "purpose": "B",
-      "signature": "0"
+      "signature": "1",
+      "verifiable": "1"
     },
     {
       "id": 46,
@@ -2238,7 +2263,8 @@
       "document_id": 20,
       "processType": "E",
       "purpose": "B",
-      "signature": "0"
+      "signature": "1",
+      "verifiable": "1"
     },
     {
       "id": 47,
@@ -2248,7 +2274,8 @@
       "document_id": 102,
       "processType": "E",
       "purpose": "B",
-      "signature": "0"
+      "signature": "1",
+      "verifiable": "1"
     },
     {
       "id": 48,
@@ -2258,7 +2285,8 @@
       "document_id": 103,
       "processType": "E",
       "purpose": "B",
-      "signature": "0"
+      "signature": "1",
+      "verifiable": "1"
     },
     {
       "id": 49,
@@ -2268,7 +2296,8 @@
       "document_id": 104,
       "processType": "E",
       "purpose": "B",
-      "signature": "0"
+      "signature": "1",
+      "verifiable": "1"
     },
     {
       "id": 50,
@@ -2278,7 +2307,8 @@
       "document_id": 105,
       "processType": "E",
       "purpose": "B",
-      "signature": "0"
+      "signature": "1",
+      "verifiable": "1"
     },
     {
       "id": 51,
@@ -2288,7 +2318,8 @@
       "document_id": 79,
       "processType": "I",
       "purpose": "A",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 52,
@@ -2298,7 +2329,8 @@
       "document_id": 75,
       "processType": "I",
       "purpose": "B",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 53,
@@ -2308,7 +2340,8 @@
       "document_id": 66,
       "processType": "I",
       "purpose": "W",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 54,
@@ -2318,7 +2351,8 @@
       "document_id": 66,
       "processType": "I",
       "purpose": "W",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     },
     {
       "id": 55,
@@ -2328,7 +2362,8 @@
       "document_id": 32,
       "processType": "I",
       "purpose": "W",
-      "signature": "0"
+      "signature": "0",
+      "verifiable": "0"
     }
   ],
   "workflow_interactions": [
