@@ -363,7 +363,7 @@
     },
     {
       "id": 12,
-      "official_name": "Ministry of Economic Affairs - Customs and Excise Department",
+      "official_name": "Customs and Excise Department",
       "common_public": "Customs",
       "common_government": "CED",
       "priority": "none",
@@ -473,7 +473,7 @@
     },
     {
       "id": 15,
-      "official_name": "Pesticide Control Board",
+      "official_name": "Ministry of Agriculture, Food, Fisheries & Water Resource Management - Pesticide Control Board",
       "common_public": "Pesticide Board",
       "common_government": "PCB",
       "priority": "none",
@@ -627,9 +627,9 @@
     },
     {
       "id": 24,
-      "official_name": "Prime Minister's Office - Division of Energy and Telecommunications, Telecommunications Unit",
+      "official_name": "Ministry of Energy and Telecommunications – Telecoms Unit",
       "common_public": "Energy and Telecom",
-      "common_government": "E&Telco",
+      "common_government": "E&T",
       "priority": "low",
       "type": "pga",
       "website": "",
@@ -803,7 +803,7 @@
     },
     {
       "id": 32,
-      "official_name": "Ministry Of Agriculture - National Agricultural Health and Food Control Programme",
+      "official_name": "Ministry of Agriculture – Barbados Agricultural Health and Food Control Programme",
       "common_public": "Food Control Programme",
       "common_government": "NAHFCP",
       "priority": "none",
@@ -1650,7 +1650,7 @@
     {
       "id": 12,
       "readonly": false,
-      "name": "Phytosanitary Import Permit Application",
+      "name": "Application for the Importation of Plants",
       "description": "Application for the importation of Plants, Plants Products and Other Regulated Articles",
       "fileName": "plant-import.html",
       "document_ids": [
@@ -1671,7 +1671,7 @@
     {
       "id": 32,
       "readonly": true,
-      "name": "Phitosanitary Inspection Certificate for Import Release",
+      "name": "Phytosanitary Inspection Certificate for Import Release",
       "description": "Phitosanitary Inspection Certificate",
       "fileName": "plant-phitosanitary-inspection-issued.html",
       "document_ids": [
@@ -1681,7 +1681,7 @@
     {
       "id": 48,
       "readonly": false,
-      "name": "New Request for Plant Inspection Letter",
+      "name": "Request for Plant Inspection Letter",
       "description": "Plant Inspection Letter",
       "fileName": "plant-request-inspection-letter.html",
       "document_ids": [
@@ -1701,7 +1701,7 @@
     {
       "id": 51,
       "readonly": false,
-      "name": "Unwholesome Food Certificate Request",
+      "name": "Unwholesome Food Certificate",
       "description": "Food is unfit for human consumption",
       "fileName": "fs-unwholesome-food-certificate.html",
       "document_ids": [
@@ -1721,7 +1721,7 @@
     {
       "id": 160,
       "readonly": false,
-      "name": "Registration for Telecommunication Sellers and Dealers Class Licence",
+      "name": "Registration for a Telecommunication Sellers and Dealers Class Licence",
       "description": "Registration for Telecommunication Sellers and Dealers Class Licence",
       "fileName": "tu-registration-telecommunication-sellers-dealers-class-licence.html",
       "document_ids": [
@@ -1731,7 +1731,7 @@
     {
       "id": 161,
       "readonly": true,
-      "name": "Registration for Telecommunication Sellers and Dealers Class Licence",
+      "name": "Registration for a Telecommunication Sellers and Dealers Class Licence",
       "description": "Registration for Telecommunication Sellers and Dealers Class Licence",
       "fileName": "tu-registration-telecommunication-sellers-dealers-class-licence-issued.html",
       "document_ids": [
@@ -1741,7 +1741,7 @@
     {
       "id": 166,
       "readonly": false,
-      "name": "Application for Telecommunications  Sellers and  Dealer’s (Individual) Licence",
+      "name": "Application for a Telecommunications Sellers and Dealer’s (Individual) Licence",
       "description": "Application for Telecommunications  Sellers and  Dealer’s (Individual) Licence",
       "fileName": "tu-application-telecommunications-sellers-dealers-individual-licence.html",
       "document_ids": [
@@ -1751,7 +1751,7 @@
     {
       "id": 167,
       "readonly": true,
-      "name": "Application for Telecommunications  Sellers and  Dealer’s (Individual) Licence.pdf",
+      "name": "Application for a Telecommunications Sellers and Dealer’s (Individual) Licence",
       "description": "Application for Telecommunications  Sellers and  Dealer’s (Individual) Licence.pdf",
       "fileName": "tu-application-telecommunications-sellers-dealers-individual-licence-issued.html",
       "document_ids": [
@@ -1761,7 +1761,7 @@
     {
       "id": 134,
       "readonly": false,
-      "name": "Atlantic Swordfish Certificate of Eligibility (COE).pdf",
+      "name": "Atlantic Swordfish Certificate of Eligibility (COE)",
       "description": "Atlantic Swordfish Certificate of Eligibility (COE).pdf",
       "fileName": "fd-atlantic-swordfish-certificate-elegibility.html",
       "document_ids": [
@@ -1771,7 +1771,7 @@
     {
       "id": 135,
       "readonly": true,
-      "name": "Atlantic Swordfish Certificate of Eligibility (COE).pdf",
+      "name": "Atlantic Swordfish Certificate of Eligibility (COE)",
       "description": "Atlantic Swordfish Certificate of Eligibility (COE).pdf",
       "fileName": "fd-atlantic-swordfish-certificate-elegibility-issued.html",
       "document_ids": [
@@ -1781,7 +1781,7 @@
     {
       "id": 138,
       "readonly": false,
-      "name": "Application for Registration of a Processor",
+      "name": "Application for the Registration of a Processor",
       "description": "Application for Registration of a Processor.pdf",
       "fileName": "fd-application-registration-processor.html",
       "document_ids": [
@@ -1791,7 +1791,7 @@
     {
       "id": 139,
       "readonly": true,
-      "name": "Application for Registration of a Processor.pdf",
+      "name": "Application for the Registration of a Processor",
       "description": "Application for Registration of a Processor.pdf",
       "fileName": "fd-application-registration-processor-issued.html",
       "document_ids": [
@@ -1801,7 +1801,7 @@
     {
       "id": 150,
       "readonly": false,
-      "name": "Duty Free Concession Certificate",
+      "name": "Application for a Duty Free Concession",
       "description": "Duty Free Concession Certificate.pdf",
       "fileName": "fd-duty-free-concession-certificate.html",
       "document_ids": [
@@ -1811,8 +1811,8 @@
     {
       "id": 151,
       "readonly": true,
-      "name": "Duty Free Concession Certificate.pdf",
-      "description": "Duty Free Concession Certificate.pdf",
+      "name": "Application for a Duty Free Concession",
+      "description": "Duty Free Concession Certificate",
       "fileName": "fd-duty-free-concession-certificate-issued.html",
       "document_ids": [
         88
@@ -1821,7 +1821,7 @@
     {
       "id": 154,
       "readonly": false,
-      "name": "Dutyfree Concessions form (1).pdf",
+      "name": "Application for a Duty Free Concession on Agricultural Inputs",
       "description": "Dutyfree Concessions form (1).pdf",
       "fileName": "fd-dutyfree-concessions-form-application.html",
       "document_ids": [
@@ -1831,7 +1831,7 @@
     {
       "id": 155,
       "readonly": true,
-      "name": "Dutyfree Concessions form (1).pdf",
+      "name": "Application for a Duty Free Concession on Agricultural Inputs",
       "description": "Dutyfree Concessions form (1).pdf",
       "fileName": "fd-dutyfree-concessions-form-application-issued.html",
       "document_ids": [
@@ -1841,7 +1841,7 @@
     {
       "id": 165,
       "readonly": true,
-      "name": "Memorandum of Understanding between",
+      "name": "Memorandum of Understanding for Duty and Tax Waiver",
       "description": "Memorandum of Understanding between",
       "fileName": "su-memorandum-understanding-issued.html",
       "document_ids": [
@@ -1851,7 +1851,7 @@
     {
       "id": 162,
       "readonly": false,
-      "name": "Letter - Duty-free Concession - Vehicle - Bruce Bayley, Clifton Plantation Feb.10, 2016",
+      "name": "Letter - Duty-free Concession - Vehicle",
       "description": "Letter - Duty-free Concession - Vehicle - Bruce Bayley, Clifton Plantation Feb.10, 2016",
       "fileName": "ce-letter-duty-free-concession-vehicle.html",
       "document_ids": [
@@ -1861,7 +1861,7 @@
     {
       "id": 163,
       "readonly": true,
-      "name": "Letter - Duty-free Concession - Vehicle - Bruce Bayley, Clifton Plantation Feb.10, 2016.pdf",
+      "name": "Letter - Duty-free Concession - Vehicle",
       "description": "Letter - Duty-free Concession - Vehicle - Bruce Bayley, Clifton Plantation Feb.10, 2016.pdf",
       "fileName": "ce-letter-duty-free-concession-vehicle-issued.html",
       "document_ids": [
@@ -1869,9 +1869,19 @@
       ]
     },
     {
+      "id": 64,
+      "readonly": false,
+      "name": "Duty Free Concession Letter from PostMaster.pdf",
+      "description": "Duty Free Concession Letter from PostMaster",
+      "fileName": "ce-duty-free-letter-postmaster.html",
+      "document_ids": [
+        79
+      ]
+    },
+    {
       "id": 56,
       "readonly": false,
-      "name": "New Duty Free Application Letter Taxi",
+      "name": "DF Application Letter - Taxi",
       "description": "Duty Free Letter Taxi",
       "fileName": "ce-application-letter-taxi.html",
       "document_ids": [
@@ -1881,7 +1891,7 @@
     {
       "id": 57,
       "readonly": true,
-      "name": "Duty Free Application Letter Taxi",
+      "name": "DF Application Letter - Taxi",
       "description": "Duty Free Application Letter Taxi",
       "fileName": "ce-application-letter-taxi-readonly.html",
       "document_ids": [
@@ -1891,7 +1901,7 @@
     {
       "id": 33,
       "readonly": false,
-      "name": "New Permit to import Dairy Products",
+      "name": "Application - Periodic Permit - Dairy Products",
       "description": "Permit to import Dairy Products",
       "fileName": "vetdairy-import-dairy-products.html",
       "document_ids": [
@@ -1901,7 +1911,7 @@
     {
       "id": 34,
       "readonly": true,
-      "name": "Permit to import Dairy Products",
+      "name": "Periodic Permit - Dairy Products",
       "description": "Permit to import Dairy Products",
       "fileName": "vetdairy-import-dairy-products-issued.html",
       "document_ids": [
@@ -1911,7 +1921,7 @@
     {
       "id": 35,
       "readonly": false,
-      "name": "Application to Individual Permit to Import Meat Dairy Poulty",
+      "name": "Application - Shipment Permit - Meat Dairy Poulty Animal Products",
       "description": "Individual Permit to Import Meat Dairy Poulty",
       "fileName": "vs-permit-import.html",
       "document_ids": [
@@ -1921,7 +1931,7 @@
     {
       "id": 36,
       "readonly": true,
-      "name": "Individual Permit to Import Meat Dairy Poulty",
+      "name": "Application - Shipment Permit - Meat Dairy Poulty Animal Products",
       "description": "Individual Permit to Import Meat Dairy Poulty",
       "fileName": "vs-permit-import-issued.html",
       "document_ids": [
@@ -1951,7 +1961,7 @@
     {
       "id": 42,
       "readonly": false,
-      "name": "New Inspection Request",
+      "name": "Inspection Request",
       "description": "Application to Request Inspection Request",
       "fileName": "fs-inspection-request.html",
       "document_ids": [
@@ -2093,7 +2103,7 @@
     {
       "id": 33,
       "name": "PMEnTelcoCom",
-      "owner": "E&Telco",
+      "owner": "E&T",
       "pga_owner_id": 24,
       "document_id": 99,
       "processType": "I",
@@ -2103,7 +2113,7 @@
     {
       "id": 34,
       "name": "PMEnTelco",
-      "owner": "E&Telco",
+      "owner": "E&T",
       "pga_owner_id": 24,
       "document_id": 100,
       "processType": "I",
@@ -2271,6 +2281,16 @@
       "signature": "0"
     },
     {
+      "id": 51,
+      "name": "ConExempLetterPostM",
+      "owner": "Concessions & Exemptions",
+      "pga_owner_id": 5,
+      "document_id": 79,
+      "processType": "I",
+      "purpose": "A",
+      "signature": "0"
+    },
+    {
       "id": 52,
       "name": "Con&ExempTaxi",
       "owner": "Concessions & Exemptions",
@@ -2316,14 +2336,14 @@
       "workflow_id": 1,
       "step": 1,
       "form_id": 1,
-      "title": "New Import Licence Application",
+      "title": "Import Licence and Application (ILA)",
       "description": "Please complete the Import Licence Application"
     },
     {
       "workflow_id": 1,
       "step": 5,
       "pga_id": 1,
-      "title": "Review ILA",
+      "title": "Review Application",
       "description": "Review the Import Licence Application for accuracy in the Issues column - specifically the description of the goods and HS Codes"
     },
     {
@@ -2339,6 +2359,13 @@
       "form_id": 5,
       "title": "",
       "description": ""
+    },
+    {
+      "workflow_id": 1,
+      "step": 10,
+      "pga_id": 1,
+      "title": "Final Approved Licence",
+      "description": "Import Licence Application (ILA)"
     },
     {
       "workflow_id": 41,
@@ -2888,6 +2915,18 @@
       "pga_id": 21,
       "title": "Review Application",
       "description": "Letter - Duty-free Concession - Vehicle"
+    },
+    {
+      "workflow_id": 51,
+      "step": 1,
+      "form_id": 64
+    },
+    {
+      "workflow_id": 51,
+      "step": 4,
+      "pga_id": 5,
+      "title": "Review Application",
+      "description": "Inspection Request"
     },
     {
       "workflow_id": 52,
