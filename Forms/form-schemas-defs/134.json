@@ -100,8 +100,9 @@
         "items": [
           {
             "key": "origin",
+            "type": "select-external",
             "title": "",
-            "description": ""
+            "optionData": "form.options.countries"
           }
         ]
       },
@@ -112,8 +113,7 @@
           {
             "key": "referenceNumber",
             "title": "Form 7501 Entry Number",
-            "description":"added by importer",
-            "readonly": true
+            "description":"added by importer"
           }
         ]
       }
