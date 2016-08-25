@@ -27,7 +27,7 @@
         "htmlClass": "col-sm-offset-4 col-sm-4",
         "items": [
 				  {
-				  	"key":"applicant.country",
+				  	"key":"applicant.customsRegistrationNo",
 				  	"title":"Customs Registration no"
 				  }
         ]
@@ -137,7 +137,7 @@
     ]
   },
   {
-    "key":"applicant.address",
+    "key":"applicant.directors",
     "title":"CEO / Directors:"
   },
   {
@@ -228,6 +228,28 @@
       "add": "btn-success"
     },
     "items": [
+      {
+        "type": "section",
+        "htmlClass": "row",
+        "items": [
+          {
+            "type": "section",
+            "htmlClass": "col-sm-7",
+            "items": [
+            ]
+          },
+          {
+            "type": "section",
+            "htmlClass": "col-sm-4",
+            "items": [
+              {
+                "type": "help",
+                "helpvalue": "<strong>Number of workers:</strong>"
+              }
+            ]
+          }
+        ]
+      },
       {
         "type": "section",
         "htmlClass": "row",
@@ -791,10 +813,5 @@
         ]
       }
     ]
-  },
-  {
-    "type": "submit",
-    "style": "btn-info",
-    "title": "Save"
   }
 ]
