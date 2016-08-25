@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum f9bf7134e7aba6c5f0fcae6d45986c608e835795",
+  "description": "Generated from b with shasum 561748637f44f4e2132d14e53e8549f703d6998c",
   "type": "object",
   "required": [
     "blockId",
@@ -30,16 +30,18 @@
       "type": "object",
       "required": [
         "commodities",
-        "vessel",
         "rotationNumber",
         "containerNumber",
+        "vesselOrCraft",
+        "dateArrival",
         "dateInspection",
         "timeInspection",
+        "inspectionLocation",
         "entryDate",
-        "submitter",
-        "applicant",
-        "consignee",
-        "supplier"
+        "phytosanitaryCertificate",
+        "approvalNumber",
+        "origin",
+        "consignee"
       ],
       "properties": {
         "commodities": {
@@ -51,10 +53,6 @@
             "required": [
               "hsCode",
               "description",
-              "typeFoodCategory",
-              "typeFoodDetail",
-              "grossWeight",
-              "quantity",
               "units"
             ],
             "properties": {
@@ -64,18 +62,6 @@
               "description": {
                 "type": "string"
               },
-              "typeFoodCategory": {
-                "type": "string"
-              },
-              "typeFoodDetail": {
-                "type": "string"
-              },
-              "grossWeight": {
-                "type": "number"
-              },
-              "quantity": {
-                "type": "integer"
-              },
               "units": {
                 "type": "array",
                 "minItems": 1,
@@ -83,9 +69,13 @@
                 "items": {
                   "type": "object",
                   "required": [
+                    "quantity",
                     "unitType"
                   ],
                   "properties": {
+                    "quantity": {
+                      "type": "number"
+                    },
                     "unitType": {
                       "type": "string"
                     }
@@ -95,13 +85,16 @@
             }
           }
         },
-        "vessel": {
-          "type": "string"
-        },
         "rotationNumber": {
           "type": "string"
         },
         "containerNumber": {
+          "type": "string"
+        },
+        "vesselOrCraft": {
+          "type": "string"
+        },
+        "dateArrival": {
           "type": "string"
         },
         "dateInspection": {
@@ -110,95 +103,22 @@
         "timeInspection": {
           "type": "string"
         },
+        "inspectionLocation": {
+          "type": "string"
+        },
         "entryDate": {
           "type": "string"
         },
-        "submitter": {
+        "phytosanitaryCertificate": {
           "type": "string"
         },
-        "applicant": {
-          "type": "object",
-          "required": [
-            "id",
-            "name",
-            "countryId",
-            "country",
-            "address",
-            "docid",
-            "fax",
-            "phone",
-            "email"
-          ],
-          "properties": {
-            "id": {
-              "type": "integer"
-            },
-            "name": {
-              "type": "string"
-            },
-            "countryId": {
-              "type": "string"
-            },
-            "country": {
-              "type": "string"
-            },
-            "address": {
-              "type": "string"
-            },
-            "docid": {
-              "type": "string"
-            },
-            "fax": {
-              "type": "string"
-            },
-            "phone": {
-              "type": "string"
-            },
-            "email": {
-              "type": "string"
-            }
-          }
+        "approvalNumber": {
+          "type": "string"
+        },
+        "origin": {
+          "type": "string"
         },
         "consignee": {
-          "type": "object",
-          "required": [
-            "id",
-            "name",
-            "countryId",
-            "country",
-            "address",
-            "docid",
-            "fax",
-            "email"
-          ],
-          "properties": {
-            "id": {
-              "type": "integer"
-            },
-            "name": {
-              "type": "string"
-            },
-            "countryId": {
-              "type": "string"
-            },
-            "country": {
-              "type": "string"
-            },
-            "address": {
-              "type": "string"
-            },
-            "docid": {
-              "type": "string"
-            },
-            "fax": {
-              "type": "string"
-            },
-            "email": {
-              "type": "string"
-            }
-          }
-        },
-        "supplier": {
           "type": "object",
           "required": [
             "id",

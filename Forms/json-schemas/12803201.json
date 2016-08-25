@@ -1,12 +1,13 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum a074bf732f932832b2a55079feced624a7f82d8b",
+  "description": "Generated from b with shasum d0efea5f5ccba8b231a757b60b006294c34fb424",
   "type": "object",
   "required": [
     "blockId",
     "workflowId",
     "formId",
     "title",
+    "description",
     "status",
     "submission"
   ],
@@ -23,67 +24,37 @@
     "title": {
       "type": "string"
     },
+    "description": {
+      "type": "string"
+    },
     "status": {
       "type": "string"
     },
     "submission": {
       "type": "object",
       "required": [
-        "portDischarge",
-        "dateArrival",
-        "resultInspection",
-        "landingCertificateNumber",
-        "inspectionLocation",
-        "inspectionDescription",
-        "quarentineTreatment",
-        "quarentineTreatmentTime",
-        "serialNumberCertificate",
-        "issuedDate",
-        "submitter",
-        "applicant"
+        "dateInspection",
+        "origin",
+        "consignee"
       ],
       "properties": {
-        "portDischarge": {
+        "dateInspection": {
           "type": "string"
         },
-        "dateArrival": {
+        "origin": {
           "type": "string"
         },
-        "resultInspection": {
-          "type": "string"
-        },
-        "landingCertificateNumber": {
-          "type": "string"
-        },
-        "inspectionLocation": {
-          "type": "string"
-        },
-        "inspectionDescription": {
-          "type": "string"
-        },
-        "quarentineTreatment": {
-          "type": "string"
-        },
-        "quarentineTreatmentTime": {
-          "type": "integer"
-        },
-        "serialNumberCertificate": {
-          "type": "string"
-        },
-        "issuedDate": {
-          "type": "string"
-        },
-        "submitter": {
-          "type": "string"
-        },
-        "applicant": {
+        "consignee": {
           "type": "object",
           "required": [
             "id",
             "name",
             "countryId",
             "country",
-            "address"
+            "address",
+            "docid",
+            "fax",
+            "email"
           ],
           "properties": {
             "id": {
@@ -99,6 +70,15 @@
               "type": "string"
             },
             "address": {
+              "type": "string"
+            },
+            "docid": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
               "type": "string"
             }
           }

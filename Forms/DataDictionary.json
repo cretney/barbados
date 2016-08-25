@@ -1669,16 +1669,6 @@
       ]
     },
     {
-      "id": 32,
-      "readonly": true,
-      "name": "Phytosanitary Inspection Certificate for Import Release",
-      "description": "Phitosanitary Inspection Certificate",
-      "fileName": "plant-phitosanitary-inspection-issued.html",
-      "document_ids": [
-        27
-      ]
-    },
-    {
       "id": 48,
       "readonly": false,
       "name": "Request for Plant Inspection Letter",
@@ -1799,26 +1789,6 @@
       ]
     },
     {
-      "id": 150,
-      "readonly": false,
-      "name": "Application for a Duty Free Concession",
-      "description": "Duty Free Concession Certificate.pdf",
-      "fileName": "fd-duty-free-concession-certificate.html",
-      "document_ids": [
-        88
-      ]
-    },
-    {
-      "id": 151,
-      "readonly": true,
-      "name": "Application for a Duty Free Concession",
-      "description": "Duty Free Concession Certificate",
-      "fileName": "fd-duty-free-concession-certificate-issued.html",
-      "document_ids": [
-        88
-      ]
-    },
-    {
       "id": 154,
       "readonly": false,
       "name": "Application for a Duty Free Concession on Agricultural Inputs",
@@ -1836,16 +1806,6 @@
       "fileName": "fd-dutyfree-concessions-form-application-issued.html",
       "document_ids": [
         96
-      ]
-    },
-    {
-      "id": 165,
-      "readonly": true,
-      "name": "Memorandum of Understanding for Duty and Tax Waiver",
-      "description": "Memorandum of Understanding between",
-      "fileName": "su-memorandum-understanding-issued.html",
-      "document_ids": [
-        98
       ]
     },
     {
@@ -1869,36 +1829,6 @@
       ]
     },
     {
-      "id": 64,
-      "readonly": false,
-      "name": "Duty Free Concession Letter from PostMaster.pdf",
-      "description": "Duty Free Concession Letter from PostMaster",
-      "fileName": "ce-duty-free-letter-postmaster.html",
-      "document_ids": [
-        79
-      ]
-    },
-    {
-      "id": 56,
-      "readonly": false,
-      "name": "DF Application Letter - Taxi",
-      "description": "Duty Free Letter Taxi",
-      "fileName": "ce-application-letter-taxi.html",
-      "document_ids": [
-        75
-      ]
-    },
-    {
-      "id": 57,
-      "readonly": true,
-      "name": "DF Application Letter - Taxi",
-      "description": "Duty Free Application Letter Taxi",
-      "fileName": "ce-application-letter-taxi-readonly.html",
-      "document_ids": [
-        75
-      ]
-    },
-    {
       "id": 33,
       "readonly": false,
       "name": "Application - Periodic Permit - Dairy Products",
@@ -1916,26 +1846,6 @@
       "fileName": "vetdairy-import-dairy-products-issued.html",
       "document_ids": [
         45
-      ]
-    },
-    {
-      "id": 35,
-      "readonly": false,
-      "name": "Application - Shipment Permit - Meat Dairy Poulty Animal Products",
-      "description": "Individual Permit to Import Meat Dairy Poulty",
-      "fileName": "vs-permit-import.html",
-      "document_ids": [
-        61
-      ]
-    },
-    {
-      "id": 36,
-      "readonly": true,
-      "name": "Application - Shipment Permit - Meat Dairy Poulty Animal Products",
-      "description": "Individual Permit to Import Meat Dairy Poulty",
-      "fileName": "vs-permit-import-issued.html",
-      "document_ids": [
-        61
       ]
     },
     {
@@ -2069,39 +1979,6 @@
       "verifiable": "0"
     },
     {
-      "id": 28,
-      "name": "PlantPostArrival",
-      "owner": "Plant Quarantine",
-      "pga_owner_id": 7,
-      "document_id": 27,
-      "processType": "I",
-      "purpose": "A",
-      "signature": "0",
-      "verifiable": "0"
-    },
-    {
-      "id": 29,
-      "name": "VetDairyShip",
-      "owner": "Vet Services",
-      "pga_owner_id": 6,
-      "document_id": 61,
-      "processType": "I",
-      "purpose": "B",
-      "signature": "0",
-      "verifiable": "0"
-    },
-    {
-      "id": 30,
-      "name": "VetMeatPoultryShip",
-      "owner": "Vet Services",
-      "pga_owner_id": 6,
-      "document_id": 61,
-      "processType": "I",
-      "purpose": "B",
-      "signature": "0",
-      "verifiable": "0"
-    },
-    {
       "id": 31,
       "name": "FoodUnwholeCerPostArrival",
       "owner": "Food Safety",
@@ -2157,33 +2034,11 @@
       "verifiable": "0"
     },
     {
-      "id": 37,
-      "name": "FishDFCA",
-      "owner": "FD",
-      "pga_owner_id": 8,
-      "document_id": 88,
-      "processType": "I",
-      "purpose": "B",
-      "signature": "0",
-      "verifiable": "0"
-    },
-    {
       "id": 38,
       "name": "AgrSerDFCA",
       "owner": "SU",
       "pga_owner_id": 21,
       "document_id": 96,
-      "processType": "I",
-      "purpose": "B",
-      "signature": "0",
-      "verifiable": "0"
-    },
-    {
-      "id": 39,
-      "name": "AgrSerMoU",
-      "owner": "SU",
-      "pga_owner_id": 21,
-      "document_id": 98,
       "processType": "I",
       "purpose": "B",
       "signature": "0",
@@ -2311,28 +2166,6 @@
       "verifiable": "1"
     },
     {
-      "id": 51,
-      "name": "ConExempLetterPostM",
-      "owner": "Concessions & Exemptions",
-      "pga_owner_id": 5,
-      "document_id": 79,
-      "processType": "I",
-      "purpose": "A",
-      "signature": "0",
-      "verifiable": "0"
-    },
-    {
-      "id": 52,
-      "name": "Con&ExempTaxi",
-      "owner": "Concessions & Exemptions",
-      "pga_owner_id": 18,
-      "document_id": 75,
-      "processType": "I",
-      "purpose": "B",
-      "signature": "0",
-      "verifiable": "0"
-    },
-    {
       "id": 53,
       "name": "FoodWholePostArrivalInspection",
       "owner": "Food Safety",
@@ -2376,6 +2209,13 @@
     },
     {
       "workflow_id": 1,
+      "step": 10,
+      "pga_id": 1,
+      "title": "Final Approved Licence",
+      "description": "Import Licence Application (ILA)"
+    },
+    {
+      "workflow_id": 1,
       "step": 5,
       "pga_id": 1,
       "title": "Review Application",
@@ -2396,11 +2236,286 @@
       "description": ""
     },
     {
-      "workflow_id": 1,
+      "workflow_id": 15,
+      "step": 1,
+      "form_id": 12,
+      "title": "New Import Phytosanitary Permit Application for the importation of Plants",
+      "description": "Please complete the Import Permit Application"
+    },
+    {
+      "workflow_id": 15,
       "step": 10,
-      "pga_id": 1,
-      "title": "Final Approved Licence",
-      "description": "Import Licence Application (ILA)"
+      "form_id": 12,
+      "title": "New Import Permit Application for the importation of Plants",
+      "description": "Please complete the Import Permit Application"
+    },
+    {
+      "workflow_id": 15,
+      "step": 11,
+      "form_id": 11,
+      "title": "Phytosanitary Import Permit",
+      "description": "Import Permit"
+    },
+    {
+      "workflow_id": 15,
+      "step": 5,
+      "pga_id": 7,
+      "title": "Verify information correct and conformity regulations",
+      "description": "Please verify the correct and conformity regulations"
+    },
+    {
+      "workflow_id": 20,
+      "step": 1,
+      "form_id": 168,
+      "title": "Application for Exporter Registration",
+      "description": "Please complete the Registration"
+    },
+    {
+      "workflow_id": 20,
+      "step": 2,
+      "form_id": 169,
+      "title": "Application for Exporter Registration",
+      "description": null
+    },
+    {
+      "workflow_id": 20,
+      "step": 4,
+      "pga_id": 2,
+      "title": "Review Exporter Registration",
+      "description": "Application for Exporter Registration"
+    },
+    {
+      "workflow_id": 22,
+      "step": 1,
+      "form_id": 33,
+      "title": "New Application for permit to import Dairy Products",
+      "description": "Please complete the Import Permit Application"
+    },
+    {
+      "workflow_id": 22,
+      "step": 4,
+      "pga_id": 6,
+      "title": "Review Application",
+      "description": "Application for permit to import Dairy Products"
+    },
+    {
+      "workflow_id": 22,
+      "step": 4,
+      "form_id": 34,
+      "title": "Permit to import Dairy Products",
+      "description": "Import Permit"
+    },
+    {
+      "workflow_id": 23,
+      "step": 1,
+      "form_id": 33,
+      "title": "New Application for permit to import Meat Dairy Poulty Products",
+      "description": "Please complete the Import Permit Application"
+    },
+    {
+      "workflow_id": 23,
+      "step": 4,
+      "pga_id": 6,
+      "title": "Review Application",
+      "description": "Application for permit to import Meat Dairy Poulty Products"
+    },
+    {
+      "workflow_id": 23,
+      "step": 4,
+      "form_id": 34,
+      "title": "Permit to import Poultry Products",
+      "description": "Import Permit"
+    },
+    {
+      "workflow_id": 24,
+      "step": 18,
+      "form_id": 40,
+      "title": "New Examination of Sampling of Goods",
+      "description": "Please complete the Form for Sampling of Goods' Examination"
+    },
+    {
+      "workflow_id": 24,
+      "step": 19,
+      "form_id": 41,
+      "title": "Sampling of Goods",
+      "description": null
+    },
+    {
+      "workflow_id": 24,
+      "step": 4,
+      "pga_id": 5,
+      "title": "Review Application",
+      "description": "Examination of Sampling of Goods"
+    },
+    {
+      "workflow_id": 25,
+      "step": 18,
+      "form_id": 40,
+      "title": "New Examination of Sampling of Goods",
+      "description": "Please complete the Form for Sampling of Goods' Examination"
+    },
+    {
+      "workflow_id": 25,
+      "step": 19,
+      "form_id": 41,
+      "title": "Sampling of Goods",
+      "description": null
+    },
+    {
+      "workflow_id": 25,
+      "step": 4,
+      "pga_id": 5,
+      "title": "Review Application",
+      "description": "Examination of Sampling of Goods"
+    },
+    {
+      "workflow_id": 31,
+      "step": 1,
+      "form_id": 51,
+      "pga_id": 5,
+      "title": "Unwholesome Food Certificate Request",
+      "description": "Food is unfit for human consumption"
+    },
+    {
+      "workflow_id": 31,
+      "step": 2,
+      "form_id": 45,
+      "title": "Unwholesome Food Certificate",
+      "description": "Food is unfit for human consumption"
+    },
+    {
+      "workflow_id": 31,
+      "step": 4,
+      "pga_id": 5,
+      "title": "Review Application Food Certificate",
+      "description": "Unwholesome Food Certificate"
+    },
+    {
+      "workflow_id": 33,
+      "step": 1,
+      "form_id": 160,
+      "title": "Registration for Telecommunication Sellers and Dealers Class Licence",
+      "description": ""
+    },
+    {
+      "workflow_id": 33,
+      "step": 2,
+      "form_id": 161,
+      "title": "Registration for Telecommunication Sellers and Dealers Class Licence",
+      "description": ""
+    },
+    {
+      "workflow_id": 33,
+      "step": 4,
+      "pga_id": 24,
+      "title": "Review Registration",
+      "description": "Registration for Telecommunication Sellers and Dealers Class Licence"
+    },
+    {
+      "workflow_id": 34,
+      "step": 1,
+      "form_id": 166,
+      "title": "Application for Telecommunications  Sellers and  Dealer’s (Individual) Licence",
+      "description": ""
+    },
+    {
+      "workflow_id": 34,
+      "step": 2,
+      "form_id": 167,
+      "title": "Application for Telecommunications  Sellers and  Dealer’s (Individual) Licence",
+      "description": ""
+    },
+    {
+      "workflow_id": 34,
+      "step": 4,
+      "pga_id": 24,
+      "title": "Review Registration",
+      "description": "Registration for Telecommunications Sellers and Dealer’s (Individual) Licence"
+    },
+    {
+      "workflow_id": 35,
+      "step": 1,
+      "form_id": 134,
+      "title": "Atlantic Swordfish Certificate of Eligibility (COE)",
+      "description": ""
+    },
+    {
+      "workflow_id": 35,
+      "step": 2,
+      "form_id": 135,
+      "title": "Atlantic Swordfish Certificate of Eligibility (COE)",
+      "description": ""
+    },
+    {
+      "workflow_id": 35,
+      "step": 4,
+      "pga_id": 8,
+      "title": "Review Application",
+      "description": "Application for Atlantic Swordfish Certificate of Eligibility (COE)"
+    },
+    {
+      "workflow_id": 36,
+      "step": 1,
+      "form_id": 138,
+      "title": "Application for Registration of a Processor",
+      "description": ""
+    },
+    {
+      "workflow_id": 36,
+      "step": 2,
+      "form_id": 139,
+      "title": "Application for Registration of a Processor",
+      "description": ""
+    },
+    {
+      "workflow_id": 36,
+      "step": 4,
+      "pga_id": 8,
+      "title": "Review Application",
+      "description": "Application for Registration of a Processor"
+    },
+    {
+      "workflow_id": 38,
+      "step": 1,
+      "form_id": 154,
+      "title": "Application for Duty-Free Concession on Agricultural Inputs",
+      "description": ""
+    },
+    {
+      "workflow_id": 38,
+      "step": 2,
+      "form_id": 155,
+      "title": "Application for Duty-Free Concession on Agricultural Inputs",
+      "description": ""
+    },
+    {
+      "workflow_id": 38,
+      "step": 4,
+      "pga_id": 21,
+      "title": "Review Application",
+      "description": "Application for Duty-Free Concession on Agricultural Inputs"
+    },
+    {
+      "workflow_id": 40,
+      "step": 1,
+      "form_id": 162,
+      "pga_id": 21,
+      "title": "Letter - Duty-free Concession - Vehicle",
+      "description": ""
+    },
+    {
+      "workflow_id": 40,
+      "step": 2,
+      "form_id": 163,
+      "title": "Letter - Duty-free Concession - Vehicle",
+      "description": ""
+    },
+    {
+      "workflow_id": 40,
+      "step": 4,
+      "pga_id": 21,
+      "title": "Review Application",
+      "description": "Letter - Duty-free Concession - Vehicle"
     },
     {
       "workflow_id": 41,
@@ -2683,67 +2798,46 @@
       "description": "Certificate of Origin - GSP - Other"
     },
     {
-      "workflow_id": 20,
-      "step": 1,
-      "form_id": 168,
-      "title": "Application for Exporter Registration",
-      "description": "Please complete the Registration"
+      "workflow_id": 53,
+      "step": 15,
+      "form_id": 42,
+      "title": "New Inspection Request",
+      "description": "Please complete the Inspection Request"
     },
     {
-      "workflow_id": 20,
-      "step": 2,
-      "form_id": 169,
-      "title": "Application for Exporter Registration",
+      "workflow_id": 53,
+      "step": 16,
+      "form_id": 43,
+      "title": "Inspection Request",
       "description": null
     },
     {
-      "workflow_id": 20,
+      "workflow_id": 53,
       "step": 4,
-      "pga_id": 2,
-      "title": "Review Exporter Registration",
-      "description": "Application for Exporter Registration"
+      "pga_id": 5,
+      "title": "Review Application",
+      "description": "Inspection Request"
     },
     {
-      "workflow_id": 15,
-      "step": 1,
-      "form_id": 12,
-      "title": "New Import Phytosanitary Permit Application for the importation of Plants",
-      "description": "Please complete the Import Permit Application"
+      "workflow_id": 54,
+      "step": 15,
+      "form_id": 42,
+      "title": "New Inspection Request",
+      "description": "Please complete the Inspection Request"
     },
     {
-      "workflow_id": 15,
-      "step": 5,
-      "pga_id": 7,
-      "title": "Verify information correct and conformity regulations",
-      "description": "Please verify the correct and conformity regulations"
+      "workflow_id": 54,
+      "step": 16,
+      "form_id": 43,
+      "title": "Inspection Request",
+      "description": null
     },
     {
-      "workflow_id": 15,
-      "step": 10,
-      "form_id": 12,
-      "title": "New Import Permit Application for the importation of Plants",
-      "description": "Please complete the Import Permit Application"
-    },
-    {
-      "workflow_id": 15,
-      "step": 11,
-      "form_id": 11,
-      "title": "Phytosanitary Import Permit",
-      "description": "Import Permit"
-    },
-    {
-      "workflow_id": 28,
-      "step": 20,
-      "form_id": 32,
-      "title": "Phitosanitary Inspection Certificate for Import Release",
-      "description": "Phitosanitary Inspection Certificate"
-    },
-    {
-      "workflow_id": 28,
+      "workflow_id": 54,
       "step": 4,
-      "pga_id": 7,
-      "title": "Review Application Inspection Certificate",
-      "description": "Phitosanitary Inspection Certificate for Import Release"
+      "pga_id": 5,
+      "title": "Review Application",
+      "description": "Inspection Request"
     },
     {
       "workflow_id": 55,
@@ -2765,392 +2859,6 @@
       "pga_id": 7,
       "title": "Review Application Inspection Letter",
       "description": "Plant Inspection Letter"
-    },
-    {
-      "workflow_id": 31,
-      "step": 1,
-      "form_id": 51,
-      "pga_id": 5,
-      "title": "Unwholesome Food Certificate Request",
-      "description": "Food is unfit for human consumption"
-    },
-    {
-      "workflow_id": 31,
-      "step": 2,
-      "form_id": 45,
-      "title": "Unwholesome Food Certificate",
-      "description": "Food is unfit for human consumption"
-    },
-    {
-      "workflow_id": 31,
-      "step": 4,
-      "pga_id": 5,
-      "title": "Review Application Food Certificate",
-      "description": "Unwholesome Food Certificate"
-    },
-    {
-      "workflow_id": 33,
-      "step": 1,
-      "form_id": 160,
-      "title": "Registration for Telecommunication Sellers and Dealers Class Licence",
-      "description": ""
-    },
-    {
-      "workflow_id": 33,
-      "step": 2,
-      "form_id": 161,
-      "title": "Registration for Telecommunication Sellers and Dealers Class Licence",
-      "description": ""
-    },
-    {
-      "workflow_id": 33,
-      "step": 4,
-      "pga_id": 24,
-      "title": "Review Registration",
-      "description": "Registration for Telecommunication Sellers and Dealers Class Licence"
-    },
-    {
-      "workflow_id": 34,
-      "step": 1,
-      "form_id": 166,
-      "title": "Application for Telecommunications  Sellers and  Dealer’s (Individual) Licence",
-      "description": ""
-    },
-    {
-      "workflow_id": 34,
-      "step": 2,
-      "form_id": 167,
-      "title": "Application for Telecommunications  Sellers and  Dealer’s (Individual) Licence",
-      "description": ""
-    },
-    {
-      "workflow_id": 34,
-      "step": 4,
-      "pga_id": 24,
-      "title": "Review Registration",
-      "description": "Registration for Telecommunications Sellers and Dealer’s (Individual) Licence"
-    },
-    {
-      "workflow_id": 35,
-      "step": 1,
-      "form_id": 134,
-      "title": "Atlantic Swordfish Certificate of Eligibility (COE)",
-      "description": ""
-    },
-    {
-      "workflow_id": 35,
-      "step": 2,
-      "form_id": 135,
-      "title": "Atlantic Swordfish Certificate of Eligibility (COE)",
-      "description": ""
-    },
-    {
-      "workflow_id": 35,
-      "step": 4,
-      "pga_id": 8,
-      "title": "Review Application",
-      "description": "Application for Atlantic Swordfish Certificate of Eligibility (COE)"
-    },
-    {
-      "workflow_id": 36,
-      "step": 1,
-      "form_id": 138,
-      "title": "Application for Registration of a Processor",
-      "description": ""
-    },
-    {
-      "workflow_id": 36,
-      "step": 2,
-      "form_id": 139,
-      "title": "Application for Registration of a Processor",
-      "description": ""
-    },
-    {
-      "workflow_id": 36,
-      "step": 4,
-      "pga_id": 8,
-      "title": "Review Application",
-      "description": "Application for Registration of a Processor"
-    },
-    {
-      "workflow_id": 37,
-      "step": 1,
-      "form_id": 150,
-      "pga_id": 8,
-      "title": "Duty Free Concession Certificate",
-      "description": ""
-    },
-    {
-      "workflow_id": 37,
-      "step": 2,
-      "form_id": 151,
-      "title": "Duty Free Concession Certificate",
-      "description": ""
-    },
-    {
-      "workflow_id": 37,
-      "step": 4,
-      "pga_id": 8,
-      "title": "Review Application",
-      "description": "Duty Free Concession Certificate"
-    },
-    {
-      "workflow_id": 38,
-      "step": 1,
-      "form_id": 154,
-      "title": "Application for Duty-Free Concession on Agricultural Inputs",
-      "description": ""
-    },
-    {
-      "workflow_id": 38,
-      "step": 2,
-      "form_id": 155,
-      "title": "Application for Duty-Free Concession on Agricultural Inputs",
-      "description": ""
-    },
-    {
-      "workflow_id": 38,
-      "step": 4,
-      "pga_id": 21,
-      "title": "Review Application",
-      "description": "Application for Duty-Free Concession on Agricultural Inputs"
-    },
-    {
-      "workflow_id": 39,
-      "step": 1,
-      "form_id": 165,
-      "title": "Memorandum of Understanding for Duty and Tax Waiver",
-      "description": ""
-    },
-    {
-      "workflow_id": 39,
-      "step": 4,
-      "pga_id": 21,
-      "title": "Review Application",
-      "description": "Memorandum of Understanding between"
-    },
-    {
-      "workflow_id": 40,
-      "step": 1,
-      "form_id": 162,
-      "pga_id": 21,
-      "title": "Letter - Duty-free Concession - Vehicle",
-      "description": ""
-    },
-    {
-      "workflow_id": 40,
-      "step": 2,
-      "form_id": 163,
-      "title": "Letter - Duty-free Concession - Vehicle",
-      "description": ""
-    },
-    {
-      "workflow_id": 40,
-      "step": 4,
-      "pga_id": 21,
-      "title": "Review Application",
-      "description": "Letter - Duty-free Concession - Vehicle"
-    },
-    {
-      "workflow_id": 51,
-      "step": 1,
-      "form_id": 64
-    },
-    {
-      "workflow_id": 51,
-      "step": 4,
-      "pga_id": 5,
-      "title": "Review Application",
-      "description": "Inspection Request"
-    },
-    {
-      "workflow_id": 52,
-      "step": 1,
-      "form_id": 56,
-      "title": "New Duty Free Application Letter Taxi",
-      "description": "Please complete this form"
-    },
-    {
-      "workflow_id": 52,
-      "step": 2,
-      "form_id": 57,
-      "title": "Duty Free Application Letter Taxi",
-      "description": "Please complete this form"
-    },
-    {
-      "workflow_id": 52,
-      "step": 4,
-      "pga_id": 18,
-      "title": "Review Duty Free Application",
-      "description": "Duty Free Application Letter Taxi"
-    },
-    {
-      "workflow_id": 22,
-      "step": 1,
-      "form_id": 33,
-      "title": "New Application for permit to import Dairy Products",
-      "description": "Please complete the Import Permit Application"
-    },
-    {
-      "workflow_id": 22,
-      "step": 4,
-      "form_id": 34,
-      "title": "Permit to import Dairy Products",
-      "description": "Import Permit"
-    },
-    {
-      "workflow_id": 22,
-      "step": 4,
-      "pga_id": 6,
-      "title": "Review Application",
-      "description": "Application for permit to import Dairy Products"
-    },
-    {
-      "workflow_id": 29,
-      "step": 9,
-      "form_id": 35,
-      "title": "New Application to Individual Permit to Import Meat Dairy Poulty",
-      "description": "Please complete the Import Permit Application"
-    },
-    {
-      "workflow_id": 29,
-      "step": 13,
-      "form_id": 36,
-      "title": "Individual Permit to Import Meat Dairy Poulty",
-      "description": "Import Permit"
-    },
-    {
-      "workflow_id": 29,
-      "step": 4,
-      "pga_id": 6,
-      "title": "Review Application",
-      "description": "Application to Individual Permit to Import Meat Dairy Poulty"
-    },
-    {
-      "workflow_id": 23,
-      "step": 1,
-      "form_id": 33,
-      "title": "New Application for permit to import Meat Dairy Poulty Products",
-      "description": "Please complete the Import Permit Application"
-    },
-    {
-      "workflow_id": 23,
-      "step": 4,
-      "form_id": 34,
-      "title": "Permit to import Poultry Products",
-      "description": "Import Permit"
-    },
-    {
-      "workflow_id": 23,
-      "step": 4,
-      "pga_id": 6,
-      "title": "Review Application",
-      "description": "Application for permit to import Meat Dairy Poulty Products"
-    },
-    {
-      "workflow_id": 30,
-      "step": 9,
-      "form_id": 35,
-      "title": "New Application to Individual Permit to Import Meat Dairy Poulty",
-      "description": "Please complete the Import Permit Application"
-    },
-    {
-      "workflow_id": 30,
-      "step": 13,
-      "form_id": 36,
-      "title": "Individual Permit to Import Meat Dairy Poulty",
-      "description": "Import Permit"
-    },
-    {
-      "workflow_id": 30,
-      "step": 4,
-      "pga_id": 6,
-      "title": "Review Application",
-      "description": "Application to Individual Permit to Import Meat Dairy Poulty"
-    },
-    {
-      "workflow_id": 24,
-      "step": 18,
-      "form_id": 40,
-      "title": "New Examination of Sampling of Goods",
-      "description": "Please complete the Form for Sampling of Goods' Examination"
-    },
-    {
-      "workflow_id": 24,
-      "step": 19,
-      "form_id": 41,
-      "title": "Sampling of Goods",
-      "description": null
-    },
-    {
-      "workflow_id": 24,
-      "step": 4,
-      "pga_id": 5,
-      "title": "Review Application",
-      "description": "Examination of Sampling of Goods"
-    },
-    {
-      "workflow_id": 53,
-      "step": 15,
-      "form_id": 42,
-      "title": "New Inspection Request",
-      "description": "Please complete the Inspection Request"
-    },
-    {
-      "workflow_id": 53,
-      "step": 16,
-      "form_id": 43,
-      "title": "Inspection Request",
-      "description": null
-    },
-    {
-      "workflow_id": 53,
-      "step": 4,
-      "pga_id": 5,
-      "title": "Review Application",
-      "description": "Inspection Request"
-    },
-    {
-      "workflow_id": 25,
-      "step": 18,
-      "form_id": 40,
-      "title": "New Examination of Sampling of Goods",
-      "description": "Please complete the Form for Sampling of Goods' Examination"
-    },
-    {
-      "workflow_id": 25,
-      "step": 19,
-      "form_id": 41,
-      "title": "Sampling of Goods",
-      "description": null
-    },
-    {
-      "workflow_id": 25,
-      "step": 4,
-      "pga_id": 5,
-      "title": "Review Application",
-      "description": "Examination of Sampling of Goods"
-    },
-    {
-      "workflow_id": 54,
-      "step": 15,
-      "form_id": 42,
-      "title": "New Inspection Request",
-      "description": "Please complete the Inspection Request"
-    },
-    {
-      "workflow_id": 54,
-      "step": 16,
-      "form_id": 43,
-      "title": "Inspection Request",
-      "description": null
-    },
-    {
-      "workflow_id": 54,
-      "step": 4,
-      "pga_id": 5,
-      "title": "Review Application",
-      "description": "Inspection Request"
     }
   ],
   "hscodes_workflows": [
@@ -4013,481 +3721,6 @@
     {
       "hscode": "071232 00 000 ",
       "id": 15,
-      "notes": "Wood ears (Auricularia spp.)"
-    },
-    {
-      "hscode": "060110 00 000 ",
-      "id": 28,
-      "notes": "Bulbs, tubers, tuberous roots, corms, crowns and rhizomes, dormant"
-    },
-    {
-      "hscode": "060120 10 000 ",
-      "id": 28,
-      "notes": "Bulbs, tubers, tuberous roots, corms, crowns and rhizomes. in growth or in flower"
-    },
-    {
-      "hscode": "060120 20 000 ",
-      "id": 28,
-      "notes": "Chicory plants"
-    },
-    {
-      "hscode": "060120 90 000 ",
-      "id": 28,
-      "notes": "Other, Bulbs, tubers, tuberous roots, corms. crowns and rhizomes, dormant in growth or in flower"
-    },
-    {
-      "hscode": "060210 00 000 ",
-      "id": 28,
-      "notes": "Unrooted cuttings and slips"
-    },
-    {
-      "hscode": "060220 00 000 ",
-      "id": 28,
-      "notes": "Trees, shrubs and bushes, grafted or not, of kinds which bear edible fruit or nuts"
-    },
-    {
-      "hscode": "060230 00 000 ",
-      "id": 28,
-      "notes": "Rhododendrons and azaleas, grafted or not"
-    },
-    {
-      "hscode": "060240 00 000 ",
-      "id": 28,
-      "notes": "Roses, grafted or not"
-    },
-    {
-      "hscode": "060290 10 000 ",
-      "id": 28,
-      "notes": "Banana plants"
-    },
-    {
-      "hscode": "060290 20 000 ",
-      "id": 28,
-      "notes": "Coconut plants"
-    },
-    {
-      "hscode": "060290 30 000 ",
-      "id": 28,
-      "notes": "Cocoa plants"
-    },
-    {
-      "hscode": "060290 40 000 ",
-      "id": 28,
-      "notes": "Citrus plants"
-    },
-    {
-      "hscode": "060290 90 000 ",
-      "id": 28,
-      "notes": "Other plants"
-    },
-    {
-      "hscode": "060310 10 000 ",
-      "id": 28,
-      "notes": "Anthuriums"
-    },
-    {
-      "hscode": "060310 20 000 ",
-      "id": 28,
-      "notes": "Roses"
-    },
-    {
-      "hscode": "060310 30 000 ",
-      "id": 28,
-      "notes": "Chrysanthemums"
-    },
-    {
-      "hscode": "060310 40 000 ",
-      "id": 28,
-      "notes": "Ginger lilies"
-    },
-    {
-      "hscode": "060310 50 000 ",
-      "id": 28,
-      "notes": "Gerberas"
-    },
-    {
-      "hscode": "060310 60 000 ",
-      "id": 28,
-      "notes": "Heliconias (Heliconia spp.)"
-    },
-    {
-      "hscode": "060310 70 000 ",
-      "id": 28,
-      "notes": "Orchids"
-    },
-    {
-      "hscode": "060310 90 000 ",
-      "id": 28,
-      "notes": "Other, live trees and other plants, bulbs, roots, and the like"
-    },
-    {
-      "hscode": "060390 00 000 ",
-      "id": 28,
-      "notes": "Other, cut flowers and flower buds of a kind suitable for bouquets or for ornamental purposes, fresh, dried, dyed, bleached, impregnated or otherwise prepared"
-    },
-    {
-      "hscode": "060410 00 000 ",
-      "id": 28,
-      "notes": "Mosses and lichens"
-    },
-    {
-      "hscode": "060491 00 000 ",
-      "id": 28,
-      "notes": "Fresh"
-    },
-    {
-      "hscode": "060499 00 000 ",
-      "id": 28,
-      "notes": "Other, foliage, branches and other parts of plants, without flowers or flower buds, and grasses, mosses and lichens. being goods of a kind suitable for bouquets or for ornamental purposes, fresh, dried, dyed, bleached, impregnated or otherwise"
-    },
-    {
-      "hscode": "070110 00 000 ",
-      "id": 28,
-      "notes": "Potatoes, seed fresh or chilled"
-    },
-    {
-      "hscode": "070190 00 000 ",
-      "id": 28,
-      "notes": "Other potatoes, fresh or chilled"
-    },
-    {
-      "hscode": "070200 00 000 ",
-      "id": 28,
-      "notes": "Tomatoes, fresh or chilled."
-    },
-    {
-      "hscode": "070310 10 000 ",
-      "id": 28,
-      "notes": "Onions"
-    },
-    {
-      "hscode": "070310 20 000 ",
-      "id": 28,
-      "notes": "Shallots (eschallots)"
-    },
-    {
-      "hscode": "070320 00 000 ",
-      "id": 28,
-      "notes": "Garlic"
-    },
-    {
-      "hscode": "070390 00 000 ",
-      "id": 28,
-      "notes": "Leeks and other alliaceous vegetables"
-    },
-    {
-      "hscode": "070410 10 000 ",
-      "id": 28,
-      "notes": "Cauliflowers"
-    },
-    {
-      "hscode": "070410 90 000 ",
-      "id": 28,
-      "notes": "Other, headed broccoli"
-    },
-    {
-      "hscode": "070420 00 000 ",
-      "id": 28,
-      "notes": "Brussels sprouts"
-    },
-    {
-      "hscode": "070490 10 000 ",
-      "id": 28,
-      "notes": "Cabbages"
-    },
-    {
-      "hscode": "070490 90 000 ",
-      "id": 28,
-      "notes": "Other, kohlrabi, kale"
-    },
-    {
-      "hscode": "070511 00 000 ",
-      "id": 28,
-      "notes": "Cabbage lettuce (head lettuce)"
-    },
-    {
-      "hscode": "070519 00 000 ",
-      "id": 28,
-      "notes": "Other, similar edible brassicas, fresh or chilled"
-    },
-    {
-      "hscode": "070521 00 000 ",
-      "id": 28,
-      "notes": "Witloof chicory (Chichorium intybus var. foliosum)"
-    },
-    {
-      "hscode": "070529 00 000 ",
-      "id": 28,
-      "notes": "Other fresh or chilled"
-    },
-    {
-      "hscode": "070610 10 000 ",
-      "id": 28,
-      "notes": "Carrots"
-    },
-    {
-      "hscode": "070610 90 000 ",
-      "id": 28,
-      "notes": "Other, salad beetroot, salsify, celeriac, radishes and similar edible roots, fresh or chilled"
-    },
-    {
-      "hscode": "070690 10 000 ",
-      "id": 28,
-      "notes": "Beets"
-    },
-    {
-      "hscode": "070690 90 000 ",
-      "id": 28,
-      "notes": "Other, edible roots, fresh or chilled"
-    },
-    {
-      "hscode": "070700 10 000 ",
-      "id": 28,
-      "notes": "Cucumbers"
-    },
-    {
-      "hscode": "070700 20 000 ",
-      "id": 28,
-      "notes": "Gherkins"
-    },
-    {
-      "hscode": "070810 10 000 ",
-      "id": 28,
-      "notes": "Pigeon peas"
-    },
-    {
-      "hscode": "070810 20 000 ",
-      "id": 28,
-      "notes": "Blackeye peas"
-    },
-    {
-      "hscode": "070810 90 000 ",
-      "id": 28,
-      "notes": "Other peas"
-    },
-    {
-      "hscode": "070820 10 000 ",
-      "id": 28,
-      "notes": "String beans"
-    },
-    {
-      "hscode": "070820 20 000 ",
-      "id": 28,
-      "notes": "Bora (bodi) beans (Vigna spp.)"
-    },
-    {
-      "hscode": "070820 90 000 ",
-      "id": 28,
-      "notes": "Other leguminous vegetables"
-    },
-    {
-      "hscode": "070890 00 000 ",
-      "id": 28,
-      "notes": "Other leguminous vegetables, shelled or unshelled, fresh or chilled 070910 00 000 Globe artichokes"
-    },
-    {
-      "hscode": "070920 00 000 ",
-      "id": 28,
-      "notes": "Asparagus"
-    },
-    {
-      "hscode": "070930 00 000 ",
-      "id": 28,
-      "notes": "Aubergines (egg-plants)"
-    },
-    {
-      "hscode": "070940 00 000 ",
-      "id": 28,
-      "notes": "Celery and other celeriac"
-    },
-    {
-      "hscode": "07095100000 ",
-      "id": 28,
-      "notes": "Mushrooms of the genus Agaricus"
-    },
-    {
-      "hscode": "070952 00 000 ",
-      "id": 28,
-      "notes": "Trumes"
-    },
-    {
-      "hscode": "070959 00 000 ",
-      "id": 28,
-      "notes": "Other, vegetables, fresh or chilled"
-    },
-    {
-      "hscode": "070960 10 000 ",
-      "id": 28,
-      "notes": "Sweet peppers"
-    },
-    {
-      "hscode": "070960 90 000 ",
-      "id": 28,
-      "notes": "Other peppers, fresh or chilled"
-    },
-    {
-      "hscode": "070970 00 000 ",
-      "id": 28,
-      "notes": "Spinach, New Zealand spinach and orache spinach (garden spinach) 070990 10 000 Zucchini"
-    },
-    {
-      "hscode": "070990 20 000 ",
-      "id": 28,
-      "notes": "Ochroes"
-    },
-    {
-      "hscode": "070990 30 000 ",
-      "id": 28,
-      "notes": "Pumpkins"
-    },
-    {
-      "hscode": "070990 40 000 ",
-      "id": 28,
-      "notes": "Sweet corn (corn on the cob)"
-    },
-    {
-      "hscode": "070990 90 000 ",
-      "id": 28,
-      "notes": "Other, vegetables, fresh or chilled"
-    },
-    {
-      "hscode": "071010 00 000 ",
-      "id": 28,
-      "notes": "Potatoes, uncooked or cooked by steaming or boiling in water), frozen 071021 10 000 Garden peas for use in industry"
-    },
-    {
-      "hscode": "071021 20 000 ",
-      "id": 28,
-      "notes": "Other peas for use in industry"
-    },
-    {
-      "hscode": "07102190000 ",
-      "id": 28,
-      "notes": "Other, leguminous vegetables, shelled or unshelled"
-    },
-    {
-      "hscode": "071022 10 000 ",
-      "id": 28,
-      "notes": "String beans, for use in industry"
-    },
-    {
-      "hscode": "071022 20 000 ",
-      "id": 28,
-      "notes": "Other beans for use in industry"
-    },
-    {
-      "hscode": "071022 90 000 ",
-      "id": 28,
-      "notes": "Other"
-    },
-    {
-      "hscode": "071029 10 000 ",
-      "id": 28,
-      "notes": "For use in industry"
-    },
-    {
-      "hscode": "071029 90 000 ",
-      "id": 28,
-      "notes": "Other"
-    },
-    {
-      "hscode": "071030 10 000 ",
-      "id": 28,
-      "notes": "For use in industry"
-    },
-    {
-      "hscode": "071030 90 000 ",
-      "id": 28,
-      "notes": "Other"
-    },
-    {
-      "hscode": "071040 10 000 ",
-      "id": 28,
-      "notes": "For use in industry"
-    },
-    {
-      "hscode": "071040 90 000 ",
-      "id": 28,
-      "notes": "Other"
-    },
-    {
-      "hscode": "071080 ",
-      "id": 28,
-      "notes": "I 0 000 Beets, for use in industry"
-    },
-    {
-      "hscode": "071080 20 000 ",
-      "id": 28,
-      "notes": "Beets, other"
-    },
-    {
-      "hscode": "071080 30 000 ",
-      "id": 28,
-      "notes": "Carrots, for use in industry"
-    },
-    {
-      "hscode": "071080 40 000 ",
-      "id": 28,
-      "notes": "Carrots, other"
-    },
-    {
-      "hscode": "071080 80 000 ",
-      "id": 28,
-      "notes": "Other, for use in industry"
-    },
-    {
-      "hscode": "071080 90 000 ",
-      "id": 28,
-      "notes": "Other"
-    },
-    {
-      "hscode": "071090 90 000 ",
-      "id": 28,
-      "notes": "Other, for use in industry"
-    },
-    {
-      "hscode": "071120 00 000 ",
-      "id": 28,
-      "notes": "Olives"
-    },
-    {
-      "hscode": "071130 00 000 ",
-      "id": 28,
-      "notes": "Capers"
-    },
-    {
-      "hscode": "071140 00 000 ",
-      "id": 28,
-      "notes": "Cucumbers and gherkins"
-    },
-    {
-      "hscode": "071151 00 000 ",
-      "id": 28,
-      "notes": "Mushrooms of the genus Agaricus"
-    },
-    {
-      "hscode": "071159 00 000 ",
-      "id": 28,
-      "notes": "Other vegetables; mixtures ofvegetables"
-    },
-    {
-      "hscode": "071190 00 000 ",
-      "id": 28,
-      "notes": "Other vegetables"
-    },
-    {
-      "hscode": "071220 00 000 ",
-      "id": 28,
-      "notes": "Onions"
-    },
-    {
-      "hscode": "07123100000 ",
-      "id": 28,
-      "notes": "Mushrooms of the genus Agaricus"
-    },
-    {
-      "hscode": "071232 00 000 ",
-      "id": 28,
       "notes": "Wood ears (Auricularia spp.)"
     },
     {
@@ -7071,91 +6304,6 @@
       "notes": "Absorption-type, electrical"
     },
     {
-      "hscode": "5607.29.10",
-      "id": 37,
-      "notes": "Other twine and ropes"
-    },
-    {
-      "hscode": "5607.49.10",
-      "id": 37,
-      "notes": "Twine and ropes"
-    },
-    {
-      "hscode": "5607.50.10",
-      "id": 37,
-      "notes": "Twine and ropes"
-    },
-    {
-      "hscode": "5607.90.10",
-      "id": 37,
-      "notes": "Twine and ropes"
-    },
-    {
-      "hscode": "5608.11.00",
-      "id": 37,
-      "notes": "Made up fishing nets"
-    },
-    {
-      "hscode": "5608.90.10",
-      "id": 37,
-      "notes": "Made up fishing nets"
-    },
-    {
-      "hscode": "8525.10.00",
-      "id": 37,
-      "notes": "Transmission apparatus"
-    },
-    {
-      "hscode": "8525.10.00.200",
-      "id": 37,
-      "notes": "Transmission apparatus (old)"
-    },
-    {
-      "hscode": "8526.91.00",
-      "id": 37,
-      "notes": "Radio navigational aid apparatus"
-    },
-    {
-      "hscode": "8529.10.00",
-      "id": 37,
-      "notes": "Aerials and aerial reflectors of all kinds; parts suitable for use therewith"
-    },
-    {
-      "hscode": "8902.00.10",
-      "id": 37,
-      "notes": "Vessels exceeding 708 cubic metres"
-    },
-    {
-      "hscode": "8902.00.20",
-      "id": 37,
-      "notes": "Trawlers"
-    },
-    {
-      "hscode": "8902.00.30",
-      "id": 37,
-      "notes": "Other fishing vessels"
-    },
-    {
-      "hscode": "8902.00.90",
-      "id": 37,
-      "notes": "Other"
-    },
-    {
-      "hscode": "9014.10.00",
-      "id": 37,
-      "notes": "Direction finding compasses"
-    },
-    {
-      "hscode": "9014.80.00",
-      "id": 37,
-      "notes": "Other instruments and appliances"
-    },
-    {
-      "hscode": "9014.90.00",
-      "id": 37,
-      "notes": "Parts and accessories"
-    },
-    {
       "hscode": "0102.90.10",
       "id": 38,
       "notes": "Bulls, for breeding"
@@ -7622,221 +6770,6 @@
     },
     {
       "hscode": "8432.10.00",
-      "id": 39,
-      "notes": "Ploughs"
-    },
-    {
-      "hscode": "8432.21.00",
-      "id": 39,
-      "notes": "Disc harrows"
-    },
-    {
-      "hscode": "8432.29.00",
-      "id": 39,
-      "notes": "Other"
-    },
-    {
-      "hscode": "8432.30.00",
-      "id": 39,
-      "notes": "Seeders, planters and transplanters"
-    },
-    {
-      "hscode": "8432.40.00",
-      "id": 39,
-      "notes": "Manure spreaders and fertilizer distributors"
-    },
-    {
-      "hscode": "8701.10.10",
-      "id": 39,
-      "notes": "For use in agriculture"
-    },
-    {
-      "hscode": "8704.31.90.100",
-      "id": 39,
-      "notes": "Other, g.v.w not exceeding 5 tons, where the chargeable value =< $45000.00"
-    },
-    {
-      "hscode": "8704.31.90.900",
-      "id": 39,
-      "notes": "Other, g.v.w not exceeding 5 tons, where the chargeable value > $45000.00"
-    },
-    {
-      "hscode": "8704.32.90",
-      "id": 39,
-      "notes": "Other"
-    },
-    {
-      "hscode": "8704.90.00",
-      "id": 39,
-      "notes": "Other"
-    },
-    {
-      "hscode": "8708.21.00",
-      "id": 39,
-      "notes": "Safety seat belts"
-    },
-    {
-      "hscode": "8708.29.00",
-      "id": 39,
-      "notes": "Other"
-    },
-    {
-      "hscode": "8708.30.10",
-      "id": 39,
-      "notes": "Mounted brake linings for tractors"
-    },
-    {
-      "hscode": "8708.30.20",
-      "id": 39,
-      "notes": "Other mounted brake linings"
-    },
-    {
-      "hscode": "8708.30.30",
-      "id": 39,
-      "notes": "Brakes, servo-brakes and parts thereof for tractors"
-    },
-    {
-      "hscode": "8708.30.90",
-      "id": 39,
-      "notes": "Other brakes, servo-brakes and parts thereof"
-    },
-    {
-      "hscode": "8708.40.10",
-      "id": 39,
-      "notes": "For tractors"
-    },
-    {
-      "hscode": "8708.40.90",
-      "id": 39,
-      "notes": "Other"
-    },
-    {
-      "hscode": "8708.50.00",
-      "id": 39,
-      "notes": "Drive-axles with differential, whether or not provided with other transmission components, and non-driving axles; parts thereof:"
-    },
-    {
-      "hscode": "8708.50.10",
-      "id": 39,
-      "notes": "For tractors"
-    },
-    {
-      "hscode": "8708.50.90",
-      "id": 39,
-      "notes": "Other"
-    },
-    {
-      "hscode": "8708.70.10",
-      "id": 39,
-      "notes": "For tractors"
-    },
-    {
-      "hscode": "8708.70.90",
-      "id": 39,
-      "notes": "Other"
-    },
-    {
-      "hscode": "8708.80.00",
-      "id": 39,
-      "notes": "Suspension systems and parts thereof (including shock-absorbers):"
-    },
-    {
-      "hscode": "8708.80.10",
-      "id": 39,
-      "notes": "For tractors"
-    },
-    {
-      "hscode": "8708.80.90",
-      "id": 39,
-      "notes": "Other"
-    },
-    {
-      "hscode": "8708.91.10",
-      "id": 39,
-      "notes": "For tractors"
-    },
-    {
-      "hscode": "8708.91.90",
-      "id": 39,
-      "notes": "Other"
-    },
-    {
-      "hscode": "8708.92.10",
-      "id": 39,
-      "notes": "For tractors"
-    },
-    {
-      "hscode": "8708.92.90",
-      "id": 39,
-      "notes": "Other"
-    },
-    {
-      "hscode": "8708.93.10",
-      "id": 39,
-      "notes": "For tractors"
-    },
-    {
-      "hscode": "8708.93.90",
-      "id": 39,
-      "notes": "Other'"
-    },
-    {
-      "hscode": "8708.94.10",
-      "id": 39,
-      "notes": "For tractors"
-    },
-    {
-      "hscode": "8708.94.90",
-      "id": 39,
-      "notes": "Other"
-    },
-    {
-      "hscode": "8708.95.00",
-      "id": 39,
-      "notes": "Safety airbags with inflator system; parts thereof"
-    },
-    {
-      "hscode": "8708.99.10",
-      "id": 39,
-      "notes": "For tractors"
-    },
-    {
-      "hscode": "8708.99.90",
-      "id": 39,
-      "notes": "Other"
-    },
-    {
-      "hscode": "8708.31.10",
-      "id": 39,
-      "notes": "For tractors"
-    },
-    {
-      "hscode": "8708.31.90",
-      "id": 39,
-      "notes": "Other"
-    },
-    {
-      "hscode": "8708.39.10",
-      "id": 39,
-      "notes": "For tractors"
-    },
-    {
-      "hscode": "8708.39.90",
-      "id": 39,
-      "notes": "Other"
-    },
-    {
-      "hscode": "8708.60.10",
-      "id": 39,
-      "notes": "For tractors"
-    },
-    {
-      "hscode": "8708.60.90",
-      "id": 39,
-      "notes": "Other"
-    },
-    {
-      "hscode": "8432.10.00",
       "id": 40,
       "notes": "Ploughs"
     },
@@ -8051,81 +6984,6 @@
       "notes": "Other"
     },
     {
-      "hscode": "8703.21.90",
-      "id": 52,
-      "notes": "Of a cylinder capacity not exceeding 1,000 cc, where the chargeable value =< $45000.00"
-    },
-    {
-      "hscode": "8703.22.90",
-      "id": 52,
-      "notes": "Of a cylinder capacity exceeding 1,000 c but not exceeding 1,500 cc, where the chargeable value =< $45000.00"
-    },
-    {
-      "hscode": "8703.23.20",
-      "id": 52,
-      "notes": "Of a cylinder capacity >1,500 cc but =< 1,600 cc, where the chargeable value =< $45000.00"
-    },
-    {
-      "hscode": "8703.23.30",
-      "id": 52,
-      "notes": "Of a cylinder capacity > 1,800 cc but < 2,000 cc, where the chargeable value =< $45000.00"
-    },
-    {
-      "hscode": "8703.23.40",
-      "id": 52,
-      "notes": "Of a cylinder capacity >= 2,000 cc but =< 3,000 cc, where the chargeable value =< $45000.00"
-    },
-    {
-      "hscode": "8703.24.90",
-      "id": 52,
-      "notes": "Of a cylinder capacity exceeding 3,000 cc , where the chargeable value =< $45000.00"
-    },
-    {
-      "hscode": "8703.34.90",
-      "id": 52,
-      "notes": "Of a cylinder capacity not exceeding 1,500 cc , where the chargeable value =< $45000.00"
-    },
-    {
-      "hscode": "8703.31.90",
-      "id": 52,
-      "notes": "USED, Of a cylinder capacity-not exceeding 1,500 cc , where the chargeable value =< $45000.00"
-    },
-    {
-      "hscode": "8703.32.20",
-      "id": 52,
-      "notes": "Of a cylinder capacity exceeding 1,500 cc but not exceeding 1,600 cc, where the chargeable value =< $45000.00"
-    },
-    {
-      "hscode": "8703.32.30",
-      "id": 52,
-      "notes": "Of a cylinder capacity exceeding 2,000 cc but not exceeding 2,500 cc, completely knocked down for assembly in plants approved for the purpose by the Competent Authority, where the chargeable value =< $45000.00"
-    },
-    {
-      "hscode": "8703.32.40",
-      "id": 52,
-      "notes": "Of a cylinder capacity exceeding 2,000 cc but not exceeding 2,500 cc, where the chargeable value =< $45000.00"
-    },
-    {
-      "hscode": "8703.33.90",
-      "id": 52,
-      "notes": "Of a cylinder capacity exceeding 2,500 cc, where the chargeable value =< $45000.00"
-    },
-    {
-      "hscode": "8703.90.00",
-      "id": 52,
-      "notes": "Other motor vehicles for the transport of persons, NES, where the chargeable value =< $45000.00"
-    },
-    {
-      "hscode": "8704.10.00",
-      "id": 52,
-      "notes": "Dumpers designed for off-highway use"
-    },
-    {
-      "hscode": "8704.21.90",
-      "id": 52,
-      "notes": "Other, g.v.w not exceeding 5 tons, where the chargeable value =< $45000.00"
-    },
-    {
       "hscode": "01.05 ",
       "id": 22,
       "notes": "Live poultry"
@@ -8253,71 +7111,6 @@
     {
       "hscode": "02.07",
       "id": 22,
-      "notes": "Meatofpoultryofheading01.05,fresh,chilledorfrozen. Meatofpoultryofheading01.05,fresh,chilledorfroze"
-    },
-    {
-      "hscode": "01.05 ",
-      "id": 29,
-      "notes": "Live poultry"
-    },
-    {
-      "hscode": "02.01 ",
-      "id": 29,
-      "notes": "Meat of bovine animals, fresh or chilled"
-    },
-    {
-      "hscode": "02.02 ",
-      "id": 29,
-      "notes": "Meat of bovine animals, frozen"
-    },
-    {
-      "hscode": "02.03 ",
-      "id": 29,
-      "notes": "Meat of swine, fresh chilled or frozen"
-    },
-    {
-      "hscode": "02.04 ",
-      "id": 29,
-      "notes": "Meat of sheep or goats, fresh, chilled or frozen"
-    },
-    {
-      "hscode": "0210.101 ",
-      "id": 29,
-      "notes": "Ham 0210.102 Bacon"
-    },
-    {
-      "hscode": "04.01 ",
-      "id": 29,
-      "notes": "Milk and cream, not concentrated nor containing added sugar or other sweetening matter"
-    },
-    {
-      "hscode": "04.02 ",
-      "id": 29,
-      "notes": "Milk and cream, concentrated or containing added sugar or other sweetening matter"
-    },
-    {
-      "hscode": "16.01 ",
-      "id": 29,
-      "notes": "Sausages and similar products, of meat, meat offal or blood; food preparations based on these products"
-    },
-    {
-      "hscode": "16.02 ",
-      "id": 29,
-      "notes": "Other prepared or preserved meat, meat offal or blood"
-    },
-    {
-      "hscode": "1602.32 ",
-      "id": 29,
-      "notes": "Other than Corned Beef"
-    },
-    {
-      "hscode": "2105.001 ",
-      "id": 29,
-      "notes": "Ice cream"
-    },
-    {
-      "hscode": "02.07",
-      "id": 29,
       "notes": "Meatofpoultryofheading01.05,fresh,chilledorfrozen. Meatofpoultryofheading01.05,fresh,chilledorfroze"
     },
     {
@@ -8368,56 +7161,6 @@
     {
       "hscode": "16.02 ",
       "id": 23,
-      "notes": "Other prepared or preserved meat, meat offal or blood"
-    },
-    {
-      "hscode": "02.01 ",
-      "id": 30,
-      "notes": "Meat of bovine animals, fresh or chilled"
-    },
-    {
-      "hscode": "02.02 ",
-      "id": 30,
-      "notes": "Meat of bovine animals, frozen"
-    },
-    {
-      "hscode": "02.03 ",
-      "id": 30,
-      "notes": "Meat of swine, fresh, chilled or frozen"
-    },
-    {
-      "hscode": "02.04 ",
-      "id": 30,
-      "notes": "Meat of sheep or goats, fresh, chilled or frozen"
-    },
-    {
-      "hscode": "02.05 ",
-      "id": 30,
-      "notes": "Meat of horses, asses, mules or hinnies, fresh, chilled or frozen."
-    },
-    {
-      "hscode": "02.06 ",
-      "id": 30,
-      "notes": "Edible offal of bovine animals, swine, sheep, goats, horses, asses, mules or hinnies, fresh, chilled or frozen. 02.07 Meat and edible offal, of the poultry of heading 01.05, fresh, chilled or frozen."
-    },
-    {
-      "hscode": "02.08 ",
-      "id": 30,
-      "notes": "Other meat and edible meat offal, fresh, chilled or frozen."
-    },
-    {
-      "hscode": "02.09 ",
-      "id": 30,
-      "notes": "Pig fat, free of lean meat, and poultry fat, not rendered or otherwise extracted, fresh, chilled, frozen, salted, in brine, dried or smoked 02.10 Meat and edible meat offal, salted, in brine, dried or smoked; edible flours and meals of meat or meat offal."
-    },
-    {
-      "hscode": "16.01 ",
-      "id": 30,
-      "notes": "Sausages and similar products, of meat, meat offal or blood; food preparations based on these products."
-    },
-    {
-      "hscode": "16.02 ",
-      "id": 30,
       "notes": "Other prepared or preserved meat, meat offal or blood"
     },
     {
