@@ -14,8 +14,7 @@
           {
             "key": "importer.name",
             "title": "Name of Farmer/Agribusiness",
-            "description": "",
-            "readonly": true
+            "description": ""
           }
         ]
       },
@@ -24,10 +23,9 @@
         "htmlClass": "col-sm-12 col-md-6",
         "items": [
           {
-            "key": "importer.type",
+            "key": "importer.importerType",
             "title": "Type of Farm/Company Service",
-            "description": "",
-            "readonly": true
+            "description": ""
           }
         ]
       },
@@ -38,8 +36,7 @@
           {
             "key": "importer.address",
             "title": "Address",
-            "description": "",
-            "readonly": true
+            "description": ""
           }
         ]
       },
@@ -50,8 +47,7 @@
           {
             "key": "importer.country",
             "title": "Country",
-            "description": "",
-            "readonly": true
+            "description": ""
           }
         ]
       },
@@ -62,8 +58,7 @@
           {
             "key": "importer.docid",
             "title": "Registration #",
-            "description": "w/ Ministry of Agriculture, Food, Fisheries and Water Resource Management",
-            "readonly": true
+            "description": "w/ Ministry of Agriculture, Food, Fisheries and Water Resource Management"
           }
         ]
       },
@@ -74,8 +69,7 @@
           {
             "key": "importer.phone",
             "title": "Phone",
-            "description": "(246) area code",
-            "readonly": true
+            "description": "(246) area code"
           }
         ]
       },
@@ -86,8 +80,7 @@
           {
             "key": "importer.fax",
             "title": "Fax",
-            "description": "(246) area code",
-            "readonly": true
+            "description": "(246) area code"
           }
         ]
       }
