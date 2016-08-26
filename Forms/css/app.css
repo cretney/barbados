@@ -3,6 +3,20 @@
 	http://localhost:4000/Forms/css/app.css
 */
 
+
+.has-feedback .form-control {
+	padding-right: 10.5px;
+}
+
+.has-feedback label ~ .form-control-feedback {
+	top: 0px;
+
+}
+
+.form-horizontal .has-feedback .form-control-feedback {
+	right: -25px;
+}
+
 .nav, .pagination, .carousel, .panel-title a {
 	cursor: pointer;
 }

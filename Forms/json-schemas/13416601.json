@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum ed51e446ed4f8582cdbbbf757fb893834f5ba060",
+  "description": "Generated from b with shasum 5c2e3b49236f1d59a6071ff2a3b112174d0bb9bf",
   "type": "object",
   "required": [
     "blockId",
@@ -68,6 +68,11 @@
             "typeBusiness",
             "employees",
             "vat",
+            "office_address",
+            "office_mailingAddress",
+            "office_work_phone",
+            "office_mobile_phone",
+            "office_fax",
             "coorporateRegistrationNo",
             "withPayment",
             "typePremises",
@@ -114,6 +119,21 @@
               "type": "integer"
             },
             "vat": {
+              "type": "string"
+            },
+            "office_address": {
+              "type": "string"
+            },
+            "office_mailingAddress": {
+              "type": "string"
+            },
+            "office_work_phone": {
+              "type": "string"
+            },
+            "office_mobile_phone": {
+              "type": "string"
+            },
+            "office_fax": {
               "type": "string"
             },
             "coorporateRegistrationNo": {

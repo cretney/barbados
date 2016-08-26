@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 9eaac5f0258351679a3656f079e631273205fc51",
+  "description": "Generated from b with shasum f362b36257e7ff99703a96a68bb1b848b3518b8d",
   "type": "object",
   "required": [
     "blockId",
@@ -36,6 +36,7 @@
         "submitter",
         "staff",
         "applicant",
+        "contact",
         "fishSource",
         "fishPurchasedLocally",
         "fishPurchasedImported",
@@ -139,8 +140,7 @@
             "phone",
             "fax",
             "email",
-            "directors:",
-            "contact"
+            "directors"
           ],
           "properties": {
             "id": {
@@ -185,43 +185,43 @@
             "email": {
               "type": "string"
             },
-            "directors:": {
+            "directors": {
+              "type": "string"
+            }
+          }
+        },
+        "contact": {
+          "type": "object",
+          "required": [
+            "name",
+            "address",
+            "home_phone",
+            "work_phone",
+            "mobile_phone",
+            "fax",
+            "email"
+          ],
+          "properties": {
+            "name": {
               "type": "string"
             },
-            "contact": {
-              "type": "object",
-              "required": [
-                "name",
-                "address",
-                "home_phone",
-                "work_phone",
-                "mobile_phone",
-                "fax",
-                "email"
-              ],
-              "properties": {
-                "name": {
-                  "type": "string"
-                },
-                "address": {
-                  "type": "string"
-                },
-                "home_phone": {
-                  "type": "string"
-                },
-                "work_phone": {
-                  "type": "string"
-                },
-                "mobile_phone": {
-                  "type": "string"
-                },
-                "fax": {
-                  "type": "string"
-                },
-                "email": {
-                  "type": "string"
-                }
-              }
+            "address": {
+              "type": "string"
+            },
+            "home_phone": {
+              "type": "string"
+            },
+            "work_phone": {
+              "type": "string"
+            },
+            "mobile_phone": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
             }
           }
         },

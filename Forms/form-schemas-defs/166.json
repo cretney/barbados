@@ -240,7 +240,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key":"applicant.contact.work_phone",
+            "key":"applicant.office_work_phone",
             "title":"Telephone No."
           }
         ]
@@ -250,7 +250,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key":"applicant.contact.fax",
+            "key":"applicant.office_fax",
             "title":"Fax No."
           }
         ]
@@ -260,7 +260,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key":"applicant.contact.mobile_phone",
+            "key":"applicant.office_mobile_phone",
             "title":"Pager/Cell Number"
           }
         ]

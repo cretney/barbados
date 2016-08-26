@@ -428,19 +428,14 @@
               "title": "Brandname:",
               "description": ""
             },
-            "directors:": {
+            "directors": {
               "type": "string",
-              "title": "Directors:",
+              "title": "Directors",
               "description": ""
             },
             "brandName": {
               "type": "string",
               "title": "Brandname",
-              "description": ""
-            },
-            "directors": {
-              "type": "string",
-              "title": "Directors",
               "description": ""
             },
             "contactPerson": {
@@ -484,6 +479,31 @@
             "employees": {
               "type": "integer",
               "title": "Employees",
+              "description": ""
+            },
+            "office_address": {
+              "type": "string",
+              "title": "Office_address",
+              "description": ""
+            },
+            "office_mailingAddress": {
+              "type": "string",
+              "title": "Office_mailingaddress",
+              "description": ""
+            },
+            "office_work_phone": {
+              "type": "string",
+              "title": "Office_work_phone",
+              "description": ""
+            },
+            "office_mobile_phone": {
+              "type": "string",
+              "title": "Office_mobile_phone",
+              "description": ""
+            },
+            "office_fax": {
+              "type": "string",
+              "title": "Office_fax",
               "description": ""
             },
             "coorporateRegistrationNo": {
@@ -1037,6 +1057,49 @@
                 "title": "Female",
                 "description": ""
               }
+            }
+          }
+        },
+        "contact": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "address": {
+              "type": "string",
+              "title": "Address",
+              "description": ""
+            },
+            "home_phone": {
+              "type": "string",
+              "title": "Home_phone",
+              "description": ""
+            },
+            "work_phone": {
+              "type": "string",
+              "title": "Work_phone",
+              "description": ""
+            },
+            "mobile_phone": {
+              "type": "string",
+              "title": "Mobile_phone",
+              "description": ""
+            },
+            "fax": {
+              "type": "string",
+              "title": "Fax",
+              "description": ""
+            },
+            "email": {
+              "type": "string",
+              "title": "Email",
+              "description": ""
             }
           }
         },
