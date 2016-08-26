@@ -1,0 +1,311 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "Generated from b with shasum 220f21903c3487d8a4bfb25ea9fc8141d4f1709c",
+  "type": "object",
+  "required": [
+    "blockId",
+    "workflowId",
+    "formId",
+    "title",
+    "status",
+    "submission"
+  ],
+  "properties": {
+    "blockId": {
+      "type": "integer"
+    },
+    "workflowId": {
+      "type": "integer"
+    },
+    "formId": {
+      "type": "integer"
+    },
+    "title": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "submission": {
+      "type": "object",
+      "required": [
+        "commodities",
+        "referenceNumber",
+        "modeTransport",
+        "routeTransport",
+        "origin",
+        "submitter",
+        "entryDate",
+        "approvedBy",
+        "approvalDate",
+        "approvalLocation",
+        "observations",
+        "remarks",
+        "applicant",
+        "consignee",
+        "destination",
+        "supplier"
+      ],
+      "properties": {
+        "commodities": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+              "hsCode",
+              "description",
+              "descriptionDetail",
+              "preferenceCriterion",
+              "grossWeight",
+              "grossWeightUnits",
+              "rulesOrigin",
+              "invoiceNumber",
+              "invoiceDate",
+              "units"
+            ],
+            "properties": {
+              "hsCode": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "descriptionDetail": {
+                "type": "string"
+              },
+              "preferenceCriterion": {
+                "type": "string"
+              },
+              "grossWeight": {
+                "type": "number"
+              },
+              "grossWeightUnits": {
+                "type": "string"
+              },
+              "rulesOrigin": {
+                "type": "string"
+              },
+              "invoiceNumber": {
+                "type": "string"
+              },
+              "invoiceDate": {
+                "type": "string"
+              },
+              "units": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "unitType",
+                    "quantity"
+                  ],
+                  "properties": {
+                    "unitType": {
+                      "type": "string"
+                    },
+                    "quantity": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "referenceNumber": {
+          "type": "string"
+        },
+        "modeTransport": {
+          "type": "string"
+        },
+        "routeTransport": {
+          "type": "string"
+        },
+        "origin": {
+          "type": "string"
+        },
+        "submitter": {
+          "type": "string"
+        },
+        "entryDate": {
+          "type": "string"
+        },
+        "approvedBy": {
+          "type": "string"
+        },
+        "approvalDate": {
+          "type": "string"
+        },
+        "approvalLocation": {
+          "type": "string"
+        },
+        "observations": {
+          "type": "string"
+        },
+        "remarks": {
+          "type": "string"
+        },
+        "applicant": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address",
+            "docid",
+            "fax",
+            "email"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "docid": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            }
+          }
+        },
+        "consignee": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address",
+            "docid",
+            "fax",
+            "email"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "docid": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            }
+          }
+        },
+        "destination": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address",
+            "docid",
+            "fax",
+            "email"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "docid": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            }
+          }
+        },
+        "supplier": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address",
+            "docid",
+            "fax",
+            "email"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "docid": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

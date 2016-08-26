@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum a4053f044f644e3b3b119b3981e34d53c25123d1",
+  "description": "Generated from b with shasum 6dc5742c22cd22881ed2ea5146df656fbb53db47",
   "type": "object",
   "required": [
 
@@ -42,194 +42,118 @@
 
       ],
       "properties": {
-        "commodities": {
-          "type": "array",
-          "minItems": 1,
-          "uniqueItems": true,
-          "items": {
-            "type": "object",
-            "required": [
+        "requestType": {
+          "type": "string",
+          "title": "Type of Request",
+          "description": "Request Type (New Request/Renewal)"
+        },
+        "previousNumber": {
+          "type": "string",
+          "title": "Previous Number",
+          "description": "Previous Permit Number"
+        },
+        "previousExpiration": {
+          "type": "date-time",
+          "title": "Date Expired",
+          "description": "Expiration date of previous permit"
+        },
+        "periodRequestStart": {
+          "type": "date-time",
+          "title": "Period Starting",
+          "description": "Period Starting of Request"
+        },
+        "periodRequestEnding": {
+          "type": "date-time",
+          "title": "Period Ending",
+          "description": "Period Ending of Request"
+        },
+        "importer": {
+          "type": "object",
+          "required": [
 
-            ],
-            "properties": {
-              "hsCode": {
-                "type": "string",
-                "title": "HS Code",
-                "description": "The unique code for the commodity."
-              },
-              "description": {
-                "type": "string",
-                "title": "Description",
-                "description": "Description of the item."
-              },
-              "units": {
-                "type": "array",
-                "minItems": 1,
-                "uniqueItems": true,
-                "items": {
-                  "type": "object",
-                  "required": [
-
-                  ],
-                  "properties": {
-                    "unitType": {
-                      "type": "string",
-                      "title": "Unit of Sale",
-                      "description": "The unit of sale."
-                    },
-                    "quantity": {
-                      "type": "integer",
-                      "title": "Quantity",
-                      "description": "The quantity in units of sale."
-                    },
-                    "pricePerUnit": {
-                      "type": "number",
-                      "title": "Price Per Unit",
-                      "description": "In Barbados Dollars"
-                    },
-                    "cifValue": {
-                      "type": "integer",
-                      "title": "Customs Value",
-                      "description": "In Barbados Dollars"
-                    }
-                  }
-                }
-              },
-              "typeFoodCategory": {
-                "type": "string",
-                "title": "Food Category",
-                "description": ""
-              },
-              "typeFoodDetail": {
-                "type": "string",
-                "title": "Food Type",
-                "description": ""
-              },
-              "grossWeight": {
-                "type": "number",
-                "title": "Gross Weight",
-                "description": "Indicate the Gross Weight of the Goods."
-              },
-              "quantity": {
-                "type": "integer",
-                "title": "Quantity",
-                "description": "The quantity in units of sale."
-              },
-              "entries": {
-                "type": "array",
-                "minItems": 1,
-                "uniqueItems": true,
-                "items": {
-                  "type": "object",
-                  "required": [
-
-                  ],
-                  "properties": {
-                    "vehicleBrand": {
-                      "type": "string",
-                      "title": "Brand of Vehicle",
-                      "description": "Make or Brand of vehicle"
-                    },
-                    "vehicleModel": {
-                      "type": "string",
-                      "title": "Model of Vehicle",
-                      "description": ""
-                    },
-                    "vehicleYear": {
-                      "type": "string",
-                      "title": "Year of Vehicle",
-                      "description": ""
-                    },
-                    "vehicleEngine": {
-                      "type": "string",
-                      "title": "Engine capacity",
-                      "description": "Engine capacity of vehicle"
-                    },
-                    "chassisNumber": {
-                      "type": "string",
-                      "title": "Chassisnumber",
-                      "description": ""
-                    },
-                    "costCIF": {
-                      "type": "number",
-                      "title": "Costcif",
-                      "description": ""
-                    },
-                    "serialNumber": {
-                      "type": "string",
-                      "title": "Serialnumber",
-                      "description": ""
-                    },
-                    "dateArrival": {
-                      "type": "date-time",
-                      "title": "Datearrival",
-                      "description": ""
-                    },
-                    "cifValue": {
-                      "type": "integer",
-                      "title": "Customs Value",
-                      "description": "In Barbados Dollars"
-                    },
-                    "identificationNumber": {
-                      "type": "string",
-                      "title": "Identificationnumber",
-                      "description": ""
-                    }
-                  }
-                }
-              },
-              "descriptionDetail": {
-                "type": "string",
-                "title": "Descriptiondetail",
-                "description": ""
-              },
-              "grossWeightUnits": {
-                "type": "string",
-                "title": "Grossweightunits",
-                "description": ""
-              },
-              "name": {
-                "type": "string",
-                "title": "Name",
-                "description": ""
-              },
-              "fobValue": {
-                "type": "integer",
-                "title": "FOB Value (US$)",
-                "description": "In US Dollars"
-              },
-              "currencyType": {
-                "type": "string",
-                "title": "Currencytype",
-                "description": ""
-              },
-              "preferenceCriterion": {
-                "type": "string",
-                "title": "Preference Criterion",
-                "description": ""
-              },
-              "othersAnnex": {
-                "type": "string",
-                "title": "Others Annex",
-                "description": "Others: if in determining the origin of the good one of the procedures set forth in Articles 1V.06 or IV.05 of the Agreement, was used, indicate:"
-              },
-              "rulesOrigin": {
-                "type": "string",
-                "title": "Rules of Origin",
-                "description": "Enter the criteria of origin applicable to each of the goods included."
-              },
-              "invoiceNumber": {
-                "type": "string",
-                "title": "Invoice Number",
-                "description": "Enter the Number of the Commercial Invoice."
-              },
-              "invoiceDate": {
-                "type": "date-time",
-                "title": "Invoice Date",
-                "description": "Enter the Date of the Commercial Invoice."
-              }
+          ],
+          "properties": {
+            "id": {
+              "type": "integer",
+              "title": "Id",
+              "description": ""
+            },
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "countryId": {
+              "type": "string",
+              "title": "Countryid",
+              "description": ""
+            },
+            "country": {
+              "type": "string",
+              "title": "Country",
+              "description": ""
+            },
+            "address": {
+              "type": "string",
+              "title": "Address",
+              "description": ""
+            },
+            "docid": {
+              "type": "string",
+              "title": "Docid",
+              "description": ""
+            },
+            "fax": {
+              "type": "string",
+              "title": "Fax",
+              "description": ""
+            },
+            "phone": {
+              "type": "string",
+              "title": "Phone",
+              "description": ""
+            },
+            "email": {
+              "type": "string",
+              "title": "Email",
+              "description": ""
+            },
+            "importerType": {
+              "type": "string",
+              "title": "Importertype",
+              "description": ""
             }
           }
+        },
+        "approvalNumber": {
+          "type": "string",
+          "title": "Approval Number",
+          "description": "Number of Approval Document"
+        },
+        "approvedBy": {
+          "type": "string",
+          "title": "Approved By",
+          "description": ""
+        },
+        "periodEnding": {
+          "type": "date-time",
+          "title": "Periodending",
+          "description": ""
+        },
+        "approvalDate": {
+          "type": "date-time",
+          "title": "Approvaldate",
+          "description": ""
+        },
+        "issuedDate": {
+          "type": "date-time",
+          "title": "Date Issued",
+          "description": ""
+        },
+        "receptionDate": {
+          "type": "date-time",
+          "title": "Date Received",
+          "description": ""
         },
         "submitter": {
           "type": "string",
@@ -518,202 +442,6 @@
             }
           }
         },
-        "supplier": {
-          "type": "object",
-          "required": [
-
-          ],
-          "properties": {
-            "id": {
-              "type": "integer",
-              "title": "Id",
-              "description": ""
-            },
-            "name": {
-              "type": "string",
-              "title": "Name",
-              "description": ""
-            },
-            "countryId": {
-              "type": "string",
-              "title": "Countryid",
-              "description": ""
-            },
-            "country": {
-              "type": "string",
-              "title": "Country",
-              "description": ""
-            },
-            "address": {
-              "type": "string",
-              "title": "Address",
-              "description": ""
-            },
-            "docid": {
-              "type": "string",
-              "title": "Docid",
-              "description": ""
-            },
-            "fax": {
-              "type": "string",
-              "title": "Fax",
-              "description": ""
-            },
-            "email": {
-              "type": "string",
-              "title": "Email",
-              "description": ""
-            },
-            "work_phone": {
-              "type": "string",
-              "title": "Work_phone",
-              "description": ""
-            }
-          }
-        },
-        "origin": {
-          "type": "string",
-          "title": "Country of Origin",
-          "description": "The country from where the goods originated."
-        },
-        "countryConsigned": {
-          "type": "string",
-          "title": "Country whence Consigned",
-          "description": "The country where the goods were consigned."
-        },
-        "expectedArrival": {
-          "type": "date-time",
-          "title": "Expected Time of Arrival",
-          "description": "The date that the goods will arrive in Barbados."
-        },
-        "consigments": {
-          "type": "string",
-          "title": "Number of Consignments",
-          "description": ""
-        },
-        "intendedUse": {
-          "type": "string",
-          "title": "Intended use",
-          "description": ""
-        },
-        "meansConveyance": {
-          "type": "string",
-          "title": "Means of Conveyance",
-          "description": ""
-        },
-        "requestType": {
-          "type": "string",
-          "title": "Type of Request",
-          "description": "Request Type (New Request/Renewal)"
-        },
-        "previousNumber": {
-          "type": "string",
-          "title": "Previous Number",
-          "description": "Previous Permit Number"
-        },
-        "previousExpiration": {
-          "type": "date-time",
-          "title": "Date Expired",
-          "description": "Expiration date of previous permit"
-        },
-        "periodRequestStart": {
-          "type": "date-time",
-          "title": "Period Starting",
-          "description": "Period Starting of Request"
-        },
-        "periodRequestEnding": {
-          "type": "date-time",
-          "title": "Period Ending",
-          "description": "Period Ending of Request"
-        },
-        "importer": {
-          "type": "object",
-          "required": [
-
-          ],
-          "properties": {
-            "id": {
-              "type": "integer",
-              "title": "Id",
-              "description": ""
-            },
-            "name": {
-              "type": "string",
-              "title": "Name",
-              "description": ""
-            },
-            "countryId": {
-              "type": "string",
-              "title": "Countryid",
-              "description": ""
-            },
-            "country": {
-              "type": "string",
-              "title": "Country",
-              "description": ""
-            },
-            "address": {
-              "type": "string",
-              "title": "Address",
-              "description": ""
-            },
-            "docid": {
-              "type": "string",
-              "title": "Docid",
-              "description": ""
-            },
-            "fax": {
-              "type": "string",
-              "title": "Fax",
-              "description": ""
-            },
-            "phone": {
-              "type": "string",
-              "title": "Phone",
-              "description": ""
-            },
-            "email": {
-              "type": "string",
-              "title": "Email",
-              "description": ""
-            },
-            "importerType": {
-              "type": "string",
-              "title": "Importertype",
-              "description": ""
-            }
-          }
-        },
-        "approvalNumber": {
-          "type": "string",
-          "title": "Approval Number",
-          "description": "Number of Approval Document"
-        },
-        "approvedBy": {
-          "type": "string",
-          "title": "Approved By",
-          "description": ""
-        },
-        "periodEnding": {
-          "type": "date-time",
-          "title": "Periodending",
-          "description": ""
-        },
-        "approvalDate": {
-          "type": "date-time",
-          "title": "Approvaldate",
-          "description": ""
-        },
-        "issuedDate": {
-          "type": "date-time",
-          "title": "Date Issued",
-          "description": ""
-        },
-        "receptionDate": {
-          "type": "date-time",
-          "title": "Date Received",
-          "description": ""
-        },
         "consignee": {
           "type": "object",
           "required": [
@@ -809,6 +537,243 @@
               "description": ""
             }
           }
+        },
+        "supplier": {
+          "type": "object",
+          "required": [
+
+          ],
+          "properties": {
+            "id": {
+              "type": "integer",
+              "title": "Id",
+              "description": ""
+            },
+            "name": {
+              "type": "string",
+              "title": "Name",
+              "description": ""
+            },
+            "countryId": {
+              "type": "string",
+              "title": "Countryid",
+              "description": ""
+            },
+            "country": {
+              "type": "string",
+              "title": "Country",
+              "description": ""
+            },
+            "address": {
+              "type": "string",
+              "title": "Address",
+              "description": ""
+            },
+            "docid": {
+              "type": "string",
+              "title": "Docid",
+              "description": ""
+            },
+            "fax": {
+              "type": "string",
+              "title": "Fax",
+              "description": ""
+            },
+            "email": {
+              "type": "string",
+              "title": "Email",
+              "description": ""
+            },
+            "work_phone": {
+              "type": "string",
+              "title": "Work_phone",
+              "description": ""
+            }
+          }
+        },
+        "expectedArrival": {
+          "type": "date-time",
+          "title": "Expected Time of Arrival",
+          "description": "The date that the goods will arrive in Barbados."
+        },
+        "commodities": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+
+            ],
+            "properties": {
+              "hsCode": {
+                "type": "string",
+                "title": "HS Code",
+                "description": "The unique code for the commodity."
+              },
+              "description": {
+                "type": "string",
+                "title": "Description",
+                "description": "Description of the item."
+              },
+              "units": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "object",
+                  "required": [
+
+                  ],
+                  "properties": {
+                    "unitType": {
+                      "type": "string",
+                      "title": "Unit of Sale",
+                      "description": "The unit of sale."
+                    },
+                    "quantity": {
+                      "type": "integer",
+                      "title": "Quantity",
+                      "description": "The quantity in units of sale."
+                    },
+                    "cifValue": {
+                      "type": "integer",
+                      "title": "Customs Value",
+                      "description": "In Barbados Dollars"
+                    }
+                  }
+                }
+              },
+              "typeFoodCategory": {
+                "type": "string",
+                "title": "Food Category",
+                "description": ""
+              },
+              "typeFoodDetail": {
+                "type": "string",
+                "title": "Food Type",
+                "description": ""
+              },
+              "grossWeight": {
+                "type": "number",
+                "title": "Gross Weight",
+                "description": "Indicate the Gross Weight of the Goods."
+              },
+              "quantity": {
+                "type": "integer",
+                "title": "Quantity",
+                "description": "The quantity in units of sale."
+              },
+              "descriptionDetail": {
+                "type": "string",
+                "title": "Descriptiondetail",
+                "description": ""
+              },
+              "grossWeightUnits": {
+                "type": "string",
+                "title": "Grossweightunits",
+                "description": ""
+              },
+              "name": {
+                "type": "string",
+                "title": "Name",
+                "description": ""
+              },
+              "entries": {
+                "type": "array",
+                "minItems": 1,
+                "uniqueItems": true,
+                "items": {
+                  "type": "object",
+                  "required": [
+
+                  ],
+                  "properties": {
+                    "vehicleBrand": {
+                      "type": "string",
+                      "title": "Brand of Vehicle",
+                      "description": "Make or Brand of vehicle"
+                    },
+                    "vehicleModel": {
+                      "type": "string",
+                      "title": "Model of Vehicle",
+                      "description": ""
+                    },
+                    "vehicleYear": {
+                      "type": "string",
+                      "title": "Year of Vehicle",
+                      "description": ""
+                    },
+                    "vehicleEngine": {
+                      "type": "string",
+                      "title": "Engine capacity",
+                      "description": "Engine capacity of vehicle"
+                    },
+                    "serialNumber": {
+                      "type": "string",
+                      "title": "Serialnumber",
+                      "description": ""
+                    },
+                    "dateArrival": {
+                      "type": "date-time",
+                      "title": "Datearrival",
+                      "description": ""
+                    },
+                    "cifValue": {
+                      "type": "integer",
+                      "title": "Customs Value",
+                      "description": "In Barbados Dollars"
+                    },
+                    "identificationNumber": {
+                      "type": "string",
+                      "title": "Identificationnumber",
+                      "description": ""
+                    }
+                  }
+                }
+              },
+              "fobValue": {
+                "type": "integer",
+                "title": "FOB Value (US$)",
+                "description": "In US Dollars"
+              },
+              "currencyType": {
+                "type": "string",
+                "title": "Currencytype",
+                "description": ""
+              },
+              "preferenceCriterion": {
+                "type": "string",
+                "title": "Preference Criterion",
+                "description": ""
+              },
+              "othersAnnex": {
+                "type": "string",
+                "title": "Others Annex",
+                "description": "Others: if in determining the origin of the good one of the procedures set forth in Articles 1V.06 or IV.05 of the Agreement, was used, indicate:"
+              },
+              "rulesOrigin": {
+                "type": "string",
+                "title": "Rules of Origin",
+                "description": "Enter the criteria of origin applicable to each of the goods included."
+              },
+              "invoiceNumber": {
+                "type": "string",
+                "title": "Invoice Number",
+                "description": "Enter the Number of the Commercial Invoice."
+              },
+              "invoiceDate": {
+                "type": "date-time",
+                "title": "Invoice Date",
+                "description": "Enter the Date of the Commercial Invoice."
+              }
+            }
+          }
+        },
+        "origin": {
+          "type": "string",
+          "title": "Country of Origin",
+          "description": "The country from where the goods originated."
         },
         "transhipVia": {
           "type": "string",
@@ -921,26 +886,6 @@
         "phytosanitaryCertificate": {
           "type": "string",
           "title": "Phytosanitarycertificate",
-          "description": ""
-        },
-        "oldVehicleBrand": {
-          "type": "string",
-          "title": "Oldvehiclebrand",
-          "description": ""
-        },
-        "oldVehicleModel": {
-          "type": "string",
-          "title": "Oldvehiclemodel",
-          "description": ""
-        },
-        "oldVehicleYear": {
-          "type": "string",
-          "title": "Oldvehicleyear",
-          "description": ""
-        },
-        "oldVehicleRegistrationNumber": {
-          "type": "string",
-          "title": "Oldvehicleregistrationnumber",
           "description": ""
         },
         "permitLength": {
