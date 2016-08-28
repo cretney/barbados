@@ -306,19 +306,19 @@
             "helpvalue":"<h5>Type of Premises:</h5>"
           },
           {
-            "key": "applicant.typePremises.office",
+            "key": "typePremises.office",
             "title": "Office"
           },
           {
-            "key": "applicant.typePremises.retail_outlet",
+            "key": "typePremises.retail_outlet",
             "title": "Retail Outlet"
           },
           {
-            "key": "applicant.typePremises.showroom",
+            "key": "typePremises.showroom",
             "title": "Showroom"
           },
           {
-            "key": "applicant.typePremises.warehouse",
+            "key": "typePremises.warehouse",
             "title": "Warehouse"
           }
         ]

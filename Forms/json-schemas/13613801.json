@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum f362b36257e7ff99703a96a68bb1b848b3518b8d",
+  "description": "Generated from b with shasum 46e31771fc9d6e078ecfa2d28b71d6a99fcf3b27",
   "type": "object",
   "required": [
     "blockId",
@@ -38,6 +38,7 @@
         "applicant",
         "contact",
         "fishSource",
+        "fish",
         "fishPurchasedLocally",
         "fishPurchasedImported",
         "fishSold",
@@ -136,7 +137,7 @@
             "registrationNo",
             "companyNo",
             "processingPlantLicensingNo",
-            "brandName:",
+            "brandName",
             "phone",
             "fax",
             "email",
@@ -173,7 +174,7 @@
             "processingPlantLicensingNo": {
               "type": "string"
             },
-            "brandName:": {
+            "brandName": {
               "type": "string"
             },
             "phone": {
@@ -234,9 +235,7 @@
             "required": [
               "boatRegistrationNo",
               "boatType",
-              "landingSites",
-              "locally",
-              "imported"
+              "landingSites"
             ],
             "properties": {
               "boatRegistrationNo": {
@@ -247,29 +246,22 @@
               },
               "landingSites": {
                 "type": "string"
-              },
-              "locally": {
-                "type": "object",
-                "required": [
-                  "total"
-                ],
-                "properties": {
-                  "total": {
-                    "type": "integer"
-                  }
-                }
-              },
-              "imported": {
-                "type": "object",
-                "required": [
-                  "total"
-                ],
-                "properties": {
-                  "total": {
-                    "type": "integer"
-                  }
-                }
               }
+            }
+          }
+        },
+        "fish": {
+          "type": "object",
+          "required": [
+            "locally",
+            "imported"
+          ],
+          "properties": {
+            "locally": {
+              "type": "integer"
+            },
+            "imported": {
+              "type": "integer"
             }
           }
         },

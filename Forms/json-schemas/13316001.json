@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum ec2ef6e9ea9962f1c341832c96ba0856030b7e24",
+  "description": "Generated from b with shasum 5f54bd7de870bb6938f6f76f0814cfce18c2ba00",
   "type": "object",
   "required": [
     "blockId",
@@ -33,6 +33,8 @@
         "submitter",
         "permitLength",
         "applicant",
+        "typePremises",
+        "contact",
         "supplier",
         "communicationEquipments",
         "terminalEquipments"
@@ -57,9 +59,7 @@
             "address",
             "typeBusiness",
             "vat",
-            "withPayment",
-            "typePremises",
-            "contact"
+            "withPayment"
           ],
           "properties": {
             "id": {
@@ -85,84 +85,84 @@
             },
             "withPayment": {
               "type": "boolean"
+            }
+          }
+        },
+        "typePremises": {
+          "type": "object",
+          "required": [
+            "office",
+            "retail_outlet",
+            "showroom",
+            "warehouse"
+          ],
+          "properties": {
+            "office": {
+              "type": "boolean"
             },
-            "typePremises": {
-              "type": "object",
-              "required": [
-                "office",
-                "retail_outlet",
-                "showroom",
-                "warehouse"
-              ],
-              "properties": {
-                "office": {
-                  "type": "boolean"
-                },
-                "retail_outlet": {
-                  "type": "boolean"
-                },
-                "showroom": {
-                  "type": "boolean"
-                },
-                "warehouse": {
-                  "type": "boolean"
-                }
-              }
+            "retail_outlet": {
+              "type": "boolean"
             },
-            "contact": {
-              "type": "object",
-              "required": [
-                "name",
-                "title",
-                "idNumber",
-                "passport",
-                "nationality",
-                "registrationNo",
-                "address",
-                "home_phone",
-                "work_phone",
-                "mobile_phone",
-                "fax",
-                "email"
-              ],
-              "properties": {
-                "name": {
-                  "type": "string"
-                },
-                "title": {
-                  "type": "string"
-                },
-                "idNumber": {
-                  "type": "string"
-                },
-                "passport": {
-                  "type": "string"
-                },
-                "nationality": {
-                  "type": "string"
-                },
-                "registrationNo": {
-                  "type": "string"
-                },
-                "address": {
-                  "type": "string"
-                },
-                "home_phone": {
-                  "type": "string"
-                },
-                "work_phone": {
-                  "type": "string"
-                },
-                "mobile_phone": {
-                  "type": "string"
-                },
-                "fax": {
-                  "type": "string"
-                },
-                "email": {
-                  "type": "string"
-                }
-              }
+            "showroom": {
+              "type": "boolean"
+            },
+            "warehouse": {
+              "type": "boolean"
+            }
+          }
+        },
+        "contact": {
+          "type": "object",
+          "required": [
+            "name",
+            "title",
+            "idNumber",
+            "passport",
+            "nationality",
+            "registrationNo",
+            "address",
+            "home_phone",
+            "work_phone",
+            "mobile_phone",
+            "fax",
+            "email"
+          ],
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "title": {
+              "type": "string"
+            },
+            "idNumber": {
+              "type": "string"
+            },
+            "passport": {
+              "type": "string"
+            },
+            "nationality": {
+              "type": "string"
+            },
+            "registrationNo": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "home_phone": {
+              "type": "string"
+            },
+            "work_phone": {
+              "type": "string"
+            },
+            "mobile_phone": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
             }
           }
         },

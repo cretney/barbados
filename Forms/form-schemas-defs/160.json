@@ -29,7 +29,7 @@
         "htmlClass": "col-sm-6",
         "items": [
           {
-            "key":"applicant.contact.name",
+            "key":"contact.name",
             "title":"Contact Person Name (as in Passport)"
           }
         ]
@@ -39,7 +39,7 @@
         "htmlClass": "col-sm-6",
         "items": [
           {
-            "key":"applicant.contact.title",
+            "key":"contact.title",
             "title":"Contact Person Designation"
           }
         ]
@@ -55,7 +55,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key":"applicant.contact.idNumber",
+            "key":"contact.idNumber",
             "title":"ID No."
           }
         ]
@@ -65,7 +65,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key":"applicant.contact.passport",
+            "key":"contact.passport",
             "title":"Passport No."
           }
         ]
@@ -75,7 +75,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key":"applicant.contact.nationality",
+            "key":"contact.nationality",
             "title":"Nationality"
           }
         ]
@@ -85,7 +85,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key":"applicant.contact.registrationNo",
+            "key":"contact.registrationNo",
             "title":"Corporate Registration No."
           }
         ]
@@ -116,7 +116,7 @@
     ]
   },
   {
-    "key":"applicant.contact.address",
+    "key":"contact.address",
     "title":"Correspondence Address"
   },
   {
@@ -132,7 +132,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key":"applicant.contact.work_phone",
+            "key":"contact.work_phone",
             "title":"Telephone No."
           }
         ]
@@ -142,7 +142,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key":"applicant.contact.fax",
+            "key":"contact.fax",
             "title":"Fax No."
           }
         ]
@@ -152,7 +152,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key":"applicant.contact.mobile_phone",
+            "key":"contact.mobile_phone",
             "title":"Pager/Cell Number"
           }
         ]
@@ -171,19 +171,12 @@
     ]
   },
   {
-    "type": "radiobuttons",
+    "type": "help",
+    "helpvalue": "<hr>"
+  },
+  {
     "key": "applicant.withPayment",
-    "title": "Is Application Submitted with Cheque?",
-    "titleMap": [
-      {
-        "value": true,
-        "name": "Y"
-      },
-      {
-        "value": false,
-        "name": "N"
-      }
-    ]
+    "title": "Is Application Submitted with Cheque?"
   },
   {
     "type": "help",

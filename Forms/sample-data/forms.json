@@ -3869,22 +3869,22 @@
     "applicant": {"id":4, "name":"Barbara Greenridge", "countryId":"BB", "country":"Barbados", "address":"#9 Freshwater Bay, Spring Garden, St. Michael",
       "typeBusiness":"",
       "vat":"V8886868",
-      "withPayment":true,
-      "typePremises":{ "office":false, "retail_outlet": false, "showroom": true, "warehouse": true },
-      "contact":{
-        "name":"Mary Lyndon",
-        "title":"** title **",
-        "idNumber":"ID7687686",
-        "passport":"P43556666",
-        "nationality":"Barbados",
-        "registrationNo":"R7689900",
-        "address":"768 Main St",
-        "home_phone":"777-5555",
-        "work_phone":"888-5555",
-        "mobile_phone":"999-5555",
-        "fax":"222-5555",
-        "email":"mary@example.com"
-      }
+      "withPayment":true
+    },
+    "typePremises":{ "office":false, "retail_outlet": false, "showroom": true, "warehouse": true },
+    "contact":{
+      "name":"Mary Lyndon",
+      "title":"** title **",
+      "idNumber":"ID7687686",
+      "passport":"P43556666",
+      "nationality":"Barbados",
+      "registrationNo":"R7689900",
+      "address":"768 Main St",
+      "home_phone":"777-5555",
+      "work_phone":"888-5555",
+      "mobile_phone":"999-5555",
+      "fax":"222-5555",
+      "email":"mary@example.com"
     },
     "supplier": {"id": 1, "name": "Joseph Smith", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"},
     "communicationEquipments":[
@@ -3908,22 +3908,22 @@
     "applicant": {"id":4, "name":"Barbara Greenridge", "countryId":"BB", "country":"Barbados", "address":"#9 Freshwater Bay, Spring Garden, St. Michael",
       "typeBusiness":"ltd",
       "vat":"V8886868",
-      "withPayment":true,
-      "typePremises":{ "office":false, "retail_outlet": false, "showroom": true, "warehouse": true },
-      "contact":{
-        "name":"Mary Lyndon",
-        "title":"** title **",
-        "idNumber":"ID7687686",
-        "passport":"P43556666",
-        "nationality":"Barbados",
-        "registrationNo":"R7689900",
-        "address":"768 Main St",
-        "home_phone":"777-5555",
-        "work_phone":"888-5555",
-        "mobile_phone":"999-5555",
-        "fax":"222-5555",
-        "email":"mary@example.com"
-      }
+      "withPayment":true
+    },
+    "typePremises":{ "office":false, "retail_outlet": false, "showroom": true, "warehouse": true },
+    "contact":{
+      "name":"Mary Lyndon",
+      "title":"** title **",
+      "idNumber":"ID7687686",
+      "passport":"P43556666",
+      "nationality":"Barbados",
+      "registrationNo":"R7689900",
+      "address":"768 Main St",
+      "home_phone":"777-5555",
+      "work_phone":"888-5555",
+      "mobile_phone":"999-5555",
+      "fax":"222-5555",
+      "email":"mary@example.com"
     },
     "supplier": {"id": 1, "name": "Joseph Smith", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"},
     "communicationEquipments":[
@@ -7185,7 +7185,7 @@
       "registrationNo":"RN-765765",
       "companyNo":"CN-5353543",
       "processingPlantLicensingNo":"PPL-435367",
-      "brandName:":"SuperBrand",
+      "brandName":"SuperBrand",
       "phone":"555-5555",
       "fax":"666-6666",
       "email":"email@example.com",
@@ -7202,13 +7202,20 @@
     },
     "fishSource":[
       {
-        "boatRegistrationNo":"",
-      	"boatType":"",
-      	"landingSites":"",
-        "locally": {"total":0},
-        "imported": {"total":0}
+        "boatRegistrationNo":"BR-876876",
+      	"boatType":"Yatch",
+      	"landingSites":"LS1"
+      },
+      {
+        "boatRegistrationNo":"BR-456790",
+      	"boatType":"Small boat",
+      	"landingSites":"LS2"
       }
     ],
+    "fish":{
+      "locally":40,
+      "imported":50
+    },
     "fishPurchasedLocally":[
       {
           "species":"SWORDFISH",
@@ -7315,10 +7322,10 @@
     "equipment": {
       "capacityChiller":0,
       "coldStorage":0,
-      "freezerType":{"blast":false, "contact":false, "capacityUnitFreeze":false},
-      "coldStore": {"owned":false, "rented":false},
-      "otherEquipment":{"filletingMachine":false, "fishWasher":false, "pattyFormer":false, "iceMachine":false, "other":false},
-      "methodFishTransport":{"van":false, "refrigerateTruck":false, "flatBadTruck":false, "other":false}
+      "freezerType":{"blast":true, "contact":false, "capacityUnitFreeze":true},
+      "coldStore": {"owned":false, "rented":true},
+      "otherEquipment":{"filletingMachine":true, "fishWasher":false, "pattyFormer":true, "iceMachine":false, "other":false},
+      "methodFishTransport":{"van":true, "refrigerateTruck":false, "flatBadTruck":true, "other":false}
     },
     "methodDisposal":"",
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
@@ -8895,22 +8902,22 @@
       "office_mobile_phone":"999-5557",
       "office_fax":"222-5557",
       "coorporateRegistrationNo":"RN6546468",
-      "withPayment":true,
-      "typePremises":{ "office":false, "retail_outlet": false, "showroom": true, "warehouse": true },
-      "contact":{
-        "name":"Mary Lyndon",
-        "title":"** title **",
-        "idNumber":"ID7687686",
-        "passport":"P43556666",
-        "nationality":"Barbados",
-        "registrationNo":"R7689900",
-        "address":"768 Main St",
-        "home_phone":"777-5556",
-        "work_phone":"888-5556",
-        "mobile_phone":"999-5556",
-        "fax":"222-5556",
-        "email":"mary@example.com"
-      }
+      "withPayment":true
+    },
+    "typePremises":{ "office":false, "retail_outlet": false, "showroom": true, "warehouse": true },
+    "contact":{
+      "name":"Mary Lyndon",
+      "title":"** title **",
+      "idNumber":"ID7687686",
+      "passport":"P43556666",
+      "nationality":"Barbados",
+      "registrationNo":"R7689900",
+      "address":"768 Main St",
+      "home_phone":"777-5556",
+      "work_phone":"888-5556",
+      "mobile_phone":"999-5556",
+      "fax":"222-5556",
+      "email":"mary@example.com"
     },
     "supplier": {"id": 1, "name": "Joseph Smith", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"},
     "communicationEquipments":[
@@ -8950,22 +8957,22 @@
       "office_mobile_phone":"999-5557",
       "office_fax":"222-5557",
       "coorporateRegistrationNo":"RN6546468",
-      "withPayment":true,
-      "typePremises":{ "office":false, "retail_outlet": false, "showroom": true, "warehouse": true },
-      "contact":{
-        "name":"Mary Lyndon",
-        "title":"** title **",
-        "idNumber":"ID7687686",
-        "passport":"P43556666",
-        "nationality":"Barbados",
-        "registrationNo":"R7689900",
-        "address":"768 Main St",
-        "home_phone":"777-5555",
-        "work_phone":"888-5555",
-        "mobile_phone":"999-5555",
-        "fax":"222-5555",
-        "email":"mary@example.com"
-      }
+      "withPayment":true
+    },
+    "typePremises":{ "office":false, "retail_outlet": false, "showroom": true, "warehouse": true },
+    "contact":{
+      "name":"Mary Lyndon",
+      "title":"** title **",
+      "idNumber":"ID7687686",
+      "passport":"P43556666",
+      "nationality":"Barbados",
+      "registrationNo":"R7689900",
+      "address":"768 Main St",
+      "home_phone":"777-5555",
+      "work_phone":"888-5555",
+      "mobile_phone":"999-5555",
+      "fax":"222-5555",
+      "email":"mary@example.com"
     },
     "supplier": {"id": 1, "name": "Joseph Smith", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"},
     "communicationEquipments":[
