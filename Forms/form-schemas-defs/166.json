@@ -147,7 +147,7 @@
         "htmlClass": "col-sm-5",
         "items": [
           {
-            "key":"applicant.contact.name",
+            "key":"contact.name",
             "title":"Name"
           }
         ]
@@ -157,7 +157,7 @@
         "htmlClass": "col-sm-7",
         "items": [
           {
-            "key":"applicant.contact.address",
+            "key":"contact.address",
             "title":"Address"
           }
         ]
@@ -173,7 +173,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key":"applicant.contact.work_phone",
+            "key":"contact.work_phone",
             "title":"Telephone No."
           }
         ]
@@ -183,7 +183,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key":"applicant.contact.fax",
+            "key":"contact.fax",
             "title":"Fax No."
           }
         ]
@@ -193,7 +193,7 @@
         "htmlClass": "col-sm-3",
         "items": [
           {
-            "key":"applicant.contact.mobile_phone",
+            "key":"contact.mobile_phone",
             "title":"Mobile No."
           }
         ]
@@ -209,7 +209,7 @@
         "htmlClass": "col-sm-6",
         "items": [
           {
-            "key":"applicant.contact.email",
+            "key":"contact.email",
             "title":"Email"
           }
         ]

@@ -1941,6 +1941,86 @@
       "document_ids": [
         61
       ]
+    },
+    {
+      "id": 56,
+      "readonly": false,
+      "name": "DF Application Letter - Taxi",
+      "description": "Duty Free Letter Taxi",
+      "fileName": "ce-application-letter-taxi.html",
+      "document_ids": [
+        75
+      ]
+    },
+    {
+      "id": 57,
+      "readonly": true,
+      "name": "DF Application Letter - Taxi",
+      "description": "Duty Free Application Letter Taxi",
+      "fileName": "ce-application-letter-taxi-readonly.html",
+      "document_ids": [
+        75
+      ]
+    },
+    {
+      "id": 13,
+      "readonly": false,
+      "name": "Letter for the Import of Narcotics",
+      "description": "Application for the importation of authorized Drugs",
+      "fileName": "drugserv-import-narcotics.html",
+      "document_ids": [
+        12
+      ]
+    },
+    {
+      "id": 15,
+      "readonly": true,
+      "name": "Letter for the Import of Narcotics",
+      "description": "The following Authorization and Import Certification is issued to:",
+      "fileName": "drugserv-import-narcotics-issued.html",
+      "document_ids": [
+        12
+      ]
+    },
+    {
+      "id": 82,
+      "readonly": false,
+      "name": "Export Authorization for Narcotics",
+      "description": "Export Authorization Narcotics.pdf",
+      "fileName": "bds-export-authorization-narcotics.html",
+      "document_ids": [
+        16
+      ]
+    },
+    {
+      "id": 83,
+      "readonly": true,
+      "name": "Export Authorization for Narcotics",
+      "description": "Export Authorization Narcotics.pdf",
+      "fileName": "bds-export-authorization-narcotics-issued.html",
+      "document_ids": [
+        16
+      ]
+    },
+    {
+      "id": 80,
+      "readonly": false,
+      "name": "Licence to Import and Store Therapeutic Substances",
+      "description": "Licence to Import and Store.pdf",
+      "fileName": "bds-license-import-store.html",
+      "document_ids": [
+        17
+      ]
+    },
+    {
+      "id": 81,
+      "readonly": true,
+      "name": "Licence to Import and Store Therapeutic Substances",
+      "description": "Licence to Import and Store.pdf",
+      "fileName": "bds-license-import-store-issued.html",
+      "document_ids": [
+        17
+      ]
     }
   ],
   "workflows": [
@@ -1962,6 +2042,28 @@
       "pga_owner_id": 7,
       "document_id": 92,
       "processType": "I",
+      "purpose": "B",
+      "signature": "0",
+      "verifiable": "0"
+    },
+    {
+      "id": 17,
+      "name": "DrugServTheraSub",
+      "owner": "Drug Services",
+      "pga_owner_id": 3,
+      "document_id": 17,
+      "processType": "I",
+      "purpose": "B",
+      "signature": "0",
+      "verifiable": "0"
+    },
+    {
+      "id": 19,
+      "name": "DrugServExport",
+      "owner": "Drug Services",
+      "pga_owner_id": 3,
+      "document_id": 16,
+      "processType": "E",
       "purpose": "B",
       "signature": "0",
       "verifiable": "0"
@@ -2242,6 +2344,17 @@
       "verifiable": "1"
     },
     {
+      "id": 52,
+      "name": "Con&ExempTaxi",
+      "owner": "Concessions & Exemptions",
+      "pga_owner_id": 18,
+      "document_id": 75,
+      "processType": "I",
+      "purpose": "B",
+      "signature": "0",
+      "verifiable": "0"
+    },
+    {
       "id": 53,
       "name": "FoodWholePostArrivalInspection",
       "owner": "Food Safety",
@@ -2271,6 +2384,17 @@
       "document_id": 32,
       "processType": "I",
       "purpose": "W",
+      "signature": "0",
+      "verifiable": "0"
+    },
+    {
+      "id": 56,
+      "name": "DrugServNarcLtr",
+      "owner": "Drug Services",
+      "pga_owner_id": 3,
+      "document_id": 12,
+      "processType": "I",
+      "purpose": "B",
       "signature": "0",
       "verifiable": "0"
     }
@@ -2338,6 +2462,48 @@
       "pga_id": 7,
       "title": "Verify information correct and conformity regulations",
       "description": "Please verify the correct and conformity regulations"
+    },
+    {
+      "workflow_id": 17,
+      "step": 1,
+      "form_id": 80,
+      "title": "Licence to Import and Store Therapeutic Substances",
+      "description": "Please complete this form"
+    },
+    {
+      "workflow_id": 17,
+      "step": 2,
+      "pga_id": 3,
+      "title": "Review Licence to Import and Store Therapeutic Substances",
+      "description": "Licence to Import and Store Therapeutic Substances"
+    },
+    {
+      "workflow_id": 17,
+      "step": 3,
+      "form_id": 81,
+      "title": "Licence to Import and Store Therapeutic Substances",
+      "description": ""
+    },
+    {
+      "workflow_id": 19,
+      "step": 1,
+      "form_id": 82,
+      "title": "Export Authorization for Narcotics",
+      "description": "Please complete this form"
+    },
+    {
+      "workflow_id": 19,
+      "step": 2,
+      "pga_id": 3,
+      "title": "IAIC Review",
+      "description": "Review if everything is correct"
+    },
+    {
+      "workflow_id": 19,
+      "step": 3,
+      "form_id": 83,
+      "title": "Export Authorization for Narcotics",
+      "description": "Please complete this form"
     },
     {
       "workflow_id": 20,
@@ -2937,6 +3103,27 @@
       "description": "Certificate of Origin - GSP - Other"
     },
     {
+      "workflow_id": 52,
+      "step": 1,
+      "form_id": 56,
+      "title": "New Duty Free Application Letter Taxi",
+      "description": "Please complete this form"
+    },
+    {
+      "workflow_id": 52,
+      "step": 2,
+      "pga_id": 18,
+      "title": "Review Duty Free Application",
+      "description": "Duty Free Application Letter Taxi"
+    },
+    {
+      "workflow_id": 52,
+      "step": 3,
+      "form_id": 57,
+      "title": "Duty Free Application Letter Taxi",
+      "description": "Please complete this form"
+    },
+    {
       "workflow_id": 53,
       "step": 1,
       "form_id": 42,
@@ -2998,6 +3185,27 @@
       "form_id": 49,
       "title": "Request for Plant Inspection Letter",
       "description": "Plant Inspection Letter"
+    },
+    {
+      "workflow_id": 56,
+      "step": 1,
+      "form_id": 13,
+      "title": "Letter for the Import of Narcotics",
+      "description": "Please complete the Import Letter"
+    },
+    {
+      "workflow_id": 56,
+      "step": 2,
+      "pga_id": 3,
+      "title": "IAIC Review",
+      "description": "Review if everything is correct in the Authorization and Import Certification"
+    },
+    {
+      "workflow_id": 56,
+      "step": 3,
+      "form_id": 15,
+      "title": "Application Letter for Import of Narcotics",
+      "description": "Application Letter"
     }
   ],
   "hscodes_workflows": [
@@ -10321,6 +10529,81 @@
       "hscode": "02.07",
       "id": 29,
       "notes": "Meatofpoultryofheading01.05,fresh,chilledorfrozen. Meatofpoultryofheading01.05,fresh,chilledorfroze"
+    },
+    {
+      "hscode": "8703.21.90",
+      "id": 52,
+      "notes": "Of a cylinder capacity not exceeding 1,000 cc, where the chargeable value =< $45000.00"
+    },
+    {
+      "hscode": "8703.22.90",
+      "id": 52,
+      "notes": "Of a cylinder capacity exceeding 1,000 c but not exceeding 1,500 cc, where the chargeable value =< $45000.00"
+    },
+    {
+      "hscode": "8703.23.20",
+      "id": 52,
+      "notes": "Of a cylinder capacity >1,500 cc but =< 1,600 cc, where the chargeable value =< $45000.00"
+    },
+    {
+      "hscode": "8703.23.30",
+      "id": 52,
+      "notes": "Of a cylinder capacity > 1,800 cc but < 2,000 cc, where the chargeable value =< $45000.00"
+    },
+    {
+      "hscode": "8703.23.40",
+      "id": 52,
+      "notes": "Of a cylinder capacity >= 2,000 cc but =< 3,000 cc, where the chargeable value =< $45000.00"
+    },
+    {
+      "hscode": "8703.24.90",
+      "id": 52,
+      "notes": "Of a cylinder capacity exceeding 3,000 cc , where the chargeable value =< $45000.00"
+    },
+    {
+      "hscode": "8703.34.90",
+      "id": 52,
+      "notes": "Of a cylinder capacity not exceeding 1,500 cc , where the chargeable value =< $45000.00"
+    },
+    {
+      "hscode": "8703.31.90",
+      "id": 52,
+      "notes": "USED, Of a cylinder capacity-not exceeding 1,500 cc , where the chargeable value =< $45000.00"
+    },
+    {
+      "hscode": "8703.32.20",
+      "id": 52,
+      "notes": "Of a cylinder capacity exceeding 1,500 cc but not exceeding 1,600 cc, where the chargeable value =< $45000.00"
+    },
+    {
+      "hscode": "8703.32.30",
+      "id": 52,
+      "notes": "Of a cylinder capacity exceeding 2,000 cc but not exceeding 2,500 cc, completely knocked down for assembly in plants approved for the purpose by the Competent Authority, where the chargeable value =< $45000.00"
+    },
+    {
+      "hscode": "8703.32.40",
+      "id": 52,
+      "notes": "Of a cylinder capacity exceeding 2,000 cc but not exceeding 2,500 cc, where the chargeable value =< $45000.00"
+    },
+    {
+      "hscode": "8703.33.90",
+      "id": 52,
+      "notes": "Of a cylinder capacity exceeding 2,500 cc, where the chargeable value =< $45000.00"
+    },
+    {
+      "hscode": "8703.90.00",
+      "id": 52,
+      "notes": "Other motor vehicles for the transport of persons, NES, where the chargeable value =< $45000.00"
+    },
+    {
+      "hscode": "8704.10.00",
+      "id": 52,
+      "notes": "Dumpers designed for off-highway use"
+    },
+    {
+      "hscode": "8704.21.90",
+      "id": 52,
+      "notes": "Other, g.v.w not exceeding 5 tons, where the chargeable value =< $45000.00"
     }
   ],
   "secondary_hscodes": [

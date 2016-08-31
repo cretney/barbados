@@ -2166,10 +2166,10 @@
   }
 },
 {
-  "blockId": 11601301,
-  "workflowId": 16,
+  "blockId": 15601301,
+  "workflowId": 56,
   "formId": 13,
-  "title": "New Application for Import of Narcotics",
+  "title": "Letter for the Import of Narcotics",
   "description": "Please complete the Import Application",
   "status": "Draft",
   "submission": {
@@ -2179,10 +2179,12 @@
         "description": "test",
         "units": [
           {
-            "unitType": "Units"
+            "unitType": "Units",
+            "quantity": 3
           },
           {
-            "unitType": "Kilograms"
+            "unitType": "Kilograms",
+            "quantity": 3
           }
         ]
       },
@@ -2191,7 +2193,8 @@
         "description": "test",
         "units": [
           {
-            "unitType": "Units"
+            "unitType": "Units",
+            "quantity": 3
           }
         ]
       }
@@ -2217,10 +2220,12 @@
         "description": "test",
         "units": [
           {
-            "unitType": "Units"
+            "unitType": "Units",
+            "quantity": 3
           },
           {
-            "unitType": "Kilograms"
+            "unitType": "Kilograms",
+            "quantity": 3
           }
         ]
       },
@@ -2229,7 +2234,8 @@
         "description": "test",
         "units": [
           {
-            "unitType": "Units"
+            "unitType": "Units",
+            "quantity": 3
           }
         ]
       }
@@ -2242,10 +2248,10 @@
   }
 },
 {
-  "blockId": 11601509,
-  "workflowId": 16,
+  "blockId": 15601503,
+  "workflowId": 56,
   "formId": 15,
-  "title": "Application Letter for Import of Narcotics Letter",
+  "title": "Letter for the Import of Narcotics",
   "status": "Issued",
   "submission": {
     "commodities": [
@@ -2255,15 +2261,11 @@
         "units": [
           {
             "unitType": "Units",
-            "quantity": 3,
-            "pricePerUnit": 12.00,
-            "cifValue": 34
+            "quantity": 3
           },
           {
             "unitType": "Kilograms",
-            "quantity": 4,
-            "pricePerUnit": 15.00,
-            "cifValue": 35
+            "quantity": 4
           }
         ]
       },
@@ -3575,7 +3577,7 @@
   }
 },
 {
-  "blockId": 15205702,
+  "blockId": 15205703,
   "workflowId": 52,
   "formId": 57,
   "title": "Duty Free Application Letter Taxi",
@@ -4526,10 +4528,10 @@
   }
 },
 {
-  "blockId": 19908001,
-  "workflowId": 99,
+  "blockId": 11708001,
+  "workflowId": 17,
   "formId": 80,
-  "title": "New Licence to Import and Store",
+  "title": "Licence to Import and Store Therapeutic Substances",
   "status": "Draft",
   "submission": {
     "commodities": [
@@ -4570,10 +4572,10 @@
   }
 },
 {
-  "blockId": 19908101,
-  "workflowId": 99,
+  "blockId": 11708103,
+  "workflowId": 17,
   "formId": 81,
-  "title": "Licence to Import and Store",
+  "title": "Licence to Import and Store Therapeutic Substances",
   "status": "Issued",
   "submission": {
     "commodities": [
@@ -4614,8 +4616,8 @@
   }
 },
 {
-  "blockId": 19908201,
-  "workflowId": 99,
+  "blockId": 11908201,
+  "workflowId": 19,
   "formId": 82,
   "title": "New Export Authorization Narcotics",
   "status": "Draft",
@@ -4680,8 +4682,8 @@
   }
 },
 {
-  "blockId": 19908301,
-  "workflowId": 99,
+  "blockId": 11908303,
+  "workflowId": 19,
   "formId": 83,
   "title": "Export Authorization Narcotics",
   "status": "Issued",
@@ -7327,7 +7329,7 @@
       "otherEquipment":{"filletingMachine":true, "fishWasher":false, "pattyFormer":true, "iceMachine":false, "other":false},
       "methodFishTransport":{"van":true, "refrigerateTruck":false, "flatBadTruck":true, "other":false}
     },
-    "methodDisposal":"",
+    "methodDisposal":"**method**",
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
 },
@@ -7549,7 +7551,7 @@
       "otherEquipment":{"filletingMachine":true, "fishWasher":false, "pattyFormer":false, "iceMachine":false, "other":true},
       "methodFishTransport":{"van":true, "refrigerateTruck":false, "flatBadTruck":false, "other":true}
     },
-    "methodDisposal":"",
+    "methodDisposal":"**method**",
     "supplier": {"id": 1, "name": "NOVARTIS CARIBE SA", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"}
   }
 },
@@ -8976,10 +8978,11 @@
     },
     "supplier": {"id": 1, "name": "Joseph Smith", "countryId": "US", "country":"United States", "address": "1000 Main Street, Hollywood, FL, 12902"},
     "communicationEquipments":[
-      {"equipmentType":"**type**", "make":"**make**", "model":"**model**"}
+      {"equipmentType":"**type ce**", "make":"**make ce**", "model":"**model ce**"},
+      {"equipmentType":"**type ce2**", "make":"**make ce2**", "model":"**model ce2**"}
     ],
     "terminalEquipments":[
-      {"equipmentType":"**type**", "make":"**make**", "model":"**model**"}
+      {"equipmentType":"**type te**", "make":"**make te**", "model":"**model te**"}
     ]
   }
 },

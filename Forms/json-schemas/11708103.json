@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 529682233eea01d61b4e1199907a2049709058d4",
+  "description": "Generated from b with shasum 9266f9912d16ba22f922bce2e83c2a9d2fc92ccc",
   "type": "object",
   "required": [
     "blockId",
@@ -30,13 +30,17 @@
       "type": "object",
       "required": [
         "commodities",
-        "referenceNumber",
-        "serialNumberCertificate",
+        "license_to",
+        "licenseNumber",
+        "approvalDate",
         "issuedDate",
-        "officer",
-        "swordfishAtlantic",
-        "origin",
+        "issuedBy",
+        "submitter",
+        "inspectionDate",
+        "inspector",
+        "exceptions",
         "applicant",
+        "consignee",
         "supplier"
       ],
       "properties": {
@@ -49,9 +53,6 @@
             "required": [
               "hsCode",
               "description",
-              "descriptionDetail",
-              "grossWeight",
-              "grossWeightUnits",
               "units"
             ],
             "properties": {
@@ -59,15 +60,6 @@
                 "type": "string"
               },
               "description": {
-                "type": "string"
-              },
-              "descriptionDetail": {
-                "type": "string"
-              },
-              "grossWeight": {
-                "type": "integer"
-              },
-              "grossWeightUnits": {
                 "type": "string"
               },
               "units": {
@@ -93,34 +85,43 @@
             }
           }
         },
-        "referenceNumber": {
+        "license_to": {
+          "type": "object",
+          "required": [
+            "import",
+            "store"
+          ],
+          "properties": {
+            "import": {
+              "type": "boolean"
+            },
+            "store": {
+              "type": "boolean"
+            }
+          }
+        },
+        "licenseNumber": {
           "type": "string"
         },
-        "serialNumberCertificate": {
+        "approvalDate": {
           "type": "string"
         },
         "issuedDate": {
           "type": "string"
         },
-        "officer": {
-          "type": "object",
-          "required": [
-            "name",
-            "title"
-          ],
-          "properties": {
-            "name": {
-              "type": "string"
-            },
-            "title": {
-              "type": "string"
-            }
-          }
-        },
-        "swordfishAtlantic": {
+        "issuedBy": {
           "type": "string"
         },
-        "origin": {
+        "submitter": {
+          "type": "string"
+        },
+        "inspectionDate": {
+          "type": "string"
+        },
+        "inspector": {
+          "type": "string"
+        },
+        "exceptions": {
           "type": "string"
         },
         "applicant": {
@@ -146,6 +147,49 @@
               "type": "string"
             },
             "address": {
+              "type": "string"
+            }
+          }
+        },
+        "consignee": {
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "countryId",
+            "country",
+            "address",
+            "docid",
+            "fax",
+            "email",
+            "business_hours"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "name": {
+              "type": "string"
+            },
+            "countryId": {
+              "type": "string"
+            },
+            "country": {
+              "type": "string"
+            },
+            "address": {
+              "type": "string"
+            },
+            "docid": {
+              "type": "string"
+            },
+            "fax": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "business_hours": {
               "type": "string"
             }
           }

@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 529682233eea01d61b4e1199907a2049709058d4",
+  "description": "Generated from b with shasum 19f7b4dfe8bea440e9a372ea30f2ccb26a97a951",
   "type": "object",
   "required": [
     "blockId",
@@ -30,13 +30,11 @@
       "type": "object",
       "required": [
         "commodities",
-        "referenceNumber",
-        "serialNumberCertificate",
-        "issuedDate",
-        "officer",
-        "swordfishAtlantic",
-        "origin",
+        "submitter",
         "applicant",
+        "origin",
+        "countryConsigned",
+        "expectedArrival",
         "supplier"
       ],
       "properties": {
@@ -49,9 +47,6 @@
             "required": [
               "hsCode",
               "description",
-              "descriptionDetail",
-              "grossWeight",
-              "grossWeightUnits",
               "units"
             ],
             "properties": {
@@ -59,15 +54,6 @@
                 "type": "string"
               },
               "description": {
-                "type": "string"
-              },
-              "descriptionDetail": {
-                "type": "string"
-              },
-              "grossWeight": {
-                "type": "integer"
-              },
-              "grossWeightUnits": {
                 "type": "string"
               },
               "units": {
@@ -93,34 +79,7 @@
             }
           }
         },
-        "referenceNumber": {
-          "type": "string"
-        },
-        "serialNumberCertificate": {
-          "type": "string"
-        },
-        "issuedDate": {
-          "type": "string"
-        },
-        "officer": {
-          "type": "object",
-          "required": [
-            "name",
-            "title"
-          ],
-          "properties": {
-            "name": {
-              "type": "string"
-            },
-            "title": {
-              "type": "string"
-            }
-          }
-        },
-        "swordfishAtlantic": {
-          "type": "string"
-        },
-        "origin": {
+        "submitter": {
           "type": "string"
         },
         "applicant": {
@@ -149,6 +108,15 @@
               "type": "string"
             }
           }
+        },
+        "origin": {
+          "type": "string"
+        },
+        "countryConsigned": {
+          "type": "string"
+        },
+        "expectedArrival": {
+          "type": "string"
         },
         "supplier": {
           "type": "object",

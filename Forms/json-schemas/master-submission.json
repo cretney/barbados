@@ -79,21 +79,6 @@
             "title": "Quantity",
             "description": "The quantity in units of sale."
           },
-          "descriptionDetail": {
-            "type": "string",
-            "title": "Descriptiondetail",
-            "description": ""
-          },
-          "grossWeightUnits": {
-            "type": "string",
-            "title": "Grossweightunits",
-            "description": ""
-          },
-          "name": {
-            "type": "string",
-            "title": "Name",
-            "description": ""
-          },
           "entries": {
             "type": "array",
             "minItems": 1,
@@ -124,6 +109,16 @@
                   "title": "Engine capacity",
                   "description": "Engine capacity of vehicle"
                 },
+                "chassisNumber": {
+                  "type": "string",
+                  "title": "Chassisnumber",
+                  "description": ""
+                },
+                "costCIF": {
+                  "type": "number",
+                  "title": "Costcif",
+                  "description": ""
+                },
                 "serialNumber": {
                   "type": "string",
                   "title": "Serialnumber",
@@ -147,6 +142,26 @@
                 }
               }
             }
+          },
+          "descriptionDetail": {
+            "type": "string",
+            "title": "Descriptiondetail",
+            "description": ""
+          },
+          "grossWeightUnits": {
+            "type": "string",
+            "title": "Grossweightunits",
+            "description": ""
+          },
+          "name": {
+            "type": "string",
+            "title": "Name",
+            "description": ""
+          },
+          "kindPackages": {
+            "type": "string",
+            "title": "Kindpackages",
+            "description": ""
           },
           "fobValue": {
             "type": "integer",
@@ -622,6 +637,11 @@
           "type": "string",
           "title": "Email",
           "description": ""
+        },
+        "business_hours": {
+          "type": "string",
+          "title": "Business_hours",
+          "description": ""
         }
       }
     },
@@ -788,6 +808,26 @@
     "phytosanitaryCertificate": {
       "type": "string",
       "title": "Phytosanitarycertificate",
+      "description": ""
+    },
+    "oldVehicleBrand": {
+      "type": "string",
+      "title": "Oldvehiclebrand",
+      "description": ""
+    },
+    "oldVehicleModel": {
+      "type": "string",
+      "title": "Oldvehiclemodel",
+      "description": ""
+    },
+    "oldVehicleYear": {
+      "type": "string",
+      "title": "Oldvehicleyear",
+      "description": ""
+    },
+    "oldVehicleRegistrationNumber": {
+      "type": "string",
+      "title": "Oldvehicleregistrationnumber",
       "description": ""
     },
     "permitLength": {
@@ -973,6 +1013,75 @@
     "swordfishAtlantic": {
       "type": "string",
       "title": "Swordfishatlantic",
+      "description": ""
+    },
+    "license_to": {
+      "type": "object",
+      "required": [
+
+      ],
+      "properties": {
+        "import": {
+          "type": "boolean",
+          "title": "Import",
+          "description": ""
+        },
+        "store": {
+          "type": "boolean",
+          "title": "Store",
+          "description": ""
+        }
+      }
+    },
+    "licenseNumber": {
+      "type": "string",
+      "title": "Licensenumber",
+      "description": ""
+    },
+    "issuedBy": {
+      "type": "string",
+      "title": "Issuedby",
+      "description": ""
+    },
+    "exceptions": {
+      "type": "string",
+      "title": "Exceptions",
+      "description": ""
+    },
+    "authorisationNo": {
+      "type": "string",
+      "title": "Authorisationno",
+      "description": ""
+    },
+    "fileNumber": {
+      "type": "string",
+      "title": "Filenumber",
+      "description": ""
+    },
+    "importCertificateNo": {
+      "type": "string",
+      "title": "Importcertificateno",
+      "description": ""
+    },
+    "importCertificateDate": {
+      "type": "string",
+      "title": "Importcertificatedate",
+      "description": "",
+      "format": "date"
+    },
+    "importCertificateIssuedBy": {
+      "type": "string",
+      "title": "Importcertificateissuedby",
+      "description": ""
+    },
+    "destinationCountry": {
+      "type": "string",
+      "title": "Destination Country",
+      "description": "Destination Country to Export to"
+    },
+    "customsShipment": {
+      "type": "string",
+      "title": "Customsshipment",
       "description": ""
     },
     "staff": {
@@ -1387,11 +1496,6 @@
       "title": "Totalvalue",
       "description": ""
     },
-    "issuedBy": {
-      "type": "string",
-      "title": "Issuedby",
-      "description": ""
-    },
     "typeApplication": {
       "type": "string",
       "title": "Typeapplication",
@@ -1490,11 +1594,6 @@
       "type": "string",
       "title": "Manufacturing",
       "description": ""
-    },
-    "destinationCountry": {
-      "type": "string",
-      "title": "Destination Country",
-      "description": "Destination Country to Export to"
     },
     "portShipment": {
       "type": "string",

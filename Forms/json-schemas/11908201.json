@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "Generated from b with shasum 529682233eea01d61b4e1199907a2049709058d4",
+  "description": "Generated from b with shasum 7064654aca488cf888fd6a29f79b2c8f0b37601b",
   "type": "object",
   "required": [
     "blockId",
@@ -30,14 +30,20 @@
       "type": "object",
       "required": [
         "commodities",
+        "authorisationNo",
+        "fileNumber",
         "referenceNumber",
-        "serialNumberCertificate",
-        "issuedDate",
-        "officer",
-        "swordfishAtlantic",
-        "origin",
+        "importCertificateNo",
+        "importCertificateDate",
+        "importCertificateIssuedBy",
+        "destinationCountry",
+        "customsShipment",
+        "periodEnding",
         "applicant",
-        "supplier"
+        "importer",
+        "approvalDate",
+        "issuedDate",
+        "submitter"
       ],
       "properties": {
         "commodities": {
@@ -49,9 +55,8 @@
             "required": [
               "hsCode",
               "description",
-              "descriptionDetail",
-              "grossWeight",
-              "grossWeightUnits",
+              "name",
+              "kindPackages",
               "units"
             ],
             "properties": {
@@ -61,13 +66,10 @@
               "description": {
                 "type": "string"
               },
-              "descriptionDetail": {
+              "name": {
                 "type": "string"
               },
-              "grossWeight": {
-                "type": "integer"
-              },
-              "grossWeightUnits": {
+              "kindPackages": {
                 "type": "string"
               },
               "units": {
@@ -93,34 +95,31 @@
             }
           }
         },
+        "authorisationNo": {
+          "type": "string"
+        },
+        "fileNumber": {
+          "type": "string"
+        },
         "referenceNumber": {
           "type": "string"
         },
-        "serialNumberCertificate": {
+        "importCertificateNo": {
           "type": "string"
         },
-        "issuedDate": {
+        "importCertificateDate": {
           "type": "string"
         },
-        "officer": {
-          "type": "object",
-          "required": [
-            "name",
-            "title"
-          ],
-          "properties": {
-            "name": {
-              "type": "string"
-            },
-            "title": {
-              "type": "string"
-            }
-          }
-        },
-        "swordfishAtlantic": {
+        "importCertificateIssuedBy": {
           "type": "string"
         },
-        "origin": {
+        "destinationCountry": {
+          "type": "string"
+        },
+        "customsShipment": {
+          "type": "string"
+        },
+        "periodEnding": {
           "type": "string"
         },
         "applicant": {
@@ -150,7 +149,7 @@
             }
           }
         },
-        "supplier": {
+        "importer": {
           "type": "object",
           "required": [
             "id",
@@ -176,6 +175,15 @@
               "type": "string"
             }
           }
+        },
+        "approvalDate": {
+          "type": "string"
+        },
+        "issuedDate": {
+          "type": "string"
+        },
+        "submitter": {
+          "type": "string"
         }
       }
     }

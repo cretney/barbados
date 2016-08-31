@@ -198,15 +198,15 @@
               </div>
               <div class="col-sm-11">
                 Person in Barbados to be contacted in absence of Manager:<br>
-                Name: <b>{{ila.submission.applicant.contact.name}}</b><br>
+                Name: <b>{{ila.submission.contact.name}}</b><br>
                 Address: <br>
-                <b>{{ila.submission.applicant.contact.address}}</b><br><br>
+                <b>{{ila.submission.contact.address}}</b><br><br>
                 <div class="row">
                   <div class="col-sm-6">
-                    Telephone No.: <b>{{ila.submission.applicant.contact.work_phone}}</b>
+                    Telephone No.: <b>{{ila.submission.contact.work_phone}}</b>
                   </div>
                   <div class="col-sm-6">
-                    Email Address: <b>{{ila.submission.applicant.contact.email}}</b>
+                    Email Address: <b>{{ila.submission.contact.email}}</b>
                   </div>
                 </div><!--row-->
               </div>
@@ -220,7 +220,7 @@
                 11.
               </div>
               <div class="col-sm-11">
-                Facsimile No: <b>{{ila.submission.applicant.contact.fax}}</b>
+                Facsimile No: <b>{{ila.submission.contact.fax}}</b>
               </div>
             </div><!--row-->
           </td>
@@ -232,7 +232,7 @@
                 12.
               </div>
               <div class="col-sm-11">
-                Mobile No.: <b>{{ila.submission.applicant.contact.mobile_phone}}</b>
+                Mobile No.: <b>{{ila.submission.contact.mobile_phone}}</b>
               </div>
             </div><!--row-->
           </td>
@@ -347,7 +347,7 @@
           <th class="center-align">Model</th>
         </tr>
         <tr ng-repeat="item in ila.submission.communicationEquipments">
-          <td ng-bind="item.type"></td>
+          <td ng-bind="item.equipmentType"></td>
           <td ng-bind="item.make"></td>
           <td ng-bind="item.model"></td>
         </tr>
@@ -360,7 +360,7 @@
           <th class="center-align">Model</th>
         </tr>
         <tr ng-repeat="item in ila.submission.terminalEquipments">
-          <td ng-bind="item.type"></td>
+          <td ng-bind="item.equipmentType"></td>
           <td ng-bind="item.make"></td>
           <td ng-bind="item.model"></td>
         </tr>
