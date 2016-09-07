@@ -3,7 +3,100 @@
   "description": "Generated from b with shasum 8dd54f7817a885f0032b047ab63c2add617964f9",
   "type": "object",
   "required": [
-
+    "commodities",
+    "submitter",
+    "applicant",
+    "supplier",
+    "origin",
+    "countryConsigned",
+    "expectedArrival",
+    "consigments",
+    "intendedUse",
+    "meansConveyance",
+    "requestType",
+    "previousNumber",
+    "previousExpiration",
+    "periodRequestStart",
+    "periodRequestEnding",
+    "importer",
+    "approvalNumber",
+    "approvedBy",
+    "periodEnding",
+    "approvalDate",
+    "issuedDate",
+    "receptionDate",
+    "consignee",
+    "destination",
+    "transhipVia",
+    "inspectionLocation",
+    "inspectionDate",
+    "inspector",
+    "typeFoodCategory",
+    "typeFoodDetail",
+    "vesselOrCraft",
+    "vessel",
+    "rotationNumber",
+    "containerNumber",
+    "dateInspection",
+    "timeInspection",
+    "entryDate",
+    "serialNumberCertificate",
+    "carrier",
+    "supportingDocumentation",
+    "reason",
+    "dateArrival",
+    "phytosanitaryCertificate",
+    "oldVehicleBrand",
+    "oldVehicleModel",
+    "oldVehicleYear",
+    "oldVehicleRegistrationNumber",
+    "permitLength",
+    "typePremises",
+    "contact",
+    "communicationEquipments",
+    "terminalEquipments",
+    "referenceNumber",
+    "officer",
+    "swordfishAtlantic",
+    "license_to",
+    "licenseNumber",
+    "issuedBy",
+    "exceptions",
+    "authorisationNo",
+    "fileNumber",
+    "importCertificateNo",
+    "importCertificateDate",
+    "importCertificateIssuedBy",
+    "destinationCountry",
+    "customsShipment",
+    "staff",
+    "fishSource",
+    "fish",
+    "fishPurchasedLocally",
+    "fishPurchasedImported",
+    "fishSold",
+    "equipment",
+    "methodDisposal",
+    "consignments",
+    "modeTransport",
+    "consignmentNote",
+    "invoiceNumber",
+    "invoiceDate",
+    "totalValue",
+    "typeApplication",
+    "materials",
+    "directManufacturing",
+    "indirectManufacturing",
+    "manufacturing",
+    "portShipment",
+    "portDischarge",
+    "routeTransport",
+    "inFreeTradeZone",
+    "tradedSpecial",
+    "observations",
+    "hscode2",
+    "approvalLocation",
+    "remarks"
   ],
   "properties": {
     "commodities": {
@@ -13,7 +106,25 @@
       "items": {
         "type": "object",
         "required": [
-
+          "hsCode",
+          "description",
+          "units",
+          "typeFoodCategory",
+          "typeFoodDetail",
+          "grossWeight",
+          "quantity",
+          "entries",
+          "descriptionDetail",
+          "grossWeightUnits",
+          "name",
+          "kindPackages",
+          "fobValue",
+          "currencyType",
+          "preferenceCriterion",
+          "othersAnnex",
+          "rulesOrigin",
+          "invoiceNumber",
+          "invoiceDate"
         ],
         "properties": {
           "hsCode": {
@@ -33,7 +144,10 @@
             "items": {
               "type": "object",
               "required": [
-
+                "unitType",
+                "quantity",
+                "pricePerUnit",
+                "cifValue"
               ],
               "properties": {
                 "unitType": {
@@ -86,7 +200,16 @@
             "items": {
               "type": "object",
               "required": [
-
+                "vehicleBrand",
+                "vehicleModel",
+                "vehicleYear",
+                "vehicleEngine",
+                "chassisNumber",
+                "costCIF",
+                "serialNumber",
+                "dateArrival",
+                "cifValue",
+                "identificationNumber"
               ],
               "properties": {
                 "vehicleBrand": {
@@ -210,7 +333,38 @@
     "applicant": {
       "type": "object",
       "required": [
-
+        "id",
+        "name",
+        "countryId",
+        "country",
+        "address",
+        "docid",
+        "fax",
+        "email",
+        "phone",
+        "typeBusiness",
+        "vat",
+        "withPayment",
+        "businessNature",
+        "customsRegistrationNo",
+        "registrationNo",
+        "companyNo",
+        "processingPlantLicensingNo",
+        "brandName",
+        "directors",
+        "contactPerson",
+        "mailingAddress",
+        "nationality",
+        "work_phone",
+        "manager",
+        "employees",
+        "office_address",
+        "office_mailingAddress",
+        "office_work_phone",
+        "office_mobile_phone",
+        "office_fax",
+        "coorporateRegistrationNo",
+        "mobile_phone"
       ],
       "properties": {
         "id": {
@@ -311,7 +465,8 @@
         "contactPerson": {
           "type": "object",
           "required": [
-
+            "name",
+            "title"
           ],
           "properties": {
             "name": {
@@ -391,7 +546,15 @@
     "supplier": {
       "type": "object",
       "required": [
-
+        "id",
+        "name",
+        "countryId",
+        "country",
+        "address",
+        "docid",
+        "fax",
+        "email",
+        "work_phone"
       ],
       "properties": {
         "id": {
@@ -503,7 +666,16 @@
     "importer": {
       "type": "object",
       "required": [
-
+        "id",
+        "name",
+        "countryId",
+        "country",
+        "address",
+        "docid",
+        "fax",
+        "phone",
+        "email",
+        "importerType"
       ],
       "properties": {
         "id": {
@@ -595,7 +767,15 @@
     "consignee": {
       "type": "object",
       "required": [
-
+        "id",
+        "name",
+        "countryId",
+        "country",
+        "address",
+        "docid",
+        "fax",
+        "email",
+        "business_hours"
       ],
       "properties": {
         "id": {
@@ -648,7 +828,14 @@
     "destination": {
       "type": "object",
       "required": [
-
+        "id",
+        "name",
+        "countryId",
+        "country",
+        "address",
+        "docid",
+        "fax",
+        "email"
       ],
       "properties": {
         "id": {
@@ -769,7 +956,9 @@
     "carrier": {
       "type": "object",
       "required": [
-
+        "idNumber",
+        "name",
+        "idNumber2"
       ],
       "properties": {
         "idNumber": {
@@ -838,7 +1027,10 @@
     "typePremises": {
       "type": "object",
       "required": [
-
+        "office",
+        "retail_outlet",
+        "showroom",
+        "warehouse"
       ],
       "properties": {
         "office": {
@@ -866,7 +1058,18 @@
     "contact": {
       "type": "object",
       "required": [
-
+        "name",
+        "title",
+        "idNumber",
+        "passport",
+        "nationality",
+        "registrationNo",
+        "address",
+        "home_phone",
+        "work_phone",
+        "mobile_phone",
+        "fax",
+        "email"
       ],
       "properties": {
         "name": {
@@ -938,7 +1141,9 @@
       "items": {
         "type": "object",
         "required": [
-
+          "equipmentType",
+          "make",
+          "model"
         ],
         "properties": {
           "equipmentType": {
@@ -966,7 +1171,9 @@
       "items": {
         "type": "object",
         "required": [
-
+          "equipmentType",
+          "make",
+          "model"
         ],
         "properties": {
           "equipmentType": {
@@ -995,7 +1202,8 @@
     "officer": {
       "type": "object",
       "required": [
-
+        "name",
+        "title"
       ],
       "properties": {
         "name": {
@@ -1018,7 +1226,8 @@
     "license_to": {
       "type": "object",
       "required": [
-
+        "import",
+        "store"
       ],
       "properties": {
         "import": {
@@ -1091,7 +1300,9 @@
       "items": {
         "type": "object",
         "required": [
-
+          "title",
+          "male",
+          "female"
         ],
         "properties": {
           "title": {
@@ -1119,7 +1330,9 @@
       "items": {
         "type": "object",
         "required": [
-
+          "boatRegistrationNo",
+          "boatType",
+          "landingSites"
         ],
         "properties": {
           "boatRegistrationNo": {
@@ -1143,7 +1356,8 @@
     "fish": {
       "type": "object",
       "required": [
-
+        "locally",
+        "imported"
       ],
       "properties": {
         "locally": {
@@ -1165,7 +1379,9 @@
       "items": {
         "type": "object",
         "required": [
-
+          "species",
+          "lbs",
+          "tons"
         ],
         "properties": {
           "species": {
@@ -1193,7 +1409,9 @@
       "items": {
         "type": "object",
         "required": [
-
+          "species",
+          "lbs",
+          "tons"
         ],
         "properties": {
           "species": {
@@ -1217,13 +1435,26 @@
     "fishSold": {
       "type": "object",
       "required": [
-
+        "locally",
+        "exported",
+        "spoilage"
       ],
       "properties": {
         "locally": {
           "type": "object",
           "required": [
-
+            "total",
+            "superMarkets",
+            "miniMarts",
+            "hotels",
+            "restaurants",
+            "vendors",
+            "hawkers",
+            "generalPublic",
+            "publicInstitutions",
+            "hospitals",
+            "schools",
+            "other"
           ],
           "properties": {
             "total": {
@@ -1291,7 +1522,9 @@
         "exported": {
           "type": "object",
           "required": [
-
+            "total",
+            "inRegion",
+            "outRegion"
           ],
           "properties": {
             "total": {
@@ -1314,7 +1547,7 @@
         "spoilage": {
           "type": "object",
           "required": [
-
+            "total"
           ],
           "properties": {
             "total": {
@@ -1329,7 +1562,12 @@
     "equipment": {
       "type": "object",
       "required": [
-
+        "capacityChiller",
+        "coldStorage",
+        "freezerType",
+        "coldStore",
+        "otherEquipment",
+        "methodFishTransport"
       ],
       "properties": {
         "capacityChiller": {
@@ -1345,7 +1583,9 @@
         "freezerType": {
           "type": "object",
           "required": [
-
+            "blast",
+            "contact",
+            "capacityUnitFreeze"
           ],
           "properties": {
             "blast": {
@@ -1368,7 +1608,8 @@
         "coldStore": {
           "type": "object",
           "required": [
-
+            "owned",
+            "rented"
           ],
           "properties": {
             "owned": {
@@ -1386,7 +1627,11 @@
         "otherEquipment": {
           "type": "object",
           "required": [
-
+            "filletingMachine",
+            "fishWasher",
+            "pattyFormer",
+            "iceMachine",
+            "other"
           ],
           "properties": {
             "filletingMachine": {
@@ -1419,7 +1664,10 @@
         "methodFishTransport": {
           "type": "object",
           "required": [
-
+            "van",
+            "refrigerateTruck",
+            "flatBadTruck",
+            "other"
           ],
           "properties": {
             "van": {
@@ -1464,7 +1712,8 @@
     "consignmentNote": {
       "type": "object",
       "required": [
-
+        "number",
+        "date"
       ],
       "properties": {
         "number": {
@@ -1508,7 +1757,12 @@
       "items": {
         "type": "object",
         "required": [
-
+          "hsCode",
+          "description",
+          "origin",
+          "supplier",
+          "fobValue",
+          "unitType"
         ],
         "properties": {
           "hsCode": {
@@ -1551,7 +1805,8 @@
       "items": {
         "type": "object",
         "required": [
-
+          "item",
+          "cost"
         ],
         "properties": {
           "item": {
@@ -1574,7 +1829,8 @@
       "items": {
         "type": "object",
         "required": [
-
+          "item",
+          "cost"
         ],
         "properties": {
           "item": {

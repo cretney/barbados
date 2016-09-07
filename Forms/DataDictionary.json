@@ -2409,30 +2409,16 @@
     },
     {
       "workflow_id": 1,
-      "step": 10,
-      "pga_id": 1,
-      "title": "Final Approved Licence",
-      "description": "Import Licence Application (ILA)"
-    },
-    {
-      "workflow_id": 1,
-      "step": 2,
+      "step": 5,
       "pga_id": 1,
       "title": "Review Application",
       "description": "Review the Import Licence Application for accuracy in the Issues column - specifically the description of the goods and HS Codes"
     },
     {
       "workflow_id": 1,
-      "step": 8,
-      "form_id": 1,
-      "title": "Add additional information to Import Licence Application",
-      "description": "Please add additional information to the Import Licence Application"
-    },
-    {
-      "workflow_id": 1,
       "step": 9,
       "form_id": 5,
-      "title": "",
+      "title": "Import Licence and Application (ILA)",
       "description": ""
     },
     {
